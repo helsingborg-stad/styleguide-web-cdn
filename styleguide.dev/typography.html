@@ -1,0 +1,664 @@
+<!doctype html>
+<html class="no-js" lang="sv">
+
+<!-- Mirrored from styleguide.dev/typography by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 18 Jan 2016 12:37:23 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Helsingborg Style Guide</title>
+    <meta name="description" content="">
+
+    <link rel="stylesheet" type="text/css" href="https://highlightjs.org/static/demo/styles/github-gist.css">
+    <link rel="stylesheet" type="text/css" href="dist/css/hbg-prime.dev.css">
+
+    <!--[if lt IE 9]>
+    <script type="text/javascript">
+        document.createElement('header');
+        document.createElement('nav');
+        document.createElement('section');
+        document.createElement('article');
+        document.createElement('aside');
+        document.createElement('footer');
+        document.createElement('hgroup');
+    </script>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <![endif]-->
+
+    <style>
+        .navbar {
+            margin-top: 0;
+            margin-bottom: 40px;
+        }
+
+        #logotype {
+            margin-top: 11px;
+        }
+
+        .markup-preview > .stripe {
+            display: inline-block;
+            height: 400px;
+        }
+
+        .states ul li + li {
+            margin-top: 5px;
+        }
+
+    </style>
+
+    <noscript>
+        <style>
+            .visible-noscript {display: block !important;}
+        </style>
+    </noscript>
+</head>
+<body class="theme-purple">
+    <nav class="navbar">
+        <div class="container">
+            <div class="grid">
+                <div class="grid-md-3">
+                    <a href="index.html"><img id="logotype" src="http://www.helsingborg.se/wp-content/themes/This-is-Helsingborg/assets/images/helsingborg-neg.svg" alt="Helsingborg Stad" height="35"></a>
+                </div>
+                <div class="grid-md-9">
+                    <ul class="nav nav-horizontal text-right">
+                        <li>
+                            <span class="dropdown">
+                                <span class="btn btn-primary dropdown-toggle">Change theme</span>
+                                <ul class="dropdown-menu">
+                                    <li><a href="typography0e99.html?theme=red">Red (default)</a></li>
+                                    <li><a href="typographyca00.html?theme=blue">Blue</a></li>
+                                    <li><a href="typographyaf91.html?theme=green">Green</a></li>
+                                    <li><a href="typography938c.html?theme=purple">Purple</a></li>
+                                </ul>
+                            </span>
+                        </li>
+                        <li><a href="http://www.helsingborg.se/">Visit Helsingborg.se</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="grid">
+            <div class="grid-md-3">
+                <nav>
+    <ul class="nav-aside">
+                    <li class="has-children ">
+                <a href="accessibility.html">Accessibility</a>
+                            </li>
+                    <li class="has-children ">
+                <a href="boxes.html">Boxes</a>
+                            </li>
+                    <li class="has-children ">
+                <a href="buttons.html">Buttons</a>
+                            </li>
+                    <li class="has-children ">
+                <a href="forms.html">Forms</a>
+                            </li>
+                    <li class="has-children ">
+                <a href="gallery.html">Gallery</a>
+                            </li>
+                    <li class="has-children ">
+                <a href="hero.html">Hero</a>
+                            </li>
+                    <li class="has-children ">
+                <a href="layout.html">Layout</a>
+                            </li>
+                    <li class="has-children ">
+                <a href="navigation.html">Navigation</a>
+                            </li>
+                    <li class="has-children ">
+                <a href="search.html">Search</a>
+                            </li>
+                    <li class="has-children ">
+                <a href="special.html">Special</a>
+                            </li>
+                    <li class="has-children ">
+                <a href="stripe.html">Stripe</a>
+                            </li>
+                    <li class="has-children ">
+                <a href="tables.html">Tables</a>
+                            </li>
+                    <li class="has-children current">
+                <a href="typography.html">Typography</a>
+                                    <ul class="sub-menu">
+                                            <li><a href="#article">Article</a></li>
+                                            <li><a href="#headings">Headings</a></li>
+                                            <li><a href="#label">Label</a></li>
+                                            <li><a href="#lead">Lead</a></li>
+                                            <li><a href="#unordered-list">Unordered List</a></li>
+                                            <li><a href="#ordered-list">Ordered List</a></li>
+                                            <li><a href="#text-alignment">Text Alignment</a></li>
+                                            <li><a href="#font-size">Font Size</a></li>
+                                            <li><a href="#highlight">Highlight</a></li>
+                                            <li><a href="#underline">Underline</a></li>
+                                            <li><a href="#mark">Mark</a></li>
+                                            <li><a href="#small">Small</a></li>
+                                        </ul>
+                            </li>
+                    <li class="has-children ">
+                <a href="utilities.html">Utilities</a>
+                            </li>
+            </ul>
+</nav>
+            </div>
+            <div class="grid-md-9">
+                            <section>
+            <h2 id="article" class="underline text-highlight">Article</h2>
+
+<section>
+    <article>
+        <p>A full article with heading, lead and body text</p>
+
+    </article>
+</section>
+
+
+<section class="example">
+    <h3>Example</h3>
+    <div class="markup-preview">
+        <article>
+     <h1>Lorem ipsum</h1>
+     <p class="lead">Nulla et libero fermentum nisl tempor suscipit quis quis lacus. Sed lacus nisi, condimentum eget sem at, euismod vestibulum quam.</p>
+     <p>Integer dignissim, augue ac ornare viverra, nulla neque tincidunt ipsum, ac vulputate turpis eros scelerisque dolor. Integer at turpis quam.</p>
+     <p>Phasellus auctor malesuada diam, ac tincidunt neque venenatis eu. <a href="#">Nulla sit amet</a> erat eleifend magna tincidunt faucibus at in lorem. Quisque nisi felis, vulputate non nibh a, euismod posuere ante. Morbi nec purus sed magna sollicitudin aliquet. Aliquam pulvinar sem at sagittis ullamcorper.</p>
+     <p>Maecenas bibendum suscipit ante, at pretium risus aliquet vel. Aenean efficitur diam et dui aliquam, eu scelerisque elit luctus. Praesent luctus varius felis sit amet tincidunt. In pharetra mattis tempus. Nullam bibendum id nisi hendrerit condimentum.</p>
+</article>
+    </div>
+
+    <pre><code class="html">&lt;article&gt;
+     &lt;h1&gt;Lorem ipsum&lt;/h1&gt;
+     &lt;p class=&quot;lead&quot;&gt;Nulla et libero fermentum nisl tempor suscipit quis quis lacus. Sed lacus nisi, condimentum eget sem at, euismod vestibulum quam.&lt;/p&gt;
+     &lt;p&gt;Integer dignissim, augue ac ornare viverra, nulla neque tincidunt ipsum, ac vulputate turpis eros scelerisque dolor. Integer at turpis quam.&lt;/p&gt;
+     &lt;p&gt;Phasellus auctor malesuada diam, ac tincidunt neque venenatis eu. &lt;a href=&quot;#&quot;&gt;Nulla sit amet&lt;/a&gt; erat eleifend magna tincidunt faucibus at in lorem. Quisque nisi felis, vulputate non nibh a, euismod posuere ante. Morbi nec purus sed magna sollicitudin aliquet. Aliquam pulvinar sem at sagittis ullamcorper.&lt;/p&gt;
+     &lt;p&gt;Maecenas bibendum suscipit ante, at pretium risus aliquet vel. Aenean efficitur diam et dui aliquam, eu scelerisque elit luctus. Praesent luctus varius felis sit amet tincidunt. In pharetra mattis tempus. Nullam bibendum id nisi hendrerit condimentum.&lt;/p&gt;
+&lt;/article&gt;</code></pre>
+
+    <div class="code-source-file clearfix">
+        <div class="pull-left"><strong>Source file:</strong> ~/source/sass/typography/article.scss</div>
+        <div class="pull-right">
+            <a class="link-item link-item-github" href="https://github.com/helsingborg-stad/styleguide-web/blob/master/source/sass/typography/article.scss">View source on GitHub</a>
+        </div>
+    </div>
+</section>
+        </section>
+            <section>
+            <h2 id="headings" class="underline text-highlight">Headings</h2>
+
+<section>
+    <article>
+        <p>Headings for use within articles and more. Please always set the <code>id</code> attribute on headings to enable anchor-linking.</p>
+
+    </article>
+</section>
+
+<section class="states">
+    <h3>Modifiers</h3>
+    <ul>
+            <li>
+            <code>.text-highlight</code> - Will highlight any heading in the current theme color
+        </li>
+            <li>
+            <code>.underline</code> - Underlines the heading
+        </li>
+        </ul>
+</section>
+
+<section class="example">
+    <h3>Example</h3>
+    <div class="markup-preview">
+        <h1 id="anchor-1">Heading 1</h1>
+<h2 id="anchor-2">Heading 2</h2>
+<h3 id="anchor-3">Heading 3</h3>
+<h4 id="anchor-4">Heading 4</h4>
+<h5 id="anchor-5">Heading 5</h5>
+<h6 id="anchor-6">Heading 6</h6>
+    </div>
+
+    <pre><code class="html">&lt;h1 id=&quot;anchor-1&quot;&gt;Heading 1&lt;/h1&gt;
+&lt;h2 id=&quot;anchor-2&quot;&gt;Heading 2&lt;/h2&gt;
+&lt;h3 id=&quot;anchor-3&quot;&gt;Heading 3&lt;/h3&gt;
+&lt;h4 id=&quot;anchor-4&quot;&gt;Heading 4&lt;/h4&gt;
+&lt;h5 id=&quot;anchor-5&quot;&gt;Heading 5&lt;/h5&gt;
+&lt;h6 id=&quot;anchor-6&quot;&gt;Heading 6&lt;/h6&gt;</code></pre>
+
+    <div class="code-source-file clearfix">
+        <div class="pull-left"><strong>Source file:</strong> ~/source/sass/typography/headings.scss</div>
+        <div class="pull-right">
+            <a class="link-item link-item-github" href="https://github.com/helsingborg-stad/styleguide-web/blob/master/source/sass/typography/headings.scss">View source on GitHub</a>
+        </div>
+    </div>
+</section>
+        </section>
+            <section>
+            <h2 id="label" class="underline text-highlight">Label</h2>
+
+<section>
+    <article>
+        <p>Label a text with a filled background</p>
+
+    </article>
+</section>
+
+<section class="states">
+    <h3>Modifiers</h3>
+    <ul>
+            <li>
+            <code>.label-sm</code> - Smaller label
+        </li>
+            <li>
+            <code>.label-lg</code> - Larger label
+        </li>
+            <li>
+            <code>.label-theme</code> - Uses the current theme color
+        </li>
+            <li>
+            <code>.label-red-1</code> - First color in red stripe (color 1-5 available)
+        </li>
+            <li>
+            <code>.label-blue-1</code> - First color in blue stripe (color 1-5 available)
+        </li>
+            <li>
+            <code>.label-green-1</code> - First color in green stripe (color 1-5 available)
+        </li>
+            <li>
+            <code>.label-purple-1</code> - First color in purple stripe (color 1-5 available)
+        </li>
+        </ul>
+</section>
+
+<section class="example">
+    <h3>Example</h3>
+    <div class="markup-preview">
+        One of the words in this sentence is <span class="label label-red-2">labelled</span>.
+    </div>
+
+    <pre><code class="html">One of the words in this sentence is &lt;span class=&quot;label label-red-2&quot;&gt;labelled&lt;/span&gt;.</code></pre>
+
+    <div class="code-source-file clearfix">
+        <div class="pull-left"><strong>Source file:</strong> ~/source/sass/typography/label.scss</div>
+        <div class="pull-right">
+            <a class="link-item link-item-github" href="https://github.com/helsingborg-stad/styleguide-web/blob/master/source/sass/typography/label.scss">View source on GitHub</a>
+        </div>
+    </div>
+</section>
+        </section>
+            <section>
+            <h2 id="lead" class="underline text-highlight">Lead</h2>
+
+<section>
+    <article>
+        <p>A large paragraph to use as article lead.</p>
+
+    </article>
+</section>
+
+
+<section class="example">
+    <h3>Example</h3>
+    <div class="markup-preview">
+        <p class="lead">Nulla et libero fermentum nisl tempor suscipit quis quis lacus. Sed lacus nisi, condimentum eget sem at, euismod vestibulum quam.</p>
+    </div>
+
+    <pre><code class="html">&lt;p class=&quot;lead&quot;&gt;Nulla et libero fermentum nisl tempor suscipit quis quis lacus. Sed lacus nisi, condimentum eget sem at, euismod vestibulum quam.&lt;/p&gt;</code></pre>
+
+    <div class="code-source-file clearfix">
+        <div class="pull-left"><strong>Source file:</strong> ~/source/sass/typography/lead.scss</div>
+        <div class="pull-right">
+            <a class="link-item link-item-github" href="https://github.com/helsingborg-stad/styleguide-web/blob/master/source/sass/typography/lead.scss">View source on GitHub</a>
+        </div>
+    </div>
+</section>
+        </section>
+            <section>
+            <h2 id="unordered-list" class="underline text-highlight">Unordered list</h2>
+
+<section>
+    <article>
+        <p>Stanrdard unordered list.</p>
+
+    </article>
+</section>
+
+<section class="states">
+    <h3>Modifiers</h3>
+    <ul>
+            <li>
+            <code>.unordered-list</code> - Applies the style to lists used outside <code>article</code>. There's no need to apply this class when using <code>ul</code> inside an <code>article</code>
+        </li>
+        </ul>
+</section>
+
+<section class="example">
+    <h3>Example</h3>
+    <div class="markup-preview">
+        <ul class="unordered-list">
+    <li>First list item</li>
+    <li>Second list item</li>
+    <li>Third list item</li>
+</ul>
+    </div>
+
+    <pre><code class="html">&lt;ul class=&quot;unordered-list&quot;&gt;
+    &lt;li&gt;First list item&lt;/li&gt;
+    &lt;li&gt;Second list item&lt;/li&gt;
+    &lt;li&gt;Third list item&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+
+    <div class="code-source-file clearfix">
+        <div class="pull-left"><strong>Source file:</strong> ~/source/sass/typography/list.scss</div>
+        <div class="pull-right">
+            <a class="link-item link-item-github" href="https://github.com/helsingborg-stad/styleguide-web/blob/master/source/sass/typography/list.scss">View source on GitHub</a>
+        </div>
+    </div>
+</section>
+        </section>
+            <section>
+            <h2 id="ordered-list" class="underline text-highlight">Ordered list</h2>
+
+<section>
+    <article>
+        <p>Stanrdard ordered list.</p>
+
+    </article>
+</section>
+
+
+<section class="example">
+    <h3>Example</h3>
+    <div class="markup-preview">
+        <ol class="ordered-list">
+    <li>First list item</li>
+    <li>Second list item</li>
+    <li>Third list item</li>
+</ol>
+    </div>
+
+    <pre><code class="html">&lt;ol class=&quot;ordered-list&quot;&gt;
+    &lt;li&gt;First list item&lt;/li&gt;
+    &lt;li&gt;Second list item&lt;/li&gt;
+    &lt;li&gt;Third list item&lt;/li&gt;
+&lt;/ol&gt;</code></pre>
+
+    <div class="code-source-file clearfix">
+        <div class="pull-left"><strong>Source file:</strong> ~/source/sass/typography/list.scss</div>
+        <div class="pull-right">
+            <a class="link-item link-item-github" href="https://github.com/helsingborg-stad/styleguide-web/blob/master/source/sass/typography/list.scss">View source on GitHub</a>
+        </div>
+    </div>
+</section>
+        </section>
+            <section>
+            <h2 id="text-alignment" class="underline text-highlight">Text alignment</h2>
+
+<section>
+    <article>
+        <p>Aligns text.</p>
+
+    </article>
+</section>
+
+
+<section class="example">
+    <h3>Example</h3>
+    <div class="markup-preview">
+        <div class="text-left">Left aligned text</div>
+<div class="text-center">Center aligned text</div>
+<div class="text-right">Right aligned text</div>
+<div class="text-justify">Justified text</div>
+    </div>
+
+    <pre><code class="html">&lt;div class=&quot;text-left&quot;&gt;Left aligned text&lt;/div&gt;
+&lt;div class=&quot;text-center&quot;&gt;Center aligned text&lt;/div&gt;
+&lt;div class=&quot;text-right&quot;&gt;Right aligned text&lt;/div&gt;
+&lt;div class=&quot;text-justify&quot;&gt;Justified text&lt;/div&gt;</code></pre>
+
+    <div class="code-source-file clearfix">
+        <div class="pull-left"><strong>Source file:</strong> ~/source/sass/utility/text.scss</div>
+        <div class="pull-right">
+            <a class="link-item link-item-github" href="https://github.com/helsingborg-stad/styleguide-web/blob/master/source/sass/utility/text.scss">View source on GitHub</a>
+        </div>
+    </div>
+</section>
+        </section>
+            <section>
+            <h2 id="front-size" class="underline text-highlight">Front size</h2>
+
+<section>
+    <article>
+        <p>Font size</p>
+
+    </article>
+</section>
+
+<section class="states">
+    <h3>Modifiers</h3>
+    <ul>
+            <li>
+            <code>.text-sm</code> - Small
+        </li>
+            <li>
+            <code>.text-md</code> - Medium (default)
+        </li>
+            <li>
+            <code>.text-lg</code> - Large
+        </li>
+            <li>
+            <code>.text-xl</code> - Extra Large
+        </li>
+        </ul>
+</section>
+
+<section class="example">
+    <h3>Example</h3>
+    <div class="markup-preview">
+        <div class="text-left">Left aligned text</div>
+    </div>
+
+    <pre><code class="html">&lt;div class=&quot;text-left&quot;&gt;Left aligned text&lt;/div&gt;</code></pre>
+
+    <div class="code-source-file clearfix">
+        <div class="pull-left"><strong>Source file:</strong> ~/source/sass/utility/text.scss</div>
+        <div class="pull-right">
+            <a class="link-item link-item-github" href="https://github.com/helsingborg-stad/styleguide-web/blob/master/source/sass/utility/text.scss">View source on GitHub</a>
+        </div>
+    </div>
+</section>
+        </section>
+            <section>
+            <h2 id="highlight" class="underline text-highlight">Highlight</h2>
+
+<section>
+    <article>
+        <p>Highlights text.</p>
+
+    </article>
+</section>
+
+
+<section class="example">
+    <h3>Example</h3>
+    <div class="markup-preview">
+        <span class="text-highlight">Highlighted</span>
+    </div>
+
+    <pre><code class="html">&lt;span class=&quot;text-highlight&quot;&gt;Highlighted&lt;/span&gt;</code></pre>
+
+    <div class="code-source-file clearfix">
+        <div class="pull-left"><strong>Source file:</strong> ~/source/sass/utility/text.scss</div>
+        <div class="pull-right">
+            <a class="link-item link-item-github" href="https://github.com/helsingborg-stad/styleguide-web/blob/master/source/sass/utility/text.scss">View source on GitHub</a>
+        </div>
+    </div>
+</section>
+        </section>
+            <section>
+            <h2 id="underline" class="underline text-highlight">Underline</h2>
+
+<section>
+    <article>
+        <p>Underlines text.</p>
+
+    </article>
+</section>
+
+
+<section class="example">
+    <h3>Example</h3>
+    <div class="markup-preview">
+        <span class="text-underline">Underlined</span>
+    </div>
+
+    <pre><code class="html">&lt;span class=&quot;text-underline&quot;&gt;Underlined&lt;/span&gt;</code></pre>
+
+    <div class="code-source-file clearfix">
+        <div class="pull-left"><strong>Source file:</strong> ~/source/sass/utility/text.scss</div>
+        <div class="pull-right">
+            <a class="link-item link-item-github" href="https://github.com/helsingborg-stad/styleguide-web/blob/master/source/sass/utility/text.scss">View source on GitHub</a>
+        </div>
+    </div>
+</section>
+        </section>
+            <section>
+            <h2 id="mark" class="underline text-highlight">Mark</h2>
+
+<section>
+    <article>
+        <p>Mark text to make it stand out.</p>
+
+    </article>
+</section>
+
+<section class="states">
+    <h3>Modifiers</h3>
+    <ul>
+            <li>
+            <code>.mark-yellow</code> - Mark with yellow color
+        </li>
+            <li>
+            <code>.mark-blue</code> - Mark with blue color
+        </li>
+            <li>
+            <code>.mark-green</code> - Mark with green color
+        </li>
+            <li>
+            <code>.mark-red</code> - Mark with red color
+        </li>
+            <li>
+            <code>.mark-purple</code> - Mark with purple color
+        </li>
+        </ul>
+</section>
+
+<section class="example">
+    <h3>Example</h3>
+    <div class="markup-preview">
+        One of the words in this sentence is <mark>marked</mark>.<br>
+One of the words in this sentence is <mark class="mark-yellow">marked</mark>.<br>
+One of the words in this sentence is <mark class="mark-blue">marked</mark>.<br>
+One of the words in this sentence is <mark class="mark-green">marked</mark>.<br>
+One of the words in this sentence is <mark class="mark-red">marked</mark>.<br>
+One of the words in this sentence is <mark class="mark-purple">marked</mark>.
+    </div>
+
+    <pre><code class="html">One of the words in this sentence is &lt;mark&gt;marked&lt;/mark&gt;.&lt;br&gt;
+One of the words in this sentence is &lt;mark class=&quot;mark-yellow&quot;&gt;marked&lt;/mark&gt;.&lt;br&gt;
+One of the words in this sentence is &lt;mark class=&quot;mark-blue&quot;&gt;marked&lt;/mark&gt;.&lt;br&gt;
+One of the words in this sentence is &lt;mark class=&quot;mark-green&quot;&gt;marked&lt;/mark&gt;.&lt;br&gt;
+One of the words in this sentence is &lt;mark class=&quot;mark-red&quot;&gt;marked&lt;/mark&gt;.&lt;br&gt;
+One of the words in this sentence is &lt;mark class=&quot;mark-purple&quot;&gt;marked&lt;/mark&gt;.</code></pre>
+
+    <div class="code-source-file clearfix">
+        <div class="pull-left"><strong>Source file:</strong> ~/source/sass/utility/text.scss</div>
+        <div class="pull-right">
+            <a class="link-item link-item-github" href="https://github.com/helsingborg-stad/styleguide-web/blob/master/source/sass/utility/text.scss">View source on GitHub</a>
+        </div>
+    </div>
+</section>
+        </section>
+            <section>
+            <h2 id="small" class="underline text-highlight">Small</h2>
+
+<section>
+    <article>
+        <p>Small text. Can be used with the <code>&lt;small&gt;</code> element or by applying the <code>.small</code> class to any element.</p>
+
+    </article>
+</section>
+
+
+<section class="example">
+    <h3>Example</h3>
+    <div class="markup-preview">
+        <small>This is a small text</small>
+    </div>
+
+    <pre><code class="html">&lt;small&gt;This is a small text&lt;/small&gt;</code></pre>
+
+    <div class="code-source-file clearfix">
+        <div class="pull-left"><strong>Source file:</strong> ~/source/sass/utility/text.scss</div>
+        <div class="pull-right">
+            <a class="link-item link-item-github" href="https://github.com/helsingborg-stad/styleguide-web/blob/master/source/sass/utility/text.scss">View source on GitHub</a>
+        </div>
+    </div>
+</section>
+        </section>
+                </div>
+        </div>
+    </div>
+
+    <footer class="main-footer">
+        <div class="container">
+            <div class="grid">
+                <div class="grid-lg-12">
+                    <a href="index.html" class="logotype"><img src="http://www.helsingborg.se/wp-content/themes/This-is-Helsingborg/assets/images/helsingborg-neg.svg" alt="Helsingborg Stad" width="239" height="68"></a>
+                </div>
+            </div>
+            <div class="grid">
+                <div class="grid-lg-6">
+                    <ul>
+                        <li><strong>Telefonnummer</strong></li>
+                        <li>Helsingborg kontaktcenter: 042-10 50 00</li>
+                    </ul>
+                    <ul>
+                        <li><strong>E-post</strong></li>
+                        <li><a href="mailto:kontaktcenter@helsingborg.se" class="link-item link-item-light">kontaktcenter@helsingborg.se</a></li>
+                    </ul>
+                </div>
+                <div class="grid-lg-6">
+                    <ul>
+                        <li><strong>Postadress</strong></li>
+                        <li>Namn på verksamheten<br>251 89 Helsingborg</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.0.0/highlight.min.js"></script>
+    <script src="dist/js/hbg-prime.min.js"></script>
+
+    <script>
+        $(function(){
+            $('pre code').each(function(){
+                var lines = $(this).text().split('\n').length - 1;
+                var $numbering = $('<ul/>').addClass('line-numbers');
+                $(this)
+                    .addClass('has-numbering')
+                    .parent()
+                    .prepend($numbering);
+                for (i = 1; i <= lines + 1; i++){
+                    $numbering.append($('<li/>').text(i));
+                }
+            });
+            hljs.initHighlightingOnLoad();
+        });
+    </script>
+</body>
+
+<!-- Mirrored from styleguide.dev/typography by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 18 Jan 2016 12:37:27 GMT -->
+</html>

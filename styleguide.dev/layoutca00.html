@@ -1,0 +1,422 @@
+<!doctype html>
+<html class="no-js" lang="sv">
+
+<!-- Mirrored from styleguide.dev/layout?theme=blue by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 18 Jan 2016 12:37:29 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Helsingborg Style Guide</title>
+    <meta name="description" content="">
+
+    <link rel="stylesheet" type="text/css" href="https://highlightjs.org/static/demo/styles/github-gist.css">
+    <link rel="stylesheet" type="text/css" href="dist/css/hbg-prime.dev.css">
+
+    <!--[if lt IE 9]>
+    <script type="text/javascript">
+        document.createElement('header');
+        document.createElement('nav');
+        document.createElement('section');
+        document.createElement('article');
+        document.createElement('aside');
+        document.createElement('footer');
+        document.createElement('hgroup');
+    </script>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <![endif]-->
+
+    <style>
+        .navbar {
+            margin-top: 0;
+            margin-bottom: 40px;
+        }
+
+        #logotype {
+            margin-top: 11px;
+        }
+
+        .markup-preview > .stripe {
+            display: inline-block;
+            height: 400px;
+        }
+
+        .states ul li + li {
+            margin-top: 5px;
+        }
+
+    </style>
+
+    <noscript>
+        <style>
+            .visible-noscript {display: block !important;}
+        </style>
+    </noscript>
+</head>
+<body class="theme-blue">
+    <nav class="navbar">
+        <div class="container">
+            <div class="grid">
+                <div class="grid-md-3">
+                    <a href="index.html"><img id="logotype" src="http://www.helsingborg.se/wp-content/themes/This-is-Helsingborg/assets/images/helsingborg-neg.svg" alt="Helsingborg Stad" height="35"></a>
+                </div>
+                <div class="grid-md-9">
+                    <ul class="nav nav-horizontal text-right">
+                        <li>
+                            <span class="dropdown">
+                                <span class="btn btn-primary dropdown-toggle">Change theme</span>
+                                <ul class="dropdown-menu">
+                                    <li><a href="layout0e99.html?theme=red">Red (default)</a></li>
+                                    <li><a href="layoutca00.html?theme=blue">Blue</a></li>
+                                    <li><a href="layoutaf91.html?theme=green">Green</a></li>
+                                    <li><a href="layout938c.html?theme=purple">Purple</a></li>
+                                </ul>
+                            </span>
+                        </li>
+                        <li><a href="http://www.helsingborg.se/">Visit Helsingborg.se</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="grid">
+            <div class="grid-md-3">
+                <nav>
+    <ul class="nav-aside">
+                    <li class="has-children ">
+                <a href="accessibility.html">Accessibility</a>
+                            </li>
+                    <li class="has-children ">
+                <a href="boxes.html">Boxes</a>
+                            </li>
+                    <li class="has-children ">
+                <a href="buttons.html">Buttons</a>
+                            </li>
+                    <li class="has-children ">
+                <a href="forms.html">Forms</a>
+                            </li>
+                    <li class="has-children ">
+                <a href="gallery.html">Gallery</a>
+                            </li>
+                    <li class="has-children ">
+                <a href="hero.html">Hero</a>
+                            </li>
+                    <li class="has-children current">
+                <a href="layout.html">Layout</a>
+                                    <ul class="sub-menu">
+                                            <li><a href="#container">Container</a></li>
+                                            <li><a href="#pull-left">Pull Left</a></li>
+                                            <li><a href="#pull-right">Pull Right</a></li>
+                                            <li><a href="#clearfix">Clearfix</a></li>
+                                            <li><a href="#grid">Grid</a></li>
+                                            <li><a href="#main-footer">Main Footer</a></li>
+                                        </ul>
+                            </li>
+                    <li class="has-children ">
+                <a href="navigation.html">Navigation</a>
+                            </li>
+                    <li class="has-children ">
+                <a href="search.html">Search</a>
+                            </li>
+                    <li class="has-children ">
+                <a href="special.html">Special</a>
+                            </li>
+                    <li class="has-children ">
+                <a href="stripe.html">Stripe</a>
+                            </li>
+                    <li class="has-children ">
+                <a href="tables.html">Tables</a>
+                            </li>
+                    <li class="has-children ">
+                <a href="typography.html">Typography</a>
+                            </li>
+                    <li class="has-children ">
+                <a href="utilities.html">Utilities</a>
+                            </li>
+            </ul>
+</nav>
+            </div>
+            <div class="grid-md-9">
+                            <section>
+            <h2 id="container" class="underline text-highlight">Container</h2>
+
+<section>
+    <article>
+        <p>A container with a maximum width of <code>$screen-lg-max</code></p>
+
+    </article>
+</section>
+
+
+<section class="example">
+    <h3>Example</h3>
+    <div class="markup-preview">
+        <div class="container"></div>
+    </div>
+
+    <pre><code class="html">&lt;div class=&quot;container&quot;&gt;&lt;/div&gt;</code></pre>
+
+    <div class="code-source-file clearfix">
+        <div class="pull-left"><strong>Source file:</strong> ~/source/sass/layout/container.scss</div>
+        <div class="pull-right">
+            <a class="link-item link-item-github" href="https://github.com/helsingborg-stad/styleguide-web/blob/master/source/sass/layout/container.scss">View source on GitHub</a>
+        </div>
+    </div>
+</section>
+        </section>
+            <section>
+            <h2 id="pull-left" class="underline text-highlight">Pull left</h2>
+
+<section>
+    <article>
+        <p>Floats an element to the left edge of the container.</p>
+
+    </article>
+</section>
+
+
+<section class="example">
+    <h3>Example</h3>
+    <div class="markup-preview">
+        <div class="pull-left">Floating to the left</div>
+<div class="clearfix"></div>
+    </div>
+
+    <pre><code class="html">&lt;div class=&quot;pull-left&quot;&gt;Floating to the left&lt;/div&gt;
+&lt;div class=&quot;clearfix&quot;&gt;&lt;/div&gt;</code></pre>
+
+    <div class="code-source-file clearfix">
+        <div class="pull-left"><strong>Source file:</strong> ~/source/sass/layout/float.scss</div>
+        <div class="pull-right">
+            <a class="link-item link-item-github" href="https://github.com/helsingborg-stad/styleguide-web/blob/master/source/sass/layout/float.scss">View source on GitHub</a>
+        </div>
+    </div>
+</section>
+        </section>
+            <section>
+            <h2 id="pull-right" class="underline text-highlight">Pull right</h2>
+
+<section>
+    <article>
+        <p>Floats an element to the right edge of the container.</p>
+
+    </article>
+</section>
+
+
+<section class="example">
+    <h3>Example</h3>
+    <div class="markup-preview">
+        <div class="pull-right">Floating to the right</div>
+<div class="clearfix"></div>
+    </div>
+
+    <pre><code class="html">&lt;div class=&quot;pull-right&quot;&gt;Floating to the right&lt;/div&gt;
+&lt;div class=&quot;clearfix&quot;&gt;&lt;/div&gt;</code></pre>
+
+    <div class="code-source-file clearfix">
+        <div class="pull-left"><strong>Source file:</strong> ~/source/sass/layout/float.scss</div>
+        <div class="pull-right">
+            <a class="link-item link-item-github" href="https://github.com/helsingborg-stad/styleguide-web/blob/master/source/sass/layout/float.scss">View source on GitHub</a>
+        </div>
+    </div>
+</section>
+        </section>
+            <section>
+            <h2 id="clearfix" class="underline text-highlight">Clearfix</h2>
+
+<section>
+    <article>
+        <p>Used to clear floats. Can be used either on a div after a floated element or directly on the container.</p>
+
+    </article>
+</section>
+
+
+<section class="example">
+    <h3>Example</h3>
+    <div class="markup-preview">
+        <div class="clearfix"></div>
+    </div>
+
+    <pre><code class="html">&lt;div class=&quot;clearfix&quot;&gt;&lt;/div&gt;</code></pre>
+
+    <div class="code-source-file clearfix">
+        <div class="pull-left"><strong>Source file:</strong> ~/source/sass/layout/float.scss</div>
+        <div class="pull-right">
+            <a class="link-item link-item-github" href="https://github.com/helsingborg-stad/styleguide-web/blob/master/source/sass/layout/float.scss">View source on GitHub</a>
+        </div>
+    </div>
+</section>
+        </section>
+            <section>
+            <h2 id="grid" class="underline text-highlight">Grid</h2>
+
+<section>
+    <article>
+        <p>HbgPrime&#39;s grid system is a 12 column responsive grid.<br><strong>ATTENTION:</strong> Remove the <code>.grid-example</code> class before using.</p>
+
+    </article>
+</section>
+
+
+<section class="example">
+    <h3>Example</h3>
+    <div class="markup-preview">
+        <div class="grid grid-example">
+    <div class="grid-md-3">grid-md-3</div>
+    <div class="grid-md-9">grid-md-9</div>
+</div>
+    </div>
+
+    <pre><code class="html">&lt;div class=&quot;grid grid-example&quot;&gt;
+    &lt;div class=&quot;grid-md-3&quot;&gt;grid-md-3&lt;/div&gt;
+    &lt;div class=&quot;grid-md-9&quot;&gt;grid-md-9&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+
+    <div class="code-source-file clearfix">
+        <div class="pull-left"><strong>Source file:</strong> ~/source/sass/layout/grid.scss</div>
+        <div class="pull-right">
+            <a class="link-item link-item-github" href="https://github.com/helsingborg-stad/styleguide-web/blob/master/source/sass/layout/grid.scss">View source on GitHub</a>
+        </div>
+    </div>
+</section>
+        </section>
+            <section>
+            <h2 id="main-footer" class="underline text-highlight">Main Footer</h2>
+
+<section>
+    <article>
+        <p>The website&#39;s main footer</p>
+
+    </article>
+</section>
+
+
+<section class="example">
+    <h3>Example</h3>
+    <div class="markup-preview">
+        <footer class="main-footer">
+    <div class="container">
+        <div class="grid">
+            <div class="grid-lg-12">
+                <a href="index.html" class="logotype"><img src="http://www.helsingborg.se/wp-content/themes/This-is-Helsingborg/assets/images/helsingborg-neg.svg" alt="Helsingborg Stad" width="239" height="68"></a>
+            </div>
+        </div>
+        <div class="grid">
+            <div class="grid-lg-6">
+                <ul>
+                    <li><strong>Telefonnummer</strong></li>
+                    <li>Helsingborg kontaktcenter: 042-10 50 00</li>
+                </ul>
+                <ul>
+                    <li><strong>E-post</strong></li>
+                    <li><a href="mailto:kontaktcenter@helsingborg.se" class="link-item link-item-light">kontaktcenter@helsingborg.se</a></li>
+                </ul>
+            </div>
+            <div class="grid-lg-6">
+                <ul>
+                    <li><strong>Postadress</strong></li>
+                    <li>Namn på verksamheten<br>251 89 Helsingborg</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+    </div>
+
+    <pre><code class="html">&lt;footer class=&quot;main-footer&quot;&gt;
+    &lt;div class=&quot;container&quot;&gt;
+        &lt;div class=&quot;grid&quot;&gt;
+            &lt;div class=&quot;grid-lg-12&quot;&gt;
+                &lt;a href=&quot;/&quot; class=&quot;logotype&quot;&gt;&lt;img src=&quot;http://www.helsingborg.se/wp-content/themes/This-is-Helsingborg/assets/images/helsingborg-neg.svg&quot; alt=&quot;Helsingborg Stad&quot; width=&quot;239&quot; height=&quot;68&quot;&gt;&lt;/a&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;grid&quot;&gt;
+            &lt;div class=&quot;grid-lg-6&quot;&gt;
+                &lt;ul&gt;
+                    &lt;li&gt;&lt;strong&gt;Telefonnummer&lt;/strong&gt;&lt;/li&gt;
+                    &lt;li&gt;Helsingborg kontaktcenter: 042-10 50 00&lt;/li&gt;
+                &lt;/ul&gt;
+                &lt;ul&gt;
+                    &lt;li&gt;&lt;strong&gt;E-post&lt;/strong&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;a href=&quot;mailto:kontaktcenter@helsingborg.se&quot; class=&quot;link-item link-item-light&quot;&gt;kontaktcenter@helsingborg.se&lt;/a&gt;&lt;/li&gt;
+                &lt;/ul&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;grid-lg-6&quot;&gt;
+                &lt;ul&gt;
+                    &lt;li&gt;&lt;strong&gt;Postadress&lt;/strong&gt;&lt;/li&gt;
+                    &lt;li&gt;Namn p&aring; verksamheten&lt;br&gt;251 89 Helsingborg&lt;/li&gt;
+                &lt;/ul&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/footer&gt;</code></pre>
+
+    <div class="code-source-file clearfix">
+        <div class="pull-left"><strong>Source file:</strong> ~/source/sass/component/footer/footer.scss</div>
+        <div class="pull-right">
+            <a class="link-item link-item-github" href="https://github.com/helsingborg-stad/styleguide-web/blob/master/source/sass/component/footer/footer.scss">View source on GitHub</a>
+        </div>
+    </div>
+</section>
+        </section>
+                </div>
+        </div>
+    </div>
+
+    <footer class="main-footer">
+        <div class="container">
+            <div class="grid">
+                <div class="grid-lg-12">
+                    <a href="index.html" class="logotype"><img src="http://www.helsingborg.se/wp-content/themes/This-is-Helsingborg/assets/images/helsingborg-neg.svg" alt="Helsingborg Stad" width="239" height="68"></a>
+                </div>
+            </div>
+            <div class="grid">
+                <div class="grid-lg-6">
+                    <ul>
+                        <li><strong>Telefonnummer</strong></li>
+                        <li>Helsingborg kontaktcenter: 042-10 50 00</li>
+                    </ul>
+                    <ul>
+                        <li><strong>E-post</strong></li>
+                        <li><a href="mailto:kontaktcenter@helsingborg.se" class="link-item link-item-light">kontaktcenter@helsingborg.se</a></li>
+                    </ul>
+                </div>
+                <div class="grid-lg-6">
+                    <ul>
+                        <li><strong>Postadress</strong></li>
+                        <li>Namn på verksamheten<br>251 89 Helsingborg</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.0.0/highlight.min.js"></script>
+    <script src="dist/js/hbg-prime.min.js"></script>
+
+    <script>
+        $(function(){
+            $('pre code').each(function(){
+                var lines = $(this).text().split('\n').length - 1;
+                var $numbering = $('<ul/>').addClass('line-numbers');
+                $(this)
+                    .addClass('has-numbering')
+                    .parent()
+                    .prepend($numbering);
+                for (i = 1; i <= lines + 1; i++){
+                    $numbering.append($('<li/>').text(i));
+                }
+            });
+            hljs.initHighlightingOnLoad();
+        });
+    </script>
+</body>
+
+<!-- Mirrored from styleguide.dev/layout?theme=blue by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 18 Jan 2016 12:37:29 GMT -->
+</html>

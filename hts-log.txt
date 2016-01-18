@@ -1,0 +1,11 @@
+HTTrack3.48-21 launched on Mon, 18 Jan 2016 13:36:51 at styleguide.dev
+(winhttrack styleguide.dev -O "styleguide_httrack/stylegude_httrack" -%v )
+
+Information, Warnings and Errors reported for this mirror:
+note:	the hts-log.txt file, and hts-cache folder, may contain sensitive information,
+	such as username/password authentication for websites mirrored in this project
+	do not share these files/folders if you want these information to remain private
+
+
+HTTrack Website Copier/3.48-21 mirror complete in 39 seconds : 78 links scanned, 77 files written (1134588 bytes overall) [1164945 bytes received at 29870 bytes/sec], 19.5 requests per connection
+(No errors, 0 warnings, 0 messages)

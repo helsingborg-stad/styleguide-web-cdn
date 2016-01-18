@@ -1,0 +1,8 @@
+styleguide.dev -O "styleguide_httrack/stylegude_httrack" -%v
+File generated automatically on Mon, 18 Jan 2016 13:36:51, do NOT edit
+
+To update a mirror, just launch httrack without any parameters
+The existing cache will be used (and modified)
+To have other options, retype all parameters and launch HTTrack
+To continue an interrupted mirror, just launch httrack without any parameters
+

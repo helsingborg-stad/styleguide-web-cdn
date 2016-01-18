@@ -1,0 +1,534 @@
+<!doctype html>
+<html class="no-js" lang="sv">
+
+<!-- Mirrored from styleguide.dev/forms?theme=blue by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 18 Jan 2016 12:37:29 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Helsingborg Style Guide</title>
+    <meta name="description" content="">
+
+    <link rel="stylesheet" type="text/css" href="https://highlightjs.org/static/demo/styles/github-gist.css">
+    <link rel="stylesheet" type="text/css" href="dist/css/hbg-prime.dev.css">
+
+    <!--[if lt IE 9]>
+    <script type="text/javascript">
+        document.createElement('header');
+        document.createElement('nav');
+        document.createElement('section');
+        document.createElement('article');
+        document.createElement('aside');
+        document.createElement('footer');
+        document.createElement('hgroup');
+    </script>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <![endif]-->
+
+    <style>
+        .navbar {
+            margin-top: 0;
+            margin-bottom: 40px;
+        }
+
+        #logotype {
+            margin-top: 11px;
+        }
+
+        .markup-preview > .stripe {
+            display: inline-block;
+            height: 400px;
+        }
+
+        .states ul li + li {
+            margin-top: 5px;
+        }
+
+    </style>
+
+    <noscript>
+        <style>
+            .visible-noscript {display: block !important;}
+        </style>
+    </noscript>
+</head>
+<body class="theme-blue">
+    <nav class="navbar">
+        <div class="container">
+            <div class="grid">
+                <div class="grid-md-3">
+                    <a href="index.html"><img id="logotype" src="http://www.helsingborg.se/wp-content/themes/This-is-Helsingborg/assets/images/helsingborg-neg.svg" alt="Helsingborg Stad" height="35"></a>
+                </div>
+                <div class="grid-md-9">
+                    <ul class="nav nav-horizontal text-right">
+                        <li>
+                            <span class="dropdown">
+                                <span class="btn btn-primary dropdown-toggle">Change theme</span>
+                                <ul class="dropdown-menu">
+                                    <li><a href="forms0e99.html?theme=red">Red (default)</a></li>
+                                    <li><a href="formsca00.html?theme=blue">Blue</a></li>
+                                    <li><a href="formsaf91.html?theme=green">Green</a></li>
+                                    <li><a href="forms938c.html?theme=purple">Purple</a></li>
+                                </ul>
+                            </span>
+                        </li>
+                        <li><a href="http://www.helsingborg.se/">Visit Helsingborg.se</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="grid">
+            <div class="grid-md-3">
+                <nav>
+    <ul class="nav-aside">
+                    <li class="has-children ">
+                <a href="accessibility.html">Accessibility</a>
+                            </li>
+                    <li class="has-children ">
+                <a href="boxes.html">Boxes</a>
+                            </li>
+                    <li class="has-children ">
+                <a href="buttons.html">Buttons</a>
+                            </li>
+                    <li class="has-children current">
+                <a href="forms.html">Forms</a>
+                                    <ul class="sub-menu">
+                                            <li><a href="#basic-form">Basic Form</a></li>
+                                            <li><a href="#horizontal-form">Horizontal Form</a></li>
+                                            <li><a href="#input-group">Input Group</a></li>
+                                            <li><a href="#input">Input</a></li>
+                                            <li><a href="#checkboxes">Checkboxes</a></li>
+                                            <li><a href="#select">Select</a></li>
+                                        </ul>
+                            </li>
+                    <li class="has-children ">
+                <a href="gallery.html">Gallery</a>
+                            </li>
+                    <li class="has-children ">
+                <a href="hero.html">Hero</a>
+                            </li>
+                    <li class="has-children ">
+                <a href="layout.html">Layout</a>
+                            </li>
+                    <li class="has-children ">
+                <a href="navigation.html">Navigation</a>
+                            </li>
+                    <li class="has-children ">
+                <a href="search.html">Search</a>
+                            </li>
+                    <li class="has-children ">
+                <a href="special.html">Special</a>
+                            </li>
+                    <li class="has-children ">
+                <a href="stripe.html">Stripe</a>
+                            </li>
+                    <li class="has-children ">
+                <a href="tables.html">Tables</a>
+                            </li>
+                    <li class="has-children ">
+                <a href="typography.html">Typography</a>
+                            </li>
+                    <li class="has-children ">
+                <a href="utilities.html">Utilities</a>
+                            </li>
+            </ul>
+</nav>
+            </div>
+            <div class="grid-md-9">
+                            <section>
+            <h2 id="form" class="underline text-highlight">Form</h2>
+
+<section>
+    <article>
+        <p>Basic form</p>
+
+    </article>
+</section>
+
+
+<section class="example">
+    <h3>Example</h3>
+    <div class="markup-preview">
+        <form method="post" action="http://styleguide.dev/">
+    <div class="form-group">
+        <label for="name">Name</label>
+        <input type="text" name="name" id="name" placeholder="Name">
+    </div>
+    <div class="form-group">
+        <label for="email">Email address</label>
+        <input type="email" name="email" id="email" placeholder="Email">
+    </div>
+    <div class="form-group">
+        <label for="language">Place</label>
+        <select name="places" id="places">
+            <option value="Sundstorget">Sundstorget</option>
+            <option value="Stortorget">Stortorget</option>
+            <option value="Gustav Adolfs torg">Gustav Adolfs torg</option>
+            <option value="Hamntorget">Hamntorget</option>
+            <option value="Kungstorget">Kungstorget</option>
+            <option value="Henry Dunkers plats">Henry Dunkers plats</option>
+        </select>
+    </div>
+    <div class="form-group">
+        <input type="submit" class="btn btn-primary" value="Send">
+    </div>
+</form>
+    </div>
+
+    <pre><code class="html">&lt;form method=&quot;post&quot; action=&quot;/&quot;&gt;
+    &lt;div class=&quot;form-group&quot;&gt;
+        &lt;label for=&quot;name&quot;&gt;Name&lt;/label&gt;
+        &lt;input type=&quot;text&quot; name=&quot;name&quot; id=&quot;name&quot; placeholder=&quot;Name&quot;&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;form-group&quot;&gt;
+        &lt;label for=&quot;email&quot;&gt;Email address&lt;/label&gt;
+        &lt;input type=&quot;email&quot; name=&quot;email&quot; id=&quot;email&quot; placeholder=&quot;Email&quot;&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;form-group&quot;&gt;
+        &lt;label for=&quot;language&quot;&gt;Place&lt;/label&gt;
+        &lt;select name=&quot;places&quot; id=&quot;places&quot;&gt;
+            &lt;option value=&quot;Sundstorget&quot;&gt;Sundstorget&lt;/option&gt;
+            &lt;option value=&quot;Stortorget&quot;&gt;Stortorget&lt;/option&gt;
+            &lt;option value=&quot;Gustav Adolfs torg&quot;&gt;Gustav Adolfs torg&lt;/option&gt;
+            &lt;option value=&quot;Hamntorget&quot;&gt;Hamntorget&lt;/option&gt;
+            &lt;option value=&quot;Kungstorget&quot;&gt;Kungstorget&lt;/option&gt;
+            &lt;option value=&quot;Henry Dunkers plats&quot;&gt;Henry Dunkers plats&lt;/option&gt;
+        &lt;/select&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;form-group&quot;&gt;
+        &lt;input type=&quot;submit&quot; class=&quot;btn btn-primary&quot; value=&quot;Send&quot;&gt;
+    &lt;/div&gt;
+&lt;/form&gt;</code></pre>
+
+    <div class="code-source-file clearfix">
+        <div class="pull-left"><strong>Source file:</strong> ~/source/sass/component/form/general.scss</div>
+        <div class="pull-right">
+            <a class="link-item link-item-github" href="https://github.com/helsingborg-stad/styleguide-web/blob/master/source/sass/component/form/general.scss">View source on GitHub</a>
+        </div>
+    </div>
+</section>
+        </section>
+            <section>
+            <h2 id="horizontal-form" class="underline text-highlight">Horizontal form</h2>
+
+<section>
+    <article>
+        <p>A basic horizontal form</p>
+
+    </article>
+</section>
+
+
+<section class="example">
+    <h3>Example</h3>
+    <div class="markup-preview">
+        <form method="post" action="http://styleguide.dev/" class="form-horizontal">
+    <div class="form-group">
+        <label for="name">Name</label>
+        <input type="text" name="name" id="name" placeholder="Name">
+    </div>
+    <div class="form-group">
+        <label for="email">Email address</label>
+        <input type="email" name="email" id="email" placeholder="Email">
+    </div>
+    <div class="form-group">
+        <input type="submit" class="btn btn-primary" value="Send">
+    </div>
+</form>
+    </div>
+
+    <pre><code class="html">&lt;form method=&quot;post&quot; action=&quot;/&quot; class=&quot;form-horizontal&quot;&gt;
+    &lt;div class=&quot;form-group&quot;&gt;
+        &lt;label for=&quot;name&quot;&gt;Name&lt;/label&gt;
+        &lt;input type=&quot;text&quot; name=&quot;name&quot; id=&quot;name&quot; placeholder=&quot;Name&quot;&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;form-group&quot;&gt;
+        &lt;label for=&quot;email&quot;&gt;Email address&lt;/label&gt;
+        &lt;input type=&quot;email&quot; name=&quot;email&quot; id=&quot;email&quot; placeholder=&quot;Email&quot;&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;form-group&quot;&gt;
+        &lt;input type=&quot;submit&quot; class=&quot;btn btn-primary&quot; value=&quot;Send&quot;&gt;
+    &lt;/div&gt;
+&lt;/form&gt;</code></pre>
+
+    <div class="code-source-file clearfix">
+        <div class="pull-left"><strong>Source file:</strong> ~/source/sass/component/form/general.scss</div>
+        <div class="pull-right">
+            <a class="link-item link-item-github" href="https://github.com/helsingborg-stad/styleguide-web/blob/master/source/sass/component/form/general.scss">View source on GitHub</a>
+        </div>
+    </div>
+</section>
+        </section>
+            <section>
+            <h2 id="input-group" class="underline text-highlight">Input group</h2>
+
+<section>
+    <article>
+        <p>Grouped input combination. Use <code>.input-group-addon</code> to append text or use <code>.input-group-addon-btn</code> to append buttons.</p>
+
+    </article>
+</section>
+
+
+<section class="example">
+    <h3>Example</h3>
+    <div class="markup-preview">
+        <div class="input-group">
+    <span class="input-group-addon"><i class="fa fa-user"></i></span>
+    <input type="text" name="keyword" class="form-control">
+    <span class="input-group-addon-btn">
+        <input type="submit" class="btn btn-primary" value="Send">
+    </span>
+</div>
+    </div>
+
+    <pre><code class="html">&lt;div class=&quot;input-group&quot;&gt;
+    &lt;span class=&quot;input-group-addon&quot;&gt;&lt;i class=&quot;fa fa-user&quot;&gt;&lt;/i&gt;&lt;/span&gt;
+    &lt;input type=&quot;text&quot; name=&quot;keyword&quot; class=&quot;form-control&quot;&gt;
+    &lt;span class=&quot;input-group-addon-btn&quot;&gt;
+        &lt;input type=&quot;submit&quot; class=&quot;btn btn-primary&quot; value=&quot;Send&quot;&gt;
+    &lt;/span&gt;
+&lt;/div&gt;</code></pre>
+
+    <div class="code-source-file clearfix">
+        <div class="pull-left"><strong>Source file:</strong> ~/source/sass/component/form/input-group.scss</div>
+        <div class="pull-right">
+            <a class="link-item link-item-github" href="https://github.com/helsingborg-stad/styleguide-web/blob/master/source/sass/component/form/input-group.scss">View source on GitHub</a>
+        </div>
+    </div>
+</section>
+        </section>
+            <section>
+            <h2 id="inputs" class="underline text-highlight">Inputs</h2>
+
+<section>
+    <article>
+        <p>Input fields</p>
+
+    </article>
+</section>
+
+
+<section class="example">
+    <h3>Example</h3>
+    <div class="markup-preview">
+        <div class="form-group">
+    <label for="firstname">First name</label>
+    <input type="text" name="firstname" id="firstname" placeholder="First name">
+</div>
+<div class="form-group">
+    <label for="disabledInput">Disabled input</label>
+    <input type="text" name="disabledInput" id="disabledInput" placeholder="Disabled input[text]" disabled>
+</div>
+<div class="form-group">
+    <label for="textarea">Textarea</label>
+    <textarea id="textarea"></textarea>
+</div>
+    </div>
+
+    <pre><code class="html">&lt;div class=&quot;form-group&quot;&gt;
+    &lt;label for=&quot;firstname&quot;&gt;First name&lt;/label&gt;
+    &lt;input type=&quot;text&quot; name=&quot;firstname&quot; id=&quot;firstname&quot; placeholder=&quot;First name&quot;&gt;
+&lt;/div&gt;
+&lt;div class=&quot;form-group&quot;&gt;
+    &lt;label for=&quot;disabledInput&quot;&gt;Disabled input&lt;/label&gt;
+    &lt;input type=&quot;text&quot; name=&quot;disabledInput&quot; id=&quot;disabledInput&quot; placeholder=&quot;Disabled input[text]&quot; disabled&gt;
+&lt;/div&gt;
+&lt;div class=&quot;form-group&quot;&gt;
+    &lt;label for=&quot;textarea&quot;&gt;Textarea&lt;/label&gt;
+    &lt;textarea id=&quot;textarea&quot;&gt;&lt;/textarea&gt;
+&lt;/div&gt;</code></pre>
+
+    <div class="code-source-file clearfix">
+        <div class="pull-left"><strong>Source file:</strong> ~/source/sass/component/form/input.scss</div>
+        <div class="pull-right">
+            <a class="link-item link-item-github" href="https://github.com/helsingborg-stad/styleguide-web/blob/master/source/sass/component/form/input.scss">View source on GitHub</a>
+        </div>
+    </div>
+</section>
+        </section>
+            <section>
+            <h2 id="checkboxes-and-radiobuttons" class="underline text-highlight">Checkboxes and radiobuttons</h2>
+
+
+
+<section class="example">
+    <h3>Example</h3>
+    <div class="markup-preview">
+        <div class="form-group">
+    <label class="checkbox">
+        <input type="checkbox"> Check me
+    </label>
+    <label class="checkbox disabled">
+        <input type="checkbox" disabled> But you can't check me
+    </label>
+</div>
+<div class="form-group">
+    <label class="radio">
+        <input type="radio" name="radio"> Alternative 1
+    </label>
+    <label class="radio">
+        <input type="radio" name="radio"> Alternative 2
+    </label>
+</div>
+    </div>
+
+    <pre><code class="html">&lt;div class=&quot;form-group&quot;&gt;
+    &lt;label class=&quot;checkbox&quot;&gt;
+        &lt;input type=&quot;checkbox&quot;&gt; Check me
+    &lt;/label&gt;
+    &lt;label class=&quot;checkbox disabled&quot;&gt;
+        &lt;input type=&quot;checkbox&quot; disabled&gt; But you can&#039;t check me
+    &lt;/label&gt;
+&lt;/div&gt;
+&lt;div class=&quot;form-group&quot;&gt;
+    &lt;label class=&quot;radio&quot;&gt;
+        &lt;input type=&quot;radio&quot; name=&quot;radio&quot;&gt; Alternative 1
+    &lt;/label&gt;
+    &lt;label class=&quot;radio&quot;&gt;
+        &lt;input type=&quot;radio&quot; name=&quot;radio&quot;&gt; Alternative 2
+    &lt;/label&gt;
+&lt;/div&gt;</code></pre>
+
+    <div class="code-source-file clearfix">
+        <div class="pull-left"><strong>Source file:</strong> ~/source/sass/component/form/input.scss</div>
+        <div class="pull-right">
+            <a class="link-item link-item-github" href="https://github.com/helsingborg-stad/styleguide-web/blob/master/source/sass/component/form/input.scss">View source on GitHub</a>
+        </div>
+    </div>
+</section>
+        </section>
+            <section>
+            <h2 id="select" class="underline text-highlight">Select</h2>
+
+<section>
+    <article>
+        <p>Select field. Single and multiple choises.</p>
+
+    </article>
+</section>
+
+
+<section class="example">
+    <h3>Example</h3>
+    <div class="markup-preview">
+        <select name="places" id="places">
+    <option value="Sundstorget">Sundstorget</option>
+    <option value="Stortorget">Stortorget</option>
+    <option value="Gustav Adolfs torg">Gustav Adolfs torg</option>
+    <option value="Hamntorget">Hamntorget</option>
+    <option value="Kungstorget">Kungstorget</option>
+    <option value="Henry Dunkers plats">Henry Dunkers plats</option>
+</select>
+<select name="places" id="places" disabled>
+    <option value="Sundstorget">Sundstorget</option>
+    <option value="Stortorget">Stortorget</option>
+    <option value="Gustav Adolfs torg">Gustav Adolfs torg</option>
+    <option value="Hamntorget">Hamntorget</option>
+    <option value="Kungstorget">Kungstorget</option>
+    <option value="Henry Dunkers plats">Henry Dunkers plats</option>
+</select>
+<select name="places" id="places" multiple>
+    <option value="Sundstorget">Sundstorget</option>
+    <option value="Stortorget">Stortorget</option>
+    <option value="Gustav Adolfs torg">Gustav Adolfs torg</option>
+    <option value="Hamntorget">Hamntorget</option>
+    <option value="Kungstorget">Kungstorget</option>
+    <option value="Henry Dunkers plats">Henry Dunkers plats</option>
+</select>
+    </div>
+
+    <pre><code class="html">&lt;select name=&quot;places&quot; id=&quot;places&quot;&gt;
+    &lt;option value=&quot;Sundstorget&quot;&gt;Sundstorget&lt;/option&gt;
+    &lt;option value=&quot;Stortorget&quot;&gt;Stortorget&lt;/option&gt;
+    &lt;option value=&quot;Gustav Adolfs torg&quot;&gt;Gustav Adolfs torg&lt;/option&gt;
+    &lt;option value=&quot;Hamntorget&quot;&gt;Hamntorget&lt;/option&gt;
+    &lt;option value=&quot;Kungstorget&quot;&gt;Kungstorget&lt;/option&gt;
+    &lt;option value=&quot;Henry Dunkers plats&quot;&gt;Henry Dunkers plats&lt;/option&gt;
+&lt;/select&gt;
+&lt;select name=&quot;places&quot; id=&quot;places&quot; disabled&gt;
+    &lt;option value=&quot;Sundstorget&quot;&gt;Sundstorget&lt;/option&gt;
+    &lt;option value=&quot;Stortorget&quot;&gt;Stortorget&lt;/option&gt;
+    &lt;option value=&quot;Gustav Adolfs torg&quot;&gt;Gustav Adolfs torg&lt;/option&gt;
+    &lt;option value=&quot;Hamntorget&quot;&gt;Hamntorget&lt;/option&gt;
+    &lt;option value=&quot;Kungstorget&quot;&gt;Kungstorget&lt;/option&gt;
+    &lt;option value=&quot;Henry Dunkers plats&quot;&gt;Henry Dunkers plats&lt;/option&gt;
+&lt;/select&gt;
+&lt;select name=&quot;places&quot; id=&quot;places&quot; multiple&gt;
+    &lt;option value=&quot;Sundstorget&quot;&gt;Sundstorget&lt;/option&gt;
+    &lt;option value=&quot;Stortorget&quot;&gt;Stortorget&lt;/option&gt;
+    &lt;option value=&quot;Gustav Adolfs torg&quot;&gt;Gustav Adolfs torg&lt;/option&gt;
+    &lt;option value=&quot;Hamntorget&quot;&gt;Hamntorget&lt;/option&gt;
+    &lt;option value=&quot;Kungstorget&quot;&gt;Kungstorget&lt;/option&gt;
+    &lt;option value=&quot;Henry Dunkers plats&quot;&gt;Henry Dunkers plats&lt;/option&gt;
+&lt;/select&gt;</code></pre>
+
+    <div class="code-source-file clearfix">
+        <div class="pull-left"><strong>Source file:</strong> ~/source/sass/component/form/select.scss</div>
+        <div class="pull-right">
+            <a class="link-item link-item-github" href="https://github.com/helsingborg-stad/styleguide-web/blob/master/source/sass/component/form/select.scss">View source on GitHub</a>
+        </div>
+    </div>
+</section>
+        </section>
+                </div>
+        </div>
+    </div>
+
+    <footer class="main-footer">
+        <div class="container">
+            <div class="grid">
+                <div class="grid-lg-12">
+                    <a href="index.html" class="logotype"><img src="http://www.helsingborg.se/wp-content/themes/This-is-Helsingborg/assets/images/helsingborg-neg.svg" alt="Helsingborg Stad" width="239" height="68"></a>
+                </div>
+            </div>
+            <div class="grid">
+                <div class="grid-lg-6">
+                    <ul>
+                        <li><strong>Telefonnummer</strong></li>
+                        <li>Helsingborg kontaktcenter: 042-10 50 00</li>
+                    </ul>
+                    <ul>
+                        <li><strong>E-post</strong></li>
+                        <li><a href="mailto:kontaktcenter@helsingborg.se" class="link-item link-item-light">kontaktcenter@helsingborg.se</a></li>
+                    </ul>
+                </div>
+                <div class="grid-lg-6">
+                    <ul>
+                        <li><strong>Postadress</strong></li>
+                        <li>Namn på verksamheten<br>251 89 Helsingborg</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.0.0/highlight.min.js"></script>
+    <script src="dist/js/hbg-prime.min.js"></script>
+
+    <script>
+        $(function(){
+            $('pre code').each(function(){
+                var lines = $(this).text().split('\n').length - 1;
+                var $numbering = $('<ul/>').addClass('line-numbers');
+                $(this)
+                    .addClass('has-numbering')
+                    .parent()
+                    .prepend($numbering);
+                for (i = 1; i <= lines + 1; i++){
+                    $numbering.append($('<li/>').text(i));
+                }
+            });
+            hljs.initHighlightingOnLoad();
+        });
+    </script>
+</body>
+
+<!-- Mirrored from styleguide.dev/forms?theme=blue by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 18 Jan 2016 12:37:29 GMT -->
+</html>
