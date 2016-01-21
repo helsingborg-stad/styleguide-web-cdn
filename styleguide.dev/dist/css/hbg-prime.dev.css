@@ -100,6 +100,9 @@
   .theme-purple .text-highlight, .theme-purple .box-index-title {
     color: #712082; }
 
+.text-dark-gray {
+  color: #464646; }
+
 .text-underline {
   text-decoration: underline; }
 
@@ -204,6 +207,7 @@ small,
     margin-left: -20px;
     text-decoration: none; }
 
+/* External */
 .link-item-outbound::before {
   font-family: FontAwesome;
   speak: none;
@@ -216,6 +220,7 @@ small,
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
 
+/* Domains */
 .link-item-github::before,
 .link-item[href*="github.com"]::before {
   font-family: FontAwesome;
@@ -229,8 +234,9 @@ small,
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
 
+/* Filetypes */
 .link-item-pdf::before,
-.link-item[href*=".pdf"]::before {
+.link-item[href$=".pdf"]::before {
   font-family: FontAwesome;
   speak: none;
   font-style: normal;
@@ -243,8 +249,8 @@ small,
   -moz-osx-font-smoothing: grayscale; }
 
 .link-item-doc::before,
-.link-item[href*=".doc"]::before,
-.link-item[href*=".docx"]::before {
+.link-item[href$=".doc"]::before,
+.link-item[href$=".docx"]::before {
   font-family: FontAwesome;
   speak: none;
   font-style: normal;
@@ -257,8 +263,8 @@ small,
   -moz-osx-font-smoothing: grayscale; }
 
 .link-item-ppt::before,
-.link-item[href*=".ppt"]::before,
-.link-item[href*=".pptx"]::before {
+.link-item[href$=".ppt"]::before,
+.link-item[href$=".pptx"]::before {
   font-family: FontAwesome;
   speak: none;
   font-style: normal;
@@ -271,8 +277,8 @@ small,
   -moz-osx-font-smoothing: grayscale; }
 
 .link-item-xls::before,
-.link-item[href*=".xls"]::before,
-.link-item[href*=".xlsx"]::before {
+.link-item[href$=".xls"]::before,
+.link-item[href$=".xlsx"]::before {
   font-family: FontAwesome;
   speak: none;
   font-style: normal;
@@ -285,8 +291,8 @@ small,
   -moz-osx-font-smoothing: grayscale; }
 
 .link-item-audio::before,
-.link-item[href*=".mp3"]::before,
-.link-item[href*=".wav"]::before {
+.link-item[href$=".mp3"]::before,
+.link-item[href$=".wav"]::before {
   font-family: FontAwesome;
   speak: none;
   font-style: normal;
@@ -299,9 +305,9 @@ small,
   -moz-osx-font-smoothing: grayscale; }
 
 .link-item-archive::before,
-.link-item[href*=".zip"]::before,
-.link-item[href*=".rar"]::before,
-.link-item[href*=".tar"]::before {
+.link-item[href$=".zip"]::before,
+.link-item[href$=".rar"]::before,
+.link-item[href$=".tar"]::before {
   font-family: FontAwesome;
   speak: none;
   font-style: normal;
@@ -314,13 +320,13 @@ small,
   -moz-osx-font-smoothing: grayscale; }
 
 .link-item-image::before,
-.link-item[href*=".jpg"]::before,
-.link-item[href*=".png"]::before,
-.link-item[href*=".gif"]::before,
-.link-item[href*=".jpeg"]::before,
-.link-item[href*=".bmp"]::before,
-.link-item[href*=".svg"]::before,
-.link-item[href*=".eps"]::before {
+.link-item[href$=".jpg"]::before,
+.link-item[href$=".png"]::before,
+.link-item[href$=".gif"]::before,
+.link-item[href$=".jpeg"]::before,
+.link-item[href$=".bmp"]::before,
+.link-item[href$=".svg"]::before,
+.link-item[href$=".eps"]::before {
   font-family: FontAwesome;
   speak: none;
   font-style: normal;
@@ -333,10 +339,10 @@ small,
   -moz-osx-font-smoothing: grayscale; }
 
 .link-item-text::before,
-.link-item[href*=".txt"]::before,
-.link-item[href*=".md"]::before,
-.link-item[href*=".mkdown"]::before,
-.link-item[href*=".markdown"]::before {
+.link-item[href$=".txt"]::before,
+.link-item[href$=".md"]::before,
+.link-item[href$=".mkdown"]::before,
+.link-item[href$=".markdown"]::before {
   font-family: FontAwesome;
   speak: none;
   font-style: normal;
@@ -349,18 +355,18 @@ small,
   -moz-osx-font-smoothing: grayscale; }
 
 .link-item-video::before,
-.link-item[href*=".mpg"]::before,
-.link-item[href*=".m4v"]::before,
-.link-item[href*=".mpeg"]::before,
-.link-item[href*=".mov"]::before,
-.link-item[href*=".avi"]::before,
-.link-item[href*=".mp4"]::before,
-.link-item[href*=".ogg"]::before,
-.link-item[href*=".ogv"]::before,
-.link-item[href*=".webm"]::before,
-.link-item[href*=".mkv"]::before,
-.link-item[href*=".flv"]::before,
-.link-item[href*=".wmw"]::before {
+.link-item[href$=".mpg"]::before,
+.link-item[href$=".m4v"]::before,
+.link-item[href$=".mpeg"]::before,
+.link-item[href$=".mov"]::before,
+.link-item[href$=".avi"]::before,
+.link-item[href$=".mp4"]::before,
+.link-item[href$=".ogg"]::before,
+.link-item[href$=".ogv"]::before,
+.link-item[href$=".webm"]::before,
+.link-item[href$=".mkv"]::before,
+.link-item[href$=".flv"]::before,
+.link-item[href$=".wmw"]::before {
   font-family: FontAwesome;
   speak: none;
   font-style: normal;
@@ -374,6 +380,31 @@ small,
 
 .link-item-light::before {
   color: rgba(255, 255, 255, 0.7); }
+
+/* Prefixes (links only) */
+.link-item[href^='tel:']::before {
+  font-family: FontAwesome;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  content: "";
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+.link-item[href^='mailto:']::before {
+  font-family: FontAwesome;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  content: "";
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
 
 .no-select, .disabled:not(input):not(select):not(.checkbox):not(.radio), input[type="text"]:not(input):not(select):not(.checkbox):not(.radio):disabled,
 input[type="password"]:not(input):not(select):not(.checkbox):not(.radio):disabled,
@@ -2307,11 +2338,15 @@ input[type="button"].btn::-moz-focus-inner {
 
 .box {
   display: block;
-  padding: 5px; }
+  padding: 5px;
+  margin-bottom: 15px; }
   .box p + p {
     margin-top: 10px; }
+  .box li .date {
+    margin-top: 3px; }
 
 .box + .box {
+  margin-bottom: 0;
   margin-top: 15px; }
 
 .box-content {
@@ -2440,6 +2475,41 @@ input[type="button"].btn::-moz-focus-inner {
   .theme-purple .box-news {
     background-color: #712082; }
 
+.box-card {
+  display: block;
+  background-color: #fff;
+  border: 1px solid #e7e5e1;
+  color: #252525; }
+  .box-card h1, .box-card h2, .box-card h3, .box-card h4, .box-card h5, .box-card h6 {
+    padding-bottom: 0; }
+  .box-card ul li:not(.description),
+  .box-card ul li:not(.description) a {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis; }
+  .box-card .card-title {
+    margin-bottom: 10px; }
+  .box-card .description {
+    margin-top: 10px; }
+  .box-card:hover {
+    text-decoration: none;
+    background-color: #f6f5f2; }
+  .box-card.vertical-card {
+    overflow: hidden; }
+    .box-card.vertical-card .box-image {
+      float: left;
+      width: 180px; }
+    @media screen and (min-width: 767px) {
+      .box-card.vertical-card .box-content {
+        margin-left: 180px; }
+        .box-card.vertical-card .box-content ul, .box-card.vertical-card .box-content h1, .box-card.vertical-card .box-content h2, .box-card.vertical-card .box-content h3, .box-card.vertical-card .box-content h4, .box-card.vertical-card .box-content h5, .box-card.vertical-card .box-content h6 {
+          padding-left: 10px; } }
+  @media screen and (max-width: 767px) {
+    .box-card .box-image {
+      display: none; }
+    .box-card .box-content {
+      margin-left: 0; } }
+
 /* Gallery styling */
 .image-gallery {
   list-style: none;
@@ -2458,8 +2528,13 @@ input[type="button"].btn::-moz-focus-inner {
     .image-gallery .popover img {
       display: none; }
 
+/* Gallery overflow */
+.gallery-hidden {
+  overflow: hidden;
+  position: relative; }
+
 /* The lightbox */
-#lightbox-modal {
+#lightbox {
   position: absolute;
   top: 0;
   right: 0;
@@ -2468,47 +2543,47 @@ input[type="button"].btn::-moz-focus-inner {
   background: rgba(0, 0, 0, 0.7);
   z-index: 99999;
   overflow: auto; }
-  #lightbox-modal #lightbox-image-wrapper {
+  #lightbox #lightbox-image-wrapper {
     position: relative;
     max-width: 80%;
     max-height: 80%;
     line-height: 0;
     margin: 5% auto; }
     @media screen and (min-width: 0) and (max-width: 468px) {
-      #lightbox-modal #lightbox-image-wrapper {
+      #lightbox #lightbox-image-wrapper {
         width: 100%;
         height: auto;
         max-width: initial;
         max-height: initial; } }
     @media screen and (min-width: 469px) and (max-width: 768px) {
-      #lightbox-modal #lightbox-image-wrapper {
+      #lightbox #lightbox-image-wrapper {
         width: 90%;
         height: auto;
         max-width: initial;
         max-height: initial; } }
     @media screen and (min-width: 767px) and (max-width: 960px) {
-      #lightbox-modal #lightbox-image-wrapper {
+      #lightbox #lightbox-image-wrapper {
         width: 80%;
         height: auto;
         max-width: initial;
         max-height: initial; } }
     @media screen and (min-width: 959px) {
-      #lightbox-modal #lightbox-image-wrapper {
+      #lightbox #lightbox-image-wrapper {
         width: 70%;
         height: auto;
         max-width: initial;
         max-height: initial; } }
-    #lightbox-modal #lightbox-image-wrapper img {
+    #lightbox #lightbox-image-wrapper img {
       max-width: 100%;
       max-height: 100%; }
-    #lightbox-modal #lightbox-image-wrapper:after {
+    #lightbox #lightbox-image-wrapper:after {
       position: relative;
       content: attr(data-caption);
       line-height: 1.6;
       padding: 10px;
       display: block;
       background-color: #fff; }
-    #lightbox-modal #lightbox-image-wrapper .btn-close {
+    #lightbox #lightbox-image-wrapper .btn-close {
       position: absolute;
       top: 0;
       right: 0;
@@ -2522,7 +2597,7 @@ input[type="button"].btn::-moz-focus-inner {
       border: .2em solid #fff;
       box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
       background: #f6f5f2; }
-      #lightbox-modal #lightbox-image-wrapper .btn-close:after {
+      #lightbox #lightbox-image-wrapper .btn-close:after {
         position: absolute;
         top: 0;
         right: 0;
@@ -2533,7 +2608,7 @@ input[type="button"].btn::-moz-focus-inner {
         line-height: 1;
         color: #000; }
       @media screen and (min-width: 0) and (max-width: 468px) {
-        #lightbox-modal #lightbox-image-wrapper .btn-close {
+        #lightbox #lightbox-image-wrapper .btn-close {
           top: 1.5em;
           right: 1.5em;
           width: 1.8em;
