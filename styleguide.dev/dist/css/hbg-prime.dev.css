@@ -89,17 +89,43 @@
 .text-xl {
   font-size: 1.5em; }
 
-.text-highlight, .box-index-title {
+.text-highlight, .box-index-title, .widget_calendar caption, .widget_archive h2.footer-title, .widget_archive .widget_calendar caption.footer-title, .widget_calendar .widget_archive caption.footer-title,
+.widget_categories h2.footer-title,
+.widget_categories .widget_calendar caption.footer-title, .widget_calendar
+.widget_categories caption.footer-title,
+.widget_meta h2.footer-title,
+.widget_meta .widget_calendar caption.footer-title, .widget_calendar
+.widget_meta caption.footer-title, .widget_nav_menu, .widget_rss h2 a:first-child, .widget_rss .widget_calendar caption a:first-child, .widget_calendar .widget_rss caption a:first-child, .widget_search, .widget_text h2 {
   color: #333333; }
-  .theme-gray .text-highlight, .theme-gray .box-index-title {
+  .theme-gray .text-highlight, .theme-gray .box-index-title, .theme-gray .widget_calendar caption, .widget_calendar .theme-gray caption, .theme-gray .widget_archive h2.footer-title, .widget_archive .theme-gray h2.footer-title, .theme-gray
+  .widget_categories h2.footer-title,
+  .widget_categories .theme-gray h2.footer-title, .theme-gray
+  .widget_meta h2.footer-title,
+  .widget_meta .theme-gray h2.footer-title, .theme-gray .widget_nav_menu, .theme-gray .widget_rss h2 a:first-child, .widget_rss h2 .theme-gray a:first-child, .theme-gray .widget_rss .widget_calendar caption a:first-child, .widget_rss .widget_calendar caption .theme-gray a:first-child, .theme-gray .widget_calendar .widget_rss caption a:first-child, .widget_calendar .widget_rss caption .theme-gray a:first-child, .theme-gray .widget_search, .theme-gray .widget_text h2, .widget_text .theme-gray h2 {
     color: #333333; }
-  .theme-red .text-highlight, .theme-red .box-index-title {
+  .theme-red .text-highlight, .theme-red .box-index-title, .theme-red .widget_calendar caption, .widget_calendar .theme-red caption, .theme-red .widget_archive h2.footer-title, .widget_archive .theme-red h2.footer-title, .theme-red
+  .widget_categories h2.footer-title,
+  .widget_categories .theme-red h2.footer-title, .theme-red
+  .widget_meta h2.footer-title,
+  .widget_meta .theme-red h2.footer-title, .theme-red .widget_nav_menu, .theme-red .widget_rss h2 a:first-child, .widget_rss h2 .theme-red a:first-child, .theme-red .widget_rss .widget_calendar caption a:first-child, .widget_rss .widget_calendar caption .theme-red a:first-child, .theme-red .widget_calendar .widget_rss caption a:first-child, .widget_calendar .widget_rss caption .theme-red a:first-child, .theme-red .widget_search, .theme-red .widget_text h2, .widget_text .theme-red h2 {
     color: #cb0050; }
-  .theme-blue .text-highlight, .theme-blue .box-index-title {
+  .theme-blue .text-highlight, .theme-blue .box-index-title, .theme-blue .widget_calendar caption, .widget_calendar .theme-blue caption, .theme-blue .widget_archive h2.footer-title, .widget_archive .theme-blue h2.footer-title, .theme-blue
+  .widget_categories h2.footer-title,
+  .widget_categories .theme-blue h2.footer-title, .theme-blue
+  .widget_meta h2.footer-title,
+  .widget_meta .theme-blue h2.footer-title, .theme-blue .widget_nav_menu, .theme-blue .widget_rss h2 a:first-child, .widget_rss h2 .theme-blue a:first-child, .theme-blue .widget_rss .widget_calendar caption a:first-child, .widget_rss .widget_calendar caption .theme-blue a:first-child, .theme-blue .widget_calendar .widget_rss caption a:first-child, .widget_calendar .widget_rss caption .theme-blue a:first-child, .theme-blue .widget_search, .theme-blue .widget_text h2, .widget_text .theme-blue h2 {
     color: #0069b4; }
-  .theme-green .text-highlight, .theme-green .box-index-title {
+  .theme-green .text-highlight, .theme-green .box-index-title, .theme-green .widget_calendar caption, .widget_calendar .theme-green caption, .theme-green .widget_archive h2.footer-title, .widget_archive .theme-green h2.footer-title, .theme-green
+  .widget_categories h2.footer-title,
+  .widget_categories .theme-green h2.footer-title, .theme-green
+  .widget_meta h2.footer-title,
+  .widget_meta .theme-green h2.footer-title, .theme-green .widget_nav_menu, .theme-green .widget_rss h2 a:first-child, .widget_rss h2 .theme-green a:first-child, .theme-green .widget_rss .widget_calendar caption a:first-child, .widget_rss .widget_calendar caption .theme-green a:first-child, .theme-green .widget_calendar .widget_rss caption a:first-child, .widget_calendar .widget_rss caption .theme-green a:first-child, .theme-green .widget_search, .theme-green .widget_text h2, .widget_text .theme-green h2 {
     color: #11a636; }
-  .theme-purple .text-highlight, .theme-purple .box-index-title {
+  .theme-purple .text-highlight, .theme-purple .box-index-title, .theme-purple .widget_calendar caption, .widget_calendar .theme-purple caption, .theme-purple .widget_archive h2.footer-title, .widget_archive .theme-purple h2.footer-title, .theme-purple
+  .widget_categories h2.footer-title,
+  .widget_categories .theme-purple h2.footer-title, .theme-purple
+  .widget_meta h2.footer-title,
+  .widget_meta .theme-purple h2.footer-title, .theme-purple .widget_nav_menu, .theme-purple .widget_rss h2 a:first-child, .widget_rss h2 .theme-purple a:first-child, .theme-purple .widget_rss .widget_calendar caption a:first-child, .widget_rss .widget_calendar caption .theme-purple a:first-child, .theme-purple .widget_calendar .widget_rss caption a:first-child, .widget_calendar .widget_rss caption .theme-purple a:first-child, .theme-purple .widget_search, .theme-purple .widget_text h2, .widget_text .theme-purple h2 {
     color: #712082; }
 
 .text-dark-gray {
@@ -564,7 +590,8 @@ input[type="radio"]:disabled, select:disabled {
     content: "";
     width: 100%;
     padding-top: 56.25%; }
-  .ratio-16-9 > .content {
+  .ratio-16-9 > .content,
+  .ratio-16-9 > iframe {
     position: absolute;
     top: 0;
     left: 0;
@@ -573,8 +600,101 @@ input[type="radio"]:disabled, select:disabled {
     width: 100% !important;
     height: 100% !important; }
 
+/* =WordPress Core
+-------------------------------------------------------------- */
+.alignnone {
+  margin: 5px 20px 20px 0; }
+
+.aligncenter,
+div.aligncenter {
+  display: block;
+  margin: 5px auto 5px auto; }
+
+.alignright {
+  float: right;
+  margin: 5px 0 20px 20px; }
+
+.alignleft {
+  float: left;
+  margin: 5px 20px 20px 0; }
+
+a img.alignright {
+  float: right;
+  margin: 5px 0 20px 20px; }
+
+a img.alignnone {
+  margin: 5px 20px 20px 0; }
+
+a img.alignleft {
+  float: left;
+  margin: 5px 20px 20px 0; }
+
+a img.aligncenter {
+  display: block;
+  margin-left: auto;
+  margin-right: auto; }
+
+.wp-caption {
+  background: #fff;
+  border: 1px solid #f0f0f0;
+  max-width: 96%;
+  /* Image does not overflow the content area */
+  padding: 5px 3px 10px;
+  text-align: center; }
+
+.wp-caption.alignnone {
+  margin: 5px 20px 20px 0; }
+
+.wp-caption.alignleft {
+  margin: 5px 20px 20px 0; }
+
+.wp-caption.alignright {
+  margin: 5px 0 20px 20px; }
+
+.wp-caption img {
+  border: 0 none;
+  height: auto;
+  margin: 0;
+  max-width: 98.5%;
+  padding: 0;
+  width: auto; }
+
+.wp-caption p.wp-caption-text {
+  font-size: 11px;
+  line-height: 17px;
+  margin: 0;
+  padding: 0 4px 5px; }
+
+/* Text meant only for screen readers. */
+.screen-reader-text {
+  clip: rect(1px, 1px, 1px, 1px);
+  position: absolute !important;
+  height: 1px;
+  width: 1px;
+  overflow: hidden; }
+
+.screen-reader-text:focus {
+  background-color: #f1f1f1;
+  border-radius: 3px;
+  box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+  clip: auto !important;
+  color: #21759b;
+  display: block;
+  font-size: 14px;
+  font-size: 0.875rem;
+  font-weight: bold;
+  height: auto;
+  left: 5px;
+  line-height: normal;
+  padding: 15px 23px 14px;
+  text-decoration: none;
+  top: 5px;
+  width: auto;
+  z-index: 100000;
+  /* Above WP toolbar. */ }
+
 html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+h1, h2, .widget_calendar caption, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
 del, dfn, em, img, ins, kbd, q, s, samp,
 small, strike, strong, sub, sup, tt, var,
@@ -1026,7 +1146,8 @@ section + section {
   clear: both; }
 
 h1, .h1,
-h2, .h2,
+h2,
+.widget_calendar caption, .h2,
 h3, .h3,
 h4, .h4,
 h5, .h5,
@@ -1036,7 +1157,8 @@ h6, .h6 {
   padding-bottom: .3em;
   margin: 0; }
   h1.underline, .h1.underline,
-  h2.underline, .h2.underline,
+  h2.underline,
+  .widget_calendar caption.underline, .h2.underline,
   h3.underline, .h3.underline,
   h4.underline, .h4.underline,
   h5.underline, .h5.underline,
@@ -1060,7 +1182,7 @@ h1, .h1 {
   .theme-purple h1, .theme-purple .h1 {
     color: #7b075e; }
 
-h2, .h2 {
+h2, .widget_calendar caption, .h2 {
   font-size: 1.8rem; }
 
 h3, .h3 {
@@ -1095,12 +1217,16 @@ article b {
 article p + p,
 article p + h1,
 article p + h2,
+article .widget_calendar p + caption, .widget_calendar
+article p + caption,
 article p + h3,
 article p + h4,
 article p + h5,
 article p + h6,
 article p + pre,
 article ol + h2,
+article .widget_calendar ol + caption, .widget_calendar
+article ol + caption,
 article ol + h3,
 article ol + h4,
 article ol + h5,
@@ -1108,6 +1234,8 @@ article ol + h6,
 article ol + pre,
 article ol + p,
 article ul + h2,
+article .widget_calendar ul + caption, .widget_calendar
+article ul + caption,
 article ul + h3,
 article ul + h4,
 article ul + h5,
@@ -1115,6 +1243,8 @@ article ul + h6,
 article ul + pre,
 article ul + p,
 article blockquote + h2,
+article .widget_calendar blockquote + caption, .widget_calendar
+article blockquote + caption,
 article blockquote + h3,
 article blockquote + h4,
 article blockquote + h5,
@@ -1791,16 +1921,20 @@ input[type="button"].btn::-moz-focus-inner {
     .breadcrumbs a:hover, .breadcrumbs a:focus {
       text-decoration: underline; }
 
-.pagination {
+.pagination,
+.page-numbers {
   font-size: 0; }
-  .pagination li {
+  .pagination li,
+  .page-numbers li {
     display: inline-block;
     font-size: 17px; }
-    .pagination li + li {
+    .pagination li + li,
+    .page-numbers li + li {
       margin-left: 5px; }
-  .pagination a.page,
-  .pagination a.next,
-  .pagination a.previous {
+  .pagination a,
+  .pagination .current,
+  .page-numbers a,
+  .page-numbers .current {
     display: block;
     border: 1px solid #e7e5e1;
     font-size: .85em;
@@ -1810,75 +1944,99 @@ input[type="button"].btn::-moz-focus-inner {
     padding-right: 8px;
     height: 30px;
     line-height: 30px; }
-    .pagination a.page:hover, .pagination a.page:focus, .pagination a.page.current,
-    .pagination a.next:hover,
-    .pagination a.next:focus,
-    .pagination a.next.current,
-    .pagination a.previous:hover,
-    .pagination a.previous:focus,
-    .pagination a.previous.current {
+    .pagination a:hover, .pagination a:focus, .pagination a.current,
+    .pagination .current:hover,
+    .pagination .current:focus,
+    .pagination .current.current,
+    .page-numbers a:hover,
+    .page-numbers a:focus,
+    .page-numbers a.current,
+    .page-numbers .current:hover,
+    .page-numbers .current:focus,
+    .page-numbers .current.current {
       background-color: #333333;
       border-color: #333333;
       color: #fff;
       text-decoration: none; }
-      .theme-gray .pagination a.page:hover, .theme-gray .pagination a.page:focus, .theme-gray .pagination a.page.current, .theme-gray
-      .pagination a.next:hover, .theme-gray
-      .pagination a.next:focus, .theme-gray
-      .pagination a.next.current, .theme-gray
-      .pagination a.previous:hover, .theme-gray
-      .pagination a.previous:focus, .theme-gray
-      .pagination a.previous.current {
+      .theme-gray .pagination a:hover, .theme-gray .pagination a:focus, .theme-gray .pagination a.current, .theme-gray
+      .pagination .current:hover, .theme-gray
+      .pagination .current:focus, .theme-gray
+      .pagination .current.current, .theme-gray
+      .page-numbers a:hover, .theme-gray
+      .page-numbers a:focus, .theme-gray
+      .page-numbers a.current, .theme-gray
+      .page-numbers .current:hover, .theme-gray
+      .page-numbers .current:focus, .theme-gray
+      .page-numbers .current.current {
         background-color: #333333;
         border-color: #333333;
         color: #fff; }
-      .theme-red .pagination a.page:hover, .theme-red .pagination a.page:focus, .theme-red .pagination a.page.current, .theme-red
-      .pagination a.next:hover, .theme-red
-      .pagination a.next:focus, .theme-red
-      .pagination a.next.current, .theme-red
-      .pagination a.previous:hover, .theme-red
-      .pagination a.previous:focus, .theme-red
-      .pagination a.previous.current {
+      .theme-red .pagination a:hover, .theme-red .pagination a:focus, .theme-red .pagination a.current, .theme-red
+      .pagination .current:hover, .theme-red
+      .pagination .current:focus, .theme-red
+      .pagination .current.current, .theme-red
+      .page-numbers a:hover, .theme-red
+      .page-numbers a:focus, .theme-red
+      .page-numbers a.current, .theme-red
+      .page-numbers .current:hover, .theme-red
+      .page-numbers .current:focus, .theme-red
+      .page-numbers .current.current {
         background-color: #cb0050;
         border-color: #cb0050;
         color: #fff; }
-      .theme-blue .pagination a.page:hover, .theme-blue .pagination a.page:focus, .theme-blue .pagination a.page.current, .theme-blue
-      .pagination a.next:hover, .theme-blue
-      .pagination a.next:focus, .theme-blue
-      .pagination a.next.current, .theme-blue
-      .pagination a.previous:hover, .theme-blue
-      .pagination a.previous:focus, .theme-blue
-      .pagination a.previous.current {
+      .theme-blue .pagination a:hover, .theme-blue .pagination a:focus, .theme-blue .pagination a.current, .theme-blue
+      .pagination .current:hover, .theme-blue
+      .pagination .current:focus, .theme-blue
+      .pagination .current.current, .theme-blue
+      .page-numbers a:hover, .theme-blue
+      .page-numbers a:focus, .theme-blue
+      .page-numbers a.current, .theme-blue
+      .page-numbers .current:hover, .theme-blue
+      .page-numbers .current:focus, .theme-blue
+      .page-numbers .current.current {
         background-color: #0069b4;
         border-color: #0069b4;
         color: #fff; }
-      .theme-green .pagination a.page:hover, .theme-green .pagination a.page:focus, .theme-green .pagination a.page.current, .theme-green
-      .pagination a.next:hover, .theme-green
-      .pagination a.next:focus, .theme-green
-      .pagination a.next.current, .theme-green
-      .pagination a.previous:hover, .theme-green
-      .pagination a.previous:focus, .theme-green
-      .pagination a.previous.current {
+      .theme-green .pagination a:hover, .theme-green .pagination a:focus, .theme-green .pagination a.current, .theme-green
+      .pagination .current:hover, .theme-green
+      .pagination .current:focus, .theme-green
+      .pagination .current.current, .theme-green
+      .page-numbers a:hover, .theme-green
+      .page-numbers a:focus, .theme-green
+      .page-numbers a.current, .theme-green
+      .page-numbers .current:hover, .theme-green
+      .page-numbers .current:focus, .theme-green
+      .page-numbers .current.current {
         background-color: #11a636;
         border-color: #11a636;
         color: #fff; }
-      .theme-purple .pagination a.page:hover, .theme-purple .pagination a.page:focus, .theme-purple .pagination a.page.current, .theme-purple
-      .pagination a.next:hover, .theme-purple
-      .pagination a.next:focus, .theme-purple
-      .pagination a.next.current, .theme-purple
-      .pagination a.previous:hover, .theme-purple
-      .pagination a.previous:focus, .theme-purple
-      .pagination a.previous.current {
+      .theme-purple .pagination a:hover, .theme-purple .pagination a:focus, .theme-purple .pagination a.current, .theme-purple
+      .pagination .current:hover, .theme-purple
+      .pagination .current:focus, .theme-purple
+      .pagination .current.current, .theme-purple
+      .page-numbers a:hover, .theme-purple
+      .page-numbers a:focus, .theme-purple
+      .page-numbers a.current, .theme-purple
+      .page-numbers .current:hover, .theme-purple
+      .page-numbers .current:focus, .theme-purple
+      .page-numbers .current.current {
         background-color: #712082;
         border-color: #712082;
         color: #fff; }
-  .pagination a.page {
+  .pagination a:not(.next):not(.prev),
+  .page-numbers a:not(.next):not(.prev) {
     width: 30px;
     height: 30px;
     line-height: 30px;
     padding: 0; }
-  .pagination .ellipsis:after {
+  .pagination .ellipsis:after,
+  .page-numbers .ellipsis:after {
     content: "…";
     display: inline-block; }
+  .pagination .dots,
+  .page-numbers .dots {
+    display: block;
+    font-size: .85em; }
 
 .tags {
   display: block;
@@ -1941,7 +2099,7 @@ input[type="button"].btn::-moz-focus-inner {
   padding: 1em;
   border-bottom: 1px solid #e7e5e1;
   position: relative; }
-  .modal-header h1, .modal-header h2, .modal-header h3, .modal-header h4, .modal-header h5, .modal-header h6 {
+  .modal-header h1, .modal-header h2, .modal-header .widget_calendar caption, .widget_calendar .modal-header caption, .modal-header h3, .modal-header h4, .modal-header h5, .modal-header h6 {
     padding-bottom: 0; }
   .modal-header .btn-close {
     position: absolute;
@@ -2293,15 +2451,19 @@ input[type="button"].btn::-moz-focus-inner {
 .accordion-list .accordion-content {
   border-top: 1px solid #e7e5e1; }
 
-.accordion-boxes .accordion-toggle h1, .accordion-boxes .accordion-toggle h2, .accordion-boxes .accordion-toggle h3, .accordion-boxes .accordion-toggle h4, .accordion-boxes .accordion-toggle h5, .accordion-boxes .accordion-toggle h6,
+.accordion-boxes .accordion-toggle h1, .accordion-boxes .accordion-toggle h2, .accordion-boxes .accordion-toggle .widget_calendar caption, .widget_calendar .accordion-boxes .accordion-toggle caption, .accordion-boxes .accordion-toggle h3, .accordion-boxes .accordion-toggle h4, .accordion-boxes .accordion-toggle h5, .accordion-boxes .accordion-toggle h6,
 .accordion-box .accordion-toggle h1,
 .accordion-box .accordion-toggle h2,
+.accordion-box .accordion-toggle .widget_calendar caption, .widget_calendar
+.accordion-box .accordion-toggle caption,
 .accordion-box .accordion-toggle h3,
 .accordion-box .accordion-toggle h4,
 .accordion-box .accordion-toggle h5,
 .accordion-box .accordion-toggle h6,
 .accordion-list .accordion-toggle h1,
 .accordion-list .accordion-toggle h2,
+.accordion-list .accordion-toggle .widget_calendar caption, .widget_calendar
+.accordion-list .accordion-toggle caption,
 .accordion-list .accordion-toggle h3,
 .accordion-list .accordion-toggle h4,
 .accordion-list .accordion-toggle h5,
@@ -2821,7 +2983,7 @@ a.box-index {
     color: #fff; }
   .theme-purple .box-news {
     color: #fff; }
-  .box-news h1, .box-news h2, .box-news h3, .box-news h4, .box-news h5, .box-news h6 {
+  .box-news h1, .box-news h2, .box-news .widget_calendar caption, .widget_calendar .box-news caption, .box-news h3, .box-news h4, .box-news h5, .box-news h6 {
     margin: 0;
     padding: 0; }
   .box-news img {
@@ -2856,7 +3018,7 @@ a.box-index {
     display: table-cell;
     vertical-align: top;
     padding: 0; }
-  .box-news.box-news-horizontal h1, .box-news.box-news-horizontal h2, .box-news.box-news-horizontal h3, .box-news.box-news-horizontal h4, .box-news.box-news-horizontal h4, .box-news.box-news-horizontal h6 {
+  .box-news.box-news-horizontal h1, .box-news.box-news-horizontal h2, .box-news.box-news-horizontal .widget_calendar caption, .widget_calendar .box-news.box-news-horizontal caption, .box-news.box-news-horizontal h3, .box-news.box-news-horizontal h4, .box-news.box-news-horizontal h4, .box-news.box-news-horizontal h6 {
     padding-bottom: 5px; }
 
 .box-card {
@@ -2864,7 +3026,7 @@ a.box-index {
   background-color: #fff;
   border: 1px solid #e7e5e1;
   color: #252525; }
-  .box-card h1, .box-card h2, .box-card h3, .box-card h4, .box-card h5, .box-card h6 {
+  .box-card h1, .box-card h2, .box-card .widget_calendar caption, .widget_calendar .box-card caption, .box-card h3, .box-card h4, .box-card h5, .box-card h6 {
     padding-bottom: 0; }
   .box-card ul li:not(.description):not(.card-title),
   .box-card ul li:not(.description):not(.card-title) a {
@@ -2888,7 +3050,7 @@ a.box-index {
     @media screen and (min-width: 767px) {
       .box-card.vertical-card .box-content {
         margin-left: 180px; }
-        .box-card.vertical-card .box-content ul, .box-card.vertical-card .box-content h1, .box-card.vertical-card .box-content h2, .box-card.vertical-card .box-content h3, .box-card.vertical-card .box-content h4, .box-card.vertical-card .box-content h5, .box-card.vertical-card .box-content h6 {
+        .box-card.vertical-card .box-content ul, .box-card.vertical-card .box-content h1, .box-card.vertical-card .box-content h2, .box-card.vertical-card .box-content .widget_calendar caption, .widget_calendar .box-card.vertical-card .box-content caption, .box-card.vertical-card .box-content h3, .box-card.vertical-card .box-content h4, .box-card.vertical-card .box-content h5, .box-card.vertical-card .box-content h6 {
           padding-left: 10px; } }
   @media screen and (max-width: 767px) {
     .box-card .box-image {
@@ -3561,6 +3723,158 @@ select + select {
 .markup-preview .main-footer {
   margin-top: 0;
   padding: 40px 20px; }
+
+.widget_calendar > h2, .widget_calendar > caption {
+  display: none; }
+
+.widget_calendar caption {
+  text-align: left; }
+
+.widget_calendar table {
+  width: 100%;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none; }
+  .widget_calendar table thead th, .widget_calendar table thead td, .widget_calendar table tbody th, .widget_calendar table tbody td, .widget_calendar table tfoot th, .widget_calendar table tfoot td {
+    padding: .5em;
+    text-align: center;
+    border: 1px solid #e7e5e1;
+    height: 40px;
+    line-height: 40px;
+    padding: 0; }
+  .widget_calendar table thead #next, .widget_calendar table thead #prev, .widget_calendar table tbody #next, .widget_calendar table tbody #prev, .widget_calendar table tfoot #next, .widget_calendar table tfoot #prev {
+    text-transform: uppercase;
+    font-weight: 300; }
+    .widget_calendar table thead #next a, .widget_calendar table thead #prev a, .widget_calendar table tbody #next a, .widget_calendar table tbody #prev a, .widget_calendar table tfoot #next a, .widget_calendar table tfoot #prev a {
+      display: block; }
+  .widget_calendar table thead #next, .widget_calendar table tbody #next, .widget_calendar table tfoot #next {
+    border-left: none; }
+  .widget_calendar table thead #prev, .widget_calendar table tbody #prev, .widget_calendar table tfoot #prev {
+    border-right: none; }
+  .widget_calendar table tfoot .pad:not(#prev):not(#next) {
+    border-left: none;
+    border-right: none; }
+  .widget_calendar table tbody td {
+    background-color: rgba(0, 0, 0, 0.05);
+    position: relative; }
+    .widget_calendar table tbody td#today {
+      background-color: rgba(0, 0, 0, 0.07); }
+    .widget_calendar table tbody td.pad {
+      background-color: initial; }
+    .widget_calendar table tbody td:not(.pad):hover {
+      background-color: rgba(0, 0, 0, 0.07); }
+    .widget_calendar table tbody td a {
+      cursor: hand;
+      cursor: pointer;
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      line-height: 40px;
+      height: 40px;
+      transition: background 200ms;
+      font-weight: bold; }
+      .widget_calendar table tbody td a:hover {
+        text-decoration: none;
+        color: #fff; }
+        .theme-gray .widget_calendar table tbody td a:hover {
+          background-color: rgba(119, 119, 119, 0.8); }
+        .theme-red .widget_calendar table tbody td a:hover {
+          background-color: rgba(174, 11, 5, 0.8); }
+        .theme-blue .widget_calendar table tbody td a:hover {
+          background-color: rgba(0, 92, 134, 0.8); }
+        .theme-green .widget_calendar table tbody td a:hover {
+          background-color: rgba(80, 129, 27, 0.8); }
+        .theme-purple .widget_calendar table tbody td a:hover {
+          background-color: rgba(123, 7, 94, 0.8); }
+
+.widget_archive li,
+.widget_categories li,
+.widget_meta li {
+  display: inline;
+  font-size: .9em; }
+  .widget_archive li:not(:last-child):after,
+  .widget_categories li:not(:last-child):after,
+  .widget_meta li:not(:last-child):after {
+    content: ", "; }
+
+.widget_archive .tagcloud a,
+.widget_categories .tagcloud a,
+.widget_meta .tagcloud a {
+  font-size: .9em !important; }
+  .widget_archive .tagcloud a:not(:last-child):after,
+  .widget_categories .tagcloud a:not(:last-child):after,
+  .widget_meta .tagcloud a:not(:last-child):after {
+    content: ", "; }
+
+.widget_nav_menu ul li:before {
+  content: "- "; }
+
+.widget_nav_menu ul li ul.sub-menu {
+  padding-left: 1em; }
+
+.widget_rss h2 a:first-child, .widget_rss .widget_calendar caption a:first-child, .widget_calendar .widget_rss caption a:first-child {
+  display: none; }
+
+.widget_rss ul li {
+  border: 1px solid #e7e5e1;
+  margin-bottom: 13.33333px; }
+  .widget_rss ul li a {
+    padding: 10px;
+    display: block;
+    float: left;
+    width: 70%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-weight: bold; }
+  .widget_rss ul li span.rss-date {
+    float: right;
+    font-size: .8em;
+    padding: 10px;
+    line-height: 2em;
+    opacity: .7; }
+  .widget_rss ul li .rssSummary {
+    border-top: 1px solid #e7e5e1;
+    padding: 10px;
+    clear: both;
+    font-size: .8em; }
+  .widget_rss ul li cite {
+    font-size: .7em;
+    display: block;
+    padding: 0 10px 10px;
+    text-decoration: underline; }
+    .widget_rss ul li cite:empty {
+      display: none; }
+
+.widget_search label {
+  display: none; }
+
+.widget_search input[type="search"],
+.widget_search input[type="submit"] {
+  border: 1px solid #e7e5e1;
+  height: 40px;
+  font-weight: 300;
+  font-size: 1em; }
+
+.widget_search input[type="search"] {
+  color: #464646; }
+
+.widget_search input[type="submit"] {
+  border-left: none;
+  font-weight: bold; }
+
+.widget_search input[type="search"] {
+  padding: 5px; }
+
+.widget_search .input-group-lg,
+.widget_search .input-group-addon-btn {
+  height: 40px; }
+
+.widget_text .textwidget p:first-child {
+  margin-top: -.5em; }
 
 .modal:not(.no-animation) .modal-content {
   -webkit-animation: modal-bounce-in 500ms ease-in-out;
