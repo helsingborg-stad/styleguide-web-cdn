@@ -10261,6 +10261,8 @@ HelsingborgPrime.Helper.Menu = (function ($) {
         } else {
             target.toggleClass('open');
         }
+
+        $('body').toggleClass('overflow-hidden');
     };
 
     Menu.prototype.bindEvents = function () {
