@@ -1,5 +1,5 @@
 /*!
- * jQuery JavaScript Library v2.2.1
+ * jQuery JavaScript Library v2.2.0
  * http://jquery.com/
  *
  * Includes Sizzle.js
@@ -9,7 +9,7 @@
  * Released under the MIT license
  * http://jquery.org/license
  *
- * Date: 2016-02-22T19:11Z
+ * Date: 2016-01-08T20:02Z
  */
 
 (function( global, factory ) {
@@ -65,7 +65,7 @@ var support = {};
 
 
 var
-	version = "2.2.1",
+	version = "2.2.0",
 
 	// Define a local copy of jQuery
 	jQuery = function( selector, context ) {
@@ -4479,7 +4479,7 @@ function on( elem, types, selector, data, fn, one ) {
 	if ( fn === false ) {
 		fn = returnFalse;
 	} else if ( !fn ) {
-		return elem;
+		return this;
 	}
 
 	if ( one === 1 ) {
@@ -5128,14 +5128,14 @@ var
 	rscriptTypeMasked = /^true\/(.*)/,
 	rcleanScript = /^\s*<!(?:\[CDATA\[|--)|(?:\]\]|--)>\s*$/g;
 
-// Manipulating tables requires a tbody
 function manipulationTarget( elem, content ) {
-	return jQuery.nodeName( elem, "table" ) &&
-		jQuery.nodeName( content.nodeType !== 11 ? content : content.firstChild, "tr" ) ?
+	if ( jQuery.nodeName( elem, "table" ) &&
+		jQuery.nodeName( content.nodeType !== 11 ? content : content.firstChild, "tr" ) ) {
 
-		elem.getElementsByTagName( "tbody" )[ 0 ] ||
-			elem.appendChild( elem.ownerDocument.createElement( "tbody" ) ) :
-		elem;
+		return elem.getElementsByTagName( "tbody" )[ 0 ] || elem;
+	}
+
+	return elem;
 }
 
 // Replace/restore the type attribute of script elements for safe DOM manipulation
@@ -5642,7 +5642,7 @@ var getStyles = function( elem ) {
 		// FF meanwhile throws on frame elements through "defaultView.getComputedStyle"
 		var view = elem.ownerDocument.defaultView;
 
-		if ( !view || !view.opener ) {
+		if ( !view.opener ) {
 			view = window;
 		}
 
@@ -5791,18 +5791,15 @@ function curCSS( elem, name, computed ) {
 		style = elem.style;
 
 	computed = computed || getStyles( elem );
-	ret = computed ? computed.getPropertyValue( name ) || computed[ name ] : undefined;
-
-	// Support: Opera 12.1x only
-	// Fall back to style even without computed
-	// computed is undefined for elems on document fragments
-	if ( ( ret === "" || ret === undefined ) && !jQuery.contains( elem.ownerDocument, elem ) ) {
-		ret = jQuery.style( elem, name );
-	}
 
 	// Support: IE9
 	// getPropertyValue is only needed for .css('filter') (#12537)
 	if ( computed ) {
+		ret = computed.getPropertyValue( name ) || computed[ name ];
+
+		if ( ret === "" && !jQuery.contains( elem.ownerDocument, elem ) ) {
+			ret = jQuery.style( elem, name );
+		}
 
 		// A tribute to the "awesome hack by Dean Edwards"
 		// Android Browser returns percentage for some values,
@@ -7852,7 +7849,7 @@ jQuery.extend( jQuery.event, {
 				// But now, this "simulate" function is used only for events
 				// for which stopPropagation() is noop, so there is no need for that anymore.
 				//
-				// For the 1.x branch though, guard for "click" and "submit"
+				// For the compat branch though, guard for "click" and "submit"
 				// events is still used, but was moved to jQuery.event.stopPropagation function
 				// because `originalEvent` should point to the original event for the constancy
 				// with other events and for more focused logic
@@ -9622,8 +9619,11 @@ jQuery.fn.extend( {
 			}
 
 			// Add offsetParent borders
-			parentOffset.top += jQuery.css( offsetParent[ 0 ], "borderTopWidth", true );
-			parentOffset.left += jQuery.css( offsetParent[ 0 ], "borderLeftWidth", true );
+			// Subtract offsetParent scroll positions
+			parentOffset.top += jQuery.css( offsetParent[ 0 ], "borderTopWidth", true ) -
+				offsetParent.scrollTop();
+			parentOffset.left += jQuery.css( offsetParent[ 0 ], "borderLeftWidth", true ) -
+				offsetParent.scrollLeft();
 		}
 
 		// Subtract parent offsets and element margins
@@ -9874,6 +9874,215 @@ HelsingborgPrime.Args = (function ($) {
 })(jQuery);
 
 //
+// @name Modal
+// @description  Show accodrion dropdown, make linkable by updating adress bar
+//
+HelsingborgPrime = HelsingborgPrime || {};
+HelsingborgPrime.Component = HelsingborgPrime.Component || {};
+
+HelsingborgPrime.Component.Accordion = (function ($) {
+
+    function Accordion() {
+    	this.init();
+    }
+
+    Accordion.prototype.init = function () {
+        $('div.accordion label').on('click', function(event) {
+			if ( history.pushState ) {
+				history.pushState(null, null, '#' + $(this).attr('for'));
+			} else {
+				window.location.hash = '#' + $(this).attr('for');
+			}
+		});
+    };
+
+    return new Accordion();
+
+})(jQuery);
+
+//
+// @name Gallery
+// @description  Popup boxes for gallery items.
+//
+HelsingborgPrime = HelsingborgPrime || {};
+HelsingborgPrime.Component = HelsingborgPrime.Component || {};
+
+HelsingborgPrime.Component.GalleryPopup = (function ($) {
+
+    function GalleryPopup() {
+    	//Click event
+    	this.clickWatcher();
+
+    	//Popup hash changes
+    	$(window).bind('hashchange', function() {
+			this.togglePopupClass();
+		}.bind(this)).trigger('hashchange');
+
+        //Preload on hover
+        this.preloadImageAsset();
+
+    }
+
+    GalleryPopup.prototype.clickWatcher = function () {
+
+	    $('.lightbox-trigger').click(function(event) {
+
+			event.preventDefault();
+
+			//Get data
+			var image_href 		= $(this).attr("href");
+
+            //Get caption
+            if( typeof $(this).attr("data-caption") === 'undefined' ) {
+                var image_caption = "";
+            } else {
+               var image_caption = $(this).attr("data-caption");
+            }
+
+			//Update hash
+			window.location.hash = "lightbox-open";
+
+			//Add markup, or update.
+			if ($('#lightbox').length > 0) {
+				$('#lightbox-image').attr('src',image_href);
+                $('#lightbox .lightbox-image-wrapper').attr('data-caption',image_caption);
+				$('#lightbox').fadeIn();
+			} else {
+
+				var lightbox =
+				'<div id="lightbox">' +
+					'<div class="lightbox-image-wrapper" data-caption="' + image_caption + '">' +
+						'<a class="btn-close" href="#lightbox-close"></a>' +
+						'<img id="lightbox-image" src="' + image_href +'" />' +
+					'</div>' +
+				'</div>';
+
+				$('body').append(lightbox);
+                $('#lightbox').hide().fadeIn();
+			}
+
+		});
+
+		$(document).on('click', '#lightbox', function() {
+			$(this).fadeOut(300).hide(0);
+			window.location.hash = "lightbox-closed";
+		});
+
+    };
+
+    GalleryPopup.prototype.togglePopupClass = function(){
+	    if (window.location.hash.replace("-","") == "#lightbox-open".replace("-","")) {
+			$('html').addClass('gallery-hidden');
+		} else {
+			$('html').removeClass('gallery-hidden');
+		}
+    };
+
+    GalleryPopup.prototype.preloadImageAsset = function(){
+        $(".image-gallery a.lightbox-trigger").on("mouseenter", function(){
+            var img = new Image();
+            img.src = jQuery(this).attr("href");
+        });
+    };
+
+    new GalleryPopup();
+
+})(jQuery);
+
+//
+// @name Slider
+// @description  Sliding content
+//
+HelsingborgPrime = HelsingborgPrime || {};
+HelsingborgPrime.Component = HelsingborgPrime.Component || {};
+
+HelsingborgPrime.Component.Slider = (function ($) {
+
+    function Slider() {
+        this.init();
+    }
+
+    /**
+     * Initializes slider(s)
+     * @return {[type]} [description]
+     */
+    Slider.prototype.init = function () {
+        $('.slider').each(function (index, element) {
+            $(element).find('li:first').addClass('current');
+            this.addNavigationButtons(element);
+        }.bind(this));
+
+        this.bindEvents();
+    };
+
+    /**
+     * Adds navigation buttons if needed
+     * @param {[type]} slider [description]
+     */
+    Slider.prototype.addNavigationButtons = function (slider) {
+        if ($(slider).find('li').length > 1) {
+            $(slider).append('<button class="slider-nav-previous"><i class="fa fa-arrow-circle-left"></i> Previous</button><button class="slider-nav-next">Next <i class="fa fa-arrow-circle-right"></i></button>');
+        }
+    };
+
+    /**
+     * Go to the next slide in a specific slider
+     * @param  {object} slider The slider
+     * @return {void}
+     */
+    Slider.prototype.goNext = function (slider) {
+        var current = this.currentSlide(slider);
+        var next = current.next('li').length ? current.next('li') : $(slider).find('li:first');
+
+        $(slider).find('li').removeClass('slider-out');
+        $(slider).removeClass('slider-previous slider-next').addClass('slider-next');
+
+        current.removeClass('current slider-in').addClass('slider-out');
+        next.addClass('current slider-in');
+    };
+
+    /**
+     * Go to the previous slide in a specific slider
+     * @param  {object} slider The slider
+     * @return {void}
+     */
+    Slider.prototype.goPrev = function (slider) {
+        var current = this.currentSlide(slider);
+        var prev = current.prev('li').length ? current.prev('li') : $(slider).find('li:last');
+
+        $(slider).find('li').removeClass('slider-out');
+        $(slider).removeClass('slider-previous slider-next').addClass('slider-previous');
+
+        current.removeClass('current slider-in').addClass('slider-out');
+        prev.addClass('current slider-in');
+    };
+
+    /**
+     * Gets the current slide element in a slider
+     * @param  {object} slider The slider object to check current slide in
+     * @return {object}        The current slide object
+     */
+    Slider.prototype.currentSlide = function (slider) {
+        return $(slider).find('li.current').length ? $(slider).find('li.current') : $(slider).find('li:first');
+    };
+
+    Slider.prototype.bindEvents = function () {
+        // Next button
+        $('.slider-nav-next').on('click', function (e) {
+            this.goNext($(e.target).parents('.slider'));
+        }.bind(this));
+
+        // Prev button
+        $('.slider-nav-previous').on('click', function (e) {
+            this.goPrev($(e.target).parents('.slider'));
+        }.bind(this));
+    };
+
+    return new Slider();
+
+})(jQuery);
+
+//
 // @name Cookies
 //
 HelsingborgPrime = HelsingborgPrime || {};
@@ -9896,7 +10105,7 @@ HelsingborgPrime.Helper.Cookie = (function ($) {
         d.setTime(d.getTime() + (daysValid * 24 * 60 * 60 * 1000));
 
         var expires = "expires=" + d.toUTCString();
-        document.cookie = name + "=" + value.toString() + "; " + expires;
+        document.cookie = name + "=" + value.toString() + "; " + expires + "; path=/";
 
         return true;
     };
@@ -10210,205 +10419,9 @@ HelsingborgPrime.Helper.Post = (function ($) {
 })(jQuery);
 
 //
-// @name Modal
-// @description  Show accodrion dropdown, make linkable by updating adress bar
-//
-HelsingborgPrime = HelsingborgPrime || {};
-HelsingborgPrime.Component = HelsingborgPrime.Component || {};
-
-HelsingborgPrime.Component.Accordion = (function ($) {
-
-    function Accordion() {
-    	this.init();
-    }
-
-    Accordion.prototype.init = function () {
-        $('div.accordion label').on('click', function(event) {
-			if ( history.pushState ) {
-				history.pushState(null, null, '#' + $(this).attr('for'));
-			} else {
-				window.location.hash = '#' + $(this).attr('for');
-			}
-		});
-    };
-
-    return new Accordion();
-
-})(jQuery);
-
-//
-// @name Gallery
-// @description  Popup boxes for gallery items.
-//
-HelsingborgPrime = HelsingborgPrime || {};
-HelsingborgPrime.Component = HelsingborgPrime.Component || {};
-
-HelsingborgPrime.Component.GalleryPopup = (function ($) {
-
-    function ModalLimit() {
-
-    	//Click event
-    	this.clickWatcher();
-
-    	//Popup hash changes
-    	$(window).bind('hashchange', function() {
-			this.togglePopupClass();
-		}.bind(this)).trigger('hashchange');
-
-    }
-
-    ModalLimit.prototype.clickWatcher = function () {
-
-	    $('.lightbox-trigger').click(function(event) {
-
-			event.preventDefault();
-
-			//Get data
-			var image_href 		= $(this).attr("href");
-			var image_caption 	= $(this).attr("data-caption");
-
-			//Update hash
-			window.location.hash = "lightbox-open";
-
-			//Add markup, or update.
-			if ($('#lightbox').length > 0) {
-				$('#lightbox-image').attr('src',image_href);
-				$('#lightbox').show(0);
-			} else {
-
-				var lightbox =
-				'<div class="lightbox">' +
-					'<div class="lightbox-image-wrapper" data-caption="' + image_caption + '">' +
-						'<a class="btn-close" href="#lightbox-close"></a>' +
-						'<img id="lightbox-image" src="' + image_href +'" />' +
-					'</div>' +
-				'</div>';
-
-				$('body').append(lightbox);
-
-			}
-
-			//State
-			HelsingborgPrime.Helpers.GalleryPopup.togglePopupClass();
-
-		});
-
-		$(document).on('click', '.lightbox', function() {
-			$(this).hide();
-			window.location.hash = "lightbox-closed";
-			HelsingborgPrime.Helpers.GalleryPopup.togglePopupClass();
-		});
-
-    };
-
-    ModalLimit.prototype.togglePopupClass = function(){
-	    if (window.location.hash.replace("-","") == "#lightbox-open".replace("-","")) {
-			$('html').addClass('gallery-hidden');
-		} else {
-			$('html').removeClass('gallery-hidden');
-		}
-    };
-
-    return new ModalLimit();
-
-})($);
-
-//
-// @name Slider
-// @description  Sliding content
-//
-HelsingborgPrime = HelsingborgPrime || {};
-HelsingborgPrime.Component = HelsingborgPrime.Component || {};
-
-HelsingborgPrime.Component.Slider = (function ($) {
-
-    function Slider() {
-        this.init();
-    }
-
-    /**
-     * Initializes slider(s)
-     * @return {[type]} [description]
-     */
-    Slider.prototype.init = function () {
-        $('.slider').each(function (index, element) {
-            $(element).find('li:first').addClass('current');
-            this.addNavigationButtons(element);
-        }.bind(this));
-
-        this.bindEvents();
-    };
-
-    /**
-     * Adds navigation buttons if needed
-     * @param {[type]} slider [description]
-     */
-    Slider.prototype.addNavigationButtons = function (slider) {
-        if ($(slider).find('li').length > 1) {
-            $(slider).append('<button class="slider-nav-previous"><i class="fa fa-arrow-circle-left"></i> Previous</button><button class="slider-nav-next">Next <i class="fa fa-arrow-circle-right"></i></button>');
-        }
-    };
-
-    /**
-     * Go to the next slide in a specific slider
-     * @param  {object} slider The slider
-     * @return {void}
-     */
-    Slider.prototype.goNext = function (slider) {
-        var current = this.currentSlide(slider);
-        var next = current.next('li').length ? current.next('li') : $(slider).find('li:first');
-
-        $(slider).find('li').removeClass('slider-out');
-        $(slider).removeClass('slider-previous slider-next').addClass('slider-next');
-
-        current.removeClass('current slider-in').addClass('slider-out');
-        next.addClass('current slider-in');
-    };
-
-    /**
-     * Go to the previous slide in a specific slider
-     * @param  {object} slider The slider
-     * @return {void}
-     */
-    Slider.prototype.goPrev = function (slider) {
-        var current = this.currentSlide(slider);
-        var prev = current.prev('li').length ? current.prev('li') : $(slider).find('li:last');
-
-        $(slider).find('li').removeClass('slider-out');
-        $(slider).removeClass('slider-previous slider-next').addClass('slider-previous');
-
-        current.removeClass('current slider-in').addClass('slider-out');
-        prev.addClass('current slider-in');
-    };
-
-    /**
-     * Gets the current slide element in a slider
-     * @param  {object} slider The slider object to check current slide in
-     * @return {object}        The current slide object
-     */
-    Slider.prototype.currentSlide = function (slider) {
-        return $(slider).find('li.current').length ? $(slider).find('li.current') : $(slider).find('li:first');
-    };
-
-    Slider.prototype.bindEvents = function () {
-        // Next button
-        $('.slider-nav-next').on('click', function (e) {
-            this.goNext($(e.target).parents('.slider'));
-        }.bind(this));
-
-        // Prev button
-        $('.slider-nav-previous').on('click', function (e) {
-            this.goPrev($(e.target).parents('.slider'));
-        }.bind(this));
-    };
-
-    return new Slider();
-
-})(jQuery);
-
-//
 // @name Cookie consent
 //
+/*
 HelsingborgPrime = HelsingborgPrime || {};
 HelsingborgPrime.Prompt = HelsingborgPrime.Prompt || {};
 
@@ -10477,6 +10490,7 @@ HelsingborgPrime.Prompt.CookieConsent = (function ($) {
     return new CookieConsent();
 
 })(jQuery);
+*/
 
 //
 // @name Modal
