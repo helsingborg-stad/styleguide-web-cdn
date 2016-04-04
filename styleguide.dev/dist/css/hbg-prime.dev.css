@@ -1118,9 +1118,10 @@ article blockquote p {
 
 /* line 214, /www/sites/HbgPrime/wwwroot/source/sass/typography/_article.scss */
 article img {
-  max-width: 100%; }
+  max-width: 100%;
+  height: auto; }
 
-/* line 219, /www/sites/HbgPrime/wwwroot/source/sass/typography/_article.scss */
+/* line 220, /www/sites/HbgPrime/wwwroot/source/sass/typography/_article.scss */
 hr {
   position: relative;
   height: 4px;
@@ -1128,11 +1129,11 @@ hr {
   background-color: #e7e5e1;
   border: none; }
 
-/* line 227, /www/sites/HbgPrime/wwwroot/source/sass/typography/_article.scss */
+/* line 228, /www/sites/HbgPrime/wwwroot/source/sass/typography/_article.scss */
 article + .page-footer {
   margin-top: 30px; }
 
-/* line 231, /www/sites/HbgPrime/wwwroot/source/sass/typography/_article.scss */
+/* line 232, /www/sites/HbgPrime/wwwroot/source/sass/typography/_article.scss */
 .page-footer {
   font-size: .9em; }
 
@@ -4127,7 +4128,8 @@ input[type="button"].btn::-moz-focus-inner {
 /* line 30, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_box.scss */
 .box-content, [class^="widget_"]:not(.widget_calendar) *:not(.main-fotter) .textwidget,
 [class^="widget_"]:not(.widget_calendar) *:not(.main-fotter) form, .sidebar-left-sidebar .widget_nav_menu > div,
-.sidebar-right-sidebar .widget_nav_menu > div {
+.sidebar-right-sidebar .widget_nav_menu > div, .sidebar-left-sidebar .widget_text .textwidget,
+.sidebar-right-sidebar .widget_text .textwidget {
   padding: 10px;
   font-size: .9em; }
 
@@ -4770,7 +4772,17 @@ a.box-index {
   .sidebar-content-area-bottom [class^="widget_"]:not(.widget_calendar)
   .sidebar-right-sidebar .widget_nav_menu > div,
   .sidebar-right-sidebar
-  .sidebar-content-area-bottom [class^="widget_"]:not(.widget_calendar) .widget_nav_menu > div,
+  .sidebar-content-area-bottom [class^="widget_"]:not(.widget_calendar) .widget_nav_menu > div, .box-panel .sidebar-left-sidebar .widget_text .textwidget, .sidebar-left-sidebar .widget_text .box-panel .textwidget, .sidebar-content-area [class^="widget_"]:not(.widget_calendar) .sidebar-left-sidebar .widget_text .textwidget, .sidebar-left-sidebar .widget_text .sidebar-content-area [class^="widget_"]:not(.widget_calendar) .textwidget,
+  .sidebar-content-area-bottom [class^="widget_"]:not(.widget_calendar) .sidebar-left-sidebar .widget_text .textwidget, .sidebar-left-sidebar .widget_text
+  .sidebar-content-area-bottom [class^="widget_"]:not(.widget_calendar) .textwidget, .box-panel
+  .sidebar-right-sidebar .widget_text .textwidget,
+  .sidebar-right-sidebar .widget_text .box-panel .textwidget, .sidebar-content-area [class^="widget_"]:not(.widget_calendar)
+  .sidebar-right-sidebar .widget_text .textwidget,
+  .sidebar-right-sidebar .widget_text .sidebar-content-area [class^="widget_"]:not(.widget_calendar) .textwidget,
+  .sidebar-content-area-bottom [class^="widget_"]:not(.widget_calendar)
+  .sidebar-right-sidebar .widget_text .textwidget,
+  .sidebar-right-sidebar .widget_text
+  .sidebar-content-area-bottom [class^="widget_"]:not(.widget_calendar) .textwidget,
   .box-panel .dataTables_wrapper, .sidebar-content-area [class^="widget_"]:not(.widget_calendar) .dataTables_wrapper,
   .sidebar-content-area-bottom [class^="widget_"]:not(.widget_calendar) .dataTables_wrapper {
     border: 1px solid #e7e5e1;
@@ -5006,7 +5018,9 @@ a.box-index {
   [class^="widget_"]:not(.widget_calendar) *:not(.main-fotter) form,
   [class^="widget_"]:not(.widget_calendar) *:not(.main-fotter) .box-news form, .box-news .sidebar-left-sidebar .widget_nav_menu > div, .sidebar-left-sidebar .box-news .widget_nav_menu > div, .box-news
   .sidebar-right-sidebar .widget_nav_menu > div,
-  .sidebar-right-sidebar .box-news .widget_nav_menu > div {
+  .sidebar-right-sidebar .box-news .widget_nav_menu > div, .box-news .sidebar-left-sidebar .widget_text .textwidget, .sidebar-left-sidebar .widget_text .box-news .textwidget, .box-news
+  .sidebar-right-sidebar .widget_text .textwidget,
+  .sidebar-right-sidebar .widget_text .box-news .textwidget {
     padding: 15px; }
   /* line 76, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_news.scss */
   .box-news:hover {
@@ -5090,14 +5104,18 @@ a.box-index {
     [class^="widget_"]:not(.widget_calendar) *:not(.main-fotter) .box-image-container + form,
     [class^="widget_"]:not(.widget_calendar) *:not(.main-fotter) .box-news.box-news-horizontal .box-image-container + form, .box-news.box-news-horizontal .sidebar-left-sidebar .widget_nav_menu > .box-image-container + div, .sidebar-left-sidebar .box-news.box-news-horizontal .widget_nav_menu > .box-image-container + div, .box-news.box-news-horizontal
     .sidebar-right-sidebar .widget_nav_menu > .box-image-container + div,
-    .sidebar-right-sidebar .box-news.box-news-horizontal .widget_nav_menu > .box-image-container + div {
+    .sidebar-right-sidebar .box-news.box-news-horizontal .widget_nav_menu > .box-image-container + div, .box-news.box-news-horizontal .sidebar-left-sidebar .widget_text .box-image-container + .textwidget, .sidebar-left-sidebar .widget_text .box-news.box-news-horizontal .box-image-container + .textwidget, .box-news.box-news-horizontal
+    .sidebar-right-sidebar .widget_text .box-image-container + .textwidget,
+    .sidebar-right-sidebar .widget_text .box-news.box-news-horizontal .box-image-container + .textwidget {
       padding-left: 30px; }
   /* line 111, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_news.scss */
   .box-news.box-news-horizontal .box-content, .box-news.box-news-horizontal [class^="widget_"]:not(.widget_calendar) *:not(.main-fotter) .textwidget, [class^="widget_"]:not(.widget_calendar) *:not(.main-fotter) .box-news.box-news-horizontal .textwidget, .box-news.box-news-horizontal
   [class^="widget_"]:not(.widget_calendar) *:not(.main-fotter) form,
   [class^="widget_"]:not(.widget_calendar) *:not(.main-fotter) .box-news.box-news-horizontal form, .box-news.box-news-horizontal .sidebar-left-sidebar .widget_nav_menu > div, .sidebar-left-sidebar .box-news.box-news-horizontal .widget_nav_menu > div, .box-news.box-news-horizontal
   .sidebar-right-sidebar .widget_nav_menu > div,
-  .sidebar-right-sidebar .box-news.box-news-horizontal .widget_nav_menu > div {
+  .sidebar-right-sidebar .box-news.box-news-horizontal .widget_nav_menu > div, .box-news.box-news-horizontal .sidebar-left-sidebar .widget_text .textwidget, .sidebar-left-sidebar .widget_text .box-news.box-news-horizontal .textwidget, .box-news.box-news-horizontal
+  .sidebar-right-sidebar .widget_text .textwidget,
+  .sidebar-right-sidebar .widget_text .box-news.box-news-horizontal .textwidget {
     display: table-cell;
     vertical-align: top;
     padding: 0; }
@@ -5142,22 +5160,30 @@ a.box-index {
       [class^="widget_"]:not(.widget_calendar) *:not(.main-fotter) form,
       [class^="widget_"]:not(.widget_calendar) *:not(.main-fotter) .box-card.vertical-card form, .box-card.vertical-card .sidebar-left-sidebar .widget_nav_menu > div, .sidebar-left-sidebar .box-card.vertical-card .widget_nav_menu > div, .box-card.vertical-card
       .sidebar-right-sidebar .widget_nav_menu > div,
-      .sidebar-right-sidebar .box-card.vertical-card .widget_nav_menu > div {
+      .sidebar-right-sidebar .box-card.vertical-card .widget_nav_menu > div, .box-card.vertical-card .sidebar-left-sidebar .widget_text .textwidget, .sidebar-left-sidebar .widget_text .box-card.vertical-card .textwidget, .box-card.vertical-card
+      .sidebar-right-sidebar .widget_text .textwidget,
+      .sidebar-right-sidebar .widget_text .box-card.vertical-card .textwidget {
         margin-left: 180px; }
         /* line 86, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_contactcard.scss */
         .box-card.vertical-card .box-content ul, .box-card.vertical-card [class^="widget_"]:not(.widget_calendar) *:not(.main-fotter) .textwidget ul, [class^="widget_"]:not(.widget_calendar) *:not(.main-fotter) .box-card.vertical-card .textwidget ul, .box-card.vertical-card
         [class^="widget_"]:not(.widget_calendar) *:not(.main-fotter) form ul,
         [class^="widget_"]:not(.widget_calendar) *:not(.main-fotter) .box-card.vertical-card form ul, .box-card.vertical-card .sidebar-left-sidebar .widget_nav_menu > div ul, .sidebar-left-sidebar .box-card.vertical-card .widget_nav_menu > div ul, .box-card.vertical-card
         .sidebar-right-sidebar .widget_nav_menu > div ul,
-        .sidebar-right-sidebar .box-card.vertical-card .widget_nav_menu > div ul, .box-card.vertical-card .box-content h1, .box-card.vertical-card [class^="widget_"]:not(.widget_calendar) *:not(.main-fotter) .textwidget h1, [class^="widget_"]:not(.widget_calendar) *:not(.main-fotter) .box-card.vertical-card .textwidget h1, .box-card.vertical-card
+        .sidebar-right-sidebar .box-card.vertical-card .widget_nav_menu > div ul, .box-card.vertical-card .sidebar-left-sidebar .widget_text .textwidget ul, .sidebar-left-sidebar .widget_text .box-card.vertical-card .textwidget ul, .box-card.vertical-card
+        .sidebar-right-sidebar .widget_text .textwidget ul,
+        .sidebar-right-sidebar .widget_text .box-card.vertical-card .textwidget ul, .box-card.vertical-card .box-content h1, .box-card.vertical-card [class^="widget_"]:not(.widget_calendar) *:not(.main-fotter) .textwidget h1, [class^="widget_"]:not(.widget_calendar) *:not(.main-fotter) .box-card.vertical-card .textwidget h1, .box-card.vertical-card
         [class^="widget_"]:not(.widget_calendar) *:not(.main-fotter) form h1,
         [class^="widget_"]:not(.widget_calendar) *:not(.main-fotter) .box-card.vertical-card form h1, .box-card.vertical-card .sidebar-left-sidebar .widget_nav_menu > div h1, .sidebar-left-sidebar .box-card.vertical-card .widget_nav_menu > div h1, .box-card.vertical-card
         .sidebar-right-sidebar .widget_nav_menu > div h1,
-        .sidebar-right-sidebar .box-card.vertical-card .widget_nav_menu > div h1, .box-card.vertical-card .box-content h2, .box-card.vertical-card [class^="widget_"]:not(.widget_calendar) *:not(.main-fotter) .textwidget h2, [class^="widget_"]:not(.widget_calendar) *:not(.main-fotter) .box-card.vertical-card .textwidget h2, .box-card.vertical-card
+        .sidebar-right-sidebar .box-card.vertical-card .widget_nav_menu > div h1, .box-card.vertical-card .sidebar-left-sidebar .widget_text .textwidget h1, .sidebar-left-sidebar .widget_text .box-card.vertical-card .textwidget h1, .box-card.vertical-card
+        .sidebar-right-sidebar .widget_text .textwidget h1,
+        .sidebar-right-sidebar .widget_text .box-card.vertical-card .textwidget h1, .box-card.vertical-card .box-content h2, .box-card.vertical-card [class^="widget_"]:not(.widget_calendar) *:not(.main-fotter) .textwidget h2, [class^="widget_"]:not(.widget_calendar) *:not(.main-fotter) .box-card.vertical-card .textwidget h2, .box-card.vertical-card
         [class^="widget_"]:not(.widget_calendar) *:not(.main-fotter) form h2,
         [class^="widget_"]:not(.widget_calendar) *:not(.main-fotter) .box-card.vertical-card form h2, .box-card.vertical-card .sidebar-left-sidebar .widget_nav_menu > div h2, .sidebar-left-sidebar .box-card.vertical-card .widget_nav_menu > div h2, .box-card.vertical-card
         .sidebar-right-sidebar .widget_nav_menu > div h2,
-        .sidebar-right-sidebar .box-card.vertical-card .widget_nav_menu > div h2, .box-card.vertical-card .box-content .widget_calendar caption, .widget_calendar .box-card.vertical-card .box-content caption, .box-card.vertical-card [class^="widget_"]:not(.widget_calendar) *:not(.main-fotter) .textwidget .widget_calendar caption, .widget_calendar .box-card.vertical-card [class^="widget_"]:not(.widget_calendar) *:not(.main-fotter) .textwidget caption, [class^="widget_"]:not(.widget_calendar) *:not(.main-fotter) .box-card.vertical-card .textwidget .widget_calendar caption, .widget_calendar [class^="widget_"]:not(.widget_calendar) *:not(.main-fotter) .box-card.vertical-card .textwidget caption, .box-card.vertical-card
+        .sidebar-right-sidebar .box-card.vertical-card .widget_nav_menu > div h2, .box-card.vertical-card .sidebar-left-sidebar .widget_text .textwidget h2, .sidebar-left-sidebar .widget_text .box-card.vertical-card .textwidget h2, .box-card.vertical-card
+        .sidebar-right-sidebar .widget_text .textwidget h2,
+        .sidebar-right-sidebar .widget_text .box-card.vertical-card .textwidget h2, .box-card.vertical-card .box-content .widget_calendar caption, .widget_calendar .box-card.vertical-card .box-content caption, .box-card.vertical-card [class^="widget_"]:not(.widget_calendar) *:not(.main-fotter) .textwidget .widget_calendar caption, .widget_calendar .box-card.vertical-card [class^="widget_"]:not(.widget_calendar) *:not(.main-fotter) .textwidget caption, [class^="widget_"]:not(.widget_calendar) *:not(.main-fotter) .box-card.vertical-card .textwidget .widget_calendar caption, .widget_calendar [class^="widget_"]:not(.widget_calendar) *:not(.main-fotter) .box-card.vertical-card .textwidget caption, .box-card.vertical-card
         [class^="widget_"]:not(.widget_calendar) *:not(.main-fotter) form .widget_calendar caption, .widget_calendar .box-card.vertical-card
         [class^="widget_"]:not(.widget_calendar) *:not(.main-fotter) form caption,
         [class^="widget_"]:not(.widget_calendar) *:not(.main-fotter) .box-card.vertical-card form .widget_calendar caption, .widget_calendar
@@ -5165,23 +5191,35 @@ a.box-index {
         .sidebar-right-sidebar .widget_nav_menu > div .widget_calendar caption, .widget_calendar .box-card.vertical-card
         .sidebar-right-sidebar .widget_nav_menu > div caption,
         .sidebar-right-sidebar .box-card.vertical-card .widget_nav_menu > div .widget_calendar caption, .widget_calendar
-        .sidebar-right-sidebar .box-card.vertical-card .widget_nav_menu > div caption, .box-card.vertical-card .box-content h3, .box-card.vertical-card [class^="widget_"]:not(.widget_calendar) *:not(.main-fotter) .textwidget h3, [class^="widget_"]:not(.widget_calendar) *:not(.main-fotter) .box-card.vertical-card .textwidget h3, .box-card.vertical-card
+        .sidebar-right-sidebar .box-card.vertical-card .widget_nav_menu > div caption, .box-card.vertical-card .sidebar-left-sidebar .widget_text .textwidget .widget_calendar caption, .widget_calendar .box-card.vertical-card .sidebar-left-sidebar .widget_text .textwidget caption, .sidebar-left-sidebar .widget_text .box-card.vertical-card .textwidget .widget_calendar caption, .widget_calendar .sidebar-left-sidebar .widget_text .box-card.vertical-card .textwidget caption, .box-card.vertical-card
+        .sidebar-right-sidebar .widget_text .textwidget .widget_calendar caption, .widget_calendar .box-card.vertical-card
+        .sidebar-right-sidebar .widget_text .textwidget caption,
+        .sidebar-right-sidebar .widget_text .box-card.vertical-card .textwidget .widget_calendar caption, .widget_calendar
+        .sidebar-right-sidebar .widget_text .box-card.vertical-card .textwidget caption, .box-card.vertical-card .box-content h3, .box-card.vertical-card [class^="widget_"]:not(.widget_calendar) *:not(.main-fotter) .textwidget h3, [class^="widget_"]:not(.widget_calendar) *:not(.main-fotter) .box-card.vertical-card .textwidget h3, .box-card.vertical-card
         [class^="widget_"]:not(.widget_calendar) *:not(.main-fotter) form h3,
         [class^="widget_"]:not(.widget_calendar) *:not(.main-fotter) .box-card.vertical-card form h3, .box-card.vertical-card .sidebar-left-sidebar .widget_nav_menu > div h3, .sidebar-left-sidebar .box-card.vertical-card .widget_nav_menu > div h3, .box-card.vertical-card
         .sidebar-right-sidebar .widget_nav_menu > div h3,
-        .sidebar-right-sidebar .box-card.vertical-card .widget_nav_menu > div h3, .box-card.vertical-card .box-content h4, .box-card.vertical-card [class^="widget_"]:not(.widget_calendar) *:not(.main-fotter) .textwidget h4, [class^="widget_"]:not(.widget_calendar) *:not(.main-fotter) .box-card.vertical-card .textwidget h4, .box-card.vertical-card
+        .sidebar-right-sidebar .box-card.vertical-card .widget_nav_menu > div h3, .box-card.vertical-card .sidebar-left-sidebar .widget_text .textwidget h3, .sidebar-left-sidebar .widget_text .box-card.vertical-card .textwidget h3, .box-card.vertical-card
+        .sidebar-right-sidebar .widget_text .textwidget h3,
+        .sidebar-right-sidebar .widget_text .box-card.vertical-card .textwidget h3, .box-card.vertical-card .box-content h4, .box-card.vertical-card [class^="widget_"]:not(.widget_calendar) *:not(.main-fotter) .textwidget h4, [class^="widget_"]:not(.widget_calendar) *:not(.main-fotter) .box-card.vertical-card .textwidget h4, .box-card.vertical-card
         [class^="widget_"]:not(.widget_calendar) *:not(.main-fotter) form h4,
         [class^="widget_"]:not(.widget_calendar) *:not(.main-fotter) .box-card.vertical-card form h4, .box-card.vertical-card .sidebar-left-sidebar .widget_nav_menu > div h4, .sidebar-left-sidebar .box-card.vertical-card .widget_nav_menu > div h4, .box-card.vertical-card
         .sidebar-right-sidebar .widget_nav_menu > div h4,
-        .sidebar-right-sidebar .box-card.vertical-card .widget_nav_menu > div h4, .box-card.vertical-card .box-content h5, .box-card.vertical-card [class^="widget_"]:not(.widget_calendar) *:not(.main-fotter) .textwidget h5, [class^="widget_"]:not(.widget_calendar) *:not(.main-fotter) .box-card.vertical-card .textwidget h5, .box-card.vertical-card
+        .sidebar-right-sidebar .box-card.vertical-card .widget_nav_menu > div h4, .box-card.vertical-card .sidebar-left-sidebar .widget_text .textwidget h4, .sidebar-left-sidebar .widget_text .box-card.vertical-card .textwidget h4, .box-card.vertical-card
+        .sidebar-right-sidebar .widget_text .textwidget h4,
+        .sidebar-right-sidebar .widget_text .box-card.vertical-card .textwidget h4, .box-card.vertical-card .box-content h5, .box-card.vertical-card [class^="widget_"]:not(.widget_calendar) *:not(.main-fotter) .textwidget h5, [class^="widget_"]:not(.widget_calendar) *:not(.main-fotter) .box-card.vertical-card .textwidget h5, .box-card.vertical-card
         [class^="widget_"]:not(.widget_calendar) *:not(.main-fotter) form h5,
         [class^="widget_"]:not(.widget_calendar) *:not(.main-fotter) .box-card.vertical-card form h5, .box-card.vertical-card .sidebar-left-sidebar .widget_nav_menu > div h5, .sidebar-left-sidebar .box-card.vertical-card .widget_nav_menu > div h5, .box-card.vertical-card
         .sidebar-right-sidebar .widget_nav_menu > div h5,
-        .sidebar-right-sidebar .box-card.vertical-card .widget_nav_menu > div h5, .box-card.vertical-card .box-content h6, .box-card.vertical-card [class^="widget_"]:not(.widget_calendar) *:not(.main-fotter) .textwidget h6, [class^="widget_"]:not(.widget_calendar) *:not(.main-fotter) .box-card.vertical-card .textwidget h6, .box-card.vertical-card
+        .sidebar-right-sidebar .box-card.vertical-card .widget_nav_menu > div h5, .box-card.vertical-card .sidebar-left-sidebar .widget_text .textwidget h5, .sidebar-left-sidebar .widget_text .box-card.vertical-card .textwidget h5, .box-card.vertical-card
+        .sidebar-right-sidebar .widget_text .textwidget h5,
+        .sidebar-right-sidebar .widget_text .box-card.vertical-card .textwidget h5, .box-card.vertical-card .box-content h6, .box-card.vertical-card [class^="widget_"]:not(.widget_calendar) *:not(.main-fotter) .textwidget h6, [class^="widget_"]:not(.widget_calendar) *:not(.main-fotter) .box-card.vertical-card .textwidget h6, .box-card.vertical-card
         [class^="widget_"]:not(.widget_calendar) *:not(.main-fotter) form h6,
         [class^="widget_"]:not(.widget_calendar) *:not(.main-fotter) .box-card.vertical-card form h6, .box-card.vertical-card .sidebar-left-sidebar .widget_nav_menu > div h6, .sidebar-left-sidebar .box-card.vertical-card .widget_nav_menu > div h6, .box-card.vertical-card
         .sidebar-right-sidebar .widget_nav_menu > div h6,
-        .sidebar-right-sidebar .box-card.vertical-card .widget_nav_menu > div h6 {
+        .sidebar-right-sidebar .box-card.vertical-card .widget_nav_menu > div h6, .box-card.vertical-card .sidebar-left-sidebar .widget_text .textwidget h6, .sidebar-left-sidebar .widget_text .box-card.vertical-card .textwidget h6, .box-card.vertical-card
+        .sidebar-right-sidebar .widget_text .textwidget h6,
+        .sidebar-right-sidebar .widget_text .box-card.vertical-card .textwidget h6 {
           padding-left: 10px; } }
   @media screen and (max-width: 769px) {
     /* line 96, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_contactcard.scss */
@@ -5192,7 +5230,9 @@ a.box-index {
     [class^="widget_"]:not(.widget_calendar) *:not(.main-fotter) form,
     [class^="widget_"]:not(.widget_calendar) *:not(.main-fotter) .box-card form, .box-card .sidebar-left-sidebar .widget_nav_menu > div, .sidebar-left-sidebar .box-card .widget_nav_menu > div, .box-card
     .sidebar-right-sidebar .widget_nav_menu > div,
-    .sidebar-right-sidebar .box-card .widget_nav_menu > div {
+    .sidebar-right-sidebar .box-card .widget_nav_menu > div, .box-card .sidebar-left-sidebar .widget_text .textwidget, .sidebar-left-sidebar .widget_text .box-card .textwidget, .box-card
+    .sidebar-right-sidebar .widget_text .textwidget,
+    .sidebar-right-sidebar .widget_text .box-card .textwidget {
       margin-left: 0; } }
 
 /* line 29, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_grid-post.scss */
@@ -5240,7 +5280,9 @@ a.box-index {
   [class^="widget_"]:not(.widget_calendar) *:not(.main-fotter) form,
   [class^="widget_"]:not(.widget_calendar) *:not(.main-fotter) .box-post-brick form, .box-post-brick .sidebar-left-sidebar .widget_nav_menu > div, .sidebar-left-sidebar .box-post-brick .widget_nav_menu > div, .box-post-brick
   .sidebar-right-sidebar .widget_nav_menu > div,
-  .sidebar-right-sidebar .box-post-brick .widget_nav_menu > div {
+  .sidebar-right-sidebar .box-post-brick .widget_nav_menu > div, .box-post-brick .sidebar-left-sidebar .widget_text .textwidget, .sidebar-left-sidebar .widget_text .box-post-brick .textwidget, .box-post-brick
+  .sidebar-right-sidebar .widget_text .textwidget,
+  .sidebar-right-sidebar .widget_text .box-post-brick .textwidget {
     position: absolute;
     left: 0;
     right: 0;
@@ -5303,7 +5345,9 @@ a.box-index {
   [class^="widget_"]:not(.widget_calendar) *:not(.main-fotter) form,
   [class^="widget_"]:not(.widget_calendar) *:not(.main-fotter) .box-post-brick:hover form, .box-post-brick:hover .sidebar-left-sidebar .widget_nav_menu > div, .sidebar-left-sidebar .box-post-brick:hover .widget_nav_menu > div, .box-post-brick:hover
   .sidebar-right-sidebar .widget_nav_menu > div,
-  .sidebar-right-sidebar .box-post-brick:hover .widget_nav_menu > div {
+  .sidebar-right-sidebar .box-post-brick:hover .widget_nav_menu > div, .box-post-brick:hover .sidebar-left-sidebar .widget_text .textwidget, .sidebar-left-sidebar .widget_text .box-post-brick:hover .textwidget, .box-post-brick:hover
+  .sidebar-right-sidebar .widget_text .textwidget,
+  .sidebar-right-sidebar .widget_text .box-post-brick:hover .textwidget {
     -webkit-transform: translateY(-150px);
             transform: translateY(-150px); }
   /* line 150, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_grid-post.scss */
@@ -6608,14 +6652,14 @@ select + select {
   .social-feed-instagram li,
   .social-feed-pinterest li {
     display: inline-block;
-    width: 50%;
+    width: 33.3333%;
     border: 0;
     padding: 0; }
-  @media (min-width: 769px) and (max-width: 960px) {
+  @media (max-width: 769px) {
     /* line 97, /www/sites/HbgPrime/wwwroot/source/sass/component/social-feed/story.scss */
     .social-feed-instagram li,
     .social-feed-pinterest li {
-      width: 33.3333%; } }
+      width: 50% !important; } }
   /* line 102, /www/sites/HbgPrime/wwwroot/source/sass/component/social-feed/story.scss */
   .social-feed-instagram .mod-social-image,
   .social-feed-pinterest .mod-social-image {
@@ -8595,9 +8639,6 @@ a img.aligncenter {
   .sidebar-right-sidebar .widget_search form {
     padding: 0; }
 
-/*
-@import 'component/wordpress/widget-text';
-*/
 /* line 4, /www/sites/HbgPrime/wwwroot/source/sass/component/modal/_animate.scss */
 .modal:not(.no-animation) .modal-content {
   -webkit-animation: modal-bounce-in 500ms ease-in-out;
