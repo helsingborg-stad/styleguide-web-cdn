@@ -103,34 +103,39 @@ b {
 .grid {
   width: auto; }
 
-/* line 31, /www/sites/HbgPrime/wwwroot/source/sass/layout/_grid.scss */
+/* line 30, /www/sites/HbgPrime/wwwroot/source/sass/layout/_grid.scss */
+.grid.no-gutter [class*="grid-"] {
+  padding-left: 0;
+  padding-right: 0; }
+
+/* line 36, /www/sites/HbgPrime/wwwroot/source/sass/layout/_grid.scss */
 .grid-va-middle [class*="grid-"] {
   vertical-align: middle; }
 
-/* line 37, /www/sites/HbgPrime/wwwroot/source/sass/layout/_grid.scss */
+/* line 42, /www/sites/HbgPrime/wwwroot/source/sass/layout/_grid.scss */
 .grid-va-top [class*="grid-"] {
   vertical-align: top; }
 
-/* line 43, /www/sites/HbgPrime/wwwroot/source/sass/layout/_grid.scss */
+/* line 48, /www/sites/HbgPrime/wwwroot/source/sass/layout/_grid.scss */
 .grid-va-bottom [class*="grid-"] {
   vertical-align: bottom; }
 
-/* line 51, /www/sites/HbgPrime/wwwroot/source/sass/layout/_grid.scss */
+/* line 56, /www/sites/HbgPrime/wwwroot/source/sass/layout/_grid.scss */
 [class*="grid-"] {
   padding-left: 0;
   padding-right: 0; }
   @media (min-width: 469px) and (max-width: 768px) {
-    /* line 51, /www/sites/HbgPrime/wwwroot/source/sass/layout/_grid.scss */
+    /* line 56, /www/sites/HbgPrime/wwwroot/source/sass/layout/_grid.scss */
     [class*="grid-"] {
       padding-left: 5px;
       padding-right: 5px; } }
   @media (min-width: 769px) and (max-width: 960px) {
-    /* line 51, /www/sites/HbgPrime/wwwroot/source/sass/layout/_grid.scss */
+    /* line 56, /www/sites/HbgPrime/wwwroot/source/sass/layout/_grid.scss */
     [class*="grid-"] {
       padding-left: 15px;
       padding-right: 15px; } }
   @media (min-width: 961px) {
-    /* line 51, /www/sites/HbgPrime/wwwroot/source/sass/layout/_grid.scss */
+    /* line 56, /www/sites/HbgPrime/wwwroot/source/sass/layout/_grid.scss */
     [class*="grid-"] {
       padding-left: 15px;
       padding-right: 15px; } }
@@ -142,7 +147,7 @@ b {
     float: left;
     width: 8.33333%; }
   /* line 14, /www/sites/HbgPrime/wwwroot/source/sass/mixin/_grid.scss */
-  .grid-xs-1:not([class*="grid-sm-"]):not([class*="grid-md-"]):not([class*="grid-lg-"]):nth-child(13n + 13) {
+  .grid-xs-1:not([class*="grid-sm-"]):not([class*="grid-md-"]):not([class*="grid-lg-"]):nth-child(12n + 1) {
     clear: both; }
   /* line 4, /www/sites/HbgPrime/wwwroot/source/sass/mixin/_grid.scss */
   .grid-xs-2 {
@@ -150,7 +155,7 @@ b {
     float: left;
     width: 16.66667%; }
   /* line 14, /www/sites/HbgPrime/wwwroot/source/sass/mixin/_grid.scss */
-  .grid-xs-2:not([class*="grid-sm-"]):not([class*="grid-md-"]):not([class*="grid-lg-"]):nth-child(7n + 7) {
+  .grid-xs-2:not([class*="grid-sm-"]):not([class*="grid-md-"]):not([class*="grid-lg-"]):nth-child(6n + 1) {
     clear: both; }
   /* line 4, /www/sites/HbgPrime/wwwroot/source/sass/mixin/_grid.scss */
   .grid-xs-3 {
@@ -158,7 +163,7 @@ b {
     float: left;
     width: 25%; }
   /* line 14, /www/sites/HbgPrime/wwwroot/source/sass/mixin/_grid.scss */
-  .grid-xs-3:not([class*="grid-sm-"]):not([class*="grid-md-"]):not([class*="grid-lg-"]):nth-child(5n + 5) {
+  .grid-xs-3:not([class*="grid-sm-"]):not([class*="grid-md-"]):not([class*="grid-lg-"]):nth-child(4n + 1) {
     clear: both; }
   /* line 4, /www/sites/HbgPrime/wwwroot/source/sass/mixin/_grid.scss */
   .grid-xs-4 {
@@ -166,7 +171,7 @@ b {
     float: left;
     width: 33.33333%; }
   /* line 14, /www/sites/HbgPrime/wwwroot/source/sass/mixin/_grid.scss */
-  .grid-xs-4:not([class*="grid-sm-"]):not([class*="grid-md-"]):not([class*="grid-lg-"]):nth-child(4n + 4) {
+  .grid-xs-4:not([class*="grid-sm-"]):not([class*="grid-md-"]):not([class*="grid-lg-"]):nth-child(3n + 1) {
     clear: both; }
   /* line 4, /www/sites/HbgPrime/wwwroot/source/sass/mixin/_grid.scss */
   .grid-xs-5 {
@@ -174,7 +179,7 @@ b {
     float: left;
     width: 41.66667%; }
   /* line 14, /www/sites/HbgPrime/wwwroot/source/sass/mixin/_grid.scss */
-  .grid-xs-5:not([class*="grid-sm-"]):not([class*="grid-md-"]):not([class*="grid-lg-"]):nth-child(3.4n + 3.4) {
+  .grid-xs-5:not([class*="grid-sm-"]):not([class*="grid-md-"]):not([class*="grid-lg-"]):nth-child(2.4n + 1) {
     clear: both; }
   /* line 4, /www/sites/HbgPrime/wwwroot/source/sass/mixin/_grid.scss */
   .grid-xs-6 {
@@ -182,7 +187,7 @@ b {
     float: left;
     width: 50%; }
   /* line 14, /www/sites/HbgPrime/wwwroot/source/sass/mixin/_grid.scss */
-  .grid-xs-6:not([class*="grid-sm-"]):not([class*="grid-md-"]):not([class*="grid-lg-"]):nth-child(3n + 3) {
+  .grid-xs-6:not([class*="grid-sm-"]):not([class*="grid-md-"]):not([class*="grid-lg-"]):nth-child(2n + 1) {
     clear: both; }
   /* line 4, /www/sites/HbgPrime/wwwroot/source/sass/mixin/_grid.scss */
   .grid-xs-7 {
@@ -190,7 +195,7 @@ b {
     float: left;
     width: 58.33333%; }
   /* line 14, /www/sites/HbgPrime/wwwroot/source/sass/mixin/_grid.scss */
-  .grid-xs-7:not([class*="grid-sm-"]):not([class*="grid-md-"]):not([class*="grid-lg-"]):nth-child(2.71429n + 2.71429) {
+  .grid-xs-7:not([class*="grid-sm-"]):not([class*="grid-md-"]):not([class*="grid-lg-"]):nth-child(1.71429n + 1) {
     clear: both; }
   /* line 4, /www/sites/HbgPrime/wwwroot/source/sass/mixin/_grid.scss */
   .grid-xs-8 {
@@ -198,7 +203,7 @@ b {
     float: left;
     width: 66.66667%; }
   /* line 14, /www/sites/HbgPrime/wwwroot/source/sass/mixin/_grid.scss */
-  .grid-xs-8:not([class*="grid-sm-"]):not([class*="grid-md-"]):not([class*="grid-lg-"]):nth-child(2.5n + 2.5) {
+  .grid-xs-8:not([class*="grid-sm-"]):not([class*="grid-md-"]):not([class*="grid-lg-"]):nth-child(1.5n + 1) {
     clear: both; }
   /* line 4, /www/sites/HbgPrime/wwwroot/source/sass/mixin/_grid.scss */
   .grid-xs-9 {
@@ -206,7 +211,7 @@ b {
     float: left;
     width: 75%; }
   /* line 14, /www/sites/HbgPrime/wwwroot/source/sass/mixin/_grid.scss */
-  .grid-xs-9:not([class*="grid-sm-"]):not([class*="grid-md-"]):not([class*="grid-lg-"]):nth-child(2.33333n + 2.33333) {
+  .grid-xs-9:not([class*="grid-sm-"]):not([class*="grid-md-"]):not([class*="grid-lg-"]):nth-child(1.33333n + 1) {
     clear: both; }
   /* line 4, /www/sites/HbgPrime/wwwroot/source/sass/mixin/_grid.scss */
   .grid-xs-10 {
@@ -214,7 +219,7 @@ b {
     float: left;
     width: 83.33333%; }
   /* line 14, /www/sites/HbgPrime/wwwroot/source/sass/mixin/_grid.scss */
-  .grid-xs-10:not([class*="grid-sm-"]):not([class*="grid-md-"]):not([class*="grid-lg-"]):nth-child(2.2n + 2.2) {
+  .grid-xs-10:not([class*="grid-sm-"]):not([class*="grid-md-"]):not([class*="grid-lg-"]):nth-child(1.2n + 1) {
     clear: both; }
   /* line 4, /www/sites/HbgPrime/wwwroot/source/sass/mixin/_grid.scss */
   .grid-xs-11 {
@@ -222,7 +227,7 @@ b {
     float: left;
     width: 91.66667%; }
   /* line 14, /www/sites/HbgPrime/wwwroot/source/sass/mixin/_grid.scss */
-  .grid-xs-11:not([class*="grid-sm-"]):not([class*="grid-md-"]):not([class*="grid-lg-"]):nth-child(2.09091n + 2.09091) {
+  .grid-xs-11:not([class*="grid-sm-"]):not([class*="grid-md-"]):not([class*="grid-lg-"]):nth-child(1.09091n + 1) {
     clear: both; }
   /* line 4, /www/sites/HbgPrime/wwwroot/source/sass/mixin/_grid.scss */
   .grid-xs-12 {
@@ -240,7 +245,7 @@ b {
     float: left;
     width: 8.33333%; }
   /* line 20, /www/sites/HbgPrime/wwwroot/source/sass/mixin/_grid.scss */
-  .grid-sm-1:not([class*="grid-xs-"]):not([class*="grid-md-"]):not([class*="grid-lg-"]):nth-child(13n + 13) {
+  .grid-sm-1:not([class*="grid-xs-"]):not([class*="grid-md-"]):not([class*="grid-lg-"]):nth-child(12n + 1) {
     clear: both; }
   /* line 4, /www/sites/HbgPrime/wwwroot/source/sass/mixin/_grid.scss */
   .grid-sm-2 {
@@ -248,7 +253,7 @@ b {
     float: left;
     width: 16.66667%; }
   /* line 20, /www/sites/HbgPrime/wwwroot/source/sass/mixin/_grid.scss */
-  .grid-sm-2:not([class*="grid-xs-"]):not([class*="grid-md-"]):not([class*="grid-lg-"]):nth-child(7n + 7) {
+  .grid-sm-2:not([class*="grid-xs-"]):not([class*="grid-md-"]):not([class*="grid-lg-"]):nth-child(6n + 1) {
     clear: both; }
   /* line 4, /www/sites/HbgPrime/wwwroot/source/sass/mixin/_grid.scss */
   .grid-sm-3 {
@@ -256,7 +261,7 @@ b {
     float: left;
     width: 25%; }
   /* line 20, /www/sites/HbgPrime/wwwroot/source/sass/mixin/_grid.scss */
-  .grid-sm-3:not([class*="grid-xs-"]):not([class*="grid-md-"]):not([class*="grid-lg-"]):nth-child(5n + 5) {
+  .grid-sm-3:not([class*="grid-xs-"]):not([class*="grid-md-"]):not([class*="grid-lg-"]):nth-child(4n + 1) {
     clear: both; }
   /* line 4, /www/sites/HbgPrime/wwwroot/source/sass/mixin/_grid.scss */
   .grid-sm-4 {
@@ -264,7 +269,7 @@ b {
     float: left;
     width: 33.33333%; }
   /* line 20, /www/sites/HbgPrime/wwwroot/source/sass/mixin/_grid.scss */
-  .grid-sm-4:not([class*="grid-xs-"]):not([class*="grid-md-"]):not([class*="grid-lg-"]):nth-child(4n + 4) {
+  .grid-sm-4:not([class*="grid-xs-"]):not([class*="grid-md-"]):not([class*="grid-lg-"]):nth-child(3n + 1) {
     clear: both; }
   /* line 4, /www/sites/HbgPrime/wwwroot/source/sass/mixin/_grid.scss */
   .grid-sm-5 {
@@ -272,7 +277,7 @@ b {
     float: left;
     width: 41.66667%; }
   /* line 20, /www/sites/HbgPrime/wwwroot/source/sass/mixin/_grid.scss */
-  .grid-sm-5:not([class*="grid-xs-"]):not([class*="grid-md-"]):not([class*="grid-lg-"]):nth-child(3.4n + 3.4) {
+  .grid-sm-5:not([class*="grid-xs-"]):not([class*="grid-md-"]):not([class*="grid-lg-"]):nth-child(2.4n + 1) {
     clear: both; }
   /* line 4, /www/sites/HbgPrime/wwwroot/source/sass/mixin/_grid.scss */
   .grid-sm-6 {
@@ -280,7 +285,7 @@ b {
     float: left;
     width: 50%; }
   /* line 20, /www/sites/HbgPrime/wwwroot/source/sass/mixin/_grid.scss */
-  .grid-sm-6:not([class*="grid-xs-"]):not([class*="grid-md-"]):not([class*="grid-lg-"]):nth-child(3n + 3) {
+  .grid-sm-6:not([class*="grid-xs-"]):not([class*="grid-md-"]):not([class*="grid-lg-"]):nth-child(2n + 1) {
     clear: both; }
   /* line 4, /www/sites/HbgPrime/wwwroot/source/sass/mixin/_grid.scss */
   .grid-sm-7 {
@@ -288,7 +293,7 @@ b {
     float: left;
     width: 58.33333%; }
   /* line 20, /www/sites/HbgPrime/wwwroot/source/sass/mixin/_grid.scss */
-  .grid-sm-7:not([class*="grid-xs-"]):not([class*="grid-md-"]):not([class*="grid-lg-"]):nth-child(2.71429n + 2.71429) {
+  .grid-sm-7:not([class*="grid-xs-"]):not([class*="grid-md-"]):not([class*="grid-lg-"]):nth-child(1.71429n + 1) {
     clear: both; }
   /* line 4, /www/sites/HbgPrime/wwwroot/source/sass/mixin/_grid.scss */
   .grid-sm-8 {
@@ -296,7 +301,7 @@ b {
     float: left;
     width: 66.66667%; }
   /* line 20, /www/sites/HbgPrime/wwwroot/source/sass/mixin/_grid.scss */
-  .grid-sm-8:not([class*="grid-xs-"]):not([class*="grid-md-"]):not([class*="grid-lg-"]):nth-child(2.5n + 2.5) {
+  .grid-sm-8:not([class*="grid-xs-"]):not([class*="grid-md-"]):not([class*="grid-lg-"]):nth-child(1.5n + 1) {
     clear: both; }
   /* line 4, /www/sites/HbgPrime/wwwroot/source/sass/mixin/_grid.scss */
   .grid-sm-9 {
@@ -304,7 +309,7 @@ b {
     float: left;
     width: 75%; }
   /* line 20, /www/sites/HbgPrime/wwwroot/source/sass/mixin/_grid.scss */
-  .grid-sm-9:not([class*="grid-xs-"]):not([class*="grid-md-"]):not([class*="grid-lg-"]):nth-child(2.33333n + 2.33333) {
+  .grid-sm-9:not([class*="grid-xs-"]):not([class*="grid-md-"]):not([class*="grid-lg-"]):nth-child(1.33333n + 1) {
     clear: both; }
   /* line 4, /www/sites/HbgPrime/wwwroot/source/sass/mixin/_grid.scss */
   .grid-sm-10 {
@@ -312,7 +317,7 @@ b {
     float: left;
     width: 83.33333%; }
   /* line 20, /www/sites/HbgPrime/wwwroot/source/sass/mixin/_grid.scss */
-  .grid-sm-10:not([class*="grid-xs-"]):not([class*="grid-md-"]):not([class*="grid-lg-"]):nth-child(2.2n + 2.2) {
+  .grid-sm-10:not([class*="grid-xs-"]):not([class*="grid-md-"]):not([class*="grid-lg-"]):nth-child(1.2n + 1) {
     clear: both; }
   /* line 4, /www/sites/HbgPrime/wwwroot/source/sass/mixin/_grid.scss */
   .grid-sm-11 {
@@ -320,7 +325,7 @@ b {
     float: left;
     width: 91.66667%; }
   /* line 20, /www/sites/HbgPrime/wwwroot/source/sass/mixin/_grid.scss */
-  .grid-sm-11:not([class*="grid-xs-"]):not([class*="grid-md-"]):not([class*="grid-lg-"]):nth-child(2.09091n + 2.09091) {
+  .grid-sm-11:not([class*="grid-xs-"]):not([class*="grid-md-"]):not([class*="grid-lg-"]):nth-child(1.09091n + 1) {
     clear: both; }
   /* line 4, /www/sites/HbgPrime/wwwroot/source/sass/mixin/_grid.scss */
   .grid-sm-12 {
@@ -338,7 +343,7 @@ b {
     float: left;
     width: 8.33333%; }
   /* line 26, /www/sites/HbgPrime/wwwroot/source/sass/mixin/_grid.scss */
-  .grid-md-1:not([class*="grid-xs-"]):not([class*="grid-sm-"]):not([class*="grid-lg-"]):nth-child(13n + 13) {
+  .grid-md-1:not([class*="grid-xs-"]):not([class*="grid-sm-"]):not([class*="grid-lg-"]):nth-child(12n + 1) {
     clear: both; }
   /* line 4, /www/sites/HbgPrime/wwwroot/source/sass/mixin/_grid.scss */
   .grid-md-2 {
@@ -346,7 +351,7 @@ b {
     float: left;
     width: 16.66667%; }
   /* line 26, /www/sites/HbgPrime/wwwroot/source/sass/mixin/_grid.scss */
-  .grid-md-2:not([class*="grid-xs-"]):not([class*="grid-sm-"]):not([class*="grid-lg-"]):nth-child(7n + 7) {
+  .grid-md-2:not([class*="grid-xs-"]):not([class*="grid-sm-"]):not([class*="grid-lg-"]):nth-child(6n + 1) {
     clear: both; }
   /* line 4, /www/sites/HbgPrime/wwwroot/source/sass/mixin/_grid.scss */
   .grid-md-3 {
@@ -354,7 +359,7 @@ b {
     float: left;
     width: 25%; }
   /* line 26, /www/sites/HbgPrime/wwwroot/source/sass/mixin/_grid.scss */
-  .grid-md-3:not([class*="grid-xs-"]):not([class*="grid-sm-"]):not([class*="grid-lg-"]):nth-child(5n + 5) {
+  .grid-md-3:not([class*="grid-xs-"]):not([class*="grid-sm-"]):not([class*="grid-lg-"]):nth-child(4n + 1) {
     clear: both; }
   /* line 4, /www/sites/HbgPrime/wwwroot/source/sass/mixin/_grid.scss */
   .grid-md-4 {
@@ -362,7 +367,7 @@ b {
     float: left;
     width: 33.33333%; }
   /* line 26, /www/sites/HbgPrime/wwwroot/source/sass/mixin/_grid.scss */
-  .grid-md-4:not([class*="grid-xs-"]):not([class*="grid-sm-"]):not([class*="grid-lg-"]):nth-child(4n + 4) {
+  .grid-md-4:not([class*="grid-xs-"]):not([class*="grid-sm-"]):not([class*="grid-lg-"]):nth-child(3n + 1) {
     clear: both; }
   /* line 4, /www/sites/HbgPrime/wwwroot/source/sass/mixin/_grid.scss */
   .grid-md-5 {
@@ -370,7 +375,7 @@ b {
     float: left;
     width: 41.66667%; }
   /* line 26, /www/sites/HbgPrime/wwwroot/source/sass/mixin/_grid.scss */
-  .grid-md-5:not([class*="grid-xs-"]):not([class*="grid-sm-"]):not([class*="grid-lg-"]):nth-child(3.4n + 3.4) {
+  .grid-md-5:not([class*="grid-xs-"]):not([class*="grid-sm-"]):not([class*="grid-lg-"]):nth-child(2.4n + 1) {
     clear: both; }
   /* line 4, /www/sites/HbgPrime/wwwroot/source/sass/mixin/_grid.scss */
   .grid-md-6 {
@@ -378,7 +383,7 @@ b {
     float: left;
     width: 50%; }
   /* line 26, /www/sites/HbgPrime/wwwroot/source/sass/mixin/_grid.scss */
-  .grid-md-6:not([class*="grid-xs-"]):not([class*="grid-sm-"]):not([class*="grid-lg-"]):nth-child(3n + 3) {
+  .grid-md-6:not([class*="grid-xs-"]):not([class*="grid-sm-"]):not([class*="grid-lg-"]):nth-child(2n + 1) {
     clear: both; }
   /* line 4, /www/sites/HbgPrime/wwwroot/source/sass/mixin/_grid.scss */
   .grid-md-7 {
@@ -386,7 +391,7 @@ b {
     float: left;
     width: 58.33333%; }
   /* line 26, /www/sites/HbgPrime/wwwroot/source/sass/mixin/_grid.scss */
-  .grid-md-7:not([class*="grid-xs-"]):not([class*="grid-sm-"]):not([class*="grid-lg-"]):nth-child(2.71429n + 2.71429) {
+  .grid-md-7:not([class*="grid-xs-"]):not([class*="grid-sm-"]):not([class*="grid-lg-"]):nth-child(1.71429n + 1) {
     clear: both; }
   /* line 4, /www/sites/HbgPrime/wwwroot/source/sass/mixin/_grid.scss */
   .grid-md-8 {
@@ -394,7 +399,7 @@ b {
     float: left;
     width: 66.66667%; }
   /* line 26, /www/sites/HbgPrime/wwwroot/source/sass/mixin/_grid.scss */
-  .grid-md-8:not([class*="grid-xs-"]):not([class*="grid-sm-"]):not([class*="grid-lg-"]):nth-child(2.5n + 2.5) {
+  .grid-md-8:not([class*="grid-xs-"]):not([class*="grid-sm-"]):not([class*="grid-lg-"]):nth-child(1.5n + 1) {
     clear: both; }
   /* line 4, /www/sites/HbgPrime/wwwroot/source/sass/mixin/_grid.scss */
   .grid-md-9 {
@@ -402,7 +407,7 @@ b {
     float: left;
     width: 75%; }
   /* line 26, /www/sites/HbgPrime/wwwroot/source/sass/mixin/_grid.scss */
-  .grid-md-9:not([class*="grid-xs-"]):not([class*="grid-sm-"]):not([class*="grid-lg-"]):nth-child(2.33333n + 2.33333) {
+  .grid-md-9:not([class*="grid-xs-"]):not([class*="grid-sm-"]):not([class*="grid-lg-"]):nth-child(1.33333n + 1) {
     clear: both; }
   /* line 4, /www/sites/HbgPrime/wwwroot/source/sass/mixin/_grid.scss */
   .grid-md-10 {
@@ -410,7 +415,7 @@ b {
     float: left;
     width: 83.33333%; }
   /* line 26, /www/sites/HbgPrime/wwwroot/source/sass/mixin/_grid.scss */
-  .grid-md-10:not([class*="grid-xs-"]):not([class*="grid-sm-"]):not([class*="grid-lg-"]):nth-child(2.2n + 2.2) {
+  .grid-md-10:not([class*="grid-xs-"]):not([class*="grid-sm-"]):not([class*="grid-lg-"]):nth-child(1.2n + 1) {
     clear: both; }
   /* line 4, /www/sites/HbgPrime/wwwroot/source/sass/mixin/_grid.scss */
   .grid-md-11 {
@@ -418,7 +423,7 @@ b {
     float: left;
     width: 91.66667%; }
   /* line 26, /www/sites/HbgPrime/wwwroot/source/sass/mixin/_grid.scss */
-  .grid-md-11:not([class*="grid-xs-"]):not([class*="grid-sm-"]):not([class*="grid-lg-"]):nth-child(2.09091n + 2.09091) {
+  .grid-md-11:not([class*="grid-xs-"]):not([class*="grid-sm-"]):not([class*="grid-lg-"]):nth-child(1.09091n + 1) {
     clear: both; }
   /* line 4, /www/sites/HbgPrime/wwwroot/source/sass/mixin/_grid.scss */
   .grid-md-12 {
@@ -436,7 +441,7 @@ b {
     float: left;
     width: 8.33333%; }
   /* line 32, /www/sites/HbgPrime/wwwroot/source/sass/mixin/_grid.scss */
-  .grid-lg-1:not([class*="grid-xs-"]):not([class*="grid-sm-"]):not([class*="grid-md-"]):nth-child(13n + 13) {
+  .grid-lg-1:not([class*="grid-xs-"]):not([class*="grid-sm-"]):not([class*="grid-md-"]):nth-child(12n + 1) {
     clear: both; }
   /* line 4, /www/sites/HbgPrime/wwwroot/source/sass/mixin/_grid.scss */
   .grid-lg-2 {
@@ -444,7 +449,7 @@ b {
     float: left;
     width: 16.66667%; }
   /* line 32, /www/sites/HbgPrime/wwwroot/source/sass/mixin/_grid.scss */
-  .grid-lg-2:not([class*="grid-xs-"]):not([class*="grid-sm-"]):not([class*="grid-md-"]):nth-child(7n + 7) {
+  .grid-lg-2:not([class*="grid-xs-"]):not([class*="grid-sm-"]):not([class*="grid-md-"]):nth-child(6n + 1) {
     clear: both; }
   /* line 4, /www/sites/HbgPrime/wwwroot/source/sass/mixin/_grid.scss */
   .grid-lg-3 {
@@ -452,7 +457,7 @@ b {
     float: left;
     width: 25%; }
   /* line 32, /www/sites/HbgPrime/wwwroot/source/sass/mixin/_grid.scss */
-  .grid-lg-3:not([class*="grid-xs-"]):not([class*="grid-sm-"]):not([class*="grid-md-"]):nth-child(5n + 5) {
+  .grid-lg-3:not([class*="grid-xs-"]):not([class*="grid-sm-"]):not([class*="grid-md-"]):nth-child(4n + 1) {
     clear: both; }
   /* line 4, /www/sites/HbgPrime/wwwroot/source/sass/mixin/_grid.scss */
   .grid-lg-4 {
@@ -460,7 +465,7 @@ b {
     float: left;
     width: 33.33333%; }
   /* line 32, /www/sites/HbgPrime/wwwroot/source/sass/mixin/_grid.scss */
-  .grid-lg-4:not([class*="grid-xs-"]):not([class*="grid-sm-"]):not([class*="grid-md-"]):nth-child(4n + 4) {
+  .grid-lg-4:not([class*="grid-xs-"]):not([class*="grid-sm-"]):not([class*="grid-md-"]):nth-child(3n + 1) {
     clear: both; }
   /* line 4, /www/sites/HbgPrime/wwwroot/source/sass/mixin/_grid.scss */
   .grid-lg-5 {
@@ -468,7 +473,7 @@ b {
     float: left;
     width: 41.66667%; }
   /* line 32, /www/sites/HbgPrime/wwwroot/source/sass/mixin/_grid.scss */
-  .grid-lg-5:not([class*="grid-xs-"]):not([class*="grid-sm-"]):not([class*="grid-md-"]):nth-child(3.4n + 3.4) {
+  .grid-lg-5:not([class*="grid-xs-"]):not([class*="grid-sm-"]):not([class*="grid-md-"]):nth-child(2.4n + 1) {
     clear: both; }
   /* line 4, /www/sites/HbgPrime/wwwroot/source/sass/mixin/_grid.scss */
   .grid-lg-6 {
@@ -476,7 +481,7 @@ b {
     float: left;
     width: 50%; }
   /* line 32, /www/sites/HbgPrime/wwwroot/source/sass/mixin/_grid.scss */
-  .grid-lg-6:not([class*="grid-xs-"]):not([class*="grid-sm-"]):not([class*="grid-md-"]):nth-child(3n + 3) {
+  .grid-lg-6:not([class*="grid-xs-"]):not([class*="grid-sm-"]):not([class*="grid-md-"]):nth-child(2n + 1) {
     clear: both; }
   /* line 4, /www/sites/HbgPrime/wwwroot/source/sass/mixin/_grid.scss */
   .grid-lg-7 {
@@ -484,7 +489,7 @@ b {
     float: left;
     width: 58.33333%; }
   /* line 32, /www/sites/HbgPrime/wwwroot/source/sass/mixin/_grid.scss */
-  .grid-lg-7:not([class*="grid-xs-"]):not([class*="grid-sm-"]):not([class*="grid-md-"]):nth-child(2.71429n + 2.71429) {
+  .grid-lg-7:not([class*="grid-xs-"]):not([class*="grid-sm-"]):not([class*="grid-md-"]):nth-child(1.71429n + 1) {
     clear: both; }
   /* line 4, /www/sites/HbgPrime/wwwroot/source/sass/mixin/_grid.scss */
   .grid-lg-8 {
@@ -492,7 +497,7 @@ b {
     float: left;
     width: 66.66667%; }
   /* line 32, /www/sites/HbgPrime/wwwroot/source/sass/mixin/_grid.scss */
-  .grid-lg-8:not([class*="grid-xs-"]):not([class*="grid-sm-"]):not([class*="grid-md-"]):nth-child(2.5n + 2.5) {
+  .grid-lg-8:not([class*="grid-xs-"]):not([class*="grid-sm-"]):not([class*="grid-md-"]):nth-child(1.5n + 1) {
     clear: both; }
   /* line 4, /www/sites/HbgPrime/wwwroot/source/sass/mixin/_grid.scss */
   .grid-lg-9 {
@@ -500,7 +505,7 @@ b {
     float: left;
     width: 75%; }
   /* line 32, /www/sites/HbgPrime/wwwroot/source/sass/mixin/_grid.scss */
-  .grid-lg-9:not([class*="grid-xs-"]):not([class*="grid-sm-"]):not([class*="grid-md-"]):nth-child(2.33333n + 2.33333) {
+  .grid-lg-9:not([class*="grid-xs-"]):not([class*="grid-sm-"]):not([class*="grid-md-"]):nth-child(1.33333n + 1) {
     clear: both; }
   /* line 4, /www/sites/HbgPrime/wwwroot/source/sass/mixin/_grid.scss */
   .grid-lg-10 {
@@ -508,7 +513,7 @@ b {
     float: left;
     width: 83.33333%; }
   /* line 32, /www/sites/HbgPrime/wwwroot/source/sass/mixin/_grid.scss */
-  .grid-lg-10:not([class*="grid-xs-"]):not([class*="grid-sm-"]):not([class*="grid-md-"]):nth-child(2.2n + 2.2) {
+  .grid-lg-10:not([class*="grid-xs-"]):not([class*="grid-sm-"]):not([class*="grid-md-"]):nth-child(1.2n + 1) {
     clear: both; }
   /* line 4, /www/sites/HbgPrime/wwwroot/source/sass/mixin/_grid.scss */
   .grid-lg-11 {
@@ -516,7 +521,7 @@ b {
     float: left;
     width: 91.66667%; }
   /* line 32, /www/sites/HbgPrime/wwwroot/source/sass/mixin/_grid.scss */
-  .grid-lg-11:not([class*="grid-xs-"]):not([class*="grid-sm-"]):not([class*="grid-md-"]):nth-child(2.09091n + 2.09091) {
+  .grid-lg-11:not([class*="grid-xs-"]):not([class*="grid-sm-"]):not([class*="grid-md-"]):nth-child(1.09091n + 1) {
     clear: both; }
   /* line 4, /www/sites/HbgPrime/wwwroot/source/sass/mixin/_grid.scss */
   .grid-lg-12 {
@@ -527,7 +532,7 @@ b {
   .grid-tester::after {
     content: "lg"; } }
 
-/* line 91, /www/sites/HbgPrime/wwwroot/source/sass/layout/_grid.scss */
+/* line 96, /www/sites/HbgPrime/wwwroot/source/sass/layout/_grid.scss */
 .grid-tester {
   position: fixed;
   bottom: 0;
@@ -573,42 +578,42 @@ b {
 }
 */
 @media (min-width: 0) and (max-width: 468px) {
-  /* line 146, /www/sites/HbgPrime/wwwroot/source/sass/layout/_grid.scss */
+  /* line 151, /www/sites/HbgPrime/wwwroot/source/sass/layout/_grid.scss */
   .grid .grid {
     margin-left: 0;
     margin-right: 0; }
-  /* line 151, /www/sites/HbgPrime/wwwroot/source/sass/layout/_grid.scss */
+  /* line 156, /www/sites/HbgPrime/wwwroot/source/sass/layout/_grid.scss */
   .grid + .grid {
     margin-top: 0; } }
 
 @media (min-width: 469px) and (max-width: 768px) {
-  /* line 157, /www/sites/HbgPrime/wwwroot/source/sass/layout/_grid.scss */
+  /* line 162, /www/sites/HbgPrime/wwwroot/source/sass/layout/_grid.scss */
   .grid .grid {
     margin-left: -5px;
     margin-right: -5px; }
-  /* line 162, /www/sites/HbgPrime/wwwroot/source/sass/layout/_grid.scss */
+  /* line 167, /www/sites/HbgPrime/wwwroot/source/sass/layout/_grid.scss */
   .grid + .grid {
     margin-top: 10px; } }
 
 @media (min-width: 769px) and (max-width: 960px) {
-  /* line 168, /www/sites/HbgPrime/wwwroot/source/sass/layout/_grid.scss */
+  /* line 173, /www/sites/HbgPrime/wwwroot/source/sass/layout/_grid.scss */
   .grid .grid {
     margin-left: -15px;
     margin-right: -15px; }
-  /* line 173, /www/sites/HbgPrime/wwwroot/source/sass/layout/_grid.scss */
+  /* line 178, /www/sites/HbgPrime/wwwroot/source/sass/layout/_grid.scss */
   .grid + .grid {
     margin-top: 30px; } }
 
 @media (min-width: 961px) {
-  /* line 179, /www/sites/HbgPrime/wwwroot/source/sass/layout/_grid.scss */
+  /* line 184, /www/sites/HbgPrime/wwwroot/source/sass/layout/_grid.scss */
   .grid .grid {
     margin-left: -15px;
     margin-right: -15px; }
-  /* line 184, /www/sites/HbgPrime/wwwroot/source/sass/layout/_grid.scss */
+  /* line 189, /www/sites/HbgPrime/wwwroot/source/sass/layout/_grid.scss */
   .grid + .grid {
     margin-top: 30px; } }
 
-/* line 194, /www/sites/HbgPrime/wwwroot/source/sass/layout/_grid.scss */
+/* line 199, /www/sites/HbgPrime/wwwroot/source/sass/layout/_grid.scss */
 .grid-table {
   display: table;
   width: 100%;
@@ -634,7 +639,7 @@ b {
     padding-right: 0; }
 
 @media (min-width: 0) {
-  /* line 199, /www/sites/HbgPrime/wwwroot/source/sass/layout/_grid.scss */
+  /* line 204, /www/sites/HbgPrime/wwwroot/source/sass/layout/_grid.scss */
   .grid-table-xs {
     display: table;
     width: 100%;
@@ -660,7 +665,7 @@ b {
       padding-right: 0; } }
 
 @media (min-width: 469px) {
-  /* line 205, /www/sites/HbgPrime/wwwroot/source/sass/layout/_grid.scss */
+  /* line 210, /www/sites/HbgPrime/wwwroot/source/sass/layout/_grid.scss */
   .grid-table-sm {
     display: table;
     width: 100%;
@@ -686,7 +691,7 @@ b {
       padding-right: 0; } }
 
 @media (min-width: 769px) {
-  /* line 211, /www/sites/HbgPrime/wwwroot/source/sass/layout/_grid.scss */
+  /* line 216, /www/sites/HbgPrime/wwwroot/source/sass/layout/_grid.scss */
   .grid-table-md {
     display: table;
     width: 100%;
@@ -712,7 +717,7 @@ b {
       padding-right: 0; } }
 
 @media (min-width: 961px) {
-  /* line 217, /www/sites/HbgPrime/wwwroot/source/sass/layout/_grid.scss */
+  /* line 222, /www/sites/HbgPrime/wwwroot/source/sass/layout/_grid.scss */
   .grid-table-lg {
     display: table;
     width: 100%;
@@ -737,7 +742,7 @@ b {
       white-space: nowrap;
       padding-right: 0; } }
 
-/* line 225, /www/sites/HbgPrime/wwwroot/source/sass/layout/_grid.scss */
+/* line 230, /www/sites/HbgPrime/wwwroot/source/sass/layout/_grid.scss */
 .grid-example [class*="grid-"] {
   background-color: #f6f5f2;
   border: 1px solid #e7e5e1;
@@ -765,6 +770,10 @@ section + section {
   content: "";
   display: table;
   clear: both; }
+
+/* line 1, /www/sites/HbgPrime/wwwroot/source/sass/layout/_responsive-elements.scss */
+iframe[src*='google.com/maps/'] {
+  width: 100%; }
 
 /* line 19, /www/sites/HbgPrime/wwwroot/source/sass/typography/_headings.scss */
 h1, .h1,
@@ -905,6 +914,7 @@ article p + blockquote,
 article p + pre,
 article p + img,
 article p + .box,
+article p + [class^="widget_"]:not(.widget_calendar),
 article p + .dataTables_wrapper,
 article ol + h1,
 article ol + h2,
@@ -921,6 +931,7 @@ article ol + blockquote,
 article ol + pre,
 article ol + img,
 article ol + .box,
+article ol + [class^="widget_"]:not(.widget_calendar),
 article ol + .dataTables_wrapper,
 article ul + h1,
 article ul + h2,
@@ -937,6 +948,7 @@ article ul + blockquote,
 article ul + pre,
 article ul + img,
 article ul + .box,
+article ul + [class^="widget_"]:not(.widget_calendar),
 article ul + .dataTables_wrapper,
 article blockquote + h1,
 article blockquote + h2,
@@ -953,6 +965,7 @@ article blockquote + blockquote,
 article blockquote + pre,
 article blockquote + img,
 article blockquote + .box,
+article blockquote + [class^="widget_"]:not(.widget_calendar),
 article blockquote + .dataTables_wrapper,
 article pre + h1,
 article pre + h2,
@@ -969,6 +982,7 @@ article pre + blockquote,
 article pre + pre,
 article pre + img,
 article pre + .box,
+article pre + [class^="widget_"]:not(.widget_calendar),
 article pre + .dataTables_wrapper,
 article img + h1,
 article img + h2,
@@ -985,23 +999,42 @@ article img + blockquote,
 article img + pre,
 article img + img,
 article img + .box,
+article img + [class^="widget_"]:not(.widget_calendar),
 article img + .dataTables_wrapper,
 article .box + h1,
+article [class^="widget_"]:not(.widget_calendar) + h1,
 article .box + h2,
+article [class^="widget_"]:not(.widget_calendar) + h2,
 article .widget_calendar .box + caption, .widget_calendar
 article .box + caption,
+article .widget_calendar [class^="widget_"]:not(.widget_calendar) + caption, .widget_calendar
+article [class^="widget_"]:not(.widget_calendar) + caption,
 article .box + h3,
+article [class^="widget_"]:not(.widget_calendar) + h3,
 article .box + h4,
+article [class^="widget_"]:not(.widget_calendar) + h4,
 article .box + h5,
+article [class^="widget_"]:not(.widget_calendar) + h5,
 article .box + h6,
+article [class^="widget_"]:not(.widget_calendar) + h6,
 article .box + p,
+article [class^="widget_"]:not(.widget_calendar) + p,
 article .box + ol,
+article [class^="widget_"]:not(.widget_calendar) + ol,
 article .box + ul,
+article [class^="widget_"]:not(.widget_calendar) + ul,
 article .box + blockquote,
+article [class^="widget_"]:not(.widget_calendar) + blockquote,
 article .box + pre,
+article [class^="widget_"]:not(.widget_calendar) + pre,
 article .box + img,
+article [class^="widget_"]:not(.widget_calendar) + img,
 article .box + .box,
+article [class^="widget_"]:not(.widget_calendar) + .box,
+article .box + [class^="widget_"]:not(.widget_calendar),
+article [class^="widget_"]:not(.widget_calendar) + [class^="widget_"]:not(.widget_calendar),
 article .box + .dataTables_wrapper,
+article [class^="widget_"]:not(.widget_calendar) + .dataTables_wrapper,
 article .dataTables_wrapper + h1,
 article .dataTables_wrapper + h2,
 article .widget_calendar .dataTables_wrapper + caption, .widget_calendar
@@ -1017,6 +1050,7 @@ article .dataTables_wrapper + blockquote,
 article .dataTables_wrapper + pre,
 article .dataTables_wrapper + img,
 article .dataTables_wrapper + .box,
+article .dataTables_wrapper + [class^="widget_"]:not(.widget_calendar),
 article .dataTables_wrapper + .dataTables_wrapper {
   margin-top: 1.3em; }
 
@@ -1175,20 +1209,204 @@ a {
 
 /* line 20, /www/sites/HbgPrime/wwwroot/source/sass/typography/_link.scss */
 [class*="theme-"] article a:not([class]),
-[class*="theme-"] article a.link-item {
+[class*="theme-"] article a.link-item,
+[class*="theme-"] article .sidebar-left-sidebar .widget_archive a, .sidebar-left-sidebar .widget_archive
+[class*="theme-"] article a,
+[class*="theme-"] article
+.sidebar-right-sidebar .widget_archive a,
+.sidebar-right-sidebar .widget_archive
+[class*="theme-"] article a,
+[class*="theme-"] article .sidebar-left-sidebar
+.widget_categories a, .sidebar-left-sidebar
+.widget_categories
+[class*="theme-"] article a,
+[class*="theme-"] article
+.sidebar-right-sidebar
+.widget_categories a,
+.sidebar-right-sidebar
+.widget_categories
+[class*="theme-"] article a,
+[class*="theme-"] article .sidebar-left-sidebar
+.widget_meta a, .sidebar-left-sidebar
+.widget_meta
+[class*="theme-"] article a,
+[class*="theme-"] article
+.sidebar-right-sidebar
+.widget_meta a,
+.sidebar-right-sidebar
+.widget_meta
+[class*="theme-"] article a,
+[class*="theme-"] article .sidebar-left-sidebar
+.widget_recent_entries a, .sidebar-left-sidebar
+.widget_recent_entries
+[class*="theme-"] article a,
+[class*="theme-"] article
+.sidebar-right-sidebar
+.widget_recent_entries a,
+.sidebar-right-sidebar
+.widget_recent_entries
+[class*="theme-"] article a,
+[class*="theme-"] article .sidebar-left-sidebar
+.widget_recent_comments a, .sidebar-left-sidebar
+.widget_recent_comments
+[class*="theme-"] article a,
+[class*="theme-"] article
+.sidebar-right-sidebar
+.widget_recent_comments a,
+.sidebar-right-sidebar
+.widget_recent_comments
+[class*="theme-"] article a {
   color: #0069b4;
   text-decoration: underline; }
   /* line 25, /www/sites/HbgPrime/wwwroot/source/sass/typography/_link.scss */
   [class*="theme-"] article a:not([class]):hover,
-  [class*="theme-"] article a.link-item:hover {
+  [class*="theme-"] article a.link-item:hover,
+  [class*="theme-"] article .sidebar-left-sidebar .widget_archive a:hover, .sidebar-left-sidebar .widget_archive
+  [class*="theme-"] article a:hover,
+  [class*="theme-"] article
+  .sidebar-right-sidebar .widget_archive a:hover,
+  .sidebar-right-sidebar .widget_archive
+  [class*="theme-"] article a:hover,
+  [class*="theme-"] article .sidebar-left-sidebar
+  .widget_categories a:hover, .sidebar-left-sidebar
+  .widget_categories
+  [class*="theme-"] article a:hover,
+  [class*="theme-"] article
+  .sidebar-right-sidebar
+  .widget_categories a:hover,
+  .sidebar-right-sidebar
+  .widget_categories
+  [class*="theme-"] article a:hover,
+  [class*="theme-"] article .sidebar-left-sidebar
+  .widget_meta a:hover, .sidebar-left-sidebar
+  .widget_meta
+  [class*="theme-"] article a:hover,
+  [class*="theme-"] article
+  .sidebar-right-sidebar
+  .widget_meta a:hover,
+  .sidebar-right-sidebar
+  .widget_meta
+  [class*="theme-"] article a:hover,
+  [class*="theme-"] article .sidebar-left-sidebar
+  .widget_recent_entries a:hover, .sidebar-left-sidebar
+  .widget_recent_entries
+  [class*="theme-"] article a:hover,
+  [class*="theme-"] article
+  .sidebar-right-sidebar
+  .widget_recent_entries a:hover,
+  .sidebar-right-sidebar
+  .widget_recent_entries
+  [class*="theme-"] article a:hover,
+  [class*="theme-"] article .sidebar-left-sidebar
+  .widget_recent_comments a:hover, .sidebar-left-sidebar
+  .widget_recent_comments
+  [class*="theme-"] article a:hover,
+  [class*="theme-"] article
+  .sidebar-right-sidebar
+  .widget_recent_comments a:hover,
+  .sidebar-right-sidebar
+  .widget_recent_comments
+  [class*="theme-"] article a:hover {
     color: #0095db; }
   /* line 29, /www/sites/HbgPrime/wwwroot/source/sass/typography/_link.scss */
   [class*="theme-"] article a:not([class]):visited,
-  [class*="theme-"] article a.link-item:visited {
+  [class*="theme-"] article a.link-item:visited,
+  [class*="theme-"] article .sidebar-left-sidebar .widget_archive a:visited, .sidebar-left-sidebar .widget_archive
+  [class*="theme-"] article a:visited,
+  [class*="theme-"] article
+  .sidebar-right-sidebar .widget_archive a:visited,
+  .sidebar-right-sidebar .widget_archive
+  [class*="theme-"] article a:visited,
+  [class*="theme-"] article .sidebar-left-sidebar
+  .widget_categories a:visited, .sidebar-left-sidebar
+  .widget_categories
+  [class*="theme-"] article a:visited,
+  [class*="theme-"] article
+  .sidebar-right-sidebar
+  .widget_categories a:visited,
+  .sidebar-right-sidebar
+  .widget_categories
+  [class*="theme-"] article a:visited,
+  [class*="theme-"] article .sidebar-left-sidebar
+  .widget_meta a:visited, .sidebar-left-sidebar
+  .widget_meta
+  [class*="theme-"] article a:visited,
+  [class*="theme-"] article
+  .sidebar-right-sidebar
+  .widget_meta a:visited,
+  .sidebar-right-sidebar
+  .widget_meta
+  [class*="theme-"] article a:visited,
+  [class*="theme-"] article .sidebar-left-sidebar
+  .widget_recent_entries a:visited, .sidebar-left-sidebar
+  .widget_recent_entries
+  [class*="theme-"] article a:visited,
+  [class*="theme-"] article
+  .sidebar-right-sidebar
+  .widget_recent_entries a:visited,
+  .sidebar-right-sidebar
+  .widget_recent_entries
+  [class*="theme-"] article a:visited,
+  [class*="theme-"] article .sidebar-left-sidebar
+  .widget_recent_comments a:visited, .sidebar-left-sidebar
+  .widget_recent_comments
+  [class*="theme-"] article a:visited,
+  [class*="theme-"] article
+  .sidebar-right-sidebar
+  .widget_recent_comments a:visited,
+  .sidebar-right-sidebar
+  .widget_recent_comments
+  [class*="theme-"] article a:visited {
     color: #712082; }
     /* line 32, /www/sites/HbgPrime/wwwroot/source/sass/typography/_link.scss */
     [class*="theme-"] article a:not([class]):visited:hover,
-    [class*="theme-"] article a.link-item:visited:hover {
+    [class*="theme-"] article a.link-item:visited:hover,
+    [class*="theme-"] article .sidebar-left-sidebar .widget_archive a:visited:hover, .sidebar-left-sidebar .widget_archive
+    [class*="theme-"] article a:visited:hover,
+    [class*="theme-"] article
+    .sidebar-right-sidebar .widget_archive a:visited:hover,
+    .sidebar-right-sidebar .widget_archive
+    [class*="theme-"] article a:visited:hover,
+    [class*="theme-"] article .sidebar-left-sidebar
+    .widget_categories a:visited:hover, .sidebar-left-sidebar
+    .widget_categories
+    [class*="theme-"] article a:visited:hover,
+    [class*="theme-"] article
+    .sidebar-right-sidebar
+    .widget_categories a:visited:hover,
+    .sidebar-right-sidebar
+    .widget_categories
+    [class*="theme-"] article a:visited:hover,
+    [class*="theme-"] article .sidebar-left-sidebar
+    .widget_meta a:visited:hover, .sidebar-left-sidebar
+    .widget_meta
+    [class*="theme-"] article a:visited:hover,
+    [class*="theme-"] article
+    .sidebar-right-sidebar
+    .widget_meta a:visited:hover,
+    .sidebar-right-sidebar
+    .widget_meta
+    [class*="theme-"] article a:visited:hover,
+    [class*="theme-"] article .sidebar-left-sidebar
+    .widget_recent_entries a:visited:hover, .sidebar-left-sidebar
+    .widget_recent_entries
+    [class*="theme-"] article a:visited:hover,
+    [class*="theme-"] article
+    .sidebar-right-sidebar
+    .widget_recent_entries a:visited:hover,
+    .sidebar-right-sidebar
+    .widget_recent_entries
+    [class*="theme-"] article a:visited:hover,
+    [class*="theme-"] article .sidebar-left-sidebar
+    .widget_recent_comments a:visited:hover, .sidebar-left-sidebar
+    .widget_recent_comments
+    [class*="theme-"] article a:visited:hover,
+    [class*="theme-"] article
+    .sidebar-right-sidebar
+    .widget_recent_comments a:visited:hover,
+    .sidebar-right-sidebar
+    .widget_recent_comments
+    [class*="theme-"] article a:visited:hover {
       color: #a61380; }
 
 /* line 20, /www/sites/HbgPrime/wwwroot/source/sass/typography/_label.scss */
@@ -2075,14 +2293,14 @@ input[type="button"].btn::-moz-focus-inner {
 
 /* line 258, /www/sites/HbgPrime/wwwroot/source/sass/component/navigation/_nav.scss */
 .header-casual .menu-trigger .menu-icon {
-  background-color: #fff !important; }
+  background-color: #fff; }
   /* line 261, /www/sites/HbgPrime/wwwroot/source/sass/component/navigation/_nav.scss */
   .header-casual .menu-trigger .menu-icon::before, .header-casual .menu-trigger .menu-icon::after {
-    background-color: #fff !important; }
+    background-color: #fff; }
 
 /* line 269, /www/sites/HbgPrime/wwwroot/source/sass/component/navigation/_nav.scss */
 .header-casual .menu-trigger:target .menu-icon, .header-casual .menu-trigger.open .menu-icon {
-  background: transparent !important; }
+  background: transparent; }
 
 /*
 .menu-trigger:target + ul.nav-aside,
@@ -3124,7 +3342,7 @@ input[type="button"].btn::-moz-focus-inner {
     border-top: 1px solid #e7e5e1;
     padding: 15px 15px; }
   /* line 96, /www/sites/HbgPrime/wwwroot/source/sass/component/blog/_post.scss */
-  .post-compressed .box {
+  .post-compressed .box, .post-compressed [class^="widget_"]:not(.widget_calendar) {
     padding: 15px; }
   /* line 100, /www/sites/HbgPrime/wwwroot/source/sass/component/blog/_post.scss */
   .post-compressed time {
@@ -3880,32 +4098,40 @@ input[type="button"].btn::-moz-focus-inner {
   background-color: #a61380; }
 
 /* line 1, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_box.scss */
-.box {
+.box, [class^="widget_"]:not(.widget_calendar) {
   display: block;
   padding: 5px;
   margin-bottom: 15px; }
   /* line 6, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_box.scss */
-  .box p + p {
+  .box p + p, [class^="widget_"]:not(.widget_calendar) p + p {
     margin-top: 10px; }
   /* line 10, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_box.scss */
-  .box li .date {
+  .box li .date, [class^="widget_"]:not(.widget_calendar) li .date {
     margin-top: 3px; }
+  /* line 14, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_box.scss */
+  .box .box-title, [class^="widget_"]:not(.widget_calendar) .box-title,
+  .box > h1, [class^="widget_"]:not(.widget_calendar) > h1,
+  .box > h2, [class^="widget_"]:not(.widget_calendar) > h2, .widget_calendar
+  .box > caption, .widget_calendar [class^="widget_"]:not(.widget_calendar) > caption,
+  .box > h3, [class^="widget_"]:not(.widget_calendar) > h3,
+  .box > h4, [class^="widget_"]:not(.widget_calendar) > h4,
+  .box > h5, [class^="widget_"]:not(.widget_calendar) > h5,
+  .box > h6, [class^="widget_"]:not(.widget_calendar) > h6 {
+    font-size: 1.2em; }
 
-/* line 15, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_box.scss */
-.creamy .box {
-  background-color: #fff; }
-
-/* line 19, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_box.scss */
-.box + .box {
+/* line 25, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_box.scss */
+.box + .box, [class^="widget_"]:not(.widget_calendar) + .box, .box + [class^="widget_"]:not(.widget_calendar), [class^="widget_"]:not(.widget_calendar) + [class^="widget_"]:not(.widget_calendar) {
   margin-bottom: 0;
   margin-top: 15px; }
 
-/* line 24, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_box.scss */
-.box-content {
+/* line 30, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_box.scss */
+.box-content, [class^="widget_"]:not(.widget_calendar) *:not(.main-fotter) .textwidget,
+[class^="widget_"]:not(.widget_calendar) *:not(.main-fotter) form, .sidebar-left-sidebar .widget_nav_menu > div,
+.sidebar-right-sidebar .widget_nav_menu > div {
   padding: 10px;
   font-size: .9em; }
 
-/* line 29, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_box.scss */
+/* line 35, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_box.scss */
 .box-image {
   width: 100%; }
 
@@ -3929,196 +4155,823 @@ a.box-index {
   line-height: 1em; }
 
 /* line 22, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_filled.scss */
-.box-filled, .box-filled-1, .box-filled-2, .box-filled-3, .box-filled-4 {
+.box-filled, .box-filled-1,
+[class*="grid-"]:nth-child(5n + 1) .box-filled, .box-filled-2,
+[class*="grid-"]:nth-child(5n + 2) .box-filled, .box-filled-3,
+[class*="grid-"]:nth-child(5n + 3) .box-filled, .box-filled-4,
+[class*="grid-"]:nth-child(5n + 4) .box-filled, .box-filled-5,
+[class*="grid-"]:nth-child(5n + 5) .box-filled, .sidebar-left-sidebar [class^="widget_"]:not(.widget_calendar),
+.sidebar-right-sidebar [class^="widget_"]:not(.widget_calendar) {
   background-color: #333;
   color: #fff; }
   /* line 26, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_filled.scss */
-  .box-filled .box-title, .box-filled-1 .box-title, .box-filled-2 .box-title, .box-filled-3 .box-title, .box-filled-4 .box-title {
+  .box-filled .box-title, .box-filled-1 .box-title,
+  [class*="grid-"]:nth-child(5n + 1) .box-filled .box-title, .box-filled-2 .box-title,
+  [class*="grid-"]:nth-child(5n + 2) .box-filled .box-title, .box-filled-3 .box-title,
+  [class*="grid-"]:nth-child(5n + 3) .box-filled .box-title, .box-filled-4 .box-title,
+  [class*="grid-"]:nth-child(5n + 4) .box-filled .box-title, .box-filled-5 .box-title,
+  [class*="grid-"]:nth-child(5n + 5) .box-filled .box-title, .sidebar-left-sidebar [class^="widget_"]:not(.widget_calendar) .box-title,
+  .sidebar-right-sidebar [class^="widget_"]:not(.widget_calendar) .box-title,
+  .box-filled > h1, .box-filled-1 > h1,
+  [class*="grid-"]:nth-child(5n + 1) .box-filled > h1, .box-filled-2 > h1,
+  [class*="grid-"]:nth-child(5n + 2) .box-filled > h1, .box-filled-3 > h1,
+  [class*="grid-"]:nth-child(5n + 3) .box-filled > h1, .box-filled-4 > h1,
+  [class*="grid-"]:nth-child(5n + 4) .box-filled > h1, .box-filled-5 > h1,
+  [class*="grid-"]:nth-child(5n + 5) .box-filled > h1, .sidebar-left-sidebar [class^="widget_"]:not(.widget_calendar) > h1,
+  .sidebar-right-sidebar [class^="widget_"]:not(.widget_calendar) > h1,
+  .box-filled > h2, .box-filled-1 > h2,
+  [class*="grid-"]:nth-child(5n + 1) .box-filled > h2, .box-filled-2 > h2,
+  [class*="grid-"]:nth-child(5n + 2) .box-filled > h2, .box-filled-3 > h2,
+  [class*="grid-"]:nth-child(5n + 3) .box-filled > h2, .box-filled-4 > h2,
+  [class*="grid-"]:nth-child(5n + 4) .box-filled > h2, .box-filled-5 > h2,
+  [class*="grid-"]:nth-child(5n + 5) .box-filled > h2, .sidebar-left-sidebar [class^="widget_"]:not(.widget_calendar) > h2,
+  .sidebar-right-sidebar [class^="widget_"]:not(.widget_calendar) > h2, .widget_calendar
+  .box-filled > caption, .widget_calendar .box-filled-1 > caption,
+  [class*="grid-"]:nth-child(5n + 1) .widget_calendar .box-filled > caption, .widget_calendar
+  [class*="grid-"]:nth-child(5n + 1) .box-filled > caption, .widget_calendar .box-filled-2 > caption,
+  [class*="grid-"]:nth-child(5n + 2) .widget_calendar .box-filled > caption, .widget_calendar
+  [class*="grid-"]:nth-child(5n + 2) .box-filled > caption, .widget_calendar .box-filled-3 > caption,
+  [class*="grid-"]:nth-child(5n + 3) .widget_calendar .box-filled > caption, .widget_calendar
+  [class*="grid-"]:nth-child(5n + 3) .box-filled > caption, .widget_calendar .box-filled-4 > caption,
+  [class*="grid-"]:nth-child(5n + 4) .widget_calendar .box-filled > caption, .widget_calendar
+  [class*="grid-"]:nth-child(5n + 4) .box-filled > caption, .widget_calendar .box-filled-5 > caption,
+  [class*="grid-"]:nth-child(5n + 5) .widget_calendar .box-filled > caption, .widget_calendar
+  [class*="grid-"]:nth-child(5n + 5) .box-filled > caption, .sidebar-left-sidebar .widget_calendar [class^="widget_"]:not(.widget_calendar) > caption, .widget_calendar .sidebar-left-sidebar [class^="widget_"]:not(.widget_calendar) > caption,
+  .sidebar-right-sidebar .widget_calendar [class^="widget_"]:not(.widget_calendar) > caption, .widget_calendar
+  .sidebar-right-sidebar [class^="widget_"]:not(.widget_calendar) > caption,
+  .box-filled > h3, .box-filled-1 > h3,
+  [class*="grid-"]:nth-child(5n + 1) .box-filled > h3, .box-filled-2 > h3,
+  [class*="grid-"]:nth-child(5n + 2) .box-filled > h3, .box-filled-3 > h3,
+  [class*="grid-"]:nth-child(5n + 3) .box-filled > h3, .box-filled-4 > h3,
+  [class*="grid-"]:nth-child(5n + 4) .box-filled > h3, .box-filled-5 > h3,
+  [class*="grid-"]:nth-child(5n + 5) .box-filled > h3, .sidebar-left-sidebar [class^="widget_"]:not(.widget_calendar) > h3,
+  .sidebar-right-sidebar [class^="widget_"]:not(.widget_calendar) > h3,
+  .box-filled > h4, .box-filled-1 > h4,
+  [class*="grid-"]:nth-child(5n + 1) .box-filled > h4, .box-filled-2 > h4,
+  [class*="grid-"]:nth-child(5n + 2) .box-filled > h4, .box-filled-3 > h4,
+  [class*="grid-"]:nth-child(5n + 3) .box-filled > h4, .box-filled-4 > h4,
+  [class*="grid-"]:nth-child(5n + 4) .box-filled > h4, .box-filled-5 > h4,
+  [class*="grid-"]:nth-child(5n + 5) .box-filled > h4, .sidebar-left-sidebar [class^="widget_"]:not(.widget_calendar) > h4,
+  .sidebar-right-sidebar [class^="widget_"]:not(.widget_calendar) > h4,
+  .box-filled > h5, .box-filled-1 > h5,
+  [class*="grid-"]:nth-child(5n + 1) .box-filled > h5, .box-filled-2 > h5,
+  [class*="grid-"]:nth-child(5n + 2) .box-filled > h5, .box-filled-3 > h5,
+  [class*="grid-"]:nth-child(5n + 3) .box-filled > h5, .box-filled-4 > h5,
+  [class*="grid-"]:nth-child(5n + 4) .box-filled > h5, .box-filled-5 > h5,
+  [class*="grid-"]:nth-child(5n + 5) .box-filled > h5, .sidebar-left-sidebar [class^="widget_"]:not(.widget_calendar) > h5,
+  .sidebar-right-sidebar [class^="widget_"]:not(.widget_calendar) > h5,
+  .box-filled > h6, .box-filled-1 > h6,
+  [class*="grid-"]:nth-child(5n + 1) .box-filled > h6, .box-filled-2 > h6,
+  [class*="grid-"]:nth-child(5n + 2) .box-filled > h6, .box-filled-3 > h6,
+  [class*="grid-"]:nth-child(5n + 3) .box-filled > h6, .box-filled-4 > h6,
+  [class*="grid-"]:nth-child(5n + 4) .box-filled > h6, .box-filled-5 > h6,
+  [class*="grid-"]:nth-child(5n + 5) .box-filled > h6, .sidebar-left-sidebar [class^="widget_"]:not(.widget_calendar) > h6,
+  .sidebar-right-sidebar [class^="widget_"]:not(.widget_calendar) > h6 {
     padding: 10px 10px 0 10px; }
-  /* line 33, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_filled.scss */
-  .theme-red .box-filled, .theme-red .box-filled-1, .theme-red .box-filled-2, .theme-red .box-filled-3, .theme-red .box-filled-4 {
+  /* line 39, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_filled.scss */
+  .theme-red .box-filled, .theme-red .box-filled-1, .theme-red
+  [class*="grid-"]:nth-child(5n + 1) .box-filled,
+  [class*="grid-"]:nth-child(5n + 1) .theme-red .box-filled, .theme-red .box-filled-2, .theme-red
+  [class*="grid-"]:nth-child(5n + 2) .box-filled,
+  [class*="grid-"]:nth-child(5n + 2) .theme-red .box-filled, .theme-red .box-filled-3, .theme-red
+  [class*="grid-"]:nth-child(5n + 3) .box-filled,
+  [class*="grid-"]:nth-child(5n + 3) .theme-red .box-filled, .theme-red .box-filled-4, .theme-red
+  [class*="grid-"]:nth-child(5n + 4) .box-filled,
+  [class*="grid-"]:nth-child(5n + 4) .theme-red .box-filled, .theme-red .box-filled-5, .theme-red
+  [class*="grid-"]:nth-child(5n + 5) .box-filled,
+  [class*="grid-"]:nth-child(5n + 5) .theme-red .box-filled, .theme-red .sidebar-left-sidebar [class^="widget_"]:not(.widget_calendar), .sidebar-left-sidebar .theme-red [class^="widget_"]:not(.widget_calendar), .theme-red
+  .sidebar-right-sidebar [class^="widget_"]:not(.widget_calendar),
+  .sidebar-right-sidebar .theme-red [class^="widget_"]:not(.widget_calendar) {
     background-color: #cb0050; }
-  /* line 33, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_filled.scss */
-  .theme-blue .box-filled, .theme-blue .box-filled-1, .theme-blue .box-filled-2, .theme-blue .box-filled-3, .theme-blue .box-filled-4 {
+  /* line 39, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_filled.scss */
+  .theme-blue .box-filled, .theme-blue .box-filled-1, .theme-blue
+  [class*="grid-"]:nth-child(5n + 1) .box-filled,
+  [class*="grid-"]:nth-child(5n + 1) .theme-blue .box-filled, .theme-blue .box-filled-2, .theme-blue
+  [class*="grid-"]:nth-child(5n + 2) .box-filled,
+  [class*="grid-"]:nth-child(5n + 2) .theme-blue .box-filled, .theme-blue .box-filled-3, .theme-blue
+  [class*="grid-"]:nth-child(5n + 3) .box-filled,
+  [class*="grid-"]:nth-child(5n + 3) .theme-blue .box-filled, .theme-blue .box-filled-4, .theme-blue
+  [class*="grid-"]:nth-child(5n + 4) .box-filled,
+  [class*="grid-"]:nth-child(5n + 4) .theme-blue .box-filled, .theme-blue .box-filled-5, .theme-blue
+  [class*="grid-"]:nth-child(5n + 5) .box-filled,
+  [class*="grid-"]:nth-child(5n + 5) .theme-blue .box-filled, .theme-blue .sidebar-left-sidebar [class^="widget_"]:not(.widget_calendar), .sidebar-left-sidebar .theme-blue [class^="widget_"]:not(.widget_calendar), .theme-blue
+  .sidebar-right-sidebar [class^="widget_"]:not(.widget_calendar),
+  .sidebar-right-sidebar .theme-blue [class^="widget_"]:not(.widget_calendar) {
     background-color: #0069b4; }
-  /* line 33, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_filled.scss */
-  .theme-green .box-filled, .theme-green .box-filled-1, .theme-green .box-filled-2, .theme-green .box-filled-3, .theme-green .box-filled-4 {
+  /* line 39, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_filled.scss */
+  .theme-green .box-filled, .theme-green .box-filled-1, .theme-green
+  [class*="grid-"]:nth-child(5n + 1) .box-filled,
+  [class*="grid-"]:nth-child(5n + 1) .theme-green .box-filled, .theme-green .box-filled-2, .theme-green
+  [class*="grid-"]:nth-child(5n + 2) .box-filled,
+  [class*="grid-"]:nth-child(5n + 2) .theme-green .box-filled, .theme-green .box-filled-3, .theme-green
+  [class*="grid-"]:nth-child(5n + 3) .box-filled,
+  [class*="grid-"]:nth-child(5n + 3) .theme-green .box-filled, .theme-green .box-filled-4, .theme-green
+  [class*="grid-"]:nth-child(5n + 4) .box-filled,
+  [class*="grid-"]:nth-child(5n + 4) .theme-green .box-filled, .theme-green .box-filled-5, .theme-green
+  [class*="grid-"]:nth-child(5n + 5) .box-filled,
+  [class*="grid-"]:nth-child(5n + 5) .theme-green .box-filled, .theme-green .sidebar-left-sidebar [class^="widget_"]:not(.widget_calendar), .sidebar-left-sidebar .theme-green [class^="widget_"]:not(.widget_calendar), .theme-green
+  .sidebar-right-sidebar [class^="widget_"]:not(.widget_calendar),
+  .sidebar-right-sidebar .theme-green [class^="widget_"]:not(.widget_calendar) {
     background-color: #11a636; }
-  /* line 33, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_filled.scss */
-  .theme-purple .box-filled, .theme-purple .box-filled-1, .theme-purple .box-filled-2, .theme-purple .box-filled-3, .theme-purple .box-filled-4 {
+  /* line 39, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_filled.scss */
+  .theme-purple .box-filled, .theme-purple .box-filled-1, .theme-purple
+  [class*="grid-"]:nth-child(5n + 1) .box-filled,
+  [class*="grid-"]:nth-child(5n + 1) .theme-purple .box-filled, .theme-purple .box-filled-2, .theme-purple
+  [class*="grid-"]:nth-child(5n + 2) .box-filled,
+  [class*="grid-"]:nth-child(5n + 2) .theme-purple .box-filled, .theme-purple .box-filled-3, .theme-purple
+  [class*="grid-"]:nth-child(5n + 3) .box-filled,
+  [class*="grid-"]:nth-child(5n + 3) .theme-purple .box-filled, .theme-purple .box-filled-4, .theme-purple
+  [class*="grid-"]:nth-child(5n + 4) .box-filled,
+  [class*="grid-"]:nth-child(5n + 4) .theme-purple .box-filled, .theme-purple .box-filled-5, .theme-purple
+  [class*="grid-"]:nth-child(5n + 5) .box-filled,
+  [class*="grid-"]:nth-child(5n + 5) .theme-purple .box-filled, .theme-purple .sidebar-left-sidebar [class^="widget_"]:not(.widget_calendar), .sidebar-left-sidebar .theme-purple [class^="widget_"]:not(.widget_calendar), .theme-purple
+  .sidebar-right-sidebar [class^="widget_"]:not(.widget_calendar),
+  .sidebar-right-sidebar .theme-purple [class^="widget_"]:not(.widget_calendar) {
     background-color: #712082; }
 
-/* line 40, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_filled.scss */
-.box-filled-1 {
-  background-color: #fff; }
-  /* line 47, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_filled.scss */
-  .theme-red .box-filled-1 {
-    background-color: #f7a600; }
-  /* line 47, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_filled.scss */
-  .theme-blue .box-filled-1 {
-    background-color: #4db4e7; }
-  /* line 47, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_filled.scss */
-  .theme-green .box-filled-1 {
-    background-color: #afca05; }
-  /* line 47, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_filled.scss */
-  .theme-purple .box-filled-1 {
-    background-color: #d35098; }
+/* line 53, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_filled.scss */
+.theme-red .box-filled-1, .theme-red
+[class*="grid-"]:nth-child(5n + 1) .box-filled-1, .theme-red
+[class*="grid-"]:nth-child(5n + 1) .box-filled, .theme-red
+[class*="grid-"]:nth-child(5n + 1) .box-filled-2, .theme-red
+[class*="grid-"]:nth-child(5n + 1) .box-filled-3, .theme-red
+[class*="grid-"]:nth-child(5n + 1) .box-filled-4, .theme-red
+[class*="grid-"]:nth-child(5n + 1) .box-filled-5, .theme-red
+[class*="grid-"]:nth-child(5n + 1) .sidebar-left-sidebar [class^="widget_"]:not(.widget_calendar), .sidebar-left-sidebar .theme-red
+[class*="grid-"]:nth-child(5n + 1) [class^="widget_"]:not(.widget_calendar), .theme-red
+[class*="grid-"]:nth-child(5n + 1)
+.sidebar-right-sidebar [class^="widget_"]:not(.widget_calendar),
+.sidebar-right-sidebar .theme-red
+[class*="grid-"]:nth-child(5n + 1) [class^="widget_"]:not(.widget_calendar) {
+  background-color: #f7a600; }
 
-/* line 54, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_filled.scss */
-.box-filled-2 {
-  background-color: #333; }
-  /* line 61, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_filled.scss */
-  .theme-red .box-filled-2 {
-    background-color: #cb0050; }
-  /* line 61, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_filled.scss */
-  .theme-blue .box-filled-2 {
-    background-color: #0069b4; }
-  /* line 61, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_filled.scss */
-  .theme-green .box-filled-2 {
-    background-color: #11a636; }
-  /* line 61, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_filled.scss */
-  .theme-purple .box-filled-2 {
-    background-color: #712082; }
+/* line 53, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_filled.scss */
+.theme-blue .box-filled-1, .theme-blue
+[class*="grid-"]:nth-child(5n + 1) .box-filled-1, .theme-blue
+[class*="grid-"]:nth-child(5n + 1) .box-filled, .theme-blue
+[class*="grid-"]:nth-child(5n + 1) .box-filled-2, .theme-blue
+[class*="grid-"]:nth-child(5n + 1) .box-filled-3, .theme-blue
+[class*="grid-"]:nth-child(5n + 1) .box-filled-4, .theme-blue
+[class*="grid-"]:nth-child(5n + 1) .box-filled-5, .theme-blue
+[class*="grid-"]:nth-child(5n + 1) .sidebar-left-sidebar [class^="widget_"]:not(.widget_calendar), .sidebar-left-sidebar .theme-blue
+[class*="grid-"]:nth-child(5n + 1) [class^="widget_"]:not(.widget_calendar), .theme-blue
+[class*="grid-"]:nth-child(5n + 1)
+.sidebar-right-sidebar [class^="widget_"]:not(.widget_calendar),
+.sidebar-right-sidebar .theme-blue
+[class*="grid-"]:nth-child(5n + 1) [class^="widget_"]:not(.widget_calendar) {
+  background-color: #4db4e7; }
 
-/* line 68, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_filled.scss */
-.box-filled-3 {
-  background-color: #666; }
-  /* line 75, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_filled.scss */
-  .theme-red .box-filled-3 {
-    background-color: #ec6701; }
-  /* line 75, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_filled.scss */
-  .theme-blue .box-filled-3 {
-    background-color: #5ba1d8; }
-  /* line 75, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_filled.scss */
-  .theme-green .box-filled-3 {
-    background-color: #a0c855; }
-  /* line 75, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_filled.scss */
-  .theme-purple .box-filled-3 {
-    background-color: #a84c98; }
+/* line 53, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_filled.scss */
+.theme-green .box-filled-1, .theme-green
+[class*="grid-"]:nth-child(5n + 1) .box-filled-1, .theme-green
+[class*="grid-"]:nth-child(5n + 1) .box-filled, .theme-green
+[class*="grid-"]:nth-child(5n + 1) .box-filled-2, .theme-green
+[class*="grid-"]:nth-child(5n + 1) .box-filled-3, .theme-green
+[class*="grid-"]:nth-child(5n + 1) .box-filled-4, .theme-green
+[class*="grid-"]:nth-child(5n + 1) .box-filled-5, .theme-green
+[class*="grid-"]:nth-child(5n + 1) .sidebar-left-sidebar [class^="widget_"]:not(.widget_calendar), .sidebar-left-sidebar .theme-green
+[class*="grid-"]:nth-child(5n + 1) [class^="widget_"]:not(.widget_calendar), .theme-green
+[class*="grid-"]:nth-child(5n + 1)
+.sidebar-right-sidebar [class^="widget_"]:not(.widget_calendar),
+.sidebar-right-sidebar .theme-green
+[class*="grid-"]:nth-child(5n + 1) [class^="widget_"]:not(.widget_calendar) {
+  background-color: #afca05; }
 
-/* line 82, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_filled.scss */
-.box-filled-4 {
-  background-color: #777; }
-  /* line 89, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_filled.scss */
-  .theme-red .box-filled-4 {
-    background-color: #ae0b05; }
-  /* line 89, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_filled.scss */
-  .theme-blue .box-filled-4 {
-    background-color: #005c86; }
-  /* line 89, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_filled.scss */
-  .theme-green .box-filled-4 {
-    background-color: #50811b; }
-  /* line 89, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_filled.scss */
-  .theme-purple .box-filled-4 {
-    background-color: #7b075e; }
+/* line 53, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_filled.scss */
+.theme-purple .box-filled-1, .theme-purple
+[class*="grid-"]:nth-child(5n + 1) .box-filled-1, .theme-purple
+[class*="grid-"]:nth-child(5n + 1) .box-filled, .theme-purple
+[class*="grid-"]:nth-child(5n + 1) .box-filled-2, .theme-purple
+[class*="grid-"]:nth-child(5n + 1) .box-filled-3, .theme-purple
+[class*="grid-"]:nth-child(5n + 1) .box-filled-4, .theme-purple
+[class*="grid-"]:nth-child(5n + 1) .box-filled-5, .theme-purple
+[class*="grid-"]:nth-child(5n + 1) .sidebar-left-sidebar [class^="widget_"]:not(.widget_calendar), .sidebar-left-sidebar .theme-purple
+[class*="grid-"]:nth-child(5n + 1) [class^="widget_"]:not(.widget_calendar), .theme-purple
+[class*="grid-"]:nth-child(5n + 1)
+.sidebar-right-sidebar [class^="widget_"]:not(.widget_calendar),
+.sidebar-right-sidebar .theme-purple
+[class*="grid-"]:nth-child(5n + 1) [class^="widget_"]:not(.widget_calendar) {
+  background-color: #d35098; }
 
-/* line 96, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_filled.scss */
-.box-filled-4 {
-  background-color: #000; }
-  /* line 103, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_filled.scss */
-  .theme-red .box-filled-4 {
-    background-color: #e3000f; }
-  /* line 103, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_filled.scss */
-  .theme-blue .box-filled-4 {
-    background-color: #0095db; }
-  /* line 103, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_filled.scss */
-  .theme-green .box-filled-4 {
-    background-color: #76b828; }
-  /* line 103, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_filled.scss */
-  .theme-purple .box-filled-4 {
-    background-color: #a61380; }
+/* line 67, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_filled.scss */
+.theme-red .box-filled-2, .theme-red
+[class*="grid-"]:nth-child(5n + 2) .box-filled-1, .theme-red
+[class*="grid-"]:nth-child(5n + 2) .box-filled-2, .theme-red
+[class*="grid-"]:nth-child(5n + 2) .box-filled, .theme-red
+[class*="grid-"]:nth-child(5n + 2) .box-filled-3, .theme-red
+[class*="grid-"]:nth-child(5n + 2) .box-filled-4, .theme-red
+[class*="grid-"]:nth-child(5n + 2) .box-filled-5, .theme-red
+[class*="grid-"]:nth-child(5n + 2) .sidebar-left-sidebar [class^="widget_"]:not(.widget_calendar), .sidebar-left-sidebar .theme-red
+[class*="grid-"]:nth-child(5n + 2) [class^="widget_"]:not(.widget_calendar), .theme-red
+[class*="grid-"]:nth-child(5n + 2)
+.sidebar-right-sidebar [class^="widget_"]:not(.widget_calendar),
+.sidebar-right-sidebar .theme-red
+[class*="grid-"]:nth-child(5n + 2) [class^="widget_"]:not(.widget_calendar) {
+  background-color: #cb0050; }
+
+/* line 67, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_filled.scss */
+.theme-blue .box-filled-2, .theme-blue
+[class*="grid-"]:nth-child(5n + 2) .box-filled-1, .theme-blue
+[class*="grid-"]:nth-child(5n + 2) .box-filled-2, .theme-blue
+[class*="grid-"]:nth-child(5n + 2) .box-filled, .theme-blue
+[class*="grid-"]:nth-child(5n + 2) .box-filled-3, .theme-blue
+[class*="grid-"]:nth-child(5n + 2) .box-filled-4, .theme-blue
+[class*="grid-"]:nth-child(5n + 2) .box-filled-5, .theme-blue
+[class*="grid-"]:nth-child(5n + 2) .sidebar-left-sidebar [class^="widget_"]:not(.widget_calendar), .sidebar-left-sidebar .theme-blue
+[class*="grid-"]:nth-child(5n + 2) [class^="widget_"]:not(.widget_calendar), .theme-blue
+[class*="grid-"]:nth-child(5n + 2)
+.sidebar-right-sidebar [class^="widget_"]:not(.widget_calendar),
+.sidebar-right-sidebar .theme-blue
+[class*="grid-"]:nth-child(5n + 2) [class^="widget_"]:not(.widget_calendar) {
+  background-color: #0069b4; }
+
+/* line 67, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_filled.scss */
+.theme-green .box-filled-2, .theme-green
+[class*="grid-"]:nth-child(5n + 2) .box-filled-1, .theme-green
+[class*="grid-"]:nth-child(5n + 2) .box-filled-2, .theme-green
+[class*="grid-"]:nth-child(5n + 2) .box-filled, .theme-green
+[class*="grid-"]:nth-child(5n + 2) .box-filled-3, .theme-green
+[class*="grid-"]:nth-child(5n + 2) .box-filled-4, .theme-green
+[class*="grid-"]:nth-child(5n + 2) .box-filled-5, .theme-green
+[class*="grid-"]:nth-child(5n + 2) .sidebar-left-sidebar [class^="widget_"]:not(.widget_calendar), .sidebar-left-sidebar .theme-green
+[class*="grid-"]:nth-child(5n + 2) [class^="widget_"]:not(.widget_calendar), .theme-green
+[class*="grid-"]:nth-child(5n + 2)
+.sidebar-right-sidebar [class^="widget_"]:not(.widget_calendar),
+.sidebar-right-sidebar .theme-green
+[class*="grid-"]:nth-child(5n + 2) [class^="widget_"]:not(.widget_calendar) {
+  background-color: #11a636; }
+
+/* line 67, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_filled.scss */
+.theme-purple .box-filled-2, .theme-purple
+[class*="grid-"]:nth-child(5n + 2) .box-filled-1, .theme-purple
+[class*="grid-"]:nth-child(5n + 2) .box-filled-2, .theme-purple
+[class*="grid-"]:nth-child(5n + 2) .box-filled, .theme-purple
+[class*="grid-"]:nth-child(5n + 2) .box-filled-3, .theme-purple
+[class*="grid-"]:nth-child(5n + 2) .box-filled-4, .theme-purple
+[class*="grid-"]:nth-child(5n + 2) .box-filled-5, .theme-purple
+[class*="grid-"]:nth-child(5n + 2) .sidebar-left-sidebar [class^="widget_"]:not(.widget_calendar), .sidebar-left-sidebar .theme-purple
+[class*="grid-"]:nth-child(5n + 2) [class^="widget_"]:not(.widget_calendar), .theme-purple
+[class*="grid-"]:nth-child(5n + 2)
+.sidebar-right-sidebar [class^="widget_"]:not(.widget_calendar),
+.sidebar-right-sidebar .theme-purple
+[class*="grid-"]:nth-child(5n + 2) [class^="widget_"]:not(.widget_calendar) {
+  background-color: #712082; }
+
+/* line 81, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_filled.scss */
+.theme-red .box-filled-3, .theme-red
+[class*="grid-"]:nth-child(5n + 3) .box-filled-1, .theme-red
+[class*="grid-"]:nth-child(5n + 3) .box-filled-2, .theme-red
+[class*="grid-"]:nth-child(5n + 3) .box-filled-3, .theme-red
+[class*="grid-"]:nth-child(5n + 3) .box-filled, .theme-red
+[class*="grid-"]:nth-child(5n + 3) .box-filled-4, .theme-red
+[class*="grid-"]:nth-child(5n + 3) .box-filled-5, .theme-red
+[class*="grid-"]:nth-child(5n + 3) .sidebar-left-sidebar [class^="widget_"]:not(.widget_calendar), .sidebar-left-sidebar .theme-red
+[class*="grid-"]:nth-child(5n + 3) [class^="widget_"]:not(.widget_calendar), .theme-red
+[class*="grid-"]:nth-child(5n + 3)
+.sidebar-right-sidebar [class^="widget_"]:not(.widget_calendar),
+.sidebar-right-sidebar .theme-red
+[class*="grid-"]:nth-child(5n + 3) [class^="widget_"]:not(.widget_calendar) {
+  background-color: #ec6701; }
+
+/* line 81, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_filled.scss */
+.theme-blue .box-filled-3, .theme-blue
+[class*="grid-"]:nth-child(5n + 3) .box-filled-1, .theme-blue
+[class*="grid-"]:nth-child(5n + 3) .box-filled-2, .theme-blue
+[class*="grid-"]:nth-child(5n + 3) .box-filled-3, .theme-blue
+[class*="grid-"]:nth-child(5n + 3) .box-filled, .theme-blue
+[class*="grid-"]:nth-child(5n + 3) .box-filled-4, .theme-blue
+[class*="grid-"]:nth-child(5n + 3) .box-filled-5, .theme-blue
+[class*="grid-"]:nth-child(5n + 3) .sidebar-left-sidebar [class^="widget_"]:not(.widget_calendar), .sidebar-left-sidebar .theme-blue
+[class*="grid-"]:nth-child(5n + 3) [class^="widget_"]:not(.widget_calendar), .theme-blue
+[class*="grid-"]:nth-child(5n + 3)
+.sidebar-right-sidebar [class^="widget_"]:not(.widget_calendar),
+.sidebar-right-sidebar .theme-blue
+[class*="grid-"]:nth-child(5n + 3) [class^="widget_"]:not(.widget_calendar) {
+  background-color: #5ba1d8; }
+
+/* line 81, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_filled.scss */
+.theme-green .box-filled-3, .theme-green
+[class*="grid-"]:nth-child(5n + 3) .box-filled-1, .theme-green
+[class*="grid-"]:nth-child(5n + 3) .box-filled-2, .theme-green
+[class*="grid-"]:nth-child(5n + 3) .box-filled-3, .theme-green
+[class*="grid-"]:nth-child(5n + 3) .box-filled, .theme-green
+[class*="grid-"]:nth-child(5n + 3) .box-filled-4, .theme-green
+[class*="grid-"]:nth-child(5n + 3) .box-filled-5, .theme-green
+[class*="grid-"]:nth-child(5n + 3) .sidebar-left-sidebar [class^="widget_"]:not(.widget_calendar), .sidebar-left-sidebar .theme-green
+[class*="grid-"]:nth-child(5n + 3) [class^="widget_"]:not(.widget_calendar), .theme-green
+[class*="grid-"]:nth-child(5n + 3)
+.sidebar-right-sidebar [class^="widget_"]:not(.widget_calendar),
+.sidebar-right-sidebar .theme-green
+[class*="grid-"]:nth-child(5n + 3) [class^="widget_"]:not(.widget_calendar) {
+  background-color: #a0c855; }
+
+/* line 81, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_filled.scss */
+.theme-purple .box-filled-3, .theme-purple
+[class*="grid-"]:nth-child(5n + 3) .box-filled-1, .theme-purple
+[class*="grid-"]:nth-child(5n + 3) .box-filled-2, .theme-purple
+[class*="grid-"]:nth-child(5n + 3) .box-filled-3, .theme-purple
+[class*="grid-"]:nth-child(5n + 3) .box-filled, .theme-purple
+[class*="grid-"]:nth-child(5n + 3) .box-filled-4, .theme-purple
+[class*="grid-"]:nth-child(5n + 3) .box-filled-5, .theme-purple
+[class*="grid-"]:nth-child(5n + 3) .sidebar-left-sidebar [class^="widget_"]:not(.widget_calendar), .sidebar-left-sidebar .theme-purple
+[class*="grid-"]:nth-child(5n + 3) [class^="widget_"]:not(.widget_calendar), .theme-purple
+[class*="grid-"]:nth-child(5n + 3)
+.sidebar-right-sidebar [class^="widget_"]:not(.widget_calendar),
+.sidebar-right-sidebar .theme-purple
+[class*="grid-"]:nth-child(5n + 3) [class^="widget_"]:not(.widget_calendar) {
+  background-color: #a84c98; }
+
+/* line 95, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_filled.scss */
+.theme-red .box-filled-4, .theme-red
+[class*="grid-"]:nth-child(5n + 4) .box-filled-1, .theme-red
+[class*="grid-"]:nth-child(5n + 4) .box-filled-2, .theme-red
+[class*="grid-"]:nth-child(5n + 4) .box-filled-3, .theme-red
+[class*="grid-"]:nth-child(5n + 4) .box-filled-4, .theme-red
+[class*="grid-"]:nth-child(5n + 4) .box-filled, .theme-red
+[class*="grid-"]:nth-child(5n + 4) .box-filled-5, .theme-red
+[class*="grid-"]:nth-child(5n + 4) .sidebar-left-sidebar [class^="widget_"]:not(.widget_calendar), .sidebar-left-sidebar .theme-red
+[class*="grid-"]:nth-child(5n + 4) [class^="widget_"]:not(.widget_calendar), .theme-red
+[class*="grid-"]:nth-child(5n + 4)
+.sidebar-right-sidebar [class^="widget_"]:not(.widget_calendar),
+.sidebar-right-sidebar .theme-red
+[class*="grid-"]:nth-child(5n + 4) [class^="widget_"]:not(.widget_calendar) {
+  background-color: #ae0b05; }
+
+/* line 95, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_filled.scss */
+.theme-blue .box-filled-4, .theme-blue
+[class*="grid-"]:nth-child(5n + 4) .box-filled-1, .theme-blue
+[class*="grid-"]:nth-child(5n + 4) .box-filled-2, .theme-blue
+[class*="grid-"]:nth-child(5n + 4) .box-filled-3, .theme-blue
+[class*="grid-"]:nth-child(5n + 4) .box-filled-4, .theme-blue
+[class*="grid-"]:nth-child(5n + 4) .box-filled, .theme-blue
+[class*="grid-"]:nth-child(5n + 4) .box-filled-5, .theme-blue
+[class*="grid-"]:nth-child(5n + 4) .sidebar-left-sidebar [class^="widget_"]:not(.widget_calendar), .sidebar-left-sidebar .theme-blue
+[class*="grid-"]:nth-child(5n + 4) [class^="widget_"]:not(.widget_calendar), .theme-blue
+[class*="grid-"]:nth-child(5n + 4)
+.sidebar-right-sidebar [class^="widget_"]:not(.widget_calendar),
+.sidebar-right-sidebar .theme-blue
+[class*="grid-"]:nth-child(5n + 4) [class^="widget_"]:not(.widget_calendar) {
+  background-color: #005c86; }
+
+/* line 95, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_filled.scss */
+.theme-green .box-filled-4, .theme-green
+[class*="grid-"]:nth-child(5n + 4) .box-filled-1, .theme-green
+[class*="grid-"]:nth-child(5n + 4) .box-filled-2, .theme-green
+[class*="grid-"]:nth-child(5n + 4) .box-filled-3, .theme-green
+[class*="grid-"]:nth-child(5n + 4) .box-filled-4, .theme-green
+[class*="grid-"]:nth-child(5n + 4) .box-filled, .theme-green
+[class*="grid-"]:nth-child(5n + 4) .box-filled-5, .theme-green
+[class*="grid-"]:nth-child(5n + 4) .sidebar-left-sidebar [class^="widget_"]:not(.widget_calendar), .sidebar-left-sidebar .theme-green
+[class*="grid-"]:nth-child(5n + 4) [class^="widget_"]:not(.widget_calendar), .theme-green
+[class*="grid-"]:nth-child(5n + 4)
+.sidebar-right-sidebar [class^="widget_"]:not(.widget_calendar),
+.sidebar-right-sidebar .theme-green
+[class*="grid-"]:nth-child(5n + 4) [class^="widget_"]:not(.widget_calendar) {
+  background-color: #50811b; }
+
+/* line 95, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_filled.scss */
+.theme-purple .box-filled-4, .theme-purple
+[class*="grid-"]:nth-child(5n + 4) .box-filled-1, .theme-purple
+[class*="grid-"]:nth-child(5n + 4) .box-filled-2, .theme-purple
+[class*="grid-"]:nth-child(5n + 4) .box-filled-3, .theme-purple
+[class*="grid-"]:nth-child(5n + 4) .box-filled-4, .theme-purple
+[class*="grid-"]:nth-child(5n + 4) .box-filled, .theme-purple
+[class*="grid-"]:nth-child(5n + 4) .box-filled-5, .theme-purple
+[class*="grid-"]:nth-child(5n + 4) .sidebar-left-sidebar [class^="widget_"]:not(.widget_calendar), .sidebar-left-sidebar .theme-purple
+[class*="grid-"]:nth-child(5n + 4) [class^="widget_"]:not(.widget_calendar), .theme-purple
+[class*="grid-"]:nth-child(5n + 4)
+.sidebar-right-sidebar [class^="widget_"]:not(.widget_calendar),
+.sidebar-right-sidebar .theme-purple
+[class*="grid-"]:nth-child(5n + 4) [class^="widget_"]:not(.widget_calendar) {
+  background-color: #7b075e; }
+
+/* line 109, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_filled.scss */
+.theme-red .box-filled-5, .theme-red
+[class*="grid-"]:nth-child(5n + 5) .box-filled-1, .theme-red
+[class*="grid-"]:nth-child(5n + 5) .box-filled-2, .theme-red
+[class*="grid-"]:nth-child(5n + 5) .box-filled-3, .theme-red
+[class*="grid-"]:nth-child(5n + 5) .box-filled-4, .theme-red
+[class*="grid-"]:nth-child(5n + 5) .box-filled-5, .theme-red
+[class*="grid-"]:nth-child(5n + 5) .box-filled, .theme-red
+[class*="grid-"]:nth-child(5n + 5) .sidebar-left-sidebar [class^="widget_"]:not(.widget_calendar), .sidebar-left-sidebar .theme-red
+[class*="grid-"]:nth-child(5n + 5) [class^="widget_"]:not(.widget_calendar), .theme-red
+[class*="grid-"]:nth-child(5n + 5)
+.sidebar-right-sidebar [class^="widget_"]:not(.widget_calendar),
+.sidebar-right-sidebar .theme-red
+[class*="grid-"]:nth-child(5n + 5) [class^="widget_"]:not(.widget_calendar) {
+  background-color: #e3000f; }
+
+/* line 109, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_filled.scss */
+.theme-blue .box-filled-5, .theme-blue
+[class*="grid-"]:nth-child(5n + 5) .box-filled-1, .theme-blue
+[class*="grid-"]:nth-child(5n + 5) .box-filled-2, .theme-blue
+[class*="grid-"]:nth-child(5n + 5) .box-filled-3, .theme-blue
+[class*="grid-"]:nth-child(5n + 5) .box-filled-4, .theme-blue
+[class*="grid-"]:nth-child(5n + 5) .box-filled-5, .theme-blue
+[class*="grid-"]:nth-child(5n + 5) .box-filled, .theme-blue
+[class*="grid-"]:nth-child(5n + 5) .sidebar-left-sidebar [class^="widget_"]:not(.widget_calendar), .sidebar-left-sidebar .theme-blue
+[class*="grid-"]:nth-child(5n + 5) [class^="widget_"]:not(.widget_calendar), .theme-blue
+[class*="grid-"]:nth-child(5n + 5)
+.sidebar-right-sidebar [class^="widget_"]:not(.widget_calendar),
+.sidebar-right-sidebar .theme-blue
+[class*="grid-"]:nth-child(5n + 5) [class^="widget_"]:not(.widget_calendar) {
+  background-color: #0095db; }
+
+/* line 109, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_filled.scss */
+.theme-green .box-filled-5, .theme-green
+[class*="grid-"]:nth-child(5n + 5) .box-filled-1, .theme-green
+[class*="grid-"]:nth-child(5n + 5) .box-filled-2, .theme-green
+[class*="grid-"]:nth-child(5n + 5) .box-filled-3, .theme-green
+[class*="grid-"]:nth-child(5n + 5) .box-filled-4, .theme-green
+[class*="grid-"]:nth-child(5n + 5) .box-filled-5, .theme-green
+[class*="grid-"]:nth-child(5n + 5) .box-filled, .theme-green
+[class*="grid-"]:nth-child(5n + 5) .sidebar-left-sidebar [class^="widget_"]:not(.widget_calendar), .sidebar-left-sidebar .theme-green
+[class*="grid-"]:nth-child(5n + 5) [class^="widget_"]:not(.widget_calendar), .theme-green
+[class*="grid-"]:nth-child(5n + 5)
+.sidebar-right-sidebar [class^="widget_"]:not(.widget_calendar),
+.sidebar-right-sidebar .theme-green
+[class*="grid-"]:nth-child(5n + 5) [class^="widget_"]:not(.widget_calendar) {
+  background-color: #76b828; }
+
+/* line 109, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_filled.scss */
+.theme-purple .box-filled-5, .theme-purple
+[class*="grid-"]:nth-child(5n + 5) .box-filled-1, .theme-purple
+[class*="grid-"]:nth-child(5n + 5) .box-filled-2, .theme-purple
+[class*="grid-"]:nth-child(5n + 5) .box-filled-3, .theme-purple
+[class*="grid-"]:nth-child(5n + 5) .box-filled-4, .theme-purple
+[class*="grid-"]:nth-child(5n + 5) .box-filled-5, .theme-purple
+[class*="grid-"]:nth-child(5n + 5) .box-filled, .theme-purple
+[class*="grid-"]:nth-child(5n + 5) .sidebar-left-sidebar [class^="widget_"]:not(.widget_calendar), .sidebar-left-sidebar .theme-purple
+[class*="grid-"]:nth-child(5n + 5) [class^="widget_"]:not(.widget_calendar), .theme-purple
+[class*="grid-"]:nth-child(5n + 5)
+.sidebar-right-sidebar [class^="widget_"]:not(.widget_calendar),
+.sidebar-right-sidebar .theme-purple
+[class*="grid-"]:nth-child(5n + 5) [class^="widget_"]:not(.widget_calendar) {
+  background-color: #a61380; }
 
 /* line 66, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_panel.scss */
-.box-panel {
+.box-panel, .sidebar-content-area [class^="widget_"]:not(.widget_calendar),
+.sidebar-content-area-bottom [class^="widget_"]:not(.widget_calendar) {
   display: block;
   padding: 0; }
   /* line 70, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_panel.scss */
-  .box-panel .box-title {
+  .box-panel .box-title, .sidebar-content-area [class^="widget_"]:not(.widget_calendar) .box-title,
+  .sidebar-content-area-bottom [class^="widget_"]:not(.widget_calendar) .box-title,
+  .box-panel > h1, .sidebar-content-area [class^="widget_"]:not(.widget_calendar) > h1,
+  .sidebar-content-area-bottom [class^="widget_"]:not(.widget_calendar) > h1,
+  .box-panel > h2, .sidebar-content-area [class^="widget_"]:not(.widget_calendar) > h2,
+  .sidebar-content-area-bottom [class^="widget_"]:not(.widget_calendar) > h2, .widget_calendar
+  .box-panel > caption, .sidebar-content-area .widget_calendar [class^="widget_"]:not(.widget_calendar) > caption, .widget_calendar .sidebar-content-area [class^="widget_"]:not(.widget_calendar) > caption,
+  .sidebar-content-area-bottom .widget_calendar [class^="widget_"]:not(.widget_calendar) > caption, .widget_calendar
+  .sidebar-content-area-bottom [class^="widget_"]:not(.widget_calendar) > caption,
+  .box-panel > h3, .sidebar-content-area [class^="widget_"]:not(.widget_calendar) > h3,
+  .sidebar-content-area-bottom [class^="widget_"]:not(.widget_calendar) > h3,
+  .box-panel > h4, .sidebar-content-area [class^="widget_"]:not(.widget_calendar) > h4,
+  .sidebar-content-area-bottom [class^="widget_"]:not(.widget_calendar) > h4,
+  .box-panel > h5, .sidebar-content-area [class^="widget_"]:not(.widget_calendar) > h5,
+  .sidebar-content-area-bottom [class^="widget_"]:not(.widget_calendar) > h5,
+  .box-panel > h6, .sidebar-content-area [class^="widget_"]:not(.widget_calendar) > h6,
+  .sidebar-content-area-bottom [class^="widget_"]:not(.widget_calendar) > h6 {
     padding: 10px 15px;
     margin: 0;
     background-color: #777;
     color: #fff; }
-    /* line 79, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_panel.scss */
-    .theme-red .box-panel .box-title {
+    /* line 85, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_panel.scss */
+    .theme-red .box-panel .box-title, .theme-red .sidebar-content-area [class^="widget_"]:not(.widget_calendar) .box-title, .sidebar-content-area .theme-red [class^="widget_"]:not(.widget_calendar) .box-title, .theme-red
+    .sidebar-content-area-bottom [class^="widget_"]:not(.widget_calendar) .box-title,
+    .sidebar-content-area-bottom .theme-red [class^="widget_"]:not(.widget_calendar) .box-title, .theme-red
+    .box-panel > h1, .theme-red .sidebar-content-area [class^="widget_"]:not(.widget_calendar) > h1, .sidebar-content-area .theme-red [class^="widget_"]:not(.widget_calendar) > h1, .theme-red
+    .sidebar-content-area-bottom [class^="widget_"]:not(.widget_calendar) > h1,
+    .sidebar-content-area-bottom .theme-red [class^="widget_"]:not(.widget_calendar) > h1, .theme-red
+    .box-panel > h2, .theme-red .sidebar-content-area [class^="widget_"]:not(.widget_calendar) > h2, .sidebar-content-area .theme-red [class^="widget_"]:not(.widget_calendar) > h2, .theme-red
+    .sidebar-content-area-bottom [class^="widget_"]:not(.widget_calendar) > h2,
+    .sidebar-content-area-bottom .theme-red [class^="widget_"]:not(.widget_calendar) > h2, .theme-red .widget_calendar
+    .box-panel > caption, .widget_calendar .theme-red
+    .box-panel > caption, .theme-red .sidebar-content-area .widget_calendar [class^="widget_"]:not(.widget_calendar) > caption, .widget_calendar .theme-red .sidebar-content-area [class^="widget_"]:not(.widget_calendar) > caption, .sidebar-content-area .theme-red .widget_calendar [class^="widget_"]:not(.widget_calendar) > caption, .widget_calendar .sidebar-content-area .theme-red [class^="widget_"]:not(.widget_calendar) > caption, .theme-red
+    .sidebar-content-area-bottom .widget_calendar [class^="widget_"]:not(.widget_calendar) > caption, .widget_calendar .theme-red
+    .sidebar-content-area-bottom [class^="widget_"]:not(.widget_calendar) > caption,
+    .sidebar-content-area-bottom .theme-red .widget_calendar [class^="widget_"]:not(.widget_calendar) > caption, .widget_calendar
+    .sidebar-content-area-bottom .theme-red [class^="widget_"]:not(.widget_calendar) > caption, .theme-red
+    .box-panel > h3, .theme-red .sidebar-content-area [class^="widget_"]:not(.widget_calendar) > h3, .sidebar-content-area .theme-red [class^="widget_"]:not(.widget_calendar) > h3, .theme-red
+    .sidebar-content-area-bottom [class^="widget_"]:not(.widget_calendar) > h3,
+    .sidebar-content-area-bottom .theme-red [class^="widget_"]:not(.widget_calendar) > h3, .theme-red
+    .box-panel > h4, .theme-red .sidebar-content-area [class^="widget_"]:not(.widget_calendar) > h4, .sidebar-content-area .theme-red [class^="widget_"]:not(.widget_calendar) > h4, .theme-red
+    .sidebar-content-area-bottom [class^="widget_"]:not(.widget_calendar) > h4,
+    .sidebar-content-area-bottom .theme-red [class^="widget_"]:not(.widget_calendar) > h4, .theme-red
+    .box-panel > h5, .theme-red .sidebar-content-area [class^="widget_"]:not(.widget_calendar) > h5, .sidebar-content-area .theme-red [class^="widget_"]:not(.widget_calendar) > h5, .theme-red
+    .sidebar-content-area-bottom [class^="widget_"]:not(.widget_calendar) > h5,
+    .sidebar-content-area-bottom .theme-red [class^="widget_"]:not(.widget_calendar) > h5, .theme-red
+    .box-panel > h6, .theme-red .sidebar-content-area [class^="widget_"]:not(.widget_calendar) > h6, .sidebar-content-area .theme-red [class^="widget_"]:not(.widget_calendar) > h6, .theme-red
+    .sidebar-content-area-bottom [class^="widget_"]:not(.widget_calendar) > h6,
+    .sidebar-content-area-bottom .theme-red [class^="widget_"]:not(.widget_calendar) > h6 {
       background-color: #ae0b05; }
-    /* line 79, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_panel.scss */
-    .theme-blue .box-panel .box-title {
+    /* line 85, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_panel.scss */
+    .theme-blue .box-panel .box-title, .theme-blue .sidebar-content-area [class^="widget_"]:not(.widget_calendar) .box-title, .sidebar-content-area .theme-blue [class^="widget_"]:not(.widget_calendar) .box-title, .theme-blue
+    .sidebar-content-area-bottom [class^="widget_"]:not(.widget_calendar) .box-title,
+    .sidebar-content-area-bottom .theme-blue [class^="widget_"]:not(.widget_calendar) .box-title, .theme-blue
+    .box-panel > h1, .theme-blue .sidebar-content-area [class^="widget_"]:not(.widget_calendar) > h1, .sidebar-content-area .theme-blue [class^="widget_"]:not(.widget_calendar) > h1, .theme-blue
+    .sidebar-content-area-bottom [class^="widget_"]:not(.widget_calendar) > h1,
+    .sidebar-content-area-bottom .theme-blue [class^="widget_"]:not(.widget_calendar) > h1, .theme-blue
+    .box-panel > h2, .theme-blue .sidebar-content-area [class^="widget_"]:not(.widget_calendar) > h2, .sidebar-content-area .theme-blue [class^="widget_"]:not(.widget_calendar) > h2, .theme-blue
+    .sidebar-content-area-bottom [class^="widget_"]:not(.widget_calendar) > h2,
+    .sidebar-content-area-bottom .theme-blue [class^="widget_"]:not(.widget_calendar) > h2, .theme-blue .widget_calendar
+    .box-panel > caption, .widget_calendar .theme-blue
+    .box-panel > caption, .theme-blue .sidebar-content-area .widget_calendar [class^="widget_"]:not(.widget_calendar) > caption, .widget_calendar .theme-blue .sidebar-content-area [class^="widget_"]:not(.widget_calendar) > caption, .sidebar-content-area .theme-blue .widget_calendar [class^="widget_"]:not(.widget_calendar) > caption, .widget_calendar .sidebar-content-area .theme-blue [class^="widget_"]:not(.widget_calendar) > caption, .theme-blue
+    .sidebar-content-area-bottom .widget_calendar [class^="widget_"]:not(.widget_calendar) > caption, .widget_calendar .theme-blue
+    .sidebar-content-area-bottom [class^="widget_"]:not(.widget_calendar) > caption,
+    .sidebar-content-area-bottom .theme-blue .widget_calendar [class^="widget_"]:not(.widget_calendar) > caption, .widget_calendar
+    .sidebar-content-area-bottom .theme-blue [class^="widget_"]:not(.widget_calendar) > caption, .theme-blue
+    .box-panel > h3, .theme-blue .sidebar-content-area [class^="widget_"]:not(.widget_calendar) > h3, .sidebar-content-area .theme-blue [class^="widget_"]:not(.widget_calendar) > h3, .theme-blue
+    .sidebar-content-area-bottom [class^="widget_"]:not(.widget_calendar) > h3,
+    .sidebar-content-area-bottom .theme-blue [class^="widget_"]:not(.widget_calendar) > h3, .theme-blue
+    .box-panel > h4, .theme-blue .sidebar-content-area [class^="widget_"]:not(.widget_calendar) > h4, .sidebar-content-area .theme-blue [class^="widget_"]:not(.widget_calendar) > h4, .theme-blue
+    .sidebar-content-area-bottom [class^="widget_"]:not(.widget_calendar) > h4,
+    .sidebar-content-area-bottom .theme-blue [class^="widget_"]:not(.widget_calendar) > h4, .theme-blue
+    .box-panel > h5, .theme-blue .sidebar-content-area [class^="widget_"]:not(.widget_calendar) > h5, .sidebar-content-area .theme-blue [class^="widget_"]:not(.widget_calendar) > h5, .theme-blue
+    .sidebar-content-area-bottom [class^="widget_"]:not(.widget_calendar) > h5,
+    .sidebar-content-area-bottom .theme-blue [class^="widget_"]:not(.widget_calendar) > h5, .theme-blue
+    .box-panel > h6, .theme-blue .sidebar-content-area [class^="widget_"]:not(.widget_calendar) > h6, .sidebar-content-area .theme-blue [class^="widget_"]:not(.widget_calendar) > h6, .theme-blue
+    .sidebar-content-area-bottom [class^="widget_"]:not(.widget_calendar) > h6,
+    .sidebar-content-area-bottom .theme-blue [class^="widget_"]:not(.widget_calendar) > h6 {
       background-color: #005c86; }
-    /* line 79, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_panel.scss */
-    .theme-green .box-panel .box-title {
+    /* line 85, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_panel.scss */
+    .theme-green .box-panel .box-title, .theme-green .sidebar-content-area [class^="widget_"]:not(.widget_calendar) .box-title, .sidebar-content-area .theme-green [class^="widget_"]:not(.widget_calendar) .box-title, .theme-green
+    .sidebar-content-area-bottom [class^="widget_"]:not(.widget_calendar) .box-title,
+    .sidebar-content-area-bottom .theme-green [class^="widget_"]:not(.widget_calendar) .box-title, .theme-green
+    .box-panel > h1, .theme-green .sidebar-content-area [class^="widget_"]:not(.widget_calendar) > h1, .sidebar-content-area .theme-green [class^="widget_"]:not(.widget_calendar) > h1, .theme-green
+    .sidebar-content-area-bottom [class^="widget_"]:not(.widget_calendar) > h1,
+    .sidebar-content-area-bottom .theme-green [class^="widget_"]:not(.widget_calendar) > h1, .theme-green
+    .box-panel > h2, .theme-green .sidebar-content-area [class^="widget_"]:not(.widget_calendar) > h2, .sidebar-content-area .theme-green [class^="widget_"]:not(.widget_calendar) > h2, .theme-green
+    .sidebar-content-area-bottom [class^="widget_"]:not(.widget_calendar) > h2,
+    .sidebar-content-area-bottom .theme-green [class^="widget_"]:not(.widget_calendar) > h2, .theme-green .widget_calendar
+    .box-panel > caption, .widget_calendar .theme-green
+    .box-panel > caption, .theme-green .sidebar-content-area .widget_calendar [class^="widget_"]:not(.widget_calendar) > caption, .widget_calendar .theme-green .sidebar-content-area [class^="widget_"]:not(.widget_calendar) > caption, .sidebar-content-area .theme-green .widget_calendar [class^="widget_"]:not(.widget_calendar) > caption, .widget_calendar .sidebar-content-area .theme-green [class^="widget_"]:not(.widget_calendar) > caption, .theme-green
+    .sidebar-content-area-bottom .widget_calendar [class^="widget_"]:not(.widget_calendar) > caption, .widget_calendar .theme-green
+    .sidebar-content-area-bottom [class^="widget_"]:not(.widget_calendar) > caption,
+    .sidebar-content-area-bottom .theme-green .widget_calendar [class^="widget_"]:not(.widget_calendar) > caption, .widget_calendar
+    .sidebar-content-area-bottom .theme-green [class^="widget_"]:not(.widget_calendar) > caption, .theme-green
+    .box-panel > h3, .theme-green .sidebar-content-area [class^="widget_"]:not(.widget_calendar) > h3, .sidebar-content-area .theme-green [class^="widget_"]:not(.widget_calendar) > h3, .theme-green
+    .sidebar-content-area-bottom [class^="widget_"]:not(.widget_calendar) > h3,
+    .sidebar-content-area-bottom .theme-green [class^="widget_"]:not(.widget_calendar) > h3, .theme-green
+    .box-panel > h4, .theme-green .sidebar-content-area [class^="widget_"]:not(.widget_calendar) > h4, .sidebar-content-area .theme-green [class^="widget_"]:not(.widget_calendar) > h4, .theme-green
+    .sidebar-content-area-bottom [class^="widget_"]:not(.widget_calendar) > h4,
+    .sidebar-content-area-bottom .theme-green [class^="widget_"]:not(.widget_calendar) > h4, .theme-green
+    .box-panel > h5, .theme-green .sidebar-content-area [class^="widget_"]:not(.widget_calendar) > h5, .sidebar-content-area .theme-green [class^="widget_"]:not(.widget_calendar) > h5, .theme-green
+    .sidebar-content-area-bottom [class^="widget_"]:not(.widget_calendar) > h5,
+    .sidebar-content-area-bottom .theme-green [class^="widget_"]:not(.widget_calendar) > h5, .theme-green
+    .box-panel > h6, .theme-green .sidebar-content-area [class^="widget_"]:not(.widget_calendar) > h6, .sidebar-content-area .theme-green [class^="widget_"]:not(.widget_calendar) > h6, .theme-green
+    .sidebar-content-area-bottom [class^="widget_"]:not(.widget_calendar) > h6,
+    .sidebar-content-area-bottom .theme-green [class^="widget_"]:not(.widget_calendar) > h6 {
       background-color: #50811b; }
-    /* line 79, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_panel.scss */
-    .theme-purple .box-panel .box-title {
+    /* line 85, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_panel.scss */
+    .theme-purple .box-panel .box-title, .theme-purple .sidebar-content-area [class^="widget_"]:not(.widget_calendar) .box-title, .sidebar-content-area .theme-purple [class^="widget_"]:not(.widget_calendar) .box-title, .theme-purple
+    .sidebar-content-area-bottom [class^="widget_"]:not(.widget_calendar) .box-title,
+    .sidebar-content-area-bottom .theme-purple [class^="widget_"]:not(.widget_calendar) .box-title, .theme-purple
+    .box-panel > h1, .theme-purple .sidebar-content-area [class^="widget_"]:not(.widget_calendar) > h1, .sidebar-content-area .theme-purple [class^="widget_"]:not(.widget_calendar) > h1, .theme-purple
+    .sidebar-content-area-bottom [class^="widget_"]:not(.widget_calendar) > h1,
+    .sidebar-content-area-bottom .theme-purple [class^="widget_"]:not(.widget_calendar) > h1, .theme-purple
+    .box-panel > h2, .theme-purple .sidebar-content-area [class^="widget_"]:not(.widget_calendar) > h2, .sidebar-content-area .theme-purple [class^="widget_"]:not(.widget_calendar) > h2, .theme-purple
+    .sidebar-content-area-bottom [class^="widget_"]:not(.widget_calendar) > h2,
+    .sidebar-content-area-bottom .theme-purple [class^="widget_"]:not(.widget_calendar) > h2, .theme-purple .widget_calendar
+    .box-panel > caption, .widget_calendar .theme-purple
+    .box-panel > caption, .theme-purple .sidebar-content-area .widget_calendar [class^="widget_"]:not(.widget_calendar) > caption, .widget_calendar .theme-purple .sidebar-content-area [class^="widget_"]:not(.widget_calendar) > caption, .sidebar-content-area .theme-purple .widget_calendar [class^="widget_"]:not(.widget_calendar) > caption, .widget_calendar .sidebar-content-area .theme-purple [class^="widget_"]:not(.widget_calendar) > caption, .theme-purple
+    .sidebar-content-area-bottom .widget_calendar [class^="widget_"]:not(.widget_calendar) > caption, .widget_calendar .theme-purple
+    .sidebar-content-area-bottom [class^="widget_"]:not(.widget_calendar) > caption,
+    .sidebar-content-area-bottom .theme-purple .widget_calendar [class^="widget_"]:not(.widget_calendar) > caption, .widget_calendar
+    .sidebar-content-area-bottom .theme-purple [class^="widget_"]:not(.widget_calendar) > caption, .theme-purple
+    .box-panel > h3, .theme-purple .sidebar-content-area [class^="widget_"]:not(.widget_calendar) > h3, .sidebar-content-area .theme-purple [class^="widget_"]:not(.widget_calendar) > h3, .theme-purple
+    .sidebar-content-area-bottom [class^="widget_"]:not(.widget_calendar) > h3,
+    .sidebar-content-area-bottom .theme-purple [class^="widget_"]:not(.widget_calendar) > h3, .theme-purple
+    .box-panel > h4, .theme-purple .sidebar-content-area [class^="widget_"]:not(.widget_calendar) > h4, .sidebar-content-area .theme-purple [class^="widget_"]:not(.widget_calendar) > h4, .theme-purple
+    .sidebar-content-area-bottom [class^="widget_"]:not(.widget_calendar) > h4,
+    .sidebar-content-area-bottom .theme-purple [class^="widget_"]:not(.widget_calendar) > h4, .theme-purple
+    .box-panel > h5, .theme-purple .sidebar-content-area [class^="widget_"]:not(.widget_calendar) > h5, .sidebar-content-area .theme-purple [class^="widget_"]:not(.widget_calendar) > h5, .theme-purple
+    .sidebar-content-area-bottom [class^="widget_"]:not(.widget_calendar) > h5,
+    .sidebar-content-area-bottom .theme-purple [class^="widget_"]:not(.widget_calendar) > h5, .theme-purple
+    .box-panel > h6, .theme-purple .sidebar-content-area [class^="widget_"]:not(.widget_calendar) > h6, .sidebar-content-area .theme-purple [class^="widget_"]:not(.widget_calendar) > h6, .theme-purple
+    .sidebar-content-area-bottom [class^="widget_"]:not(.widget_calendar) > h6,
+    .sidebar-content-area-bottom .theme-purple [class^="widget_"]:not(.widget_calendar) > h6 {
       background-color: #7b075e; }
-  /* line 86, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_panel.scss */
-  .box-panel .box-content,
-  .box-panel .dataTables_wrapper {
+  /* line 92, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_panel.scss */
+  .box-panel .box-content, .sidebar-content-area [class^="widget_"]:not(.widget_calendar) .box-content,
+  .sidebar-content-area-bottom [class^="widget_"]:not(.widget_calendar) .box-content, .box-panel [class^="widget_"]:not(.widget_calendar) *:not(.main-fotter) .textwidget, [class^="widget_"]:not(.widget_calendar) *:not(.main-fotter) .box-panel .textwidget, .sidebar-content-area [class^="widget_"]:not(.widget_calendar) *:not(.main-fotter) .textwidget,
+  .sidebar-content-area-bottom [class^="widget_"]:not(.widget_calendar) *:not(.main-fotter) .textwidget, .box-panel
+  [class^="widget_"]:not(.widget_calendar) *:not(.main-fotter) form,
+  [class^="widget_"]:not(.widget_calendar) *:not(.main-fotter) .box-panel form, .sidebar-content-area
+  [class^="widget_"]:not(.widget_calendar) *:not(.main-fotter) form,
+  .sidebar-content-area-bottom
+  [class^="widget_"]:not(.widget_calendar) *:not(.main-fotter) form, .box-panel .sidebar-left-sidebar .widget_nav_menu > div, .sidebar-left-sidebar .box-panel .widget_nav_menu > div, .sidebar-content-area [class^="widget_"]:not(.widget_calendar) .sidebar-left-sidebar .widget_nav_menu > div, .sidebar-left-sidebar .sidebar-content-area [class^="widget_"]:not(.widget_calendar) .widget_nav_menu > div,
+  .sidebar-content-area-bottom [class^="widget_"]:not(.widget_calendar) .sidebar-left-sidebar .widget_nav_menu > div, .sidebar-left-sidebar
+  .sidebar-content-area-bottom [class^="widget_"]:not(.widget_calendar) .widget_nav_menu > div, .box-panel
+  .sidebar-right-sidebar .widget_nav_menu > div,
+  .sidebar-right-sidebar .box-panel .widget_nav_menu > div, .sidebar-content-area [class^="widget_"]:not(.widget_calendar)
+  .sidebar-right-sidebar .widget_nav_menu > div,
+  .sidebar-right-sidebar .sidebar-content-area [class^="widget_"]:not(.widget_calendar) .widget_nav_menu > div,
+  .sidebar-content-area-bottom [class^="widget_"]:not(.widget_calendar)
+  .sidebar-right-sidebar .widget_nav_menu > div,
+  .sidebar-right-sidebar
+  .sidebar-content-area-bottom [class^="widget_"]:not(.widget_calendar) .widget_nav_menu > div,
+  .box-panel .dataTables_wrapper, .sidebar-content-area [class^="widget_"]:not(.widget_calendar) .dataTables_wrapper,
+  .sidebar-content-area-bottom [class^="widget_"]:not(.widget_calendar) .dataTables_wrapper {
     border: 1px solid #e7e5e1;
     border-top: 0; }
-  /* line 92, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_panel.scss */
-  .box-panel .table {
+  /* line 98, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_panel.scss */
+  .box-panel .table, .sidebar-content-area [class^="widget_"]:not(.widget_calendar) .table,
+  .sidebar-content-area-bottom [class^="widget_"]:not(.widget_calendar) .table {
     border-top: 0;
     background-color: #fff; }
-  /* line 97, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_panel.scss */
-  .box-panel ul:not(.social-feed-gallery) {
+  /* line 103, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_panel.scss */
+  .box-panel ul:not(.social-feed-gallery), .sidebar-content-area [class^="widget_"]:not(.widget_calendar) ul:not(.social-feed-gallery),
+  .sidebar-content-area-bottom [class^="widget_"]:not(.widget_calendar) ul:not(.social-feed-gallery) {
     background-color: #fff;
     border: 1px solid #e7e5e1;
     border-top: 0; }
-    /* line 102, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_panel.scss */
-    .box-panel ul:not(.social-feed-gallery) li {
+    /* line 108, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_panel.scss */
+    .box-panel ul:not(.social-feed-gallery) li, .sidebar-content-area [class^="widget_"]:not(.widget_calendar) ul:not(.social-feed-gallery) li,
+    .sidebar-content-area-bottom [class^="widget_"]:not(.widget_calendar) ul:not(.social-feed-gallery) li {
       padding: 10px 15px; }
-    /* line 106, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_panel.scss */
-    .box-panel ul:not(.social-feed-gallery) li + li {
+    /* line 112, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_panel.scss */
+    .box-panel ul:not(.social-feed-gallery) li + li, .sidebar-content-area [class^="widget_"]:not(.widget_calendar) ul:not(.social-feed-gallery) li + li,
+    .sidebar-content-area-bottom [class^="widget_"]:not(.widget_calendar) ul:not(.social-feed-gallery) li + li {
       border-top: 1px solid #e7e5e1; }
-    /* line 111, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_panel.scss */
-    .box-panel ul:not(.social-feed-gallery):not(.social-feed) a {
+    /* line 117, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_panel.scss */
+    .box-panel ul:not(.social-feed-gallery):not(.social-feed) a, .sidebar-content-area [class^="widget_"]:not(.widget_calendar) ul:not(.social-feed-gallery):not(.social-feed) a,
+    .sidebar-content-area-bottom [class^="widget_"]:not(.widget_calendar) ul:not(.social-feed-gallery):not(.social-feed) a {
       display: table; }
-      /* line 114, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_panel.scss */
-      .box-panel ul:not(.social-feed-gallery):not(.social-feed) a:hover {
+      /* line 120, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_panel.scss */
+      .box-panel ul:not(.social-feed-gallery):not(.social-feed) a:hover, .sidebar-content-area [class^="widget_"]:not(.widget_calendar) ul:not(.social-feed-gallery):not(.social-feed) a:hover,
+      .sidebar-content-area-bottom [class^="widget_"]:not(.widget_calendar) ul:not(.social-feed-gallery):not(.social-feed) a:hover {
         text-decoration: none !important; }
-        /* line 117, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_panel.scss */
-        .box-panel ul:not(.social-feed-gallery):not(.social-feed) a:hover .title {
+        /* line 123, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_panel.scss */
+        .box-panel ul:not(.social-feed-gallery):not(.social-feed) a:hover .title, .sidebar-content-area [class^="widget_"]:not(.widget_calendar) ul:not(.social-feed-gallery):not(.social-feed) a:hover .title,
+        .sidebar-content-area-bottom [class^="widget_"]:not(.widget_calendar) ul:not(.social-feed-gallery):not(.social-feed) a:hover .title {
           text-decoration: underline !important; }
-      /* line 122, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_panel.scss */
-      .box-panel ul:not(.social-feed-gallery):not(.social-feed) a .title,
-      .box-panel ul:not(.social-feed-gallery):not(.social-feed) a .date {
-        display: table-row; }
+      /* line 128, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_panel.scss */
+      .box-panel ul:not(.social-feed-gallery):not(.social-feed) a .title, .sidebar-content-area [class^="widget_"]:not(.widget_calendar) ul:not(.social-feed-gallery):not(.social-feed) a .title,
+      .sidebar-content-area-bottom [class^="widget_"]:not(.widget_calendar) ul:not(.social-feed-gallery):not(.social-feed) a .title,
+      .box-panel ul:not(.social-feed-gallery):not(.social-feed) a .date, .sidebar-content-area [class^="widget_"]:not(.widget_calendar) ul:not(.social-feed-gallery):not(.social-feed) a .date,
+      .sidebar-content-area-bottom [class^="widget_"]:not(.widget_calendar) ul:not(.social-feed-gallery):not(.social-feed) a .date {
+        display: block; }
         @media (min-width: 769px) {
-          /* line 122, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_panel.scss */
-          .box-panel ul:not(.social-feed-gallery):not(.social-feed) a .title,
-          .box-panel ul:not(.social-feed-gallery):not(.social-feed) a .date {
+          /* line 128, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_panel.scss */
+          .box-panel ul:not(.social-feed-gallery):not(.social-feed) a .title, .sidebar-content-area [class^="widget_"]:not(.widget_calendar) ul:not(.social-feed-gallery):not(.social-feed) a .title,
+          .sidebar-content-area-bottom [class^="widget_"]:not(.widget_calendar) ul:not(.social-feed-gallery):not(.social-feed) a .title,
+          .box-panel ul:not(.social-feed-gallery):not(.social-feed) a .date, .sidebar-content-area [class^="widget_"]:not(.widget_calendar) ul:not(.social-feed-gallery):not(.social-feed) a .date,
+          .sidebar-content-area-bottom [class^="widget_"]:not(.widget_calendar) ul:not(.social-feed-gallery):not(.social-feed) a .date {
             display: table-cell; } }
-      /* line 131, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_panel.scss */
-      .box-panel ul:not(.social-feed-gallery):not(.social-feed) a .date {
+      /* line 137, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_panel.scss */
+      .box-panel ul:not(.social-feed-gallery):not(.social-feed) a .date, .sidebar-content-area [class^="widget_"]:not(.widget_calendar) ul:not(.social-feed-gallery):not(.social-feed) a .date,
+      .sidebar-content-area-bottom [class^="widget_"]:not(.widget_calendar) ul:not(.social-feed-gallery):not(.social-feed) a .date {
         white-space: nowrap;
         width: 1%;
         padding-left: 20px; }
         @media (min-width: 769px) {
-          /* line 131, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_panel.scss */
-          .box-panel ul:not(.social-feed-gallery):not(.social-feed) a .date {
+          /* line 137, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_panel.scss */
+          .box-panel ul:not(.social-feed-gallery):not(.social-feed) a .date, .sidebar-content-area [class^="widget_"]:not(.widget_calendar) ul:not(.social-feed-gallery):not(.social-feed) a .date,
+          .sidebar-content-area-bottom [class^="widget_"]:not(.widget_calendar) ul:not(.social-feed-gallery):not(.social-feed) a .date {
             text-align: right; } }
 
-/* line 146, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_panel.scss */
-.box-panel-secondary .box-title {
+/* line 152, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_panel.scss */
+.box-panel-secondary .box-title, .sidebar-content-area [class^="widget_"]:not(.widget_calendar) .box-title,
+.sidebar-content-area-bottom [class^="widget_"]:not(.widget_calendar) .box-title,
+.box-panel-secondary > h1, .sidebar-content-area [class^="widget_"]:not(.widget_calendar) > h1,
+.sidebar-content-area-bottom [class^="widget_"]:not(.widget_calendar) > h1,
+.box-panel-secondary > h2, .sidebar-content-area [class^="widget_"]:not(.widget_calendar) > h2,
+.sidebar-content-area-bottom [class^="widget_"]:not(.widget_calendar) > h2, .widget_calendar
+.box-panel-secondary > caption, .sidebar-content-area .widget_calendar [class^="widget_"]:not(.widget_calendar) > caption, .widget_calendar .sidebar-content-area [class^="widget_"]:not(.widget_calendar) > caption,
+.sidebar-content-area-bottom .widget_calendar [class^="widget_"]:not(.widget_calendar) > caption, .widget_calendar
+.sidebar-content-area-bottom [class^="widget_"]:not(.widget_calendar) > caption,
+.box-panel-secondary > h3, .sidebar-content-area [class^="widget_"]:not(.widget_calendar) > h3,
+.sidebar-content-area-bottom [class^="widget_"]:not(.widget_calendar) > h3,
+.box-panel-secondary > h4, .sidebar-content-area [class^="widget_"]:not(.widget_calendar) > h4,
+.sidebar-content-area-bottom [class^="widget_"]:not(.widget_calendar) > h4,
+.box-panel-secondary > h5, .sidebar-content-area [class^="widget_"]:not(.widget_calendar) > h5,
+.sidebar-content-area-bottom [class^="widget_"]:not(.widget_calendar) > h5,
+.box-panel-secondary > h6, .sidebar-content-area [class^="widget_"]:not(.widget_calendar) > h6,
+.sidebar-content-area-bottom [class^="widget_"]:not(.widget_calendar) > h6 {
   padding: 8.5px 13.5px;
   padding-left: 0;
   background-color: transparent !important;
   border-bottom: 3px solid #333;
   color: #cb0050; }
-  /* line 156, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_panel.scss */
-  .theme-red .box-panel-secondary .box-title {
+  /* line 168, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_panel.scss */
+  .theme-red .box-panel-secondary .box-title, .theme-red .sidebar-content-area [class^="widget_"]:not(.widget_calendar) .box-title, .sidebar-content-area .theme-red [class^="widget_"]:not(.widget_calendar) .box-title, .theme-red
+  .sidebar-content-area-bottom [class^="widget_"]:not(.widget_calendar) .box-title,
+  .sidebar-content-area-bottom .theme-red [class^="widget_"]:not(.widget_calendar) .box-title, .theme-red
+  .box-panel-secondary > h1, .theme-red .sidebar-content-area [class^="widget_"]:not(.widget_calendar) > h1, .sidebar-content-area .theme-red [class^="widget_"]:not(.widget_calendar) > h1, .theme-red
+  .sidebar-content-area-bottom [class^="widget_"]:not(.widget_calendar) > h1,
+  .sidebar-content-area-bottom .theme-red [class^="widget_"]:not(.widget_calendar) > h1, .theme-red
+  .box-panel-secondary > h2, .theme-red .sidebar-content-area [class^="widget_"]:not(.widget_calendar) > h2, .sidebar-content-area .theme-red [class^="widget_"]:not(.widget_calendar) > h2, .theme-red
+  .sidebar-content-area-bottom [class^="widget_"]:not(.widget_calendar) > h2,
+  .sidebar-content-area-bottom .theme-red [class^="widget_"]:not(.widget_calendar) > h2, .theme-red .widget_calendar
+  .box-panel-secondary > caption, .widget_calendar .theme-red
+  .box-panel-secondary > caption, .theme-red .sidebar-content-area .widget_calendar [class^="widget_"]:not(.widget_calendar) > caption, .widget_calendar .theme-red .sidebar-content-area [class^="widget_"]:not(.widget_calendar) > caption, .sidebar-content-area .theme-red .widget_calendar [class^="widget_"]:not(.widget_calendar) > caption, .widget_calendar .sidebar-content-area .theme-red [class^="widget_"]:not(.widget_calendar) > caption, .theme-red
+  .sidebar-content-area-bottom .widget_calendar [class^="widget_"]:not(.widget_calendar) > caption, .widget_calendar .theme-red
+  .sidebar-content-area-bottom [class^="widget_"]:not(.widget_calendar) > caption,
+  .sidebar-content-area-bottom .theme-red .widget_calendar [class^="widget_"]:not(.widget_calendar) > caption, .widget_calendar
+  .sidebar-content-area-bottom .theme-red [class^="widget_"]:not(.widget_calendar) > caption, .theme-red
+  .box-panel-secondary > h3, .theme-red .sidebar-content-area [class^="widget_"]:not(.widget_calendar) > h3, .sidebar-content-area .theme-red [class^="widget_"]:not(.widget_calendar) > h3, .theme-red
+  .sidebar-content-area-bottom [class^="widget_"]:not(.widget_calendar) > h3,
+  .sidebar-content-area-bottom .theme-red [class^="widget_"]:not(.widget_calendar) > h3, .theme-red
+  .box-panel-secondary > h4, .theme-red .sidebar-content-area [class^="widget_"]:not(.widget_calendar) > h4, .sidebar-content-area .theme-red [class^="widget_"]:not(.widget_calendar) > h4, .theme-red
+  .sidebar-content-area-bottom [class^="widget_"]:not(.widget_calendar) > h4,
+  .sidebar-content-area-bottom .theme-red [class^="widget_"]:not(.widget_calendar) > h4, .theme-red
+  .box-panel-secondary > h5, .theme-red .sidebar-content-area [class^="widget_"]:not(.widget_calendar) > h5, .sidebar-content-area .theme-red [class^="widget_"]:not(.widget_calendar) > h5, .theme-red
+  .sidebar-content-area-bottom [class^="widget_"]:not(.widget_calendar) > h5,
+  .sidebar-content-area-bottom .theme-red [class^="widget_"]:not(.widget_calendar) > h5, .theme-red
+  .box-panel-secondary > h6, .theme-red .sidebar-content-area [class^="widget_"]:not(.widget_calendar) > h6, .sidebar-content-area .theme-red [class^="widget_"]:not(.widget_calendar) > h6, .theme-red
+  .sidebar-content-area-bottom [class^="widget_"]:not(.widget_calendar) > h6,
+  .sidebar-content-area-bottom .theme-red [class^="widget_"]:not(.widget_calendar) > h6 {
     color: #cb0050;
     border-color: #cb0050; }
-  /* line 156, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_panel.scss */
-  .theme-blue .box-panel-secondary .box-title {
+  /* line 168, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_panel.scss */
+  .theme-blue .box-panel-secondary .box-title, .theme-blue .sidebar-content-area [class^="widget_"]:not(.widget_calendar) .box-title, .sidebar-content-area .theme-blue [class^="widget_"]:not(.widget_calendar) .box-title, .theme-blue
+  .sidebar-content-area-bottom [class^="widget_"]:not(.widget_calendar) .box-title,
+  .sidebar-content-area-bottom .theme-blue [class^="widget_"]:not(.widget_calendar) .box-title, .theme-blue
+  .box-panel-secondary > h1, .theme-blue .sidebar-content-area [class^="widget_"]:not(.widget_calendar) > h1, .sidebar-content-area .theme-blue [class^="widget_"]:not(.widget_calendar) > h1, .theme-blue
+  .sidebar-content-area-bottom [class^="widget_"]:not(.widget_calendar) > h1,
+  .sidebar-content-area-bottom .theme-blue [class^="widget_"]:not(.widget_calendar) > h1, .theme-blue
+  .box-panel-secondary > h2, .theme-blue .sidebar-content-area [class^="widget_"]:not(.widget_calendar) > h2, .sidebar-content-area .theme-blue [class^="widget_"]:not(.widget_calendar) > h2, .theme-blue
+  .sidebar-content-area-bottom [class^="widget_"]:not(.widget_calendar) > h2,
+  .sidebar-content-area-bottom .theme-blue [class^="widget_"]:not(.widget_calendar) > h2, .theme-blue .widget_calendar
+  .box-panel-secondary > caption, .widget_calendar .theme-blue
+  .box-panel-secondary > caption, .theme-blue .sidebar-content-area .widget_calendar [class^="widget_"]:not(.widget_calendar) > caption, .widget_calendar .theme-blue .sidebar-content-area [class^="widget_"]:not(.widget_calendar) > caption, .sidebar-content-area .theme-blue .widget_calendar [class^="widget_"]:not(.widget_calendar) > caption, .widget_calendar .sidebar-content-area .theme-blue [class^="widget_"]:not(.widget_calendar) > caption, .theme-blue
+  .sidebar-content-area-bottom .widget_calendar [class^="widget_"]:not(.widget_calendar) > caption, .widget_calendar .theme-blue
+  .sidebar-content-area-bottom [class^="widget_"]:not(.widget_calendar) > caption,
+  .sidebar-content-area-bottom .theme-blue .widget_calendar [class^="widget_"]:not(.widget_calendar) > caption, .widget_calendar
+  .sidebar-content-area-bottom .theme-blue [class^="widget_"]:not(.widget_calendar) > caption, .theme-blue
+  .box-panel-secondary > h3, .theme-blue .sidebar-content-area [class^="widget_"]:not(.widget_calendar) > h3, .sidebar-content-area .theme-blue [class^="widget_"]:not(.widget_calendar) > h3, .theme-blue
+  .sidebar-content-area-bottom [class^="widget_"]:not(.widget_calendar) > h3,
+  .sidebar-content-area-bottom .theme-blue [class^="widget_"]:not(.widget_calendar) > h3, .theme-blue
+  .box-panel-secondary > h4, .theme-blue .sidebar-content-area [class^="widget_"]:not(.widget_calendar) > h4, .sidebar-content-area .theme-blue [class^="widget_"]:not(.widget_calendar) > h4, .theme-blue
+  .sidebar-content-area-bottom [class^="widget_"]:not(.widget_calendar) > h4,
+  .sidebar-content-area-bottom .theme-blue [class^="widget_"]:not(.widget_calendar) > h4, .theme-blue
+  .box-panel-secondary > h5, .theme-blue .sidebar-content-area [class^="widget_"]:not(.widget_calendar) > h5, .sidebar-content-area .theme-blue [class^="widget_"]:not(.widget_calendar) > h5, .theme-blue
+  .sidebar-content-area-bottom [class^="widget_"]:not(.widget_calendar) > h5,
+  .sidebar-content-area-bottom .theme-blue [class^="widget_"]:not(.widget_calendar) > h5, .theme-blue
+  .box-panel-secondary > h6, .theme-blue .sidebar-content-area [class^="widget_"]:not(.widget_calendar) > h6, .sidebar-content-area .theme-blue [class^="widget_"]:not(.widget_calendar) > h6, .theme-blue
+  .sidebar-content-area-bottom [class^="widget_"]:not(.widget_calendar) > h6,
+  .sidebar-content-area-bottom .theme-blue [class^="widget_"]:not(.widget_calendar) > h6 {
     color: #0069b4;
     border-color: #0069b4; }
-  /* line 156, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_panel.scss */
-  .theme-green .box-panel-secondary .box-title {
+  /* line 168, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_panel.scss */
+  .theme-green .box-panel-secondary .box-title, .theme-green .sidebar-content-area [class^="widget_"]:not(.widget_calendar) .box-title, .sidebar-content-area .theme-green [class^="widget_"]:not(.widget_calendar) .box-title, .theme-green
+  .sidebar-content-area-bottom [class^="widget_"]:not(.widget_calendar) .box-title,
+  .sidebar-content-area-bottom .theme-green [class^="widget_"]:not(.widget_calendar) .box-title, .theme-green
+  .box-panel-secondary > h1, .theme-green .sidebar-content-area [class^="widget_"]:not(.widget_calendar) > h1, .sidebar-content-area .theme-green [class^="widget_"]:not(.widget_calendar) > h1, .theme-green
+  .sidebar-content-area-bottom [class^="widget_"]:not(.widget_calendar) > h1,
+  .sidebar-content-area-bottom .theme-green [class^="widget_"]:not(.widget_calendar) > h1, .theme-green
+  .box-panel-secondary > h2, .theme-green .sidebar-content-area [class^="widget_"]:not(.widget_calendar) > h2, .sidebar-content-area .theme-green [class^="widget_"]:not(.widget_calendar) > h2, .theme-green
+  .sidebar-content-area-bottom [class^="widget_"]:not(.widget_calendar) > h2,
+  .sidebar-content-area-bottom .theme-green [class^="widget_"]:not(.widget_calendar) > h2, .theme-green .widget_calendar
+  .box-panel-secondary > caption, .widget_calendar .theme-green
+  .box-panel-secondary > caption, .theme-green .sidebar-content-area .widget_calendar [class^="widget_"]:not(.widget_calendar) > caption, .widget_calendar .theme-green .sidebar-content-area [class^="widget_"]:not(.widget_calendar) > caption, .sidebar-content-area .theme-green .widget_calendar [class^="widget_"]:not(.widget_calendar) > caption, .widget_calendar .sidebar-content-area .theme-green [class^="widget_"]:not(.widget_calendar) > caption, .theme-green
+  .sidebar-content-area-bottom .widget_calendar [class^="widget_"]:not(.widget_calendar) > caption, .widget_calendar .theme-green
+  .sidebar-content-area-bottom [class^="widget_"]:not(.widget_calendar) > caption,
+  .sidebar-content-area-bottom .theme-green .widget_calendar [class^="widget_"]:not(.widget_calendar) > caption, .widget_calendar
+  .sidebar-content-area-bottom .theme-green [class^="widget_"]:not(.widget_calendar) > caption, .theme-green
+  .box-panel-secondary > h3, .theme-green .sidebar-content-area [class^="widget_"]:not(.widget_calendar) > h3, .sidebar-content-area .theme-green [class^="widget_"]:not(.widget_calendar) > h3, .theme-green
+  .sidebar-content-area-bottom [class^="widget_"]:not(.widget_calendar) > h3,
+  .sidebar-content-area-bottom .theme-green [class^="widget_"]:not(.widget_calendar) > h3, .theme-green
+  .box-panel-secondary > h4, .theme-green .sidebar-content-area [class^="widget_"]:not(.widget_calendar) > h4, .sidebar-content-area .theme-green [class^="widget_"]:not(.widget_calendar) > h4, .theme-green
+  .sidebar-content-area-bottom [class^="widget_"]:not(.widget_calendar) > h4,
+  .sidebar-content-area-bottom .theme-green [class^="widget_"]:not(.widget_calendar) > h4, .theme-green
+  .box-panel-secondary > h5, .theme-green .sidebar-content-area [class^="widget_"]:not(.widget_calendar) > h5, .sidebar-content-area .theme-green [class^="widget_"]:not(.widget_calendar) > h5, .theme-green
+  .sidebar-content-area-bottom [class^="widget_"]:not(.widget_calendar) > h5,
+  .sidebar-content-area-bottom .theme-green [class^="widget_"]:not(.widget_calendar) > h5, .theme-green
+  .box-panel-secondary > h6, .theme-green .sidebar-content-area [class^="widget_"]:not(.widget_calendar) > h6, .sidebar-content-area .theme-green [class^="widget_"]:not(.widget_calendar) > h6, .theme-green
+  .sidebar-content-area-bottom [class^="widget_"]:not(.widget_calendar) > h6,
+  .sidebar-content-area-bottom .theme-green [class^="widget_"]:not(.widget_calendar) > h6 {
     color: #11a636;
     border-color: #11a636; }
-  /* line 156, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_panel.scss */
-  .theme-purple .box-panel-secondary .box-title {
+  /* line 168, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_panel.scss */
+  .theme-purple .box-panel-secondary .box-title, .theme-purple .sidebar-content-area [class^="widget_"]:not(.widget_calendar) .box-title, .sidebar-content-area .theme-purple [class^="widget_"]:not(.widget_calendar) .box-title, .theme-purple
+  .sidebar-content-area-bottom [class^="widget_"]:not(.widget_calendar) .box-title,
+  .sidebar-content-area-bottom .theme-purple [class^="widget_"]:not(.widget_calendar) .box-title, .theme-purple
+  .box-panel-secondary > h1, .theme-purple .sidebar-content-area [class^="widget_"]:not(.widget_calendar) > h1, .sidebar-content-area .theme-purple [class^="widget_"]:not(.widget_calendar) > h1, .theme-purple
+  .sidebar-content-area-bottom [class^="widget_"]:not(.widget_calendar) > h1,
+  .sidebar-content-area-bottom .theme-purple [class^="widget_"]:not(.widget_calendar) > h1, .theme-purple
+  .box-panel-secondary > h2, .theme-purple .sidebar-content-area [class^="widget_"]:not(.widget_calendar) > h2, .sidebar-content-area .theme-purple [class^="widget_"]:not(.widget_calendar) > h2, .theme-purple
+  .sidebar-content-area-bottom [class^="widget_"]:not(.widget_calendar) > h2,
+  .sidebar-content-area-bottom .theme-purple [class^="widget_"]:not(.widget_calendar) > h2, .theme-purple .widget_calendar
+  .box-panel-secondary > caption, .widget_calendar .theme-purple
+  .box-panel-secondary > caption, .theme-purple .sidebar-content-area .widget_calendar [class^="widget_"]:not(.widget_calendar) > caption, .widget_calendar .theme-purple .sidebar-content-area [class^="widget_"]:not(.widget_calendar) > caption, .sidebar-content-area .theme-purple .widget_calendar [class^="widget_"]:not(.widget_calendar) > caption, .widget_calendar .sidebar-content-area .theme-purple [class^="widget_"]:not(.widget_calendar) > caption, .theme-purple
+  .sidebar-content-area-bottom .widget_calendar [class^="widget_"]:not(.widget_calendar) > caption, .widget_calendar .theme-purple
+  .sidebar-content-area-bottom [class^="widget_"]:not(.widget_calendar) > caption,
+  .sidebar-content-area-bottom .theme-purple .widget_calendar [class^="widget_"]:not(.widget_calendar) > caption, .widget_calendar
+  .sidebar-content-area-bottom .theme-purple [class^="widget_"]:not(.widget_calendar) > caption, .theme-purple
+  .box-panel-secondary > h3, .theme-purple .sidebar-content-area [class^="widget_"]:not(.widget_calendar) > h3, .sidebar-content-area .theme-purple [class^="widget_"]:not(.widget_calendar) > h3, .theme-purple
+  .sidebar-content-area-bottom [class^="widget_"]:not(.widget_calendar) > h3,
+  .sidebar-content-area-bottom .theme-purple [class^="widget_"]:not(.widget_calendar) > h3, .theme-purple
+  .box-panel-secondary > h4, .theme-purple .sidebar-content-area [class^="widget_"]:not(.widget_calendar) > h4, .sidebar-content-area .theme-purple [class^="widget_"]:not(.widget_calendar) > h4, .theme-purple
+  .sidebar-content-area-bottom [class^="widget_"]:not(.widget_calendar) > h4,
+  .sidebar-content-area-bottom .theme-purple [class^="widget_"]:not(.widget_calendar) > h4, .theme-purple
+  .box-panel-secondary > h5, .theme-purple .sidebar-content-area [class^="widget_"]:not(.widget_calendar) > h5, .sidebar-content-area .theme-purple [class^="widget_"]:not(.widget_calendar) > h5, .theme-purple
+  .sidebar-content-area-bottom [class^="widget_"]:not(.widget_calendar) > h5,
+  .sidebar-content-area-bottom .theme-purple [class^="widget_"]:not(.widget_calendar) > h5, .theme-purple
+  .box-panel-secondary > h6, .theme-purple .sidebar-content-area [class^="widget_"]:not(.widget_calendar) > h6, .sidebar-content-area .theme-purple [class^="widget_"]:not(.widget_calendar) > h6, .theme-purple
+  .sidebar-content-area-bottom [class^="widget_"]:not(.widget_calendar) > h6,
+  .sidebar-content-area-bottom .theme-purple [class^="widget_"]:not(.widget_calendar) > h6 {
     color: #712082;
     border-color: #712082; }
 
@@ -4149,14 +5002,64 @@ a.box-index {
     width: 100%;
     height: auto; }
   /* line 72, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_news.scss */
-  .box-news .box-content {
+  .box-news .box-content, .box-news [class^="widget_"]:not(.widget_calendar) *:not(.main-fotter) .textwidget, [class^="widget_"]:not(.widget_calendar) *:not(.main-fotter) .box-news .textwidget, .box-news
+  [class^="widget_"]:not(.widget_calendar) *:not(.main-fotter) form,
+  [class^="widget_"]:not(.widget_calendar) *:not(.main-fotter) .box-news form, .box-news .sidebar-left-sidebar .widget_nav_menu > div, .sidebar-left-sidebar .box-news .widget_nav_menu > div, .box-news
+  .sidebar-right-sidebar .widget_nav_menu > div,
+  .sidebar-right-sidebar .box-news .widget_nav_menu > div {
     padding: 15px; }
   /* line 76, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_news.scss */
   .box-news:hover {
     text-decoration: none; }
     /* line 79, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_news.scss */
     .box-news:hover h1, .box-news:hover h2, .box-news:hover .widget_calendar caption, .widget_calendar .box-news:hover caption, .box-news:hover h3, .box-news:hover h4, .box-news:hover h5, .box-news:hover h6,
-    .box-news:hover .link-item {
+    .box-news:hover .link-item,
+    .box-news:hover .sidebar-left-sidebar .widget_archive a, .sidebar-left-sidebar .widget_archive
+    .box-news:hover a,
+    .box-news:hover
+    .sidebar-right-sidebar .widget_archive a,
+    .sidebar-right-sidebar .widget_archive
+    .box-news:hover a,
+    .box-news:hover .sidebar-left-sidebar
+    .widget_categories a, .sidebar-left-sidebar
+    .widget_categories
+    .box-news:hover a,
+    .box-news:hover
+    .sidebar-right-sidebar
+    .widget_categories a,
+    .sidebar-right-sidebar
+    .widget_categories
+    .box-news:hover a,
+    .box-news:hover .sidebar-left-sidebar
+    .widget_meta a, .sidebar-left-sidebar
+    .widget_meta
+    .box-news:hover a,
+    .box-news:hover
+    .sidebar-right-sidebar
+    .widget_meta a,
+    .sidebar-right-sidebar
+    .widget_meta
+    .box-news:hover a,
+    .box-news:hover .sidebar-left-sidebar
+    .widget_recent_entries a, .sidebar-left-sidebar
+    .widget_recent_entries
+    .box-news:hover a,
+    .box-news:hover
+    .sidebar-right-sidebar
+    .widget_recent_entries a,
+    .sidebar-right-sidebar
+    .widget_recent_entries
+    .box-news:hover a,
+    .box-news:hover .sidebar-left-sidebar
+    .widget_recent_comments a, .sidebar-left-sidebar
+    .widget_recent_comments
+    .box-news:hover a,
+    .box-news:hover
+    .sidebar-right-sidebar
+    .widget_recent_comments a,
+    .sidebar-right-sidebar
+    .widget_recent_comments
+    .box-news:hover a {
       text-decoration: underline; }
   /* line 88, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_news.scss */
   .theme-red .box-news {
@@ -4183,10 +5086,18 @@ a.box-index {
     vertical-align: top;
     width: 200px; }
     /* line 106, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_news.scss */
-    .box-news.box-news-horizontal .box-image-container + .box-content {
+    .box-news.box-news-horizontal .box-image-container + .box-content, .box-news.box-news-horizontal [class^="widget_"]:not(.widget_calendar) *:not(.main-fotter) .box-image-container + .textwidget, [class^="widget_"]:not(.widget_calendar) *:not(.main-fotter) .box-news.box-news-horizontal .box-image-container + .textwidget, .box-news.box-news-horizontal
+    [class^="widget_"]:not(.widget_calendar) *:not(.main-fotter) .box-image-container + form,
+    [class^="widget_"]:not(.widget_calendar) *:not(.main-fotter) .box-news.box-news-horizontal .box-image-container + form, .box-news.box-news-horizontal .sidebar-left-sidebar .widget_nav_menu > .box-image-container + div, .sidebar-left-sidebar .box-news.box-news-horizontal .widget_nav_menu > .box-image-container + div, .box-news.box-news-horizontal
+    .sidebar-right-sidebar .widget_nav_menu > .box-image-container + div,
+    .sidebar-right-sidebar .box-news.box-news-horizontal .widget_nav_menu > .box-image-container + div {
       padding-left: 30px; }
   /* line 111, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_news.scss */
-  .box-news.box-news-horizontal .box-content {
+  .box-news.box-news-horizontal .box-content, .box-news.box-news-horizontal [class^="widget_"]:not(.widget_calendar) *:not(.main-fotter) .textwidget, [class^="widget_"]:not(.widget_calendar) *:not(.main-fotter) .box-news.box-news-horizontal .textwidget, .box-news.box-news-horizontal
+  [class^="widget_"]:not(.widget_calendar) *:not(.main-fotter) form,
+  [class^="widget_"]:not(.widget_calendar) *:not(.main-fotter) .box-news.box-news-horizontal form, .box-news.box-news-horizontal .sidebar-left-sidebar .widget_nav_menu > div, .sidebar-left-sidebar .box-news.box-news-horizontal .widget_nav_menu > div, .box-news.box-news-horizontal
+  .sidebar-right-sidebar .widget_nav_menu > div,
+  .sidebar-right-sidebar .box-news.box-news-horizontal .widget_nav_menu > div {
     display: table-cell;
     vertical-align: top;
     padding: 0; }
@@ -4227,17 +5138,61 @@ a.box-index {
       width: 180px; }
     @media screen and (min-width: 769px) {
       /* line 83, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_contactcard.scss */
-      .box-card.vertical-card .box-content {
+      .box-card.vertical-card .box-content, .box-card.vertical-card [class^="widget_"]:not(.widget_calendar) *:not(.main-fotter) .textwidget, [class^="widget_"]:not(.widget_calendar) *:not(.main-fotter) .box-card.vertical-card .textwidget, .box-card.vertical-card
+      [class^="widget_"]:not(.widget_calendar) *:not(.main-fotter) form,
+      [class^="widget_"]:not(.widget_calendar) *:not(.main-fotter) .box-card.vertical-card form, .box-card.vertical-card .sidebar-left-sidebar .widget_nav_menu > div, .sidebar-left-sidebar .box-card.vertical-card .widget_nav_menu > div, .box-card.vertical-card
+      .sidebar-right-sidebar .widget_nav_menu > div,
+      .sidebar-right-sidebar .box-card.vertical-card .widget_nav_menu > div {
         margin-left: 180px; }
         /* line 86, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_contactcard.scss */
-        .box-card.vertical-card .box-content ul, .box-card.vertical-card .box-content h1, .box-card.vertical-card .box-content h2, .box-card.vertical-card .box-content .widget_calendar caption, .widget_calendar .box-card.vertical-card .box-content caption, .box-card.vertical-card .box-content h3, .box-card.vertical-card .box-content h4, .box-card.vertical-card .box-content h5, .box-card.vertical-card .box-content h6 {
+        .box-card.vertical-card .box-content ul, .box-card.vertical-card [class^="widget_"]:not(.widget_calendar) *:not(.main-fotter) .textwidget ul, [class^="widget_"]:not(.widget_calendar) *:not(.main-fotter) .box-card.vertical-card .textwidget ul, .box-card.vertical-card
+        [class^="widget_"]:not(.widget_calendar) *:not(.main-fotter) form ul,
+        [class^="widget_"]:not(.widget_calendar) *:not(.main-fotter) .box-card.vertical-card form ul, .box-card.vertical-card .sidebar-left-sidebar .widget_nav_menu > div ul, .sidebar-left-sidebar .box-card.vertical-card .widget_nav_menu > div ul, .box-card.vertical-card
+        .sidebar-right-sidebar .widget_nav_menu > div ul,
+        .sidebar-right-sidebar .box-card.vertical-card .widget_nav_menu > div ul, .box-card.vertical-card .box-content h1, .box-card.vertical-card [class^="widget_"]:not(.widget_calendar) *:not(.main-fotter) .textwidget h1, [class^="widget_"]:not(.widget_calendar) *:not(.main-fotter) .box-card.vertical-card .textwidget h1, .box-card.vertical-card
+        [class^="widget_"]:not(.widget_calendar) *:not(.main-fotter) form h1,
+        [class^="widget_"]:not(.widget_calendar) *:not(.main-fotter) .box-card.vertical-card form h1, .box-card.vertical-card .sidebar-left-sidebar .widget_nav_menu > div h1, .sidebar-left-sidebar .box-card.vertical-card .widget_nav_menu > div h1, .box-card.vertical-card
+        .sidebar-right-sidebar .widget_nav_menu > div h1,
+        .sidebar-right-sidebar .box-card.vertical-card .widget_nav_menu > div h1, .box-card.vertical-card .box-content h2, .box-card.vertical-card [class^="widget_"]:not(.widget_calendar) *:not(.main-fotter) .textwidget h2, [class^="widget_"]:not(.widget_calendar) *:not(.main-fotter) .box-card.vertical-card .textwidget h2, .box-card.vertical-card
+        [class^="widget_"]:not(.widget_calendar) *:not(.main-fotter) form h2,
+        [class^="widget_"]:not(.widget_calendar) *:not(.main-fotter) .box-card.vertical-card form h2, .box-card.vertical-card .sidebar-left-sidebar .widget_nav_menu > div h2, .sidebar-left-sidebar .box-card.vertical-card .widget_nav_menu > div h2, .box-card.vertical-card
+        .sidebar-right-sidebar .widget_nav_menu > div h2,
+        .sidebar-right-sidebar .box-card.vertical-card .widget_nav_menu > div h2, .box-card.vertical-card .box-content .widget_calendar caption, .widget_calendar .box-card.vertical-card .box-content caption, .box-card.vertical-card [class^="widget_"]:not(.widget_calendar) *:not(.main-fotter) .textwidget .widget_calendar caption, .widget_calendar .box-card.vertical-card [class^="widget_"]:not(.widget_calendar) *:not(.main-fotter) .textwidget caption, [class^="widget_"]:not(.widget_calendar) *:not(.main-fotter) .box-card.vertical-card .textwidget .widget_calendar caption, .widget_calendar [class^="widget_"]:not(.widget_calendar) *:not(.main-fotter) .box-card.vertical-card .textwidget caption, .box-card.vertical-card
+        [class^="widget_"]:not(.widget_calendar) *:not(.main-fotter) form .widget_calendar caption, .widget_calendar .box-card.vertical-card
+        [class^="widget_"]:not(.widget_calendar) *:not(.main-fotter) form caption,
+        [class^="widget_"]:not(.widget_calendar) *:not(.main-fotter) .box-card.vertical-card form .widget_calendar caption, .widget_calendar
+        [class^="widget_"]:not(.widget_calendar) *:not(.main-fotter) .box-card.vertical-card form caption, .box-card.vertical-card .sidebar-left-sidebar .widget_nav_menu > div .widget_calendar caption, .widget_calendar .box-card.vertical-card .sidebar-left-sidebar .widget_nav_menu > div caption, .sidebar-left-sidebar .box-card.vertical-card .widget_nav_menu > div .widget_calendar caption, .widget_calendar .sidebar-left-sidebar .box-card.vertical-card .widget_nav_menu > div caption, .box-card.vertical-card
+        .sidebar-right-sidebar .widget_nav_menu > div .widget_calendar caption, .widget_calendar .box-card.vertical-card
+        .sidebar-right-sidebar .widget_nav_menu > div caption,
+        .sidebar-right-sidebar .box-card.vertical-card .widget_nav_menu > div .widget_calendar caption, .widget_calendar
+        .sidebar-right-sidebar .box-card.vertical-card .widget_nav_menu > div caption, .box-card.vertical-card .box-content h3, .box-card.vertical-card [class^="widget_"]:not(.widget_calendar) *:not(.main-fotter) .textwidget h3, [class^="widget_"]:not(.widget_calendar) *:not(.main-fotter) .box-card.vertical-card .textwidget h3, .box-card.vertical-card
+        [class^="widget_"]:not(.widget_calendar) *:not(.main-fotter) form h3,
+        [class^="widget_"]:not(.widget_calendar) *:not(.main-fotter) .box-card.vertical-card form h3, .box-card.vertical-card .sidebar-left-sidebar .widget_nav_menu > div h3, .sidebar-left-sidebar .box-card.vertical-card .widget_nav_menu > div h3, .box-card.vertical-card
+        .sidebar-right-sidebar .widget_nav_menu > div h3,
+        .sidebar-right-sidebar .box-card.vertical-card .widget_nav_menu > div h3, .box-card.vertical-card .box-content h4, .box-card.vertical-card [class^="widget_"]:not(.widget_calendar) *:not(.main-fotter) .textwidget h4, [class^="widget_"]:not(.widget_calendar) *:not(.main-fotter) .box-card.vertical-card .textwidget h4, .box-card.vertical-card
+        [class^="widget_"]:not(.widget_calendar) *:not(.main-fotter) form h4,
+        [class^="widget_"]:not(.widget_calendar) *:not(.main-fotter) .box-card.vertical-card form h4, .box-card.vertical-card .sidebar-left-sidebar .widget_nav_menu > div h4, .sidebar-left-sidebar .box-card.vertical-card .widget_nav_menu > div h4, .box-card.vertical-card
+        .sidebar-right-sidebar .widget_nav_menu > div h4,
+        .sidebar-right-sidebar .box-card.vertical-card .widget_nav_menu > div h4, .box-card.vertical-card .box-content h5, .box-card.vertical-card [class^="widget_"]:not(.widget_calendar) *:not(.main-fotter) .textwidget h5, [class^="widget_"]:not(.widget_calendar) *:not(.main-fotter) .box-card.vertical-card .textwidget h5, .box-card.vertical-card
+        [class^="widget_"]:not(.widget_calendar) *:not(.main-fotter) form h5,
+        [class^="widget_"]:not(.widget_calendar) *:not(.main-fotter) .box-card.vertical-card form h5, .box-card.vertical-card .sidebar-left-sidebar .widget_nav_menu > div h5, .sidebar-left-sidebar .box-card.vertical-card .widget_nav_menu > div h5, .box-card.vertical-card
+        .sidebar-right-sidebar .widget_nav_menu > div h5,
+        .sidebar-right-sidebar .box-card.vertical-card .widget_nav_menu > div h5, .box-card.vertical-card .box-content h6, .box-card.vertical-card [class^="widget_"]:not(.widget_calendar) *:not(.main-fotter) .textwidget h6, [class^="widget_"]:not(.widget_calendar) *:not(.main-fotter) .box-card.vertical-card .textwidget h6, .box-card.vertical-card
+        [class^="widget_"]:not(.widget_calendar) *:not(.main-fotter) form h6,
+        [class^="widget_"]:not(.widget_calendar) *:not(.main-fotter) .box-card.vertical-card form h6, .box-card.vertical-card .sidebar-left-sidebar .widget_nav_menu > div h6, .sidebar-left-sidebar .box-card.vertical-card .widget_nav_menu > div h6, .box-card.vertical-card
+        .sidebar-right-sidebar .widget_nav_menu > div h6,
+        .sidebar-right-sidebar .box-card.vertical-card .widget_nav_menu > div h6 {
           padding-left: 10px; } }
   @media screen and (max-width: 769px) {
     /* line 96, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_contactcard.scss */
     .box-card .box-image {
       display: none; }
     /* line 99, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_contactcard.scss */
-    .box-card .box-content {
+    .box-card .box-content, .box-card [class^="widget_"]:not(.widget_calendar) *:not(.main-fotter) .textwidget, [class^="widget_"]:not(.widget_calendar) *:not(.main-fotter) .box-card .textwidget, .box-card
+    [class^="widget_"]:not(.widget_calendar) *:not(.main-fotter) form,
+    [class^="widget_"]:not(.widget_calendar) *:not(.main-fotter) .box-card form, .box-card .sidebar-left-sidebar .widget_nav_menu > div, .sidebar-left-sidebar .box-card .widget_nav_menu > div, .box-card
+    .sidebar-right-sidebar .widget_nav_menu > div,
+    .sidebar-right-sidebar .box-card .widget_nav_menu > div {
       margin-left: 0; } }
 
 /* line 29, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_grid-post.scss */
@@ -4281,7 +5236,11 @@ a.box-index {
       content: '';
       background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.8)); }
   /* line 74, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_grid-post.scss */
-  .box-post-brick .box-content {
+  .box-post-brick .box-content, .box-post-brick [class^="widget_"]:not(.widget_calendar) *:not(.main-fotter) .textwidget, [class^="widget_"]:not(.widget_calendar) *:not(.main-fotter) .box-post-brick .textwidget, .box-post-brick
+  [class^="widget_"]:not(.widget_calendar) *:not(.main-fotter) form,
+  [class^="widget_"]:not(.widget_calendar) *:not(.main-fotter) .box-post-brick form, .box-post-brick .sidebar-left-sidebar .widget_nav_menu > div, .sidebar-left-sidebar .box-post-brick .widget_nav_menu > div, .box-post-brick
+  .sidebar-right-sidebar .widget_nav_menu > div,
+  .sidebar-right-sidebar .box-post-brick .widget_nav_menu > div {
     position: absolute;
     left: 0;
     right: 0;
@@ -4340,7 +5299,11 @@ a.box-index {
     filter: grayscale(0%);
     -webkit-filter: grayscale(0%); }
   /* line 146, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_grid-post.scss */
-  .box-post-brick:hover .box-content {
+  .box-post-brick:hover .box-content, .box-post-brick:hover [class^="widget_"]:not(.widget_calendar) *:not(.main-fotter) .textwidget, [class^="widget_"]:not(.widget_calendar) *:not(.main-fotter) .box-post-brick:hover .textwidget, .box-post-brick:hover
+  [class^="widget_"]:not(.widget_calendar) *:not(.main-fotter) form,
+  [class^="widget_"]:not(.widget_calendar) *:not(.main-fotter) .box-post-brick:hover form, .box-post-brick:hover .sidebar-left-sidebar .widget_nav_menu > div, .sidebar-left-sidebar .box-post-brick:hover .widget_nav_menu > div, .box-post-brick:hover
+  .sidebar-right-sidebar .widget_nav_menu > div,
+  .sidebar-right-sidebar .box-post-brick:hover .widget_nav_menu > div {
     -webkit-transform: translateY(-150px);
             transform: translateY(-150px); }
   /* line 150, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_grid-post.scss */
@@ -5645,10 +6608,15 @@ select + select {
   .social-feed-instagram li,
   .social-feed-pinterest li {
     display: inline-block;
-    width: 33.3333%;
+    width: 50%;
     border: 0;
     padding: 0; }
-  /* line 96, /www/sites/HbgPrime/wwwroot/source/sass/component/social-feed/story.scss */
+  @media (min-width: 769px) and (max-width: 960px) {
+    /* line 97, /www/sites/HbgPrime/wwwroot/source/sass/component/social-feed/story.scss */
+    .social-feed-instagram li,
+    .social-feed-pinterest li {
+      width: 33.3333%; } }
+  /* line 102, /www/sites/HbgPrime/wwwroot/source/sass/component/social-feed/story.scss */
   .social-feed-instagram .mod-social-image,
   .social-feed-pinterest .mod-social-image {
     display: block;
@@ -5660,11 +6628,11 @@ select + select {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center; }
-  /* line 109, /www/sites/HbgPrime/wwwroot/source/sass/component/social-feed/story.scss */
+  /* line 115, /www/sites/HbgPrime/wwwroot/source/sass/component/social-feed/story.scss */
   .social-feed-instagram .mod-social-attachment-image,
   .social-feed-pinterest .mod-social-attachment-image {
     display: none; }
-  /* line 113, /www/sites/HbgPrime/wwwroot/source/sass/component/social-feed/story.scss */
+  /* line 119, /www/sites/HbgPrime/wwwroot/source/sass/component/social-feed/story.scss */
   .social-feed-instagram .mod-social-user,
   .social-feed-pinterest .mod-social-user {
     position: absolute;
@@ -5676,16 +6644,16 @@ select + select {
     font-size: .8rem;
     line-height: 1.2;
     padding: 10px; }
-    /* line 124, /www/sites/HbgPrime/wwwroot/source/sass/component/social-feed/story.scss */
+    /* line 130, /www/sites/HbgPrime/wwwroot/source/sass/component/social-feed/story.scss */
     .social-feed-instagram .mod-social-user img,
     .social-feed-pinterest .mod-social-user img {
       display: none; }
-    /* line 128, /www/sites/HbgPrime/wwwroot/source/sass/component/social-feed/story.scss */
+    /* line 134, /www/sites/HbgPrime/wwwroot/source/sass/component/social-feed/story.scss */
     .social-feed-instagram .mod-social-user time,
     .social-feed-pinterest .mod-social-user time {
       color: #fff;
       display: block; }
-  /* line 134, /www/sites/HbgPrime/wwwroot/source/sass/component/social-feed/story.scss */
+  /* line 140, /www/sites/HbgPrime/wwwroot/source/sass/component/social-feed/story.scss */
   .social-feed-instagram .mod-social-story,
   .social-feed-pinterest .mod-social-story {
     display: none; }
@@ -5933,41 +6901,19 @@ select + select {
   font-size: 1.5em; }
 
 /* line 166, /www/sites/HbgPrime/wwwroot/source/sass/utility/_text.scss */
-.text-highlight, .box-index-title, .widget_calendar caption, .widget_archive h2.footer-title, .widget_archive .widget_calendar caption.footer-title, .widget_calendar .widget_archive caption.footer-title,
-.widget_categories h2.footer-title,
-.widget_categories .widget_calendar caption.footer-title, .widget_calendar
-.widget_categories caption.footer-title,
-.widget_meta h2.footer-title,
-.widget_meta .widget_calendar caption.footer-title, .widget_calendar
-.widget_meta caption.footer-title, .widget_nav_menu, .widget_rss h2 a:first-child, .widget_rss .widget_calendar caption a:first-child, .widget_calendar .widget_rss caption a:first-child, .widget_search, .widget_text h2 {
+.text-highlight, .box-index-title, .widget_calendar caption {
   color: #333; }
   /* line 172, /www/sites/HbgPrime/wwwroot/source/sass/utility/_text.scss */
-  .theme-red .text-highlight, .theme-red .box-index-title, .theme-red .widget_calendar caption, .widget_calendar .theme-red caption, .theme-red .widget_archive h2.footer-title, .widget_archive .theme-red h2.footer-title, .theme-red
-  .widget_categories h2.footer-title,
-  .widget_categories .theme-red h2.footer-title, .theme-red
-  .widget_meta h2.footer-title,
-  .widget_meta .theme-red h2.footer-title, .theme-red .widget_nav_menu, .theme-red .widget_rss h2 a:first-child, .widget_rss h2 .theme-red a:first-child, .theme-red .widget_rss .widget_calendar caption a:first-child, .widget_rss .widget_calendar caption .theme-red a:first-child, .theme-red .widget_calendar .widget_rss caption a:first-child, .widget_calendar .widget_rss caption .theme-red a:first-child, .theme-red .widget_search, .theme-red .widget_text h2, .widget_text .theme-red h2 {
+  .theme-red .text-highlight, .theme-red .box-index-title, .theme-red .widget_calendar caption, .widget_calendar .theme-red caption {
     color: #cb0050; }
   /* line 172, /www/sites/HbgPrime/wwwroot/source/sass/utility/_text.scss */
-  .theme-blue .text-highlight, .theme-blue .box-index-title, .theme-blue .widget_calendar caption, .widget_calendar .theme-blue caption, .theme-blue .widget_archive h2.footer-title, .widget_archive .theme-blue h2.footer-title, .theme-blue
-  .widget_categories h2.footer-title,
-  .widget_categories .theme-blue h2.footer-title, .theme-blue
-  .widget_meta h2.footer-title,
-  .widget_meta .theme-blue h2.footer-title, .theme-blue .widget_nav_menu, .theme-blue .widget_rss h2 a:first-child, .widget_rss h2 .theme-blue a:first-child, .theme-blue .widget_rss .widget_calendar caption a:first-child, .widget_rss .widget_calendar caption .theme-blue a:first-child, .theme-blue .widget_calendar .widget_rss caption a:first-child, .widget_calendar .widget_rss caption .theme-blue a:first-child, .theme-blue .widget_search, .theme-blue .widget_text h2, .widget_text .theme-blue h2 {
+  .theme-blue .text-highlight, .theme-blue .box-index-title, .theme-blue .widget_calendar caption, .widget_calendar .theme-blue caption {
     color: #0069b4; }
   /* line 172, /www/sites/HbgPrime/wwwroot/source/sass/utility/_text.scss */
-  .theme-green .text-highlight, .theme-green .box-index-title, .theme-green .widget_calendar caption, .widget_calendar .theme-green caption, .theme-green .widget_archive h2.footer-title, .widget_archive .theme-green h2.footer-title, .theme-green
-  .widget_categories h2.footer-title,
-  .widget_categories .theme-green h2.footer-title, .theme-green
-  .widget_meta h2.footer-title,
-  .widget_meta .theme-green h2.footer-title, .theme-green .widget_nav_menu, .theme-green .widget_rss h2 a:first-child, .widget_rss h2 .theme-green a:first-child, .theme-green .widget_rss .widget_calendar caption a:first-child, .widget_rss .widget_calendar caption .theme-green a:first-child, .theme-green .widget_calendar .widget_rss caption a:first-child, .widget_calendar .widget_rss caption .theme-green a:first-child, .theme-green .widget_search, .theme-green .widget_text h2, .widget_text .theme-green h2 {
+  .theme-green .text-highlight, .theme-green .box-index-title, .theme-green .widget_calendar caption, .widget_calendar .theme-green caption {
     color: #11a636; }
   /* line 172, /www/sites/HbgPrime/wwwroot/source/sass/utility/_text.scss */
-  .theme-purple .text-highlight, .theme-purple .box-index-title, .theme-purple .widget_calendar caption, .widget_calendar .theme-purple caption, .theme-purple .widget_archive h2.footer-title, .widget_archive .theme-purple h2.footer-title, .theme-purple
-  .widget_categories h2.footer-title,
-  .widget_categories .theme-purple h2.footer-title, .theme-purple
-  .widget_meta h2.footer-title,
-  .widget_meta .theme-purple h2.footer-title, .theme-purple .widget_nav_menu, .theme-purple .widget_rss h2 a:first-child, .widget_rss h2 .theme-purple a:first-child, .theme-purple .widget_rss .widget_calendar caption a:first-child, .widget_rss .widget_calendar caption .theme-purple a:first-child, .theme-purple .widget_calendar .widget_rss caption a:first-child, .widget_calendar .widget_rss caption .theme-purple a:first-child, .theme-purple .widget_search, .theme-purple .widget_text h2, .widget_text .theme-purple h2 {
+  .theme-purple .text-highlight, .theme-purple .box-index-title, .theme-purple .widget_calendar caption, .widget_calendar .theme-purple caption {
     color: #712082; }
 
 /* line 191, /www/sites/HbgPrime/wwwroot/source/sass/utility/_text.scss */
@@ -6138,12 +7084,38 @@ small,
   margin-left: 0; }
 
 /* line 28, /www/sites/HbgPrime/wwwroot/source/sass/utility/_link-item.scss */
-.link-item {
+.link-item, .sidebar-left-sidebar .widget_archive a,
+.sidebar-right-sidebar .widget_archive a, .sidebar-left-sidebar
+.widget_categories a,
+.sidebar-right-sidebar
+.widget_categories a, .sidebar-left-sidebar
+.widget_meta a,
+.sidebar-right-sidebar
+.widget_meta a, .sidebar-left-sidebar
+.widget_recent_entries a,
+.sidebar-right-sidebar
+.widget_recent_entries a, .sidebar-left-sidebar
+.widget_recent_comments a,
+.sidebar-right-sidebar
+.widget_recent_comments a {
   position: relative;
   left: 20px;
   padding-right: 20px; }
   /* line 34, /www/sites/HbgPrime/wwwroot/source/sass/utility/_link-item.scss */
-  .link-item::before {
+  .link-item::before, .sidebar-left-sidebar .widget_archive a::before,
+  .sidebar-right-sidebar .widget_archive a::before, .sidebar-left-sidebar
+  .widget_categories a::before,
+  .sidebar-right-sidebar
+  .widget_categories a::before, .sidebar-left-sidebar
+  .widget_meta a::before,
+  .sidebar-right-sidebar
+  .widget_meta a::before, .sidebar-left-sidebar
+  .widget_recent_entries a::before,
+  .sidebar-right-sidebar
+  .widget_recent_entries a::before, .sidebar-left-sidebar
+  .widget_recent_comments a::before,
+  .sidebar-right-sidebar
+  .widget_recent_comments a::before {
     font-family: FontAwesome;
     speak: none;
     font-style: normal;
@@ -6177,7 +7149,25 @@ small,
 /* Domains */
 /* line 56, /www/sites/HbgPrime/wwwroot/source/sass/utility/_link-item.scss */
 .link-item-github::before,
-.link-item[href*="github.com"]::before {
+.link-item[href*="github.com"]::before,
+.sidebar-left-sidebar .widget_archive a[href*="github.com"]::before,
+.sidebar-right-sidebar .widget_archive a[href*="github.com"]::before,
+.sidebar-left-sidebar
+.widget_categories a[href*="github.com"]::before,
+.sidebar-right-sidebar
+.widget_categories a[href*="github.com"]::before,
+.sidebar-left-sidebar
+.widget_meta a[href*="github.com"]::before,
+.sidebar-right-sidebar
+.widget_meta a[href*="github.com"]::before,
+.sidebar-left-sidebar
+.widget_recent_entries a[href*="github.com"]::before,
+.sidebar-right-sidebar
+.widget_recent_entries a[href*="github.com"]::before,
+.sidebar-left-sidebar
+.widget_recent_comments a[href*="github.com"]::before,
+.sidebar-right-sidebar
+.widget_recent_comments a[href*="github.com"]::before {
   font-family: FontAwesome;
   speak: none;
   font-style: normal;
@@ -6192,7 +7182,25 @@ small,
 /* Filetypes */
 /* line 65, /www/sites/HbgPrime/wwwroot/source/sass/utility/_link-item.scss */
 .link-item-pdf::before,
-.link-item[href$=".pdf"]::before {
+.link-item[href$=".pdf"]::before,
+.sidebar-left-sidebar .widget_archive a[href$=".pdf"]::before,
+.sidebar-right-sidebar .widget_archive a[href$=".pdf"]::before,
+.sidebar-left-sidebar
+.widget_categories a[href$=".pdf"]::before,
+.sidebar-right-sidebar
+.widget_categories a[href$=".pdf"]::before,
+.sidebar-left-sidebar
+.widget_meta a[href$=".pdf"]::before,
+.sidebar-right-sidebar
+.widget_meta a[href$=".pdf"]::before,
+.sidebar-left-sidebar
+.widget_recent_entries a[href$=".pdf"]::before,
+.sidebar-right-sidebar
+.widget_recent_entries a[href$=".pdf"]::before,
+.sidebar-left-sidebar
+.widget_recent_comments a[href$=".pdf"]::before,
+.sidebar-right-sidebar
+.widget_recent_comments a[href$=".pdf"]::before {
   font-family: FontAwesome;
   speak: none;
   font-style: normal;
@@ -6207,7 +7215,43 @@ small,
 /* line 73, /www/sites/HbgPrime/wwwroot/source/sass/utility/_link-item.scss */
 .link-item-doc::before,
 .link-item[href$=".doc"]::before,
-.link-item[href$=".docx"]::before {
+.sidebar-left-sidebar .widget_archive a[href$=".doc"]::before,
+.sidebar-right-sidebar .widget_archive a[href$=".doc"]::before,
+.sidebar-left-sidebar
+.widget_categories a[href$=".doc"]::before,
+.sidebar-right-sidebar
+.widget_categories a[href$=".doc"]::before,
+.sidebar-left-sidebar
+.widget_meta a[href$=".doc"]::before,
+.sidebar-right-sidebar
+.widget_meta a[href$=".doc"]::before,
+.sidebar-left-sidebar
+.widget_recent_entries a[href$=".doc"]::before,
+.sidebar-right-sidebar
+.widget_recent_entries a[href$=".doc"]::before,
+.sidebar-left-sidebar
+.widget_recent_comments a[href$=".doc"]::before,
+.sidebar-right-sidebar
+.widget_recent_comments a[href$=".doc"]::before,
+.link-item[href$=".docx"]::before,
+.sidebar-left-sidebar .widget_archive a[href$=".docx"]::before,
+.sidebar-right-sidebar .widget_archive a[href$=".docx"]::before,
+.sidebar-left-sidebar
+.widget_categories a[href$=".docx"]::before,
+.sidebar-right-sidebar
+.widget_categories a[href$=".docx"]::before,
+.sidebar-left-sidebar
+.widget_meta a[href$=".docx"]::before,
+.sidebar-right-sidebar
+.widget_meta a[href$=".docx"]::before,
+.sidebar-left-sidebar
+.widget_recent_entries a[href$=".docx"]::before,
+.sidebar-right-sidebar
+.widget_recent_entries a[href$=".docx"]::before,
+.sidebar-left-sidebar
+.widget_recent_comments a[href$=".docx"]::before,
+.sidebar-right-sidebar
+.widget_recent_comments a[href$=".docx"]::before {
   font-family: FontAwesome;
   speak: none;
   font-style: normal;
@@ -6222,7 +7266,43 @@ small,
 /* line 81, /www/sites/HbgPrime/wwwroot/source/sass/utility/_link-item.scss */
 .link-item-ppt::before,
 .link-item[href$=".ppt"]::before,
-.link-item[href$=".pptx"]::before {
+.sidebar-left-sidebar .widget_archive a[href$=".ppt"]::before,
+.sidebar-right-sidebar .widget_archive a[href$=".ppt"]::before,
+.sidebar-left-sidebar
+.widget_categories a[href$=".ppt"]::before,
+.sidebar-right-sidebar
+.widget_categories a[href$=".ppt"]::before,
+.sidebar-left-sidebar
+.widget_meta a[href$=".ppt"]::before,
+.sidebar-right-sidebar
+.widget_meta a[href$=".ppt"]::before,
+.sidebar-left-sidebar
+.widget_recent_entries a[href$=".ppt"]::before,
+.sidebar-right-sidebar
+.widget_recent_entries a[href$=".ppt"]::before,
+.sidebar-left-sidebar
+.widget_recent_comments a[href$=".ppt"]::before,
+.sidebar-right-sidebar
+.widget_recent_comments a[href$=".ppt"]::before,
+.link-item[href$=".pptx"]::before,
+.sidebar-left-sidebar .widget_archive a[href$=".pptx"]::before,
+.sidebar-right-sidebar .widget_archive a[href$=".pptx"]::before,
+.sidebar-left-sidebar
+.widget_categories a[href$=".pptx"]::before,
+.sidebar-right-sidebar
+.widget_categories a[href$=".pptx"]::before,
+.sidebar-left-sidebar
+.widget_meta a[href$=".pptx"]::before,
+.sidebar-right-sidebar
+.widget_meta a[href$=".pptx"]::before,
+.sidebar-left-sidebar
+.widget_recent_entries a[href$=".pptx"]::before,
+.sidebar-right-sidebar
+.widget_recent_entries a[href$=".pptx"]::before,
+.sidebar-left-sidebar
+.widget_recent_comments a[href$=".pptx"]::before,
+.sidebar-right-sidebar
+.widget_recent_comments a[href$=".pptx"]::before {
   font-family: FontAwesome;
   speak: none;
   font-style: normal;
@@ -6237,7 +7317,43 @@ small,
 /* line 89, /www/sites/HbgPrime/wwwroot/source/sass/utility/_link-item.scss */
 .link-item-xls::before,
 .link-item[href$=".xls"]::before,
-.link-item[href$=".xlsx"]::before {
+.sidebar-left-sidebar .widget_archive a[href$=".xls"]::before,
+.sidebar-right-sidebar .widget_archive a[href$=".xls"]::before,
+.sidebar-left-sidebar
+.widget_categories a[href$=".xls"]::before,
+.sidebar-right-sidebar
+.widget_categories a[href$=".xls"]::before,
+.sidebar-left-sidebar
+.widget_meta a[href$=".xls"]::before,
+.sidebar-right-sidebar
+.widget_meta a[href$=".xls"]::before,
+.sidebar-left-sidebar
+.widget_recent_entries a[href$=".xls"]::before,
+.sidebar-right-sidebar
+.widget_recent_entries a[href$=".xls"]::before,
+.sidebar-left-sidebar
+.widget_recent_comments a[href$=".xls"]::before,
+.sidebar-right-sidebar
+.widget_recent_comments a[href$=".xls"]::before,
+.link-item[href$=".xlsx"]::before,
+.sidebar-left-sidebar .widget_archive a[href$=".xlsx"]::before,
+.sidebar-right-sidebar .widget_archive a[href$=".xlsx"]::before,
+.sidebar-left-sidebar
+.widget_categories a[href$=".xlsx"]::before,
+.sidebar-right-sidebar
+.widget_categories a[href$=".xlsx"]::before,
+.sidebar-left-sidebar
+.widget_meta a[href$=".xlsx"]::before,
+.sidebar-right-sidebar
+.widget_meta a[href$=".xlsx"]::before,
+.sidebar-left-sidebar
+.widget_recent_entries a[href$=".xlsx"]::before,
+.sidebar-right-sidebar
+.widget_recent_entries a[href$=".xlsx"]::before,
+.sidebar-left-sidebar
+.widget_recent_comments a[href$=".xlsx"]::before,
+.sidebar-right-sidebar
+.widget_recent_comments a[href$=".xlsx"]::before {
   font-family: FontAwesome;
   speak: none;
   font-style: normal;
@@ -6252,7 +7368,43 @@ small,
 /* line 97, /www/sites/HbgPrime/wwwroot/source/sass/utility/_link-item.scss */
 .link-item-audio::before,
 .link-item[href$=".mp3"]::before,
-.link-item[href$=".wav"]::before {
+.sidebar-left-sidebar .widget_archive a[href$=".mp3"]::before,
+.sidebar-right-sidebar .widget_archive a[href$=".mp3"]::before,
+.sidebar-left-sidebar
+.widget_categories a[href$=".mp3"]::before,
+.sidebar-right-sidebar
+.widget_categories a[href$=".mp3"]::before,
+.sidebar-left-sidebar
+.widget_meta a[href$=".mp3"]::before,
+.sidebar-right-sidebar
+.widget_meta a[href$=".mp3"]::before,
+.sidebar-left-sidebar
+.widget_recent_entries a[href$=".mp3"]::before,
+.sidebar-right-sidebar
+.widget_recent_entries a[href$=".mp3"]::before,
+.sidebar-left-sidebar
+.widget_recent_comments a[href$=".mp3"]::before,
+.sidebar-right-sidebar
+.widget_recent_comments a[href$=".mp3"]::before,
+.link-item[href$=".wav"]::before,
+.sidebar-left-sidebar .widget_archive a[href$=".wav"]::before,
+.sidebar-right-sidebar .widget_archive a[href$=".wav"]::before,
+.sidebar-left-sidebar
+.widget_categories a[href$=".wav"]::before,
+.sidebar-right-sidebar
+.widget_categories a[href$=".wav"]::before,
+.sidebar-left-sidebar
+.widget_meta a[href$=".wav"]::before,
+.sidebar-right-sidebar
+.widget_meta a[href$=".wav"]::before,
+.sidebar-left-sidebar
+.widget_recent_entries a[href$=".wav"]::before,
+.sidebar-right-sidebar
+.widget_recent_entries a[href$=".wav"]::before,
+.sidebar-left-sidebar
+.widget_recent_comments a[href$=".wav"]::before,
+.sidebar-right-sidebar
+.widget_recent_comments a[href$=".wav"]::before {
   font-family: FontAwesome;
   speak: none;
   font-style: normal;
@@ -6267,8 +7419,62 @@ small,
 /* line 106, /www/sites/HbgPrime/wwwroot/source/sass/utility/_link-item.scss */
 .link-item-archive::before,
 .link-item[href$=".zip"]::before,
+.sidebar-left-sidebar .widget_archive a[href$=".zip"]::before,
+.sidebar-right-sidebar .widget_archive a[href$=".zip"]::before,
+.sidebar-left-sidebar
+.widget_categories a[href$=".zip"]::before,
+.sidebar-right-sidebar
+.widget_categories a[href$=".zip"]::before,
+.sidebar-left-sidebar
+.widget_meta a[href$=".zip"]::before,
+.sidebar-right-sidebar
+.widget_meta a[href$=".zip"]::before,
+.sidebar-left-sidebar
+.widget_recent_entries a[href$=".zip"]::before,
+.sidebar-right-sidebar
+.widget_recent_entries a[href$=".zip"]::before,
+.sidebar-left-sidebar
+.widget_recent_comments a[href$=".zip"]::before,
+.sidebar-right-sidebar
+.widget_recent_comments a[href$=".zip"]::before,
 .link-item[href$=".rar"]::before,
-.link-item[href$=".tar"]::before {
+.sidebar-left-sidebar .widget_archive a[href$=".rar"]::before,
+.sidebar-right-sidebar .widget_archive a[href$=".rar"]::before,
+.sidebar-left-sidebar
+.widget_categories a[href$=".rar"]::before,
+.sidebar-right-sidebar
+.widget_categories a[href$=".rar"]::before,
+.sidebar-left-sidebar
+.widget_meta a[href$=".rar"]::before,
+.sidebar-right-sidebar
+.widget_meta a[href$=".rar"]::before,
+.sidebar-left-sidebar
+.widget_recent_entries a[href$=".rar"]::before,
+.sidebar-right-sidebar
+.widget_recent_entries a[href$=".rar"]::before,
+.sidebar-left-sidebar
+.widget_recent_comments a[href$=".rar"]::before,
+.sidebar-right-sidebar
+.widget_recent_comments a[href$=".rar"]::before,
+.link-item[href$=".tar"]::before,
+.sidebar-left-sidebar .widget_archive a[href$=".tar"]::before,
+.sidebar-right-sidebar .widget_archive a[href$=".tar"]::before,
+.sidebar-left-sidebar
+.widget_categories a[href$=".tar"]::before,
+.sidebar-right-sidebar
+.widget_categories a[href$=".tar"]::before,
+.sidebar-left-sidebar
+.widget_meta a[href$=".tar"]::before,
+.sidebar-right-sidebar
+.widget_meta a[href$=".tar"]::before,
+.sidebar-left-sidebar
+.widget_recent_entries a[href$=".tar"]::before,
+.sidebar-right-sidebar
+.widget_recent_entries a[href$=".tar"]::before,
+.sidebar-left-sidebar
+.widget_recent_comments a[href$=".tar"]::before,
+.sidebar-right-sidebar
+.widget_recent_comments a[href$=".tar"]::before {
   font-family: FontAwesome;
   speak: none;
   font-style: normal;
@@ -6283,12 +7489,138 @@ small,
 /* line 119, /www/sites/HbgPrime/wwwroot/source/sass/utility/_link-item.scss */
 .link-item-image::before,
 .link-item[href$=".jpg"]::before,
+.sidebar-left-sidebar .widget_archive a[href$=".jpg"]::before,
+.sidebar-right-sidebar .widget_archive a[href$=".jpg"]::before,
+.sidebar-left-sidebar
+.widget_categories a[href$=".jpg"]::before,
+.sidebar-right-sidebar
+.widget_categories a[href$=".jpg"]::before,
+.sidebar-left-sidebar
+.widget_meta a[href$=".jpg"]::before,
+.sidebar-right-sidebar
+.widget_meta a[href$=".jpg"]::before,
+.sidebar-left-sidebar
+.widget_recent_entries a[href$=".jpg"]::before,
+.sidebar-right-sidebar
+.widget_recent_entries a[href$=".jpg"]::before,
+.sidebar-left-sidebar
+.widget_recent_comments a[href$=".jpg"]::before,
+.sidebar-right-sidebar
+.widget_recent_comments a[href$=".jpg"]::before,
 .link-item[href$=".png"]::before,
+.sidebar-left-sidebar .widget_archive a[href$=".png"]::before,
+.sidebar-right-sidebar .widget_archive a[href$=".png"]::before,
+.sidebar-left-sidebar
+.widget_categories a[href$=".png"]::before,
+.sidebar-right-sidebar
+.widget_categories a[href$=".png"]::before,
+.sidebar-left-sidebar
+.widget_meta a[href$=".png"]::before,
+.sidebar-right-sidebar
+.widget_meta a[href$=".png"]::before,
+.sidebar-left-sidebar
+.widget_recent_entries a[href$=".png"]::before,
+.sidebar-right-sidebar
+.widget_recent_entries a[href$=".png"]::before,
+.sidebar-left-sidebar
+.widget_recent_comments a[href$=".png"]::before,
+.sidebar-right-sidebar
+.widget_recent_comments a[href$=".png"]::before,
 .link-item[href$=".gif"]::before,
+.sidebar-left-sidebar .widget_archive a[href$=".gif"]::before,
+.sidebar-right-sidebar .widget_archive a[href$=".gif"]::before,
+.sidebar-left-sidebar
+.widget_categories a[href$=".gif"]::before,
+.sidebar-right-sidebar
+.widget_categories a[href$=".gif"]::before,
+.sidebar-left-sidebar
+.widget_meta a[href$=".gif"]::before,
+.sidebar-right-sidebar
+.widget_meta a[href$=".gif"]::before,
+.sidebar-left-sidebar
+.widget_recent_entries a[href$=".gif"]::before,
+.sidebar-right-sidebar
+.widget_recent_entries a[href$=".gif"]::before,
+.sidebar-left-sidebar
+.widget_recent_comments a[href$=".gif"]::before,
+.sidebar-right-sidebar
+.widget_recent_comments a[href$=".gif"]::before,
 .link-item[href$=".jpeg"]::before,
+.sidebar-left-sidebar .widget_archive a[href$=".jpeg"]::before,
+.sidebar-right-sidebar .widget_archive a[href$=".jpeg"]::before,
+.sidebar-left-sidebar
+.widget_categories a[href$=".jpeg"]::before,
+.sidebar-right-sidebar
+.widget_categories a[href$=".jpeg"]::before,
+.sidebar-left-sidebar
+.widget_meta a[href$=".jpeg"]::before,
+.sidebar-right-sidebar
+.widget_meta a[href$=".jpeg"]::before,
+.sidebar-left-sidebar
+.widget_recent_entries a[href$=".jpeg"]::before,
+.sidebar-right-sidebar
+.widget_recent_entries a[href$=".jpeg"]::before,
+.sidebar-left-sidebar
+.widget_recent_comments a[href$=".jpeg"]::before,
+.sidebar-right-sidebar
+.widget_recent_comments a[href$=".jpeg"]::before,
 .link-item[href$=".bmp"]::before,
+.sidebar-left-sidebar .widget_archive a[href$=".bmp"]::before,
+.sidebar-right-sidebar .widget_archive a[href$=".bmp"]::before,
+.sidebar-left-sidebar
+.widget_categories a[href$=".bmp"]::before,
+.sidebar-right-sidebar
+.widget_categories a[href$=".bmp"]::before,
+.sidebar-left-sidebar
+.widget_meta a[href$=".bmp"]::before,
+.sidebar-right-sidebar
+.widget_meta a[href$=".bmp"]::before,
+.sidebar-left-sidebar
+.widget_recent_entries a[href$=".bmp"]::before,
+.sidebar-right-sidebar
+.widget_recent_entries a[href$=".bmp"]::before,
+.sidebar-left-sidebar
+.widget_recent_comments a[href$=".bmp"]::before,
+.sidebar-right-sidebar
+.widget_recent_comments a[href$=".bmp"]::before,
 .link-item[href$=".svg"]::before,
-.link-item[href$=".eps"]::before {
+.sidebar-left-sidebar .widget_archive a[href$=".svg"]::before,
+.sidebar-right-sidebar .widget_archive a[href$=".svg"]::before,
+.sidebar-left-sidebar
+.widget_categories a[href$=".svg"]::before,
+.sidebar-right-sidebar
+.widget_categories a[href$=".svg"]::before,
+.sidebar-left-sidebar
+.widget_meta a[href$=".svg"]::before,
+.sidebar-right-sidebar
+.widget_meta a[href$=".svg"]::before,
+.sidebar-left-sidebar
+.widget_recent_entries a[href$=".svg"]::before,
+.sidebar-right-sidebar
+.widget_recent_entries a[href$=".svg"]::before,
+.sidebar-left-sidebar
+.widget_recent_comments a[href$=".svg"]::before,
+.sidebar-right-sidebar
+.widget_recent_comments a[href$=".svg"]::before,
+.link-item[href$=".eps"]::before,
+.sidebar-left-sidebar .widget_archive a[href$=".eps"]::before,
+.sidebar-right-sidebar .widget_archive a[href$=".eps"]::before,
+.sidebar-left-sidebar
+.widget_categories a[href$=".eps"]::before,
+.sidebar-right-sidebar
+.widget_categories a[href$=".eps"]::before,
+.sidebar-left-sidebar
+.widget_meta a[href$=".eps"]::before,
+.sidebar-right-sidebar
+.widget_meta a[href$=".eps"]::before,
+.sidebar-left-sidebar
+.widget_recent_entries a[href$=".eps"]::before,
+.sidebar-right-sidebar
+.widget_recent_entries a[href$=".eps"]::before,
+.sidebar-left-sidebar
+.widget_recent_comments a[href$=".eps"]::before,
+.sidebar-right-sidebar
+.widget_recent_comments a[href$=".eps"]::before {
   font-family: FontAwesome;
   speak: none;
   font-style: normal;
@@ -6303,9 +7635,81 @@ small,
 /* line 129, /www/sites/HbgPrime/wwwroot/source/sass/utility/_link-item.scss */
 .link-item-text::before,
 .link-item[href$=".txt"]::before,
+.sidebar-left-sidebar .widget_archive a[href$=".txt"]::before,
+.sidebar-right-sidebar .widget_archive a[href$=".txt"]::before,
+.sidebar-left-sidebar
+.widget_categories a[href$=".txt"]::before,
+.sidebar-right-sidebar
+.widget_categories a[href$=".txt"]::before,
+.sidebar-left-sidebar
+.widget_meta a[href$=".txt"]::before,
+.sidebar-right-sidebar
+.widget_meta a[href$=".txt"]::before,
+.sidebar-left-sidebar
+.widget_recent_entries a[href$=".txt"]::before,
+.sidebar-right-sidebar
+.widget_recent_entries a[href$=".txt"]::before,
+.sidebar-left-sidebar
+.widget_recent_comments a[href$=".txt"]::before,
+.sidebar-right-sidebar
+.widget_recent_comments a[href$=".txt"]::before,
 .link-item[href$=".md"]::before,
+.sidebar-left-sidebar .widget_archive a[href$=".md"]::before,
+.sidebar-right-sidebar .widget_archive a[href$=".md"]::before,
+.sidebar-left-sidebar
+.widget_categories a[href$=".md"]::before,
+.sidebar-right-sidebar
+.widget_categories a[href$=".md"]::before,
+.sidebar-left-sidebar
+.widget_meta a[href$=".md"]::before,
+.sidebar-right-sidebar
+.widget_meta a[href$=".md"]::before,
+.sidebar-left-sidebar
+.widget_recent_entries a[href$=".md"]::before,
+.sidebar-right-sidebar
+.widget_recent_entries a[href$=".md"]::before,
+.sidebar-left-sidebar
+.widget_recent_comments a[href$=".md"]::before,
+.sidebar-right-sidebar
+.widget_recent_comments a[href$=".md"]::before,
 .link-item[href$=".mkdown"]::before,
-.link-item[href$=".markdown"]::before {
+.sidebar-left-sidebar .widget_archive a[href$=".mkdown"]::before,
+.sidebar-right-sidebar .widget_archive a[href$=".mkdown"]::before,
+.sidebar-left-sidebar
+.widget_categories a[href$=".mkdown"]::before,
+.sidebar-right-sidebar
+.widget_categories a[href$=".mkdown"]::before,
+.sidebar-left-sidebar
+.widget_meta a[href$=".mkdown"]::before,
+.sidebar-right-sidebar
+.widget_meta a[href$=".mkdown"]::before,
+.sidebar-left-sidebar
+.widget_recent_entries a[href$=".mkdown"]::before,
+.sidebar-right-sidebar
+.widget_recent_entries a[href$=".mkdown"]::before,
+.sidebar-left-sidebar
+.widget_recent_comments a[href$=".mkdown"]::before,
+.sidebar-right-sidebar
+.widget_recent_comments a[href$=".mkdown"]::before,
+.link-item[href$=".markdown"]::before,
+.sidebar-left-sidebar .widget_archive a[href$=".markdown"]::before,
+.sidebar-right-sidebar .widget_archive a[href$=".markdown"]::before,
+.sidebar-left-sidebar
+.widget_categories a[href$=".markdown"]::before,
+.sidebar-right-sidebar
+.widget_categories a[href$=".markdown"]::before,
+.sidebar-left-sidebar
+.widget_meta a[href$=".markdown"]::before,
+.sidebar-right-sidebar
+.widget_meta a[href$=".markdown"]::before,
+.sidebar-left-sidebar
+.widget_recent_entries a[href$=".markdown"]::before,
+.sidebar-right-sidebar
+.widget_recent_entries a[href$=".markdown"]::before,
+.sidebar-left-sidebar
+.widget_recent_comments a[href$=".markdown"]::before,
+.sidebar-right-sidebar
+.widget_recent_comments a[href$=".markdown"]::before {
   font-family: FontAwesome;
   speak: none;
   font-style: normal;
@@ -6320,17 +7724,233 @@ small,
 /* line 147, /www/sites/HbgPrime/wwwroot/source/sass/utility/_link-item.scss */
 .link-item-video::before,
 .link-item[href$=".mpg"]::before,
+.sidebar-left-sidebar .widget_archive a[href$=".mpg"]::before,
+.sidebar-right-sidebar .widget_archive a[href$=".mpg"]::before,
+.sidebar-left-sidebar
+.widget_categories a[href$=".mpg"]::before,
+.sidebar-right-sidebar
+.widget_categories a[href$=".mpg"]::before,
+.sidebar-left-sidebar
+.widget_meta a[href$=".mpg"]::before,
+.sidebar-right-sidebar
+.widget_meta a[href$=".mpg"]::before,
+.sidebar-left-sidebar
+.widget_recent_entries a[href$=".mpg"]::before,
+.sidebar-right-sidebar
+.widget_recent_entries a[href$=".mpg"]::before,
+.sidebar-left-sidebar
+.widget_recent_comments a[href$=".mpg"]::before,
+.sidebar-right-sidebar
+.widget_recent_comments a[href$=".mpg"]::before,
 .link-item[href$=".m4v"]::before,
+.sidebar-left-sidebar .widget_archive a[href$=".m4v"]::before,
+.sidebar-right-sidebar .widget_archive a[href$=".m4v"]::before,
+.sidebar-left-sidebar
+.widget_categories a[href$=".m4v"]::before,
+.sidebar-right-sidebar
+.widget_categories a[href$=".m4v"]::before,
+.sidebar-left-sidebar
+.widget_meta a[href$=".m4v"]::before,
+.sidebar-right-sidebar
+.widget_meta a[href$=".m4v"]::before,
+.sidebar-left-sidebar
+.widget_recent_entries a[href$=".m4v"]::before,
+.sidebar-right-sidebar
+.widget_recent_entries a[href$=".m4v"]::before,
+.sidebar-left-sidebar
+.widget_recent_comments a[href$=".m4v"]::before,
+.sidebar-right-sidebar
+.widget_recent_comments a[href$=".m4v"]::before,
 .link-item[href$=".mpeg"]::before,
+.sidebar-left-sidebar .widget_archive a[href$=".mpeg"]::before,
+.sidebar-right-sidebar .widget_archive a[href$=".mpeg"]::before,
+.sidebar-left-sidebar
+.widget_categories a[href$=".mpeg"]::before,
+.sidebar-right-sidebar
+.widget_categories a[href$=".mpeg"]::before,
+.sidebar-left-sidebar
+.widget_meta a[href$=".mpeg"]::before,
+.sidebar-right-sidebar
+.widget_meta a[href$=".mpeg"]::before,
+.sidebar-left-sidebar
+.widget_recent_entries a[href$=".mpeg"]::before,
+.sidebar-right-sidebar
+.widget_recent_entries a[href$=".mpeg"]::before,
+.sidebar-left-sidebar
+.widget_recent_comments a[href$=".mpeg"]::before,
+.sidebar-right-sidebar
+.widget_recent_comments a[href$=".mpeg"]::before,
 .link-item[href$=".mov"]::before,
+.sidebar-left-sidebar .widget_archive a[href$=".mov"]::before,
+.sidebar-right-sidebar .widget_archive a[href$=".mov"]::before,
+.sidebar-left-sidebar
+.widget_categories a[href$=".mov"]::before,
+.sidebar-right-sidebar
+.widget_categories a[href$=".mov"]::before,
+.sidebar-left-sidebar
+.widget_meta a[href$=".mov"]::before,
+.sidebar-right-sidebar
+.widget_meta a[href$=".mov"]::before,
+.sidebar-left-sidebar
+.widget_recent_entries a[href$=".mov"]::before,
+.sidebar-right-sidebar
+.widget_recent_entries a[href$=".mov"]::before,
+.sidebar-left-sidebar
+.widget_recent_comments a[href$=".mov"]::before,
+.sidebar-right-sidebar
+.widget_recent_comments a[href$=".mov"]::before,
 .link-item[href$=".avi"]::before,
+.sidebar-left-sidebar .widget_archive a[href$=".avi"]::before,
+.sidebar-right-sidebar .widget_archive a[href$=".avi"]::before,
+.sidebar-left-sidebar
+.widget_categories a[href$=".avi"]::before,
+.sidebar-right-sidebar
+.widget_categories a[href$=".avi"]::before,
+.sidebar-left-sidebar
+.widget_meta a[href$=".avi"]::before,
+.sidebar-right-sidebar
+.widget_meta a[href$=".avi"]::before,
+.sidebar-left-sidebar
+.widget_recent_entries a[href$=".avi"]::before,
+.sidebar-right-sidebar
+.widget_recent_entries a[href$=".avi"]::before,
+.sidebar-left-sidebar
+.widget_recent_comments a[href$=".avi"]::before,
+.sidebar-right-sidebar
+.widget_recent_comments a[href$=".avi"]::before,
 .link-item[href$=".mp4"]::before,
+.sidebar-left-sidebar .widget_archive a[href$=".mp4"]::before,
+.sidebar-right-sidebar .widget_archive a[href$=".mp4"]::before,
+.sidebar-left-sidebar
+.widget_categories a[href$=".mp4"]::before,
+.sidebar-right-sidebar
+.widget_categories a[href$=".mp4"]::before,
+.sidebar-left-sidebar
+.widget_meta a[href$=".mp4"]::before,
+.sidebar-right-sidebar
+.widget_meta a[href$=".mp4"]::before,
+.sidebar-left-sidebar
+.widget_recent_entries a[href$=".mp4"]::before,
+.sidebar-right-sidebar
+.widget_recent_entries a[href$=".mp4"]::before,
+.sidebar-left-sidebar
+.widget_recent_comments a[href$=".mp4"]::before,
+.sidebar-right-sidebar
+.widget_recent_comments a[href$=".mp4"]::before,
 .link-item[href$=".ogg"]::before,
+.sidebar-left-sidebar .widget_archive a[href$=".ogg"]::before,
+.sidebar-right-sidebar .widget_archive a[href$=".ogg"]::before,
+.sidebar-left-sidebar
+.widget_categories a[href$=".ogg"]::before,
+.sidebar-right-sidebar
+.widget_categories a[href$=".ogg"]::before,
+.sidebar-left-sidebar
+.widget_meta a[href$=".ogg"]::before,
+.sidebar-right-sidebar
+.widget_meta a[href$=".ogg"]::before,
+.sidebar-left-sidebar
+.widget_recent_entries a[href$=".ogg"]::before,
+.sidebar-right-sidebar
+.widget_recent_entries a[href$=".ogg"]::before,
+.sidebar-left-sidebar
+.widget_recent_comments a[href$=".ogg"]::before,
+.sidebar-right-sidebar
+.widget_recent_comments a[href$=".ogg"]::before,
 .link-item[href$=".ogv"]::before,
+.sidebar-left-sidebar .widget_archive a[href$=".ogv"]::before,
+.sidebar-right-sidebar .widget_archive a[href$=".ogv"]::before,
+.sidebar-left-sidebar
+.widget_categories a[href$=".ogv"]::before,
+.sidebar-right-sidebar
+.widget_categories a[href$=".ogv"]::before,
+.sidebar-left-sidebar
+.widget_meta a[href$=".ogv"]::before,
+.sidebar-right-sidebar
+.widget_meta a[href$=".ogv"]::before,
+.sidebar-left-sidebar
+.widget_recent_entries a[href$=".ogv"]::before,
+.sidebar-right-sidebar
+.widget_recent_entries a[href$=".ogv"]::before,
+.sidebar-left-sidebar
+.widget_recent_comments a[href$=".ogv"]::before,
+.sidebar-right-sidebar
+.widget_recent_comments a[href$=".ogv"]::before,
 .link-item[href$=".webm"]::before,
+.sidebar-left-sidebar .widget_archive a[href$=".webm"]::before,
+.sidebar-right-sidebar .widget_archive a[href$=".webm"]::before,
+.sidebar-left-sidebar
+.widget_categories a[href$=".webm"]::before,
+.sidebar-right-sidebar
+.widget_categories a[href$=".webm"]::before,
+.sidebar-left-sidebar
+.widget_meta a[href$=".webm"]::before,
+.sidebar-right-sidebar
+.widget_meta a[href$=".webm"]::before,
+.sidebar-left-sidebar
+.widget_recent_entries a[href$=".webm"]::before,
+.sidebar-right-sidebar
+.widget_recent_entries a[href$=".webm"]::before,
+.sidebar-left-sidebar
+.widget_recent_comments a[href$=".webm"]::before,
+.sidebar-right-sidebar
+.widget_recent_comments a[href$=".webm"]::before,
 .link-item[href$=".mkv"]::before,
+.sidebar-left-sidebar .widget_archive a[href$=".mkv"]::before,
+.sidebar-right-sidebar .widget_archive a[href$=".mkv"]::before,
+.sidebar-left-sidebar
+.widget_categories a[href$=".mkv"]::before,
+.sidebar-right-sidebar
+.widget_categories a[href$=".mkv"]::before,
+.sidebar-left-sidebar
+.widget_meta a[href$=".mkv"]::before,
+.sidebar-right-sidebar
+.widget_meta a[href$=".mkv"]::before,
+.sidebar-left-sidebar
+.widget_recent_entries a[href$=".mkv"]::before,
+.sidebar-right-sidebar
+.widget_recent_entries a[href$=".mkv"]::before,
+.sidebar-left-sidebar
+.widget_recent_comments a[href$=".mkv"]::before,
+.sidebar-right-sidebar
+.widget_recent_comments a[href$=".mkv"]::before,
 .link-item[href$=".flv"]::before,
-.link-item[href$=".wmw"]::before {
+.sidebar-left-sidebar .widget_archive a[href$=".flv"]::before,
+.sidebar-right-sidebar .widget_archive a[href$=".flv"]::before,
+.sidebar-left-sidebar
+.widget_categories a[href$=".flv"]::before,
+.sidebar-right-sidebar
+.widget_categories a[href$=".flv"]::before,
+.sidebar-left-sidebar
+.widget_meta a[href$=".flv"]::before,
+.sidebar-right-sidebar
+.widget_meta a[href$=".flv"]::before,
+.sidebar-left-sidebar
+.widget_recent_entries a[href$=".flv"]::before,
+.sidebar-right-sidebar
+.widget_recent_entries a[href$=".flv"]::before,
+.sidebar-left-sidebar
+.widget_recent_comments a[href$=".flv"]::before,
+.sidebar-right-sidebar
+.widget_recent_comments a[href$=".flv"]::before,
+.link-item[href$=".wmw"]::before,
+.sidebar-left-sidebar .widget_archive a[href$=".wmw"]::before,
+.sidebar-right-sidebar .widget_archive a[href$=".wmw"]::before,
+.sidebar-left-sidebar
+.widget_categories a[href$=".wmw"]::before,
+.sidebar-right-sidebar
+.widget_categories a[href$=".wmw"]::before,
+.sidebar-left-sidebar
+.widget_meta a[href$=".wmw"]::before,
+.sidebar-right-sidebar
+.widget_meta a[href$=".wmw"]::before,
+.sidebar-left-sidebar
+.widget_recent_entries a[href$=".wmw"]::before,
+.sidebar-right-sidebar
+.widget_recent_entries a[href$=".wmw"]::before,
+.sidebar-left-sidebar
+.widget_recent_comments a[href$=".wmw"]::before,
+.sidebar-right-sidebar
+.widget_recent_comments a[href$=".wmw"]::before {
   font-family: FontAwesome;
   speak: none;
   font-style: normal;
@@ -6343,12 +7963,38 @@ small,
   -moz-osx-font-smoothing: grayscale; }
 
 /* line 153, /www/sites/HbgPrime/wwwroot/source/sass/utility/_link-item.scss */
-.link-item-light::before {
+.link-item-light::before, .sidebar-left-sidebar .widget_archive a::before,
+.sidebar-right-sidebar .widget_archive a::before, .sidebar-left-sidebar
+.widget_categories a::before,
+.sidebar-right-sidebar
+.widget_categories a::before, .sidebar-left-sidebar
+.widget_meta a::before,
+.sidebar-right-sidebar
+.widget_meta a::before, .sidebar-left-sidebar
+.widget_recent_entries a::before,
+.sidebar-right-sidebar
+.widget_recent_entries a::before, .sidebar-left-sidebar
+.widget_recent_comments a::before,
+.sidebar-right-sidebar
+.widget_recent_comments a::before {
   color: rgba(255, 255, 255, 0.7); }
 
 /* Prefixes (links only) */
 /* line 160, /www/sites/HbgPrime/wwwroot/source/sass/utility/_link-item.scss */
-.link-item[href^='tel:']::before {
+.link-item[href^='tel:']::before, .sidebar-left-sidebar .widget_archive a[href^='tel:']::before,
+.sidebar-right-sidebar .widget_archive a[href^='tel:']::before, .sidebar-left-sidebar
+.widget_categories a[href^='tel:']::before,
+.sidebar-right-sidebar
+.widget_categories a[href^='tel:']::before, .sidebar-left-sidebar
+.widget_meta a[href^='tel:']::before,
+.sidebar-right-sidebar
+.widget_meta a[href^='tel:']::before, .sidebar-left-sidebar
+.widget_recent_entries a[href^='tel:']::before,
+.sidebar-right-sidebar
+.widget_recent_entries a[href^='tel:']::before, .sidebar-left-sidebar
+.widget_recent_comments a[href^='tel:']::before,
+.sidebar-right-sidebar
+.widget_recent_comments a[href^='tel:']::before {
   font-family: FontAwesome;
   speak: none;
   font-style: normal;
@@ -6361,7 +8007,20 @@ small,
   -moz-osx-font-smoothing: grayscale; }
 
 /* line 166, /www/sites/HbgPrime/wwwroot/source/sass/utility/_link-item.scss */
-.link-item[href^='mailto:']::before {
+.link-item[href^='mailto:']::before, .sidebar-left-sidebar .widget_archive a[href^='mailto:']::before,
+.sidebar-right-sidebar .widget_archive a[href^='mailto:']::before, .sidebar-left-sidebar
+.widget_categories a[href^='mailto:']::before,
+.sidebar-right-sidebar
+.widget_categories a[href^='mailto:']::before, .sidebar-left-sidebar
+.widget_meta a[href^='mailto:']::before,
+.sidebar-right-sidebar
+.widget_meta a[href^='mailto:']::before, .sidebar-left-sidebar
+.widget_recent_entries a[href^='mailto:']::before,
+.sidebar-right-sidebar
+.widget_recent_entries a[href^='mailto:']::before, .sidebar-left-sidebar
+.widget_recent_comments a[href^='mailto:']::before,
+.sidebar-right-sidebar
+.widget_recent_comments a[href^='mailto:']::before {
   font-family: FontAwesome;
   speak: none;
   font-style: normal;
@@ -6726,6 +8385,11 @@ a img.aligncenter {
   z-index: 100000;
   /* Above WP toolbar. */ }
 
+/* line 34, /www/sites/HbgPrime/wwwroot/source/sass/component/wordpress/_widget-nav-menu.scss */
+.sidebar-left-sidebar .widget_nav_menu a,
+.sidebar-right-sidebar .widget_nav_menu a {
+  color: #fff; }
+
 /* line 64, /www/sites/HbgPrime/wwwroot/source/sass/component/wordpress/_widget-calendar.scss */
 .widget_calendar > h2:first-child, .widget_calendar > caption:first-child {
   display: none; }
@@ -6814,115 +8478,126 @@ a img.aligncenter {
 [id="today"] {
   background-color: rgba(0, 0, 0, 0.07); }
 
-/* line 31, /www/sites/HbgPrime/wwwroot/source/sass/component/wordpress/_widget-lists.scss */
-.widget_archive li,
-.widget_categories li,
-.widget_meta li {
-  display: inline;
-  font-size: .9em; }
-  /* line 34, /www/sites/HbgPrime/wwwroot/source/sass/component/wordpress/_widget-lists.scss */
-  .widget_archive li:not(:last-child):after,
-  .widget_categories li:not(:last-child):after,
-  .widget_meta li:not(:last-child):after {
-    content: ", "; }
+/* line 30, /www/sites/HbgPrime/wwwroot/source/sass/component/wordpress/_widget-lists.scss */
+.sidebar-left-sidebar .widget_archive ul,
+.sidebar-right-sidebar .widget_archive ul, .sidebar-left-sidebar
+.widget_categories ul,
+.sidebar-right-sidebar
+.widget_categories ul, .sidebar-left-sidebar
+.widget_meta ul,
+.sidebar-right-sidebar
+.widget_meta ul, .sidebar-left-sidebar
+.widget_recent_entries ul,
+.sidebar-right-sidebar
+.widget_recent_entries ul, .sidebar-left-sidebar
+.widget_recent_comments ul,
+.sidebar-right-sidebar
+.widget_recent_comments ul {
+  margin: 10px; }
 
-/* line 39, /www/sites/HbgPrime/wwwroot/source/sass/component/wordpress/_widget-lists.scss */
-.widget_archive .tagcloud a,
-.widget_categories .tagcloud a,
-.widget_meta .tagcloud a {
-  font-size: .9em !important; }
-  /* line 42, /www/sites/HbgPrime/wwwroot/source/sass/component/wordpress/_widget-lists.scss */
-  .widget_archive .tagcloud a:not(:last-child):after,
-  .widget_categories .tagcloud a:not(:last-child):after,
-  .widget_meta .tagcloud a:not(:last-child):after {
-    content: ", "; }
+/* line 34, /www/sites/HbgPrime/wwwroot/source/sass/component/wordpress/_widget-lists.scss */
+.sidebar-left-sidebar .widget_archive a,
+.sidebar-right-sidebar .widget_archive a, .sidebar-left-sidebar
+.widget_categories a,
+.sidebar-right-sidebar
+.widget_categories a, .sidebar-left-sidebar
+.widget_meta a,
+.sidebar-right-sidebar
+.widget_meta a, .sidebar-left-sidebar
+.widget_recent_entries a,
+.sidebar-right-sidebar
+.widget_recent_entries a, .sidebar-left-sidebar
+.widget_recent_comments a,
+.sidebar-right-sidebar
+.widget_recent_comments a {
+  color: #fff; }
 
-/* line 34, /www/sites/HbgPrime/wwwroot/source/sass/component/wordpress/_widget-nav-menu.scss */
-.widget_nav_menu ul li:before {
-  content: "- "; }
+/* line 41, /www/sites/HbgPrime/wwwroot/source/sass/component/wordpress/_widget-lists.scss */
+.widget_archive .post-date,
+.widget_categories .post-date,
+.widget_meta .post-date,
+.widget_recent_entries .post-date,
+.widget_recent_comments .post-date {
+  display: block;
+  font-size: .8em; }
 
-/* line 38, /www/sites/HbgPrime/wwwroot/source/sass/component/wordpress/_widget-nav-menu.scss */
-.widget_nav_menu ul li ul.sub-menu {
-  padding-left: 1em; }
+/* line 51, /www/sites/HbgPrime/wwwroot/source/sass/component/wordpress/_widget-lists.scss */
+.sidebar-left-sidebar .widget_recent_entries li + li,
+.sidebar-right-sidebar .widget_recent_entries li + li, .sidebar-left-sidebar
+.widget_recent_comments li + li,
+.sidebar-right-sidebar
+.widget_recent_comments li + li {
+  margin-top: 15px; }
 
-/* line 39, /www/sites/HbgPrime/wwwroot/source/sass/component/wordpress/_widget-rss.scss */
-.widget_rss h2 a:first-child, .widget_rss .widget_calendar caption a:first-child, .widget_calendar .widget_rss caption a:first-child {
-  display: none; }
+/* line 55, /www/sites/HbgPrime/wwwroot/source/sass/component/wordpress/_widget-lists.scss */
+.sidebar-left-sidebar .widget_recent_entries .post-date,
+.sidebar-right-sidebar .widget_recent_entries .post-date, .sidebar-left-sidebar
+.widget_recent_comments .post-date,
+.sidebar-right-sidebar
+.widget_recent_comments .post-date {
+  margin-left: 20px; }
 
-/* line 46, /www/sites/HbgPrime/wwwroot/source/sass/component/wordpress/_widget-rss.scss */
-.widget_rss ul li {
-  border: 1px solid #e7e5e1;
-  margin-bottom: 13.33333px; }
-  /* line 49, /www/sites/HbgPrime/wwwroot/source/sass/component/wordpress/_widget-rss.scss */
-  .widget_rss ul li a {
-    padding: 10px;
-    display: block;
-    float: left;
-    width: 70%;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
+/* line 61, /www/sites/HbgPrime/wwwroot/source/sass/component/wordpress/_widget-lists.scss */
+#recentcomments .recentcomments a {
+  display: block !important; }
+
+/* line 40, /www/sites/HbgPrime/wwwroot/source/sass/component/wordpress/_widget-rss.scss */
+.sidebar-left-sidebar .widget_rss ul,
+.sidebar-right-sidebar .widget_rss ul {
+  margin: 10px; }
+  /* line 43, /www/sites/HbgPrime/wwwroot/source/sass/component/wordpress/_widget-rss.scss */
+  .sidebar-left-sidebar .widget_rss ul li a,
+  .sidebar-right-sidebar .widget_rss ul li a {
     font-weight: bold; }
-  /* line 59, /www/sites/HbgPrime/wwwroot/source/sass/component/wordpress/_widget-rss.scss */
-  .widget_rss ul li span.rss-date {
-    float: right;
-    font-size: .8em;
-    padding: 10px;
-    line-height: 2em;
-    opacity: .7; }
-  /* line 66, /www/sites/HbgPrime/wwwroot/source/sass/component/wordpress/_widget-rss.scss */
-  .widget_rss ul li .rssSummary {
-    border-top: 1px solid #e7e5e1;
-    padding: 10px;
-    clear: both;
-    font-size: .8em; }
-    /* line 72, /www/sites/HbgPrime/wwwroot/source/sass/component/wordpress/_widget-rss.scss */
-    .widget_rss ul li .rssSummary:empty {
-      display: none; }
-  /* line 76, /www/sites/HbgPrime/wwwroot/source/sass/component/wordpress/_widget-rss.scss */
-  .widget_rss ul li cite {
-    font-size: .7em;
-    display: block;
-    padding: 0 10px 10px;
-    text-decoration: underline; }
-    /* line 82, /www/sites/HbgPrime/wwwroot/source/sass/component/wordpress/_widget-rss.scss */
-    .widget_rss ul li cite:empty {
-      display: none; }
+  /* line 47, /www/sites/HbgPrime/wwwroot/source/sass/component/wordpress/_widget-rss.scss */
+  .sidebar-left-sidebar .widget_rss ul li + li,
+  .sidebar-right-sidebar .widget_rss ul li + li {
+    margin-top: 10px;
+    padding-top: 10px; }
 
-/* line 24, /www/sites/HbgPrime/wwwroot/source/sass/component/wordpress/_widget-search.scss */
-.widget_search label {
-  display: none; }
+/* line 53, /www/sites/HbgPrime/wwwroot/source/sass/component/wordpress/_widget-rss.scss */
+.sidebar-left-sidebar .widget_rss a,
+.sidebar-right-sidebar .widget_rss a {
+  color: #fff; }
 
-/* line 28, /www/sites/HbgPrime/wwwroot/source/sass/component/wordpress/_widget-search.scss */
-.widget_search input[type="search"],
-.widget_search input[type="submit"] {
-  border: 1px solid #e7e5e1;
-  height: 40px;
-  font-weight: 300;
-  font-size: 1em; }
+/* line 57, /www/sites/HbgPrime/wwwroot/source/sass/component/wordpress/_widget-rss.scss */
+.sidebar-left-sidebar .widget_rss .rssSummary,
+.sidebar-right-sidebar .widget_rss .rssSummary {
+  padding-left: 15px;
+  margin-left: 5px;
+  border-left: 2px solid #fff; }
 
-/* line 36, /www/sites/HbgPrime/wwwroot/source/sass/component/wordpress/_widget-search.scss */
-.widget_search input[type="search"] {
-  color: #464646; }
+/* line 64, /www/sites/HbgPrime/wwwroot/source/sass/component/wordpress/_widget-rss.scss */
+.widget_rss .rss-date {
+  display: block;
+  font-size: .8em; }
 
-/* line 40, /www/sites/HbgPrime/wwwroot/source/sass/component/wordpress/_widget-search.scss */
-.widget_search input[type="submit"] {
-  border-left: none;
-  font-weight: bold; }
+/* line 69, /www/sites/HbgPrime/wwwroot/source/sass/component/wordpress/_widget-rss.scss */
+.widget_rss .rssSummary {
+  margin-top: 10px;
+  font-style: italic; }
+  /* line 73, /www/sites/HbgPrime/wwwroot/source/sass/component/wordpress/_widget-rss.scss */
+  .widget_rss .rssSummary:empty {
+    display: none; }
 
-/* line 45, /www/sites/HbgPrime/wwwroot/source/sass/component/wordpress/_widget-search.scss */
-.widget_search input[type="search"] {
-  padding: 5px 10px; }
+/* line 22, /www/sites/HbgPrime/wwwroot/source/sass/component/wordpress/_widget-search.scss */
+.sidebar-left-sidebar .widget_search,
+.sidebar-right-sidebar .widget_search {
+  padding: 0; }
+  /* line 26, /www/sites/HbgPrime/wwwroot/source/sass/component/wordpress/_widget-search.scss */
+  .sidebar-left-sidebar .widget_search h2, .sidebar-left-sidebar .widget_search .widget_calendar caption, .widget_calendar .sidebar-left-sidebar .widget_search caption,
+  .sidebar-right-sidebar .widget_search h2,
+  .sidebar-right-sidebar .widget_search .widget_calendar caption, .widget_calendar
+  .sidebar-right-sidebar .widget_search caption {
+    display: none; }
+  /* line 30, /www/sites/HbgPrime/wwwroot/source/sass/component/wordpress/_widget-search.scss */
+  .sidebar-left-sidebar .widget_search form,
+  .sidebar-right-sidebar .widget_search form {
+    padding: 0; }
 
-/* line 49, /www/sites/HbgPrime/wwwroot/source/sass/component/wordpress/_widget-search.scss */
-.widget_search .input-group-lg,
-.widget_search .input-group-addon-btn {
-  height: 40px; }
-
-/* line 19, /www/sites/HbgPrime/wwwroot/source/sass/component/wordpress/_widget-text.scss */
-.widget_text .textwidget p:first-child {
-  margin-top: -.5em; }
-
+/*
+@import 'component/wordpress/widget-text';
+*/
 /* line 4, /www/sites/HbgPrime/wwwroot/source/sass/component/modal/_animate.scss */
 .modal:not(.no-animation) .modal-content {
   -webkit-animation: modal-bounce-in 500ms ease-in-out;
