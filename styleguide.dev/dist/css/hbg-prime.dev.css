@@ -8190,9 +8190,13 @@ input[type="radio"]:disabled, select:disabled {
     display: none !important; } }
 
 /* line 41, /www/sites/HbgPrime/wwwroot/source/sass/utility/_visibility.scss */
+.block-level {
+  display: block; }
+
+/* line 45, /www/sites/HbgPrime/wwwroot/source/sass/utility/_visibility.scss */
 .target-toggle {
   display: none; }
-  /* line 44, /www/sites/HbgPrime/wwwroot/source/sass/utility/_visibility.scss */
+  /* line 48, /www/sites/HbgPrime/wwwroot/source/sass/utility/_visibility.scss */
   .target-toggle:target {
     display: block; }
 
@@ -8318,6 +8322,30 @@ input[type="radio"]:disabled, select:disabled {
 /* line 1, /www/sites/HbgPrime/wwwroot/source/sass/utility/_tagline.scss */
 .tagline {
   display: block; }
+
+/* line 1, /www/sites/HbgPrime/wwwroot/source/sass/utility/_translate.scss */
+.google-translate-fold {
+  position: fixed;
+  top: 50%;
+  right: 0;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: 500px;
+  padding: 30px 20px;
+  background-color: #fff;
+  border: 1px solid #f6f5f2;
+  border-right: 0;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+  z-index: 99999; }
+  @media screen and (max-width: 499px) {
+    /* line 1, /www/sites/HbgPrime/wwwroot/source/sass/utility/_translate.scss */
+    .google-translate-fold {
+      width: 100%;
+      bottom: 0;
+      left: auto;
+      top: auto;
+      -webkit-transform: translateY(0);
+              transform: translateY(0); } }
 
 /* =WordPress Core
 -------------------------------------------------------------- */
