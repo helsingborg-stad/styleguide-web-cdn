@@ -2424,12 +2424,16 @@ input[type="button"].btn::-moz-focus-inner {
 
 /* line 61, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/header/_jumbo.scss */
 .site-header.header-jumbo .logotype {
-  padding: 10px 0; }
-  /* line 64, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/header/_jumbo.scss */
+  padding: 10px 0;
+  color: #fff; }
+  /* line 65, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/header/_jumbo.scss */
   .site-header.header-jumbo .logotype svg, .site-header.header-jumbo .logotype img {
     height: 50px; }
+  /* line 69, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/header/_jumbo.scss */
+  .site-header.header-jumbo .logotype h1 {
+    color: #fff; }
 
-/* line 69, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/header/_jumbo.scss */
+/* line 74, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/header/_jumbo.scss */
 .site-header.header-jumbo .menu-trigger {
   float: right;
   margin-top: 22px; }
@@ -3574,7 +3578,13 @@ input[type="button"].btn::-moz-focus-inner {
   padding-top: 10px;
   padding-bottom: 10px; }
 
-/* line 97, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/accordion/_accordion.scss */
+/* line 94, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/accordion/_accordion.scss */
+.accordion-boxes .accordion-table-head,
+.accordion-box .accordion-table-head,
+.accordion-list .accordion-table-head {
+  padding: 5px 10px; }
+
+/* line 101, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/accordion/_accordion.scss */
 .accordion-boxes.boxes-medium .accordion-toggle,
 .accordion-boxes.boxes-medium .accordion-content, .accordion-boxes.box-medium .accordion-toggle,
 .accordion-boxes.box-medium .accordion-content, .accordion-boxes.list-medium .accordion-toggle,
@@ -3592,7 +3602,7 @@ input[type="button"].btn::-moz-focus-inner {
 .accordion-list.list-medium .accordion-toggle,
 .accordion-list.list-medium .accordion-content {
   padding: 15px 30px; }
-  /* line 101, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/accordion/_accordion.scss */
+  /* line 105, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/accordion/_accordion.scss */
   .accordion-boxes.boxes-medium .accordion-toggle:before,
   .accordion-boxes.boxes-medium .accordion-content:before, .accordion-boxes.box-medium .accordion-toggle:before,
   .accordion-boxes.box-medium .accordion-content:before, .accordion-boxes.list-medium .accordion-toggle:before,
@@ -3611,7 +3621,7 @@ input[type="button"].btn::-moz-focus-inner {
   .accordion-list.list-medium .accordion-content:before {
     right: 30px; }
 
-/* line 106, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/accordion/_accordion.scss */
+/* line 110, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/accordion/_accordion.scss */
 .accordion-boxes.boxes-medium .accordion-content, .accordion-boxes.box-medium .accordion-content, .accordion-boxes.list-medium .accordion-content,
 .accordion-box.boxes-medium .accordion-content,
 .accordion-box.box-medium .accordion-content,
@@ -3623,6 +3633,16 @@ input[type="button"].btn::-moz-focus-inner {
   padding-bottom: 30px; }
 
 /* line 115, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/accordion/_accordion.scss */
+.accordion-boxes.boxes-medium .accordion-table-head, .accordion-boxes.box-medium .accordion-table-head, .accordion-boxes.list-medium .accordion-table-head,
+.accordion-box.boxes-medium .accordion-table-head,
+.accordion-box.box-medium .accordion-table-head,
+.accordion-box.list-medium .accordion-table-head,
+.accordion-list.boxes-medium .accordion-table-head,
+.accordion-list.box-medium .accordion-table-head,
+.accordion-list.list-medium .accordion-table-head {
+  padding: 15px 30px; }
+
+/* line 123, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/accordion/_accordion.scss */
 .accordion-boxes.boxes-large .accordion-toggle,
 .accordion-boxes.boxes-large .accordion-content, .accordion-boxes.box-large .accordion-toggle,
 .accordion-boxes.box-large .accordion-content, .accordion-boxes.list-large .accordion-toggle,
@@ -3640,7 +3660,7 @@ input[type="button"].btn::-moz-focus-inner {
 .accordion-list.list-large .accordion-toggle,
 .accordion-list.list-large .accordion-content {
   padding: 15px 30px; }
-  /* line 119, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/accordion/_accordion.scss */
+  /* line 127, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/accordion/_accordion.scss */
   .accordion-boxes.boxes-large .accordion-toggle:before,
   .accordion-boxes.boxes-large .accordion-content:before, .accordion-boxes.box-large .accordion-toggle:before,
   .accordion-boxes.box-large .accordion-content:before, .accordion-boxes.list-large .accordion-toggle:before,
@@ -3659,7 +3679,7 @@ input[type="button"].btn::-moz-focus-inner {
   .accordion-list.list-large .accordion-content:before {
     right: 30px; }
 
-/* line 124, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/accordion/_accordion.scss */
+/* line 132, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/accordion/_accordion.scss */
 .accordion-boxes.boxes-large .accordion-content, .accordion-boxes.box-large .accordion-content, .accordion-boxes.list-large .accordion-content,
 .accordion-box.boxes-large .accordion-content,
 .accordion-box.box-large .accordion-content,
@@ -3670,19 +3690,29 @@ input[type="button"].btn::-moz-focus-inner {
   padding-top: 30px;
   padding-bottom: 30px; }
 
-/* line 130, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/accordion/_accordion.scss */
+/* line 137, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/accordion/_accordion.scss */
+.accordion-boxes.boxes-large .accordion-table-head, .accordion-boxes.box-large .accordion-table-head, .accordion-boxes.list-large .accordion-table-head,
+.accordion-box.boxes-large .accordion-table-head,
+.accordion-box.box-large .accordion-table-head,
+.accordion-box.list-large .accordion-table-head,
+.accordion-list.boxes-large .accordion-table-head,
+.accordion-list.box-large .accordion-table-head,
+.accordion-list.list-large .accordion-table-head {
+  padding: 15px 30px; }
+
+/* line 142, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/accordion/_accordion.scss */
 .accordion-boxes .accordion-section,
 .accordion-box .accordion-section,
 .accordion-list .accordion-section {
   border: 1px solid #e7e5e1; }
 
-/* line 134, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/accordion/_accordion.scss */
+/* line 146, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/accordion/_accordion.scss */
 .accordion-boxes .accordion-content,
 .accordion-box .accordion-content,
 .accordion-list .accordion-content {
   border-top: 1px solid #e7e5e1; }
 
-/* line 140, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/accordion/_accordion.scss */
+/* line 152, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/accordion/_accordion.scss */
 .accordion-boxes .accordion-toggle h1, .accordion-boxes .accordion-toggle h2, .accordion-boxes .accordion-toggle .widget_calendar caption, .widget_calendar .accordion-boxes .accordion-toggle caption, .accordion-boxes .accordion-toggle h3, .accordion-boxes .accordion-toggle h4, .accordion-boxes .accordion-toggle h5, .accordion-boxes .accordion-toggle h6,
 .accordion-box .accordion-toggle h1,
 .accordion-box .accordion-toggle h2,
@@ -3704,16 +3734,16 @@ input[type="button"].btn::-moz-focus-inner {
   padding: 0;
   margin: 0; }
 
-/* line 151, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/accordion/_accordion.scss */
+/* line 163, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/accordion/_accordion.scss */
 .accordion-list .accordion-section + .accordion-section {
   margin-top: 0;
   border-top: none; }
 
-/* line 156, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/accordion/_accordion.scss */
+/* line 168, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/accordion/_accordion.scss */
 .accordion-list .accordion-section:nth-child(odd) {
   background: rgba(0, 0, 0, 0.01); }
 
-/* line 161, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/accordion/_accordion.scss */
+/* line 173, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/accordion/_accordion.scss */
 .accordion-icon input[type="checkbox"]:checked ~ .accordion-toggle:before,
 .accordion-icon input[type="radio"]:checked ~ .accordion-toggle:before {
   font-family: FontAwesome;
@@ -3727,23 +3757,51 @@ input[type="button"].btn::-moz-focus-inner {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
 
-/* line 166, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/accordion/_accordion.scss */
+/* line 178, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/accordion/_accordion.scss */
 .accordion-toggle {
   display: block;
   cursor: pointer; }
 
-/* line 176, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/accordion/_accordion.scss */
+/* line 188, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/accordion/_accordion.scss */
 .accordion-content {
   display: none; }
-  /* line 179, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/accordion/_accordion.scss */
+  /* line 191, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/accordion/_accordion.scss */
   input[type="checkbox"] ~ .accordion-content,
   input[type="radio"] ~ .accordion-content {
     display: none; }
-  /* line 184, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/accordion/_accordion.scss */
+  /* line 196, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/accordion/_accordion.scss */
   input[type="checkbox"]:checked ~ .accordion-content,
   input[type="radio"]:checked ~ .accordion-content,
   input[type="radio"]:target ~ .accordion-content {
     display: block; }
+
+/* line 203, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/accordion/_accordion.scss */
+.accordion-table {
+  display: table;
+  table-layout: fixed;
+  width: 100%; }
+  /* line 208, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/accordion/_accordion.scss */
+  .accordion-table .column-header {
+    display: table-cell;
+    width: 2%; }
+
+/* line 214, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/accordion/_accordion.scss */
+.accordion-table-head {
+  background-color: #333;
+  color: #fff;
+  font-weight: bold; }
+  /* line 222, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/accordion/_accordion.scss */
+  .theme-red .accordion-table-head {
+    background-color: #cb0050; }
+  /* line 222, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/accordion/_accordion.scss */
+  .theme-blue .accordion-table-head {
+    background-color: #0069b4; }
+  /* line 222, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/accordion/_accordion.scss */
+  .theme-green .accordion-table-head {
+    background-color: #11a636; }
+  /* line 222, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/accordion/_accordion.scss */
+  .theme-purple .accordion-table-head {
+    background-color: #712082; }
 
 /* line 45, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/blog/_post.scss */
 .post-single .post-header ul {
@@ -4606,15 +4664,15 @@ input[type="button"].btn::-moz-focus-inner {
     text-decoration: none;
     background-color: #f6f5f2; }
 
-/* line 33, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/box/_index.scss */
+/* line 38, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/box/_index.scss */
 a.box-index {
   color: #252525; }
 
-/* line 37, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/box/_index.scss */
+/* line 42, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/box/_index.scss */
 .box-index-title {
   line-height: 1em; }
 
-/* line 22, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/box/_filled.scss */
+/* line 29, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/box/_filled.scss */
 .box-filled, .box-filled-1,
 .sidebar-right-sidebar [class*="grid-"]:nth-child(5n + 1) .box-filled,
 .sidebar-left-sidebar [class*="grid-"]:nth-child(5n + 1) .box-filled, .box-filled-2,
@@ -4629,7 +4687,7 @@ a.box-index {
 .sidebar-right-sidebar [class^="widget_"]:not(.widget_calendar) {
   background-color: #333;
   color: #fff; }
-  /* line 26, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/box/_filled.scss */
+  /* line 33, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/box/_filled.scss */
   .box-filled .box-title, .box-filled-1 .box-title,
   .sidebar-right-sidebar [class*="grid-"]:nth-child(5n + 1) .box-filled .box-title,
   .sidebar-left-sidebar [class*="grid-"]:nth-child(5n + 1) .box-filled .box-title, .box-filled-2 .box-title,
@@ -4738,7 +4796,7 @@ a.box-index {
   .sidebar-left-sidebar [class*="grid-"]:nth-child(5n + 5) .box-filled > h6, .sidebar-left-sidebar [class^="widget_"]:not(.widget_calendar) > h6,
   .sidebar-right-sidebar [class^="widget_"]:not(.widget_calendar) > h6 {
     padding: 10px 10px 0 10px; }
-  /* line 36, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/box/_filled.scss */
+  /* line 43, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/box/_filled.scss */
   .box-filled a, .box-filled-1 a,
   .sidebar-right-sidebar [class*="grid-"]:nth-child(5n + 1) .box-filled a,
   .sidebar-left-sidebar [class*="grid-"]:nth-child(5n + 1) .box-filled a, .box-filled-2 a,
@@ -4752,7 +4810,7 @@ a.box-index {
   .sidebar-left-sidebar [class*="grid-"]:nth-child(5n + 5) .box-filled a, .sidebar-left-sidebar [class^="widget_"]:not(.widget_calendar) a,
   .sidebar-right-sidebar [class^="widget_"]:not(.widget_calendar) a {
     color: #fff; }
-  /* line 43, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/box/_filled.scss */
+  /* line 54, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/box/_filled.scss */
   .theme-red .box-filled, .theme-red .box-filled-1, .theme-red
   .sidebar-right-sidebar [class*="grid-"]:nth-child(5n + 1) .box-filled,
   .sidebar-right-sidebar [class*="grid-"]:nth-child(5n + 1) .theme-red .box-filled, .theme-red
@@ -4777,7 +4835,7 @@ a.box-index {
   .sidebar-right-sidebar [class^="widget_"]:not(.widget_calendar),
   .sidebar-right-sidebar .theme-red [class^="widget_"]:not(.widget_calendar) {
     background-color: #cb0050; }
-  /* line 43, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/box/_filled.scss */
+  /* line 54, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/box/_filled.scss */
   .theme-blue .box-filled, .theme-blue .box-filled-1, .theme-blue
   .sidebar-right-sidebar [class*="grid-"]:nth-child(5n + 1) .box-filled,
   .sidebar-right-sidebar [class*="grid-"]:nth-child(5n + 1) .theme-blue .box-filled, .theme-blue
@@ -4802,7 +4860,7 @@ a.box-index {
   .sidebar-right-sidebar [class^="widget_"]:not(.widget_calendar),
   .sidebar-right-sidebar .theme-blue [class^="widget_"]:not(.widget_calendar) {
     background-color: #0069b4; }
-  /* line 43, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/box/_filled.scss */
+  /* line 54, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/box/_filled.scss */
   .theme-green .box-filled, .theme-green .box-filled-1, .theme-green
   .sidebar-right-sidebar [class*="grid-"]:nth-child(5n + 1) .box-filled,
   .sidebar-right-sidebar [class*="grid-"]:nth-child(5n + 1) .theme-green .box-filled, .theme-green
@@ -4827,7 +4885,7 @@ a.box-index {
   .sidebar-right-sidebar [class^="widget_"]:not(.widget_calendar),
   .sidebar-right-sidebar .theme-green [class^="widget_"]:not(.widget_calendar) {
     background-color: #11a636; }
-  /* line 43, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/box/_filled.scss */
+  /* line 54, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/box/_filled.scss */
   .theme-purple .box-filled, .theme-purple .box-filled-1, .theme-purple
   .sidebar-right-sidebar [class*="grid-"]:nth-child(5n + 1) .box-filled,
   .sidebar-right-sidebar [class*="grid-"]:nth-child(5n + 1) .theme-purple .box-filled, .theme-purple
@@ -4853,7 +4911,7 @@ a.box-index {
   .sidebar-right-sidebar .theme-purple [class^="widget_"]:not(.widget_calendar) {
     background-color: #712082; }
 
-/* line 58, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/box/_filled.scss */
+/* line 69, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/box/_filled.scss */
 .theme-red .box-filled-1, .theme-red
 .sidebar-right-sidebar [class*="grid-"]:nth-child(5n + 1) .box-filled-1, .theme-red
 .sidebar-right-sidebar [class*="grid-"]:nth-child(5n + 1) .box-filled, .theme-red
@@ -4870,7 +4928,7 @@ a.box-index {
 .sidebar-left-sidebar [class*="grid-"]:nth-child(5n + 1) .box-filled-5, .theme-red .sidebar-left-sidebar [class*="grid-"]:nth-child(5n + 1) [class^="widget_"]:not(.widget_calendar) {
   background-color: #f7a600; }
 
-/* line 58, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/box/_filled.scss */
+/* line 69, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/box/_filled.scss */
 .theme-blue .box-filled-1, .theme-blue
 .sidebar-right-sidebar [class*="grid-"]:nth-child(5n + 1) .box-filled-1, .theme-blue
 .sidebar-right-sidebar [class*="grid-"]:nth-child(5n + 1) .box-filled, .theme-blue
@@ -4887,7 +4945,7 @@ a.box-index {
 .sidebar-left-sidebar [class*="grid-"]:nth-child(5n + 1) .box-filled-5, .theme-blue .sidebar-left-sidebar [class*="grid-"]:nth-child(5n + 1) [class^="widget_"]:not(.widget_calendar) {
   background-color: #4db4e7; }
 
-/* line 58, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/box/_filled.scss */
+/* line 69, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/box/_filled.scss */
 .theme-green .box-filled-1, .theme-green
 .sidebar-right-sidebar [class*="grid-"]:nth-child(5n + 1) .box-filled-1, .theme-green
 .sidebar-right-sidebar [class*="grid-"]:nth-child(5n + 1) .box-filled, .theme-green
@@ -4904,7 +4962,7 @@ a.box-index {
 .sidebar-left-sidebar [class*="grid-"]:nth-child(5n + 1) .box-filled-5, .theme-green .sidebar-left-sidebar [class*="grid-"]:nth-child(5n + 1) [class^="widget_"]:not(.widget_calendar) {
   background-color: #afca05; }
 
-/* line 58, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/box/_filled.scss */
+/* line 69, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/box/_filled.scss */
 .theme-purple .box-filled-1, .theme-purple
 .sidebar-right-sidebar [class*="grid-"]:nth-child(5n + 1) .box-filled-1, .theme-purple
 .sidebar-right-sidebar [class*="grid-"]:nth-child(5n + 1) .box-filled, .theme-purple
@@ -4921,7 +4979,7 @@ a.box-index {
 .sidebar-left-sidebar [class*="grid-"]:nth-child(5n + 1) .box-filled-5, .theme-purple .sidebar-left-sidebar [class*="grid-"]:nth-child(5n + 1) [class^="widget_"]:not(.widget_calendar) {
   background-color: #d35098; }
 
-/* line 73, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/box/_filled.scss */
+/* line 84, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/box/_filled.scss */
 .theme-red .box-filled-2, .theme-red
 .sidebar-right-sidebar [class*="grid-"]:nth-child(5n + 2) .box-filled-1, .theme-red
 .sidebar-right-sidebar [class*="grid-"]:nth-child(5n + 2) .box-filled-2, .theme-red
@@ -4938,7 +4996,7 @@ a.box-index {
 .sidebar-left-sidebar [class*="grid-"]:nth-child(5n + 2) .box-filled-5, .theme-red .sidebar-left-sidebar [class*="grid-"]:nth-child(5n + 2) [class^="widget_"]:not(.widget_calendar) {
   background-color: #cb0050; }
 
-/* line 73, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/box/_filled.scss */
+/* line 84, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/box/_filled.scss */
 .theme-blue .box-filled-2, .theme-blue
 .sidebar-right-sidebar [class*="grid-"]:nth-child(5n + 2) .box-filled-1, .theme-blue
 .sidebar-right-sidebar [class*="grid-"]:nth-child(5n + 2) .box-filled-2, .theme-blue
@@ -4955,7 +5013,7 @@ a.box-index {
 .sidebar-left-sidebar [class*="grid-"]:nth-child(5n + 2) .box-filled-5, .theme-blue .sidebar-left-sidebar [class*="grid-"]:nth-child(5n + 2) [class^="widget_"]:not(.widget_calendar) {
   background-color: #0069b4; }
 
-/* line 73, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/box/_filled.scss */
+/* line 84, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/box/_filled.scss */
 .theme-green .box-filled-2, .theme-green
 .sidebar-right-sidebar [class*="grid-"]:nth-child(5n + 2) .box-filled-1, .theme-green
 .sidebar-right-sidebar [class*="grid-"]:nth-child(5n + 2) .box-filled-2, .theme-green
@@ -4972,7 +5030,7 @@ a.box-index {
 .sidebar-left-sidebar [class*="grid-"]:nth-child(5n + 2) .box-filled-5, .theme-green .sidebar-left-sidebar [class*="grid-"]:nth-child(5n + 2) [class^="widget_"]:not(.widget_calendar) {
   background-color: #11a636; }
 
-/* line 73, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/box/_filled.scss */
+/* line 84, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/box/_filled.scss */
 .theme-purple .box-filled-2, .theme-purple
 .sidebar-right-sidebar [class*="grid-"]:nth-child(5n + 2) .box-filled-1, .theme-purple
 .sidebar-right-sidebar [class*="grid-"]:nth-child(5n + 2) .box-filled-2, .theme-purple
@@ -4989,7 +5047,7 @@ a.box-index {
 .sidebar-left-sidebar [class*="grid-"]:nth-child(5n + 2) .box-filled-5, .theme-purple .sidebar-left-sidebar [class*="grid-"]:nth-child(5n + 2) [class^="widget_"]:not(.widget_calendar) {
   background-color: #712082; }
 
-/* line 88, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/box/_filled.scss */
+/* line 99, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/box/_filled.scss */
 .theme-red .box-filled-3, .theme-red
 .sidebar-right-sidebar [class*="grid-"]:nth-child(5n + 3) .box-filled-1, .theme-red
 .sidebar-right-sidebar [class*="grid-"]:nth-child(5n + 3) .box-filled-2, .theme-red
@@ -5006,7 +5064,7 @@ a.box-index {
 .sidebar-left-sidebar [class*="grid-"]:nth-child(5n + 3) .box-filled-5, .theme-red .sidebar-left-sidebar [class*="grid-"]:nth-child(5n + 3) [class^="widget_"]:not(.widget_calendar) {
   background-color: #ec6701; }
 
-/* line 88, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/box/_filled.scss */
+/* line 99, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/box/_filled.scss */
 .theme-blue .box-filled-3, .theme-blue
 .sidebar-right-sidebar [class*="grid-"]:nth-child(5n + 3) .box-filled-1, .theme-blue
 .sidebar-right-sidebar [class*="grid-"]:nth-child(5n + 3) .box-filled-2, .theme-blue
@@ -5023,7 +5081,7 @@ a.box-index {
 .sidebar-left-sidebar [class*="grid-"]:nth-child(5n + 3) .box-filled-5, .theme-blue .sidebar-left-sidebar [class*="grid-"]:nth-child(5n + 3) [class^="widget_"]:not(.widget_calendar) {
   background-color: #5ba1d8; }
 
-/* line 88, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/box/_filled.scss */
+/* line 99, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/box/_filled.scss */
 .theme-green .box-filled-3, .theme-green
 .sidebar-right-sidebar [class*="grid-"]:nth-child(5n + 3) .box-filled-1, .theme-green
 .sidebar-right-sidebar [class*="grid-"]:nth-child(5n + 3) .box-filled-2, .theme-green
@@ -5040,7 +5098,7 @@ a.box-index {
 .sidebar-left-sidebar [class*="grid-"]:nth-child(5n + 3) .box-filled-5, .theme-green .sidebar-left-sidebar [class*="grid-"]:nth-child(5n + 3) [class^="widget_"]:not(.widget_calendar) {
   background-color: #a0c855; }
 
-/* line 88, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/box/_filled.scss */
+/* line 99, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/box/_filled.scss */
 .theme-purple .box-filled-3, .theme-purple
 .sidebar-right-sidebar [class*="grid-"]:nth-child(5n + 3) .box-filled-1, .theme-purple
 .sidebar-right-sidebar [class*="grid-"]:nth-child(5n + 3) .box-filled-2, .theme-purple
@@ -5057,7 +5115,7 @@ a.box-index {
 .sidebar-left-sidebar [class*="grid-"]:nth-child(5n + 3) .box-filled-5, .theme-purple .sidebar-left-sidebar [class*="grid-"]:nth-child(5n + 3) [class^="widget_"]:not(.widget_calendar) {
   background-color: #a84c98; }
 
-/* line 103, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/box/_filled.scss */
+/* line 114, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/box/_filled.scss */
 .theme-red .box-filled-4, .theme-red
 .sidebar-right-sidebar [class*="grid-"]:nth-child(5n + 4) .box-filled-1, .theme-red
 .sidebar-right-sidebar [class*="grid-"]:nth-child(5n + 4) .box-filled-2, .theme-red
@@ -5074,7 +5132,7 @@ a.box-index {
 .sidebar-left-sidebar [class*="grid-"]:nth-child(5n + 4) .box-filled-5, .theme-red .sidebar-left-sidebar [class*="grid-"]:nth-child(5n + 4) [class^="widget_"]:not(.widget_calendar) {
   background-color: #ae0b05; }
 
-/* line 103, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/box/_filled.scss */
+/* line 114, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/box/_filled.scss */
 .theme-blue .box-filled-4, .theme-blue
 .sidebar-right-sidebar [class*="grid-"]:nth-child(5n + 4) .box-filled-1, .theme-blue
 .sidebar-right-sidebar [class*="grid-"]:nth-child(5n + 4) .box-filled-2, .theme-blue
@@ -5091,7 +5149,7 @@ a.box-index {
 .sidebar-left-sidebar [class*="grid-"]:nth-child(5n + 4) .box-filled-5, .theme-blue .sidebar-left-sidebar [class*="grid-"]:nth-child(5n + 4) [class^="widget_"]:not(.widget_calendar) {
   background-color: #005c86; }
 
-/* line 103, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/box/_filled.scss */
+/* line 114, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/box/_filled.scss */
 .theme-green .box-filled-4, .theme-green
 .sidebar-right-sidebar [class*="grid-"]:nth-child(5n + 4) .box-filled-1, .theme-green
 .sidebar-right-sidebar [class*="grid-"]:nth-child(5n + 4) .box-filled-2, .theme-green
@@ -5108,7 +5166,7 @@ a.box-index {
 .sidebar-left-sidebar [class*="grid-"]:nth-child(5n + 4) .box-filled-5, .theme-green .sidebar-left-sidebar [class*="grid-"]:nth-child(5n + 4) [class^="widget_"]:not(.widget_calendar) {
   background-color: #50811b; }
 
-/* line 103, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/box/_filled.scss */
+/* line 114, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/box/_filled.scss */
 .theme-purple .box-filled-4, .theme-purple
 .sidebar-right-sidebar [class*="grid-"]:nth-child(5n + 4) .box-filled-1, .theme-purple
 .sidebar-right-sidebar [class*="grid-"]:nth-child(5n + 4) .box-filled-2, .theme-purple
@@ -5125,7 +5183,7 @@ a.box-index {
 .sidebar-left-sidebar [class*="grid-"]:nth-child(5n + 4) .box-filled-5, .theme-purple .sidebar-left-sidebar [class*="grid-"]:nth-child(5n + 4) [class^="widget_"]:not(.widget_calendar) {
   background-color: #7b075e; }
 
-/* line 118, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/box/_filled.scss */
+/* line 129, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/box/_filled.scss */
 .theme-red .box-filled-5, .theme-red
 .sidebar-right-sidebar [class*="grid-"]:nth-child(5n + 5) .box-filled-1, .theme-red
 .sidebar-right-sidebar [class*="grid-"]:nth-child(5n + 5) .box-filled-2, .theme-red
@@ -5142,7 +5200,7 @@ a.box-index {
 .sidebar-left-sidebar [class*="grid-"]:nth-child(5n + 5) .box-filled, .theme-red .sidebar-left-sidebar [class*="grid-"]:nth-child(5n + 5) [class^="widget_"]:not(.widget_calendar) {
   background-color: #e3000f; }
 
-/* line 118, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/box/_filled.scss */
+/* line 129, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/box/_filled.scss */
 .theme-blue .box-filled-5, .theme-blue
 .sidebar-right-sidebar [class*="grid-"]:nth-child(5n + 5) .box-filled-1, .theme-blue
 .sidebar-right-sidebar [class*="grid-"]:nth-child(5n + 5) .box-filled-2, .theme-blue
@@ -5159,7 +5217,7 @@ a.box-index {
 .sidebar-left-sidebar [class*="grid-"]:nth-child(5n + 5) .box-filled, .theme-blue .sidebar-left-sidebar [class*="grid-"]:nth-child(5n + 5) [class^="widget_"]:not(.widget_calendar) {
   background-color: #0095db; }
 
-/* line 118, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/box/_filled.scss */
+/* line 129, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/box/_filled.scss */
 .theme-green .box-filled-5, .theme-green
 .sidebar-right-sidebar [class*="grid-"]:nth-child(5n + 5) .box-filled-1, .theme-green
 .sidebar-right-sidebar [class*="grid-"]:nth-child(5n + 5) .box-filled-2, .theme-green
@@ -5176,7 +5234,7 @@ a.box-index {
 .sidebar-left-sidebar [class*="grid-"]:nth-child(5n + 5) .box-filled, .theme-green .sidebar-left-sidebar [class*="grid-"]:nth-child(5n + 5) [class^="widget_"]:not(.widget_calendar) {
   background-color: #76b828; }
 
-/* line 118, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/box/_filled.scss */
+/* line 129, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/box/_filled.scss */
 .theme-purple .box-filled-5, .theme-purple
 .sidebar-right-sidebar [class*="grid-"]:nth-child(5n + 5) .box-filled-1, .theme-purple
 .sidebar-right-sidebar [class*="grid-"]:nth-child(5n + 5) .box-filled-2, .theme-purple
@@ -9135,6 +9193,26 @@ input[type="radio"]:disabled, select:disabled {
     width: 100% !important;
     height: 100% !important; }
 
+/* line 5, /websites/helsingborg/styleguide/styleguide-web/source/sass/utility/_aspect-ratio.scss */
+.ratio-4-3 {
+  position: relative; }
+  /* line 42, /websites/helsingborg/styleguide/styleguide-web/source/sass/mixin/_positioning.scss */
+  .ratio-4-3:before {
+    display: block;
+    content: "";
+    width: 100%;
+    padding-top: 75%; }
+  /* line 49, /websites/helsingborg/styleguide/styleguide-web/source/sass/mixin/_positioning.scss */
+  .ratio-4-3 > .content,
+  .ratio-4-3 > iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100% !important;
+    height: 100% !important; }
+
 /* line 1, /websites/helsingborg/styleguide/styleguide-web/source/sass/utility/_video-background.scss */
 .video-background {
   position: absolute;
@@ -9390,6 +9468,23 @@ a img.aligncenter {
   width: auto;
   z-index: 100000;
   /* Above WP toolbar. */ }
+
+/* line 1, /websites/helsingborg/styleguide/styleguide-web/source/sass/utility/_image.scss */
+.img-inherit-width, .box-index img:not(.box-image), .box-filled img, .box-filled-1 img,
+.sidebar-right-sidebar [class*="grid-"]:nth-child(5n + 1) .box-filled img,
+.sidebar-left-sidebar [class*="grid-"]:nth-child(5n + 1) .box-filled img, .box-filled-2 img,
+.sidebar-right-sidebar [class*="grid-"]:nth-child(5n + 2) .box-filled img,
+.sidebar-left-sidebar [class*="grid-"]:nth-child(5n + 2) .box-filled img, .box-filled-3 img,
+.sidebar-right-sidebar [class*="grid-"]:nth-child(5n + 3) .box-filled img,
+.sidebar-left-sidebar [class*="grid-"]:nth-child(5n + 3) .box-filled img, .box-filled-4 img,
+.sidebar-right-sidebar [class*="grid-"]:nth-child(5n + 4) .box-filled img,
+.sidebar-left-sidebar [class*="grid-"]:nth-child(5n + 4) .box-filled img, .box-filled-5 img,
+.sidebar-right-sidebar [class*="grid-"]:nth-child(5n + 5) .box-filled img,
+.sidebar-left-sidebar [class*="grid-"]:nth-child(5n + 5) .box-filled img, .sidebar-left-sidebar [class^="widget_"]:not(.widget_calendar) img,
+.sidebar-right-sidebar [class^="widget_"]:not(.widget_calendar) img {
+  width: 100%;
+  height: auto;
+  margin: 0; }
 
 /* line 34, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/wordpress/_widget-nav-menu.scss */
 .sidebar-left-sidebar .widget_nav_menu a,
