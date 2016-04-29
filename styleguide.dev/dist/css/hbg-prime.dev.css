@@ -7845,13 +7845,49 @@ select + select {
   /* line 104, /www/sites/HbgPrime/wwwroot/source/sass/component/footer/_footer.scss */
   .main-footer .widget_text {
     padding: 0; }
+  /* line 109, /www/sites/HbgPrime/wwwroot/source/sass/component/footer/_footer.scss */
+  .main-footer .box .box-title, .main-footer [class^="widget_"]:not(.widget_calendar) .box-title,
+  .main-footer .box .box-content,
+  .main-footer [class^="widget_"]:not(.widget_calendar) .box-content, [class^="widget_"]:not(.widget_calendar) *:not(.main-fotter)
+  .main-footer .box .textwidget,
+  .main-footer [class^="widget_"]:not(.widget_calendar) *:not(.main-fotter) .textwidget,
+  [class^="widget_"]:not(.widget_calendar) *:not(.main-fotter)
+  .main-footer .box form,
+  .main-footer
+  [class^="widget_"]:not(.widget_calendar) *:not(.main-fotter) form,
+  .main-footer .box .sidebar-left-sidebar .widget_nav_menu > div, .sidebar-left-sidebar
+  .main-footer .box .widget_nav_menu > div,
+  .main-footer [class^="widget_"]:not(.widget_calendar) .sidebar-left-sidebar .widget_nav_menu > div, .sidebar-left-sidebar
+  .main-footer [class^="widget_"]:not(.widget_calendar) .widget_nav_menu > div,
+  .main-footer .box
+  .sidebar-right-sidebar .widget_nav_menu > div,
+  .sidebar-right-sidebar
+  .main-footer .box .widget_nav_menu > div,
+  .main-footer [class^="widget_"]:not(.widget_calendar)
+  .sidebar-right-sidebar .widget_nav_menu > div,
+  .sidebar-right-sidebar
+  .main-footer [class^="widget_"]:not(.widget_calendar) .widget_nav_menu > div,
+  .main-footer .box .sidebar-left-sidebar .widget_text .textwidget, .sidebar-left-sidebar .widget_text
+  .main-footer .box .textwidget,
+  .main-footer [class^="widget_"]:not(.widget_calendar) .sidebar-left-sidebar .widget_text .textwidget, .sidebar-left-sidebar .widget_text
+  .main-footer [class^="widget_"]:not(.widget_calendar) .textwidget,
+  .main-footer .box
+  .sidebar-right-sidebar .widget_text .textwidget,
+  .sidebar-right-sidebar .widget_text
+  .main-footer .box .textwidget,
+  .main-footer [class^="widget_"]:not(.widget_calendar)
+  .sidebar-right-sidebar .widget_text .textwidget,
+  .sidebar-right-sidebar .widget_text
+  .main-footer [class^="widget_"]:not(.widget_calendar) .textwidget {
+    padding: 0 !important;
+    border: none; }
 
-/* line 109, /www/sites/HbgPrime/wwwroot/source/sass/component/footer/_footer.scss */
+/* line 117, /www/sites/HbgPrime/wwwroot/source/sass/component/footer/_footer.scss */
 .markup-preview .main-footer {
   margin-top: 0;
   padding: 40px 20px; }
 
-/* line 114, /www/sites/HbgPrime/wwwroot/source/sass/component/footer/_footer.scss */
+/* line 122, /www/sites/HbgPrime/wwwroot/source/sass/component/footer/_footer.scss */
 .footer-signature {
   display: inline-block;
   width: 100px;
