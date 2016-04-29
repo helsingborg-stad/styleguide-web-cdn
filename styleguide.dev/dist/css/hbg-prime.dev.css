@@ -7881,13 +7881,16 @@ select + select {
   .main-footer [class^="widget_"]:not(.widget_calendar) .textwidget {
     padding: 0 !important;
     border: none; }
+  /* line 115, /www/sites/HbgPrime/wwwroot/source/sass/component/footer/_footer.scss */
+  .main-footer .box .box-title, .main-footer [class^="widget_"]:not(.widget_calendar) .box-title {
+    padding-bottom: 10px; }
 
-/* line 117, /www/sites/HbgPrime/wwwroot/source/sass/component/footer/_footer.scss */
+/* line 121, /www/sites/HbgPrime/wwwroot/source/sass/component/footer/_footer.scss */
 .markup-preview .main-footer {
   margin-top: 0;
   padding: 40px 20px; }
 
-/* line 122, /www/sites/HbgPrime/wwwroot/source/sass/component/footer/_footer.scss */
+/* line 126, /www/sites/HbgPrime/wwwroot/source/sass/component/footer/_footer.scss */
 .footer-signature {
   display: inline-block;
   width: 100px;
