@@ -756,8 +756,9 @@ b {
             flex: 1 0 auto;
     -webkit-flex-basis: 100%;
         -ms-flex-preferred-size: 100%;
-            flex-basis: 100%; }
-  /* line 20, /websites/helsingborg/styleguide/styleguide-web/source/sass/layout/_grid-flexbox.scss */
+            flex-basis: 100%;
+    width: 100%; }
+  /* line 21, /websites/helsingborg/styleguide/styleguide-web/source/sass/layout/_grid-flexbox.scss */
   .grid-auto {
     -webkit-flex-basis: 0;
         -ms-flex-preferred-size: 0;
@@ -1102,13 +1103,13 @@ b {
           -ms-flex-preferred-size: 100%;
               flex-basis: 100%;
       max-width: 100%; } }
-  /* line 40, /websites/helsingborg/styleguide/styleguide-web/source/sass/layout/_grid-flexbox.scss */
-  [data-equal-container] [class*="grid-"] {
+  /* line 41, /websites/helsingborg/styleguide/styleguide-web/source/sass/layout/_grid-flexbox.scss */
+  [data-equal-container] > [class*="grid-"] {
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex; }
-  /* line 44, /websites/helsingborg/styleguide/styleguide-web/source/sass/layout/_grid-flexbox.scss */
-  [data-equal-container] [data-equal-item] {
+  /* line 45, /websites/helsingborg/styleguide/styleguide-web/source/sass/layout/_grid-flexbox.scss */
+  [data-equal-container] > [data-equal-item] {
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex; } }
@@ -4796,6 +4797,16 @@ input[type="button"].btn::-moz-focus-inner {
   font-size: .9em; }
 
 /* line 47, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/box/_box.scss */
+.creamy .box-content, .creamy [class^="widget_"]:not(.widget_calendar) *:not(.main-fotter) .textwidget, [class^="widget_"]:not(.widget_calendar) *:not(.main-fotter) .creamy .textwidget, .creamy
+[class^="widget_"]:not(.widget_calendar) *:not(.main-fotter) form,
+[class^="widget_"]:not(.widget_calendar) *:not(.main-fotter) .creamy form, .creamy .sidebar-left-sidebar .widget_nav_menu > div, .sidebar-left-sidebar .creamy .widget_nav_menu > div, .creamy
+.sidebar-right-sidebar .widget_nav_menu > div,
+.sidebar-right-sidebar .creamy .widget_nav_menu > div, .creamy .sidebar-left-sidebar .widget_text .textwidget, .sidebar-left-sidebar .widget_text .creamy .textwidget, .creamy
+.sidebar-right-sidebar .widget_text .textwidget,
+.sidebar-right-sidebar .widget_text .creamy .textwidget {
+  background-color: #fff; }
+
+/* line 51, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/box/_box.scss */
 .box-image {
   width: 100%; }
 
@@ -5880,21 +5891,36 @@ a.box-index {
   width: 100%;
   background-color: transparent;
   color: #252525; }
-  /* line 101, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/box/_news.scss */
+  @media (min-width: 0) and (max-width: 468px) {
+    /* line 95, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/box/_news.scss */
+    .box-news.box-news-horizontal {
+      display: block;
+      border: 1px solid #e7e5e1;
+      padding: 5px; } }
+  /* line 107, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/box/_news.scss */
   .box-news.box-news-horizontal .box-image-container {
     display: table-cell;
     vertical-align: top;
-    width: 200px; }
-    /* line 106, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/box/_news.scss */
-    .box-news.box-news-horizontal .box-image-container + .box-content, .box-news.box-news-horizontal [class^="widget_"]:not(.widget_calendar) *:not(.main-fotter) .box-image-container + .textwidget, [class^="widget_"]:not(.widget_calendar) *:not(.main-fotter) .box-news.box-news-horizontal .box-image-container + .textwidget, .box-news.box-news-horizontal
-    [class^="widget_"]:not(.widget_calendar) *:not(.main-fotter) .box-image-container + form,
-    [class^="widget_"]:not(.widget_calendar) *:not(.main-fotter) .box-news.box-news-horizontal .box-image-container + form, .box-news.box-news-horizontal .sidebar-left-sidebar .widget_nav_menu > .box-image-container + div, .sidebar-left-sidebar .box-news.box-news-horizontal .widget_nav_menu > .box-image-container + div, .box-news.box-news-horizontal
-    .sidebar-right-sidebar .widget_nav_menu > .box-image-container + div,
-    .sidebar-right-sidebar .box-news.box-news-horizontal .widget_nav_menu > .box-image-container + div, .box-news.box-news-horizontal .sidebar-left-sidebar .widget_text .box-image-container + .textwidget, .sidebar-left-sidebar .widget_text .box-news.box-news-horizontal .box-image-container + .textwidget, .box-news.box-news-horizontal
-    .sidebar-right-sidebar .widget_text .box-image-container + .textwidget,
-    .sidebar-right-sidebar .widget_text .box-news.box-news-horizontal .box-image-container + .textwidget {
-      padding-left: 30px; }
-  /* line 111, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/box/_news.scss */
+    width: 35%; }
+    @media (min-width: 469px) {
+      /* line 113, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/box/_news.scss */
+      .box-news.box-news-horizontal .box-image-container + .box-content, .box-news.box-news-horizontal [class^="widget_"]:not(.widget_calendar) *:not(.main-fotter) .box-image-container + .textwidget, [class^="widget_"]:not(.widget_calendar) *:not(.main-fotter) .box-news.box-news-horizontal .box-image-container + .textwidget, .box-news.box-news-horizontal
+      [class^="widget_"]:not(.widget_calendar) *:not(.main-fotter) .box-image-container + form,
+      [class^="widget_"]:not(.widget_calendar) *:not(.main-fotter) .box-news.box-news-horizontal .box-image-container + form, .box-news.box-news-horizontal .sidebar-left-sidebar .widget_nav_menu > .box-image-container + div, .sidebar-left-sidebar .box-news.box-news-horizontal .widget_nav_menu > .box-image-container + div, .box-news.box-news-horizontal
+      .sidebar-right-sidebar .widget_nav_menu > .box-image-container + div,
+      .sidebar-right-sidebar .box-news.box-news-horizontal .widget_nav_menu > .box-image-container + div, .box-news.box-news-horizontal .sidebar-left-sidebar .widget_text .box-image-container + .textwidget, .sidebar-left-sidebar .widget_text .box-news.box-news-horizontal .box-image-container + .textwidget, .box-news.box-news-horizontal
+      .sidebar-right-sidebar .widget_text .box-image-container + .textwidget,
+      .sidebar-right-sidebar .widget_text .box-news.box-news-horizontal .box-image-container + .textwidget {
+        padding-left: 30px; } }
+    @media (min-width: 0) and (max-width: 468px) {
+      /* line 107, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/box/_news.scss */
+      .box-news.box-news-horizontal .box-image-container {
+        display: block;
+        width: 100%; }
+        /* line 122, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/box/_news.scss */
+        .box-news.box-news-horizontal .box-image-container .image-placeholder {
+          display: none; } }
+  /* line 128, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/box/_news.scss */
   .box-news.box-news-horizontal .box-content, .box-news.box-news-horizontal [class^="widget_"]:not(.widget_calendar) *:not(.main-fotter) .textwidget, [class^="widget_"]:not(.widget_calendar) *:not(.main-fotter) .box-news.box-news-horizontal .textwidget, .box-news.box-news-horizontal
   [class^="widget_"]:not(.widget_calendar) *:not(.main-fotter) form,
   [class^="widget_"]:not(.widget_calendar) *:not(.main-fotter) .box-news.box-news-horizontal form, .box-news.box-news-horizontal .sidebar-left-sidebar .widget_nav_menu > div, .sidebar-left-sidebar .box-news.box-news-horizontal .widget_nav_menu > div, .box-news.box-news-horizontal
@@ -5905,7 +5931,19 @@ a.box-index {
     display: table-cell;
     vertical-align: top;
     padding: 0; }
-  /* line 117, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/box/_news.scss */
+    @media (min-width: 0) and (max-width: 468px) {
+      /* line 128, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/box/_news.scss */
+      .box-news.box-news-horizontal .box-content, .box-news.box-news-horizontal [class^="widget_"]:not(.widget_calendar) *:not(.main-fotter) .textwidget, [class^="widget_"]:not(.widget_calendar) *:not(.main-fotter) .box-news.box-news-horizontal .textwidget, .box-news.box-news-horizontal
+      [class^="widget_"]:not(.widget_calendar) *:not(.main-fotter) form,
+      [class^="widget_"]:not(.widget_calendar) *:not(.main-fotter) .box-news.box-news-horizontal form, .box-news.box-news-horizontal .sidebar-left-sidebar .widget_nav_menu > div, .sidebar-left-sidebar .box-news.box-news-horizontal .widget_nav_menu > div, .box-news.box-news-horizontal
+      .sidebar-right-sidebar .widget_nav_menu > div,
+      .sidebar-right-sidebar .box-news.box-news-horizontal .widget_nav_menu > div, .box-news.box-news-horizontal .sidebar-left-sidebar .widget_text .textwidget, .sidebar-left-sidebar .widget_text .box-news.box-news-horizontal .textwidget, .box-news.box-news-horizontal
+      .sidebar-right-sidebar .widget_text .textwidget,
+      .sidebar-right-sidebar .widget_text .box-news.box-news-horizontal .textwidget {
+        display: block;
+        width: 100%;
+        padding: 10px; } }
+  /* line 140, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/box/_news.scss */
   .box-news.box-news-horizontal h1, .box-news.box-news-horizontal h2, .box-news.box-news-horizontal .widget_calendar caption, .widget_calendar .box-news.box-news-horizontal caption, .box-news.box-news-horizontal h3, .box-news.box-news-horizontal h4, .box-news.box-news-horizontal h4, .box-news.box-news-horizontal h6 {
     padding-bottom: 5px; }
 
