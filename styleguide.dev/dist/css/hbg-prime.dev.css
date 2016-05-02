@@ -526,19 +526,30 @@ b {
     @supports ((display: -webkit-flex) or (display: -ms-flexbox) or (display: flex)) {
       /* line 44, /www/sites/HbgPrime/wwwroot/source/sass/mixin/_grid.scss */
       .grid-table [class*="grid-"] {
-        display: block; } }
-  /* line 53, /www/sites/HbgPrime/wwwroot/source/sass/mixin/_grid.scss */
+        display: block;
+        -webkit-flex: 1 1 auto;
+            -ms-flex: 1 1 auto;
+                flex: 1 1 auto; } }
+  /* line 54, /www/sites/HbgPrime/wwwroot/source/sass/mixin/_grid.scss */
   .grid-table.no-padding {
     padding-left: 0;
     padding-right: 0; }
-    /* line 57, /www/sites/HbgPrime/wwwroot/source/sass/mixin/_grid.scss */
+    /* line 58, /www/sites/HbgPrime/wwwroot/source/sass/mixin/_grid.scss */
     .grid-table.no-padding [class*="grid-"] {
       padding: 0; }
-  /* line 62, /www/sites/HbgPrime/wwwroot/source/sass/mixin/_grid.scss */
+  /* line 63, /www/sites/HbgPrime/wwwroot/source/sass/mixin/_grid.scss */
   .grid-table .grid-col-icon {
     width: 1%;
     white-space: nowrap;
     padding-right: 0; }
+    @supports ((display: -webkit-flex) or (display: -ms-flexbox) or (display: flex)) {
+      /* line 63, /www/sites/HbgPrime/wwwroot/source/sass/mixin/_grid.scss */
+      .grid-table .grid-col-icon {
+        display: block;
+        -webkit-flex: 0 0 auto;
+            -ms-flex: 0 0 auto;
+                flex: 0 0 auto;
+        min-width: 40px; } }
 
 @media (min-width: 0) {
   /* line 210, /www/sites/HbgPrime/wwwroot/source/sass/layout/_grid.scss */
@@ -571,19 +582,30 @@ b {
       @supports ((display: -webkit-flex) or (display: -ms-flexbox) or (display: flex)) {
         /* line 44, /www/sites/HbgPrime/wwwroot/source/sass/mixin/_grid.scss */
         .grid-table-xs [class*="grid-"] {
-          display: block; } }
-    /* line 53, /www/sites/HbgPrime/wwwroot/source/sass/mixin/_grid.scss */
+          display: block;
+          -webkit-flex: 1 1 auto;
+              -ms-flex: 1 1 auto;
+                  flex: 1 1 auto; } }
+    /* line 54, /www/sites/HbgPrime/wwwroot/source/sass/mixin/_grid.scss */
     .grid-table-xs.no-padding {
       padding-left: 0;
       padding-right: 0; }
-      /* line 57, /www/sites/HbgPrime/wwwroot/source/sass/mixin/_grid.scss */
+      /* line 58, /www/sites/HbgPrime/wwwroot/source/sass/mixin/_grid.scss */
       .grid-table-xs.no-padding [class*="grid-"] {
         padding: 0; }
-    /* line 62, /www/sites/HbgPrime/wwwroot/source/sass/mixin/_grid.scss */
+    /* line 63, /www/sites/HbgPrime/wwwroot/source/sass/mixin/_grid.scss */
     .grid-table-xs .grid-col-icon {
       width: 1%;
       white-space: nowrap;
-      padding-right: 0; } }
+      padding-right: 0; }
+      @supports ((display: -webkit-flex) or (display: -ms-flexbox) or (display: flex)) {
+        /* line 63, /www/sites/HbgPrime/wwwroot/source/sass/mixin/_grid.scss */
+        .grid-table-xs .grid-col-icon {
+          display: block;
+          -webkit-flex: 0 0 auto;
+              -ms-flex: 0 0 auto;
+                  flex: 0 0 auto;
+          min-width: 40px; } } }
 
 @media (min-width: 469px) {
   /* line 216, /www/sites/HbgPrime/wwwroot/source/sass/layout/_grid.scss */
@@ -616,19 +638,30 @@ b {
       @supports ((display: -webkit-flex) or (display: -ms-flexbox) or (display: flex)) {
         /* line 44, /www/sites/HbgPrime/wwwroot/source/sass/mixin/_grid.scss */
         .grid-table-sm [class*="grid-"] {
-          display: block; } }
-    /* line 53, /www/sites/HbgPrime/wwwroot/source/sass/mixin/_grid.scss */
+          display: block;
+          -webkit-flex: 1 1 auto;
+              -ms-flex: 1 1 auto;
+                  flex: 1 1 auto; } }
+    /* line 54, /www/sites/HbgPrime/wwwroot/source/sass/mixin/_grid.scss */
     .grid-table-sm.no-padding {
       padding-left: 0;
       padding-right: 0; }
-      /* line 57, /www/sites/HbgPrime/wwwroot/source/sass/mixin/_grid.scss */
+      /* line 58, /www/sites/HbgPrime/wwwroot/source/sass/mixin/_grid.scss */
       .grid-table-sm.no-padding [class*="grid-"] {
         padding: 0; }
-    /* line 62, /www/sites/HbgPrime/wwwroot/source/sass/mixin/_grid.scss */
+    /* line 63, /www/sites/HbgPrime/wwwroot/source/sass/mixin/_grid.scss */
     .grid-table-sm .grid-col-icon {
       width: 1%;
       white-space: nowrap;
-      padding-right: 0; } }
+      padding-right: 0; }
+      @supports ((display: -webkit-flex) or (display: -ms-flexbox) or (display: flex)) {
+        /* line 63, /www/sites/HbgPrime/wwwroot/source/sass/mixin/_grid.scss */
+        .grid-table-sm .grid-col-icon {
+          display: block;
+          -webkit-flex: 0 0 auto;
+              -ms-flex: 0 0 auto;
+                  flex: 0 0 auto;
+          min-width: 40px; } } }
 
 @media (min-width: 769px) {
   /* line 222, /www/sites/HbgPrime/wwwroot/source/sass/layout/_grid.scss */
@@ -661,19 +694,30 @@ b {
       @supports ((display: -webkit-flex) or (display: -ms-flexbox) or (display: flex)) {
         /* line 44, /www/sites/HbgPrime/wwwroot/source/sass/mixin/_grid.scss */
         .grid-table-md [class*="grid-"] {
-          display: block; } }
-    /* line 53, /www/sites/HbgPrime/wwwroot/source/sass/mixin/_grid.scss */
+          display: block;
+          -webkit-flex: 1 1 auto;
+              -ms-flex: 1 1 auto;
+                  flex: 1 1 auto; } }
+    /* line 54, /www/sites/HbgPrime/wwwroot/source/sass/mixin/_grid.scss */
     .grid-table-md.no-padding {
       padding-left: 0;
       padding-right: 0; }
-      /* line 57, /www/sites/HbgPrime/wwwroot/source/sass/mixin/_grid.scss */
+      /* line 58, /www/sites/HbgPrime/wwwroot/source/sass/mixin/_grid.scss */
       .grid-table-md.no-padding [class*="grid-"] {
         padding: 0; }
-    /* line 62, /www/sites/HbgPrime/wwwroot/source/sass/mixin/_grid.scss */
+    /* line 63, /www/sites/HbgPrime/wwwroot/source/sass/mixin/_grid.scss */
     .grid-table-md .grid-col-icon {
       width: 1%;
       white-space: nowrap;
-      padding-right: 0; } }
+      padding-right: 0; }
+      @supports ((display: -webkit-flex) or (display: -ms-flexbox) or (display: flex)) {
+        /* line 63, /www/sites/HbgPrime/wwwroot/source/sass/mixin/_grid.scss */
+        .grid-table-md .grid-col-icon {
+          display: block;
+          -webkit-flex: 0 0 auto;
+              -ms-flex: 0 0 auto;
+                  flex: 0 0 auto;
+          min-width: 40px; } } }
 
 @media (min-width: 961px) {
   /* line 228, /www/sites/HbgPrime/wwwroot/source/sass/layout/_grid.scss */
@@ -706,19 +750,30 @@ b {
       @supports ((display: -webkit-flex) or (display: -ms-flexbox) or (display: flex)) {
         /* line 44, /www/sites/HbgPrime/wwwroot/source/sass/mixin/_grid.scss */
         .grid-table-lg [class*="grid-"] {
-          display: block; } }
-    /* line 53, /www/sites/HbgPrime/wwwroot/source/sass/mixin/_grid.scss */
+          display: block;
+          -webkit-flex: 1 1 auto;
+              -ms-flex: 1 1 auto;
+                  flex: 1 1 auto; } }
+    /* line 54, /www/sites/HbgPrime/wwwroot/source/sass/mixin/_grid.scss */
     .grid-table-lg.no-padding {
       padding-left: 0;
       padding-right: 0; }
-      /* line 57, /www/sites/HbgPrime/wwwroot/source/sass/mixin/_grid.scss */
+      /* line 58, /www/sites/HbgPrime/wwwroot/source/sass/mixin/_grid.scss */
       .grid-table-lg.no-padding [class*="grid-"] {
         padding: 0; }
-    /* line 62, /www/sites/HbgPrime/wwwroot/source/sass/mixin/_grid.scss */
+    /* line 63, /www/sites/HbgPrime/wwwroot/source/sass/mixin/_grid.scss */
     .grid-table-lg .grid-col-icon {
       width: 1%;
       white-space: nowrap;
-      padding-right: 0; } }
+      padding-right: 0; }
+      @supports ((display: -webkit-flex) or (display: -ms-flexbox) or (display: flex)) {
+        /* line 63, /www/sites/HbgPrime/wwwroot/source/sass/mixin/_grid.scss */
+        .grid-table-lg .grid-col-icon {
+          display: block;
+          -webkit-flex: 0 0 auto;
+              -ms-flex: 0 0 auto;
+                  flex: 0 0 auto;
+          min-width: 40px; } } }
 
 /* line 236, /www/sites/HbgPrime/wwwroot/source/sass/layout/_grid.scss */
 .grid-example [class*="grid-"] {
