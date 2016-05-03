@@ -4852,6 +4852,14 @@ input[type="button"].btn::-moz-focus-inner {
   font-size: .9em; }
 
 /* line 47, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_box.scss */
+.box-content img, [class^="widget_"]:not(.widget_calendar) *:not(.main-fotter) .textwidget img,
+[class^="widget_"]:not(.widget_calendar) *:not(.main-fotter) form img, .sidebar-left-sidebar .widget_nav_menu > div img,
+.sidebar-right-sidebar .widget_nav_menu > div img, .sidebar-left-sidebar .widget_text .textwidget img,
+.sidebar-right-sidebar .widget_text .textwidget img {
+  max-width: 100%;
+  height: auto; }
+
+/* line 52, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_box.scss */
 .creamy .box-content, .creamy [class^="widget_"]:not(.widget_calendar) *:not(.main-fotter) .textwidget, [class^="widget_"]:not(.widget_calendar) *:not(.main-fotter) .creamy .textwidget, .creamy
 [class^="widget_"]:not(.widget_calendar) *:not(.main-fotter) form,
 [class^="widget_"]:not(.widget_calendar) *:not(.main-fotter) .creamy form, .creamy .sidebar-left-sidebar .widget_nav_menu > div, .sidebar-left-sidebar .creamy .widget_nav_menu > div, .creamy
@@ -4861,7 +4869,7 @@ input[type="button"].btn::-moz-focus-inner {
 .sidebar-right-sidebar .widget_text .creamy .textwidget {
   background-color: #fff; }
 
-/* line 51, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_box.scss */
+/* line 56, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_box.scss */
 .box-image {
   width: 100%; }
 
@@ -5035,8 +5043,9 @@ a.box-index {
   .sidebar-right-sidebar [class*="grid-"]:nth-child(5n + 5) .box-filled a,
   .sidebar-left-sidebar [class*="grid-"]:nth-child(5n + 5) .box-filled a, .sidebar-left-sidebar [class^="widget_"]:not(.widget_calendar) a,
   .sidebar-right-sidebar [class^="widget_"]:not(.widget_calendar) a {
-    color: #fff; }
-  /* line 58, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_filled.scss */
+    color: #fff;
+    text-decoration: underline; }
+  /* line 59, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_filled.scss */
   .theme-red .box-filled, .theme-red .box-filled-1, .theme-red
   .sidebar-right-sidebar [class*="grid-"]:nth-child(5n + 1) .box-filled,
   .sidebar-right-sidebar [class*="grid-"]:nth-child(5n + 1) .theme-red .box-filled, .theme-red
@@ -5061,7 +5070,7 @@ a.box-index {
   .sidebar-right-sidebar [class^="widget_"]:not(.widget_calendar),
   .sidebar-right-sidebar .theme-red [class^="widget_"]:not(.widget_calendar) {
     background-color: #cb0050; }
-  /* line 58, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_filled.scss */
+  /* line 59, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_filled.scss */
   .theme-blue .box-filled, .theme-blue .box-filled-1, .theme-blue
   .sidebar-right-sidebar [class*="grid-"]:nth-child(5n + 1) .box-filled,
   .sidebar-right-sidebar [class*="grid-"]:nth-child(5n + 1) .theme-blue .box-filled, .theme-blue
@@ -5086,7 +5095,7 @@ a.box-index {
   .sidebar-right-sidebar [class^="widget_"]:not(.widget_calendar),
   .sidebar-right-sidebar .theme-blue [class^="widget_"]:not(.widget_calendar) {
     background-color: #0069b4; }
-  /* line 58, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_filled.scss */
+  /* line 59, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_filled.scss */
   .theme-green .box-filled, .theme-green .box-filled-1, .theme-green
   .sidebar-right-sidebar [class*="grid-"]:nth-child(5n + 1) .box-filled,
   .sidebar-right-sidebar [class*="grid-"]:nth-child(5n + 1) .theme-green .box-filled, .theme-green
@@ -5111,7 +5120,7 @@ a.box-index {
   .sidebar-right-sidebar [class^="widget_"]:not(.widget_calendar),
   .sidebar-right-sidebar .theme-green [class^="widget_"]:not(.widget_calendar) {
     background-color: #11a636; }
-  /* line 58, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_filled.scss */
+  /* line 59, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_filled.scss */
   .theme-purple .box-filled, .theme-purple .box-filled-1, .theme-purple
   .sidebar-right-sidebar [class*="grid-"]:nth-child(5n + 1) .box-filled,
   .sidebar-right-sidebar [class*="grid-"]:nth-child(5n + 1) .theme-purple .box-filled, .theme-purple
@@ -5137,7 +5146,7 @@ a.box-index {
   .sidebar-right-sidebar .theme-purple [class^="widget_"]:not(.widget_calendar) {
     background-color: #712082; }
 
-/* line 73, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_filled.scss */
+/* line 74, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_filled.scss */
 .theme-red .box-filled-1, .theme-red
 .sidebar-right-sidebar [class*="grid-"]:nth-child(5n + 1) .box-filled-1, .theme-red
 .sidebar-right-sidebar [class*="grid-"]:nth-child(5n + 1) .box-filled, .theme-red
@@ -5154,7 +5163,7 @@ a.box-index {
 .sidebar-left-sidebar [class*="grid-"]:nth-child(5n + 1) .box-filled-5, .theme-red .sidebar-left-sidebar [class*="grid-"]:nth-child(5n + 1) [class^="widget_"]:not(.widget_calendar) {
   background-color: #ae0b05; }
 
-/* line 73, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_filled.scss */
+/* line 74, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_filled.scss */
 .theme-blue .box-filled-1, .theme-blue
 .sidebar-right-sidebar [class*="grid-"]:nth-child(5n + 1) .box-filled-1, .theme-blue
 .sidebar-right-sidebar [class*="grid-"]:nth-child(5n + 1) .box-filled, .theme-blue
@@ -5171,7 +5180,7 @@ a.box-index {
 .sidebar-left-sidebar [class*="grid-"]:nth-child(5n + 1) .box-filled-5, .theme-blue .sidebar-left-sidebar [class*="grid-"]:nth-child(5n + 1) [class^="widget_"]:not(.widget_calendar) {
   background-color: #005c86; }
 
-/* line 73, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_filled.scss */
+/* line 74, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_filled.scss */
 .theme-green .box-filled-1, .theme-green
 .sidebar-right-sidebar [class*="grid-"]:nth-child(5n + 1) .box-filled-1, .theme-green
 .sidebar-right-sidebar [class*="grid-"]:nth-child(5n + 1) .box-filled, .theme-green
@@ -5188,7 +5197,7 @@ a.box-index {
 .sidebar-left-sidebar [class*="grid-"]:nth-child(5n + 1) .box-filled-5, .theme-green .sidebar-left-sidebar [class*="grid-"]:nth-child(5n + 1) [class^="widget_"]:not(.widget_calendar) {
   background-color: #50811b; }
 
-/* line 73, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_filled.scss */
+/* line 74, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_filled.scss */
 .theme-purple .box-filled-1, .theme-purple
 .sidebar-right-sidebar [class*="grid-"]:nth-child(5n + 1) .box-filled-1, .theme-purple
 .sidebar-right-sidebar [class*="grid-"]:nth-child(5n + 1) .box-filled, .theme-purple
@@ -5205,7 +5214,7 @@ a.box-index {
 .sidebar-left-sidebar [class*="grid-"]:nth-child(5n + 1) .box-filled-5, .theme-purple .sidebar-left-sidebar [class*="grid-"]:nth-child(5n + 1) [class^="widget_"]:not(.widget_calendar) {
   background-color: #a84c98; }
 
-/* line 88, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_filled.scss */
+/* line 89, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_filled.scss */
 .theme-red .box-filled-2, .theme-red
 .sidebar-right-sidebar [class*="grid-"]:nth-child(5n + 2) .box-filled-1, .theme-red
 .sidebar-right-sidebar [class*="grid-"]:nth-child(5n + 2) .box-filled-2, .theme-red
@@ -5222,7 +5231,7 @@ a.box-index {
 .sidebar-left-sidebar [class*="grid-"]:nth-child(5n + 2) .box-filled-5, .theme-red .sidebar-left-sidebar [class*="grid-"]:nth-child(5n + 2) [class^="widget_"]:not(.widget_calendar) {
   background-color: #cb0050; }
 
-/* line 88, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_filled.scss */
+/* line 89, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_filled.scss */
 .theme-blue .box-filled-2, .theme-blue
 .sidebar-right-sidebar [class*="grid-"]:nth-child(5n + 2) .box-filled-1, .theme-blue
 .sidebar-right-sidebar [class*="grid-"]:nth-child(5n + 2) .box-filled-2, .theme-blue
@@ -5239,7 +5248,7 @@ a.box-index {
 .sidebar-left-sidebar [class*="grid-"]:nth-child(5n + 2) .box-filled-5, .theme-blue .sidebar-left-sidebar [class*="grid-"]:nth-child(5n + 2) [class^="widget_"]:not(.widget_calendar) {
   background-color: #0069b4; }
 
-/* line 88, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_filled.scss */
+/* line 89, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_filled.scss */
 .theme-green .box-filled-2, .theme-green
 .sidebar-right-sidebar [class*="grid-"]:nth-child(5n + 2) .box-filled-1, .theme-green
 .sidebar-right-sidebar [class*="grid-"]:nth-child(5n + 2) .box-filled-2, .theme-green
@@ -5256,7 +5265,7 @@ a.box-index {
 .sidebar-left-sidebar [class*="grid-"]:nth-child(5n + 2) .box-filled-5, .theme-green .sidebar-left-sidebar [class*="grid-"]:nth-child(5n + 2) [class^="widget_"]:not(.widget_calendar) {
   background-color: #50811b; }
 
-/* line 88, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_filled.scss */
+/* line 89, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_filled.scss */
 .theme-purple .box-filled-2, .theme-purple
 .sidebar-right-sidebar [class*="grid-"]:nth-child(5n + 2) .box-filled-1, .theme-purple
 .sidebar-right-sidebar [class*="grid-"]:nth-child(5n + 2) .box-filled-2, .theme-purple
@@ -5273,7 +5282,7 @@ a.box-index {
 .sidebar-left-sidebar [class*="grid-"]:nth-child(5n + 2) .box-filled-5, .theme-purple .sidebar-left-sidebar [class*="grid-"]:nth-child(5n + 2) [class^="widget_"]:not(.widget_calendar) {
   background-color: #712082; }
 
-/* line 103, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_filled.scss */
+/* line 104, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_filled.scss */
 .theme-red .box-filled-3, .theme-red
 .sidebar-right-sidebar [class*="grid-"]:nth-child(5n + 3) .box-filled-1, .theme-red
 .sidebar-right-sidebar [class*="grid-"]:nth-child(5n + 3) .box-filled-2, .theme-red
@@ -5290,7 +5299,7 @@ a.box-index {
 .sidebar-left-sidebar [class*="grid-"]:nth-child(5n + 3) .box-filled-5, .theme-red .sidebar-left-sidebar [class*="grid-"]:nth-child(5n + 3) [class^="widget_"]:not(.widget_calendar) {
   background-color: #e3000f; }
 
-/* line 103, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_filled.scss */
+/* line 104, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_filled.scss */
 .theme-blue .box-filled-3, .theme-blue
 .sidebar-right-sidebar [class*="grid-"]:nth-child(5n + 3) .box-filled-1, .theme-blue
 .sidebar-right-sidebar [class*="grid-"]:nth-child(5n + 3) .box-filled-2, .theme-blue
@@ -5307,7 +5316,7 @@ a.box-index {
 .sidebar-left-sidebar [class*="grid-"]:nth-child(5n + 3) .box-filled-5, .theme-blue .sidebar-left-sidebar [class*="grid-"]:nth-child(5n + 3) [class^="widget_"]:not(.widget_calendar) {
   background-color: #005c86; }
 
-/* line 103, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_filled.scss */
+/* line 104, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_filled.scss */
 .theme-green .box-filled-3, .theme-green
 .sidebar-right-sidebar [class*="grid-"]:nth-child(5n + 3) .box-filled-1, .theme-green
 .sidebar-right-sidebar [class*="grid-"]:nth-child(5n + 3) .box-filled-2, .theme-green
@@ -5324,7 +5333,7 @@ a.box-index {
 .sidebar-left-sidebar [class*="grid-"]:nth-child(5n + 3) .box-filled-5, .theme-green .sidebar-left-sidebar [class*="grid-"]:nth-child(5n + 3) [class^="widget_"]:not(.widget_calendar) {
   background-color: #50811b; }
 
-/* line 103, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_filled.scss */
+/* line 104, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_filled.scss */
 .theme-purple .box-filled-3, .theme-purple
 .sidebar-right-sidebar [class*="grid-"]:nth-child(5n + 3) .box-filled-1, .theme-purple
 .sidebar-right-sidebar [class*="grid-"]:nth-child(5n + 3) .box-filled-2, .theme-purple
@@ -5341,7 +5350,7 @@ a.box-index {
 .sidebar-left-sidebar [class*="grid-"]:nth-child(5n + 3) .box-filled-5, .theme-purple .sidebar-left-sidebar [class*="grid-"]:nth-child(5n + 3) [class^="widget_"]:not(.widget_calendar) {
   background-color: #a84c98; }
 
-/* line 118, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_filled.scss */
+/* line 119, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_filled.scss */
 .theme-red .box-filled-4, .theme-red
 .sidebar-right-sidebar [class*="grid-"]:nth-child(5n + 4) .box-filled-1, .theme-red
 .sidebar-right-sidebar [class*="grid-"]:nth-child(5n + 4) .box-filled-2, .theme-red
@@ -5358,7 +5367,7 @@ a.box-index {
 .sidebar-left-sidebar [class*="grid-"]:nth-child(5n + 4) .box-filled-5, .theme-red .sidebar-left-sidebar [class*="grid-"]:nth-child(5n + 4) [class^="widget_"]:not(.widget_calendar) {
   background-color: #ae0b05; }
 
-/* line 118, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_filled.scss */
+/* line 119, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_filled.scss */
 .theme-blue .box-filled-4, .theme-blue
 .sidebar-right-sidebar [class*="grid-"]:nth-child(5n + 4) .box-filled-1, .theme-blue
 .sidebar-right-sidebar [class*="grid-"]:nth-child(5n + 4) .box-filled-2, .theme-blue
@@ -5375,7 +5384,7 @@ a.box-index {
 .sidebar-left-sidebar [class*="grid-"]:nth-child(5n + 4) .box-filled-5, .theme-blue .sidebar-left-sidebar [class*="grid-"]:nth-child(5n + 4) [class^="widget_"]:not(.widget_calendar) {
   background-color: #005c86; }
 
-/* line 118, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_filled.scss */
+/* line 119, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_filled.scss */
 .theme-green .box-filled-4, .theme-green
 .sidebar-right-sidebar [class*="grid-"]:nth-child(5n + 4) .box-filled-1, .theme-green
 .sidebar-right-sidebar [class*="grid-"]:nth-child(5n + 4) .box-filled-2, .theme-green
@@ -5392,7 +5401,7 @@ a.box-index {
 .sidebar-left-sidebar [class*="grid-"]:nth-child(5n + 4) .box-filled-5, .theme-green .sidebar-left-sidebar [class*="grid-"]:nth-child(5n + 4) [class^="widget_"]:not(.widget_calendar) {
   background-color: #50811b; }
 
-/* line 118, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_filled.scss */
+/* line 119, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_filled.scss */
 .theme-purple .box-filled-4, .theme-purple
 .sidebar-right-sidebar [class*="grid-"]:nth-child(5n + 4) .box-filled-1, .theme-purple
 .sidebar-right-sidebar [class*="grid-"]:nth-child(5n + 4) .box-filled-2, .theme-purple
@@ -5409,7 +5418,7 @@ a.box-index {
 .sidebar-left-sidebar [class*="grid-"]:nth-child(5n + 4) .box-filled-5, .theme-purple .sidebar-left-sidebar [class*="grid-"]:nth-child(5n + 4) [class^="widget_"]:not(.widget_calendar) {
   background-color: #7b075e; }
 
-/* line 133, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_filled.scss */
+/* line 134, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_filled.scss */
 .theme-red .box-filled-5, .theme-red
 .sidebar-right-sidebar [class*="grid-"]:nth-child(5n + 5) .box-filled-1, .theme-red
 .sidebar-right-sidebar [class*="grid-"]:nth-child(5n + 5) .box-filled-2, .theme-red
@@ -5426,7 +5435,7 @@ a.box-index {
 .sidebar-left-sidebar [class*="grid-"]:nth-child(5n + 5) .box-filled, .theme-red .sidebar-left-sidebar [class*="grid-"]:nth-child(5n + 5) [class^="widget_"]:not(.widget_calendar) {
   background-color: #e3000f; }
 
-/* line 133, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_filled.scss */
+/* line 134, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_filled.scss */
 .theme-blue .box-filled-5, .theme-blue
 .sidebar-right-sidebar [class*="grid-"]:nth-child(5n + 5) .box-filled-1, .theme-blue
 .sidebar-right-sidebar [class*="grid-"]:nth-child(5n + 5) .box-filled-2, .theme-blue
@@ -5443,7 +5452,7 @@ a.box-index {
 .sidebar-left-sidebar [class*="grid-"]:nth-child(5n + 5) .box-filled, .theme-blue .sidebar-left-sidebar [class*="grid-"]:nth-child(5n + 5) [class^="widget_"]:not(.widget_calendar) {
   background-color: #0069b4; }
 
-/* line 133, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_filled.scss */
+/* line 134, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_filled.scss */
 .theme-green .box-filled-5, .theme-green
 .sidebar-right-sidebar [class*="grid-"]:nth-child(5n + 5) .box-filled-1, .theme-green
 .sidebar-right-sidebar [class*="grid-"]:nth-child(5n + 5) .box-filled-2, .theme-green
@@ -5460,7 +5469,7 @@ a.box-index {
 .sidebar-left-sidebar [class*="grid-"]:nth-child(5n + 5) .box-filled, .theme-green .sidebar-left-sidebar [class*="grid-"]:nth-child(5n + 5) [class^="widget_"]:not(.widget_calendar) {
   background-color: #50811b; }
 
-/* line 133, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_filled.scss */
+/* line 134, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_filled.scss */
 .theme-purple .box-filled-5, .theme-purple
 .sidebar-right-sidebar [class*="grid-"]:nth-child(5n + 5) .box-filled-1, .theme-purple
 .sidebar-right-sidebar [class*="grid-"]:nth-child(5n + 5) .box-filled-2, .theme-purple
@@ -8396,10 +8405,11 @@ small,
 .widget_recent_comments a,
 .sidebar-right-sidebar
 .widget_recent_comments a {
+  display: inline-block;
   position: relative;
   left: 20px;
   padding-right: 20px; }
-  /* line 34, /www/sites/HbgPrime/wwwroot/source/sass/utility/_link-item.scss */
+  /* line 35, /www/sites/HbgPrime/wwwroot/source/sass/utility/_link-item.scss */
   .link-item::before, .sidebar-left-sidebar .widget_archive a::before,
   .sidebar-right-sidebar .widget_archive a::before, .sidebar-left-sidebar
   .widget_categories a::before,
@@ -8431,7 +8441,7 @@ small,
     text-decoration: none; }
 
 /* External */
-/* line 47, /www/sites/HbgPrime/wwwroot/source/sass/utility/_link-item.scss */
+/* line 48, /www/sites/HbgPrime/wwwroot/source/sass/utility/_link-item.scss */
 .link-item-outbound::before {
   font-family: FontAwesome;
   speak: none;
@@ -8445,7 +8455,7 @@ small,
   -moz-osx-font-smoothing: grayscale; }
 
 /* Domains */
-/* line 56, /www/sites/HbgPrime/wwwroot/source/sass/utility/_link-item.scss */
+/* line 57, /www/sites/HbgPrime/wwwroot/source/sass/utility/_link-item.scss */
 .link-item-github::before,
 .link-item[href*="github.com"]::before,
 .sidebar-left-sidebar .widget_archive a[href*="github.com"]::before,
@@ -8478,7 +8488,7 @@ small,
   -moz-osx-font-smoothing: grayscale; }
 
 /* Filetypes */
-/* line 65, /www/sites/HbgPrime/wwwroot/source/sass/utility/_link-item.scss */
+/* line 66, /www/sites/HbgPrime/wwwroot/source/sass/utility/_link-item.scss */
 .link-item-pdf::before,
 .link-item[href$=".pdf"]::before,
 .sidebar-left-sidebar .widget_archive a[href$=".pdf"]::before,
@@ -8510,7 +8520,7 @@ small,
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
 
-/* line 73, /www/sites/HbgPrime/wwwroot/source/sass/utility/_link-item.scss */
+/* line 74, /www/sites/HbgPrime/wwwroot/source/sass/utility/_link-item.scss */
 .link-item-doc::before,
 .link-item[href$=".doc"]::before,
 .sidebar-left-sidebar .widget_archive a[href$=".doc"]::before,
@@ -8561,7 +8571,7 @@ small,
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
 
-/* line 81, /www/sites/HbgPrime/wwwroot/source/sass/utility/_link-item.scss */
+/* line 82, /www/sites/HbgPrime/wwwroot/source/sass/utility/_link-item.scss */
 .link-item-ppt::before,
 .link-item[href$=".ppt"]::before,
 .sidebar-left-sidebar .widget_archive a[href$=".ppt"]::before,
@@ -8612,7 +8622,7 @@ small,
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
 
-/* line 89, /www/sites/HbgPrime/wwwroot/source/sass/utility/_link-item.scss */
+/* line 90, /www/sites/HbgPrime/wwwroot/source/sass/utility/_link-item.scss */
 .link-item-xls::before,
 .link-item[href$=".xls"]::before,
 .sidebar-left-sidebar .widget_archive a[href$=".xls"]::before,
@@ -8663,7 +8673,7 @@ small,
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
 
-/* line 97, /www/sites/HbgPrime/wwwroot/source/sass/utility/_link-item.scss */
+/* line 98, /www/sites/HbgPrime/wwwroot/source/sass/utility/_link-item.scss */
 .link-item-audio::before,
 .link-item[href$=".mp3"]::before,
 .sidebar-left-sidebar .widget_archive a[href$=".mp3"]::before,
@@ -8714,7 +8724,7 @@ small,
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
 
-/* line 106, /www/sites/HbgPrime/wwwroot/source/sass/utility/_link-item.scss */
+/* line 107, /www/sites/HbgPrime/wwwroot/source/sass/utility/_link-item.scss */
 .link-item-archive::before,
 .link-item[href$=".zip"]::before,
 .sidebar-left-sidebar .widget_archive a[href$=".zip"]::before,
@@ -8784,7 +8794,7 @@ small,
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
 
-/* line 119, /www/sites/HbgPrime/wwwroot/source/sass/utility/_link-item.scss */
+/* line 120, /www/sites/HbgPrime/wwwroot/source/sass/utility/_link-item.scss */
 .link-item-image::before,
 .link-item[href$=".jpg"]::before,
 .sidebar-left-sidebar .widget_archive a[href$=".jpg"]::before,
@@ -8930,7 +8940,7 @@ small,
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
 
-/* line 129, /www/sites/HbgPrime/wwwroot/source/sass/utility/_link-item.scss */
+/* line 130, /www/sites/HbgPrime/wwwroot/source/sass/utility/_link-item.scss */
 .link-item-text::before,
 .link-item[href$=".txt"]::before,
 .sidebar-left-sidebar .widget_archive a[href$=".txt"]::before,
@@ -9019,7 +9029,7 @@ small,
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
 
-/* line 147, /www/sites/HbgPrime/wwwroot/source/sass/utility/_link-item.scss */
+/* line 148, /www/sites/HbgPrime/wwwroot/source/sass/utility/_link-item.scss */
 .link-item-video::before,
 .link-item[href$=".mpg"]::before,
 .sidebar-left-sidebar .widget_archive a[href$=".mpg"]::before,
@@ -9260,7 +9270,7 @@ small,
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
 
-/* line 153, /www/sites/HbgPrime/wwwroot/source/sass/utility/_link-item.scss */
+/* line 154, /www/sites/HbgPrime/wwwroot/source/sass/utility/_link-item.scss */
 .link-item-light::before, .sidebar-left-sidebar .widget_archive a::before,
 .sidebar-right-sidebar .widget_archive a::before, .sidebar-left-sidebar
 .widget_categories a::before,
@@ -9278,7 +9288,7 @@ small,
   color: rgba(255, 255, 255, 0.7); }
 
 /* Prefixes (links only) */
-/* line 160, /www/sites/HbgPrime/wwwroot/source/sass/utility/_link-item.scss */
+/* line 161, /www/sites/HbgPrime/wwwroot/source/sass/utility/_link-item.scss */
 .link-item[href^='tel:']::before, .sidebar-left-sidebar .widget_archive a[href^='tel:']::before,
 .sidebar-right-sidebar .widget_archive a[href^='tel:']::before, .sidebar-left-sidebar
 .widget_categories a[href^='tel:']::before,
@@ -9304,7 +9314,7 @@ small,
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
 
-/* line 166, /www/sites/HbgPrime/wwwroot/source/sass/utility/_link-item.scss */
+/* line 167, /www/sites/HbgPrime/wwwroot/source/sass/utility/_link-item.scss */
 .link-item[href^='mailto:']::before, .sidebar-left-sidebar .widget_archive a[href^='mailto:']::before,
 .sidebar-right-sidebar .widget_archive a[href^='mailto:']::before, .sidebar-left-sidebar
 .widget_categories a[href^='mailto:']::before,
@@ -9695,16 +9705,16 @@ div.aligncenter {
 /* line 25, /www/sites/HbgPrime/wwwroot/source/sass/utility/_wp.scss */
 a img.alignright {
   float: right;
-  margin: 5px 0 20px 20px; }
+  margin: 5px 0 5px 20px; }
 
 /* line 30, /www/sites/HbgPrime/wwwroot/source/sass/utility/_wp.scss */
 a img.alignnone {
-  margin: 5px 20px 20px 0; }
+  margin: 0; }
 
 /* line 34, /www/sites/HbgPrime/wwwroot/source/sass/utility/_wp.scss */
 a img.alignleft {
   float: left;
-  margin: 5px 20px 20px 0; }
+  margin: 5px 20px 5px 0; }
 
 /* line 39, /www/sites/HbgPrime/wwwroot/source/sass/utility/_wp.scss */
 a img.aligncenter {
