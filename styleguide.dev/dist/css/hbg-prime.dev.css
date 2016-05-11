@@ -3920,6 +3920,11 @@ section + section {
   display: table;
   clear: both; }
 
+@media (max-width: 961px) {
+  /* line 2, /www/sites/HbgPrime/wwwroot/source/sass/layout/_sidebars.scss */
+  .sidebar-right-sidebar.grid-md-12 {
+    margin-top: 30px; } }
+
 @media print {
   /* line 2, /www/sites/HbgPrime/wwwroot/source/sass/layout/_print.scss */
   iframe,
@@ -5334,6 +5339,14 @@ input[type="button"].btn::-moz-focus-inner {
       .nav-mobile a:hover {
         color: #7b075e; }
   /* line 72, /www/sites/HbgPrime/wwwroot/source/sass/component/navigation/_nav.scss */
+  .nav-aside .has-children a,
+  .nav-aside .page_item_has_children a,
+  .nav-aside .menu-item-has-children a,
+  .nav-mobile .has-children a,
+  .nav-mobile .page_item_has_children a,
+  .nav-mobile .menu-item-has-children a {
+    padding-right: 33px; }
+  /* line 76, /www/sites/HbgPrime/wwwroot/source/sass/component/navigation/_nav.scss */
   .nav-aside .has-children > a::after,
   .nav-aside .page_item_has_children > a::after,
   .nav-aside .menu-item-has-children > a::after,
@@ -5355,7 +5368,7 @@ input[type="button"].btn::-moz-focus-inner {
     -moz-osx-font-smoothing: grayscale;
     font-size: 1em;
     color: #7f7f7f; }
-  /* line 88, /www/sites/HbgPrime/wwwroot/source/sass/component/navigation/_nav.scss */
+  /* line 92, /www/sites/HbgPrime/wwwroot/source/sass/component/navigation/_nav.scss */
   .nav-aside .has-children.current > a::after,
   .nav-aside .has-children.current-node > a::after,
   .nav-aside .has-children.current-ancestor > a::after,
@@ -5381,7 +5394,7 @@ input[type="button"].btn::-moz-focus-inner {
     -moz-osx-font-smoothing: grayscale;
     font-size: 1em;
     color: #7f7f7f; }
-  /* line 97, /www/sites/HbgPrime/wwwroot/source/sass/component/navigation/_nav.scss */
+  /* line 101, /www/sites/HbgPrime/wwwroot/source/sass/component/navigation/_nav.scss */
   .nav-aside .has-children.current > .sub-menu,
   .nav-aside .has-children.current > .children,
   .nav-aside .has-children.current-node > .sub-menu,
@@ -5403,7 +5416,7 @@ input[type="button"].btn::-moz-focus-inner {
   .nav-mobile .menu-item-has-children.current-menu-ancestor > .sub-menu,
   .nav-mobile .menu-item-has-children.current-menu-ancestor > .children {
     display: block; }
-  /* line 105, /www/sites/HbgPrime/wwwroot/source/sass/component/navigation/_nav.scss */
+  /* line 109, /www/sites/HbgPrime/wwwroot/source/sass/component/navigation/_nav.scss */
   .nav-aside .current,
   .nav-aside .current-node,
   .nav-aside .current-menu-item,
@@ -5411,37 +5424,37 @@ input[type="button"].btn::-moz-focus-inner {
   .nav-mobile .current-node,
   .nav-mobile .current-menu-item {
     background-color: #f6f5f2; }
-  /* line 111, /www/sites/HbgPrime/wwwroot/source/sass/component/navigation/_nav.scss */
+  /* line 115, /www/sites/HbgPrime/wwwroot/source/sass/component/navigation/_nav.scss */
   .nav-aside .current,
   .nav-aside .current-menu-item > a,
   .nav-mobile .current,
   .nav-mobile .current-menu-item > a {
     color: #777; }
-    /* line 118, /www/sites/HbgPrime/wwwroot/source/sass/component/navigation/_nav.scss */
+    /* line 122, /www/sites/HbgPrime/wwwroot/source/sass/component/navigation/_nav.scss */
     .theme-red .nav-aside .current, .theme-red
     .nav-aside .current-menu-item > a, .theme-red
     .nav-mobile .current, .theme-red
     .nav-mobile .current-menu-item > a {
       color: #ae0b05; }
-    /* line 118, /www/sites/HbgPrime/wwwroot/source/sass/component/navigation/_nav.scss */
+    /* line 122, /www/sites/HbgPrime/wwwroot/source/sass/component/navigation/_nav.scss */
     .theme-blue .nav-aside .current, .theme-blue
     .nav-aside .current-menu-item > a, .theme-blue
     .nav-mobile .current, .theme-blue
     .nav-mobile .current-menu-item > a {
       color: #005c86; }
-    /* line 118, /www/sites/HbgPrime/wwwroot/source/sass/component/navigation/_nav.scss */
+    /* line 122, /www/sites/HbgPrime/wwwroot/source/sass/component/navigation/_nav.scss */
     .theme-green .nav-aside .current, .theme-green
     .nav-aside .current-menu-item > a, .theme-green
     .nav-mobile .current, .theme-green
     .nav-mobile .current-menu-item > a {
       color: #50811b; }
-    /* line 118, /www/sites/HbgPrime/wwwroot/source/sass/component/navigation/_nav.scss */
+    /* line 122, /www/sites/HbgPrime/wwwroot/source/sass/component/navigation/_nav.scss */
     .theme-purple .nav-aside .current, .theme-purple
     .nav-aside .current-menu-item > a, .theme-purple
     .nav-mobile .current, .theme-purple
     .nav-mobile .current-menu-item > a {
       color: #7b075e; }
-  /* line 127, /www/sites/HbgPrime/wwwroot/source/sass/component/navigation/_nav.scss */
+  /* line 131, /www/sites/HbgPrime/wwwroot/source/sass/component/navigation/_nav.scss */
   .nav-aside .sub-menu .current > a::before,
   .nav-aside .sub-menu .current-menu-item > a::before,
   .nav-mobile .sub-menu .current > a::before,
@@ -5454,31 +5467,31 @@ input[type="button"].btn::-moz-focus-inner {
     width: 8px;
     display: block;
     background-color: #777; }
-    /* line 140, /www/sites/HbgPrime/wwwroot/source/sass/component/navigation/_nav.scss */
+    /* line 144, /www/sites/HbgPrime/wwwroot/source/sass/component/navigation/_nav.scss */
     .theme-red .nav-aside .sub-menu .current > a::before, .theme-red
     .nav-aside .sub-menu .current-menu-item > a::before, .theme-red
     .nav-mobile .sub-menu .current > a::before, .theme-red
     .nav-mobile .sub-menu .current-menu-item > a::before {
       background-color: #ae0b05; }
-    /* line 140, /www/sites/HbgPrime/wwwroot/source/sass/component/navigation/_nav.scss */
+    /* line 144, /www/sites/HbgPrime/wwwroot/source/sass/component/navigation/_nav.scss */
     .theme-blue .nav-aside .sub-menu .current > a::before, .theme-blue
     .nav-aside .sub-menu .current-menu-item > a::before, .theme-blue
     .nav-mobile .sub-menu .current > a::before, .theme-blue
     .nav-mobile .sub-menu .current-menu-item > a::before {
       background-color: #005c86; }
-    /* line 140, /www/sites/HbgPrime/wwwroot/source/sass/component/navigation/_nav.scss */
+    /* line 144, /www/sites/HbgPrime/wwwroot/source/sass/component/navigation/_nav.scss */
     .theme-green .nav-aside .sub-menu .current > a::before, .theme-green
     .nav-aside .sub-menu .current-menu-item > a::before, .theme-green
     .nav-mobile .sub-menu .current > a::before, .theme-green
     .nav-mobile .sub-menu .current-menu-item > a::before {
       background-color: #50811b; }
-    /* line 140, /www/sites/HbgPrime/wwwroot/source/sass/component/navigation/_nav.scss */
+    /* line 144, /www/sites/HbgPrime/wwwroot/source/sass/component/navigation/_nav.scss */
     .theme-purple .nav-aside .sub-menu .current > a::before, .theme-purple
     .nav-aside .sub-menu .current-menu-item > a::before, .theme-purple
     .nav-mobile .sub-menu .current > a::before, .theme-purple
     .nav-mobile .sub-menu .current-menu-item > a::before {
       background-color: #7b075e; }
-  /* line 149, /www/sites/HbgPrime/wwwroot/source/sass/component/navigation/_nav.scss */
+  /* line 153, /www/sites/HbgPrime/wwwroot/source/sass/component/navigation/_nav.scss */
   .nav-aside .sub-menu,
   .nav-aside .children,
   .nav-mobile .sub-menu,
@@ -5487,11 +5500,11 @@ input[type="button"].btn::-moz-focus-inner {
     border-top: 1px solid #e7e5e1;
     border-left: 8px solid #e7e5e1; }
 
-/* line 157, /www/sites/HbgPrime/wwwroot/source/sass/component/navigation/_nav.scss */
+/* line 161, /www/sites/HbgPrime/wwwroot/source/sass/component/navigation/_nav.scss */
 .nav-aside {
   margin-bottom: 15px; }
 
-/* line 167, /www/sites/HbgPrime/wwwroot/source/sass/component/navigation/_nav.scss */
+/* line 171, /www/sites/HbgPrime/wwwroot/source/sass/component/navigation/_nav.scss */
 .menu-trigger {
   height: inherit;
   cursor: hand;
@@ -5506,11 +5519,11 @@ input[type="button"].btn::-moz-focus-inner {
   opacity: .99;
   transition: 100ms;
   display: inline-block; }
-  /* line 179, /www/sites/HbgPrime/wwwroot/source/sass/component/navigation/_nav.scss */
+  /* line 183, /www/sites/HbgPrime/wwwroot/source/sass/component/navigation/_nav.scss */
   .menu-trigger .menu-icon::before,
   .menu-trigger .menu-icon::after {
     transition: 100ms; }
-  /* line 184, /www/sites/HbgPrime/wwwroot/source/sass/component/navigation/_nav.scss */
+  /* line 188, /www/sites/HbgPrime/wwwroot/source/sass/component/navigation/_nav.scss */
   .menu-trigger .menu-icon {
     display: inline-block;
     vertical-align: middle;
@@ -5521,19 +5534,19 @@ input[type="button"].btn::-moz-focus-inner {
     background-color: #e7e5e1;
     transition: 200ms;
     border-radius: 0; }
-    /* line 198, /www/sites/HbgPrime/wwwroot/source/sass/component/navigation/_nav.scss */
+    /* line 202, /www/sites/HbgPrime/wwwroot/source/sass/component/navigation/_nav.scss */
     .theme-red .menu-trigger .menu-icon {
       background-color: #b0000c; }
-    /* line 198, /www/sites/HbgPrime/wwwroot/source/sass/component/navigation/_nav.scss */
+    /* line 202, /www/sites/HbgPrime/wwwroot/source/sass/component/navigation/_nav.scss */
     .theme-blue .menu-trigger .menu-icon {
       background-color: #0072a8; }
-    /* line 198, /www/sites/HbgPrime/wwwroot/source/sass/component/navigation/_nav.scss */
+    /* line 202, /www/sites/HbgPrime/wwwroot/source/sass/component/navigation/_nav.scss */
     .theme-green .menu-trigger .menu-icon {
       background-color: #5b8e1f; }
-    /* line 198, /www/sites/HbgPrime/wwwroot/source/sass/component/navigation/_nav.scss */
+    /* line 202, /www/sites/HbgPrime/wwwroot/source/sass/component/navigation/_nav.scss */
     .theme-purple .menu-trigger .menu-icon {
       background-color: #780e5d; }
-    /* line 204, /www/sites/HbgPrime/wwwroot/source/sass/component/navigation/_nav.scss */
+    /* line 208, /www/sites/HbgPrime/wwwroot/source/sass/component/navigation/_nav.scss */
     .menu-trigger .menu-icon::before, .menu-trigger .menu-icon::after {
       display: block;
       content: "";
@@ -5544,42 +5557,42 @@ input[type="button"].btn::-moz-focus-inner {
       z-index: -1;
       transition: 200ms 100ms;
       border-radius: 0; }
-      /* line 218, /www/sites/HbgPrime/wwwroot/source/sass/component/navigation/_nav.scss */
+      /* line 222, /www/sites/HbgPrime/wwwroot/source/sass/component/navigation/_nav.scss */
       .theme-red .menu-trigger .menu-icon::before, .theme-red .menu-trigger .menu-icon::after {
         background-color: #b0000c; }
-      /* line 218, /www/sites/HbgPrime/wwwroot/source/sass/component/navigation/_nav.scss */
+      /* line 222, /www/sites/HbgPrime/wwwroot/source/sass/component/navigation/_nav.scss */
       .theme-blue .menu-trigger .menu-icon::before, .theme-blue .menu-trigger .menu-icon::after {
         background-color: #0072a8; }
-      /* line 218, /www/sites/HbgPrime/wwwroot/source/sass/component/navigation/_nav.scss */
+      /* line 222, /www/sites/HbgPrime/wwwroot/source/sass/component/navigation/_nav.scss */
       .theme-green .menu-trigger .menu-icon::before, .theme-green .menu-trigger .menu-icon::after {
         background-color: #5b8e1f; }
-      /* line 218, /www/sites/HbgPrime/wwwroot/source/sass/component/navigation/_nav.scss */
+      /* line 222, /www/sites/HbgPrime/wwwroot/source/sass/component/navigation/_nav.scss */
       .theme-purple .menu-trigger .menu-icon::before, .theme-purple .menu-trigger .menu-icon::after {
         background-color: #780e5d; }
-    /* line 225, /www/sites/HbgPrime/wwwroot/source/sass/component/navigation/_nav.scss */
+    /* line 229, /www/sites/HbgPrime/wwwroot/source/sass/component/navigation/_nav.scss */
     .menu-trigger .menu-icon:before {
       top: 7px; }
-    /* line 226, /www/sites/HbgPrime/wwwroot/source/sass/component/navigation/_nav.scss */
+    /* line 230, /www/sites/HbgPrime/wwwroot/source/sass/component/navigation/_nav.scss */
     .menu-trigger .menu-icon:after {
       top: -7px; }
-  /* line 230, /www/sites/HbgPrime/wwwroot/source/sass/component/navigation/_nav.scss */
+  /* line 234, /www/sites/HbgPrime/wwwroot/source/sass/component/navigation/_nav.scss */
   .menu-trigger:hover, .menu-trigger:focus {
     text-decoration: none; }
-    /* line 234, /www/sites/HbgPrime/wwwroot/source/sass/component/navigation/_nav.scss */
+    /* line 238, /www/sites/HbgPrime/wwwroot/source/sass/component/navigation/_nav.scss */
     .menu-trigger:hover .menu-icon:before, .menu-trigger:focus .menu-icon:before {
       top: 9px; }
-    /* line 235, /www/sites/HbgPrime/wwwroot/source/sass/component/navigation/_nav.scss */
+    /* line 239, /www/sites/HbgPrime/wwwroot/source/sass/component/navigation/_nav.scss */
     .menu-trigger:hover .menu-icon:after, .menu-trigger:focus .menu-icon:after {
       top: -9px; }
-  /* line 241, /www/sites/HbgPrime/wwwroot/source/sass/component/navigation/_nav.scss */
+  /* line 245, /www/sites/HbgPrime/wwwroot/source/sass/component/navigation/_nav.scss */
   .menu-trigger:target .menu-icon, .menu-trigger.open .menu-icon {
     background: transparent; }
-    /* line 244, /www/sites/HbgPrime/wwwroot/source/sass/component/navigation/_nav.scss */
+    /* line 248, /www/sites/HbgPrime/wwwroot/source/sass/component/navigation/_nav.scss */
     .menu-trigger:target .menu-icon:before, .menu-trigger.open .menu-icon:before {
       -webkit-transform: rotate(-45deg);
               transform: rotate(-45deg);
       top: 0 !important; }
-    /* line 249, /www/sites/HbgPrime/wwwroot/source/sass/component/navigation/_nav.scss */
+    /* line 253, /www/sites/HbgPrime/wwwroot/source/sass/component/navigation/_nav.scss */
     .menu-trigger:target .menu-icon:after, .menu-trigger.open .menu-icon:after {
       -webkit-transform: rotate(45deg);
               transform: rotate(45deg);
@@ -5593,31 +5606,31 @@ input[type="button"].btn::-moz-focus-inner {
 	display: block !important;
 }
 */
-/* line 276, /www/sites/HbgPrime/wwwroot/source/sass/component/navigation/_nav.scss */
+/* line 280, /www/sites/HbgPrime/wwwroot/source/sass/component/navigation/_nav.scss */
 .nav-horizontal > li, .nav-left > li, .nav-center > li, .nav-right > li, .share-horizontal > li {
   display: inline-block; }
-  /* line 279, /www/sites/HbgPrime/wwwroot/source/sass/component/navigation/_nav.scss */
+  /* line 283, /www/sites/HbgPrime/wwwroot/source/sass/component/navigation/_nav.scss */
   .nav-horizontal > li + li, .nav-left > li + li, .nav-center > li + li, .nav-right > li + li, .share-horizontal > li + li {
     margin-left: 15px; }
 
-/* line 285, /www/sites/HbgPrime/wwwroot/source/sass/component/navigation/_nav.scss */
+/* line 289, /www/sites/HbgPrime/wwwroot/source/sass/component/navigation/_nav.scss */
 .nav-justify {
   display: table;
   width: 100%; }
-  /* line 289, /www/sites/HbgPrime/wwwroot/source/sass/component/navigation/_nav.scss */
+  /* line 293, /www/sites/HbgPrime/wwwroot/source/sass/component/navigation/_nav.scss */
   .nav-justify > li {
     display: table-cell;
     vertical-align: middle; }
 
-/* line 295, /www/sites/HbgPrime/wwwroot/source/sass/component/navigation/_nav.scss */
+/* line 299, /www/sites/HbgPrime/wwwroot/source/sass/component/navigation/_nav.scss */
 .nav-left {
   text-align: left; }
 
-/* line 300, /www/sites/HbgPrime/wwwroot/source/sass/component/navigation/_nav.scss */
+/* line 304, /www/sites/HbgPrime/wwwroot/source/sass/component/navigation/_nav.scss */
 .nav-center {
   text-align: center; }
 
-/* line 305, /www/sites/HbgPrime/wwwroot/source/sass/component/navigation/_nav.scss */
+/* line 309, /www/sites/HbgPrime/wwwroot/source/sass/component/navigation/_nav.scss */
 .nav-right {
   text-align: right; }
 
@@ -8786,23 +8799,26 @@ a.box-index {
   .box-card h1, .box-card h2, .box-card .widget_calendar caption, .widget_calendar .box-card caption, .box-card h3, .box-card h4, .box-card h5, .box-card h6 {
     padding-bottom: 0; }
   /* line 54, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_card.scss */
+  .box-card a[href^="mailto:"] {
+    word-break: break-all; }
+  /* line 58, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_card.scss */
   .box-card .card-title {
     margin-bottom: 10px; }
-    /* line 57, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_card.scss */
+    /* line 61, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_card.scss */
     .box-card .card-title span {
       display: block; }
-  /* line 62, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_card.scss */
+  /* line 66, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_card.scss */
   .box-card .description {
     margin-top: 10px; }
-  /* line 66, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_card.scss */
+  /* line 70, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_card.scss */
   .box-card.vertical-card {
     overflow: hidden; }
-    /* line 69, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_card.scss */
+    /* line 73, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_card.scss */
     .box-card.vertical-card .box-image {
       float: left;
       width: 180px; }
     @media screen and (min-width: 769px) {
-      /* line 76, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_card.scss */
+      /* line 80, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_card.scss */
       .box-card.vertical-card .box-content, .box-card.vertical-card [class^="widget_"]:not(.widget_calendar) *:not(.main-fotter) .textwidget, [class^="widget_"]:not(.widget_calendar) *:not(.main-fotter) .box-card.vertical-card .textwidget, .box-card.vertical-card
       [class^="widget_"]:not(.widget_calendar) *:not(.main-fotter) form,
       [class^="widget_"]:not(.widget_calendar) *:not(.main-fotter) .box-card.vertical-card form, .box-card.vertical-card .sidebar-left-sidebar .widget_nav_menu > div, .sidebar-left-sidebar .box-card.vertical-card .widget_nav_menu > div, .box-card.vertical-card
@@ -8811,7 +8827,7 @@ a.box-index {
       .sidebar-right-sidebar .widget_text .textwidget,
       .sidebar-right-sidebar .widget_text .box-card.vertical-card .textwidget {
         margin-left: 180px; }
-        /* line 79, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_card.scss */
+        /* line 83, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_card.scss */
         .box-card.vertical-card .box-content ul, .box-card.vertical-card [class^="widget_"]:not(.widget_calendar) *:not(.main-fotter) .textwidget ul, [class^="widget_"]:not(.widget_calendar) *:not(.main-fotter) .box-card.vertical-card .textwidget ul, .box-card.vertical-card
         [class^="widget_"]:not(.widget_calendar) *:not(.main-fotter) form ul,
         [class^="widget_"]:not(.widget_calendar) *:not(.main-fotter) .box-card.vertical-card form ul, .box-card.vertical-card .sidebar-left-sidebar .widget_nav_menu > div ul, .sidebar-left-sidebar .box-card.vertical-card .widget_nav_menu > div ul, .box-card.vertical-card
@@ -8869,10 +8885,10 @@ a.box-index {
         .sidebar-right-sidebar .widget_text .box-card.vertical-card .textwidget h6 {
           padding-left: 10px; } }
   @media screen and (max-width: 769px) {
-    /* line 89, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_card.scss */
+    /* line 93, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_card.scss */
     .box-card .box-image {
       display: none; }
-    /* line 92, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_card.scss */
+    /* line 96, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_card.scss */
     .box-card .box-content, .box-card [class^="widget_"]:not(.widget_calendar) *:not(.main-fotter) .textwidget, [class^="widget_"]:not(.widget_calendar) *:not(.main-fotter) .box-card .textwidget, .box-card
     [class^="widget_"]:not(.widget_calendar) *:not(.main-fotter) form,
     [class^="widget_"]:not(.widget_calendar) *:not(.main-fotter) .box-card form, .box-card .sidebar-left-sidebar .widget_nav_menu > div, .sidebar-left-sidebar .box-card .widget_nav_menu > div, .box-card
@@ -8882,17 +8898,17 @@ a.box-index {
     .sidebar-right-sidebar .widget_text .box-card .textwidget {
       margin-left: 0; } }
 
-/* line 98, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_card.scss */
+/* line 102, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_card.scss */
 .box-card-post {
   position: relative; }
-  /* line 101, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_card.scss */
+  /* line 105, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_card.scss */
   .box-card-post .box-image {
     width: 100%;
     padding-bottom: 75%;
     background-size: cover;
     background-position: center center;
     position: relative; }
-    /* line 108, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_card.scss */
+    /* line 112, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_card.scss */
     .box-card-post .box-image .box-card-post-category {
       display: block;
       position: absolute;
@@ -8900,10 +8916,10 @@ a.box-index {
       left: 0;
       margin-left: 0;
       margin-top: 0; }
-  /* line 118, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_card.scss */
+  /* line 122, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_card.scss */
   .box-card-post .box-image img {
     display: none; }
-  /* line 122, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_card.scss */
+  /* line 126, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_card.scss */
   .box-card-post .box-content, .box-card-post [class^="widget_"]:not(.widget_calendar) *:not(.main-fotter) .textwidget, [class^="widget_"]:not(.widget_calendar) *:not(.main-fotter) .box-card-post .textwidget, .box-card-post
   [class^="widget_"]:not(.widget_calendar) *:not(.main-fotter) form,
   [class^="widget_"]:not(.widget_calendar) *:not(.main-fotter) .box-card-post form, .box-card-post .sidebar-left-sidebar .widget_nav_menu > div, .sidebar-left-sidebar .box-card-post .widget_nav_menu > div, .box-card-post
@@ -8912,7 +8928,7 @@ a.box-index {
   .sidebar-right-sidebar .widget_text .textwidget,
   .sidebar-right-sidebar .widget_text .box-card-post .textwidget {
     color: #252525; }
-  /* line 126, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_card.scss */
+  /* line 130, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_card.scss */
   .box-card-post .box-content time, .box-card-post [class^="widget_"]:not(.widget_calendar) *:not(.main-fotter) .textwidget time, [class^="widget_"]:not(.widget_calendar) *:not(.main-fotter) .box-card-post .textwidget time, .box-card-post
   [class^="widget_"]:not(.widget_calendar) *:not(.main-fotter) form time,
   [class^="widget_"]:not(.widget_calendar) *:not(.main-fotter) .box-card-post form time, .box-card-post .sidebar-left-sidebar .widget_nav_menu > div time, .sidebar-left-sidebar .box-card-post .widget_nav_menu > div time, .box-card-post
@@ -8922,25 +8938,25 @@ a.box-index {
   .sidebar-right-sidebar .widget_text .box-card-post .textwidget time {
     display: block;
     margin-bottom: 10px; }
-  /* line 131, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_card.scss */
+  /* line 135, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_card.scss */
   .box-card-post.box-card-post-equal {
     width: 100%;
     padding-bottom: 150%;
     overflow: hidden; }
-    /* line 136, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_card.scss */
+    /* line 140, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_card.scss */
     .box-card-post.box-card-post-equal .box-container {
       position: absolute;
       top: 0;
       left: 0;
       padding: 5px;
       width: 100%; }
-  /* line 145, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_card.scss */
+  /* line 149, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_card.scss */
   .box-card-post .box-card-post-category {
     display: inline-block;
     padding: 0.1em 0.5em;
     margin-top: 10px;
     margin-left: 10px; }
-  /* line 152, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_card.scss */
+  /* line 156, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_card.scss */
   .box-card-post::after {
     display: block;
     content: '';
@@ -8950,11 +8966,11 @@ a.box-index {
     right: 0;
     height: 40%;
     background: linear-gradient(to bottom, rgba(255, 255, 255, 0), white); }
-  /* line 163, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_card.scss */
+  /* line 167, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_card.scss */
   .box-card-post:hover {
     text-decoration: none;
     background-color: #f6f5f2; }
-    /* line 167, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_card.scss */
+    /* line 171, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_card.scss */
     .box-card-post:hover::after {
       background: linear-gradient(to bottom, rgba(246, 245, 242, 0), #f6f5f2); }
 
