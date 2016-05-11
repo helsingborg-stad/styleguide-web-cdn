@@ -12456,7 +12456,7 @@ HelsingborgPrime.Component.Slider = (function ($) {
      * Adds navigation buttons if needed
      */
     Slider.prototype.addNavigationButtons = function (slider) {
-        if ($(slider).find('li').length === 0) {
+        if ($(slider).find('li').length <= 1) {
             return;
         }
 
@@ -12469,9 +12469,18 @@ HelsingborgPrime.Component.Slider = (function ($) {
      * @return {void}
      */
     Slider.prototype.autoslide = function (slider) {
-        if ($(slider).attr('data-autoslide') != 'true') {
+        if ($(slider).attr('data-autoslide') != 'true' || $(slider).find('li').length <= 1) {
             return;
         }
+
+        // Stop on hover
+        $('.slider').on('mouseenter', function (element) {
+            var slider = $(element.target).closest('.slider');
+            this.stopInterval(slider);
+        }.bind(this)).on('mouseleave', function (element) {
+            var slider = $(element.target).closest('.slider');
+            this.startInterval(slider);
+        }.bind(this));
 
         this.startInterval(slider);
     };
@@ -12556,15 +12565,6 @@ HelsingborgPrime.Component.Slider = (function ($) {
         // Prev button
         $('.slider-nav-previous').on('click', function (e) {
             this.goPrev($(e.target).parents('.slider'));
-        }.bind(this));
-
-        // Stop on hover
-        $('.slider').on('mouseenter', function (element) {
-            var slider = $(element.target).closest('.slider');
-            this.stopInterval(slider);
-        }.bind(this)).on('mouseleave', function (element) {
-            var slider = $(element.target).closest('.slider');
-            this.startInterval(slider);
         }.bind(this));
     };
 
