@@ -12284,31 +12284,6 @@ HelsingborgPrime.Component.Accordion = (function ($) {
 })(jQuery);
 
 //
-// @name Modal
-// @description  Show accodrion dropdown, make linkable by updating adress bar
-//
-HelsingborgPrime = HelsingborgPrime || {};
-HelsingborgPrime.Component = HelsingborgPrime.Component || {};
-
-HelsingborgPrime.Component.Dropdown = (function ($) {
-
-    function Dropdown() {
-        this.handleEvents();
-    }
-
-    Dropdown.prototype.handleEvents = function () {
-        $('[data-dropdown]').on('click', function (e) {
-            var targetElement = $(this).attr('data-dropdown');
-            $(this).parent().find(targetElement).toggle();
-            $(this).parent().find(targetElement).find('input[data-dropdown-focus]').focus();
-        });
-    };
-
-    return new Dropdown();
-
-})(jQuery);
-
-//
 // @name Gallery
 // @description  Popup boxes for gallery items.
 //
@@ -12446,8 +12421,6 @@ HelsingborgPrime.Component = HelsingborgPrime.Component || {};
 
 HelsingborgPrime.Component.Slider = (function ($) {
 
-    var autoslideIntervals = [];
-
     function Slider() {
         this.init();
     }
@@ -12460,99 +12433,19 @@ HelsingborgPrime.Component.Slider = (function ($) {
         $('.slider').each(function (index, element) {
             $(element).find('li:first').addClass('current');
             this.addNavigationButtons(element);
-            this.autoslide(element);
-            this.detectIfIsCollapsed(element);
-        }.bind(this));
-
-        $( window ).resize(function() {
-            $('.slider').each(function (index, element) {
-                this.detectIfIsCollapsed(element);
-            }.bind(this));
         }.bind(this));
 
         this.bindEvents();
     };
 
     /**
-     * Add collapsed class
-     */
-    Slider.prototype.detectIfIsCollapsed = function (slider) {
-        if ($(slider).find('li').length >= 1) {
-            $("li",slider).each(function(index,target){
-                if(jQuery(target).hasClass("flexbox") && jQuery(target).hasClass("current")) {
-
-                    jQuery(target).removeClass("is-collapsed");
-
-                    if(jQuery(".text-block",target).outerWidth() == jQuery(slider).width()) {
-                        jQuery(target).addClass("is-collapsed");
-                    }
-
-                }
-            });
-        }
-    };
-
-    /**
      * Adds navigation buttons if needed
+     * @param {[type]} slider [description]
      */
     Slider.prototype.addNavigationButtons = function (slider) {
-        if ($(slider).find('li').length <= 1) {
-            return;
+        if ($(slider).find('li').length > 1) {
+            $(slider).append('<button class="slider-nav-previous"><span class="sr-only">Previous</span><i class="fa fa-arrow-circle-left"></i></button><button class="slider-nav-next"><span class="sr-only">Next</span><i class="fa fa-arrow-circle-right"></i></button>');
         }
-
-        $(slider).append('<button class="slider-nav-previous"><span class="sr-only">Previous</span><i class="fa fa-arrow-circle-left"></i></button><button class="slider-nav-next"><span class="sr-only">Next</span><i class="fa fa-arrow-circle-right"></i></button>');
-    };
-
-    /**
-     * Start autoslide if setup
-     * @param  {object} slider The slider
-     * @return {void}
-     */
-    Slider.prototype.autoslide = function (slider) {
-        if ($(slider).attr('data-autoslide') != 'true' || $(slider).find('li').length <= 1) {
-            return;
-        }
-
-        // Stop on hover
-        $('.slider').on('mouseenter', function (element) {
-            var slider = $(element.target).closest('.slider');
-            this.stopInterval(slider);
-        }.bind(this)).on('mouseleave', function (element) {
-            var slider = $(element.target).closest('.slider');
-            this.startInterval(slider);
-        }.bind(this));
-
-        this.startInterval(slider);
-    };
-
-    /**
-     * Starts the autoslider interval timer
-     * @param  {object} slider The slider to slide
-     * @return {void}
-     */
-    Slider.prototype.startInterval = function (slider) {
-        var index = $(slider).index();
-        var intervalTimeout = $(slider).attr('data-autoslide-interval');
-
-        if (typeof intervalTimeout == 'undefined') {
-            intervalTimeout = 10000;
-        }
-
-        autoslideIntervals[index] = setInterval(function () {
-            this.goNext(slider);
-        }.bind(this, slider), intervalTimeout);
-    };
-
-    /**
-     * Stops the autoslider interval timer
-     * @param  {object} slider The slider to stop slide
-     * @return {void}
-     */
-    Slider.prototype.stopInterval = function (slider) {
-        var index = $(slider).index();
-
-        clearInterval(autoslideIntervals[index]);
-        autoslideIntervals.splice(index, 1);
     };
 
     /**
@@ -13157,19 +13050,18 @@ HelsingborgPrime.Prompt.CookieConsent = (function ($) {
 
     CookieConsent.prototype.displayConsent = function() {
         var wrapper = $('body');
-
         if ($('#wrapper:first-child').length > 0) {
             wrapper = $('#wrapper:first-child');
         }
 
         var consentText = 'This website uses cookies to ensure you get the best experience browsing the website.';
         if (HelsingborgPrime.Args.get('cookieConsent.message')) {
-            consentText = HelsingborgPrime.Args.get('cookieConsent.message') ? HelsingborgPrime.Args.get('cookieConsent.message') : 'This website is using cookies to give you the best experience possible.';
+            consentText = HelsingborgPrime.Args.get('cookieConsent.message');
         }
 
         var buttonText = 'Got it';
         if (HelsingborgPrime.Args.get('cookieConsent.button')) {
-            buttonText = HelsingborgPrime.Args.get('cookieConsent.button') ? HelsingborgPrime.Args.get('cookieConsent.button') : 'Okey';
+            buttonText = HelsingborgPrime.Args.get('cookieConsent.button');
         }
 
         var placement = HelsingborgPrime.Args.get('cookieConsent.placement') ? HelsingborgPrime.Args.get('cookieConsent.placement') : null;
@@ -13177,8 +13069,7 @@ HelsingborgPrime.Prompt.CookieConsent = (function ($) {
         wrapper.prepend('\
             <div id="cookie-consent" class="notice info gutter gutter-vertical ' + placement + '" style="display:none;">\
                 <div class="container"><div class="grid grid-table-md grid-va-middle">\
-                    <div class="grid-col-icon"><i class="fa fa-info-circle"></i></div>\
-                    <div class="grid-md-8">' + consentText + '</div>\
+                    <div class="grid-md-9"><i class="fa fa-info-circle"></i> ' + consentText + '</div>\
                     <div class="grid-md-3 text-right-md text-right-lg"><button class="btn btn-primary" data-action="cookie-consent">' + buttonText + '</button></div>\
                 </div></div>\
             </div>\
