@@ -10185,7 +10185,7 @@ a.box-index {
 
 @supports (display: flex) {
   /* line 12, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/slider/_animate.scss */
-  .slider-next .slider-out.flexbox {
+  .slider-next .slider-out.type-featured {
     display: -webkit-flex !important;
     display: -ms-flexbox !important;
     display: flex !important; } }
@@ -10205,7 +10205,7 @@ a.box-index {
 
 @supports (display: flex) {
   /* line 29, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/slider/_animate.scss */
-  .slider-previous .slider-out.flexbox {
+  .slider-previous .slider-out.type-featured {
     display: -webkit-flex !important;
     display: -ms-flexbox !important;
     display: flex !important; } }
