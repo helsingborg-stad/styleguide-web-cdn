@@ -9886,7 +9886,7 @@ a.box-index {
         font-size: .8em;
         line-height: .8em; } }
 
-/* line 61, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/slider/_slider.scss */
+/* line 56, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/slider/_slider.scss */
 .slider {
   position: relative;
   width: 100%;
@@ -9894,7 +9894,7 @@ a.box-index {
   min-height: 350px;
   background: #000;
   overflow: hidden; }
-  /* line 69, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/slider/_slider.scss */
+  /* line 64, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/slider/_slider.scss */
   .slider li {
     display: none;
     position: absolute;
@@ -9902,21 +9902,21 @@ a.box-index {
     right: 0;
     bottom: 0;
     left: 0; }
-  /* line 78, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/slider/_slider.scss */
+  /* line 73, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/slider/_slider.scss */
   .slider li.current:not(.type-featured) {
     display: block; }
-  /* line 82, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/slider/_slider.scss */
+  /* line 77, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/slider/_slider.scss */
   .slider .type-featured {
     -webkit-flex-flow: row wrap;
         -ms-flex-flow: row wrap;
             flex-flow: row wrap;
     height: 100%; }
-    /* line 87, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/slider/_slider.scss */
+    /* line 82, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/slider/_slider.scss */
     .slider .type-featured.current {
       display: -webkit-flex;
       display: -ms-flexbox;
       display: flex; }
-    /* line 92, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/slider/_slider.scss */
+    /* line 87, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/slider/_slider.scss */
     .slider .type-featured.is-collapsed .text-block.text-block-left,
     .slider .type-featured.is-collapsed .text-block.text-block-right {
       position: absolute;
@@ -9925,14 +9925,14 @@ a.box-index {
       bottom: 0;
       left: 0;
       opacity: .9; }
-    /* line 99, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/slider/_slider.scss */
+    /* line 94, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/slider/_slider.scss */
     .slider .type-featured > a {
       display: -webkit-flex;
       display: -ms-flexbox;
       display: flex;
       height: 100%;
       width: 100%; }
-    /* line 105, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/slider/_slider.scss */
+    /* line 100, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/slider/_slider.scss */
     .slider .type-featured .slider-image-desktop,
     .slider .type-featured .slider-image-mobile,
     .slider .type-featured .text-block {
@@ -9943,18 +9943,18 @@ a.box-index {
       -webkit-flex-basis: 350px;
           -ms-flex-preferred-size: 350px;
               flex-basis: 350px; }
-    /* line 113, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/slider/_slider.scss */
+    /* line 108, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/slider/_slider.scss */
     .slider .type-featured .text-block.text-block-right ~ .slider-image-desktop,
     .slider .type-featured .text-block.text-block-right ~ .slider-image-mobile {
       -webkit-order: 1;
           -ms-flex-order: 1;
               order: 1; }
-    /* line 118, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/slider/_slider.scss */
+    /* line 113, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/slider/_slider.scss */
     .slider .type-featured .text-block.text-block-right {
       -webkit-order: 2;
           -ms-flex-order: 2;
               order: 2; }
-  /* line 124, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/slider/_slider.scss */
+  /* line 119, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/slider/_slider.scss */
   .slider .slider-image,
   .slider .slider-video,
   .slider .player {
@@ -9964,7 +9964,7 @@ a.box-index {
     height: 100%;
     background-size: cover;
     background-position: center center; }
-    /* line 134, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/slider/_slider.scss */
+    /* line 129, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/slider/_slider.scss */
     .slider .slider-image video,
     .slider .slider-video video,
     .slider .player video {
@@ -9976,13 +9976,13 @@ a.box-index {
       -webkit-transform: translate(-50%, -50%);
               transform: translate(-50%, -50%); }
       @media screen and (orientation: portrait) {
-        /* line 134, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/slider/_slider.scss */
+        /* line 129, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/slider/_slider.scss */
         .slider .slider-image video,
         .slider .slider-video video,
         .slider .player video {
           width: auto;
           height: 100%; } }
-  /* line 146, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/slider/_slider.scss */
+  /* line 141, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/slider/_slider.scss */
   .slider [class*="slider-nav-"] {
     position: absolute;
     top: 50%;
@@ -9999,35 +9999,35 @@ a.box-index {
     text-align: center;
     line-height: 1;
     color: #fff; }
-    /* line 167, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/slider/_slider.scss */
+    /* line 162, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/slider/_slider.scss */
     .theme-red .slider [class*="slider-nav-"]:hover:not([class*="stripe-"]) {
       background-color: #cb0050; }
-    /* line 167, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/slider/_slider.scss */
+    /* line 162, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/slider/_slider.scss */
     .theme-blue .slider [class*="slider-nav-"]:hover:not([class*="stripe-"]) {
       background-color: #0069b4; }
-    /* line 167, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/slider/_slider.scss */
+    /* line 162, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/slider/_slider.scss */
     .theme-green .slider [class*="slider-nav-"]:hover:not([class*="stripe-"]) {
       background-color: #11a636; }
-    /* line 167, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/slider/_slider.scss */
+    /* line 162, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/slider/_slider.scss */
     .theme-purple .slider [class*="slider-nav-"]:hover:not([class*="stripe-"]) {
       background-color: #712082; }
-  /* line 175, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/slider/_slider.scss */
+  /* line 170, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/slider/_slider.scss */
   .slider .slider-nav-next {
     right: 0;
     border-radius: 50px 0 0 50px;
     padding-left: 1.2em;
     cursor: pointer; }
-  /* line 182, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/slider/_slider.scss */
+  /* line 177, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/slider/_slider.scss */
   .slider .slider-nav-previous {
     left: 0;
     border-radius: 0 50px 50px 0;
     padding-right: 1.2em;
     cursor: pointer; }
-  /* line 189, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/slider/_slider.scss */
+  /* line 184, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/slider/_slider.scss */
   .slider .content {
     -webkit-transform: translateY(-32%) !important;
             transform: translateY(-32%) !important; }
-  /* line 193, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/slider/_slider.scss */
+  /* line 188, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/slider/_slider.scss */
   .slider .text-block {
     padding: 10px 20px;
     position: absolute;
@@ -10042,14 +10042,14 @@ a.box-index {
     color: #fff;
     font-size: .9em;
     display: block; }
-    /* line 204, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/slider/_slider.scss */
+    /* line 199, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/slider/_slider.scss */
     .slider .text-block.text-block-center {
       background-color: rgba(0, 0, 0, 0.4);
       text-align: center;
       padding: 0;
       top: 0;
       /* Small devices */ }
-      /* line 210, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/slider/_slider.scss */
+      /* line 205, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/slider/_slider.scss */
       .slider .text-block.text-block-center span {
         font-weight: 300;
         font-size: 2em;
@@ -10063,100 +10063,100 @@ a.box-index {
         left: 50%;
         -webkit-transform: translate(-50%, -50%);
                 transform: translate(-50%, -50%); }
-        /* line 220, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/slider/_slider.scss */
+        /* line 215, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/slider/_slider.scss */
         .slider .text-block.text-block-center span em {
           margin-bottom: 10px;
           font-weight: normal; }
       @media screen and (max-width: 468px) {
-        /* line 228, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/slider/_slider.scss */
+        /* line 223, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/slider/_slider.scss */
         .slider .text-block.text-block-center span {
           font-size: 1.1em; }
-          /* line 230, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/slider/_slider.scss */
+          /* line 225, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/slider/_slider.scss */
           .slider .text-block.text-block-center span em {
             font-size: 1.2em; } }
       @media screen and (min-width: 469px) and (max-width: 768px) {
-        /* line 237, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/slider/_slider.scss */
+        /* line 232, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/slider/_slider.scss */
         .slider .text-block.text-block-center span {
           font-size: 1.4em; }
-          /* line 239, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/slider/_slider.scss */
+          /* line 234, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/slider/_slider.scss */
           .slider .text-block.text-block-center span em {
             font-size: 1.2em; } }
       @media screen and (min-width: 769px) and (max-width: 960px) {
-        /* line 246, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/slider/_slider.scss */
+        /* line 241, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/slider/_slider.scss */
         .slider .text-block.text-block-center span {
           font-size: 1.6em; }
-          /* line 248, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/slider/_slider.scss */
+          /* line 243, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/slider/_slider.scss */
           .slider .text-block.text-block-center span em {
             font-size: 1.2em; } }
-    /* line 258, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/slider/_slider.scss */
+    /* line 253, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/slider/_slider.scss */
     .theme-red .slider .text-block:not([class*="stripe-"]) {
       background-color: rgba(203, 0, 80, 0.9); }
-      /* line 261, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/slider/_slider.scss */
+      /* line 256, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/slider/_slider.scss */
       .theme-red .slider .text-block:not([class*="stripe-"]).text-block-center {
         background-color: rgba(0, 0, 0, 0.4) !important; }
-      /* line 265, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/slider/_slider.scss */
+      /* line 260, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/slider/_slider.scss */
       .theme-red .slider .text-block:not([class*="stripe-"]).text-block-left, .theme-red .slider .text-block:not([class*="stripe-"]).text-block-right {
         background-color: #f6f5f2; }
-        /* line 268, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/slider/_slider.scss */
+        /* line 263, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/slider/_slider.scss */
         .theme-red .slider .text-block:not([class*="stripe-"]).text-block-left span, .theme-red .slider .text-block:not([class*="stripe-"]).text-block-right span {
           color: #252525; }
-    /* line 258, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/slider/_slider.scss */
+    /* line 253, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/slider/_slider.scss */
     .theme-blue .slider .text-block:not([class*="stripe-"]) {
       background-color: rgba(0, 105, 180, 0.9); }
-      /* line 261, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/slider/_slider.scss */
+      /* line 256, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/slider/_slider.scss */
       .theme-blue .slider .text-block:not([class*="stripe-"]).text-block-center {
         background-color: rgba(0, 0, 0, 0.4) !important; }
-      /* line 265, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/slider/_slider.scss */
+      /* line 260, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/slider/_slider.scss */
       .theme-blue .slider .text-block:not([class*="stripe-"]).text-block-left, .theme-blue .slider .text-block:not([class*="stripe-"]).text-block-right {
         background-color: #f6f5f2; }
-        /* line 268, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/slider/_slider.scss */
+        /* line 263, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/slider/_slider.scss */
         .theme-blue .slider .text-block:not([class*="stripe-"]).text-block-left span, .theme-blue .slider .text-block:not([class*="stripe-"]).text-block-right span {
           color: #252525; }
-    /* line 258, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/slider/_slider.scss */
+    /* line 253, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/slider/_slider.scss */
     .theme-green .slider .text-block:not([class*="stripe-"]) {
       background-color: rgba(17, 166, 54, 0.9); }
-      /* line 261, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/slider/_slider.scss */
+      /* line 256, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/slider/_slider.scss */
       .theme-green .slider .text-block:not([class*="stripe-"]).text-block-center {
         background-color: rgba(0, 0, 0, 0.4) !important; }
-      /* line 265, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/slider/_slider.scss */
+      /* line 260, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/slider/_slider.scss */
       .theme-green .slider .text-block:not([class*="stripe-"]).text-block-left, .theme-green .slider .text-block:not([class*="stripe-"]).text-block-right {
         background-color: #f6f5f2; }
-        /* line 268, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/slider/_slider.scss */
+        /* line 263, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/slider/_slider.scss */
         .theme-green .slider .text-block:not([class*="stripe-"]).text-block-left span, .theme-green .slider .text-block:not([class*="stripe-"]).text-block-right span {
           color: #252525; }
-    /* line 258, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/slider/_slider.scss */
+    /* line 253, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/slider/_slider.scss */
     .theme-purple .slider .text-block:not([class*="stripe-"]) {
       background-color: rgba(113, 32, 130, 0.9); }
-      /* line 261, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/slider/_slider.scss */
+      /* line 256, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/slider/_slider.scss */
       .theme-purple .slider .text-block:not([class*="stripe-"]).text-block-center {
         background-color: rgba(0, 0, 0, 0.4) !important; }
-      /* line 265, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/slider/_slider.scss */
+      /* line 260, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/slider/_slider.scss */
       .theme-purple .slider .text-block:not([class*="stripe-"]).text-block-left, .theme-purple .slider .text-block:not([class*="stripe-"]).text-block-right {
         background-color: #f6f5f2; }
-        /* line 268, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/slider/_slider.scss */
+        /* line 263, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/slider/_slider.scss */
         .theme-purple .slider .text-block:not([class*="stripe-"]).text-block-left span, .theme-purple .slider .text-block:not([class*="stripe-"]).text-block-right span {
           color: #252525; }
-    /* line 286, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/slider/_slider.scss */
+    /* line 281, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/slider/_slider.scss */
     .slider .text-block .creamy.text-block-left, .slider .text-block .creamy.text-block-right {
       background-color: #ffffff; }
 
-/* line 295, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/slider/_slider.scss */
+/* line 290, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/slider/_slider.scss */
 .no-js .slider li:first-child {
   display: block; }
 
-/* line 300, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/slider/_slider.scss */
+/* line 295, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/slider/_slider.scss */
 .no-js .slider .type-video a {
   display: none; }
 
-/* line 307, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/slider/_slider.scss */
+/* line 302, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/slider/_slider.scss */
 .slider-nav-hover [class*="slider-nav-"] {
   opacity: 0; }
 
-/* line 312, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/slider/_slider.scss */
+/* line 307, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/slider/_slider.scss */
 .slider-nav-hover:hover [class*="slider-nav-"] {
   opacity: 1; }
 
-/* line 319, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/slider/_slider.scss */
+/* line 314, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/slider/_slider.scss */
 .slider-nav-bottom [class*="slider-nav-"] {
   top: auto;
   bottom: 0;
@@ -10166,7 +10166,7 @@ a.box-index {
   padding: .8em 1em;
   color: #8c8370;
   background-color: #ece9e3; }
-  /* line 328, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/slider/_slider.scss */
+  /* line 323, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/slider/_slider.scss */
   .slider-nav-bottom [class*="slider-nav-"]:hover {
     color: #fff; }
 
@@ -10815,11 +10815,21 @@ textarea {
     border: 1px solid #e3000f; }
 
 /* line 66, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/form/_input.scss */
+input[type="file"].hidden {
+  display: static;
+  width: 0.1px;
+  height: 0.1px;
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+  z-index: -1; }
+
+/* line 76, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/form/_input.scss */
 label.checkbox,
 label.radio {
   font-weight: normal; }
 
-/* line 95, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/form/_input.scss */
+/* line 105, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/form/_input.scss */
 input[type="checkbox"],
 input[type="radio"] {
   apperance: none;
@@ -10827,12 +10837,12 @@ input[type="radio"] {
   vertical-align: middle;
   position: relative;
   top: -1px; }
-  /* line 103, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/form/_input.scss */
+  /* line 113, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/form/_input.scss */
   input[type="checkbox"]:disabled,
   input[type="radio"]:disabled {
     background-color: #f6f5f2; }
 
-/* line 109, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/form/_input.scss */
+/* line 119, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/form/_input.scss */
 input[type="radio"] {
   top: -4px; }
 
@@ -11165,6 +11175,154 @@ select + select {
     color: #ae0b05;
     font-size: .8em;
     font-weight: bold; }
+
+/* line 24, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/form/_image-upload.scss */
+.image-upload {
+  position: relative;
+  padding: 30px;
+  overflow: hidden;
+  background-color: #f6f5f2;
+  border: 2px dashed #e7e5e1;
+  border-radius: 5px;
+  transition: 300ms background-color; }
+  /* line 35, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/form/_image-upload.scss */
+  .image-upload.is-dragover {
+    background-color: #dbf3ff;
+    border-color: #a8e3ff; }
+    /* line 39, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/form/_image-upload.scss */
+    .image-upload.is-dragover .placeholder:not(.placeholder-is-dragover) {
+      opacity: 0; }
+    /* line 43, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/form/_image-upload.scss */
+    .image-upload.is-dragover .placeholder-is-dragover {
+      opacity: 1;
+      -webkit-animation: 300ms fallDown ease-in-out 1;
+              animation: 300ms fallDown ease-in-out 1; }
+  /* line 49, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/form/_image-upload.scss */
+  .image-upload.is-selected {
+    background-color: #f0f9e6;
+    border-color: #d8f0bc; }
+    /* line 53, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/form/_image-upload.scss */
+    .image-upload.is-selected .selected-file {
+      display: block;
+      -webkit-animation: 500ms 200ms scaleIn ease-in-out forwards;
+              animation: 500ms 200ms scaleIn ease-in-out forwards; }
+    /* line 58, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/form/_image-upload.scss */
+    .image-upload.is-selected .placeholder {
+      opacity: 0; }
+  /* line 63, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/form/_image-upload.scss */
+  .image-upload.is-error {
+    background-color: #ffe3e5;
+    border-color: #ffb0b5; }
+  /* line 68, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/form/_image-upload.scss */
+  .image-upload .selected-file {
+    display: none;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+    text-align: center;
+    opacity: 0; }
+  /* line 79, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/form/_image-upload.scss */
+  .image-upload .placeholder-is-dragover {
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+    opacity: 0;
+    font-size: 1.3em;
+    font-weight: bold; }
+  /* line 89, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/form/_image-upload.scss */
+  .image-upload .placeholder {
+    text-align: center;
+    transition: 300ms all;
+    width: 100%;
+    left: 0; }
+    /* line 95, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/form/_image-upload.scss */
+    .image-upload .placeholder .placeholder-text-drag,
+    .image-upload .placeholder .placeholder-text-browse {
+      display: block; }
+    /* line 100, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/form/_image-upload.scss */
+    .image-upload .placeholder .placeholder-text span:first-child {
+      font-size: 1.3em;
+      font-weight: bold;
+      margin-bottom: 5px; }
+    @media (max-width: 769px) {
+      /* line 107, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/form/_image-upload.scss */
+      .image-upload .placeholder .placeholder-text-drag,
+      .image-upload .placeholder .placeholder-text-or {
+        display: none; }
+      /* line 112, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/form/_image-upload.scss */
+      .image-upload .placeholder .placeholder-text-browse {
+        margin-top: 8px; } }
+    /* line 117, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/form/_image-upload.scss */
+    .image-upload .placeholder .fa-plus-circle {
+      position: relative;
+      color: #11a636;
+      left: 1.1em;
+      top: -0.8em; }
+      /* line 123, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/form/_image-upload.scss */
+      .image-upload .placeholder .fa-plus-circle::after {
+        display: block;
+        content: '';
+        background-color: #fff;
+        width: 30%;
+        height: 30%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+                transform: translate(-50%, -50%);
+        z-index: 0; }
+      /* line 133, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/form/_image-upload.scss */
+      .image-upload .placeholder .fa-plus-circle::before {
+        position: relative;
+        z-index: 3; }
+    /* line 139, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/form/_image-upload.scss */
+    .image-upload .placeholder .fa-picture-o {
+      color: #464646; }
+    /* line 143, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/form/_image-upload.scss */
+    .image-upload .placeholder button,
+    .image-upload .placeholder .btn-select-file {
+      display: inline-block;
+      margin-left: 5px; }
+
+@-webkit-keyframes fallDown {
+  0% {
+    top: 0; }
+  70% {
+    top: 60%; }
+  100% {
+    top: 50%; } }
+
+@keyframes fallDown {
+  0% {
+    top: 0; }
+  70% {
+    top: 60%; }
+  100% {
+    top: 50%; } }
+
+@-webkit-keyframes scaleIn {
+  0% {
+    -webkit-transform: translateY(-50%) scale(3);
+            transform: translateY(-50%) scale(3);
+    opacity: 0; }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(-50%) scale(1);
+            transform: translateY(-50%) scale(1); } }
+
+@keyframes scaleIn {
+  0% {
+    -webkit-transform: translateY(-50%) scale(3);
+            transform: translateY(-50%) scale(3);
+    opacity: 0; }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(-50%) scale(1);
+            transform: translateY(-50%) scale(1); } }
 
 /* line 18, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/dropdown/_dropdown.scss */
 .dropdown {
@@ -12706,6 +12864,26 @@ input[type="radio"]:disabled, select:disabled {
   /* line 49, /websites/helsingborg/styleguide/styleguide-web/source/sass/mixin/_positioning.scss */
   .ratio-4-3 > .content,
   .ratio-4-3 > iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100% !important;
+    height: 100% !important; }
+
+/* line 9, /websites/helsingborg/styleguide/styleguide-web/source/sass/utility/_aspect-ratio.scss */
+.ratio-4-2 {
+  position: relative; }
+  /* line 42, /websites/helsingborg/styleguide/styleguide-web/source/sass/mixin/_positioning.scss */
+  .ratio-4-2:before {
+    display: block;
+    content: "";
+    width: 100%;
+    padding-top: 50%; }
+  /* line 49, /websites/helsingborg/styleguide/styleguide-web/source/sass/mixin/_positioning.scss */
+  .ratio-4-2 > .content,
+  .ratio-4-2 > iframe {
     position: absolute;
     top: 0;
     left: 0;
