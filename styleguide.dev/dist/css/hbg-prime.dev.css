@@ -7420,36 +7420,45 @@ button.btn-icon {
     left: 0;
     right: 0;
     z-index: 9999; }
-
-/* line 55, /www/sites/HbgPrime/wwwroot/source/sass/component/notice/_notice.scss */
-.notice-lg {
-  font-size: 1.2em; }
+  /* line 54, /www/sites/HbgPrime/wwwroot/source/sass/component/notice/_notice.scss */
+  .notice .grid-col-icon {
+    margin-right: 5px; }
 
 /* line 59, /www/sites/HbgPrime/wwwroot/source/sass/component/notice/_notice.scss */
+.notice-lg {
+  font-size: 1.2em; }
+  /* line 62, /www/sites/HbgPrime/wwwroot/source/sass/component/notice/_notice.scss */
+  .notice-lg .grid-col-icon {
+    margin-right: 10px; }
+
+/* line 67, /www/sites/HbgPrime/wwwroot/source/sass/component/notice/_notice.scss */
 .notice-sm {
   font-size: .9em; }
+  /* line 70, /www/sites/HbgPrime/wwwroot/source/sass/component/notice/_notice.scss */
+  .notice-sm .grid-col-icon {
+    margin-right: 0px; }
 
-/* line 63, /www/sites/HbgPrime/wwwroot/source/sass/component/notice/_notice.scss */
+/* line 75, /www/sites/HbgPrime/wwwroot/source/sass/component/notice/_notice.scss */
 .notice-fullwidth {
   border-left: 0;
   border-right: 0; }
 
-/* line 68, /www/sites/HbgPrime/wwwroot/source/sass/component/notice/_notice.scss */
+/* line 80, /www/sites/HbgPrime/wwwroot/source/sass/component/notice/_notice.scss */
 .notice.success {
   background-color: #11a636;
   color: #fff; }
 
-/* line 73, /www/sites/HbgPrime/wwwroot/source/sass/component/notice/_notice.scss */
+/* line 85, /www/sites/HbgPrime/wwwroot/source/sass/component/notice/_notice.scss */
 .notice.warning {
   background-color: #FFD700;
   color: #252525; }
 
-/* line 77, /www/sites/HbgPrime/wwwroot/source/sass/component/notice/_notice.scss */
+/* line 89, /www/sites/HbgPrime/wwwroot/source/sass/component/notice/_notice.scss */
 .notice.danger {
   background-color: #e3000f;
   color: #fff; }
 
-/* line 82, /www/sites/HbgPrime/wwwroot/source/sass/component/notice/_notice.scss */
+/* line 94, /www/sites/HbgPrime/wwwroot/source/sass/component/notice/_notice.scss */
 .notice.info {
   background-color: #b1f5ff;
   color: #252525; }
@@ -10337,41 +10346,40 @@ textarea {
     padding: 15px;
     font-size: 1.2em; }
   /* line 59, /www/sites/HbgPrime/wwwroot/source/sass/component/form/_input.scss */
-  input[type="text"]:invalid:not(:empty), input[type="text"].invalid,
-  input[type="password"]:invalid:not(:empty),
+  input[type="text"]:invalid, input[type="text"].invalid,
+  input[type="password"]:invalid,
   input[type="password"].invalid,
-  input[type="search"]:invalid:not(:empty),
+  input[type="search"]:invalid,
   input[type="search"].invalid,
-  input[type="email"]:invalid:not(:empty),
+  input[type="email"]:invalid,
   input[type="email"].invalid,
-  input[type="url"]:invalid:not(:empty),
+  input[type="url"]:invalid,
   input[type="url"].invalid,
-  input[type="tel"]:invalid:not(:empty),
+  input[type="tel"]:invalid,
   input[type="tel"].invalid,
-  input[type="number"]:invalid:not(:empty),
+  input[type="number"]:invalid,
   input[type="number"].invalid,
-  input[type="range"]:invalid:not(:empty),
+  input[type="range"]:invalid,
   input[type="range"].invalid,
-  input[type="date"]:invalid:not(:empty),
+  input[type="date"]:invalid,
   input[type="date"].invalid,
-  input[type="month"]:invalid:not(:empty),
+  input[type="month"]:invalid,
   input[type="month"].invalid,
-  input[type="week"]:invalid:not(:empty),
+  input[type="week"]:invalid,
   input[type="week"].invalid,
-  input[type="time"]:invalid:not(:empty),
+  input[type="time"]:invalid,
   input[type="time"].invalid,
-  input[type="datetime"]:invalid:not(:empty),
+  input[type="datetime"]:invalid,
   input[type="datetime"].invalid,
-  input[type="datetime-local"]:invalid:not(:empty),
+  input[type="datetime-local"]:invalid,
   input[type="datetime-local"].invalid,
-  input[type="color"]:invalid:not(:empty),
+  input[type="color"]:invalid,
   input[type="color"].invalid,
-  textarea:invalid:not(:empty),
+  textarea:invalid,
   textarea.invalid {
-    background-color: #fff2f3;
     border: 1px solid #e3000f; }
 
-/* line 66, /www/sites/HbgPrime/wwwroot/source/sass/component/form/_input.scss */
+/* line 65, /www/sites/HbgPrime/wwwroot/source/sass/component/form/_input.scss */
 input[type="file"].hidden {
   display: static;
   width: 0.1px;
@@ -10381,24 +10389,24 @@ input[type="file"].hidden {
   position: absolute;
   z-index: -1; }
 
-/* line 76, /www/sites/HbgPrime/wwwroot/source/sass/component/form/_input.scss */
+/* line 75, /www/sites/HbgPrime/wwwroot/source/sass/component/form/_input.scss */
 label.checkbox,
 label.radio {
   font-weight: normal; }
 
-/* line 105, /www/sites/HbgPrime/wwwroot/source/sass/component/form/_input.scss */
+/* line 104, /www/sites/HbgPrime/wwwroot/source/sass/component/form/_input.scss */
 input[type="checkbox"],
 input[type="radio"] {
   display: inline-block;
   vertical-align: middle;
   position: relative;
   top: -1px; }
-  /* line 112, /www/sites/HbgPrime/wwwroot/source/sass/component/form/_input.scss */
+  /* line 111, /www/sites/HbgPrime/wwwroot/source/sass/component/form/_input.scss */
   input[type="checkbox"]:disabled,
   input[type="radio"]:disabled {
     background-color: #f6f5f2; }
 
-/* line 118, /www/sites/HbgPrime/wwwroot/source/sass/component/form/_input.scss */
+/* line 117, /www/sites/HbgPrime/wwwroot/source/sass/component/form/_input.scss */
 input[type="radio"] {
   top: -4px; }
 
@@ -11325,7 +11333,23 @@ select + select {
   width: 100px;
   height: auto; }
 
-/* line 1, /www/sites/HbgPrime/wwwroot/source/sass/component/error/_404.scss */
+/* line 4, /www/sites/HbgPrime/wwwroot/source/sass/component/error/_404.scss */
+.error404.theme-red {
+  background-color: #ae0b05; }
+
+/* line 4, /www/sites/HbgPrime/wwwroot/source/sass/component/error/_404.scss */
+.error404.theme-blue {
+  background-color: #005c86; }
+
+/* line 4, /www/sites/HbgPrime/wwwroot/source/sass/component/error/_404.scss */
+.error404.theme-green {
+  background-color: #50811b; }
+
+/* line 4, /www/sites/HbgPrime/wwwroot/source/sass/component/error/_404.scss */
+.error404.theme-purple {
+  background-color: #7b075e; }
+
+/* line 10, /www/sites/HbgPrime/wwwroot/source/sass/component/error/_404.scss */
 .error404 {
   position: absolute;
   top: 0;
@@ -11340,52 +11364,49 @@ select + select {
   display: table;
   height: 100vh;
   width: 100%; }
-  /* line 17, /www/sites/HbgPrime/wwwroot/source/sass/component/error/_404.scss */
-  .theme-red .error404 {
-    background-color: #ae0b05; }
-  /* line 17, /www/sites/HbgPrime/wwwroot/source/sass/component/error/_404.scss */
-  .theme-blue .error404 {
-    background-color: #005c86; }
-  /* line 17, /www/sites/HbgPrime/wwwroot/source/sass/component/error/_404.scss */
-  .theme-green .error404 {
-    background-color: #50811b; }
-  /* line 17, /www/sites/HbgPrime/wwwroot/source/sass/component/error/_404.scss */
-  .theme-purple .error404 {
-    background-color: #7b075e; }
   /* line 23, /www/sites/HbgPrime/wwwroot/source/sass/component/error/_404.scss */
   .error404 #wrapper {
     display: table-cell;
     vertical-align: middle;
     padding: 30px; }
   /* line 29, /www/sites/HbgPrime/wwwroot/source/sass/component/error/_404.scss */
+  .error404 #cookie-consent {
+    display: none; }
+  /* line 33, /www/sites/HbgPrime/wwwroot/source/sass/component/error/_404.scss */
   .error404 .container + .container {
     margin-top: 30px; }
-  /* line 33, /www/sites/HbgPrime/wwwroot/source/sass/component/error/_404.scss */
+  /* line 37, /www/sites/HbgPrime/wwwroot/source/sass/component/error/_404.scss */
   .error404 .logotype {
-    display: block;
-    width: 200px;
-    height: auto; }
-  /* line 39, /www/sites/HbgPrime/wwwroot/source/sass/component/error/_404.scss */
+    display: block; }
+    /* line 40, /www/sites/HbgPrime/wwwroot/source/sass/component/error/_404.scss */
+    .error404 .logotype img, .error404 .logotype svg {
+      display: block;
+      width: 200px;
+      height: auto; }
+  /* line 47, /www/sites/HbgPrime/wwwroot/source/sass/component/error/_404.scss */
   .error404 a {
     color: #fff; }
-  /* line 43, /www/sites/HbgPrime/wwwroot/source/sass/component/error/_404.scss */
+  /* line 51, /www/sites/HbgPrime/wwwroot/source/sass/component/error/_404.scss */
+  .error404 .logotype h1 {
+    font-size: 2em; }
+  /* line 55, /www/sites/HbgPrime/wwwroot/source/sass/component/error/_404.scss */
   .error404 h1 {
     color: #fff;
     font-size: 10em;
     line-height: 1; }
-    /* line 48, /www/sites/HbgPrime/wwwroot/source/sass/component/error/_404.scss */
+    /* line 60, /www/sites/HbgPrime/wwwroot/source/sass/component/error/_404.scss */
     .error404 h1 em {
       display: block;
       font-size: .3em; }
-  /* line 55, /www/sites/HbgPrime/wwwroot/source/sass/component/error/_404.scss */
+  /* line 67, /www/sites/HbgPrime/wwwroot/source/sass/component/error/_404.scss */
   .error404 .actions li + li {
     margin-top: 10px; }
-  /* line 60, /www/sites/HbgPrime/wwwroot/source/sass/component/error/_404.scss */
+  /* line 72, /www/sites/HbgPrime/wwwroot/source/sass/component/error/_404.scss */
   .error404 ul + p,
   .error404 p + p {
     margin-top: 1.5em; }
   @media (max-width: 769px) {
-    /* line 1, /www/sites/HbgPrime/wwwroot/source/sass/component/error/_404.scss */
+    /* line 10, /www/sites/HbgPrime/wwwroot/source/sass/component/error/_404.scss */
     .error404 {
       font-size: 1em; } }
 
