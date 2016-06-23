@@ -10346,40 +10346,25 @@ textarea {
     padding: 15px;
     font-size: 1.2em; }
   /* line 59, /www/sites/HbgPrime/wwwroot/source/sass/component/form/_input.scss */
-  input[type="text"]:invalid, input[type="text"].invalid,
-  input[type="password"]:invalid,
+  input[type="text"].invalid,
   input[type="password"].invalid,
-  input[type="search"]:invalid,
   input[type="search"].invalid,
-  input[type="email"]:invalid,
   input[type="email"].invalid,
-  input[type="url"]:invalid,
   input[type="url"].invalid,
-  input[type="tel"]:invalid,
   input[type="tel"].invalid,
-  input[type="number"]:invalid,
   input[type="number"].invalid,
-  input[type="range"]:invalid,
   input[type="range"].invalid,
-  input[type="date"]:invalid,
   input[type="date"].invalid,
-  input[type="month"]:invalid,
   input[type="month"].invalid,
-  input[type="week"]:invalid,
   input[type="week"].invalid,
-  input[type="time"]:invalid,
   input[type="time"].invalid,
-  input[type="datetime"]:invalid,
   input[type="datetime"].invalid,
-  input[type="datetime-local"]:invalid,
   input[type="datetime-local"].invalid,
-  input[type="color"]:invalid,
   input[type="color"].invalid,
-  textarea:invalid,
   textarea.invalid {
     border: 1px solid #e3000f; }
 
-/* line 65, /www/sites/HbgPrime/wwwroot/source/sass/component/form/_input.scss */
+/* line 64, /www/sites/HbgPrime/wwwroot/source/sass/component/form/_input.scss */
 input[type="file"].hidden {
   display: static;
   width: 0.1px;
@@ -10389,24 +10374,24 @@ input[type="file"].hidden {
   position: absolute;
   z-index: -1; }
 
-/* line 75, /www/sites/HbgPrime/wwwroot/source/sass/component/form/_input.scss */
+/* line 74, /www/sites/HbgPrime/wwwroot/source/sass/component/form/_input.scss */
 label.checkbox,
 label.radio {
   font-weight: normal; }
 
-/* line 104, /www/sites/HbgPrime/wwwroot/source/sass/component/form/_input.scss */
+/* line 103, /www/sites/HbgPrime/wwwroot/source/sass/component/form/_input.scss */
 input[type="checkbox"],
 input[type="radio"] {
   display: inline-block;
   vertical-align: middle;
   position: relative;
   top: -1px; }
-  /* line 111, /www/sites/HbgPrime/wwwroot/source/sass/component/form/_input.scss */
+  /* line 110, /www/sites/HbgPrime/wwwroot/source/sass/component/form/_input.scss */
   input[type="checkbox"]:disabled,
   input[type="radio"]:disabled {
     background-color: #f6f5f2; }
 
-/* line 117, /www/sites/HbgPrime/wwwroot/source/sass/component/form/_input.scss */
+/* line 116, /www/sites/HbgPrime/wwwroot/source/sass/component/form/_input.scss */
 input[type="radio"] {
   top: -4px; }
 
@@ -10950,6 +10935,50 @@ select + select {
   .segmented-control input[type="radio"]:checked + label,
   .segmented-control input[type="checkbox"]:checked + label {
     background-color: #e7e5e1; }
+
+/* line 1, /www/sites/HbgPrime/wwwroot/source/sass/component/form/gravity-forms.scss */
+.gform_wrapper {
+  margin: 15px 0;
+  background-color: #f6f5f2;
+  border: 1px solid #e7e5e1;
+  padding: 30px; }
+  /* line 7, /www/sites/HbgPrime/wwwroot/source/sass/component/form/gravity-forms.scss */
+  .gform_wrapper form {
+    margin: 0 !important; }
+
+/* line 12, /www/sites/HbgPrime/wwwroot/source/sass/component/form/gravity-forms.scss */
+.gform_fields {
+  padding: 0 !important; }
+
+/* line 16, /www/sites/HbgPrime/wwwroot/source/sass/component/form/gravity-forms.scss */
+.ginput_container {
+  margin-top: 3px; }
+
+/* line 20, /www/sites/HbgPrime/wwwroot/source/sass/component/form/gravity-forms.scss */
+.gfield_required {
+  color: #ae0b05; }
+
+/* line 25, /www/sites/HbgPrime/wwwroot/source/sass/component/form/gravity-forms.scss */
+.gfield_list td {
+  vertical-align: top; }
+
+/* line 29, /www/sites/HbgPrime/wwwroot/source/sass/component/form/gravity-forms.scss */
+.gfield_list .add_list_item,
+.gfield_list .delete_list_item {
+  padding: 0 !important;
+  margin: 0 !important; }
+
+/* line 35, /www/sites/HbgPrime/wwwroot/source/sass/component/form/gravity-forms.scss */
+.gfield_list td + td {
+  padding-left: 5px; }
+
+/* line 39, /www/sites/HbgPrime/wwwroot/source/sass/component/form/gravity-forms.scss */
+.gfield_list tr + tr td {
+  padding-top: 8px; }
+
+/* line 44, /www/sites/HbgPrime/wwwroot/source/sass/component/form/gravity-forms.scss */
+.ginput_container_list + .gfield_description {
+  margin-top: 5px; }
 
 /* line 18, /www/sites/HbgPrime/wwwroot/source/sass/component/dropdown/_dropdown.scss */
 .dropdown {
