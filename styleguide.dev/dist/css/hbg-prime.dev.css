@@ -4515,14 +4515,14 @@ a {
 
 /* line 22, /www/sites/HbgPrime/wwwroot/source/sass/typography/_label.scss */
 .label {
+  display: inline-block;
   background-color: #e7e5e1;
   padding: .1em .3em; }
 
-/* line 27, /www/sites/HbgPrime/wwwroot/source/sass/typography/_label.scss */
+/* line 28, /www/sites/HbgPrime/wwwroot/source/sass/typography/_label.scss */
 .label-number {
   position: relative;
   top: -.1em;
-  display: inline-block;
   vertical-align: middle;
   text-align: center;
   margin-right: .1em;
@@ -4546,128 +4546,136 @@ a {
     font-weight: bold; }
 
 /* line 52, /www/sites/HbgPrime/wwwroot/source/sass/typography/_label.scss */
+.label-rounded {
+  border-radius: 10px;
+  text-align: center;
+  line-height: 1.2;
+  padding-left: 0.4em;
+  padding-right: 0.4em; }
+
+/* line 62, /www/sites/HbgPrime/wwwroot/source/sass/typography/_label.scss */
 .label-theme {
   background-color: #777;
   color: #fff; }
-  /* line 59, /www/sites/HbgPrime/wwwroot/source/sass/typography/_label.scss */
+  /* line 69, /www/sites/HbgPrime/wwwroot/source/sass/typography/_label.scss */
   .theme-red .label-theme {
     background-color: #ae0b05; }
-  /* line 59, /www/sites/HbgPrime/wwwroot/source/sass/typography/_label.scss */
+  /* line 69, /www/sites/HbgPrime/wwwroot/source/sass/typography/_label.scss */
   .theme-blue .label-theme {
     background-color: #005c86; }
-  /* line 59, /www/sites/HbgPrime/wwwroot/source/sass/typography/_label.scss */
+  /* line 69, /www/sites/HbgPrime/wwwroot/source/sass/typography/_label.scss */
   .theme-green .label-theme {
     background-color: #50811b; }
-  /* line 59, /www/sites/HbgPrime/wwwroot/source/sass/typography/_label.scss */
+  /* line 69, /www/sites/HbgPrime/wwwroot/source/sass/typography/_label.scss */
   .theme-purple .label-theme {
     background-color: #7b075e; }
 
-/* line 66, /www/sites/HbgPrime/wwwroot/source/sass/typography/_label.scss */
+/* line 76, /www/sites/HbgPrime/wwwroot/source/sass/typography/_label.scss */
 .label-sm {
   font-size: .8em; }
 
-/* line 70, /www/sites/HbgPrime/wwwroot/source/sass/typography/_label.scss */
+/* line 80, /www/sites/HbgPrime/wwwroot/source/sass/typography/_label.scss */
 .label-lg {
   font-size: 1.1em;
   padding: .3em .6em; }
 
-/* line 75, /www/sites/HbgPrime/wwwroot/source/sass/typography/_label.scss */
+/* line 85, /www/sites/HbgPrime/wwwroot/source/sass/typography/_label.scss */
 .label-creamy {
   background-color: #f6f5f2;
   border: 1px solid #e7e5e1; }
 
-/* line 80, /www/sites/HbgPrime/wwwroot/source/sass/typography/_label.scss */
+/* line 90, /www/sites/HbgPrime/wwwroot/source/sass/typography/_label.scss */
 .label-red-1 {
   background-color: #f7a600; }
 
-/* line 84, /www/sites/HbgPrime/wwwroot/source/sass/typography/_label.scss */
+/* line 94, /www/sites/HbgPrime/wwwroot/source/sass/typography/_label.scss */
 .label-red-2 {
   background-color: #cb0050;
   color: #fff; }
 
-/* line 89, /www/sites/HbgPrime/wwwroot/source/sass/typography/_label.scss */
+/* line 99, /www/sites/HbgPrime/wwwroot/source/sass/typography/_label.scss */
 .label-red-3 {
   background-color: #ec6701;
   color: #fff; }
 
-/* line 94, /www/sites/HbgPrime/wwwroot/source/sass/typography/_label.scss */
+/* line 104, /www/sites/HbgPrime/wwwroot/source/sass/typography/_label.scss */
 .label-red-4 {
   background-color: #ae0b05;
   color: #fff; }
 
-/* line 99, /www/sites/HbgPrime/wwwroot/source/sass/typography/_label.scss */
+/* line 109, /www/sites/HbgPrime/wwwroot/source/sass/typography/_label.scss */
 .label-red-5 {
   background-color: #e3000f;
   color: #fff; }
 
-/* line 104, /www/sites/HbgPrime/wwwroot/source/sass/typography/_label.scss */
+/* line 114, /www/sites/HbgPrime/wwwroot/source/sass/typography/_label.scss */
 .label-blue-1 {
   background-color: #4db4e7; }
 
-/* line 108, /www/sites/HbgPrime/wwwroot/source/sass/typography/_label.scss */
+/* line 118, /www/sites/HbgPrime/wwwroot/source/sass/typography/_label.scss */
 .label-blue-2 {
   background-color: #0069b4;
   color: #fff; }
 
-/* line 113, /www/sites/HbgPrime/wwwroot/source/sass/typography/_label.scss */
+/* line 123, /www/sites/HbgPrime/wwwroot/source/sass/typography/_label.scss */
 .label-blue-3 {
   background-color: #5ba1d8;
   color: #fff; }
 
-/* line 118, /www/sites/HbgPrime/wwwroot/source/sass/typography/_label.scss */
+/* line 128, /www/sites/HbgPrime/wwwroot/source/sass/typography/_label.scss */
 .label-blue-4 {
   background-color: #005c86;
   color: #fff; }
 
-/* line 123, /www/sites/HbgPrime/wwwroot/source/sass/typography/_label.scss */
+/* line 133, /www/sites/HbgPrime/wwwroot/source/sass/typography/_label.scss */
 .label-blue-5 {
   background-color: #0095db;
   color: #fff; }
 
-/* line 128, /www/sites/HbgPrime/wwwroot/source/sass/typography/_label.scss */
+/* line 138, /www/sites/HbgPrime/wwwroot/source/sass/typography/_label.scss */
 .label-green-1 {
   background-color: #afca05; }
 
-/* line 132, /www/sites/HbgPrime/wwwroot/source/sass/typography/_label.scss */
+/* line 142, /www/sites/HbgPrime/wwwroot/source/sass/typography/_label.scss */
 .label-green-2 {
   background-color: #11a636;
   color: #fff; }
 
-/* line 137, /www/sites/HbgPrime/wwwroot/source/sass/typography/_label.scss */
+/* line 147, /www/sites/HbgPrime/wwwroot/source/sass/typography/_label.scss */
 .label-green-3 {
   background-color: #a0c855;
   color: #fff; }
 
-/* line 142, /www/sites/HbgPrime/wwwroot/source/sass/typography/_label.scss */
+/* line 152, /www/sites/HbgPrime/wwwroot/source/sass/typography/_label.scss */
 .label-green-4 {
   background-color: #50811b;
   color: #fff; }
 
-/* line 147, /www/sites/HbgPrime/wwwroot/source/sass/typography/_label.scss */
+/* line 157, /www/sites/HbgPrime/wwwroot/source/sass/typography/_label.scss */
 .label-green-5 {
   background-color: #76b828;
   color: #fff; }
 
-/* line 152, /www/sites/HbgPrime/wwwroot/source/sass/typography/_label.scss */
+/* line 162, /www/sites/HbgPrime/wwwroot/source/sass/typography/_label.scss */
 .label-purple-1 {
   background-color: #d35098; }
 
-/* line 156, /www/sites/HbgPrime/wwwroot/source/sass/typography/_label.scss */
+/* line 166, /www/sites/HbgPrime/wwwroot/source/sass/typography/_label.scss */
 .label-purple-2 {
   background-color: #712082;
   color: #fff; }
 
-/* line 161, /www/sites/HbgPrime/wwwroot/source/sass/typography/_label.scss */
+/* line 171, /www/sites/HbgPrime/wwwroot/source/sass/typography/_label.scss */
 .label-purple-3 {
   background-color: #a84c98;
   color: #fff; }
 
-/* line 166, /www/sites/HbgPrime/wwwroot/source/sass/typography/_label.scss */
+/* line 176, /www/sites/HbgPrime/wwwroot/source/sass/typography/_label.scss */
 .label-purple-4 {
   background-color: #7b075e;
   color: #fff; }
 
-/* line 171, /www/sites/HbgPrime/wwwroot/source/sass/typography/_label.scss */
+/* line 181, /www/sites/HbgPrime/wwwroot/source/sass/typography/_label.scss */
 .label-purple-5 {
   background-color: #a61380;
   color: #fff; }
@@ -5177,44 +5185,45 @@ input[type="button"].btn::-moz-focus-inner {
 .btn-sm {
   padding: 0.2em 0.5em;
   font-size: 0.8em;
-  font-weight: 600; }
+  font-weight: 600;
+  line-height: 1; }
 
-/* line 259, /www/sites/HbgPrime/wwwroot/source/sass/component/button/_button.scss */
+/* line 260, /www/sites/HbgPrime/wwwroot/source/sass/component/button/_button.scss */
 .btn-lg {
   padding: 0.5em 0.9em;
   font-size: 1.1em;
   font-weight: 600; }
 
-/* line 276, /www/sites/HbgPrime/wwwroot/source/sass/component/button/_button.scss */
+/* line 277, /www/sites/HbgPrime/wwwroot/source/sass/component/button/_button.scss */
 .btn-block {
   display: block;
   width: 100%;
   text-align: center; }
 
-/* line 282, /www/sites/HbgPrime/wwwroot/source/sass/component/button/_button.scss */
+/* line 283, /www/sites/HbgPrime/wwwroot/source/sass/component/button/_button.scss */
 .btn-block-lg {
   padding: 15px; }
 
-/* line 286, /www/sites/HbgPrime/wwwroot/source/sass/component/button/_button.scss */
+/* line 287, /www/sites/HbgPrime/wwwroot/source/sass/component/button/_button.scss */
 .btn-block + .btn-block {
   margin-top: 15px; }
 
-/* line 290, /www/sites/HbgPrime/wwwroot/source/sass/component/button/_button.scss */
+/* line 291, /www/sites/HbgPrime/wwwroot/source/sass/component/button/_button.scss */
 .btn-icon,
 button.btn-icon {
   padding: 5px 10px;
   line-height: 1; }
 
-/* line 305, /www/sites/HbgPrime/wwwroot/source/sass/component/button/_button.scss */
+/* line 306, /www/sites/HbgPrime/wwwroot/source/sass/component/button/_button.scss */
 .btn-offcanvas {
   position: absolute;
   top: -100%;
   left: 0; }
-  /* line 310, /www/sites/HbgPrime/wwwroot/source/sass/component/button/_button.scss */
+  /* line 311, /www/sites/HbgPrime/wwwroot/source/sass/component/button/_button.scss */
   .btn-offcanvas:focus {
     top: 0;
     z-index: 99999; }
-  /* line 315, /www/sites/HbgPrime/wwwroot/source/sass/component/button/_button.scss */
+  /* line 316, /www/sites/HbgPrime/wwwroot/source/sass/component/button/_button.scss */
   .btn-offcanvas + .btn-offcanvas {
     margin-top: 0 !important; }
 
@@ -6195,16 +6204,18 @@ button.btn-icon {
     font-size: .8em;
     border-radius: 3px;
     line-height: 1;
-    margin-right: 3px; }
-    /* line 33, /www/sites/HbgPrime/wwwroot/source/sass/component/navigation/_tags.scss */
+    margin-right: 3px;
+    color: #252525;
+    letter-spacing: 0.3px; }
+    /* line 35, /www/sites/HbgPrime/wwwroot/source/sass/component/navigation/_tags.scss */
     .tags li a {
       text-decoration: none; }
 
-/* line 40, /www/sites/HbgPrime/wwwroot/source/sass/component/navigation/_tags.scss */
+/* line 42, /www/sites/HbgPrime/wwwroot/source/sass/component/navigation/_tags.scss */
 .tags-white li {
   background: #fff; }
 
-/* line 47, /www/sites/HbgPrime/wwwroot/source/sass/component/navigation/_tags.scss */
+/* line 49, /www/sites/HbgPrime/wwwroot/source/sass/component/navigation/_tags.scss */
 .tags.show-tagsign a:before {
   content: "#"; }
 
@@ -6894,21 +6905,42 @@ button.btn-icon {
   padding: 0;
   margin: 0;
   font-weight: normal; }
+  /* line 169, /www/sites/HbgPrime/wwwroot/source/sass/component/accordion/_accordion.scss */
+  .accordion-boxes .accordion-toggle h1 .fa, .accordion-boxes .accordion-toggle h2 .fa, .accordion-boxes .accordion-toggle h3 .fa, .accordion-boxes .accordion-toggle h4 .fa, .accordion-boxes .accordion-toggle .widget_calendar caption .fa, .widget_calendar .accordion-boxes .accordion-toggle caption .fa, .accordion-boxes .accordion-toggle h5 .fa, .accordion-boxes .accordion-toggle h6 .fa,
+  .accordion-box .accordion-toggle h1 .fa,
+  .accordion-box .accordion-toggle h2 .fa,
+  .accordion-box .accordion-toggle h3 .fa,
+  .accordion-box .accordion-toggle h4 .fa,
+  .accordion-box .accordion-toggle .widget_calendar caption .fa, .widget_calendar
+  .accordion-box .accordion-toggle caption .fa,
+  .accordion-box .accordion-toggle h5 .fa,
+  .accordion-box .accordion-toggle h6 .fa,
+  .accordion-list .accordion-toggle h1 .fa,
+  .accordion-list .accordion-toggle h2 .fa,
+  .accordion-list .accordion-toggle h3 .fa,
+  .accordion-list .accordion-toggle h4 .fa,
+  .accordion-list .accordion-toggle .widget_calendar caption .fa, .widget_calendar
+  .accordion-list .accordion-toggle caption .fa,
+  .accordion-list .accordion-toggle h5 .fa,
+  .accordion-list .accordion-toggle h6 .fa {
+    font-size: .9em;
+    width: 1.1em;
+    text-align: center; }
 
-/* line 174, /www/sites/HbgPrime/wwwroot/source/sass/component/accordion/_accordion.scss */
+/* line 180, /www/sites/HbgPrime/wwwroot/source/sass/component/accordion/_accordion.scss */
 .accordion-content article {
   margin-bottom: 0; }
 
-/* line 179, /www/sites/HbgPrime/wwwroot/source/sass/component/accordion/_accordion.scss */
+/* line 185, /www/sites/HbgPrime/wwwroot/source/sass/component/accordion/_accordion.scss */
 .accordion-list .accordion-section + .accordion-section {
   margin-top: 0;
   border-top: none; }
 
-/* line 184, /www/sites/HbgPrime/wwwroot/source/sass/component/accordion/_accordion.scss */
+/* line 190, /www/sites/HbgPrime/wwwroot/source/sass/component/accordion/_accordion.scss */
 .accordion-list .accordion-section:nth-child(odd) {
   background: rgba(0, 0, 0, 0.01); }
 
-/* line 189, /www/sites/HbgPrime/wwwroot/source/sass/component/accordion/_accordion.scss */
+/* line 195, /www/sites/HbgPrime/wwwroot/source/sass/component/accordion/_accordion.scss */
 .accordion-icon input[type="checkbox"]:checked ~ .accordion-toggle:before,
 .accordion-icon input[type="radio"]:checked ~ .accordion-toggle:before {
   font-family: FontAwesome;
@@ -6922,7 +6954,7 @@ button.btn-icon {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
 
-/* line 196, /www/sites/HbgPrime/wwwroot/source/sass/component/accordion/_accordion.scss */
+/* line 204, /www/sites/HbgPrime/wwwroot/source/sass/component/accordion/_accordion.scss */
 input[type="checkbox"]:checked ~ .accordion-toggle h1, input[type="checkbox"]:checked ~ .accordion-toggle h2, input[type="checkbox"]:checked ~ .accordion-toggle h3, input[type="checkbox"]:checked ~ .accordion-toggle h4, input[type="checkbox"]:checked ~ .accordion-toggle .widget_calendar caption, .widget_calendar input[type="checkbox"]:checked ~ .accordion-toggle caption, input[type="checkbox"]:checked ~ .accordion-toggle h5, input[type="checkbox"]:checked ~ .accordion-toggle h6,
 input[type="radio"]:checked ~ .accordion-toggle h1,
 input[type="radio"]:checked ~ .accordion-toggle h2,
@@ -6931,57 +6963,89 @@ input[type="radio"]:checked ~ .accordion-toggle h4,
 input[type="radio"]:checked ~ .accordion-toggle .widget_calendar caption, .widget_calendar
 input[type="radio"]:checked ~ .accordion-toggle caption,
 input[type="radio"]:checked ~ .accordion-toggle h5,
-input[type="radio"]:checked ~ .accordion-toggle h6 {
+input[type="radio"]:checked ~ .accordion-toggle h6,
+input[type="checkbox"]:target ~ .accordion-toggle h1,
+input[type="checkbox"]:target ~ .accordion-toggle h2,
+input[type="checkbox"]:target ~ .accordion-toggle h3,
+input[type="checkbox"]:target ~ .accordion-toggle h4,
+input[type="checkbox"]:target ~ .accordion-toggle .widget_calendar caption, .widget_calendar
+input[type="checkbox"]:target ~ .accordion-toggle caption,
+input[type="checkbox"]:target ~ .accordion-toggle h5,
+input[type="checkbox"]:target ~ .accordion-toggle h6,
+input[type="radio"]:target ~ .accordion-toggle h1,
+input[type="radio"]:target ~ .accordion-toggle h2,
+input[type="radio"]:target ~ .accordion-toggle h3,
+input[type="radio"]:target ~ .accordion-toggle h4,
+input[type="radio"]:target ~ .accordion-toggle .widget_calendar caption, .widget_calendar
+input[type="radio"]:target ~ .accordion-toggle caption,
+input[type="radio"]:target ~ .accordion-toggle h5,
+input[type="radio"]:target ~ .accordion-toggle h6 {
   font-weight: bold; }
 
-/* line 200, /www/sites/HbgPrime/wwwroot/source/sass/component/accordion/_accordion.scss */
+/* line 208, /www/sites/HbgPrime/wwwroot/source/sass/component/accordion/_accordion.scss */
 input[type="checkbox"]:checked ~ .accordion-toggle .label-number,
-input[type="radio"]:checked ~ .accordion-toggle .label-number {
+input[type="radio"]:checked ~ .accordion-toggle .label-number,
+input[type="checkbox"]:target ~ .accordion-toggle .label-number,
+input[type="radio"]:target ~ .accordion-toggle .label-number {
   color: #11a636; }
 
-/* line 205, /www/sites/HbgPrime/wwwroot/source/sass/component/accordion/_accordion.scss */
+/* line 213, /www/sites/HbgPrime/wwwroot/source/sass/component/accordion/_accordion.scss */
 .accordion-toggle {
   display: block;
+  cursor: default; }
+
+/* line 223, /www/sites/HbgPrime/wwwroot/source/sass/component/accordion/_accordion.scss */
+label.accordion-toggle {
   cursor: pointer; }
 
-/* line 215, /www/sites/HbgPrime/wwwroot/source/sass/component/accordion/_accordion.scss */
+/* line 227, /www/sites/HbgPrime/wwwroot/source/sass/component/accordion/_accordion.scss */
 .accordion-content {
   display: none; }
-  /* line 218, /www/sites/HbgPrime/wwwroot/source/sass/component/accordion/_accordion.scss */
+  /* line 230, /www/sites/HbgPrime/wwwroot/source/sass/component/accordion/_accordion.scss */
   input[type="checkbox"] ~ .accordion-content,
   input[type="radio"] ~ .accordion-content {
     display: none; }
-  /* line 223, /www/sites/HbgPrime/wwwroot/source/sass/component/accordion/_accordion.scss */
+    @media print {
+      /* line 230, /www/sites/HbgPrime/wwwroot/source/sass/component/accordion/_accordion.scss */
+      input[type="checkbox"] ~ .accordion-content,
+      input[type="radio"] ~ .accordion-content {
+        display: block !important; } }
+  /* line 239, /www/sites/HbgPrime/wwwroot/source/sass/component/accordion/_accordion.scss */
   input[type="checkbox"]:checked ~ .accordion-content,
   input[type="radio"]:checked ~ .accordion-content,
+  input[type="checkbox"]:target ~ .accordion-content,
   input[type="radio"]:target ~ .accordion-content {
     display: block; }
+  @media print {
+    /* line 227, /www/sites/HbgPrime/wwwroot/source/sass/component/accordion/_accordion.scss */
+    .accordion-content {
+      display: block !important; } }
 
-/* line 230, /www/sites/HbgPrime/wwwroot/source/sass/component/accordion/_accordion.scss */
+/* line 251, /www/sites/HbgPrime/wwwroot/source/sass/component/accordion/_accordion.scss */
 .accordion-table {
   display: table;
   table-layout: fixed;
   width: 100%; }
-  /* line 235, /www/sites/HbgPrime/wwwroot/source/sass/component/accordion/_accordion.scss */
+  /* line 256, /www/sites/HbgPrime/wwwroot/source/sass/component/accordion/_accordion.scss */
   .accordion-table .column-header {
     display: table-cell;
     width: 2%; }
 
-/* line 241, /www/sites/HbgPrime/wwwroot/source/sass/component/accordion/_accordion.scss */
+/* line 262, /www/sites/HbgPrime/wwwroot/source/sass/component/accordion/_accordion.scss */
 .accordion-table-head {
   background-color: #333;
   color: #fff;
   font-weight: bold; }
-  /* line 249, /www/sites/HbgPrime/wwwroot/source/sass/component/accordion/_accordion.scss */
+  /* line 270, /www/sites/HbgPrime/wwwroot/source/sass/component/accordion/_accordion.scss */
   .theme-red .accordion-table-head {
     background-color: #cb0050; }
-  /* line 249, /www/sites/HbgPrime/wwwroot/source/sass/component/accordion/_accordion.scss */
+  /* line 270, /www/sites/HbgPrime/wwwroot/source/sass/component/accordion/_accordion.scss */
   .theme-blue .accordion-table-head {
     background-color: #0069b4; }
-  /* line 249, /www/sites/HbgPrime/wwwroot/source/sass/component/accordion/_accordion.scss */
+  /* line 270, /www/sites/HbgPrime/wwwroot/source/sass/component/accordion/_accordion.scss */
   .theme-green .accordion-table-head {
     background-color: #11a636; }
-  /* line 249, /www/sites/HbgPrime/wwwroot/source/sass/component/accordion/_accordion.scss */
+  /* line 270, /www/sites/HbgPrime/wwwroot/source/sass/component/accordion/_accordion.scss */
   .theme-purple .accordion-table-head {
     background-color: #712082; }
 
@@ -7526,6 +7590,17 @@ input[type="radio"]:checked ~ .accordion-toggle .label-number {
     border-right: 5px solid #252525;
     border-bottom: 5px solid transparent;
     border-left: none; }
+  @media print {
+    /* line 125, /www/sites/HbgPrime/wwwroot/source/sass/component/tooltip/_tooltip.scss */
+    [data-tooltip]::before {
+      display: none !important; }
+    /* line 129, /www/sites/HbgPrime/wwwroot/source/sass/component/tooltip/_tooltip.scss */
+    [data-tooltip]::after {
+      display: inline-block;
+      content: "(" attr(data-tooltip) ")";
+      margin-left: .3em;
+      color: #252525;
+      font-size: .8em; } }
 
 /* line 29, /www/sites/HbgPrime/wwwroot/source/sass/component/notice/_notice.scss */
 .notice {
@@ -11075,50 +11150,110 @@ option {
   .segmented-control input[type="radio"]:checked + label,
   .segmented-control input[type="checkbox"]:checked + label {
     background-color: #e7e5e1; }
+    /* line 58, /www/sites/HbgPrime/wwwroot/source/sass/component/form/_segmented.scss */
+    .segmented-control input[type="radio"]:checked + label .label,
+    .segmented-control input[type="checkbox"]:checked + label .label {
+      background-color: #fff !important;
+      color: #252525 !important; }
 
-/* line 1, /www/sites/HbgPrime/wwwroot/source/sass/component/form/gravity-forms.scss */
+/* line 28, /www/sites/HbgPrime/wwwroot/source/sass/component/form/_tag-manager.scss */
+.tag-manager {
+  border: 1px solid #e7e5e1; }
+  /* line 31, /www/sites/HbgPrime/wwwroot/source/sass/component/form/_tag-manager.scss */
+  .tag-manager .tag-manager-input {
+    border-bottom: 1px solid #e7e5e1; }
+    /* line 34, /www/sites/HbgPrime/wwwroot/source/sass/component/form/_tag-manager.scss */
+    .tag-manager .tag-manager-input input {
+      border: none; }
+  /* line 39, /www/sites/HbgPrime/wwwroot/source/sass/component/form/_tag-manager.scss */
+  .tag-manager .tag-manager-selected {
+    padding: 15px; }
+    /* line 42, /www/sites/HbgPrime/wwwroot/source/sass/component/form/_tag-manager.scss */
+    .tag-manager .tag-manager-selected li {
+      display: inline-block;
+      margin-right: 5px; }
+    /* line 47, /www/sites/HbgPrime/wwwroot/source/sass/component/form/_tag-manager.scss */
+    .tag-manager .tag-manager-selected button[data-action="remove"] {
+      position: relative;
+      top: -1px;
+      display: inline-block;
+      vertical-align: middle;
+      margin-left: 3px;
+      padding: 0;
+      line-height: 1; }
+  /* line 58, /www/sites/HbgPrime/wwwroot/source/sass/component/form/_tag-manager.scss */
+  .tag-manager .autocomplete {
+    border-top: 1px solid #e7e5e1;
+    padding: 5px 0; }
+    /* line 62, /www/sites/HbgPrime/wwwroot/source/sass/component/form/_tag-manager.scss */
+    .tag-manager .autocomplete li button {
+      display: block;
+      width: 100%;
+      padding: 5px 10px;
+      font-size: .9em;
+      text-align: left;
+      background-color: transparent;
+      border: none;
+      cursor: pointer; }
+      /* line 72, /www/sites/HbgPrime/wwwroot/source/sass/component/form/_tag-manager.scss */
+      .tag-manager .autocomplete li button:hover {
+        background-color: #f6f5f2; }
+    /* line 77, /www/sites/HbgPrime/wwwroot/source/sass/component/form/_tag-manager.scss */
+    .tag-manager .autocomplete li + li {
+      margin-top: 2px; }
+
+/* line 1, /www/sites/HbgPrime/wwwroot/source/sass/component/form/_gravity-forms.scss */
 .gform_wrapper {
   margin: 15px 0;
   background-color: #f6f5f2;
   border: 1px solid #e7e5e1;
   padding: 30px; }
-  /* line 7, /www/sites/HbgPrime/wwwroot/source/sass/component/form/gravity-forms.scss */
+  /* line 7, /www/sites/HbgPrime/wwwroot/source/sass/component/form/_gravity-forms.scss */
   .gform_wrapper form {
     margin: 0 !important; }
 
-/* line 12, /www/sites/HbgPrime/wwwroot/source/sass/component/form/gravity-forms.scss */
+/* line 12, /www/sites/HbgPrime/wwwroot/source/sass/component/form/_gravity-forms.scss */
 .gform_fields {
   padding: 0 !important; }
 
-/* line 16, /www/sites/HbgPrime/wwwroot/source/sass/component/form/gravity-forms.scss */
+/* line 16, /www/sites/HbgPrime/wwwroot/source/sass/component/form/_gravity-forms.scss */
 .ginput_container {
   margin-top: 3px; }
 
-/* line 20, /www/sites/HbgPrime/wwwroot/source/sass/component/form/gravity-forms.scss */
+/* line 20, /www/sites/HbgPrime/wwwroot/source/sass/component/form/_gravity-forms.scss */
 .gfield_required {
   color: #ae0b05; }
 
-/* line 25, /www/sites/HbgPrime/wwwroot/source/sass/component/form/gravity-forms.scss */
+/* line 25, /www/sites/HbgPrime/wwwroot/source/sass/component/form/_gravity-forms.scss */
 .gfield_list td {
   vertical-align: top; }
 
-/* line 29, /www/sites/HbgPrime/wwwroot/source/sass/component/form/gravity-forms.scss */
+/* line 29, /www/sites/HbgPrime/wwwroot/source/sass/component/form/_gravity-forms.scss */
 .gfield_list .add_list_item,
 .gfield_list .delete_list_item {
   padding: 0 !important;
   margin: 0 !important; }
 
-/* line 35, /www/sites/HbgPrime/wwwroot/source/sass/component/form/gravity-forms.scss */
+/* line 35, /www/sites/HbgPrime/wwwroot/source/sass/component/form/_gravity-forms.scss */
 .gfield_list td + td {
   padding-left: 5px; }
 
-/* line 39, /www/sites/HbgPrime/wwwroot/source/sass/component/form/gravity-forms.scss */
+/* line 39, /www/sites/HbgPrime/wwwroot/source/sass/component/form/_gravity-forms.scss */
 .gfield_list tr + tr td {
   padding-top: 8px; }
 
-/* line 44, /www/sites/HbgPrime/wwwroot/source/sass/component/form/gravity-forms.scss */
+/* line 44, /www/sites/HbgPrime/wwwroot/source/sass/component/form/_gravity-forms.scss */
 .ginput_container_list + .gfield_description {
   margin-top: 5px; }
+
+/* line 48, /www/sites/HbgPrime/wwwroot/source/sass/component/form/_gravity-forms.scss */
+.gfield_checkbox {
+  margin: 0;
+  padding: 0 !important; }
+  /* line 52, /www/sites/HbgPrime/wwwroot/source/sass/component/form/_gravity-forms.scss */
+  .gfield_checkbox li label {
+    display: inline-block;
+    font-weight: normal; }
 
 /* line 18, /www/sites/HbgPrime/wwwroot/source/sass/component/dropdown/_dropdown.scss */
 .dropdown {
@@ -12885,6 +13020,20 @@ a img.aligncenter {
   width: 100%;
   height: auto;
   margin: 0; }
+
+/* line 15, /www/sites/HbgPrime/wwwroot/source/sass/utility/_explain.scss */
+.explain em {
+  font-style: italic; }
+
+/* line 19, /www/sites/HbgPrime/wwwroot/source/sass/utility/_explain.scss */
+.explain .fa {
+  color: #979797;
+  cursor: default; }
+
+@media print {
+  /* line 25, /www/sites/HbgPrime/wwwroot/source/sass/utility/_explain.scss */
+  .explain .fa {
+    display: none; } }
 
 /* line 1, /www/sites/HbgPrime/wwwroot/source/sass/component/wordpress/_widget.scss */
 [class^="widget_"]:not(.widget_calendar) {
