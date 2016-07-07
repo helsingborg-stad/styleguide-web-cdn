@@ -13515,7 +13515,7 @@ HelsingborgPrime.Prompt.ModalLimit = (function ($) {
     };
 
     ModalLimit.prototype.toggleModalClass = function(){
-	    if (window.location.hash.indexOf('modal-') > 0 ) {
+	    if (window.location.hash.indexOf('modal-') > 0 && $(window.location.hash).length > 0) {
 			$('html').addClass('overflow-hidden');
 		} else {
 			$('html').removeClass('overflow-hidden');

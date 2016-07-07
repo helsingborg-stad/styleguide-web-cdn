@@ -6449,50 +6449,44 @@ button.btn-icon {
     z-index: 9000;
     display: block; }
   /* line 78, /www/sites/HbgPrime/wwwroot/source/sass/component/modal/_modal.scss */
-  .modal:target {
+  .modal:target, .modal.modal-open {
     opacity: 1;
     display: block !important; }
-  /* line 83, /www/sites/HbgPrime/wwwroot/source/sass/component/modal/_modal.scss */
+  /* line 84, /www/sites/HbgPrime/wwwroot/source/sass/component/modal/_modal.scss */
   .modal .backdrop {
     cursor: default; }
 
-/* line 88, /www/sites/HbgPrime/wwwroot/source/sass/component/modal/_modal.scss */
+/* line 89, /www/sites/HbgPrime/wwwroot/source/sass/component/modal/_modal.scss */
 .modal-header {
-  padding: .6em 0;
+  padding: .7em 1em;
   position: relative;
-  color: #fff; }
-  @media screen and (min-width: 0) and (max-width: 468px) {
-    /* line 88, /www/sites/HbgPrime/wwwroot/source/sass/component/modal/_modal.scss */
-    .modal-header {
-      padding: 15px;
-      color: #252525;
-      border-bottom: 1px solid #e7e5e1; } }
-  /* line 99, /www/sites/HbgPrime/wwwroot/source/sass/component/modal/_modal.scss */
+  border-bottom: 1px solid #e7e5e1; }
+  /* line 94, /www/sites/HbgPrime/wwwroot/source/sass/component/modal/_modal.scss */
   .modal-header h1, .modal-header h2, .modal-header h3, .modal-header h4, .modal-header .widget_calendar caption, .widget_calendar .modal-header caption, .modal-header h5, .modal-header h6 {
     padding-bottom: 0;
     font-weight: 600; }
-  /* line 104, /www/sites/HbgPrime/wwwroot/source/sass/component/modal/_modal.scss */
+  /* line 99, /www/sites/HbgPrime/wwwroot/source/sass/component/modal/_modal.scss */
   .modal-header .btn-close {
     position: absolute;
     top: 0;
-    right: 0;
+    right: 1em;
     background-color: transparent;
-    color: #fff;
+    color: #252525;
     font-size: 1.5em;
-    padding: 10px;
+    padding: 0;
     text-align: center;
     width: 40px;
     height: 40px;
     border-radius: 50%;
+    border: none;
     position: absolute;
     top: 50%;
     -webkit-transform: translate(0, -50%);
             transform: translate(0, -50%); }
-    /* line 118, /www/sites/HbgPrime/wwwroot/source/sass/component/modal/_modal.scss */
+    /* line 114, /www/sites/HbgPrime/wwwroot/source/sass/component/modal/_modal.scss */
     .modal-header .btn-close:hover {
-      background-color: #fff;
-      color: #252525; }
-    /* line 123, /www/sites/HbgPrime/wwwroot/source/sass/component/modal/_modal.scss */
+      color: #e3000f; }
+    /* line 118, /www/sites/HbgPrime/wwwroot/source/sass/component/modal/_modal.scss */
     .modal-header .btn-close:after {
       position: absolute;
       top: 50%;
@@ -6510,171 +6504,160 @@ button.btn-icon {
       content: "";
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale; }
-    @media screen and (min-width: 0) and (max-width: 468px) {
-      /* line 104, /www/sites/HbgPrime/wwwroot/source/sass/component/modal/_modal.scss */
-      .modal-header .btn-close {
-        background-color: transparent;
-        color: #252525;
-        padding: 0;
-        border-radius: 0;
-        right: 15px; }
-        /* line 136, /www/sites/HbgPrime/wwwroot/source/sass/component/modal/_modal.scss */
-        .modal-header .btn-close:hover {
-          color: #ae0b05;
-          background-color: transparent; } }
 
-/* line 145, /www/sites/HbgPrime/wwwroot/source/sass/component/modal/_modal.scss */
-.modal-body {
-  padding: 1em;
-  background: #fff;
-  border-radius: 5px 5px 0 0; }
-
-/* line 151, /www/sites/HbgPrime/wwwroot/source/sass/component/modal/_modal.scss */
+/* line 127, /www/sites/HbgPrime/wwwroot/source/sass/component/modal/_modal.scss */
 .modal-footer {
   padding: 1em;
   border-top: 1px solid #e7e5e1;
   background: #fff;
   border-radius: 0 0 5px 5px; }
 
-/* line 158, /www/sites/HbgPrime/wwwroot/source/sass/component/modal/_modal.scss */
+/* line 134, /www/sites/HbgPrime/wwwroot/source/sass/component/modal/_modal.scss */
+.modal-body {
+  background-color: #f9f9f9; }
+  /* line 137, /www/sites/HbgPrime/wwwroot/source/sass/component/modal/_modal.scss */
+  .modal-body article {
+    padding: 1em;
+    margin-bottom: 0; }
+
+/* line 143, /www/sites/HbgPrime/wwwroot/source/sass/component/modal/_modal.scss */
 .modal-content {
   position: relative;
   z-index: 10000;
   line-height: 1.6;
+  background-color: #fff;
+  border-radius: 5px;
+  overflow: hidden;
   position: absolute;
   left: 50%;
   -webkit-transform: translate(-50%, 0);
           transform: translate(-50%, 0); }
-  @media screen and (min-width: 0) and (max-width: 468px) {
-    /* line 158, /www/sites/HbgPrime/wwwroot/source/sass/component/modal/_modal.scss */
-    .modal-content {
-      background-color: #fff; } }
 
 /* Modifiers - size */
-/* line 171, /www/sites/HbgPrime/wwwroot/source/sass/component/modal/_modal.scss */
+/* line 155, /www/sites/HbgPrime/wwwroot/source/sass/component/modal/_modal.scss */
 .modal-large .modal-content {
   width: 100%;
   min-height: 100vh;
   margin: 0; }
 
-/* line 177, /www/sites/HbgPrime/wwwroot/source/sass/component/modal/_modal.scss */
+/* line 161, /www/sites/HbgPrime/wwwroot/source/sass/component/modal/_modal.scss */
 .modal-large .btn-close {
   top: 43%;
   right: 2em; }
 
-/* line 182, /www/sites/HbgPrime/wwwroot/source/sass/component/modal/_modal.scss */
+/* line 166, /www/sites/HbgPrime/wwwroot/source/sass/component/modal/_modal.scss */
 .modal-large .modal-footer {
   position: absolute;
   bottom: 0;
   width: 100%;
   background: #fff; }
 
-/* line 189, /www/sites/HbgPrime/wwwroot/source/sass/component/modal/_modal.scss */
+/* line 173, /www/sites/HbgPrime/wwwroot/source/sass/component/modal/_modal.scss */
 .modal-medium .modal-content {
   width: 70%; }
   @media screen and (min-width: 0) {
-    /* line 189, /www/sites/HbgPrime/wwwroot/source/sass/component/modal/_modal.scss */
+    /* line 173, /www/sites/HbgPrime/wwwroot/source/sass/component/modal/_modal.scss */
     .modal-medium .modal-content {
       width: 100%; } }
   @media screen and (min-width: 469px) {
-    /* line 189, /www/sites/HbgPrime/wwwroot/source/sass/component/modal/_modal.scss */
+    /* line 173, /www/sites/HbgPrime/wwwroot/source/sass/component/modal/_modal.scss */
     .modal-medium .modal-content {
       width: 90%; } }
   @media screen and (min-width: 769px) {
-    /* line 189, /www/sites/HbgPrime/wwwroot/source/sass/component/modal/_modal.scss */
+    /* line 173, /www/sites/HbgPrime/wwwroot/source/sass/component/modal/_modal.scss */
     .modal-medium .modal-content {
       width: 80%; } }
 
-/* line 205, /www/sites/HbgPrime/wwwroot/source/sass/component/modal/_modal.scss */
+/* line 189, /www/sites/HbgPrime/wwwroot/source/sass/component/modal/_modal.scss */
 .modal-small .modal-content {
   width: 50%; }
   @media screen and (min-width: 0) {
-    /* line 205, /www/sites/HbgPrime/wwwroot/source/sass/component/modal/_modal.scss */
+    /* line 189, /www/sites/HbgPrime/wwwroot/source/sass/component/modal/_modal.scss */
     .modal-small .modal-content {
       width: 100%; } }
   @media screen and (min-width: 469px) {
-    /* line 205, /www/sites/HbgPrime/wwwroot/source/sass/component/modal/_modal.scss */
+    /* line 189, /www/sites/HbgPrime/wwwroot/source/sass/component/modal/_modal.scss */
     .modal-small .modal-content {
       width: 90%; } }
   @media screen and (min-width: 769px) {
-    /* line 205, /www/sites/HbgPrime/wwwroot/source/sass/component/modal/_modal.scss */
+    /* line 189, /www/sites/HbgPrime/wwwroot/source/sass/component/modal/_modal.scss */
     .modal-small .modal-content {
       width: 60%; } }
 
 /* Modifiers - color */
-/* line 223, /www/sites/HbgPrime/wwwroot/source/sass/component/modal/_modal.scss */
+/* line 207, /www/sites/HbgPrime/wwwroot/source/sass/component/modal/_modal.scss */
 .modal-backdrop-1 .backdrop {
   background-color: rgba(255, 255, 255, 0.95); }
-  /* line 229, /www/sites/HbgPrime/wwwroot/source/sass/component/modal/_modal.scss */
+  /* line 213, /www/sites/HbgPrime/wwwroot/source/sass/component/modal/_modal.scss */
   .theme-red .modal-backdrop-1 .backdrop {
     background-color: rgba(247, 166, 0, 0.9); }
-  /* line 229, /www/sites/HbgPrime/wwwroot/source/sass/component/modal/_modal.scss */
+  /* line 213, /www/sites/HbgPrime/wwwroot/source/sass/component/modal/_modal.scss */
   .theme-blue .modal-backdrop-1 .backdrop {
     background-color: rgba(77, 180, 231, 0.9); }
-  /* line 229, /www/sites/HbgPrime/wwwroot/source/sass/component/modal/_modal.scss */
+  /* line 213, /www/sites/HbgPrime/wwwroot/source/sass/component/modal/_modal.scss */
   .theme-green .modal-backdrop-1 .backdrop {
     background-color: rgba(175, 202, 5, 0.9); }
-  /* line 229, /www/sites/HbgPrime/wwwroot/source/sass/component/modal/_modal.scss */
+  /* line 213, /www/sites/HbgPrime/wwwroot/source/sass/component/modal/_modal.scss */
   .theme-purple .modal-backdrop-1 .backdrop {
     background-color: rgba(211, 80, 152, 0.9); }
 
-/* line 236, /www/sites/HbgPrime/wwwroot/source/sass/component/modal/_modal.scss */
+/* line 220, /www/sites/HbgPrime/wwwroot/source/sass/component/modal/_modal.scss */
 .modal-backdrop-2 .backdrop {
   background-color: rgba(51, 51, 51, 0.95); }
-  /* line 242, /www/sites/HbgPrime/wwwroot/source/sass/component/modal/_modal.scss */
+  /* line 226, /www/sites/HbgPrime/wwwroot/source/sass/component/modal/_modal.scss */
   .theme-red .modal-backdrop-2 .backdrop {
     background-color: rgba(203, 0, 80, 0.9); }
-  /* line 242, /www/sites/HbgPrime/wwwroot/source/sass/component/modal/_modal.scss */
+  /* line 226, /www/sites/HbgPrime/wwwroot/source/sass/component/modal/_modal.scss */
   .theme-blue .modal-backdrop-2 .backdrop {
     background-color: rgba(0, 105, 180, 0.9); }
-  /* line 242, /www/sites/HbgPrime/wwwroot/source/sass/component/modal/_modal.scss */
+  /* line 226, /www/sites/HbgPrime/wwwroot/source/sass/component/modal/_modal.scss */
   .theme-green .modal-backdrop-2 .backdrop {
     background-color: rgba(17, 166, 54, 0.9); }
-  /* line 242, /www/sites/HbgPrime/wwwroot/source/sass/component/modal/_modal.scss */
+  /* line 226, /www/sites/HbgPrime/wwwroot/source/sass/component/modal/_modal.scss */
   .theme-purple .modal-backdrop-2 .backdrop {
     background-color: rgba(113, 32, 130, 0.9); }
 
-/* line 249, /www/sites/HbgPrime/wwwroot/source/sass/component/modal/_modal.scss */
+/* line 233, /www/sites/HbgPrime/wwwroot/source/sass/component/modal/_modal.scss */
 .modal-backdrop-3 .backdrop {
   background-color: rgba(102, 102, 102, 0.95); }
-  /* line 255, /www/sites/HbgPrime/wwwroot/source/sass/component/modal/_modal.scss */
+  /* line 239, /www/sites/HbgPrime/wwwroot/source/sass/component/modal/_modal.scss */
   .theme-red .modal-backdrop-3 .backdrop {
     background-color: rgba(236, 103, 1, 0.9); }
-  /* line 255, /www/sites/HbgPrime/wwwroot/source/sass/component/modal/_modal.scss */
+  /* line 239, /www/sites/HbgPrime/wwwroot/source/sass/component/modal/_modal.scss */
   .theme-blue .modal-backdrop-3 .backdrop {
     background-color: rgba(91, 161, 216, 0.9); }
-  /* line 255, /www/sites/HbgPrime/wwwroot/source/sass/component/modal/_modal.scss */
+  /* line 239, /www/sites/HbgPrime/wwwroot/source/sass/component/modal/_modal.scss */
   .theme-green .modal-backdrop-3 .backdrop {
     background-color: rgba(160, 200, 85, 0.9); }
-  /* line 255, /www/sites/HbgPrime/wwwroot/source/sass/component/modal/_modal.scss */
+  /* line 239, /www/sites/HbgPrime/wwwroot/source/sass/component/modal/_modal.scss */
   .theme-purple .modal-backdrop-3 .backdrop {
     background-color: rgba(168, 76, 152, 0.9); }
 
-/* line 262, /www/sites/HbgPrime/wwwroot/source/sass/component/modal/_modal.scss */
+/* line 246, /www/sites/HbgPrime/wwwroot/source/sass/component/modal/_modal.scss */
 .modal-backdrop-4 .backdrop {
   background-color: rgba(119, 119, 119, 0.95); }
-  /* line 268, /www/sites/HbgPrime/wwwroot/source/sass/component/modal/_modal.scss */
+  /* line 252, /www/sites/HbgPrime/wwwroot/source/sass/component/modal/_modal.scss */
   .theme-red .modal-backdrop-4 .backdrop {
     background-color: rgba(174, 11, 5, 0.9); }
-  /* line 268, /www/sites/HbgPrime/wwwroot/source/sass/component/modal/_modal.scss */
+  /* line 252, /www/sites/HbgPrime/wwwroot/source/sass/component/modal/_modal.scss */
   .theme-blue .modal-backdrop-4 .backdrop {
     background-color: rgba(0, 92, 134, 0.9); }
-  /* line 268, /www/sites/HbgPrime/wwwroot/source/sass/component/modal/_modal.scss */
+  /* line 252, /www/sites/HbgPrime/wwwroot/source/sass/component/modal/_modal.scss */
   .theme-green .modal-backdrop-4 .backdrop {
     background-color: rgba(80, 129, 27, 0.9); }
-  /* line 268, /www/sites/HbgPrime/wwwroot/source/sass/component/modal/_modal.scss */
+  /* line 252, /www/sites/HbgPrime/wwwroot/source/sass/component/modal/_modal.scss */
   .theme-purple .modal-backdrop-4 .backdrop {
     background-color: rgba(123, 7, 94, 0.9); }
 
-/* line 275, /www/sites/HbgPrime/wwwroot/source/sass/component/modal/_modal.scss */
+/* line 259, /www/sites/HbgPrime/wwwroot/source/sass/component/modal/_modal.scss */
 .modal-backdrop-black .backdrop {
   background-color: rgba(0, 0, 0, 0.95); }
 
-/* line 279, /www/sites/HbgPrime/wwwroot/source/sass/component/modal/_modal.scss */
+/* line 263, /www/sites/HbgPrime/wwwroot/source/sass/component/modal/_modal.scss */
 .modal-backdrop-white .backdrop {
   background-color: rgba(255, 255, 255, 0.95); }
 
-/* line 283, /www/sites/HbgPrime/wwwroot/source/sass/component/modal/_modal.scss */
+/* line 267, /www/sites/HbgPrime/wwwroot/source/sass/component/modal/_modal.scss */
 .modal-backdrop-white .modal-content {
   border: 1px solid #e7e5e1; }
 
@@ -7048,6 +7031,34 @@ label.accordion-toggle {
   /* line 270, /www/sites/HbgPrime/wwwroot/source/sass/component/accordion/_accordion.scss */
   .theme-purple .accordion-table-head {
     background-color: #712082; }
+
+/* line 278, /www/sites/HbgPrime/wwwroot/source/sass/component/accordion/_accordion.scss */
+.modal-body .accordion .accordion-section:first-child {
+  border-top: none; }
+
+/* line 282, /www/sites/HbgPrime/wwwroot/source/sass/component/accordion/_accordion.scss */
+.modal-body .accordion .accordion-section:last-child {
+  border-bottom: none; }
+
+/* line 287, /www/sites/HbgPrime/wwwroot/source/sass/component/accordion/_accordion.scss */
+.accordion-nav {
+  background-color: #F6F5F2;
+  margin: -20px;
+  margin-top: 20px;
+  padding: 10px 20px;
+  border-top: 1px solid #E7E5E1; }
+  @media print {
+    /* line 287, /www/sites/HbgPrime/wwwroot/source/sass/component/accordion/_accordion.scss */
+    .accordion-nav {
+      display: none; } }
+
+/* line 299, /www/sites/HbgPrime/wwwroot/source/sass/component/accordion/_accordion.scss */
+[data-accordion-nav="next"] .fa {
+  margin-left: 5px; }
+
+/* line 303, /www/sites/HbgPrime/wwwroot/source/sass/component/accordion/_accordion.scss */
+[data-accordion-nav="prev"] .fa {
+  margin-right: 5px; }
 
 /* line 45, /www/sites/HbgPrime/wwwroot/source/sass/component/blog/_post.scss */
 .post-single .post-header ul {
@@ -7615,54 +7626,58 @@ label.accordion-toggle {
     font-size: 1.5em;
     vertical-align: middle; }
   /* line 42, /www/sites/HbgPrime/wwwroot/source/sass/component/notice/_notice.scss */
+  .notice span {
+    display: inline-block;
+    vertical-align: middle; }
+  /* line 47, /www/sites/HbgPrime/wwwroot/source/sass/component/notice/_notice.scss */
   .notice + .notice {
     margin-top: 1px; }
-  /* line 46, /www/sites/HbgPrime/wwwroot/source/sass/component/notice/_notice.scss */
+  /* line 51, /www/sites/HbgPrime/wwwroot/source/sass/component/notice/_notice.scss */
   .notice.bottom-fixed {
     position: fixed;
     bottom: 0;
     left: 0;
     right: 0;
     z-index: 9999; }
-  /* line 54, /www/sites/HbgPrime/wwwroot/source/sass/component/notice/_notice.scss */
+  /* line 59, /www/sites/HbgPrime/wwwroot/source/sass/component/notice/_notice.scss */
   .notice .grid-col-icon {
     margin-right: 5px; }
 
-/* line 59, /www/sites/HbgPrime/wwwroot/source/sass/component/notice/_notice.scss */
+/* line 64, /www/sites/HbgPrime/wwwroot/source/sass/component/notice/_notice.scss */
 .notice-lg {
   font-size: 1.2em; }
-  /* line 62, /www/sites/HbgPrime/wwwroot/source/sass/component/notice/_notice.scss */
+  /* line 67, /www/sites/HbgPrime/wwwroot/source/sass/component/notice/_notice.scss */
   .notice-lg .grid-col-icon {
     margin-right: 10px; }
 
-/* line 67, /www/sites/HbgPrime/wwwroot/source/sass/component/notice/_notice.scss */
+/* line 72, /www/sites/HbgPrime/wwwroot/source/sass/component/notice/_notice.scss */
 .notice-sm {
   font-size: .9em; }
-  /* line 70, /www/sites/HbgPrime/wwwroot/source/sass/component/notice/_notice.scss */
+  /* line 75, /www/sites/HbgPrime/wwwroot/source/sass/component/notice/_notice.scss */
   .notice-sm .grid-col-icon {
     margin-right: 0px; }
 
-/* line 75, /www/sites/HbgPrime/wwwroot/source/sass/component/notice/_notice.scss */
+/* line 80, /www/sites/HbgPrime/wwwroot/source/sass/component/notice/_notice.scss */
 .notice-fullwidth {
   border-left: 0;
   border-right: 0; }
 
-/* line 80, /www/sites/HbgPrime/wwwroot/source/sass/component/notice/_notice.scss */
+/* line 85, /www/sites/HbgPrime/wwwroot/source/sass/component/notice/_notice.scss */
 .notice.success {
   background-color: #11a636;
   color: #fff; }
 
-/* line 85, /www/sites/HbgPrime/wwwroot/source/sass/component/notice/_notice.scss */
+/* line 90, /www/sites/HbgPrime/wwwroot/source/sass/component/notice/_notice.scss */
 .notice.warning {
   background-color: #FFD700;
   color: #252525; }
 
-/* line 89, /www/sites/HbgPrime/wwwroot/source/sass/component/notice/_notice.scss */
+/* line 94, /www/sites/HbgPrime/wwwroot/source/sass/component/notice/_notice.scss */
 .notice.danger {
   background-color: #e3000f;
   color: #fff; }
 
-/* line 94, /www/sites/HbgPrime/wwwroot/source/sass/component/notice/_notice.scss */
+/* line 99, /www/sites/HbgPrime/wwwroot/source/sass/component/notice/_notice.scss */
 .notice.info {
   background-color: #b1f5ff;
   color: #252525; }
@@ -13450,20 +13465,12 @@ a img.aligncenter {
 
 @-webkit-keyframes modal-in {
   0% {
-    -webkit-transform: scale(0.8) translateX(-55%);
-            transform: scale(0.8) translateX(-55%);
     opacity: 0; }
   100% {
-    -webkit-transform: scale(1) translateX(-50%);
-            transform: scale(1) translateX(-50%);
     opacity: 1; } }
 
 @keyframes modal-in {
   0% {
-    -webkit-transform: scale(0.8) translateX(-55%);
-            transform: scale(0.8) translateX(-55%);
     opacity: 0; }
   100% {
-    -webkit-transform: scale(1) translateX(-50%);
-            transform: scale(1) translateX(-50%);
     opacity: 1; } }
