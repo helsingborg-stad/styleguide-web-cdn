@@ -4128,6 +4128,7 @@ article {
   article p + img,
   article p + .box,
   article p + .dataTables_wrapper,
+  article p + .wp-caption,
   article ol + h1,
   article ol + h2,
   article ol + h3,
@@ -4144,6 +4145,7 @@ article {
   article ol + img,
   article ol + .box,
   article ol + .dataTables_wrapper,
+  article ol + .wp-caption,
   article ul + h1,
   article ul + h2,
   article ul + h3,
@@ -4160,6 +4162,7 @@ article {
   article ul + img,
   article ul + .box,
   article ul + .dataTables_wrapper,
+  article ul + .wp-caption,
   article blockquote + h1,
   article blockquote + h2,
   article blockquote + h3,
@@ -4176,6 +4179,7 @@ article {
   article blockquote + img,
   article blockquote + .box,
   article blockquote + .dataTables_wrapper,
+  article blockquote + .wp-caption,
   article .wp-caption + h1,
   article .wp-caption + h2,
   article .wp-caption + h3,
@@ -4208,6 +4212,7 @@ article {
   article pre + img,
   article pre + .box,
   article pre + .dataTables_wrapper,
+  article pre + .wp-caption,
   article img + h1,
   article img + h2,
   article img + h3,
@@ -4224,6 +4229,7 @@ article {
   article img + img,
   article img + .box,
   article img + .dataTables_wrapper,
+  article img + .wp-caption,
   article .box + h1,
   article .box + h2,
   article .box + h3,
@@ -4240,6 +4246,7 @@ article {
   article .box + img,
   article .box + .box,
   article .box + .dataTables_wrapper,
+  article .box + .wp-caption,
   article .dataTables_wrapper + h1,
   article .dataTables_wrapper + h2,
   article .dataTables_wrapper + h3,
@@ -4255,9 +4262,10 @@ article {
   article .dataTables_wrapper + pre,
   article .dataTables_wrapper + img,
   article .dataTables_wrapper + .box,
-  article .dataTables_wrapper + .dataTables_wrapper {
+  article .dataTables_wrapper + .dataTables_wrapper,
+  article .dataTables_wrapper + .wp-caption {
     margin-top: 1.3em; }
-  /* line 178, /websites/helsingborg/styleguide/styleguide-web/source/sass/typography/_article.scss */
+  /* line 186, /websites/helsingborg/styleguide/styleguide-web/source/sass/typography/_article.scss */
   article hr + h1,
   article hr + h2,
   article hr + h3,
@@ -4273,6 +4281,7 @@ article {
   article hr + pre,
   article hr + hr,
   article hr + img,
+  article hr + .wp-caption,
   article h1 + hr,
   article h2 + hr,
   article h3 + hr,
@@ -4286,15 +4295,16 @@ article {
   article ul + hr,
   article blockquote + hr,
   article pre + hr,
-  article img + hr {
+  article img + hr,
+  article .wp-caption + hr {
     margin-top: 2em; }
-  /* line 207, /websites/helsingborg/styleguide/styleguide-web/source/sass/typography/_article.scss */
+  /* line 217, /websites/helsingborg/styleguide/styleguide-web/source/sass/typography/_article.scss */
   article blockquote {
     border-left: 3px solid #e7e5e1;
     margin-bottom: 15px;
     padding: 20px 35px;
     quotes: "“" "”" "‘" "’"; }
-  /* line 214, /websites/helsingborg/styleguide/styleguide-web/source/sass/typography/_article.scss */
+  /* line 224, /websites/helsingborg/styleguide/styleguide-web/source/sass/typography/_article.scss */
   article blockquote:before {
     color: #979797;
     content: open-quote;
@@ -4302,7 +4312,7 @@ article {
     line-height: 0.1em;
     margin-right: 0.25em;
     vertical-align: -0.4em; }
-  /* line 223, /websites/helsingborg/styleguide/styleguide-web/source/sass/typography/_article.scss */
+  /* line 233, /websites/helsingborg/styleguide/styleguide-web/source/sass/typography/_article.scss */
   article blockquote:after {
     color: #979797;
     content: close-quote;
@@ -4310,17 +4320,17 @@ article {
     line-height: 0.1em;
     margin-left: 0.25em;
     vertical-align: -0.4em; }
-  /* line 232, /websites/helsingborg/styleguide/styleguide-web/source/sass/typography/_article.scss */
+  /* line 242, /websites/helsingborg/styleguide/styleguide-web/source/sass/typography/_article.scss */
   article blockquote p {
     display: inline;
     margin: 0; }
-  /* line 237, /websites/helsingborg/styleguide/styleguide-web/source/sass/typography/_article.scss */
+  /* line 247, /websites/helsingborg/styleguide/styleguide-web/source/sass/typography/_article.scss */
   article img {
     display: block;
     max-width: 100%;
     height: auto; }
   @media print {
-    /* line 244, /websites/helsingborg/styleguide/styleguide-web/source/sass/typography/_article.scss */
+    /* line 254, /websites/helsingborg/styleguide/styleguide-web/source/sass/typography/_article.scss */
     article a::after {
       display: inline;
       content: " (" attr(href) ")";
@@ -4328,12 +4338,12 @@ article {
       font-size: .8em;
       word-break: break-all;
       text-decoration: none; } }
-  /* line 254, /websites/helsingborg/styleguide/styleguide-web/source/sass/typography/_article.scss */
+  /* line 264, /websites/helsingborg/styleguide/styleguide-web/source/sass/typography/_article.scss */
   article p, article h1, article h2, article h3, article h4, article .widget_calendar caption, .widget_calendar article caption, article h5, article h6, article li, article .wp-caption {
     max-width: 700px;
     width: 100%; }
 
-/* line 260, /websites/helsingborg/styleguide/styleguide-web/source/sass/typography/_article.scss */
+/* line 270, /websites/helsingborg/styleguide/styleguide-web/source/sass/typography/_article.scss */
 hr {
   position: relative;
   height: 4px;
@@ -4341,11 +4351,11 @@ hr {
   background-color: #e7e5e1;
   border: none; }
 
-/* line 268, /websites/helsingborg/styleguide/styleguide-web/source/sass/typography/_article.scss */
+/* line 278, /websites/helsingborg/styleguide/styleguide-web/source/sass/typography/_article.scss */
 article + .page-footer {
   margin-top: 30px; }
 
-/* line 272, /websites/helsingborg/styleguide/styleguide-web/source/sass/typography/_article.scss */
+/* line 282, /websites/helsingborg/styleguide/styleguide-web/source/sass/typography/_article.scss */
 .page-footer {
   font-size: .9em; }
 
