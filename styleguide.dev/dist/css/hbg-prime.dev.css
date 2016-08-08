@@ -2818,7 +2818,7 @@ table {
 
 /* line 13, /websites/helsingborg/styleguide/styleguide-web/source/sass/layout/_scaffolding.scss */
 body {
-  font-family: -apple-system, BlinkMacSystemFont, "Roboto", "Segoe UI", "Ubuntu", "Oxygen", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-family: system, "Segoe UI", Tahoma;
   font-size: 17px;
   line-height: 1.6;
   color: #252525; }
@@ -4312,8 +4312,11 @@ article {
       font-size: .8em;
       word-break: break-all;
       text-decoration: none; } }
+  /* line 239, /websites/helsingborg/styleguide/styleguide-web/source/sass/typography/_article.scss */
+  article p {
+    max-width: 700px; }
 
-/* line 240, /websites/helsingborg/styleguide/styleguide-web/source/sass/typography/_article.scss */
+/* line 244, /websites/helsingborg/styleguide/styleguide-web/source/sass/typography/_article.scss */
 hr {
   position: relative;
   height: 4px;
@@ -4321,11 +4324,11 @@ hr {
   background-color: #e7e5e1;
   border: none; }
 
-/* line 248, /websites/helsingborg/styleguide/styleguide-web/source/sass/typography/_article.scss */
+/* line 252, /websites/helsingborg/styleguide/styleguide-web/source/sass/typography/_article.scss */
 article + .page-footer {
   margin-top: 30px; }
 
-/* line 252, /websites/helsingborg/styleguide/styleguide-web/source/sass/typography/_article.scss */
+/* line 256, /websites/helsingborg/styleguide/styleguide-web/source/sass/typography/_article.scss */
 .page-footer {
   font-size: .9em; }
 
@@ -4736,7 +4739,7 @@ pre:not(.xdebug-var-dump) {
 code {
   display: inline-block;
   padding: 2px 5px 0;
-  font-family: "Fira Sans", "Monaco", "Consolas", "Lucida Console", "Courier New", "Courier", "Console";
+  font-family: "Fira Sans", "Monaco", "Consolas", "Menlo", "Lucida Console", "Courier New", "Courier", "Console";
   font-size: .9em;
   line-height: 1.4em;
   background-color: #f6f5f2;
@@ -4756,14 +4759,7 @@ code {
   border: none;
   padding: .5em 1em; }
 
-/* Fix for button height */
-/* line 17, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/button/_button.scss */
-button.btn,
-input[type="submit"].btn,
-input[type="button"].btn {
-  line-height: 1.6; }
-
-/* line 23, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/button/_button.scss */
+/* line 16, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/button/_button.scss */
 button.btn::-moz-focus-inner,
 input[type="submit"].btn::-moz-focus-inner,
 input[type="button"].btn::-moz-focus-inner {
@@ -4771,7 +4767,7 @@ input[type="button"].btn::-moz-focus-inner {
   border: 0; }
 
 /* End of button height fix */
-/* line 31, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/button/_button.scss */
+/* line 24, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/button/_button.scss */
 .btn,
 .read-more {
   -webkit-appearance: none;
@@ -4782,7 +4778,7 @@ input[type="button"].btn::-moz-focus-inner {
   padding: 7.5px 15px;
   background-color: #e7e5e1;
   border: 1px solid #e7e5e1;
-  font-family: -apple-system, BlinkMacSystemFont, "Roboto", "Segoe UI", "Ubuntu", "Oxygen", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-family: system, "Segoe UI", Tahoma;
   font-size: 0.9em;
   font-weight: 600;
   color: #252525;
@@ -4790,17 +4786,17 @@ input[type="button"].btn::-moz-focus-inner {
   cursor: pointer;
   margin: 0;
   border-radius: 3px; }
-  /* line 48, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/button/_button.scss */
+  /* line 41, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/button/_button.scss */
   .btn:hover, .btn:focus,
   .read-more:hover,
   .read-more:focus {
     background-color: #e0ded9;
     text-decoration: none; }
-  /* line 54, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/button/_button.scss */
+  /* line 47, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/button/_button.scss */
   .btn:active,
   .read-more:active {
     box-shadow: inset 0 0 8px rgba(0, 0, 0, 0.3); }
-  /* line 58, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/button/_button.scss */
+  /* line 51, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/button/_button.scss */
   .btn:disabled, .btn.disabled, input.btn[type="text"]:disabled,
   input.btn[type="password"]:disabled,
   input.btn[type="search"]:disabled,
@@ -4841,7 +4837,7 @@ input[type="button"].btn::-moz-focus-inner {
   select.read-more:disabled {
     opacity: .5;
     cursor: no-drop; }
-    /* line 63, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/button/_button.scss */
+    /* line 56, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/button/_button.scss */
     .btn:disabled:active, .btn.disabled:active, input.btn[type="text"]:active:disabled,
     input.btn[type="password"]:active:disabled,
     input.btn[type="search"]:active:disabled,
@@ -4882,13 +4878,13 @@ input[type="button"].btn::-moz-focus-inner {
     select.read-more:active:disabled {
       box-shadow: none; }
 
-/* line 69, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/button/_button.scss */
+/* line 62, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/button/_button.scss */
 .read-more {
   display: block !important;
   text-align: center;
   color: #252525 !important;
   text-decoration: none !important; }
-  /* line 75, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/button/_button.scss */
+  /* line 68, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/button/_button.scss */
   .read-more::before {
     font-family: FontAwesome;
     speak: none;
@@ -4902,328 +4898,328 @@ input[type="button"].btn::-moz-focus-inner {
     -moz-osx-font-smoothing: grayscale;
     margin-right: 7px; }
 
-/* line 96, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/button/_button.scss */
+/* line 89, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/button/_button.scss */
 .btn.btn-primary {
   background-color: #666;
   color: #fff;
   border-color: #666; }
-  /* line 104, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/button/_button.scss */
+  /* line 97, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/button/_button.scss */
   .theme-red .btn.btn-primary {
     background-color: #ec6701;
     border-color: #ec6701;
     color: #fff; }
-  /* line 104, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/button/_button.scss */
+  /* line 97, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/button/_button.scss */
   .theme-blue .btn.btn-primary {
     background-color: #5ba1d8;
     border-color: #5ba1d8;
     color: #fff; }
-  /* line 104, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/button/_button.scss */
+  /* line 97, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/button/_button.scss */
   .theme-green .btn.btn-primary {
     background-color: #a0c855;
     border-color: #a0c855;
     color: #fff; }
-  /* line 104, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/button/_button.scss */
+  /* line 97, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/button/_button.scss */
   .theme-purple .btn.btn-primary {
     background-color: #a84c98;
     border-color: #a84c98;
     color: #fff; }
-  /* line 112, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/button/_button.scss */
+  /* line 105, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/button/_button.scss */
   .btn.btn-primary:hover, .btn.btn-primary:focus {
     background-color: #5e5e5e;
     border-color: #5e5e5e; }
-    /* line 120, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/button/_button.scss */
+    /* line 113, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/button/_button.scss */
     .theme-red .btn.btn-primary:hover, .theme-red .btn.btn-primary:focus {
       background-color: #dd6001;
       border-color: #dd6001; }
-    /* line 120, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/button/_button.scss */
+    /* line 113, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/button/_button.scss */
     .theme-blue .btn.btn-primary:hover, .theme-blue .btn.btn-primary:focus {
       background-color: #4f9ad5;
       border-color: #4f9ad5; }
-    /* line 120, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/button/_button.scss */
+    /* line 113, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/button/_button.scss */
     .theme-green .btn.btn-primary:hover, .theme-green .btn.btn-primary:focus {
       background-color: #9ac449;
       border-color: #9ac449; }
-    /* line 120, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/button/_button.scss */
+    /* line 113, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/button/_button.scss */
     .theme-purple .btn.btn-primary:hover, .theme-purple .btn.btn-primary:focus {
       background-color: #9d478e;
       border-color: #9d478e; }
 
-/* line 129, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/button/_button.scss */
+/* line 122, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/button/_button.scss */
 .btn.btn-danger {
   background-color: #e3000f;
   border-color: #e3000f;
   color: #fff; }
-  /* line 134, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/button/_button.scss */
+  /* line 127, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/button/_button.scss */
   .btn.btn-danger:hover, .btn.btn-danger:focus {
     background-color: #b0000c;
     border-color: #b0000c; }
 
-/* line 152, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/button/_button.scss */
+/* line 145, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/button/_button.scss */
 .btn.btn-plain {
   background-color: transparent;
   color: #252525;
   border-color: transparent;
   padding: 0; }
-  /* line 158, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/button/_button.scss */
+  /* line 151, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/button/_button.scss */
   .btn.btn-plain:hover {
     background-color: trapsarent; }
-  /* line 162, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/button/_button.scss */
+  /* line 155, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/button/_button.scss */
   .btn.btn-plain:active {
     box-shadow: none; }
 
-/* line 218, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/button/_button.scss */
+/* line 211, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/button/_button.scss */
 .btn-theme-first {
   background-color: #fff;
   border-color: #fff;
   color: #fff; }
-  /* line 195, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/button/_button.scss */
+  /* line 188, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/button/_button.scss */
   .theme-red .btn-theme-first {
     background-color: #f7a600;
     border-color: #f7a600; }
-  /* line 195, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/button/_button.scss */
+  /* line 188, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/button/_button.scss */
   .theme-blue .btn-theme-first {
     background-color: #4db4e7;
     border-color: #4db4e7; }
-  /* line 195, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/button/_button.scss */
+  /* line 188, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/button/_button.scss */
   .theme-green .btn-theme-first {
     background-color: #afca05;
     border-color: #afca05; }
-  /* line 195, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/button/_button.scss */
+  /* line 188, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/button/_button.scss */
   .theme-purple .btn-theme-first {
     background-color: #d35098;
     border-color: #d35098; }
-  /* line 202, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/button/_button.scss */
+  /* line 195, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/button/_button.scss */
   .btn-theme-first:hover {
     background-color: #f7f7f7;
     border-color: #f7f7f7; }
-    /* line 209, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/button/_button.scss */
+    /* line 202, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/button/_button.scss */
     .theme-red .btn-theme-first:hover {
       background-color: #e89c00;
       border-color: #e89c00; }
-    /* line 209, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/button/_button.scss */
+    /* line 202, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/button/_button.scss */
     .theme-blue .btn-theme-first:hover {
       background-color: #40aee5;
       border-color: #40aee5; }
-    /* line 209, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/button/_button.scss */
+    /* line 202, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/button/_button.scss */
     .theme-green .btn-theme-first:hover {
       background-color: #a2bb05;
       border-color: #a2bb05; }
-    /* line 209, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/button/_button.scss */
+    /* line 202, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/button/_button.scss */
     .theme-purple .btn-theme-first:hover {
       background-color: #d04491;
       border-color: #d04491; }
 
-/* line 222, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/button/_button.scss */
+/* line 215, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/button/_button.scss */
 .btn-theme-second {
   background-color: #333;
   border-color: #333;
   color: #fff; }
-  /* line 195, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/button/_button.scss */
+  /* line 188, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/button/_button.scss */
   .theme-red .btn-theme-second {
     background-color: #cb0050;
     border-color: #cb0050; }
-  /* line 195, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/button/_button.scss */
+  /* line 188, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/button/_button.scss */
   .theme-blue .btn-theme-second {
     background-color: #0069b4;
     border-color: #0069b4; }
-  /* line 195, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/button/_button.scss */
+  /* line 188, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/button/_button.scss */
   .theme-green .btn-theme-second {
     background-color: #11a636;
     border-color: #11a636; }
-  /* line 195, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/button/_button.scss */
+  /* line 188, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/button/_button.scss */
   .theme-purple .btn-theme-second {
     background-color: #712082;
     border-color: #712082; }
-  /* line 202, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/button/_button.scss */
+  /* line 195, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/button/_button.scss */
   .btn-theme-second:hover {
     background-color: #f7f7f7;
     border-color: #f7f7f7; }
-    /* line 209, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/button/_button.scss */
+    /* line 202, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/button/_button.scss */
     .theme-red .btn-theme-second:hover {
       background-color: #bc004a;
       border-color: #bc004a; }
-    /* line 209, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/button/_button.scss */
+    /* line 202, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/button/_button.scss */
     .theme-blue .btn-theme-second:hover {
       background-color: #0060a5;
       border-color: #0060a5; }
-    /* line 209, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/button/_button.scss */
+    /* line 202, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/button/_button.scss */
     .theme-green .btn-theme-second:hover {
       background-color: #109831;
       border-color: #109831; }
-    /* line 209, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/button/_button.scss */
+    /* line 202, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/button/_button.scss */
     .theme-purple .btn-theme-second:hover {
       background-color: #661d76;
       border-color: #661d76; }
 
-/* line 226, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/button/_button.scss */
+/* line 219, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/button/_button.scss */
 .btn-theme-third {
   background-color: #666;
   border-color: #666;
   color: #fff; }
-  /* line 195, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/button/_button.scss */
+  /* line 188, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/button/_button.scss */
   .theme-red .btn-theme-third {
     background-color: #ec6701;
     border-color: #ec6701; }
-  /* line 195, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/button/_button.scss */
+  /* line 188, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/button/_button.scss */
   .theme-blue .btn-theme-third {
     background-color: #5ba1d8;
     border-color: #5ba1d8; }
-  /* line 195, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/button/_button.scss */
+  /* line 188, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/button/_button.scss */
   .theme-green .btn-theme-third {
     background-color: #a0c855;
     border-color: #a0c855; }
-  /* line 195, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/button/_button.scss */
+  /* line 188, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/button/_button.scss */
   .theme-purple .btn-theme-third {
     background-color: #a84c98;
     border-color: #a84c98; }
-  /* line 202, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/button/_button.scss */
+  /* line 195, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/button/_button.scss */
   .btn-theme-third:hover {
     background-color: #f7f7f7;
     border-color: #f7f7f7; }
-    /* line 209, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/button/_button.scss */
+    /* line 202, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/button/_button.scss */
     .theme-red .btn-theme-third:hover {
       background-color: #dd6001;
       border-color: #dd6001; }
-    /* line 209, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/button/_button.scss */
+    /* line 202, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/button/_button.scss */
     .theme-blue .btn-theme-third:hover {
       background-color: #4f9ad5;
       border-color: #4f9ad5; }
-    /* line 209, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/button/_button.scss */
+    /* line 202, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/button/_button.scss */
     .theme-green .btn-theme-third:hover {
       background-color: #9ac449;
       border-color: #9ac449; }
-    /* line 209, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/button/_button.scss */
+    /* line 202, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/button/_button.scss */
     .theme-purple .btn-theme-third:hover {
       background-color: #9d478e;
       border-color: #9d478e; }
 
-/* line 230, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/button/_button.scss */
+/* line 223, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/button/_button.scss */
 .btn-theme-fourth {
   background-color: #777;
   border-color: #777;
   color: #fff; }
-  /* line 195, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/button/_button.scss */
+  /* line 188, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/button/_button.scss */
   .theme-red .btn-theme-fourth {
     background-color: #ae0b05;
     border-color: #ae0b05; }
-  /* line 195, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/button/_button.scss */
+  /* line 188, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/button/_button.scss */
   .theme-blue .btn-theme-fourth {
     background-color: #005c86;
     border-color: #005c86; }
-  /* line 195, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/button/_button.scss */
+  /* line 188, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/button/_button.scss */
   .theme-green .btn-theme-fourth {
     background-color: #50811b;
     border-color: #50811b; }
-  /* line 195, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/button/_button.scss */
+  /* line 188, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/button/_button.scss */
   .theme-purple .btn-theme-fourth {
     background-color: #7b075e;
     border-color: #7b075e; }
-  /* line 202, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/button/_button.scss */
+  /* line 195, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/button/_button.scss */
   .btn-theme-fourth:hover {
     background-color: #f7f7f7;
     border-color: #f7f7f7; }
-    /* line 209, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/button/_button.scss */
+    /* line 202, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/button/_button.scss */
     .theme-red .btn-theme-fourth:hover {
       background-color: #9f0a05;
       border-color: #9f0a05; }
-    /* line 209, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/button/_button.scss */
+    /* line 202, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/button/_button.scss */
     .theme-blue .btn-theme-fourth:hover {
       background-color: #005177;
       border-color: #005177; }
-    /* line 209, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/button/_button.scss */
+    /* line 202, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/button/_button.scss */
     .theme-green .btn-theme-fourth:hover {
       background-color: #487418;
       border-color: #487418; }
-    /* line 209, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/button/_button.scss */
+    /* line 202, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/button/_button.scss */
     .theme-purple .btn-theme-fourth:hover {
       background-color: #6d0653;
       border-color: #6d0653; }
 
-/* line 234, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/button/_button.scss */
+/* line 227, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/button/_button.scss */
 .btn-theme-fifth {
   background-color: #000;
   border-color: #000;
   color: #fff; }
-  /* line 195, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/button/_button.scss */
+  /* line 188, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/button/_button.scss */
   .theme-red .btn-theme-fifth {
     background-color: #e3000f;
     border-color: #e3000f; }
-  /* line 195, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/button/_button.scss */
+  /* line 188, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/button/_button.scss */
   .theme-blue .btn-theme-fifth {
     background-color: #0095db;
     border-color: #0095db; }
-  /* line 195, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/button/_button.scss */
+  /* line 188, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/button/_button.scss */
   .theme-green .btn-theme-fifth {
     background-color: #76b828;
     border-color: #76b828; }
-  /* line 195, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/button/_button.scss */
+  /* line 188, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/button/_button.scss */
   .theme-purple .btn-theme-fifth {
     background-color: #a61380;
     border-color: #a61380; }
-  /* line 202, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/button/_button.scss */
+  /* line 195, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/button/_button.scss */
   .btn-theme-fifth:hover {
     background-color: #f7f7f7;
     border-color: #f7f7f7; }
-    /* line 209, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/button/_button.scss */
+    /* line 202, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/button/_button.scss */
     .theme-red .btn-theme-fifth:hover {
       background-color: #d4000e;
       border-color: #d4000e; }
-    /* line 209, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/button/_button.scss */
+    /* line 202, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/button/_button.scss */
     .theme-blue .btn-theme-fifth:hover {
       background-color: #008bcc;
       border-color: #008bcc; }
-    /* line 209, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/button/_button.scss */
+    /* line 202, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/button/_button.scss */
     .theme-green .btn-theme-fifth:hover {
       background-color: #6eab25;
       border-color: #6eab25; }
-    /* line 209, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/button/_button.scss */
+    /* line 202, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/button/_button.scss */
     .theme-purple .btn-theme-fifth:hover {
       background-color: #981175;
       border-color: #981175; }
 
-/* line 253, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/button/_button.scss */
+/* line 246, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/button/_button.scss */
 .btn-sm {
   padding: 0.2em 0.5em;
   font-size: 0.8em;
   font-weight: 600;
   line-height: 1; }
 
-/* line 260, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/button/_button.scss */
+/* line 253, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/button/_button.scss */
 .btn-lg {
   padding: 0.5em 0.9em;
   font-size: 1.1em;
   font-weight: 600; }
 
-/* line 277, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/button/_button.scss */
+/* line 270, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/button/_button.scss */
 .btn-block {
   display: block;
   width: 100%;
   text-align: center; }
 
-/* line 283, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/button/_button.scss */
+/* line 276, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/button/_button.scss */
 .btn-block-lg {
   padding: 15px; }
 
-/* line 287, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/button/_button.scss */
+/* line 280, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/button/_button.scss */
 .btn-block + .btn-block {
   margin-top: 15px; }
 
-/* line 291, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/button/_button.scss */
+/* line 284, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/button/_button.scss */
 .btn-icon,
 button.btn-icon {
   padding: 5px 10px;
   line-height: 1; }
 
-/* line 306, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/button/_button.scss */
+/* line 299, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/button/_button.scss */
 .btn-offcanvas {
   position: absolute;
   top: -100%;
   left: 0; }
-  /* line 311, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/button/_button.scss */
+  /* line 304, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/button/_button.scss */
   .btn-offcanvas:focus {
     top: 0;
     z-index: 99999; }
-  /* line 316, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/button/_button.scss */
+  /* line 309, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/button/_button.scss */
   .btn-offcanvas + .btn-offcanvas {
     margin-top: 0 !important; }
 
@@ -10534,7 +10530,7 @@ textarea {
   padding: 7.5px 10px;
   background: #fff;
   border: 1px solid #e7e5e1;
-  font-family: -apple-system, BlinkMacSystemFont, "Roboto", "Segoe UI", "Ubuntu", "Oxygen", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-family: system, "Segoe UI", Tahoma;
   font-size: .9em;
   box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.1);
   line-height: 1.6; }
@@ -10634,7 +10630,7 @@ select {
   border: 1px solid #e7e5e1;
   box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.1);
   line-height: 1.6;
-  font-family: -apple-system, BlinkMacSystemFont, "Roboto", "Segoe UI", "Ubuntu", "Oxygen", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-family: system, "Segoe UI", Tahoma;
   font-size: .9em; }
   /* line 46, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/form/_select.scss */
   select:disabled {
@@ -11298,7 +11294,7 @@ option {
     padding: 5px 10px;
     background-color: #e7e5e1;
     border: 1px solid #e7e5e1;
-    font-family: -apple-system, BlinkMacSystemFont, "Roboto", "Segoe UI", "Ubuntu", "Oxygen", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+    font-family: system, "Segoe UI", Tahoma;
     font-size: 0.9em;
     font-weight: 600;
     color: #252525;
@@ -11854,6 +11850,54 @@ option {
     /* line 10, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/error/_404.scss */
     .error404 {
       font-size: 1em; } }
+
+@font-face {
+  font-family: system;
+  font-style: normal;
+  font-weight: 300;
+  src: local(".SFNSText-Light"), local(".HelveticaNeueDeskInterface-Light"), local(".LucidaGrandeUI"), local("Ubuntu Light"), local("Segoe UI Light"), local("Roboto-Light"), local("DroidSans"), local("Tahoma"); }
+
+@font-face {
+  font-family: system;
+  font-style: italic;
+  font-weight: 300;
+  src: local(".SFNSText-LightItalic"), local(".HelveticaNeueDeskInterface-Italic"), local(".LucidaGrandeUI"), local("Ubuntu Light Italic"), local("Segoe UI Light Italic"), local("Roboto-LightItalic"), local("DroidSans"), local("Tahoma"); }
+
+@font-face {
+  font-family: system;
+  font-style: normal;
+  font-weight: 400;
+  src: local(".SFNSText-Regular"), local(".HelveticaNeueDeskInterface-Regular"), local(".LucidaGrandeUI"), local("Ubuntu"), local("Segoe UI"), local("Roboto-Regular"), local("DroidSans"), local("Tahoma"); }
+
+@font-face {
+  font-family: system;
+  font-style: italic;
+  font-weight: 400;
+  src: local(".SFNSText-Italic"), local(".HelveticaNeueDeskInterface-Italic"), local(".LucidaGrandeUI"), local("Ubuntu Italic"), local("Segoe UI Italic"), local("Roboto-Italic"), local("DroidSans"), local("Tahoma"); }
+
+@font-face {
+  font-family: system;
+  font-style: normal;
+  font-weight: 500;
+  src: local(".SFNSText-Medium"), local(".HelveticaNeueDeskInterface-MediumP4"), local(".LucidaGrandeUI"), local("Ubuntu Medium"), local("Segoe UI Semibold"), local("Roboto-Medium"), local("DroidSans-Bold"), local("Tahoma Bold"); }
+
+@font-face {
+  font-family: system;
+  font-style: italic;
+  font-weight: 500;
+  src: local(".SFNSText-MediumItalic"), local(".HelveticaNeueDeskInterface-MediumItalicP4"), local(".LucidaGrandeUI"), local("Ubuntu Medium Italic"), local("Segoe UI Semibold Italic"), local("Roboto-MediumItalic"), local("DroidSans-Bold"), local("Tahoma Bold"); }
+
+@font-face {
+  font-family: system;
+  font-style: normal;
+  font-weight: 700;
+  src: local(".SFNSText-Bold"), local(".HelveticaNeueDeskInterface-Bold"), local(".LucidaGrandeUI"), local("Ubuntu Bold"), local("Roboto-Bold"), local("DroidSans-Bold"), local("Segoe UI Bold"), local("Tahoma Bold"); }
+
+@font-face {
+  font-family: system;
+  font-style: italic;
+  font-weight: 700;
+  src: local(".SFNSText-BoldItalic"), local(".HelveticaNeueDeskInterface-BoldItalic"), local(".LucidaGrandeUI"), local("Ubuntu Bold Italic"), local("Roboto-BoldItalic"), local("DroidSans-Bold"), local("Segoe UI Bold Italic"), local("Tahoma Bold"); }
 
 /* line 14, /websites/helsingborg/styleguide/styleguide-web/source/sass/utility/_text.scss */
 .text-left {
