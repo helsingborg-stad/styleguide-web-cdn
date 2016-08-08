@@ -4313,7 +4313,7 @@ article {
       word-break: break-all;
       text-decoration: none; } }
   /* line 239, /websites/helsingborg/styleguide/styleguide-web/source/sass/typography/_article.scss */
-  article p {
+  article p, article h1, article h2, article h3, article h4, article .widget_calendar caption, .widget_calendar article caption, article h5, article h6, article li {
     max-width: 700px; }
 
 /* line 244, /websites/helsingborg/styleguide/styleguide-web/source/sass/typography/_article.scss */
