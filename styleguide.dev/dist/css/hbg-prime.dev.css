@@ -5257,6 +5257,22 @@ button.btn-icon {
   .btn-offcanvas + .btn-offcanvas {
     margin-top: 0 !important; }
 
+/* line 5, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/header/_business.scss */
+.theme-red .site-header.header-business .logotype .h1 {
+  color: #ae0b05; }
+
+/* line 5, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/header/_business.scss */
+.theme-blue .site-header.header-business .logotype .h1 {
+  color: #005c86; }
+
+/* line 5, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/header/_business.scss */
+.theme-green .site-header.header-business .logotype .h1 {
+  color: #50811b; }
+
+/* line 5, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/header/_business.scss */
+.theme-purple .site-header.header-business .logotype .h1 {
+  color: #7b075e; }
+
 /* line 1, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/header/_casual.scss */
 .site-header > .container {
   position: relative;
