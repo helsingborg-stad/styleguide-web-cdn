@@ -5213,8 +5213,8 @@ input[type="button"].btn::-moz-focus-inner {
 
 /* line 246, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/button/_button.scss */
 .btn-sm {
-  padding: 0.2em 0.5em;
-  font-size: 0.8em;
+  padding: 0.4em 0.6em;
+  font-size: 0.75em;
   font-weight: 600;
   line-height: 1; }
 
@@ -6106,156 +6106,160 @@ button.btn-icon {
         padding-right: 5px;
         color: #000; } }
 
-/* line 24, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/navigation/_pagination.scss */
-.pagination,
-.page-numbers {
-  font-size: 0; }
-  /* line 29, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/navigation/_pagination.scss */
-  .pagination li,
-  .page-numbers li {
-    display: inline-block;
-    font-size: 17px; }
-    /* line 33, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/navigation/_pagination.scss */
-    .pagination li + li,
-    .page-numbers li + li {
-      margin-left: 5px; }
-  /* line 38, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/navigation/_pagination.scss */
-  .pagination a,
-  .pagination .current,
-  .page-numbers a,
-  .page-numbers .current {
-    display: block;
-    border: 1px solid #e7e5e1;
-    font-size: .85em;
-    text-align: center;
-    color: #464646;
-    padding-left: 8px;
-    padding-right: 8px;
-    height: 30px;
-    line-height: 30px; }
-    /* line 51, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/navigation/_pagination.scss */
-    .pagination a:hover, .pagination a:focus, .pagination a.current,
-    .pagination .current:hover,
-    .pagination .current:focus,
-    .pagination .current.current,
-    .page-numbers a:hover,
-    .page-numbers a:focus,
-    .page-numbers a.current,
-    .page-numbers .current:hover,
-    .page-numbers .current:focus,
-    .page-numbers .current.current {
-      background-color: #333;
-      border-color: #333;
-      color: #fff;
-      text-decoration: none; }
-      /* line 61, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/navigation/_pagination.scss */
-      .theme-red .pagination a:hover, .theme-red .pagination a:focus, .theme-red .pagination a.current, .theme-red
-      .pagination .current:hover, .theme-red
-      .pagination .current:focus, .theme-red
-      .pagination .current.current, .theme-red
-      .page-numbers a:hover, .theme-red
-      .page-numbers a:focus, .theme-red
-      .page-numbers a.current, .theme-red
-      .page-numbers .current:hover, .theme-red
-      .page-numbers .current:focus, .theme-red
-      .page-numbers .current.current {
-        background-color: #cb0050;
-        border-color: #cb0050;
-        color: #fff; }
-      /* line 61, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/navigation/_pagination.scss */
-      .theme-blue .pagination a:hover, .theme-blue .pagination a:focus, .theme-blue .pagination a.current, .theme-blue
-      .pagination .current:hover, .theme-blue
-      .pagination .current:focus, .theme-blue
-      .pagination .current.current, .theme-blue
-      .page-numbers a:hover, .theme-blue
-      .page-numbers a:focus, .theme-blue
-      .page-numbers a.current, .theme-blue
-      .page-numbers .current:hover, .theme-blue
-      .page-numbers .current:focus, .theme-blue
-      .page-numbers .current.current {
-        background-color: #0069b4;
-        border-color: #0069b4;
-        color: #fff; }
-      /* line 61, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/navigation/_pagination.scss */
-      .theme-green .pagination a:hover, .theme-green .pagination a:focus, .theme-green .pagination a.current, .theme-green
-      .pagination .current:hover, .theme-green
-      .pagination .current:focus, .theme-green
-      .pagination .current.current, .theme-green
-      .page-numbers a:hover, .theme-green
-      .page-numbers a:focus, .theme-green
-      .page-numbers a.current, .theme-green
-      .page-numbers .current:hover, .theme-green
-      .page-numbers .current:focus, .theme-green
-      .page-numbers .current.current {
-        background-color: #11a636;
-        border-color: #11a636;
-        color: #fff; }
-      /* line 61, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/navigation/_pagination.scss */
-      .theme-purple .pagination a:hover, .theme-purple .pagination a:focus, .theme-purple .pagination a.current, .theme-purple
-      .pagination .current:hover, .theme-purple
-      .pagination .current:focus, .theme-purple
-      .pagination .current.current, .theme-purple
-      .page-numbers a:hover, .theme-purple
-      .page-numbers a:focus, .theme-purple
-      .page-numbers a.current, .theme-purple
-      .page-numbers .current:hover, .theme-purple
-      .page-numbers .current:focus, .theme-purple
-      .page-numbers .current.current {
-        background-color: #712082;
-        border-color: #712082;
-        color: #fff; }
-  /* line 71, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/navigation/_pagination.scss */
-  .pagination a:not(.next):not(.prev),
-  .page-numbers a:not(.next):not(.prev) {
-    width: 30px;
-    height: 30px;
-    line-height: 30px;
-    padding: 0; }
-  /* line 79, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/navigation/_pagination.scss */
-  .pagination .ellipsis:after,
-  .page-numbers .ellipsis:after {
-    content: "…";
-    display: inline-block; }
-  /* line 85, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/navigation/_pagination.scss */
-  .pagination .dots,
-  .page-numbers .dots {
-    display: block;
-    font-size: .85em; }
+/* line 28, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/navigation/_pagination.scss */
+.pagination li,
+.page-numbers li {
+  display: inline-block;
+  margin-right: 3px;
+  line-height: 3; }
 
-/* line 94, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/navigation/_pagination.scss */
+/* line 34, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/navigation/_pagination.scss */
+.pagination a,
+.pagination .current,
+.page-numbers a,
+.page-numbers .current {
+  display: inline-block;
+  border: 1px solid #e7e5e1;
+  font-size: .85em;
+  text-align: center;
+  color: #464646;
+  padding-left: 8px;
+  padding-right: 8px;
+  height: 30px;
+  line-height: 27px; }
+  /* line 47, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/navigation/_pagination.scss */
+  .pagination a:hover, .pagination a:focus, .pagination a.current,
+  .pagination .current:hover,
+  .pagination .current:focus,
+  .pagination .current.current,
+  .page-numbers a:hover,
+  .page-numbers a:focus,
+  .page-numbers a.current,
+  .page-numbers .current:hover,
+  .page-numbers .current:focus,
+  .page-numbers .current.current {
+    background-color: #333;
+    border-color: #333;
+    color: #fff;
+    text-decoration: none; }
+    /* line 57, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/navigation/_pagination.scss */
+    .theme-red .pagination a:hover, .theme-red .pagination a:focus, .theme-red .pagination a.current, .theme-red
+    .pagination .current:hover, .theme-red
+    .pagination .current:focus, .theme-red
+    .pagination .current.current, .theme-red
+    .page-numbers a:hover, .theme-red
+    .page-numbers a:focus, .theme-red
+    .page-numbers a.current, .theme-red
+    .page-numbers .current:hover, .theme-red
+    .page-numbers .current:focus, .theme-red
+    .page-numbers .current.current {
+      background-color: #cb0050;
+      border-color: #cb0050;
+      color: #fff; }
+    /* line 57, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/navigation/_pagination.scss */
+    .theme-blue .pagination a:hover, .theme-blue .pagination a:focus, .theme-blue .pagination a.current, .theme-blue
+    .pagination .current:hover, .theme-blue
+    .pagination .current:focus, .theme-blue
+    .pagination .current.current, .theme-blue
+    .page-numbers a:hover, .theme-blue
+    .page-numbers a:focus, .theme-blue
+    .page-numbers a.current, .theme-blue
+    .page-numbers .current:hover, .theme-blue
+    .page-numbers .current:focus, .theme-blue
+    .page-numbers .current.current {
+      background-color: #0069b4;
+      border-color: #0069b4;
+      color: #fff; }
+    /* line 57, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/navigation/_pagination.scss */
+    .theme-green .pagination a:hover, .theme-green .pagination a:focus, .theme-green .pagination a.current, .theme-green
+    .pagination .current:hover, .theme-green
+    .pagination .current:focus, .theme-green
+    .pagination .current.current, .theme-green
+    .page-numbers a:hover, .theme-green
+    .page-numbers a:focus, .theme-green
+    .page-numbers a.current, .theme-green
+    .page-numbers .current:hover, .theme-green
+    .page-numbers .current:focus, .theme-green
+    .page-numbers .current.current {
+      background-color: #11a636;
+      border-color: #11a636;
+      color: #fff; }
+    /* line 57, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/navigation/_pagination.scss */
+    .theme-purple .pagination a:hover, .theme-purple .pagination a:focus, .theme-purple .pagination a.current, .theme-purple
+    .pagination .current:hover, .theme-purple
+    .pagination .current:focus, .theme-purple
+    .pagination .current.current, .theme-purple
+    .page-numbers a:hover, .theme-purple
+    .page-numbers a:focus, .theme-purple
+    .page-numbers a.current, .theme-purple
+    .page-numbers .current:hover, .theme-purple
+    .page-numbers .current:focus, .theme-purple
+    .page-numbers .current.current {
+      background-color: #712082;
+      border-color: #712082;
+      color: #fff; }
+
+/* line 67, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/navigation/_pagination.scss */
+.pagination a:not(.next):not(.prev),
+.page-numbers a:not(.next):not(.prev) {
+  width: 30px;
+  height: 30px;
+  line-height: 27px;
+  padding: 0; }
+
+/* line 75, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/navigation/_pagination.scss */
+.pagination .ellipsis:after,
+.page-numbers .ellipsis:after {
+  content: "…";
+  display: inline-block; }
+
+/* line 81, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/navigation/_pagination.scss */
+.pagination .dots,
+.page-numbers .dots {
+  display: block;
+  font-size: .85em; }
+
+/* line 90, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/navigation/_pagination.scss */
 .pagination-lg a:not(.next):not(.prev) {
   font-size: 1.1em;
   height: 40px;
   width: 40px;
-  line-height: 40px; }
+  line-height: 37px; }
 
 /* line 17, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/navigation/_tags.scss */
 .tags {
   display: block;
   padding: 0;
   margin: 0;
-  list-style: none; }
-  /* line 23, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/navigation/_tags.scss */
+  margin-top: -5px;
+  margin-bottom: -3px;
+  list-style: none;
+  line-height: 2.1; }
+  /* line 26, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/navigation/_tags.scss */
   .tags li {
-    display: inline-block;
-    background: #f6f5f2;
-    border: 1px solid #e7e5e1;
-    padding: 5px 7px;
-    font-size: .8em;
-    border-radius: 3px;
-    line-height: 1;
-    margin-right: 3px;
-    color: #252525;
-    letter-spacing: 0.3px; }
-    /* line 35, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/navigation/_tags.scss */
+    display: inline-block; }
+    /* line 29, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/navigation/_tags.scss */
     .tags li a {
       text-decoration: none; }
 
-/* line 42, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/navigation/_tags.scss */
+/* line 35, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/navigation/_tags.scss */
+.tag {
+  display: inline-block;
+  background: #f6f5f2;
+  border: 1px solid #e7e5e1;
+  padding: 5px 7px;
+  font-size: .8em;
+  border-radius: 3px;
+  line-height: 1;
+  margin-right: 3px;
+  color: #252525;
+  letter-spacing: 0.3px; }
+
+/* line 49, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/navigation/_tags.scss */
 .tags-white li {
   background: #fff; }
 
-/* line 49, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/navigation/_tags.scss */
+/* line 56, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/navigation/_tags.scss */
 .tags.show-tagsign a:before {
   content: "#"; }
 
@@ -6341,16 +6345,16 @@ button.btn-icon {
       color: #fff !important; }
       /* line 37, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/navigation/_mobile.scss */
       .theme-red .nav-mobile a:hover {
-        background-color: #98003c; }
+        background-color: #650028; }
       /* line 37, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/navigation/_mobile.scss */
       .theme-blue .nav-mobile a:hover {
-        background-color: #004b81; }
+        background-color: #002e4e; }
       /* line 37, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/navigation/_mobile.scss */
       .theme-green .nav-mobile a:hover {
-        background-color: #0c7827; }
+        background-color: #084918; }
       /* line 37, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/navigation/_mobile.scss */
       .theme-purple .nav-mobile a:hover {
-        background-color: #4d1659; }
+        background-color: #2a0c30; }
   /* line 45, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/navigation/_mobile.scss */
   .nav-mobile .current,
   .nav-mobile .current-node,
@@ -6360,22 +6364,22 @@ button.btn-icon {
     .theme-red .nav-mobile .current, .theme-red
     .nav-mobile .current-node, .theme-red
     .nav-mobile .current-menu-item {
-      background-color: #98003c; }
+      background-color: #650028; }
     /* line 52, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/navigation/_mobile.scss */
     .theme-blue .nav-mobile .current, .theme-blue
     .nav-mobile .current-node, .theme-blue
     .nav-mobile .current-menu-item {
-      background-color: #004b81; }
+      background-color: #002e4e; }
     /* line 52, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/navigation/_mobile.scss */
     .theme-green .nav-mobile .current, .theme-green
     .nav-mobile .current-node, .theme-green
     .nav-mobile .current-menu-item {
-      background-color: #0c7827; }
+      background-color: #084918; }
     /* line 52, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/navigation/_mobile.scss */
     .theme-purple .nav-mobile .current, .theme-purple
     .nav-mobile .current-node, .theme-purple
     .nav-mobile .current-menu-item {
-      background-color: #4d1659; }
+      background-color: #2a0c30; }
   /* line 61, /websites/helsingborg/styleguide/styleguide-web/source/sass/component/navigation/_mobile.scss */
   .nav-mobile .sub-menu .current > a::before,
   .nav-mobile .sub-menu .current-menu-item > a::before {
