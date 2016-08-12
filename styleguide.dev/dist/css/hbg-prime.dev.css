@@ -8492,126 +8492,122 @@ a.box-index {
   /* line 33, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_filled.scss */
   .box-filled a {
     text-decoration: underline; }
-    /* line 36, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_filled.scss */
-    .box-filled a:hover {
-      background-color: #fff;
-      color: #252525; }
 
-/* line 49, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_filled.scss */
+/* line 44, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_filled.scss */
 .theme-red .box-filled-1, .theme-red
 .sidebar-right-sidebar [class*="grid-"]:nth-child(5n + 1) .box-filled, .theme-red
 .sidebar-left-sidebar [class*="grid-"]:nth-child(5n + 1) .box-filled {
   background-color: #ae0b05; }
 
-/* line 49, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_filled.scss */
+/* line 44, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_filled.scss */
 .theme-blue .box-filled-1, .theme-blue
 .sidebar-right-sidebar [class*="grid-"]:nth-child(5n + 1) .box-filled, .theme-blue
 .sidebar-left-sidebar [class*="grid-"]:nth-child(5n + 1) .box-filled {
   background-color: #005c86; }
 
-/* line 49, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_filled.scss */
+/* line 44, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_filled.scss */
 .theme-green .box-filled-1, .theme-green
 .sidebar-right-sidebar [class*="grid-"]:nth-child(5n + 1) .box-filled, .theme-green
 .sidebar-left-sidebar [class*="grid-"]:nth-child(5n + 1) .box-filled {
   background-color: #50811b; }
 
-/* line 49, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_filled.scss */
+/* line 44, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_filled.scss */
 .theme-purple .box-filled-1, .theme-purple
 .sidebar-right-sidebar [class*="grid-"]:nth-child(5n + 1) .box-filled, .theme-purple
 .sidebar-left-sidebar [class*="grid-"]:nth-child(5n + 1) .box-filled {
   background-color: #a84c98; }
 
-/* line 62, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_filled.scss */
+/* line 57, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_filled.scss */
 .theme-red .box-filled-2, .theme-red
 .sidebar-right-sidebar [class*="grid-"]:nth-child(5n + 2) .box-filled, .theme-red
 .sidebar-left-sidebar [class*="grid-"]:nth-child(5n + 2) .box-filled {
   background-color: #cb0050; }
 
-/* line 62, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_filled.scss */
+/* line 57, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_filled.scss */
 .theme-blue .box-filled-2, .theme-blue
 .sidebar-right-sidebar [class*="grid-"]:nth-child(5n + 2) .box-filled, .theme-blue
 .sidebar-left-sidebar [class*="grid-"]:nth-child(5n + 2) .box-filled {
   background-color: #0069b4; }
 
-/* line 62, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_filled.scss */
+/* line 57, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_filled.scss */
 .theme-green .box-filled-2, .theme-green
 .sidebar-right-sidebar [class*="grid-"]:nth-child(5n + 2) .box-filled, .theme-green
 .sidebar-left-sidebar [class*="grid-"]:nth-child(5n + 2) .box-filled {
   background-color: #50811b; }
 
-/* line 62, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_filled.scss */
+/* line 57, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_filled.scss */
 .theme-purple .box-filled-2, .theme-purple
 .sidebar-right-sidebar [class*="grid-"]:nth-child(5n + 2) .box-filled, .theme-purple
 .sidebar-left-sidebar [class*="grid-"]:nth-child(5n + 2) .box-filled {
   background-color: #712082; }
 
-/* line 75, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_filled.scss */
+/* line 70, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_filled.scss */
 .theme-red .box-filled-3, .theme-red
 .sidebar-right-sidebar [class*="grid-"]:nth-child(5n + 3) .box-filled, .theme-red
 .sidebar-left-sidebar [class*="grid-"]:nth-child(5n + 3) .box-filled {
   background-color: #e3000f; }
 
-/* line 75, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_filled.scss */
+/* line 70, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_filled.scss */
 .theme-blue .box-filled-3, .theme-blue
 .sidebar-right-sidebar [class*="grid-"]:nth-child(5n + 3) .box-filled, .theme-blue
 .sidebar-left-sidebar [class*="grid-"]:nth-child(5n + 3) .box-filled {
   background-color: #005c86; }
 
-/* line 75, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_filled.scss */
+/* line 70, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_filled.scss */
 .theme-green .box-filled-3, .theme-green
 .sidebar-right-sidebar [class*="grid-"]:nth-child(5n + 3) .box-filled, .theme-green
 .sidebar-left-sidebar [class*="grid-"]:nth-child(5n + 3) .box-filled {
   background-color: #50811b; }
 
-/* line 75, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_filled.scss */
+/* line 70, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_filled.scss */
 .theme-purple .box-filled-3, .theme-purple
 .sidebar-right-sidebar [class*="grid-"]:nth-child(5n + 3) .box-filled, .theme-purple
 .sidebar-left-sidebar [class*="grid-"]:nth-child(5n + 3) .box-filled {
   background-color: #a84c98; }
 
-/* line 88, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_filled.scss */
+/* line 83, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_filled.scss */
 .theme-red .box-filled-4, .theme-red
 .sidebar-right-sidebar [class*="grid-"]:nth-child(5n + 4) .box-filled, .theme-red
 .sidebar-left-sidebar [class*="grid-"]:nth-child(5n + 4) .box-filled {
   background-color: #ae0b05; }
 
-/* line 88, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_filled.scss */
+/* line 83, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_filled.scss */
 .theme-blue .box-filled-4, .theme-blue
 .sidebar-right-sidebar [class*="grid-"]:nth-child(5n + 4) .box-filled, .theme-blue
 .sidebar-left-sidebar [class*="grid-"]:nth-child(5n + 4) .box-filled {
   background-color: #005c86; }
 
-/* line 88, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_filled.scss */
+/* line 83, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_filled.scss */
 .theme-green .box-filled-4, .theme-green
 .sidebar-right-sidebar [class*="grid-"]:nth-child(5n + 4) .box-filled, .theme-green
 .sidebar-left-sidebar [class*="grid-"]:nth-child(5n + 4) .box-filled {
   background-color: #50811b; }
 
-/* line 88, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_filled.scss */
+/* line 83, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_filled.scss */
 .theme-purple .box-filled-4, .theme-purple
 .sidebar-right-sidebar [class*="grid-"]:nth-child(5n + 4) .box-filled, .theme-purple
 .sidebar-left-sidebar [class*="grid-"]:nth-child(5n + 4) .box-filled {
   background-color: #7b075e; }
 
-/* line 101, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_filled.scss */
+/* line 96, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_filled.scss */
 .theme-red .box-filled-5, .theme-red
 .sidebar-right-sidebar [class*="grid-"]:nth-child(5n + 5) .box-filled, .theme-red
 .sidebar-left-sidebar [class*="grid-"]:nth-child(5n + 5) .box-filled {
   background-color: #e3000f; }
 
-/* line 101, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_filled.scss */
+/* line 96, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_filled.scss */
 .theme-blue .box-filled-5, .theme-blue
 .sidebar-right-sidebar [class*="grid-"]:nth-child(5n + 5) .box-filled, .theme-blue
 .sidebar-left-sidebar [class*="grid-"]:nth-child(5n + 5) .box-filled {
   background-color: #0069b4; }
 
-/* line 101, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_filled.scss */
+/* line 96, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_filled.scss */
 .theme-green .box-filled-5, .theme-green
 .sidebar-right-sidebar [class*="grid-"]:nth-child(5n + 5) .box-filled, .theme-green
 .sidebar-left-sidebar [class*="grid-"]:nth-child(5n + 5) .box-filled {
   background-color: #50811b; }
 
-/* line 101, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_filled.scss */
+/* line 96, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_filled.scss */
 .theme-purple .box-filled-5, .theme-purple
 .sidebar-right-sidebar [class*="grid-"]:nth-child(5n + 5) .box-filled, .theme-purple
 .sidebar-left-sidebar [class*="grid-"]:nth-child(5n + 5) .box-filled {
