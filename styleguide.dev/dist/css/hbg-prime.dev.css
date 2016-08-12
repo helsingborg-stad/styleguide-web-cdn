@@ -13820,6 +13820,11 @@ body:not(.material-no-radius) .material-radius {
     .sidebar-right-sidebar [class^="widget_"]:not(.widget_calendar) .btn.btn-plain {
       color: #fff; }
 
+/* line 15, /www/sites/HbgPrime/wwwroot/source/sass/component/wordpress/_widget.scss */
+.widgettitle {
+  padding: 0 !important;
+  margin: 0 !important; }
+
 /* line 29, /www/sites/HbgPrime/wwwroot/source/sass/component/wordpress/_widget-nav-menu.scss */
 .sidebar-left-sidebar .widget_nav_menu > div,
 .sidebar-right-sidebar .widget_nav_menu > div {
