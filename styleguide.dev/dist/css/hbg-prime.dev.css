@@ -4717,7 +4717,7 @@ article {
     @media print {
       /* line 263, /www/sites/HbgPrime/wwwroot/source/sass/typography/_article.scss */
       article p, article h1, article h2, article h3, article h4, article .widget_calendar caption, .widget_calendar article caption, article h5, article h6, article li, article .wp-caption {
-        max-width: auto; } }
+        max-width: auto !important; } }
 
 /* line 273, /www/sites/HbgPrime/wwwroot/source/sass/typography/_article.scss */
 hr {
