@@ -4228,6 +4228,9 @@ section + section {
 
 @media print {
   /* line 2, /www/sites/HbgPrime/wwwroot/source/sass/layout/_print.scss */
+  body {
+    font-size: 13px; }
+  /* line 6, /www/sites/HbgPrime/wwwroot/source/sass/layout/_print.scss */
   iframe,
   embed,
   object {
@@ -4237,24 +4240,24 @@ section + section {
     overflow: hidden !important;
     line-height: 0pt !important;
     white-space: nowrap; }
-  /* line 13, /www/sites/HbgPrime/wwwroot/source/sass/layout/_print.scss */
+  /* line 17, /www/sites/HbgPrime/wwwroot/source/sass/layout/_print.scss */
   a {
     page-break-inside: avoid; }
-  /* line 17, /www/sites/HbgPrime/wwwroot/source/sass/layout/_print.scss */
+  /* line 21, /www/sites/HbgPrime/wwwroot/source/sass/layout/_print.scss */
   blockquote {
     page-break-inside: avoid; }
-  /* line 21, /www/sites/HbgPrime/wwwroot/source/sass/layout/_print.scss */
+  /* line 25, /www/sites/HbgPrime/wwwroot/source/sass/layout/_print.scss */
   h1, h2, h3, h4, .widget_calendar caption, h5, h6 {
     page-break-after: avoid;
     page-break-inside: avoid; }
-  /* line 26, /www/sites/HbgPrime/wwwroot/source/sass/layout/_print.scss */
+  /* line 30, /www/sites/HbgPrime/wwwroot/source/sass/layout/_print.scss */
   img {
     page-break-inside: avoid;
     page-break-after: avoid; }
-  /* line 31, /www/sites/HbgPrime/wwwroot/source/sass/layout/_print.scss */
+  /* line 35, /www/sites/HbgPrime/wwwroot/source/sass/layout/_print.scss */
   table, pre {
     page-break-inside: avoid; }
-  /* line 35, /www/sites/HbgPrime/wwwroot/source/sass/layout/_print.scss */
+  /* line 39, /www/sites/HbgPrime/wwwroot/source/sass/layout/_print.scss */
   ul, ol, dl {
     page-break-before: avoid; } }
 
