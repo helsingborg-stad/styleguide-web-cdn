@@ -12430,6 +12430,136 @@ HelsingborgPrime.Component.GalleryPopup = (function ($) {
 })(jQuery);
 
 //
+// @name Image upload
+// @description
+//
+HelsingborgPrime = HelsingborgPrime || {};
+HelsingborgPrime.Component = HelsingborgPrime.Component || {};
+
+HelsingborgPrime.Component.ImageUpload = (function ($) {
+
+    var elementClass = '.image-upload';
+    var drags = 0;
+    var selectedFiles = new Array();
+    var allowedFileTypes = ['image/jpeg', 'image/png', 'image/gif'];
+
+    function ImageUpload() {
+        this.initDragAndDrop();
+        this.initFileInput();
+    }
+
+    /**
+     * Select file by browse
+     * @return {void}
+     */
+    ImageUpload.prototype.initFileInput = function () {
+        $imageUploadInput = $(elementClass).find('input[type="file"]');
+
+        $imageUploadInput.on('change', function (e) {
+            var file = $(e.target).closest('input[type="file"]').get(0).files[0];
+            this.addFile($(e.target).closest(elementClass), file);
+        }.bind(this));
+    };
+
+    /**
+     * Drag and drop a file
+     * @return {void}
+     */
+    ImageUpload.prototype.initDragAndDrop = function () {
+        $imageUpload = $(elementClass);
+
+        $imageUpload.on('drag dragstart dragend dragover dragenter dragleave drop', function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+
+            $imageUpload.removeClass('is-error is-error-filetype')
+        })
+        .on('dragenter', function (e) {
+            drags++;
+
+            if (drags === 1) {
+                $imageUpload.addClass('is-dragover');
+            }
+        })
+        .on('dragleave', function (e) {
+            drags--;
+
+            if (drags === 0) {
+                $imageUpload.removeClass('is-dragover');
+            }
+        })
+        .on('drop', function (e) {
+            drags--;
+            if (drags === 0) {
+                $imageUpload.removeClass('is-selected is-dragover');
+            }
+
+            this.addFile($(e.target).closest(elementClass), e.originalEvent.dataTransfer.files[0]);
+        }.bind(this));
+    };
+
+    /**
+     * Adds a file
+     * @param {object} element The image uploader element
+     * @param {object} file    The file object
+     */
+    ImageUpload.prototype.addFile = function (element, file) {
+        if (allowedFileTypes.indexOf(file.type) == -1) {
+            element.addClass('is-error is-error-filetype');
+            element.find('.selected-file').html('');
+
+            return false;
+        }
+
+        var maxFilesize = element.attr('data-max-size') ? element.attr('data-max-size') : 1000;
+        maxFilesize = parseInt(maxFilesize);
+        maxFilesize = maxFilesize.toFixed(0);
+        var fileSize = parseInt(file.size/1000).toFixed(0);
+
+        if (parseInt(fileSize) > parseInt(maxFilesize)) {
+            element.addClass('is-error is-error-filesize');
+            element.find('.selected-file').html('');
+
+            return false;
+        }
+
+        selectedFiles.push(file);
+
+        if (!element.attr('data-preview-image')) {
+            element.find('.selected-file').html(file.name);
+        }
+
+        var reader = new FileReader();
+        reader.readAsDataURL(file);
+
+        reader.addEventListener('load', function (e) {
+            var image = e.target;
+            var max_images = element.attr('data-max-files');
+
+
+            if (max_images && selectedFiles.length > max_images) {
+                selectedFiles = selectedFiles.slice(1);
+                element.find('input[name="image_uploader_file[]"]:first').remove();
+            }
+
+            element.append('<input type="hidden" name="image_uploader_file[]" read-only>');
+            element.find('input[name="image_uploader_file[]"]:last').val(image.result);
+
+            if (element.attr('data-preview-image')) {
+                element.find('.selected-file').css('backgroundImage', 'url(\'' + image.result + '\')');
+            }
+        });
+
+        element.addClass('is-selected');
+
+        return true;
+    };
+
+    return new ImageUpload();
+
+})(jQuery);
+
+//
 // @name Slider
 // @description  Sliding content
 //
@@ -12621,136 +12751,6 @@ HelsingborgPrime.Component.Slider = (function ($) {
 })(jQuery);
 
 //
-// @name Image upload
-// @description
-//
-HelsingborgPrime = HelsingborgPrime || {};
-HelsingborgPrime.Component = HelsingborgPrime.Component || {};
-
-HelsingborgPrime.Component.ImageUpload = (function ($) {
-
-    var elementClass = '.image-upload';
-    var drags = 0;
-    var selectedFiles = new Array();
-    var allowedFileTypes = ['image/jpeg', 'image/png', 'image/gif'];
-
-    function ImageUpload() {
-        this.initDragAndDrop();
-        this.initFileInput();
-    }
-
-    /**
-     * Select file by browse
-     * @return {void}
-     */
-    ImageUpload.prototype.initFileInput = function () {
-        $imageUploadInput = $(elementClass).find('input[type="file"]');
-
-        $imageUploadInput.on('change', function (e) {
-            var file = $(e.target).closest('input[type="file"]').get(0).files[0];
-            this.addFile($(e.target).closest(elementClass), file);
-        }.bind(this));
-    };
-
-    /**
-     * Drag and drop a file
-     * @return {void}
-     */
-    ImageUpload.prototype.initDragAndDrop = function () {
-        $imageUpload = $(elementClass);
-
-        $imageUpload.on('drag dragstart dragend dragover dragenter dragleave drop', function (e) {
-            e.preventDefault();
-            e.stopPropagation();
-
-            $imageUpload.removeClass('is-error is-error-filetype')
-        })
-        .on('dragenter', function (e) {
-            drags++;
-
-            if (drags === 1) {
-                $imageUpload.addClass('is-dragover');
-            }
-        })
-        .on('dragleave', function (e) {
-            drags--;
-
-            if (drags === 0) {
-                $imageUpload.removeClass('is-dragover');
-            }
-        })
-        .on('drop', function (e) {
-            drags--;
-            if (drags === 0) {
-                $imageUpload.removeClass('is-selected is-dragover');
-            }
-
-            this.addFile($(e.target).closest(elementClass), e.originalEvent.dataTransfer.files[0]);
-        }.bind(this));
-    };
-
-    /**
-     * Adds a file
-     * @param {object} element The image uploader element
-     * @param {object} file    The file object
-     */
-    ImageUpload.prototype.addFile = function (element, file) {
-        if (allowedFileTypes.indexOf(file.type) == -1) {
-            element.addClass('is-error is-error-filetype');
-            element.find('.selected-file').html('');
-
-            return false;
-        }
-
-        var maxFilesize = element.attr('data-max-size') ? element.attr('data-max-size') : 1000;
-        maxFilesize = parseInt(maxFilesize);
-        maxFilesize = maxFilesize.toFixed(0);
-        var fileSize = parseInt(file.size/1000).toFixed(0);
-
-        if (parseInt(fileSize) > parseInt(maxFilesize)) {
-            element.addClass('is-error is-error-filesize');
-            element.find('.selected-file').html('');
-
-            return false;
-        }
-
-        selectedFiles.push(file);
-
-        if (!element.attr('data-preview-image')) {
-            element.find('.selected-file').html(file.name);
-        }
-
-        var reader = new FileReader();
-        reader.readAsDataURL(file);
-
-        reader.addEventListener('load', function (e) {
-            var image = e.target;
-            var max_images = element.attr('data-max-files');
-
-
-            if (max_images && selectedFiles.length > max_images) {
-                selectedFiles = selectedFiles.slice(1);
-                element.find('input[name="image_uploader_file[]"]:first').remove();
-            }
-
-            element.append('<input type="hidden" name="image_uploader_file[]" read-only>');
-            element.find('input[name="image_uploader_file[]"]:last').val(image.result);
-
-            if (element.attr('data-preview-image')) {
-                element.find('.selected-file').css('backgroundImage', 'url(\'' + image.result + '\')');
-            }
-        });
-
-        element.addClass('is-selected');
-
-        return true;
-    };
-
-    return new ImageUpload();
-
-})(jQuery);
-
-//
 // @name Modal
 // @description  Show accodrion dropdown, make linkable by updating adress bar
 //
@@ -12903,202 +12903,81 @@ HelsingborgPrime.Component.TagManager = (function ($) {
 
 })(jQuery);
 
+//
+// @name Cookies
+//
 HelsingborgPrime = HelsingborgPrime || {};
-HelsingborgPrime.Prompt = HelsingborgPrime.Prompt || {};
+HelsingborgPrime.Helper = HelsingborgPrime.Helper || {};
 
-HelsingborgPrime.Prompt.Share = (function ($) {
+HelsingborgPrime.Helper.Cookie = (function ($) {
 
-    function Share() {
-        $(function(){
+    function Cookie() {
 
-            this.handleEvents();
-
-        }.bind(this));
-    }
-
-    Share.prototype.openPopup = function(element) {
-        // Width and height of the popup
-        var width = 626;
-        var height = 305;
-
-        // Gets the href from the button/link
-        var url = $(element).closest('a').attr('href');
-
-        // Calculate popup position
-        var leftPosition = (window.screen.width / 2) - ((width / 2) + 10);
-        var topPosition = (window.screen.height / 2) - ((height / 2) + 50);
-
-        // Popup window features
-        var windowFeatures = "status=no,height=" + height + ",width=" + width + ",resizable=no,left=" + leftPosition + ",top=" + topPosition + ",screenX=" + leftPosition + ",screenY=" + topPosition + ",toolbar=no,menubar=no,scrollbars=no,location=no,directories=no";
-
-        // Open popup
-        window.open(url, 'Share', windowFeatures);
     }
 
     /**
-     * Keeps track of events
+     * Sets a cookie
+     * @param {string} name      Cookie name
+     * @param {string} value     Cookie value
+     * @param {void}   daysValid
+     */
+    Cookie.prototype.set = function (name, value, daysValid) {
+        var d = new Date();
+        d.setTime(d.getTime() + (daysValid * 24 * 60 * 60 * 1000));
+
+        var expires = "expires=" + d.toUTCString();
+        document.cookie = name + "=" + value.toString() + "; " + expires + "; path=/";
+
+        return true;
+    };
+
+    /**
+     * Gets a cookie
+     * @param  {string} name Cookie name
+     * @return {mixed}       Cookie value or empty string
+     */
+    Cookie.prototype.get = function(name) {
+        name = name + '=';
+        var ca = document.cookie.split(';');
+
+        for (var i=0; i < ca.length; i++) {
+            var c = ca[i];
+            while (c.charAt(0) == ' ') {
+                c = c.substring(1);
+            }
+
+            if (c.indexOf(name) === 0) {
+                return c.substring(name.length, c.length);
+            }
+        }
+
+        return '';
+    };
+
+    /**
+     * Destroys/removes a cookie
+     * @param  {string} name Cookie name
      * @return {void}
      */
-    Share.prototype.handleEvents = function() {
-
-        $(document).on('click', '[data-action="share-popup"]', function (e) {
-            e.preventDefault();
-            this.openPopup(e.target);
-        }.bind(this));
-
-    }
-
-    return new Share();
-
-})(jQuery);
-
-//
-// @name Cookie consent
-//
-HelsingborgPrime = HelsingborgPrime || {};
-HelsingborgPrime.Prompt = HelsingborgPrime.Prompt || {};
-
-HelsingborgPrime.Prompt.CookieConsent = (function ($) {
-
-    var useLocalStorage = true;
-    var animationSpeed = 1000;
-
-    function CookieConsent() {
-        this.init();
-    }
-
-    CookieConsent.prototype.init = function () {
-        var showCookieConsent = (HelsingborgPrime.Args.get('cookieConsent.show')) ? HelsingborgPrime.Args.get('cookieConsent.show') : true;
-
-        if (showCookieConsent && !this.hasAccepted()) {
-            this.displayConsent();
-
-            $(document).on('click', '[data-action="cookie-consent"]', function (e) {
-                e.preventDefault();
-                var btn = $(e.target).closest('button');
-                this.accept();
-            }.bind(this));
-        }
+    Cookie.prototype.destory = function(name) {
+         this.set(name, '', -1);
+         return true;
     };
 
-    CookieConsent.prototype.displayConsent = function() {
-        var wrapper = $('body');
+    /**
+     * Check if cookie value is the same as compare value
+     * @param  {string} name    Cookie name
+     * @param  {string} compare Compare value
+     * @return {boolean}
+     */
+    Cookie.prototype.check = function(name, compare) {
+         var value = this.get(name);
+         compare = compare.toString();
 
-        if ($('#wrapper:first-child').length > 0) {
-            wrapper = $('#wrapper:first-child');
-        }
-
-        var consentText = 'This website uses cookies to ensure you get the best experience browsing the website.';
-        if (HelsingborgPrime.Args.get('cookieConsent.message')) {
-            consentText = HelsingborgPrime.Args.get('cookieConsent.message') ? HelsingborgPrime.Args.get('cookieConsent.message') : 'This website is using cookies to give you the best experience possible.';
-        }
-
-        var buttonText = 'Got it';
-        if (HelsingborgPrime.Args.get('cookieConsent.button')) {
-            buttonText = HelsingborgPrime.Args.get('cookieConsent.button') ? HelsingborgPrime.Args.get('cookieConsent.button') : 'Okey';
-        }
-
-        var placement = HelsingborgPrime.Args.get('cookieConsent.placement') ? HelsingborgPrime.Args.get('cookieConsent.placement') : null;
-
-        wrapper.prepend('\
-            <div id="cookie-consent" class="notice info gutter gutter-vertical ' + placement + '" style="display:none;">\
-                <div class="container"><div class="grid grid-table-md grid-va-middle">\
-                    <div class="grid-col-icon"><i class="pricon pricon-info-o"></i></div>\
-                    <div class="grid-md-8">' + consentText + '</div>\
-                    <div class="grid-md-4 text-right-md text-right-lg"><button class="btn btn-primary" data-action="cookie-consent">' + buttonText + '</button></div>\
-                </div></div>\
-            </div>\
-        ');
-
-        $('#cookie-consent').show();
+         return value == compare;
     };
 
-    CookieConsent.prototype.hasAccepted = function() {
-        if (useLocalStorage) {
-            return window.localStorage.getItem('cookie-consent');
-        } else {
-            return HelsingborgPrime.Helper.Cookie.check('cookie-consent', true);
-        }
-    };
-
-    CookieConsent.prototype.accept = function() {
-        $('#cookie-consent').remove();
-
-        if (useLocalStorage) {
-            try {
-                window.localStorage.setItem('cookie-consent', true);
-                return true;
-            } catch(e) {
-                return false;
-            }
-        } else {
-            HelsingborgPrime.Helper.Cookie.set('cookie-consent', true, 60);
-        }
-    };
-
-    return new CookieConsent();
-
-})(jQuery);
-
-//
-// @name Modal
-// @description  Prevent scrolling when modal is open (or #modal-* exists in url)
-//
-HelsingborgPrime = HelsingborgPrime || {};
-HelsingborgPrime.Prompt = HelsingborgPrime.Prompt || {};
-
-HelsingborgPrime.Prompt.ModalLimit = (function ($) {
-
-    function ModalLimit() {
-    	this.init();
-    }
-
-    ModalLimit.prototype.init = function () {
-	    this.toggleModalClass();
-
-        $(window).bind('hashchange', function() {
-			this.toggleModalClass();
-		}.bind(this));
-    };
-
-    ModalLimit.prototype.toggleModalClass = function(){
-	    if (window.location.hash.indexOf('modal-') > 0 && $(window.location.hash).length > 0) {
-			$('html').addClass('overflow-hidden');
-		} else {
-			$('html').removeClass('overflow-hidden');
-		}
-    };
-
-    return new ModalLimit();
-
-})(jQuery);
-
-//
-// @name Search top
-// @description  Open the top search
-//
-HelsingborgPrime = HelsingborgPrime || {};
-HelsingborgPrime.Prompt = HelsingborgPrime.Prompt || {};
-
-HelsingborgPrime.Prompt.SearchTop = (function ($) {
-
-    function SearchTop() {
-        this.bindEvents();
-    }
-
-    SearchTop.prototype.bindEvents = function () {
-        $('.toggle-search-top').on('click', function (e) {
-            this.toggle(e);
-        }.bind(this));
-    };
-
-    SearchTop.prototype.toggle = function (e) {
-        e.preventDefault();
-        $('.search-top').slideToggle(300);
-        $('.search-top').find('input[type=search]').focus();
-    };
-
-    return new SearchTop();
+    return new Cookie();
 
 })(jQuery);
 
@@ -13561,9 +13440,9 @@ HelsingborgPrime.Helper.Post = (function ($) {
 
 HelsingborgPrime = HelsingborgPrime || {};
 
-HelsingborgPrime.Menu = HelsingborgPrime.Menu || {};
+HelsingborgPrime.Helper = HelsingborgPrime.Helper || {};
 
-HelsingborgPrime.Menu.ToggleSubmenuItems = (function ($) {
+HelsingborgPrime.Helper.ToggleSubmenuItems = (function ($) {
 
     function ToggleSubmenuItems() {
         this.init();
@@ -13628,79 +13507,209 @@ HelsingborgPrime.Menu.ToggleSubmenuItems = (function ($) {
 })(jQuery);
 
 //
-// @name Cookies
+// @name Cookie consent
 //
 HelsingborgPrime = HelsingborgPrime || {};
-HelsingborgPrime.Helper = HelsingborgPrime.Helper || {};
+HelsingborgPrime.Prompt = HelsingborgPrime.Prompt || {};
 
-HelsingborgPrime.Helper.Cookie = (function ($) {
+HelsingborgPrime.Prompt.CookieConsent = (function ($) {
 
-    function Cookie() {
+    var useLocalStorage = true;
+    var animationSpeed = 1000;
 
+    function CookieConsent() {
+        this.init();
+    }
+
+    CookieConsent.prototype.init = function () {
+        var showCookieConsent = (HelsingborgPrime.Args.get('cookieConsent.show')) ? HelsingborgPrime.Args.get('cookieConsent.show') : true;
+
+        if (showCookieConsent && !this.hasAccepted()) {
+            this.displayConsent();
+
+            $(document).on('click', '[data-action="cookie-consent"]', function (e) {
+                e.preventDefault();
+                var btn = $(e.target).closest('button');
+                this.accept();
+            }.bind(this));
+        }
+    };
+
+    CookieConsent.prototype.displayConsent = function() {
+        var wrapper = $('body');
+
+        if ($('#wrapper:first-child').length > 0) {
+            wrapper = $('#wrapper:first-child');
+        }
+
+        var consentText = 'This website uses cookies to ensure you get the best experience browsing the website.';
+        if (HelsingborgPrime.Args.get('cookieConsent.message')) {
+            consentText = HelsingborgPrime.Args.get('cookieConsent.message') ? HelsingborgPrime.Args.get('cookieConsent.message') : 'This website is using cookies to give you the best experience possible.';
+        }
+
+        var buttonText = 'Got it';
+        if (HelsingborgPrime.Args.get('cookieConsent.button')) {
+            buttonText = HelsingborgPrime.Args.get('cookieConsent.button') ? HelsingborgPrime.Args.get('cookieConsent.button') : 'Okey';
+        }
+
+        var placement = HelsingborgPrime.Args.get('cookieConsent.placement') ? HelsingborgPrime.Args.get('cookieConsent.placement') : null;
+
+        wrapper.prepend('\
+            <div id="cookie-consent" class="notice info gutter gutter-vertical ' + placement + '" style="display:none;">\
+                <div class="container"><div class="grid grid-table-md grid-va-middle">\
+                    <div class="grid-fit-content"><i class="pricon pricon-info-o"></i></div>\
+                    <div class="grid-auto">' + consentText + '</div>\
+                    <div class="grid-fit-content text-right-md text-right-lg"><button class="btn btn-primary" data-action="cookie-consent">' + buttonText + '</button></div>\
+                </div></div>\
+            </div>\
+        ');
+
+        $('#cookie-consent').show();
+    };
+
+    CookieConsent.prototype.hasAccepted = function() {
+        if (useLocalStorage) {
+            return window.localStorage.getItem('cookie-consent');
+        } else {
+            return HelsingborgPrime.Helper.Cookie.check('cookie-consent', true);
+        }
+    };
+
+    CookieConsent.prototype.accept = function() {
+        $('#cookie-consent').remove();
+
+        if (useLocalStorage) {
+            try {
+                window.localStorage.setItem('cookie-consent', true);
+                return true;
+            } catch(e) {
+                return false;
+            }
+        } else {
+            HelsingborgPrime.Helper.Cookie.set('cookie-consent', true, 60);
+        }
+    };
+
+    return new CookieConsent();
+
+})(jQuery);
+
+//
+// @name Modal
+// @description  Prevent scrolling when modal is open (or #modal-* exists in url)
+//
+HelsingborgPrime = HelsingborgPrime || {};
+HelsingborgPrime.Prompt = HelsingborgPrime.Prompt || {};
+
+HelsingborgPrime.Prompt.ModalLimit = (function ($) {
+
+    function ModalLimit() {
+    	this.init();
+
+        $('[data-action="modal-close"]').on('click', function (e) {
+            e.preventDefault();
+            $(e.target).parents('.modal').removeClass('modal-open').hide();
+        });
+    }
+
+    ModalLimit.prototype.init = function () {
+	    this.toggleModalClass();
+
+        $(window).bind('hashchange', function() {
+			this.toggleModalClass();
+		}.bind(this));
+
+        $('.modal a[href="#close"]').on('click', function (e) {
+            $('html, body').removeClass('overflow-hidden');
+        });
+    };
+
+    ModalLimit.prototype.toggleModalClass = function(){
+	    if (window.location.hash.indexOf('modal-') > 0 && $(window.location.hash).length > 0) {
+			$('html').addClass('overflow-hidden');
+		} else {
+			$('html').removeClass('overflow-hidden');
+		}
+    };
+
+    return new ModalLimit();
+
+})(jQuery);
+
+//
+// @name Search top
+// @description  Open the top search
+//
+HelsingborgPrime = HelsingborgPrime || {};
+HelsingborgPrime.Prompt = HelsingborgPrime.Prompt || {};
+
+HelsingborgPrime.Prompt.SearchTop = (function ($) {
+
+    function SearchTop() {
+        this.bindEvents();
+    }
+
+    SearchTop.prototype.bindEvents = function () {
+        $('.toggle-search-top').on('click', function (e) {
+            this.toggle(e);
+        }.bind(this));
+    };
+
+    SearchTop.prototype.toggle = function (e) {
+        e.preventDefault();
+        $('.search-top').slideToggle(300);
+        $('.search-top').find('input[type=search]').focus();
+    };
+
+    return new SearchTop();
+
+})(jQuery);
+
+HelsingborgPrime = HelsingborgPrime || {};
+HelsingborgPrime.Prompt = HelsingborgPrime.Prompt || {};
+
+HelsingborgPrime.Prompt.Share = (function ($) {
+
+    function Share() {
+        $(function(){
+
+            this.handleEvents();
+
+        }.bind(this));
+    }
+
+    Share.prototype.openPopup = function(element) {
+        // Width and height of the popup
+        var width = 626;
+        var height = 305;
+
+        // Gets the href from the button/link
+        var url = $(element).closest('a').attr('href');
+
+        // Calculate popup position
+        var leftPosition = (window.screen.width / 2) - ((width / 2) + 10);
+        var topPosition = (window.screen.height / 2) - ((height / 2) + 50);
+
+        // Popup window features
+        var windowFeatures = "status=no,height=" + height + ",width=" + width + ",resizable=no,left=" + leftPosition + ",top=" + topPosition + ",screenX=" + leftPosition + ",screenY=" + topPosition + ",toolbar=no,menubar=no,scrollbars=no,location=no,directories=no";
+
+        // Open popup
+        window.open(url, 'Share', windowFeatures);
     }
 
     /**
-     * Sets a cookie
-     * @param {string} name      Cookie name
-     * @param {string} value     Cookie value
-     * @param {void}   daysValid
-     */
-    Cookie.prototype.set = function (name, value, daysValid) {
-        var d = new Date();
-        d.setTime(d.getTime() + (daysValid * 24 * 60 * 60 * 1000));
-
-        var expires = "expires=" + d.toUTCString();
-        document.cookie = name + "=" + value.toString() + "; " + expires + "; path=/";
-
-        return true;
-    };
-
-    /**
-     * Gets a cookie
-     * @param  {string} name Cookie name
-     * @return {mixed}       Cookie value or empty string
-     */
-    Cookie.prototype.get = function(name) {
-        name = name + '=';
-        var ca = document.cookie.split(';');
-
-        for (var i=0; i < ca.length; i++) {
-            var c = ca[i];
-            while (c.charAt(0) == ' ') {
-                c = c.substring(1);
-            }
-
-            if (c.indexOf(name) === 0) {
-                return c.substring(name.length, c.length);
-            }
-        }
-
-        return '';
-    };
-
-    /**
-     * Destroys/removes a cookie
-     * @param  {string} name Cookie name
+     * Keeps track of events
      * @return {void}
      */
-    Cookie.prototype.destory = function(name) {
-         this.set(name, '', -1);
-         return true;
-    };
+    Share.prototype.handleEvents = function() {
 
-    /**
-     * Check if cookie value is the same as compare value
-     * @param  {string} name    Cookie name
-     * @param  {string} compare Compare value
-     * @return {boolean}
-     */
-    Cookie.prototype.check = function(name, compare) {
-         var value = this.get(name);
-         compare = compare.toString();
+        $(document).on('click', '[data-action="share-popup"]', function (e) {
+            e.preventDefault();
+            this.openPopup(e.target);
+        }.bind(this));
 
-         return value == compare;
-    };
+    }
 
-    return new Cookie();
+    return new Share();
 
 })(jQuery);

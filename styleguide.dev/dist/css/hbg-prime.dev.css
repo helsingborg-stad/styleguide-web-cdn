@@ -14554,13 +14554,13 @@ input[type="radio"]:disabled, select:disabled {
     input[type="radio"]:not(input):not(select):not(.checkbox):not(.radio):disabled *, select:not(input):not(select):not(.checkbox):not(.radio):disabled * {
       pointer-events: none; }
 
-/* line 50, /www/sites/HbgPrime/wwwroot/source/sass/utility/_interaction.scss */
+/* line 41, /www/sites/HbgPrime/wwwroot/source/sass/utility/_interaction.scss */
 .loading-dots {
   display: block;
   position: relative;
   width: 1.84em;
   height: 0.8em; }
-  /* line 57, /www/sites/HbgPrime/wwwroot/source/sass/utility/_interaction.scss */
+  /* line 48, /www/sites/HbgPrime/wwwroot/source/sass/utility/_interaction.scss */
   .loading-dots::before, .loading-dots::after {
     display: block;
     content: '';
@@ -14572,32 +14572,32 @@ input[type="radio"]:disabled, select:disabled {
     border-radius: 50%;
     -webkit-animation: loading-dot 1500ms ease-in-out infinite;
             animation: loading-dot 1500ms ease-in-out infinite; }
-  /* line 68, /www/sites/HbgPrime/wwwroot/source/sass/utility/_interaction.scss */
+  /* line 59, /www/sites/HbgPrime/wwwroot/source/sass/utility/_interaction.scss */
   .loading-dots::before {
     left: 0; }
-  /* line 72, /www/sites/HbgPrime/wwwroot/source/sass/utility/_interaction.scss */
+  /* line 63, /www/sites/HbgPrime/wwwroot/source/sass/utility/_interaction.scss */
   .loading-dots::after {
     right: 0;
     -webkit-animation-delay: 750ms;
             animation-delay: 750ms; }
 
-/* line 78, /www/sites/HbgPrime/wwwroot/source/sass/utility/_interaction.scss */
+/* line 69, /www/sites/HbgPrime/wwwroot/source/sass/utility/_interaction.scss */
 .loading-dots-highight::before,
 .loading-dots-highight::after {
   background-color: #333; }
-  /* line 85, /www/sites/HbgPrime/wwwroot/source/sass/utility/_interaction.scss */
+  /* line 76, /www/sites/HbgPrime/wwwroot/source/sass/utility/_interaction.scss */
   .theme-red .loading-dots-highight::before, .theme-red
   .loading-dots-highight::after {
     background-color: #cb0050; }
-  /* line 85, /www/sites/HbgPrime/wwwroot/source/sass/utility/_interaction.scss */
+  /* line 76, /www/sites/HbgPrime/wwwroot/source/sass/utility/_interaction.scss */
   .theme-blue .loading-dots-highight::before, .theme-blue
   .loading-dots-highight::after {
     background-color: #0069b4; }
-  /* line 85, /www/sites/HbgPrime/wwwroot/source/sass/utility/_interaction.scss */
+  /* line 76, /www/sites/HbgPrime/wwwroot/source/sass/utility/_interaction.scss */
   .theme-green .loading-dots-highight::before, .theme-green
   .loading-dots-highight::after {
     background-color: #11a636; }
-  /* line 85, /www/sites/HbgPrime/wwwroot/source/sass/utility/_interaction.scss */
+  /* line 76, /www/sites/HbgPrime/wwwroot/source/sass/utility/_interaction.scss */
   .theme-purple .loading-dots-highight::before, .theme-purple
   .loading-dots-highight::after {
     background-color: #712082; }
@@ -14617,6 +14617,273 @@ input[type="radio"]:disabled, select:disabled {
     opacity: 1; }
   100% {
     opacity: .3; } }
+
+/* line 23, /www/sites/HbgPrime/wwwroot/source/sass/utility/_loading.scss */
+.loading {
+  position: relative;
+  background-color: #777;
+  max-width: 200px;
+  height: 10px;
+  border-radius: 5px;
+  margin: 0 auto;
+  overflow: hidden; }
+  /* line 32, /www/sites/HbgPrime/wwwroot/source/sass/utility/_loading.scss */
+  .theme-red .loading {
+    background-color: #ae0b05; }
+  /* line 32, /www/sites/HbgPrime/wwwroot/source/sass/utility/_loading.scss */
+  .theme-blue .loading {
+    background-color: #005c86; }
+  /* line 32, /www/sites/HbgPrime/wwwroot/source/sass/utility/_loading.scss */
+  .theme-green .loading {
+    background-color: #50811b; }
+  /* line 32, /www/sites/HbgPrime/wwwroot/source/sass/utility/_loading.scss */
+  .theme-purple .loading {
+    background-color: #7b075e; }
+  /* line 45, /www/sites/HbgPrime/wwwroot/source/sass/utility/_loading.scss */
+  .loading div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 10px;
+    width: 10px;
+    border-radius: 5px; }
+  /* line 54, /www/sites/HbgPrime/wwwroot/source/sass/utility/_loading.scss */
+  .loading div:nth-of-type(1) {
+    background-color: #fff;
+    width: 20px;
+    -webkit-animation: 2000ms loading-bar-1 ease-in-out infinite;
+            animation: 2000ms loading-bar-1 ease-in-out infinite;
+    z-index: 3; }
+    /* line 60, /www/sites/HbgPrime/wwwroot/source/sass/utility/_loading.scss */
+    .theme-red .loading div:nth-of-type(1) {
+      background-color: #f7a600; }
+    /* line 60, /www/sites/HbgPrime/wwwroot/source/sass/utility/_loading.scss */
+    .theme-blue .loading div:nth-of-type(1) {
+      background-color: #4db4e7; }
+    /* line 60, /www/sites/HbgPrime/wwwroot/source/sass/utility/_loading.scss */
+    .theme-green .loading div:nth-of-type(1) {
+      background-color: #afca05; }
+    /* line 60, /www/sites/HbgPrime/wwwroot/source/sass/utility/_loading.scss */
+    .theme-purple .loading div:nth-of-type(1) {
+      background-color: #d35098; }
+  /* line 71, /www/sites/HbgPrime/wwwroot/source/sass/utility/_loading.scss */
+  .loading div:nth-of-type(2) {
+    background-color: #333;
+    width: 40px;
+    -webkit-animation: 2000ms loading-bar-2 ease-in-out infinite;
+            animation: 2000ms loading-bar-2 ease-in-out infinite;
+    right: 0;
+    left: auto; }
+    /* line 77, /www/sites/HbgPrime/wwwroot/source/sass/utility/_loading.scss */
+    .theme-red .loading div:nth-of-type(2) {
+      background-color: #cb0050; }
+    /* line 77, /www/sites/HbgPrime/wwwroot/source/sass/utility/_loading.scss */
+    .theme-blue .loading div:nth-of-type(2) {
+      background-color: #0069b4; }
+    /* line 77, /www/sites/HbgPrime/wwwroot/source/sass/utility/_loading.scss */
+    .theme-green .loading div:nth-of-type(2) {
+      background-color: #11a636; }
+    /* line 77, /www/sites/HbgPrime/wwwroot/source/sass/utility/_loading.scss */
+    .theme-purple .loading div:nth-of-type(2) {
+      background-color: #712082; }
+  /* line 89, /www/sites/HbgPrime/wwwroot/source/sass/utility/_loading.scss */
+  .loading div:nth-of-type(3) {
+    background-color: #666;
+    width: 60px;
+    -webkit-animation: 2000ms loading-bar-3 ease-in-out infinite;
+            animation: 2000ms loading-bar-3 ease-in-out infinite; }
+    /* line 95, /www/sites/HbgPrime/wwwroot/source/sass/utility/_loading.scss */
+    .theme-red .loading div:nth-of-type(3) {
+      background-color: #ec6701; }
+    /* line 95, /www/sites/HbgPrime/wwwroot/source/sass/utility/_loading.scss */
+    .theme-blue .loading div:nth-of-type(3) {
+      background-color: #5ba1d8; }
+    /* line 95, /www/sites/HbgPrime/wwwroot/source/sass/utility/_loading.scss */
+    .theme-green .loading div:nth-of-type(3) {
+      background-color: #a0c855; }
+    /* line 95, /www/sites/HbgPrime/wwwroot/source/sass/utility/_loading.scss */
+    .theme-purple .loading div:nth-of-type(3) {
+      background-color: #a84c98; }
+  /* line 105, /www/sites/HbgPrime/wwwroot/source/sass/utility/_loading.scss */
+  .loading div:nth-of-type(4) {
+    background-color: #000;
+    width: 25px;
+    -webkit-animation: 2000ms loading-bar-4 ease-in-out infinite;
+            animation: 2000ms loading-bar-4 ease-in-out infinite;
+    right: 0;
+    left: auto; }
+    /* line 111, /www/sites/HbgPrime/wwwroot/source/sass/utility/_loading.scss */
+    .theme-red .loading div:nth-of-type(4) {
+      background-color: #e3000f; }
+    /* line 111, /www/sites/HbgPrime/wwwroot/source/sass/utility/_loading.scss */
+    .theme-blue .loading div:nth-of-type(4) {
+      background-color: #0095db; }
+    /* line 111, /www/sites/HbgPrime/wwwroot/source/sass/utility/_loading.scss */
+    .theme-green .loading div:nth-of-type(4) {
+      background-color: #76b828; }
+    /* line 111, /www/sites/HbgPrime/wwwroot/source/sass/utility/_loading.scss */
+    .theme-purple .loading div:nth-of-type(4) {
+      background-color: #a61380; }
+
+/* line 124, /www/sites/HbgPrime/wwwroot/source/sass/utility/_loading.scss */
+.loading.loading-red {
+  background-color: #ae0b05; }
+  /* line 127, /www/sites/HbgPrime/wwwroot/source/sass/utility/_loading.scss */
+  .loading.loading-red div:nth-of-type(1) {
+    background-color: #f7a600; }
+  /* line 131, /www/sites/HbgPrime/wwwroot/source/sass/utility/_loading.scss */
+  .loading.loading-red div:nth-of-type(2) {
+    background-color: #cb0050; }
+  /* line 135, /www/sites/HbgPrime/wwwroot/source/sass/utility/_loading.scss */
+  .loading.loading-red div:nth-of-type(3) {
+    background-color: #ec6701; }
+  /* line 139, /www/sites/HbgPrime/wwwroot/source/sass/utility/_loading.scss */
+  .loading.loading-red div:nth-of-type(4) {
+    background-color: #e3000f; }
+
+/* line 144, /www/sites/HbgPrime/wwwroot/source/sass/utility/_loading.scss */
+.loading.loading-blue {
+  background-color: #005c86; }
+  /* line 147, /www/sites/HbgPrime/wwwroot/source/sass/utility/_loading.scss */
+  .loading.loading-blue div:nth-of-type(1) {
+    background-color: #4db4e7; }
+  /* line 151, /www/sites/HbgPrime/wwwroot/source/sass/utility/_loading.scss */
+  .loading.loading-blue div:nth-of-type(2) {
+    background-color: #0069b4; }
+  /* line 155, /www/sites/HbgPrime/wwwroot/source/sass/utility/_loading.scss */
+  .loading.loading-blue div:nth-of-type(3) {
+    background-color: #5ba1d8; }
+  /* line 159, /www/sites/HbgPrime/wwwroot/source/sass/utility/_loading.scss */
+  .loading.loading-blue div:nth-of-type(4) {
+    background-color: #0095db; }
+
+/* line 164, /www/sites/HbgPrime/wwwroot/source/sass/utility/_loading.scss */
+.loading.loading-green {
+  background-color: #50811b; }
+  /* line 167, /www/sites/HbgPrime/wwwroot/source/sass/utility/_loading.scss */
+  .loading.loading-green div:nth-of-type(1) {
+    background-color: #afca05; }
+  /* line 171, /www/sites/HbgPrime/wwwroot/source/sass/utility/_loading.scss */
+  .loading.loading-green div:nth-of-type(2) {
+    background-color: #11a636; }
+  /* line 175, /www/sites/HbgPrime/wwwroot/source/sass/utility/_loading.scss */
+  .loading.loading-green div:nth-of-type(3) {
+    background-color: #a0c855; }
+  /* line 179, /www/sites/HbgPrime/wwwroot/source/sass/utility/_loading.scss */
+  .loading.loading-green div:nth-of-type(4) {
+    background-color: #76b828; }
+
+/* line 184, /www/sites/HbgPrime/wwwroot/source/sass/utility/_loading.scss */
+.loading.loading-purple {
+  background-color: #7b075e; }
+  /* line 187, /www/sites/HbgPrime/wwwroot/source/sass/utility/_loading.scss */
+  .loading.loading-purple div:nth-of-type(1) {
+    background-color: #d35098; }
+  /* line 191, /www/sites/HbgPrime/wwwroot/source/sass/utility/_loading.scss */
+  .loading.loading-purple div:nth-of-type(2) {
+    background-color: #712082; }
+  /* line 195, /www/sites/HbgPrime/wwwroot/source/sass/utility/_loading.scss */
+  .loading.loading-purple div:nth-of-type(3) {
+    background-color: #a84c98; }
+  /* line 199, /www/sites/HbgPrime/wwwroot/source/sass/utility/_loading.scss */
+  .loading.loading-purple div:nth-of-type(4) {
+    background-color: #a61380; }
+
+@-webkit-keyframes loading-bar-4 {
+  0% {
+    right: 0; }
+  25% {
+    right: 80px; }
+  50% {
+    right: 30px; }
+  75% {
+    right: 190px; }
+  100% {
+    right: 0; } }
+
+@keyframes loading-bar-4 {
+  0% {
+    right: 0; }
+  25% {
+    right: 80px; }
+  50% {
+    right: 30px; }
+  75% {
+    right: 190px; }
+  100% {
+    right: 0; } }
+
+@-webkit-keyframes loading-bar-3 {
+  0% {
+    left: 0; }
+  25% {
+    left: 10px; }
+  50% {
+    left: 110px; }
+  75% {
+    left: 40px; }
+  100% {
+    left: 0; } }
+
+@keyframes loading-bar-3 {
+  0% {
+    left: 0; }
+  25% {
+    left: 10px; }
+  50% {
+    left: 110px; }
+  75% {
+    left: 40px; }
+  100% {
+    left: 0; } }
+
+@-webkit-keyframes loading-bar-2 {
+  0% {
+    right: 0; }
+  25% {
+    right: 180px; }
+  50% {
+    right: 20px; }
+  75% {
+    right: 60px; }
+  100% {
+    right: 0; } }
+
+@keyframes loading-bar-2 {
+  0% {
+    right: 0; }
+  25% {
+    right: 180px; }
+  50% {
+    right: 20px; }
+  75% {
+    right: 60px; }
+  100% {
+    right: 0; } }
+
+@-webkit-keyframes loading-bar-1 {
+  0% {
+    left: 0; }
+  25% {
+    left: 170px; }
+  50% {
+    left: 100px; }
+  75% {
+    left: 110px; }
+  100% {
+    left: 0; } }
+
+@keyframes loading-bar-1 {
+  0% {
+    left: 0; }
+  25% {
+    left: 170px; }
+  50% {
+    left: 100px; }
+  75% {
+    left: 110px; }
+  100% {
+    left: 0; } }
 
 /* line 12, /www/sites/HbgPrime/wwwroot/source/sass/utility/_creamy.scss */
 .creamy {
