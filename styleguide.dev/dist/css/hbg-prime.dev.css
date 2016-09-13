@@ -13150,13 +13150,24 @@ option {
     .dropdown-menu li a:hover {
       background-color: #f6f5f2;
       text-decoration: none; }
-  /* line 111, /www/sites/HbgPrime/wwwroot/source/sass/component/dropdown/_dropdown.scss */
+  /* line 110, /www/sites/HbgPrime/wwwroot/source/sass/component/dropdown/_dropdown.scss */
+  .dropdown-menu li label {
+    display: block;
+    padding: 3px 10px; }
+  /* line 116, /www/sites/HbgPrime/wwwroot/source/sass/component/dropdown/_dropdown.scss */
   .dropdown-menu .divider {
     height: 1px;
     background-color: #e7e5e1;
     margin: 5px 0; }
+  /* line 122, /www/sites/HbgPrime/wwwroot/source/sass/component/dropdown/_dropdown.scss */
+  .dropdown-menu .title {
+    padding: 3px 10px; }
+  /* line 126, /www/sites/HbgPrime/wwwroot/source/sass/component/dropdown/_dropdown.scss */
+  .dropdown-menu .dropdown-menu-overflow {
+    max-height: 300px;
+    overflow: auto; }
 
-/* line 118, /www/sites/HbgPrime/wwwroot/source/sass/component/dropdown/_dropdown.scss */
+/* line 132, /www/sites/HbgPrime/wwwroot/source/sass/component/dropdown/_dropdown.scss */
 .dropdown-open {
   display: block; }
 
