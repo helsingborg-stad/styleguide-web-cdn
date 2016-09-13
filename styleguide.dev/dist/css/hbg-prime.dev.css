@@ -13748,14 +13748,20 @@ option {
 .text-xl {
   font-size: 1.5em; }
 
-/* line 166, /www/sites/HbgPrime/wwwroot/source/sass/utility/_text.scss */
+/* line 157, /www/sites/HbgPrime/wwwroot/source/sass/utility/_text.scss */
+.text-columns-2 {
+  -webkit-columns: 2;
+     -moz-columns: 2;
+          columns: 2; }
+
+/* line 170, /www/sites/HbgPrime/wwwroot/source/sass/utility/_text.scss */
 .text-highlight, .box-index-title.link-item, .widget_archive a.box-index-title,
 .widget_categories a.box-index-title,
 .widget_meta a.box-index-title,
 .widget_recent_entries a.box-index-title,
 .widget_recent_comments a.box-index-title {
   color: #333; }
-  /* line 172, /www/sites/HbgPrime/wwwroot/source/sass/utility/_text.scss */
+  /* line 176, /www/sites/HbgPrime/wwwroot/source/sass/utility/_text.scss */
   .theme-red .text-highlight, .theme-red .box-index-title.link-item, .theme-red .widget_archive a.box-index-title, .widget_archive .theme-red a.box-index-title, .theme-red
   .widget_categories a.box-index-title,
   .widget_categories .theme-red a.box-index-title, .theme-red
@@ -13766,7 +13772,7 @@ option {
   .widget_recent_comments a.box-index-title,
   .widget_recent_comments .theme-red a.box-index-title {
     color: #cb0050; }
-  /* line 172, /www/sites/HbgPrime/wwwroot/source/sass/utility/_text.scss */
+  /* line 176, /www/sites/HbgPrime/wwwroot/source/sass/utility/_text.scss */
   .theme-blue .text-highlight, .theme-blue .box-index-title.link-item, .theme-blue .widget_archive a.box-index-title, .widget_archive .theme-blue a.box-index-title, .theme-blue
   .widget_categories a.box-index-title,
   .widget_categories .theme-blue a.box-index-title, .theme-blue
@@ -13777,7 +13783,7 @@ option {
   .widget_recent_comments a.box-index-title,
   .widget_recent_comments .theme-blue a.box-index-title {
     color: #0069b4; }
-  /* line 172, /www/sites/HbgPrime/wwwroot/source/sass/utility/_text.scss */
+  /* line 176, /www/sites/HbgPrime/wwwroot/source/sass/utility/_text.scss */
   .theme-green .text-highlight, .theme-green .box-index-title.link-item, .theme-green .widget_archive a.box-index-title, .widget_archive .theme-green a.box-index-title, .theme-green
   .widget_categories a.box-index-title,
   .widget_categories .theme-green a.box-index-title, .theme-green
@@ -13788,7 +13794,7 @@ option {
   .widget_recent_comments a.box-index-title,
   .widget_recent_comments .theme-green a.box-index-title {
     color: #11a636; }
-  /* line 172, /www/sites/HbgPrime/wwwroot/source/sass/utility/_text.scss */
+  /* line 176, /www/sites/HbgPrime/wwwroot/source/sass/utility/_text.scss */
   .theme-purple .text-highlight, .theme-purple .box-index-title.link-item, .theme-purple .widget_archive a.box-index-title, .widget_archive .theme-purple a.box-index-title, .theme-purple
   .widget_categories a.box-index-title,
   .widget_categories .theme-purple a.box-index-title, .theme-purple
@@ -13800,77 +13806,77 @@ option {
   .widget_recent_comments .theme-purple a.box-index-title {
     color: #712082; }
 
-/* line 191, /www/sites/HbgPrime/wwwroot/source/sass/utility/_text.scss */
+/* line 195, /www/sites/HbgPrime/wwwroot/source/sass/utility/_text.scss */
 .text-dark-gray {
   color: #464646; }
 
-/* line 195, /www/sites/HbgPrime/wwwroot/source/sass/utility/_text.scss */
+/* line 199, /www/sites/HbgPrime/wwwroot/source/sass/utility/_text.scss */
 .text-info,
 a.text-info {
   color: #0f9baf !important; }
 
-/* line 200, /www/sites/HbgPrime/wwwroot/source/sass/utility/_text.scss */
+/* line 204, /www/sites/HbgPrime/wwwroot/source/sass/utility/_text.scss */
 .text-warning,
 a.text-warning {
   color: #c2a400 !important; }
 
-/* line 205, /www/sites/HbgPrime/wwwroot/source/sass/utility/_text.scss */
+/* line 209, /www/sites/HbgPrime/wwwroot/source/sass/utility/_text.scss */
 .text-danger,
 a.text-danger {
   color: #e3000f !important; }
 
-/* line 210, /www/sites/HbgPrime/wwwroot/source/sass/utility/_text.scss */
+/* line 214, /www/sites/HbgPrime/wwwroot/source/sass/utility/_text.scss */
 .text-success,
 a.text-success {
   color: #11a636 !important; }
 
-/* line 224, /www/sites/HbgPrime/wwwroot/source/sass/utility/_text.scss */
+/* line 228, /www/sites/HbgPrime/wwwroot/source/sass/utility/_text.scss */
 .text-underline {
   text-decoration: underline; }
 
-/* line 239, /www/sites/HbgPrime/wwwroot/source/sass/utility/_text.scss */
+/* line 243, /www/sites/HbgPrime/wwwroot/source/sass/utility/_text.scss */
 .text-uppercase {
   text-transform: uppercase; }
 
-/* line 243, /www/sites/HbgPrime/wwwroot/source/sass/utility/_text.scss */
+/* line 247, /www/sites/HbgPrime/wwwroot/source/sass/utility/_text.scss */
 .text-lowercase {
   text-transform: lowercase; }
 
-/* line 247, /www/sites/HbgPrime/wwwroot/source/sass/utility/_text.scss */
+/* line 251, /www/sites/HbgPrime/wwwroot/source/sass/utility/_text.scss */
 .text-capitalize {
   text-transform: capitalize; }
 
-/* line 271, /www/sites/HbgPrime/wwwroot/source/sass/utility/_text.scss */
+/* line 275, /www/sites/HbgPrime/wwwroot/source/sass/utility/_text.scss */
 mark {
   background-color: #e7e5e1;
   padding: 0 0.15em; }
 
-/* line 276, /www/sites/HbgPrime/wwwroot/source/sass/utility/_text.scss */
+/* line 280, /www/sites/HbgPrime/wwwroot/source/sass/utility/_text.scss */
 .mark-yellow {
   background-color: rgba(247, 166, 0, 0.5);
   padding: 0 0.15em; }
 
-/* line 281, /www/sites/HbgPrime/wwwroot/source/sass/utility/_text.scss */
+/* line 285, /www/sites/HbgPrime/wwwroot/source/sass/utility/_text.scss */
 .mark-blue {
   background-color: rgba(77, 180, 231, 0.5);
   padding: 0 0.15em; }
 
-/* line 286, /www/sites/HbgPrime/wwwroot/source/sass/utility/_text.scss */
+/* line 290, /www/sites/HbgPrime/wwwroot/source/sass/utility/_text.scss */
 .mark-green {
   background-color: rgba(175, 202, 5, 0.5);
   padding: 0 0.15em; }
 
-/* line 291, /www/sites/HbgPrime/wwwroot/source/sass/utility/_text.scss */
+/* line 295, /www/sites/HbgPrime/wwwroot/source/sass/utility/_text.scss */
 .mark-red {
   background-color: rgba(174, 11, 5, 0.5);
   padding: 0 0.15em; }
 
-/* line 296, /www/sites/HbgPrime/wwwroot/source/sass/utility/_text.scss */
+/* line 300, /www/sites/HbgPrime/wwwroot/source/sass/utility/_text.scss */
 .mark-purple {
   background-color: rgba(211, 80, 152, 0.5);
   padding: 0 0.15em; }
 
-/* line 310, /www/sites/HbgPrime/wwwroot/source/sass/utility/_text.scss */
+/* line 314, /www/sites/HbgPrime/wwwroot/source/sass/utility/_text.scss */
 small,
 .small {
   font-size: .8em !important; }
