@@ -13616,8 +13616,11 @@ option {
 /* line 127, /www/sites/HbgPrime/wwwroot/source/sass/component/footer/_footer.scss */
 .footer-signature {
   display: inline-block;
-  width: 100px;
-  height: auto; }
+  width: 100px; }
+
+/* line 132, /www/sites/HbgPrime/wwwroot/source/sass/component/footer/_footer.scss */
+img[src$=".svg"].footer-signature {
+  height: 100%; }
 
 /* line 4, /www/sites/HbgPrime/wwwroot/source/sass/component/error/_404.scss */
 .error404.theme-red {
