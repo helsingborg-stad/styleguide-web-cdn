@@ -13101,10 +13101,10 @@ HelsingborgPrime.Helper.EqualHeight = (function ($) {
      */
     EqualHeight.prototype.supportsFlexbox = function () {
         if ($('html').hasClass('no-flexbox')) {
-            return true;
+            return false;
         }
 
-        return false;
+        return true;
     };
 
     /**
