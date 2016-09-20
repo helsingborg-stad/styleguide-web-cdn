@@ -13080,19 +13080,15 @@ HelsingborgPrime.Helper = HelsingborgPrime.Helper || {};
 HelsingborgPrime.Helper.EqualHeight = (function ($) {
 
     function EqualHeight() {
-        $(function(){
+        // Initialize if flexbox not supported
+        if (!this.supportsFlexbox()) {
+            this.init();
 
-            // Initialize if flexbox not supported
-            if (!this.supportsFlexbox()) {
+            $(window).on('resize', function () {
+                this.destroy();
                 this.init();
-
-                $(window).on('resize', function () {
-                    this.destroy();
-                    this.init();
-                }.bind(this));
-            }
-
-        }.bind(this));
+            }.bind(this));
+        }
     }
 
     /**
