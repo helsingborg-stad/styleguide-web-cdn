@@ -9479,7 +9479,10 @@ body:not(.material-no-shadow) .post .post-full, body:not(.material-no-shadow) .p
 
 /* line 43, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_box.scss */
 .box-image {
-  width: 100%; }
+  width: 100%;
+  -webkit-flex: 0 0 auto;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto; }
 
 /* line 21, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_index.scss */
 .box-index {
