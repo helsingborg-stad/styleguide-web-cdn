@@ -7964,11 +7964,11 @@ button.btn-icon {
   margin-top: 15px; }
 
 /* line 71, /www/sites/HbgPrime/wwwroot/source/sass/component/accordion/_accordion.scss */
-.accordion-icon .accordion-toggle {
+.accordion-list.accordion-icon .accordion-toggle {
   position: relative;
   padding-right: 45px; }
   /* line 75, /www/sites/HbgPrime/wwwroot/source/sass/component/accordion/_accordion.scss */
-  .accordion-icon .accordion-toggle:before {
+  .accordion-list.accordion-icon .accordion-toggle:before {
     font-family: hbg-pricons;
     line-height: 1;
     text-rendering: auto;
