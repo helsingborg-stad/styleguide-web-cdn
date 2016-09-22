@@ -7964,11 +7964,10 @@ button.btn-icon {
   margin-top: 15px; }
 
 /* line 71, /www/sites/HbgPrime/wwwroot/source/sass/component/accordion/_accordion.scss */
-.accordion-list.accordion-icon .accordion-toggle {
-  position: relative;
-  padding-right: 45px; }
-  /* line 75, /www/sites/HbgPrime/wwwroot/source/sass/component/accordion/_accordion.scss */
-  .accordion-list.accordion-icon .accordion-toggle:before {
+.accordion-icon .accordion-toggle {
+  position: relative; }
+  /* line 74, /www/sites/HbgPrime/wwwroot/source/sass/component/accordion/_accordion.scss */
+  .accordion-icon .accordion-toggle:before {
     font-family: hbg-pricons;
     line-height: 1;
     text-rendering: auto;
@@ -7983,8 +7982,11 @@ button.btn-icon {
     right: 0;
     font-size: 1em;
     color: #7f7f7f; }
+  /* line 82, /www/sites/HbgPrime/wwwroot/source/sass/component/accordion/_accordion.scss */
+  .accordion-icon .accordion-toggle * {
+    padding-right: 30px; }
 
-/* line 89, /www/sites/HbgPrime/wwwroot/source/sass/component/accordion/_accordion.scss */
+/* line 92, /www/sites/HbgPrime/wwwroot/source/sass/component/accordion/_accordion.scss */
 .accordion-boxes .accordion-toggle,
 .accordion-boxes .accordion-content,
 .accordion-box .accordion-toggle,
@@ -7992,7 +7994,7 @@ button.btn-icon {
 .accordion-list .accordion-toggle,
 .accordion-list .accordion-content {
   padding: 10px 15px; }
-  /* line 93, /www/sites/HbgPrime/wwwroot/source/sass/component/accordion/_accordion.scss */
+  /* line 96, /www/sites/HbgPrime/wwwroot/source/sass/component/accordion/_accordion.scss */
   .accordion-boxes .accordion-toggle:before,
   .accordion-boxes .accordion-content:before,
   .accordion-box .accordion-toggle:before,
@@ -8001,19 +8003,19 @@ button.btn-icon {
   .accordion-list .accordion-content:before {
     right: 15px; }
 
-/* line 98, /www/sites/HbgPrime/wwwroot/source/sass/component/accordion/_accordion.scss */
+/* line 101, /www/sites/HbgPrime/wwwroot/source/sass/component/accordion/_accordion.scss */
 .accordion-boxes .accordion-toggle,
 .accordion-box .accordion-toggle,
 .accordion-list .accordion-toggle {
   background: linear-gradient(to bottom, #fff, #fafaf8); }
 
-/* line 102, /www/sites/HbgPrime/wwwroot/source/sass/component/accordion/_accordion.scss */
+/* line 105, /www/sites/HbgPrime/wwwroot/source/sass/component/accordion/_accordion.scss */
 .accordion-boxes .accordion-content,
 .accordion-box .accordion-content,
 .accordion-list .accordion-content {
   position: relative;
   padding: 20px; }
-  /* line 106, /www/sites/HbgPrime/wwwroot/source/sass/component/accordion/_accordion.scss */
+  /* line 109, /www/sites/HbgPrime/wwwroot/source/sass/component/accordion/_accordion.scss */
   .accordion-boxes .accordion-content::after,
   .accordion-box .accordion-content::after,
   .accordion-list .accordion-content::after {
@@ -8026,13 +8028,13 @@ button.btn-icon {
     height: 5px;
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0.05), transparent); }
 
-/* line 118, /www/sites/HbgPrime/wwwroot/source/sass/component/accordion/_accordion.scss */
+/* line 121, /www/sites/HbgPrime/wwwroot/source/sass/component/accordion/_accordion.scss */
 .accordion-boxes .accordion-table-head,
 .accordion-box .accordion-table-head,
 .accordion-list .accordion-table-head {
   padding: 5px 10px; }
 
-/* line 125, /www/sites/HbgPrime/wwwroot/source/sass/component/accordion/_accordion.scss */
+/* line 128, /www/sites/HbgPrime/wwwroot/source/sass/component/accordion/_accordion.scss */
 .accordion-boxes.boxes-medium .accordion-toggle,
 .accordion-boxes.boxes-medium .accordion-content, .accordion-boxes.box-medium .accordion-toggle,
 .accordion-boxes.box-medium .accordion-content, .accordion-boxes.list-medium .accordion-toggle,
@@ -8050,7 +8052,7 @@ button.btn-icon {
 .accordion-list.list-medium .accordion-toggle,
 .accordion-list.list-medium .accordion-content {
   padding: 30px 45px; }
-  /* line 129, /www/sites/HbgPrime/wwwroot/source/sass/component/accordion/_accordion.scss */
+  /* line 132, /www/sites/HbgPrime/wwwroot/source/sass/component/accordion/_accordion.scss */
   .accordion-boxes.boxes-medium .accordion-toggle:before,
   .accordion-boxes.boxes-medium .accordion-content:before, .accordion-boxes.box-medium .accordion-toggle:before,
   .accordion-boxes.box-medium .accordion-content:before, .accordion-boxes.list-medium .accordion-toggle:before,
@@ -8069,7 +8071,7 @@ button.btn-icon {
   .accordion-list.list-medium .accordion-content:before {
     right: 45px; }
 
-/* line 134, /www/sites/HbgPrime/wwwroot/source/sass/component/accordion/_accordion.scss */
+/* line 137, /www/sites/HbgPrime/wwwroot/source/sass/component/accordion/_accordion.scss */
 .accordion-boxes.boxes-medium .accordion-content, .accordion-boxes.box-medium .accordion-content, .accordion-boxes.list-medium .accordion-content,
 .accordion-box.boxes-medium .accordion-content,
 .accordion-box.box-medium .accordion-content,
@@ -8079,7 +8081,7 @@ button.btn-icon {
 .accordion-list.list-medium .accordion-content {
   padding: 60px; }
 
-/* line 138, /www/sites/HbgPrime/wwwroot/source/sass/component/accordion/_accordion.scss */
+/* line 141, /www/sites/HbgPrime/wwwroot/source/sass/component/accordion/_accordion.scss */
 .accordion-boxes.boxes-medium .accordion-table-head, .accordion-boxes.box-medium .accordion-table-head, .accordion-boxes.list-medium .accordion-table-head,
 .accordion-box.boxes-medium .accordion-table-head,
 .accordion-box.box-medium .accordion-table-head,
@@ -8089,7 +8091,7 @@ button.btn-icon {
 .accordion-list.list-medium .accordion-table-head {
   padding: 15px 30px; }
 
-/* line 146, /www/sites/HbgPrime/wwwroot/source/sass/component/accordion/_accordion.scss */
+/* line 149, /www/sites/HbgPrime/wwwroot/source/sass/component/accordion/_accordion.scss */
 .accordion-boxes.boxes-large .accordion-toggle,
 .accordion-boxes.boxes-large .accordion-content, .accordion-boxes.box-large .accordion-toggle,
 .accordion-boxes.box-large .accordion-content, .accordion-boxes.list-large .accordion-toggle,
@@ -8107,7 +8109,7 @@ button.btn-icon {
 .accordion-list.list-large .accordion-toggle,
 .accordion-list.list-large .accordion-content {
   padding: 30px 45px; }
-  /* line 150, /www/sites/HbgPrime/wwwroot/source/sass/component/accordion/_accordion.scss */
+  /* line 153, /www/sites/HbgPrime/wwwroot/source/sass/component/accordion/_accordion.scss */
   .accordion-boxes.boxes-large .accordion-toggle:before,
   .accordion-boxes.boxes-large .accordion-content:before, .accordion-boxes.box-large .accordion-toggle:before,
   .accordion-boxes.box-large .accordion-content:before, .accordion-boxes.list-large .accordion-toggle:before,
@@ -8126,7 +8128,7 @@ button.btn-icon {
   .accordion-list.list-large .accordion-content:before {
     right: 45px; }
 
-/* line 155, /www/sites/HbgPrime/wwwroot/source/sass/component/accordion/_accordion.scss */
+/* line 158, /www/sites/HbgPrime/wwwroot/source/sass/component/accordion/_accordion.scss */
 .accordion-boxes.boxes-large .accordion-content, .accordion-boxes.box-large .accordion-content, .accordion-boxes.list-large .accordion-content,
 .accordion-box.boxes-large .accordion-content,
 .accordion-box.box-large .accordion-content,
@@ -8136,7 +8138,7 @@ button.btn-icon {
 .accordion-list.list-large .accordion-content {
   padding: 60px; }
 
-/* line 159, /www/sites/HbgPrime/wwwroot/source/sass/component/accordion/_accordion.scss */
+/* line 162, /www/sites/HbgPrime/wwwroot/source/sass/component/accordion/_accordion.scss */
 .accordion-boxes.boxes-large .accordion-table-head, .accordion-boxes.box-large .accordion-table-head, .accordion-boxes.list-large .accordion-table-head,
 .accordion-box.boxes-large .accordion-table-head,
 .accordion-box.box-large .accordion-table-head,
@@ -8146,19 +8148,19 @@ button.btn-icon {
 .accordion-list.list-large .accordion-table-head {
   padding: 15px 30px; }
 
-/* line 164, /www/sites/HbgPrime/wwwroot/source/sass/component/accordion/_accordion.scss */
+/* line 167, /www/sites/HbgPrime/wwwroot/source/sass/component/accordion/_accordion.scss */
 .accordion-boxes .accordion-section,
 .accordion-box .accordion-section,
 .accordion-list .accordion-section {
   border: 1px solid #e7e5e1; }
 
-/* line 168, /www/sites/HbgPrime/wwwroot/source/sass/component/accordion/_accordion.scss */
+/* line 171, /www/sites/HbgPrime/wwwroot/source/sass/component/accordion/_accordion.scss */
 .accordion-boxes .accordion-content,
 .accordion-box .accordion-content,
 .accordion-list .accordion-content {
   border-top: 1px solid #e7e5e1; }
 
-/* line 173, /www/sites/HbgPrime/wwwroot/source/sass/component/accordion/_accordion.scss */
+/* line 176, /www/sites/HbgPrime/wwwroot/source/sass/component/accordion/_accordion.scss */
 .accordion-boxes .accordion-toggle h1, .accordion-boxes .accordion-toggle h2, .accordion-boxes .accordion-toggle h3, .accordion-boxes .accordion-toggle h4, .accordion-boxes .accordion-toggle .widget_calendar caption, .widget_calendar .accordion-boxes .accordion-toggle caption, .accordion-boxes .accordion-toggle h5, .accordion-boxes .accordion-toggle h6,
 .accordion-box .accordion-toggle h1,
 .accordion-box .accordion-toggle h2,
@@ -8179,7 +8181,7 @@ button.btn-icon {
   padding: 0;
   margin: 0;
   font-weight: normal; }
-  /* line 178, /www/sites/HbgPrime/wwwroot/source/sass/component/accordion/_accordion.scss */
+  /* line 181, /www/sites/HbgPrime/wwwroot/source/sass/component/accordion/_accordion.scss */
   .accordion-boxes .accordion-toggle h1 .fa,
   .accordion-boxes .accordion-toggle h1 .pricon, .accordion-boxes .accordion-toggle h2 .fa,
   .accordion-boxes .accordion-toggle h2 .pricon, .accordion-boxes .accordion-toggle h3 .fa,
@@ -8225,20 +8227,20 @@ button.btn-icon {
     width: 1.1em;
     text-align: center; }
 
-/* line 190, /www/sites/HbgPrime/wwwroot/source/sass/component/accordion/_accordion.scss */
+/* line 193, /www/sites/HbgPrime/wwwroot/source/sass/component/accordion/_accordion.scss */
 .accordion-content article {
   margin-bottom: 0; }
 
-/* line 195, /www/sites/HbgPrime/wwwroot/source/sass/component/accordion/_accordion.scss */
+/* line 198, /www/sites/HbgPrime/wwwroot/source/sass/component/accordion/_accordion.scss */
 .accordion-list .accordion-section + .accordion-section {
   margin-top: 0;
   border-top: none; }
 
-/* line 200, /www/sites/HbgPrime/wwwroot/source/sass/component/accordion/_accordion.scss */
+/* line 203, /www/sites/HbgPrime/wwwroot/source/sass/component/accordion/_accordion.scss */
 .accordion-list .accordion-section:nth-child(odd) {
   background: rgba(0, 0, 0, 0.01); }
 
-/* line 205, /www/sites/HbgPrime/wwwroot/source/sass/component/accordion/_accordion.scss */
+/* line 208, /www/sites/HbgPrime/wwwroot/source/sass/component/accordion/_accordion.scss */
 .accordion-icon input[type="checkbox"]:checked ~ .accordion-toggle:before,
 .accordion-icon input[type="radio"]:checked ~ .accordion-toggle:before {
   font-family: hbg-pricons;
@@ -8249,13 +8251,13 @@ button.btn-icon {
   vertical-align: -15%;
   content: ""; }
 
-/* line 210, /www/sites/HbgPrime/wwwroot/source/sass/component/accordion/_accordion.scss */
+/* line 213, /www/sites/HbgPrime/wwwroot/source/sass/component/accordion/_accordion.scss */
 input[type="checkbox"]:checked ~ .accordion-toggle,
 input[type="radio"]:checked ~ .accordion-toggle,
 input[type="checkbox"]:target ~ .accordion-toggle,
 input[type="radio"]:target ~ .accordion-toggle {
   font-weight: bold; }
-  /* line 216, /www/sites/HbgPrime/wwwroot/source/sass/component/accordion/_accordion.scss */
+  /* line 219, /www/sites/HbgPrime/wwwroot/source/sass/component/accordion/_accordion.scss */
   input[type="checkbox"]:checked ~ .accordion-toggle h1, input[type="checkbox"]:checked ~ .accordion-toggle h2, input[type="checkbox"]:checked ~ .accordion-toggle h3, input[type="checkbox"]:checked ~ .accordion-toggle h4, input[type="checkbox"]:checked ~ .accordion-toggle .widget_calendar caption, .widget_calendar input[type="checkbox"]:checked ~ .accordion-toggle caption, input[type="checkbox"]:checked ~ .accordion-toggle h5, input[type="checkbox"]:checked ~ .accordion-toggle h6,
   input[type="radio"]:checked ~ .accordion-toggle h1,
   input[type="radio"]:checked ~ .accordion-toggle h2,
@@ -8282,82 +8284,82 @@ input[type="radio"]:target ~ .accordion-toggle {
   input[type="radio"]:target ~ .accordion-toggle h5,
   input[type="radio"]:target ~ .accordion-toggle h6 {
     font-weight: bold; }
-  /* line 220, /www/sites/HbgPrime/wwwroot/source/sass/component/accordion/_accordion.scss */
+  /* line 223, /www/sites/HbgPrime/wwwroot/source/sass/component/accordion/_accordion.scss */
   input[type="checkbox"]:checked ~ .accordion-toggle .label-number,
   input[type="radio"]:checked ~ .accordion-toggle .label-number,
   input[type="checkbox"]:target ~ .accordion-toggle .label-number,
   input[type="radio"]:target ~ .accordion-toggle .label-number {
     color: #11a636; }
 
-/* line 225, /www/sites/HbgPrime/wwwroot/source/sass/component/accordion/_accordion.scss */
+/* line 228, /www/sites/HbgPrime/wwwroot/source/sass/component/accordion/_accordion.scss */
 .accordion-toggle {
   display: block;
   cursor: default; }
 
-/* line 235, /www/sites/HbgPrime/wwwroot/source/sass/component/accordion/_accordion.scss */
+/* line 238, /www/sites/HbgPrime/wwwroot/source/sass/component/accordion/_accordion.scss */
 label.accordion-toggle {
   cursor: pointer; }
 
-/* line 239, /www/sites/HbgPrime/wwwroot/source/sass/component/accordion/_accordion.scss */
+/* line 242, /www/sites/HbgPrime/wwwroot/source/sass/component/accordion/_accordion.scss */
 .accordion-content {
   display: none; }
-  /* line 242, /www/sites/HbgPrime/wwwroot/source/sass/component/accordion/_accordion.scss */
+  /* line 245, /www/sites/HbgPrime/wwwroot/source/sass/component/accordion/_accordion.scss */
   input[type="checkbox"] ~ .accordion-content,
   input[type="radio"] ~ .accordion-content {
     display: none; }
     @media print {
-      /* line 242, /www/sites/HbgPrime/wwwroot/source/sass/component/accordion/_accordion.scss */
+      /* line 245, /www/sites/HbgPrime/wwwroot/source/sass/component/accordion/_accordion.scss */
       input[type="checkbox"] ~ .accordion-content,
       input[type="radio"] ~ .accordion-content {
         display: block !important; } }
-  /* line 251, /www/sites/HbgPrime/wwwroot/source/sass/component/accordion/_accordion.scss */
+  /* line 254, /www/sites/HbgPrime/wwwroot/source/sass/component/accordion/_accordion.scss */
   input[type="checkbox"]:checked ~ .accordion-content,
   input[type="radio"]:checked ~ .accordion-content,
   input[type="checkbox"]:target ~ .accordion-content,
   input[type="radio"]:target ~ .accordion-content {
     display: block; }
   @media print {
-    /* line 239, /www/sites/HbgPrime/wwwroot/source/sass/component/accordion/_accordion.scss */
+    /* line 242, /www/sites/HbgPrime/wwwroot/source/sass/component/accordion/_accordion.scss */
     .accordion-content {
       display: block !important; } }
 
-/* line 263, /www/sites/HbgPrime/wwwroot/source/sass/component/accordion/_accordion.scss */
+/* line 266, /www/sites/HbgPrime/wwwroot/source/sass/component/accordion/_accordion.scss */
 .accordion-table {
   display: table;
   table-layout: fixed;
   width: 100%; }
-  /* line 268, /www/sites/HbgPrime/wwwroot/source/sass/component/accordion/_accordion.scss */
+  /* line 271, /www/sites/HbgPrime/wwwroot/source/sass/component/accordion/_accordion.scss */
   .accordion-table .column-header {
     display: table-cell;
     width: 2%; }
 
-/* line 274, /www/sites/HbgPrime/wwwroot/source/sass/component/accordion/_accordion.scss */
+/* line 277, /www/sites/HbgPrime/wwwroot/source/sass/component/accordion/_accordion.scss */
 .accordion-table-head {
   background-color: #333;
   color: #fff;
   font-weight: bold; }
-  /* line 282, /www/sites/HbgPrime/wwwroot/source/sass/component/accordion/_accordion.scss */
+  /* line 285, /www/sites/HbgPrime/wwwroot/source/sass/component/accordion/_accordion.scss */
   .theme-red .accordion-table-head {
     background-color: #cb0050; }
-  /* line 282, /www/sites/HbgPrime/wwwroot/source/sass/component/accordion/_accordion.scss */
+  /* line 285, /www/sites/HbgPrime/wwwroot/source/sass/component/accordion/_accordion.scss */
   .theme-blue .accordion-table-head {
     background-color: #0069b4; }
-  /* line 282, /www/sites/HbgPrime/wwwroot/source/sass/component/accordion/_accordion.scss */
+  /* line 285, /www/sites/HbgPrime/wwwroot/source/sass/component/accordion/_accordion.scss */
   .theme-green .accordion-table-head {
     background-color: #11a636; }
-  /* line 282, /www/sites/HbgPrime/wwwroot/source/sass/component/accordion/_accordion.scss */
+  /* line 285, /www/sites/HbgPrime/wwwroot/source/sass/component/accordion/_accordion.scss */
   .theme-purple .accordion-table-head {
     background-color: #712082; }
 
-/* line 290, /www/sites/HbgPrime/wwwroot/source/sass/component/accordion/_accordion.scss */
+/* line 293, /www/sites/HbgPrime/wwwroot/source/sass/component/accordion/_accordion.scss */
 .modal-body .accordion .accordion-section:first-child {
   border-top: none; }
 
-/* line 294, /www/sites/HbgPrime/wwwroot/source/sass/component/accordion/_accordion.scss */
+/* line 297, /www/sites/HbgPrime/wwwroot/source/sass/component/accordion/_accordion.scss */
 .modal-body .accordion .accordion-section:last-child {
   border-bottom: none; }
 
-/* line 299, /www/sites/HbgPrime/wwwroot/source/sass/component/accordion/_accordion.scss */
+/* line 302, /www/sites/HbgPrime/wwwroot/source/sass/component/accordion/_accordion.scss */
 .accordion-nav {
   background-color: #F6F5F2;
   margin: -20px;
@@ -8365,16 +8367,16 @@ label.accordion-toggle {
   padding: 10px 20px;
   border-top: 1px solid #E7E5E1; }
   @media print {
-    /* line 299, /www/sites/HbgPrime/wwwroot/source/sass/component/accordion/_accordion.scss */
+    /* line 302, /www/sites/HbgPrime/wwwroot/source/sass/component/accordion/_accordion.scss */
     .accordion-nav {
       display: none; } }
 
-/* line 311, /www/sites/HbgPrime/wwwroot/source/sass/component/accordion/_accordion.scss */
+/* line 314, /www/sites/HbgPrime/wwwroot/source/sass/component/accordion/_accordion.scss */
 [data-accordion-nav="next"] .fa,
 [data-accordion-nav="next"] .pricon {
   margin-left: 5px; }
 
-/* line 316, /www/sites/HbgPrime/wwwroot/source/sass/component/accordion/_accordion.scss */
+/* line 319, /www/sites/HbgPrime/wwwroot/source/sass/component/accordion/_accordion.scss */
 [data-accordion-nav="prev"] .fa,
 [data-accordion-nav="prev"] .pricon {
   margin-right: 5px; }
