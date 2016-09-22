@@ -7957,7 +7957,7 @@ button.btn-icon {
     display: none; }
   /* line 61, /www/sites/HbgPrime/wwwroot/source/sass/component/accordion/_accordion.scss */
   .accordion .accordion-content {
-    background-color: #fff; }
+    background-color: #f6f5f2; }
 
 /* line 66, /www/sites/HbgPrime/wwwroot/source/sass/component/accordion/_accordion.scss */
 .accordion + .accordion {
