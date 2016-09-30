@@ -5040,6 +5040,10 @@ article iframe[src*='youtube.com/embed/'] {
   max-width: 100%;
   height: auto; }
 
+/* line 1, /www/sites/HbgPrime/wwwroot/source/sass/layout/_wp-editor.scss */
+body.mce-content-body {
+  margin: 20px; }
+
 /* line 19, /www/sites/HbgPrime/wwwroot/source/sass/typography/_headings.scss */
 h1, .h1,
 h2, .h2,
@@ -5164,27 +5168,211 @@ h6, .h6 {
   margin-top: 15px; }
 
 /* line 17, /www/sites/HbgPrime/wwwroot/source/sass/typography/_article.scss */
+.mce-content-body,
 article {
   margin-bottom: 15px; }
-  /* line 20, /www/sites/HbgPrime/wwwroot/source/sass/typography/_article.scss */
+  /* line 21, /www/sites/HbgPrime/wwwroot/source/sass/typography/_article.scss */
+  .mce-content-body > h1:first-child,
   article > h1:first-child {
     margin-top: -0.25em;
     margin-bottom: 0;
     padding-bottom: 0; }
-    /* line 25, /www/sites/HbgPrime/wwwroot/source/sass/typography/_article.scss */
-    img + article > h1:first-child {
+    /* line 26, /www/sites/HbgPrime/wwwroot/source/sass/typography/_article.scss */
+    img + .mce-content-body > h1:first-child, img +
+    article > h1:first-child {
       margin-top: 0; }
     @media print {
-      /* line 20, /www/sites/HbgPrime/wwwroot/source/sass/typography/_article.scss */
+      /* line 21, /www/sites/HbgPrime/wwwroot/source/sass/typography/_article.scss */
+      .mce-content-body > h1:first-child,
       article > h1:first-child {
         border-bottom: 2px solid #000;
         padding-bottom: 0;
         margin-bottom: 20px; } }
-  /* line 36, /www/sites/HbgPrime/wwwroot/source/sass/typography/_article.scss */
+  /* line 37, /www/sites/HbgPrime/wwwroot/source/sass/typography/_article.scss */
+  .mce-content-body strong,
+  .mce-content-body b,
   article strong,
   article b {
     font-weight: bold; }
-  /* line 41, /www/sites/HbgPrime/wwwroot/source/sass/typography/_article.scss */
+  /* line 42, /www/sites/HbgPrime/wwwroot/source/sass/typography/_article.scss */
+  .mce-content-body p + h1,
+  .mce-content-body p + h2,
+  .mce-content-body p + h3,
+  .mce-content-body p + h4,
+  .mce-content-body .widget_calendar p + caption, .widget_calendar
+  .mce-content-body p + caption,
+  .mce-content-body p + h5,
+  .mce-content-body p + h6,
+  .mce-content-body p + p,
+  .mce-content-body p + ol,
+  .mce-content-body p + ul,
+  .mce-content-body p + blockquote,
+  .mce-content-body p + pre,
+  .mce-content-body p + img,
+  .mce-content-body p + .box,
+  .mce-content-body p + .dataTables_wrapper,
+  .mce-content-body p + .wp-caption,
+  .mce-content-body p + .notice,
+  .mce-content-body ol + h1,
+  .mce-content-body ol + h2,
+  .mce-content-body ol + h3,
+  .mce-content-body ol + h4,
+  .mce-content-body .widget_calendar ol + caption, .widget_calendar
+  .mce-content-body ol + caption,
+  .mce-content-body ol + h5,
+  .mce-content-body ol + h6,
+  .mce-content-body ol + p,
+  .mce-content-body ol + ol,
+  .mce-content-body ol + ul,
+  .mce-content-body ol + blockquote,
+  .mce-content-body ol + pre,
+  .mce-content-body ol + img,
+  .mce-content-body ol + .box,
+  .mce-content-body ol + .dataTables_wrapper,
+  .mce-content-body ol + .wp-caption,
+  .mce-content-body ol + .notice,
+  .mce-content-body ul + h1,
+  .mce-content-body ul + h2,
+  .mce-content-body ul + h3,
+  .mce-content-body ul + h4,
+  .mce-content-body .widget_calendar ul + caption, .widget_calendar
+  .mce-content-body ul + caption,
+  .mce-content-body ul + h5,
+  .mce-content-body ul + h6,
+  .mce-content-body ul + p,
+  .mce-content-body ul + ol,
+  .mce-content-body ul + ul,
+  .mce-content-body ul + blockquote,
+  .mce-content-body ul + pre,
+  .mce-content-body ul + img,
+  .mce-content-body ul + .box,
+  .mce-content-body ul + .dataTables_wrapper,
+  .mce-content-body ul + .wp-caption,
+  .mce-content-body ul + .notice,
+  .mce-content-body blockquote + h1,
+  .mce-content-body blockquote + h2,
+  .mce-content-body blockquote + h3,
+  .mce-content-body blockquote + h4,
+  .mce-content-body .widget_calendar blockquote + caption, .widget_calendar
+  .mce-content-body blockquote + caption,
+  .mce-content-body blockquote + h5,
+  .mce-content-body blockquote + h6,
+  .mce-content-body blockquote + p,
+  .mce-content-body blockquote + ol,
+  .mce-content-body blockquote + ul,
+  .mce-content-body blockquote + blockquote,
+  .mce-content-body blockquote + pre,
+  .mce-content-body blockquote + img,
+  .mce-content-body blockquote + .box,
+  .mce-content-body blockquote + .dataTables_wrapper,
+  .mce-content-body blockquote + .wp-caption,
+  .mce-content-body blockquote + .notice,
+  .mce-content-body .wp-caption + h1,
+  .mce-content-body .wp-caption + h2,
+  .mce-content-body .wp-caption + h3,
+  .mce-content-body .wp-caption + h4,
+  .mce-content-body .widget_calendar .wp-caption + caption, .widget_calendar
+  .mce-content-body .wp-caption + caption,
+  .mce-content-body .wp-caption + h5,
+  .mce-content-body .wp-caption + h6,
+  .mce-content-body .wp-caption + p,
+  .mce-content-body .wp-caption + ol,
+  .mce-content-body .wp-caption + ul,
+  .mce-content-body .wp-caption + blockquote,
+  .mce-content-body .wp-caption + pre,
+  .mce-content-body .wp-caption + img,
+  .mce-content-body .wp-caption + .box,
+  .mce-content-body .wp-caption + .dataTables_wrapper,
+  .mce-content-body .wp-caption + .notice,
+  .mce-content-body pre + h1,
+  .mce-content-body pre + h2,
+  .mce-content-body pre + h3,
+  .mce-content-body pre + h4,
+  .mce-content-body .widget_calendar pre + caption, .widget_calendar
+  .mce-content-body pre + caption,
+  .mce-content-body pre + h5,
+  .mce-content-body pre + h6,
+  .mce-content-body pre + p,
+  .mce-content-body pre + ol,
+  .mce-content-body pre + ul,
+  .mce-content-body pre + blockquote,
+  .mce-content-body pre + pre,
+  .mce-content-body pre + img,
+  .mce-content-body pre + .box,
+  .mce-content-body pre + .dataTables_wrapper,
+  .mce-content-body pre + .wp-caption,
+  .mce-content-body pre + .notice,
+  .mce-content-body img + h1,
+  .mce-content-body img + h2,
+  .mce-content-body img + h3,
+  .mce-content-body img + h4,
+  .mce-content-body .widget_calendar img + caption, .widget_calendar
+  .mce-content-body img + caption,
+  .mce-content-body img + h5,
+  .mce-content-body img + h6,
+  .mce-content-body img + p,
+  .mce-content-body img + ol,
+  .mce-content-body img + ul,
+  .mce-content-body img + blockquote,
+  .mce-content-body img + pre,
+  .mce-content-body img + img,
+  .mce-content-body img + .box,
+  .mce-content-body img + .dataTables_wrapper,
+  .mce-content-body img + .wp-caption,
+  .mce-content-body img + .notice,
+  .mce-content-body .box + h1,
+  .mce-content-body .box + h2,
+  .mce-content-body .box + h3,
+  .mce-content-body .box + h4,
+  .mce-content-body .widget_calendar .box + caption, .widget_calendar
+  .mce-content-body .box + caption,
+  .mce-content-body .box + h5,
+  .mce-content-body .box + h6,
+  .mce-content-body .box + p,
+  .mce-content-body .box + ol,
+  .mce-content-body .box + ul,
+  .mce-content-body .box + blockquote,
+  .mce-content-body .box + pre,
+  .mce-content-body .box + img,
+  .mce-content-body .box + .box,
+  .mce-content-body .box + .dataTables_wrapper,
+  .mce-content-body .box + .wp-caption,
+  .mce-content-body .box + .notice,
+  .mce-content-body .dataTables_wrapper + h1,
+  .mce-content-body .dataTables_wrapper + h2,
+  .mce-content-body .dataTables_wrapper + h3,
+  .mce-content-body .dataTables_wrapper + h4,
+  .mce-content-body .widget_calendar .dataTables_wrapper + caption, .widget_calendar
+  .mce-content-body .dataTables_wrapper + caption,
+  .mce-content-body .dataTables_wrapper + h5,
+  .mce-content-body .dataTables_wrapper + h6,
+  .mce-content-body .dataTables_wrapper + p,
+  .mce-content-body .dataTables_wrapper + ol,
+  .mce-content-body .dataTables_wrapper + ul,
+  .mce-content-body .dataTables_wrapper + blockquote,
+  .mce-content-body .dataTables_wrapper + pre,
+  .mce-content-body .dataTables_wrapper + img,
+  .mce-content-body .dataTables_wrapper + .box,
+  .mce-content-body .dataTables_wrapper + .dataTables_wrapper,
+  .mce-content-body .dataTables_wrapper + .wp-caption,
+  .mce-content-body .dataTables_wrapper + .notice,
+  .mce-content-body .notice + h1,
+  .mce-content-body .notice + h2,
+  .mce-content-body .notice + h3,
+  .mce-content-body .notice + h4,
+  .mce-content-body .widget_calendar .notice + caption, .widget_calendar
+  .mce-content-body .notice + caption,
+  .mce-content-body .notice + h5,
+  .mce-content-body .notice + h6,
+  .mce-content-body .notice + p,
+  .mce-content-body .notice + ol,
+  .mce-content-body .notice + ul,
+  .mce-content-body .notice + blockquote,
+  .mce-content-body .notice + pre,
+  .mce-content-body .notice + hr,
+  .mce-content-body .notice + img,
+  .mce-content-body .notice + .wp-caption,
+  .mce-content-body .notice + .notice,
   article p + h1,
   article p + h2,
   article p + h3,
@@ -5364,7 +5552,40 @@ article {
   article .notice + .wp-caption,
   article .notice + .notice {
     margin-top: 1.3em; }
-  /* line 212, /www/sites/HbgPrime/wwwroot/source/sass/typography/_article.scss */
+  /* line 213, /www/sites/HbgPrime/wwwroot/source/sass/typography/_article.scss */
+  .mce-content-body hr + h1,
+  .mce-content-body hr + h2,
+  .mce-content-body hr + h3,
+  .mce-content-body hr + h4,
+  .mce-content-body .widget_calendar hr + caption, .widget_calendar
+  .mce-content-body hr + caption,
+  .mce-content-body hr + h5,
+  .mce-content-body hr + h6,
+  .mce-content-body hr + p,
+  .mce-content-body hr + ol,
+  .mce-content-body hr + ul,
+  .mce-content-body hr + blockquote,
+  .mce-content-body hr + pre,
+  .mce-content-body hr + hr,
+  .mce-content-body hr + img,
+  .mce-content-body hr + .wp-caption,
+  .mce-content-body hr + .notice,
+  .mce-content-body h1 + hr,
+  .mce-content-body h2 + hr,
+  .mce-content-body h3 + hr,
+  .mce-content-body h4 + hr,
+  .mce-content-body .widget_calendar caption + hr, .widget_calendar
+  .mce-content-body caption + hr,
+  .mce-content-body h5 + hr,
+  .mce-content-body h6 + hr,
+  .mce-content-body p + hr,
+  .mce-content-body ol + hr,
+  .mce-content-body ul + hr,
+  .mce-content-body blockquote + hr,
+  .mce-content-body pre + hr,
+  .mce-content-body img + hr,
+  .mce-content-body .wp-caption + hr,
+  .mce-content-body .notice + hr,
   article hr + h1,
   article hr + h2,
   article hr + h3,
@@ -5399,13 +5620,15 @@ article {
   article .wp-caption + hr,
   article .notice + hr {
     margin-top: 2em; }
-  /* line 245, /www/sites/HbgPrime/wwwroot/source/sass/typography/_article.scss */
+  /* line 246, /www/sites/HbgPrime/wwwroot/source/sass/typography/_article.scss */
+  .mce-content-body blockquote,
   article blockquote {
     border-left: 3px solid #e7e5e1;
     margin-bottom: 15px;
     padding: 20px 35px;
     quotes: "“" "”" "‘" "’"; }
-  /* line 252, /www/sites/HbgPrime/wwwroot/source/sass/typography/_article.scss */
+  /* line 253, /www/sites/HbgPrime/wwwroot/source/sass/typography/_article.scss */
+  .mce-content-body blockquote:before,
   article blockquote:before {
     color: #979797;
     content: open-quote;
@@ -5413,7 +5636,8 @@ article {
     line-height: 0.1em;
     margin-right: 0.25em;
     vertical-align: -0.4em; }
-  /* line 261, /www/sites/HbgPrime/wwwroot/source/sass/typography/_article.scss */
+  /* line 262, /www/sites/HbgPrime/wwwroot/source/sass/typography/_article.scss */
+  .mce-content-body blockquote:after,
   article blockquote:after {
     color: #979797;
     content: close-quote;
@@ -5421,17 +5645,20 @@ article {
     line-height: 0.1em;
     margin-left: 0.25em;
     vertical-align: -0.4em; }
-  /* line 270, /www/sites/HbgPrime/wwwroot/source/sass/typography/_article.scss */
+  /* line 271, /www/sites/HbgPrime/wwwroot/source/sass/typography/_article.scss */
+  .mce-content-body blockquote p,
   article blockquote p {
     display: inline;
     margin: 0; }
-  /* line 275, /www/sites/HbgPrime/wwwroot/source/sass/typography/_article.scss */
+  /* line 276, /www/sites/HbgPrime/wwwroot/source/sass/typography/_article.scss */
+  .mce-content-body img,
   article img {
     display: block;
     max-width: 100%;
     height: auto; }
   @media print {
-    /* line 282, /www/sites/HbgPrime/wwwroot/source/sass/typography/_article.scss */
+    /* line 283, /www/sites/HbgPrime/wwwroot/source/sass/typography/_article.scss */
+    .mce-content-body a::after,
     article a::after {
       display: inline;
       content: " (" attr(href) ")";
@@ -5439,15 +5666,37 @@ article {
       font-size: .8em;
       word-break: break-all;
       text-decoration: none; } }
-  /* line 292, /www/sites/HbgPrime/wwwroot/source/sass/typography/_article.scss */
-  article p, article h1, article h2, article h3, article h4, article .widget_calendar caption, .widget_calendar article caption, article h5, article h6, article li, article .wp-caption {
+  /* line 293, /www/sites/HbgPrime/wwwroot/source/sass/typography/_article.scss */
+  .mce-content-body p, .mce-content-body h1, .mce-content-body h2, .mce-content-body h3, .mce-content-body h4, .mce-content-body .widget_calendar caption, .widget_calendar .mce-content-body caption, .mce-content-body h5, .mce-content-body h6, .mce-content-body li, .mce-content-body .wp-caption,
+  article p,
+  article h1,
+  article h2,
+  article h3,
+  article h4,
+  article .widget_calendar caption, .widget_calendar
+  article caption,
+  article h5,
+  article h6,
+  article li,
+  article .wp-caption {
     max-width: 700px; }
     @media print {
-      /* line 292, /www/sites/HbgPrime/wwwroot/source/sass/typography/_article.scss */
-      article p, article h1, article h2, article h3, article h4, article .widget_calendar caption, .widget_calendar article caption, article h5, article h6, article li, article .wp-caption {
+      /* line 293, /www/sites/HbgPrime/wwwroot/source/sass/typography/_article.scss */
+      .mce-content-body p, .mce-content-body h1, .mce-content-body h2, .mce-content-body h3, .mce-content-body h4, .mce-content-body .widget_calendar caption, .widget_calendar .mce-content-body caption, .mce-content-body h5, .mce-content-body h6, .mce-content-body li, .mce-content-body .wp-caption,
+      article p,
+      article h1,
+      article h2,
+      article h3,
+      article h4,
+      article .widget_calendar caption, .widget_calendar
+      article caption,
+      article h5,
+      article h6,
+      article li,
+      article .wp-caption {
         max-width: none !important; } }
 
-/* line 302, /www/sites/HbgPrime/wwwroot/source/sass/typography/_article.scss */
+/* line 303, /www/sites/HbgPrime/wwwroot/source/sass/typography/_article.scss */
 hr {
   position: relative;
   height: 4px;
@@ -5455,27 +5704,31 @@ hr {
   background-color: #e7e5e1;
   border: none; }
 
-/* line 310, /www/sites/HbgPrime/wwwroot/source/sass/typography/_article.scss */
+/* line 311, /www/sites/HbgPrime/wwwroot/source/sass/typography/_article.scss */
 article + .page-footer {
   margin-top: 30px; }
 
-/* line 314, /www/sites/HbgPrime/wwwroot/source/sass/typography/_article.scss */
+/* line 315, /www/sites/HbgPrime/wwwroot/source/sass/typography/_article.scss */
 .page-footer {
   font-size: .9em; }
 
-/* line 16, /www/sites/HbgPrime/wwwroot/source/sass/typography/_list.scss */
+/* line 17, /www/sites/HbgPrime/wwwroot/source/sass/typography/_list.scss */
+.mce-content-body ul,
 article ul:not(.nav):not(.slider-items):not(.line-numbers),
 .unordered-list {
   padding-left: 30px; }
-  /* line 20, /www/sites/HbgPrime/wwwroot/source/sass/typography/_list.scss */
+  /* line 22, /www/sites/HbgPrime/wwwroot/source/sass/typography/_list.scss */
+  .mce-content-body ul li,
   article ul:not(.nav):not(.slider-items):not(.line-numbers) li,
   .unordered-list li {
     position: relative; }
-    /* line 23, /www/sites/HbgPrime/wwwroot/source/sass/typography/_list.scss */
+    /* line 25, /www/sites/HbgPrime/wwwroot/source/sass/typography/_list.scss */
+    .mce-content-body ul li + li,
     article ul:not(.nav):not(.slider-items):not(.line-numbers) li + li,
     .unordered-list li + li {
       margin-top: 5px; }
-    /* line 27, /www/sites/HbgPrime/wwwroot/source/sass/typography/_list.scss */
+    /* line 29, /www/sites/HbgPrime/wwwroot/source/sass/typography/_list.scss */
+    .mce-content-body ul li::before,
     article ul:not(.nav):not(.slider-items):not(.line-numbers) li::before,
     .unordered-list li::before {
       position: absolute;
@@ -5485,59 +5738,80 @@ article ul:not(.nav):not(.slider-items):not(.line-numbers),
       width: 6px;
       height: 6px;
       background-color: #666; }
-      /* line 39, /www/sites/HbgPrime/wwwroot/source/sass/typography/_list.scss */
-      .theme-red article ul:not(.nav):not(.slider-items):not(.line-numbers) li::before, .theme-red
+      /* line 41, /www/sites/HbgPrime/wwwroot/source/sass/typography/_list.scss */
+      .theme-red .mce-content-body ul li::before, .theme-red
+      article ul:not(.nav):not(.slider-items):not(.line-numbers) li::before, .theme-red
       .unordered-list li::before {
         background-color: #ec6701; }
-      /* line 39, /www/sites/HbgPrime/wwwroot/source/sass/typography/_list.scss */
-      .theme-blue article ul:not(.nav):not(.slider-items):not(.line-numbers) li::before, .theme-blue
+      /* line 41, /www/sites/HbgPrime/wwwroot/source/sass/typography/_list.scss */
+      .theme-blue .mce-content-body ul li::before, .theme-blue
+      article ul:not(.nav):not(.slider-items):not(.line-numbers) li::before, .theme-blue
       .unordered-list li::before {
         background-color: #5ba1d8; }
-      /* line 39, /www/sites/HbgPrime/wwwroot/source/sass/typography/_list.scss */
-      .theme-green article ul:not(.nav):not(.slider-items):not(.line-numbers) li::before, .theme-green
+      /* line 41, /www/sites/HbgPrime/wwwroot/source/sass/typography/_list.scss */
+      .theme-green .mce-content-body ul li::before, .theme-green
+      article ul:not(.nav):not(.slider-items):not(.line-numbers) li::before, .theme-green
       .unordered-list li::before {
         background-color: #a0c855; }
-      /* line 39, /www/sites/HbgPrime/wwwroot/source/sass/typography/_list.scss */
-      .theme-purple article ul:not(.nav):not(.slider-items):not(.line-numbers) li::before, .theme-purple
+      /* line 41, /www/sites/HbgPrime/wwwroot/source/sass/typography/_list.scss */
+      .theme-purple .mce-content-body ul li::before, .theme-purple
+      article ul:not(.nav):not(.slider-items):not(.line-numbers) li::before, .theme-purple
       .unordered-list li::before {
         background-color: #a84c98; }
 
-/* line 48, /www/sites/HbgPrime/wwwroot/source/sass/typography/_list.scss */
+/* line 54, /www/sites/HbgPrime/wwwroot/source/sass/typography/_list.scss */
+.mce-content-body.theme-red ul li::before {
+  background-color: #ec6701; }
+
+/* line 54, /www/sites/HbgPrime/wwwroot/source/sass/typography/_list.scss */
+.mce-content-body.theme-blue ul li::before {
+  background-color: #5ba1d8; }
+
+/* line 54, /www/sites/HbgPrime/wwwroot/source/sass/typography/_list.scss */
+.mce-content-body.theme-green ul li::before {
+  background-color: #a0c855; }
+
+/* line 54, /www/sites/HbgPrime/wwwroot/source/sass/typography/_list.scss */
+.mce-content-body.theme-purple ul li::before {
+  background-color: #a84c98; }
+
+/* line 61, /www/sites/HbgPrime/wwwroot/source/sass/typography/_list.scss */
 article + ul,
 article ul + ul,
 .unordered-list + .unordered-list {
   margin-top: 15px; }
 
-/* line 67, /www/sites/HbgPrime/wwwroot/source/sass/typography/_list.scss */
+/* line 81, /www/sites/HbgPrime/wwwroot/source/sass/typography/_list.scss */
+.mce-content-body ol,
 article ol,
 .ordered-list {
   padding-left: 30px;
   list-style-type: decimal; }
 
-/* line 73, /www/sites/HbgPrime/wwwroot/source/sass/typography/_list.scss */
+/* line 88, /www/sites/HbgPrime/wwwroot/source/sass/typography/_list.scss */
 li.title {
   font-size: .8em;
   font-weight: bold;
   color: #333;
   letter-spacing: .5px; }
-  /* line 81, /www/sites/HbgPrime/wwwroot/source/sass/typography/_list.scss */
+  /* line 96, /www/sites/HbgPrime/wwwroot/source/sass/typography/_list.scss */
   .theme-red li.title {
     color: #cb0050; }
-  /* line 81, /www/sites/HbgPrime/wwwroot/source/sass/typography/_list.scss */
+  /* line 96, /www/sites/HbgPrime/wwwroot/source/sass/typography/_list.scss */
   .theme-blue li.title {
     color: #0069b4; }
-  /* line 81, /www/sites/HbgPrime/wwwroot/source/sass/typography/_list.scss */
+  /* line 96, /www/sites/HbgPrime/wwwroot/source/sass/typography/_list.scss */
   .theme-green li.title {
     color: #50811b; }
-  /* line 81, /www/sites/HbgPrime/wwwroot/source/sass/typography/_list.scss */
+  /* line 96, /www/sites/HbgPrime/wwwroot/source/sass/typography/_list.scss */
   .theme-purple li.title {
     color: #712082; }
 
-/* line 88, /www/sites/HbgPrime/wwwroot/source/sass/typography/_list.scss */
+/* line 103, /www/sites/HbgPrime/wwwroot/source/sass/typography/_list.scss */
 li + li.title {
   margin-top: 10px; }
 
-/* line 92, /www/sites/HbgPrime/wwwroot/source/sass/typography/_list.scss */
+/* line 107, /www/sites/HbgPrime/wwwroot/source/sass/typography/_list.scss */
 .list-item-spacing li + li {
   margin-top: 8px; }
 
@@ -5562,6 +5836,7 @@ a {
     text-decoration: underline; }
 
 /* line 20, /www/sites/HbgPrime/wwwroot/source/sass/typography/_link.scss */
+.mce-content-body a:not([class]),
 [class*="theme-"] article a:not([class]),
 [class*="theme-"] article a.link-item,
 [class*="theme-"] article .widget_archive a, .widget_archive
@@ -5584,7 +5859,8 @@ a {
 [class*="theme-"] article a {
   color: #0069b4;
   text-decoration: underline; }
-  /* line 25, /www/sites/HbgPrime/wwwroot/source/sass/typography/_link.scss */
+  /* line 26, /www/sites/HbgPrime/wwwroot/source/sass/typography/_link.scss */
+  .mce-content-body a:not([class]):hover,
   [class*="theme-"] article a:not([class]):hover,
   [class*="theme-"] article a.link-item:hover,
   [class*="theme-"] article .widget_archive a:hover, .widget_archive
@@ -5606,7 +5882,8 @@ a {
   .widget_recent_comments
   [class*="theme-"] article a:hover {
     color: #0095db; }
-  /* line 29, /www/sites/HbgPrime/wwwroot/source/sass/typography/_link.scss */
+  /* line 30, /www/sites/HbgPrime/wwwroot/source/sass/typography/_link.scss */
+  .mce-content-body a:not([class]):visited,
   [class*="theme-"] article a:not([class]):visited,
   [class*="theme-"] article a.link-item:visited,
   [class*="theme-"] article .widget_archive a:visited, .widget_archive
@@ -5628,7 +5905,8 @@ a {
   .widget_recent_comments
   [class*="theme-"] article a:visited {
     color: #712082; }
-    /* line 32, /www/sites/HbgPrime/wwwroot/source/sass/typography/_link.scss */
+    /* line 33, /www/sites/HbgPrime/wwwroot/source/sass/typography/_link.scss */
+    .mce-content-body a:not([class]):visited:hover,
     [class*="theme-"] article a:not([class]):visited:hover,
     [class*="theme-"] article a.link-item:visited:hover,
     [class*="theme-"] article .widget_archive a:visited:hover, .widget_archive
@@ -5906,7 +6184,23 @@ input[type="button"].btn::-moz-focus-inner {
   border: 0; }
 
 /* End of button height fix */
-/* line 24, /www/sites/HbgPrime/wwwroot/source/sass/component/button/_button.scss */
+/* line 27, /www/sites/HbgPrime/wwwroot/source/sass/component/button/_button.scss */
+.theme-red a.btn {
+  color: #fff; }
+
+/* line 27, /www/sites/HbgPrime/wwwroot/source/sass/component/button/_button.scss */
+.theme-blue a.btn {
+  color: #fff; }
+
+/* line 27, /www/sites/HbgPrime/wwwroot/source/sass/component/button/_button.scss */
+.theme-green a.btn {
+  color: #fff; }
+
+/* line 27, /www/sites/HbgPrime/wwwroot/source/sass/component/button/_button.scss */
+.theme-purple a.btn {
+  color: #fff; }
+
+/* line 33, /www/sites/HbgPrime/wwwroot/source/sass/component/button/_button.scss */
 .btn,
 .read-more {
   -webkit-appearance: none;
@@ -5937,17 +6231,17 @@ input[type="button"].btn::-moz-focus-inner {
       body:not(.material-no-shadow) .btn.btn-primary, body:not(.material-no-shadow)
       .read-more.btn-primary {
         box-shadow: none; } }
-  /* line 47, /www/sites/HbgPrime/wwwroot/source/sass/component/button/_button.scss */
+  /* line 56, /www/sites/HbgPrime/wwwroot/source/sass/component/button/_button.scss */
   .btn:hover, .btn:focus,
   .read-more:hover,
   .read-more:focus {
     background-color: #e0ded9;
     text-decoration: none; }
-  /* line 53, /www/sites/HbgPrime/wwwroot/source/sass/component/button/_button.scss */
+  /* line 62, /www/sites/HbgPrime/wwwroot/source/sass/component/button/_button.scss */
   .btn:active,
   .read-more:active {
     box-shadow: inset 0 0 8px rgba(0, 0, 0, 0.3); }
-  /* line 57, /www/sites/HbgPrime/wwwroot/source/sass/component/button/_button.scss */
+  /* line 66, /www/sites/HbgPrime/wwwroot/source/sass/component/button/_button.scss */
   .btn:disabled, .btn.disabled, input.btn[type="text"]:disabled,
   input.btn[type="password"]:disabled,
   input.btn[type="search"]:disabled,
@@ -5988,7 +6282,7 @@ input[type="button"].btn::-moz-focus-inner {
   select.read-more:disabled {
     opacity: .5;
     cursor: no-drop; }
-    /* line 62, /www/sites/HbgPrime/wwwroot/source/sass/component/button/_button.scss */
+    /* line 71, /www/sites/HbgPrime/wwwroot/source/sass/component/button/_button.scss */
     .btn:disabled:active, .btn.disabled:active, input.btn[type="text"]:active:disabled,
     input.btn[type="password"]:active:disabled,
     input.btn[type="search"]:active:disabled,
@@ -6029,13 +6323,13 @@ input[type="button"].btn::-moz-focus-inner {
     select.read-more:active:disabled {
       box-shadow: none; }
 
-/* line 68, /www/sites/HbgPrime/wwwroot/source/sass/component/button/_button.scss */
+/* line 77, /www/sites/HbgPrime/wwwroot/source/sass/component/button/_button.scss */
 .read-more {
   display: block !important;
   text-align: center;
   color: #252525 !important;
   text-decoration: none !important; }
-  /* line 74, /www/sites/HbgPrime/wwwroot/source/sass/component/button/_button.scss */
+  /* line 83, /www/sites/HbgPrime/wwwroot/source/sass/component/button/_button.scss */
   .read-more::before {
     font-family: hbg-pricons;
     line-height: 1;
@@ -6046,335 +6340,335 @@ input[type="button"].btn::-moz-focus-inner {
     content: "";
     margin-right: 7px; }
 
-/* line 95, /www/sites/HbgPrime/wwwroot/source/sass/component/button/_button.scss */
+/* line 104, /www/sites/HbgPrime/wwwroot/source/sass/component/button/_button.scss */
 .btn.btn-primary {
   background-color: #666;
   color: #fff;
   border-color: #666; }
-  /* line 103, /www/sites/HbgPrime/wwwroot/source/sass/component/button/_button.scss */
+  /* line 112, /www/sites/HbgPrime/wwwroot/source/sass/component/button/_button.scss */
   .theme-red .btn.btn-primary {
     background-color: #ec6701;
     border-color: #ec6701;
     color: #fff; }
-  /* line 103, /www/sites/HbgPrime/wwwroot/source/sass/component/button/_button.scss */
+  /* line 112, /www/sites/HbgPrime/wwwroot/source/sass/component/button/_button.scss */
   .theme-blue .btn.btn-primary {
     background-color: #5ba1d8;
     border-color: #5ba1d8;
     color: #fff; }
-  /* line 103, /www/sites/HbgPrime/wwwroot/source/sass/component/button/_button.scss */
+  /* line 112, /www/sites/HbgPrime/wwwroot/source/sass/component/button/_button.scss */
   .theme-green .btn.btn-primary {
     background-color: #a0c855;
     border-color: #a0c855;
     color: #fff; }
-  /* line 103, /www/sites/HbgPrime/wwwroot/source/sass/component/button/_button.scss */
+  /* line 112, /www/sites/HbgPrime/wwwroot/source/sass/component/button/_button.scss */
   .theme-purple .btn.btn-primary {
     background-color: #a84c98;
     border-color: #a84c98;
     color: #fff; }
-  /* line 111, /www/sites/HbgPrime/wwwroot/source/sass/component/button/_button.scss */
+  /* line 120, /www/sites/HbgPrime/wwwroot/source/sass/component/button/_button.scss */
   .btn.btn-primary:hover, .btn.btn-primary:focus {
     background-color: #5e5e5e;
     border-color: #5e5e5e; }
-    /* line 119, /www/sites/HbgPrime/wwwroot/source/sass/component/button/_button.scss */
+    /* line 128, /www/sites/HbgPrime/wwwroot/source/sass/component/button/_button.scss */
     .theme-red .btn.btn-primary:hover, .theme-red .btn.btn-primary:focus {
       background-color: #dd6001;
       border-color: #dd6001; }
-    /* line 119, /www/sites/HbgPrime/wwwroot/source/sass/component/button/_button.scss */
+    /* line 128, /www/sites/HbgPrime/wwwroot/source/sass/component/button/_button.scss */
     .theme-blue .btn.btn-primary:hover, .theme-blue .btn.btn-primary:focus {
       background-color: #4f9ad5;
       border-color: #4f9ad5; }
-    /* line 119, /www/sites/HbgPrime/wwwroot/source/sass/component/button/_button.scss */
+    /* line 128, /www/sites/HbgPrime/wwwroot/source/sass/component/button/_button.scss */
     .theme-green .btn.btn-primary:hover, .theme-green .btn.btn-primary:focus {
       background-color: #9ac449;
       border-color: #9ac449; }
-    /* line 119, /www/sites/HbgPrime/wwwroot/source/sass/component/button/_button.scss */
+    /* line 128, /www/sites/HbgPrime/wwwroot/source/sass/component/button/_button.scss */
     .theme-purple .btn.btn-primary:hover, .theme-purple .btn.btn-primary:focus {
       background-color: #9d478e;
       border-color: #9d478e; }
 
-/* line 128, /www/sites/HbgPrime/wwwroot/source/sass/component/button/_button.scss */
+/* line 137, /www/sites/HbgPrime/wwwroot/source/sass/component/button/_button.scss */
 .btn.btn-danger {
   background-color: #e3000f;
   border-color: #e3000f;
   color: #fff; }
-  /* line 133, /www/sites/HbgPrime/wwwroot/source/sass/component/button/_button.scss */
+  /* line 142, /www/sites/HbgPrime/wwwroot/source/sass/component/button/_button.scss */
   .btn.btn-danger:hover, .btn.btn-danger:focus {
     background-color: #b0000c;
     border-color: #b0000c; }
 
-/* line 151, /www/sites/HbgPrime/wwwroot/source/sass/component/button/_button.scss */
+/* line 160, /www/sites/HbgPrime/wwwroot/source/sass/component/button/_button.scss */
 .btn.btn-plain {
   background-color: transparent;
   color: #252525;
   border-color: transparent;
   padding: 0; }
-  /* line 157, /www/sites/HbgPrime/wwwroot/source/sass/component/button/_button.scss */
+  /* line 166, /www/sites/HbgPrime/wwwroot/source/sass/component/button/_button.scss */
   .btn.btn-plain:hover {
     background-color: trapsarent; }
-  /* line 161, /www/sites/HbgPrime/wwwroot/source/sass/component/button/_button.scss */
+  /* line 170, /www/sites/HbgPrime/wwwroot/source/sass/component/button/_button.scss */
   .btn.btn-plain:active {
     box-shadow: none; }
 
-/* line 217, /www/sites/HbgPrime/wwwroot/source/sass/component/button/_button.scss */
+/* line 226, /www/sites/HbgPrime/wwwroot/source/sass/component/button/_button.scss */
 .btn-theme-first {
   background-color: #fff;
   border-color: #fff;
   color: #fff; }
-  /* line 194, /www/sites/HbgPrime/wwwroot/source/sass/component/button/_button.scss */
+  /* line 203, /www/sites/HbgPrime/wwwroot/source/sass/component/button/_button.scss */
   .theme-red .btn-theme-first {
     background-color: #f7a600;
     border-color: #f7a600; }
-  /* line 194, /www/sites/HbgPrime/wwwroot/source/sass/component/button/_button.scss */
+  /* line 203, /www/sites/HbgPrime/wwwroot/source/sass/component/button/_button.scss */
   .theme-blue .btn-theme-first {
     background-color: #4db4e7;
     border-color: #4db4e7; }
-  /* line 194, /www/sites/HbgPrime/wwwroot/source/sass/component/button/_button.scss */
+  /* line 203, /www/sites/HbgPrime/wwwroot/source/sass/component/button/_button.scss */
   .theme-green .btn-theme-first {
     background-color: #afca05;
     border-color: #afca05; }
-  /* line 194, /www/sites/HbgPrime/wwwroot/source/sass/component/button/_button.scss */
+  /* line 203, /www/sites/HbgPrime/wwwroot/source/sass/component/button/_button.scss */
   .theme-purple .btn-theme-first {
     background-color: #d35098;
     border-color: #d35098; }
-  /* line 201, /www/sites/HbgPrime/wwwroot/source/sass/component/button/_button.scss */
+  /* line 210, /www/sites/HbgPrime/wwwroot/source/sass/component/button/_button.scss */
   .btn-theme-first:hover {
     background-color: #f7f7f7;
     border-color: #f7f7f7; }
-    /* line 208, /www/sites/HbgPrime/wwwroot/source/sass/component/button/_button.scss */
+    /* line 217, /www/sites/HbgPrime/wwwroot/source/sass/component/button/_button.scss */
     .theme-red .btn-theme-first:hover {
       background-color: #e89c00;
       border-color: #e89c00; }
-    /* line 208, /www/sites/HbgPrime/wwwroot/source/sass/component/button/_button.scss */
+    /* line 217, /www/sites/HbgPrime/wwwroot/source/sass/component/button/_button.scss */
     .theme-blue .btn-theme-first:hover {
       background-color: #40aee5;
       border-color: #40aee5; }
-    /* line 208, /www/sites/HbgPrime/wwwroot/source/sass/component/button/_button.scss */
+    /* line 217, /www/sites/HbgPrime/wwwroot/source/sass/component/button/_button.scss */
     .theme-green .btn-theme-first:hover {
       background-color: #a2bb05;
       border-color: #a2bb05; }
-    /* line 208, /www/sites/HbgPrime/wwwroot/source/sass/component/button/_button.scss */
+    /* line 217, /www/sites/HbgPrime/wwwroot/source/sass/component/button/_button.scss */
     .theme-purple .btn-theme-first:hover {
       background-color: #d04491;
       border-color: #d04491; }
 
-/* line 221, /www/sites/HbgPrime/wwwroot/source/sass/component/button/_button.scss */
+/* line 230, /www/sites/HbgPrime/wwwroot/source/sass/component/button/_button.scss */
 .btn-theme-second {
   background-color: #333;
   border-color: #333;
   color: #fff; }
-  /* line 194, /www/sites/HbgPrime/wwwroot/source/sass/component/button/_button.scss */
+  /* line 203, /www/sites/HbgPrime/wwwroot/source/sass/component/button/_button.scss */
   .theme-red .btn-theme-second {
     background-color: #cb0050;
     border-color: #cb0050; }
-  /* line 194, /www/sites/HbgPrime/wwwroot/source/sass/component/button/_button.scss */
+  /* line 203, /www/sites/HbgPrime/wwwroot/source/sass/component/button/_button.scss */
   .theme-blue .btn-theme-second {
     background-color: #0069b4;
     border-color: #0069b4; }
-  /* line 194, /www/sites/HbgPrime/wwwroot/source/sass/component/button/_button.scss */
+  /* line 203, /www/sites/HbgPrime/wwwroot/source/sass/component/button/_button.scss */
   .theme-green .btn-theme-second {
     background-color: #11a636;
     border-color: #11a636; }
-  /* line 194, /www/sites/HbgPrime/wwwroot/source/sass/component/button/_button.scss */
+  /* line 203, /www/sites/HbgPrime/wwwroot/source/sass/component/button/_button.scss */
   .theme-purple .btn-theme-second {
     background-color: #712082;
     border-color: #712082; }
-  /* line 201, /www/sites/HbgPrime/wwwroot/source/sass/component/button/_button.scss */
+  /* line 210, /www/sites/HbgPrime/wwwroot/source/sass/component/button/_button.scss */
   .btn-theme-second:hover {
     background-color: #f7f7f7;
     border-color: #f7f7f7; }
-    /* line 208, /www/sites/HbgPrime/wwwroot/source/sass/component/button/_button.scss */
+    /* line 217, /www/sites/HbgPrime/wwwroot/source/sass/component/button/_button.scss */
     .theme-red .btn-theme-second:hover {
       background-color: #bc004a;
       border-color: #bc004a; }
-    /* line 208, /www/sites/HbgPrime/wwwroot/source/sass/component/button/_button.scss */
+    /* line 217, /www/sites/HbgPrime/wwwroot/source/sass/component/button/_button.scss */
     .theme-blue .btn-theme-second:hover {
       background-color: #0060a5;
       border-color: #0060a5; }
-    /* line 208, /www/sites/HbgPrime/wwwroot/source/sass/component/button/_button.scss */
+    /* line 217, /www/sites/HbgPrime/wwwroot/source/sass/component/button/_button.scss */
     .theme-green .btn-theme-second:hover {
       background-color: #109831;
       border-color: #109831; }
-    /* line 208, /www/sites/HbgPrime/wwwroot/source/sass/component/button/_button.scss */
+    /* line 217, /www/sites/HbgPrime/wwwroot/source/sass/component/button/_button.scss */
     .theme-purple .btn-theme-second:hover {
       background-color: #661d76;
       border-color: #661d76; }
 
-/* line 225, /www/sites/HbgPrime/wwwroot/source/sass/component/button/_button.scss */
+/* line 234, /www/sites/HbgPrime/wwwroot/source/sass/component/button/_button.scss */
 .btn-theme-third {
   background-color: #666;
   border-color: #666;
   color: #fff; }
-  /* line 194, /www/sites/HbgPrime/wwwroot/source/sass/component/button/_button.scss */
+  /* line 203, /www/sites/HbgPrime/wwwroot/source/sass/component/button/_button.scss */
   .theme-red .btn-theme-third {
     background-color: #ec6701;
     border-color: #ec6701; }
-  /* line 194, /www/sites/HbgPrime/wwwroot/source/sass/component/button/_button.scss */
+  /* line 203, /www/sites/HbgPrime/wwwroot/source/sass/component/button/_button.scss */
   .theme-blue .btn-theme-third {
     background-color: #5ba1d8;
     border-color: #5ba1d8; }
-  /* line 194, /www/sites/HbgPrime/wwwroot/source/sass/component/button/_button.scss */
+  /* line 203, /www/sites/HbgPrime/wwwroot/source/sass/component/button/_button.scss */
   .theme-green .btn-theme-third {
     background-color: #a0c855;
     border-color: #a0c855; }
-  /* line 194, /www/sites/HbgPrime/wwwroot/source/sass/component/button/_button.scss */
+  /* line 203, /www/sites/HbgPrime/wwwroot/source/sass/component/button/_button.scss */
   .theme-purple .btn-theme-third {
     background-color: #a84c98;
     border-color: #a84c98; }
-  /* line 201, /www/sites/HbgPrime/wwwroot/source/sass/component/button/_button.scss */
+  /* line 210, /www/sites/HbgPrime/wwwroot/source/sass/component/button/_button.scss */
   .btn-theme-third:hover {
     background-color: #f7f7f7;
     border-color: #f7f7f7; }
-    /* line 208, /www/sites/HbgPrime/wwwroot/source/sass/component/button/_button.scss */
+    /* line 217, /www/sites/HbgPrime/wwwroot/source/sass/component/button/_button.scss */
     .theme-red .btn-theme-third:hover {
       background-color: #dd6001;
       border-color: #dd6001; }
-    /* line 208, /www/sites/HbgPrime/wwwroot/source/sass/component/button/_button.scss */
+    /* line 217, /www/sites/HbgPrime/wwwroot/source/sass/component/button/_button.scss */
     .theme-blue .btn-theme-third:hover {
       background-color: #4f9ad5;
       border-color: #4f9ad5; }
-    /* line 208, /www/sites/HbgPrime/wwwroot/source/sass/component/button/_button.scss */
+    /* line 217, /www/sites/HbgPrime/wwwroot/source/sass/component/button/_button.scss */
     .theme-green .btn-theme-third:hover {
       background-color: #9ac449;
       border-color: #9ac449; }
-    /* line 208, /www/sites/HbgPrime/wwwroot/source/sass/component/button/_button.scss */
+    /* line 217, /www/sites/HbgPrime/wwwroot/source/sass/component/button/_button.scss */
     .theme-purple .btn-theme-third:hover {
       background-color: #9d478e;
       border-color: #9d478e; }
 
-/* line 229, /www/sites/HbgPrime/wwwroot/source/sass/component/button/_button.scss */
+/* line 238, /www/sites/HbgPrime/wwwroot/source/sass/component/button/_button.scss */
 .btn-theme-fourth {
   background-color: #777;
   border-color: #777;
   color: #fff; }
-  /* line 194, /www/sites/HbgPrime/wwwroot/source/sass/component/button/_button.scss */
+  /* line 203, /www/sites/HbgPrime/wwwroot/source/sass/component/button/_button.scss */
   .theme-red .btn-theme-fourth {
     background-color: #ae0b05;
     border-color: #ae0b05; }
-  /* line 194, /www/sites/HbgPrime/wwwroot/source/sass/component/button/_button.scss */
+  /* line 203, /www/sites/HbgPrime/wwwroot/source/sass/component/button/_button.scss */
   .theme-blue .btn-theme-fourth {
     background-color: #005c86;
     border-color: #005c86; }
-  /* line 194, /www/sites/HbgPrime/wwwroot/source/sass/component/button/_button.scss */
+  /* line 203, /www/sites/HbgPrime/wwwroot/source/sass/component/button/_button.scss */
   .theme-green .btn-theme-fourth {
     background-color: #50811b;
     border-color: #50811b; }
-  /* line 194, /www/sites/HbgPrime/wwwroot/source/sass/component/button/_button.scss */
+  /* line 203, /www/sites/HbgPrime/wwwroot/source/sass/component/button/_button.scss */
   .theme-purple .btn-theme-fourth {
     background-color: #7b075e;
     border-color: #7b075e; }
-  /* line 201, /www/sites/HbgPrime/wwwroot/source/sass/component/button/_button.scss */
+  /* line 210, /www/sites/HbgPrime/wwwroot/source/sass/component/button/_button.scss */
   .btn-theme-fourth:hover {
     background-color: #f7f7f7;
     border-color: #f7f7f7; }
-    /* line 208, /www/sites/HbgPrime/wwwroot/source/sass/component/button/_button.scss */
+    /* line 217, /www/sites/HbgPrime/wwwroot/source/sass/component/button/_button.scss */
     .theme-red .btn-theme-fourth:hover {
       background-color: #9f0a05;
       border-color: #9f0a05; }
-    /* line 208, /www/sites/HbgPrime/wwwroot/source/sass/component/button/_button.scss */
+    /* line 217, /www/sites/HbgPrime/wwwroot/source/sass/component/button/_button.scss */
     .theme-blue .btn-theme-fourth:hover {
       background-color: #005177;
       border-color: #005177; }
-    /* line 208, /www/sites/HbgPrime/wwwroot/source/sass/component/button/_button.scss */
+    /* line 217, /www/sites/HbgPrime/wwwroot/source/sass/component/button/_button.scss */
     .theme-green .btn-theme-fourth:hover {
       background-color: #487418;
       border-color: #487418; }
-    /* line 208, /www/sites/HbgPrime/wwwroot/source/sass/component/button/_button.scss */
+    /* line 217, /www/sites/HbgPrime/wwwroot/source/sass/component/button/_button.scss */
     .theme-purple .btn-theme-fourth:hover {
       background-color: #6d0653;
       border-color: #6d0653; }
 
-/* line 233, /www/sites/HbgPrime/wwwroot/source/sass/component/button/_button.scss */
+/* line 242, /www/sites/HbgPrime/wwwroot/source/sass/component/button/_button.scss */
 .btn-theme-fifth {
   background-color: #000;
   border-color: #000;
   color: #fff; }
-  /* line 194, /www/sites/HbgPrime/wwwroot/source/sass/component/button/_button.scss */
+  /* line 203, /www/sites/HbgPrime/wwwroot/source/sass/component/button/_button.scss */
   .theme-red .btn-theme-fifth {
     background-color: #e3000f;
     border-color: #e3000f; }
-  /* line 194, /www/sites/HbgPrime/wwwroot/source/sass/component/button/_button.scss */
+  /* line 203, /www/sites/HbgPrime/wwwroot/source/sass/component/button/_button.scss */
   .theme-blue .btn-theme-fifth {
     background-color: #0095db;
     border-color: #0095db; }
-  /* line 194, /www/sites/HbgPrime/wwwroot/source/sass/component/button/_button.scss */
+  /* line 203, /www/sites/HbgPrime/wwwroot/source/sass/component/button/_button.scss */
   .theme-green .btn-theme-fifth {
     background-color: #76b828;
     border-color: #76b828; }
-  /* line 194, /www/sites/HbgPrime/wwwroot/source/sass/component/button/_button.scss */
+  /* line 203, /www/sites/HbgPrime/wwwroot/source/sass/component/button/_button.scss */
   .theme-purple .btn-theme-fifth {
     background-color: #a61380;
     border-color: #a61380; }
-  /* line 201, /www/sites/HbgPrime/wwwroot/source/sass/component/button/_button.scss */
+  /* line 210, /www/sites/HbgPrime/wwwroot/source/sass/component/button/_button.scss */
   .btn-theme-fifth:hover {
     background-color: #f7f7f7;
     border-color: #f7f7f7; }
-    /* line 208, /www/sites/HbgPrime/wwwroot/source/sass/component/button/_button.scss */
+    /* line 217, /www/sites/HbgPrime/wwwroot/source/sass/component/button/_button.scss */
     .theme-red .btn-theme-fifth:hover {
       background-color: #d4000e;
       border-color: #d4000e; }
-    /* line 208, /www/sites/HbgPrime/wwwroot/source/sass/component/button/_button.scss */
+    /* line 217, /www/sites/HbgPrime/wwwroot/source/sass/component/button/_button.scss */
     .theme-blue .btn-theme-fifth:hover {
       background-color: #008bcc;
       border-color: #008bcc; }
-    /* line 208, /www/sites/HbgPrime/wwwroot/source/sass/component/button/_button.scss */
+    /* line 217, /www/sites/HbgPrime/wwwroot/source/sass/component/button/_button.scss */
     .theme-green .btn-theme-fifth:hover {
       background-color: #6eab25;
       border-color: #6eab25; }
-    /* line 208, /www/sites/HbgPrime/wwwroot/source/sass/component/button/_button.scss */
+    /* line 217, /www/sites/HbgPrime/wwwroot/source/sass/component/button/_button.scss */
     .theme-purple .btn-theme-fifth:hover {
       background-color: #981175;
       border-color: #981175; }
 
-/* line 252, /www/sites/HbgPrime/wwwroot/source/sass/component/button/_button.scss */
+/* line 261, /www/sites/HbgPrime/wwwroot/source/sass/component/button/_button.scss */
 .btn-sm {
   padding: 0.4em 0.6em;
   font-size: 0.75em;
   font-weight: 600;
   line-height: 1; }
 
-/* line 259, /www/sites/HbgPrime/wwwroot/source/sass/component/button/_button.scss */
+/* line 268, /www/sites/HbgPrime/wwwroot/source/sass/component/button/_button.scss */
 .btn-md {
   padding: 0.5em 0.9em;
   font-size: 0.9em;
   font-weight: 600;
   line-height: 1; }
 
-/* line 266, /www/sites/HbgPrime/wwwroot/source/sass/component/button/_button.scss */
+/* line 275, /www/sites/HbgPrime/wwwroot/source/sass/component/button/_button.scss */
 .btn-lg {
   padding: 0.5em 0.9em;
   font-size: 1.1em;
   font-weight: 600; }
 
-/* line 283, /www/sites/HbgPrime/wwwroot/source/sass/component/button/_button.scss */
+/* line 292, /www/sites/HbgPrime/wwwroot/source/sass/component/button/_button.scss */
 .btn-block {
   display: block;
   width: 100%;
   text-align: center; }
 
-/* line 289, /www/sites/HbgPrime/wwwroot/source/sass/component/button/_button.scss */
+/* line 298, /www/sites/HbgPrime/wwwroot/source/sass/component/button/_button.scss */
 .btn-block-lg {
   padding: 15px; }
 
-/* line 293, /www/sites/HbgPrime/wwwroot/source/sass/component/button/_button.scss */
+/* line 302, /www/sites/HbgPrime/wwwroot/source/sass/component/button/_button.scss */
 .btn-block + .btn-block {
   margin-top: 15px; }
 
-/* line 297, /www/sites/HbgPrime/wwwroot/source/sass/component/button/_button.scss */
+/* line 306, /www/sites/HbgPrime/wwwroot/source/sass/component/button/_button.scss */
 .btn-icon,
 button.btn-icon {
   padding: 5px 10px;
   line-height: 1; }
 
-/* line 312, /www/sites/HbgPrime/wwwroot/source/sass/component/button/_button.scss */
+/* line 321, /www/sites/HbgPrime/wwwroot/source/sass/component/button/_button.scss */
 .btn-offcanvas {
   position: absolute;
   top: -100%;
   left: 0; }
-  /* line 317, /www/sites/HbgPrime/wwwroot/source/sass/component/button/_button.scss */
+  /* line 326, /www/sites/HbgPrime/wwwroot/source/sass/component/button/_button.scss */
   .btn-offcanvas:focus {
     top: 0;
     z-index: 99999; }
-  /* line 322, /www/sites/HbgPrime/wwwroot/source/sass/component/button/_button.scss */
+  /* line 331, /www/sites/HbgPrime/wwwroot/source/sass/component/button/_button.scss */
   .btn-offcanvas + .btn-offcanvas {
     margin-top: 0 !important; }
 
