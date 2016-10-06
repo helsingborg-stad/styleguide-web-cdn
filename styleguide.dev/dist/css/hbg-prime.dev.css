@@ -12266,6 +12266,7 @@ body:not(.material-no-radius) :not(.hero) .slider {
 
 /* line 43, /www/sites/HbgPrime/wwwroot/source/sass/component/table/_table.scss */
 .table,
+article table,
 .mce-item-table,
 .modularity-table {
   width: 100%;
@@ -12273,29 +12274,36 @@ body:not(.material-no-radius) :not(.hero) .slider {
   border-collapse: collapse; }
   /* line 42, /www/sites/HbgPrime/wwwroot/source/sass/mixin/_material.scss */
   body:not(.material-no-radius) .table, body:not(.material-no-radius)
+  article table, body:not(.material-no-radius)
   .mce-item-table, body:not(.material-no-radius)
   .modularity-table {
     border-radius: 2px; }
   /* line 2, /www/sites/HbgPrime/wwwroot/source/sass/mixin/_material.scss */
   body:not(.material-no-shadow) .table, body:not(.material-no-shadow)
+  article table, body:not(.material-no-shadow)
   .mce-item-table, body:not(.material-no-shadow)
   .modularity-table {
     box-shadow: 0 2px 3px rgba(0, 0, 0, 0.08); }
     @media print {
       /* line 2, /www/sites/HbgPrime/wwwroot/source/sass/mixin/_material.scss */
       body:not(.material-no-shadow) .table, body:not(.material-no-shadow)
+      article table, body:not(.material-no-shadow)
       .mce-item-table, body:not(.material-no-shadow)
       .modularity-table {
         box-shadow: none; } }
-  /* line 54, /www/sites/HbgPrime/wwwroot/source/sass/component/table/_table.scss */
+  /* line 55, /www/sites/HbgPrime/wwwroot/source/sass/component/table/_table.scss */
   .table thead,
+  article table thead,
   .mce-item-table thead,
   .modularity-table thead {
     border-bottom: 1px solid #e7e5e1; }
-  /* line 58, /www/sites/HbgPrime/wwwroot/source/sass/component/table/_table.scss */
+  /* line 59, /www/sites/HbgPrime/wwwroot/source/sass/component/table/_table.scss */
   .table thead,
   .table tbody,
   .table tfoot,
+  article table thead,
+  article table tbody,
+  article table tfoot,
   .mce-item-table thead,
   .mce-item-table tbody,
   .mce-item-table tfoot,
@@ -12303,130 +12311,134 @@ body:not(.material-no-radius) :not(.hero) .slider {
   .modularity-table tbody,
   .modularity-table tfoot {
     background-color: #fff; }
-  /* line 64, /www/sites/HbgPrime/wwwroot/source/sass/component/table/_table.scss */
+  /* line 65, /www/sites/HbgPrime/wwwroot/source/sass/component/table/_table.scss */
   .table thead + tfoot,
+  article table thead + tfoot,
   .mce-item-table thead + tfoot,
   .modularity-table thead + tfoot {
     border-bottom: 1px solid #e7e5e1; }
-  /* line 68, /www/sites/HbgPrime/wwwroot/source/sass/component/table/_table.scss */
+  /* line 69, /www/sites/HbgPrime/wwwroot/source/sass/component/table/_table.scss */
   .table tbody + tfoot,
+  article table tbody + tfoot,
   .mce-item-table tbody + tfoot,
   .modularity-table tbody + tfoot {
     border-top: 1px solid #e7e5e1; }
-  /* line 72, /www/sites/HbgPrime/wwwroot/source/sass/component/table/_table.scss */
+  /* line 73, /www/sites/HbgPrime/wwwroot/source/sass/component/table/_table.scss */
   .table th,
+  article table th,
   .mce-item-table th,
   .modularity-table th {
     padding: 10px 15px;
     text-align: left;
     font-weight: bold; }
-  /* line 78, /www/sites/HbgPrime/wwwroot/source/sass/component/table/_table.scss */
+  /* line 79, /www/sites/HbgPrime/wwwroot/source/sass/component/table/_table.scss */
   .table td,
+  article table td,
   .mce-item-table td,
   .modularity-table td {
     padding: 10px 15px;
     vertical-align: middle; }
 
-/* line 85, /www/sites/HbgPrime/wwwroot/source/sass/component/table/_table.scss */
+/* line 86, /www/sites/HbgPrime/wwwroot/source/sass/component/table/_table.scss */
 .mce-item-table th, .mce-item-table td {
   min-width: 30px; }
 
-/* line 92, /www/sites/HbgPrime/wwwroot/source/sass/component/table/_table.scss */
+/* line 93, /www/sites/HbgPrime/wwwroot/source/sass/component/table/_table.scss */
 .table-striped tbody tr:nth-child(even) {
   background-color: #f5f5f5; }
 
-/* line 100, /www/sites/HbgPrime/wwwroot/source/sass/component/table/_table.scss */
+/* line 101, /www/sites/HbgPrime/wwwroot/source/sass/component/table/_table.scss */
 .table-bordered thead th + th {
   border-left: 1px solid #e7e5e1; }
 
-/* line 106, /www/sites/HbgPrime/wwwroot/source/sass/component/table/_table.scss */
+/* line 107, /www/sites/HbgPrime/wwwroot/source/sass/component/table/_table.scss */
 .table-bordered tbody tr + tr {
   border-top: 1px solid #e7e5e1; }
 
-/* line 110, /www/sites/HbgPrime/wwwroot/source/sass/component/table/_table.scss */
+/* line 111, /www/sites/HbgPrime/wwwroot/source/sass/component/table/_table.scss */
 .table-bordered tbody td + td {
   border-left: 1px solid #e7e5e1; }
 
-/* line 122, /www/sites/HbgPrime/wwwroot/source/sass/component/table/_table.scss */
+/* line 123, /www/sites/HbgPrime/wwwroot/source/sass/component/table/_table.scss */
 .theme-red .table-hover tbody tr:hover {
   background-color: #fee8e7; }
 
-/* line 122, /www/sites/HbgPrime/wwwroot/source/sass/component/table/_table.scss */
+/* line 123, /www/sites/HbgPrime/wwwroot/source/sass/component/table/_table.scss */
 .theme-blue .table-hover tbody tr:hover {
   background-color: #b9e9ff; }
 
-/* line 122, /www/sites/HbgPrime/wwwroot/source/sass/component/table/_table.scss */
+/* line 123, /www/sites/HbgPrime/wwwroot/source/sass/component/table/_table.scss */
 .theme-green .table-hover tbody tr:hover {
   background-color: #e8f7d7; }
 
-/* line 122, /www/sites/HbgPrime/wwwroot/source/sass/component/table/_table.scss */
+/* line 123, /www/sites/HbgPrime/wwwroot/source/sass/component/table/_table.scss */
 .theme-purple .table-hover tbody tr:hover {
   background-color: #fbb9eb; }
 
-/* line 136, /www/sites/HbgPrime/wwwroot/source/sass/component/table/_table.scss */
+/* line 137, /www/sites/HbgPrime/wwwroot/source/sass/component/table/_table.scss */
 .theme-red .table-hover.table-striped tbody tr:nth-child(even):hover {
   background-color: #fededd; }
 
-/* line 136, /www/sites/HbgPrime/wwwroot/source/sass/component/table/_table.scss */
+/* line 137, /www/sites/HbgPrime/wwwroot/source/sass/component/table/_table.scss */
 .theme-blue .table-hover.table-striped tbody tr:nth-child(even):hover {
   background-color: #afe6ff; }
 
-/* line 136, /www/sites/HbgPrime/wwwroot/source/sass/component/table/_table.scss */
+/* line 137, /www/sites/HbgPrime/wwwroot/source/sass/component/table/_table.scss */
 .theme-green .table-hover.table-striped tbody tr:nth-child(even):hover {
   background-color: #e3f5cf; }
 
-/* line 136, /www/sites/HbgPrime/wwwroot/source/sass/component/table/_table.scss */
+/* line 137, /www/sites/HbgPrime/wwwroot/source/sass/component/table/_table.scss */
 .theme-purple .table-hover.table-striped tbody tr:nth-child(even):hover {
   background-color: #faafe8; }
 
-/* line 147, /www/sites/HbgPrime/wwwroot/source/sass/component/table/_table.scss */
+/* line 148, /www/sites/HbgPrime/wwwroot/source/sass/component/table/_table.scss */
 .table.table-va-top th, .table.table-va-top td {
   vertical-align: top; }
 
-/* line 152, /www/sites/HbgPrime/wwwroot/source/sass/component/table/_table.scss */
+/* line 153, /www/sites/HbgPrime/wwwroot/source/sass/component/table/_table.scss */
 .table-sm {
   font-size: .8em; }
-  /* line 155, /www/sites/HbgPrime/wwwroot/source/sass/component/table/_table.scss */
+  /* line 156, /www/sites/HbgPrime/wwwroot/source/sass/component/table/_table.scss */
   .table-sm th, .table-sm td {
     padding: 7.5px 10px; }
 
-/* line 160, /www/sites/HbgPrime/wwwroot/source/sass/component/table/_table.scss */
+/* line 161, /www/sites/HbgPrime/wwwroot/source/sass/component/table/_table.scss */
 .table-lg {
   font-size: 1.1em; }
-  /* line 163, /www/sites/HbgPrime/wwwroot/source/sass/component/table/_table.scss */
+  /* line 164, /www/sites/HbgPrime/wwwroot/source/sass/component/table/_table.scss */
   .table-lg th, .table-lg td {
     padding: 10px 15px; }
 
-/* line 168, /www/sites/HbgPrime/wwwroot/source/sass/component/table/_table.scss */
+/* line 169, /www/sites/HbgPrime/wwwroot/source/sass/component/table/_table.scss */
 .box-filled .table,
 .box-filled .modularity-table {
   margin-top: 10px;
   font-size: .8em;
   border: none;
   border-top: 1px solid rgba(255, 255, 255, 0.3); }
-  /* line 175, /www/sites/HbgPrime/wwwroot/source/sass/component/table/_table.scss */
+  /* line 176, /www/sites/HbgPrime/wwwroot/source/sass/component/table/_table.scss */
   .box-filled .table *,
   .box-filled .modularity-table * {
     border-color: rgba(255, 255, 255, 0.3); }
-  /* line 179, /www/sites/HbgPrime/wwwroot/source/sass/component/table/_table.scss */
+  /* line 180, /www/sites/HbgPrime/wwwroot/source/sass/component/table/_table.scss */
   .box-filled .table tbody,
   .box-filled .table tfoot,
   .box-filled .modularity-table tbody,
   .box-filled .modularity-table tfoot {
     background-color: transparent; }
-  /* line 184, /www/sites/HbgPrime/wwwroot/source/sass/component/table/_table.scss */
+  /* line 185, /www/sites/HbgPrime/wwwroot/source/sass/component/table/_table.scss */
   .box-filled .table thead,
   .box-filled .modularity-table thead {
     background-color: rgba(255, 255, 255, 0.2); }
-  /* line 188, /www/sites/HbgPrime/wwwroot/source/sass/component/table/_table.scss */
+  /* line 189, /www/sites/HbgPrime/wwwroot/source/sass/component/table/_table.scss */
   .box-filled .table.table-striped tbody tr:nth-child(2n),
   .box-filled .modularity-table.table-striped tbody tr:nth-child(2n) {
     background-color: rgba(255, 255, 255, 0.2); }
-  /* line 194, /www/sites/HbgPrime/wwwroot/source/sass/component/table/_table.scss */
+  /* line 195, /www/sites/HbgPrime/wwwroot/source/sass/component/table/_table.scss */
   .box-filled .table.table-hover tbody tr:hover,
   .box-filled .modularity-table.table-hover tbody tr:hover {
     background-color: rgba(255, 255, 255, 0.3); }
-  /* line 201, /www/sites/HbgPrime/wwwroot/source/sass/component/table/_table.scss */
+  /* line 202, /www/sites/HbgPrime/wwwroot/source/sass/component/table/_table.scss */
   .box-filled .table.table-hover.table-striped tbody tr:nth-child(even):hover,
   .box-filled .modularity-table.table-hover.table-striped tbody tr:nth-child(even):hover {
     background-color: rgba(255, 255, 255, 0.3); }
