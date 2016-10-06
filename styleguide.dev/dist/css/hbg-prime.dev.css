@@ -5061,12 +5061,8 @@ h6, .h6 {
   line-height: 140%;
   padding-bottom: .3em;
   margin: 0;
-  word-wrap: break-word;
-  -webkit-hyphens: auto;
-     -moz-hyphens: auto;
-      -ms-hyphens: auto;
-          hyphens: auto; }
-  /* line 33, /www/sites/HbgPrime/wwwroot/source/sass/typography/_headings.scss */
+  word-wrap: break-word; }
+  /* line 32, /www/sites/HbgPrime/wwwroot/source/sass/typography/_headings.scss */
   h1.underline, .h1.underline,
   h2.underline, .h2.underline,
   h3.underline, .h3.underline,
@@ -5088,84 +5084,84 @@ h6, .h6 {
     h6, .h6 {
       color: #000 !important; } }
 
-/* line 44, /www/sites/HbgPrime/wwwroot/source/sass/typography/_headings.scss */
+/* line 43, /www/sites/HbgPrime/wwwroot/source/sass/typography/_headings.scss */
 h1, .h1 {
   font-size: 2.2rem;
   font-weight: 500;
   color: #777; }
   @media screen and (min-width: 0) and (max-width: 468px) {
-    /* line 44, /www/sites/HbgPrime/wwwroot/source/sass/typography/_headings.scss */
+    /* line 43, /www/sites/HbgPrime/wwwroot/source/sass/typography/_headings.scss */
     h1, .h1 {
       font-size: 1.8rem; } }
   @media screen and (min-width: 469px) and (max-width: 768px) {
-    /* line 44, /www/sites/HbgPrime/wwwroot/source/sass/typography/_headings.scss */
+    /* line 43, /www/sites/HbgPrime/wwwroot/source/sass/typography/_headings.scss */
     h1, .h1 {
       font-size: 2rem; } }
-  /* line 60, /www/sites/HbgPrime/wwwroot/source/sass/typography/_headings.scss */
+  /* line 59, /www/sites/HbgPrime/wwwroot/source/sass/typography/_headings.scss */
   .theme-red h1, .theme-red .h1 {
     color: #ae0b05; }
-  /* line 60, /www/sites/HbgPrime/wwwroot/source/sass/typography/_headings.scss */
+  /* line 59, /www/sites/HbgPrime/wwwroot/source/sass/typography/_headings.scss */
   .theme-blue h1, .theme-blue .h1 {
     color: #005c86; }
-  /* line 60, /www/sites/HbgPrime/wwwroot/source/sass/typography/_headings.scss */
+  /* line 59, /www/sites/HbgPrime/wwwroot/source/sass/typography/_headings.scss */
   .theme-green h1, .theme-green .h1 {
     color: #50811b; }
-  /* line 60, /www/sites/HbgPrime/wwwroot/source/sass/typography/_headings.scss */
+  /* line 59, /www/sites/HbgPrime/wwwroot/source/sass/typography/_headings.scss */
   .theme-purple h1, .theme-purple .h1 {
     color: #7b075e; }
 
-/* line 67, /www/sites/HbgPrime/wwwroot/source/sass/typography/_headings.scss */
+/* line 66, /www/sites/HbgPrime/wwwroot/source/sass/typography/_headings.scss */
 h2, .h2 {
   font-size: 1.8rem; }
   @media screen and (min-width: 0) and (max-width: 468px) {
-    /* line 67, /www/sites/HbgPrime/wwwroot/source/sass/typography/_headings.scss */
+    /* line 66, /www/sites/HbgPrime/wwwroot/source/sass/typography/_headings.scss */
     h2, .h2 {
       font-size: 1.6rem; } }
   @media screen and (min-width: 469px) and (max-width: 768px) {
-    /* line 67, /www/sites/HbgPrime/wwwroot/source/sass/typography/_headings.scss */
+    /* line 66, /www/sites/HbgPrime/wwwroot/source/sass/typography/_headings.scss */
     h2, .h2 {
       font-size: 1.5rem; } }
 
-/* line 79, /www/sites/HbgPrime/wwwroot/source/sass/typography/_headings.scss */
+/* line 78, /www/sites/HbgPrime/wwwroot/source/sass/typography/_headings.scss */
 h3, .h3 {
   font-size: 1.4rem;
   font-weight: 500; }
   @media screen and (min-width: 0) and (max-width: 468px) {
-    /* line 79, /www/sites/HbgPrime/wwwroot/source/sass/typography/_headings.scss */
+    /* line 78, /www/sites/HbgPrime/wwwroot/source/sass/typography/_headings.scss */
     h3, .h3 {
       font-size: 1.3rem; } }
   @media screen and (min-width: 469px) and (max-width: 768px) {
-    /* line 79, /www/sites/HbgPrime/wwwroot/source/sass/typography/_headings.scss */
+    /* line 78, /www/sites/HbgPrime/wwwroot/source/sass/typography/_headings.scss */
     h3, .h3 {
       font-size: 1.2rem; } }
 
-/* line 92, /www/sites/HbgPrime/wwwroot/source/sass/typography/_headings.scss */
+/* line 91, /www/sites/HbgPrime/wwwroot/source/sass/typography/_headings.scss */
 h4, .widget_calendar caption, .h4 {
   font-size: 1.2rem;
   font-weight: 500; }
   @media screen and (min-width: 0) and (max-width: 468px) {
-    /* line 92, /www/sites/HbgPrime/wwwroot/source/sass/typography/_headings.scss */
+    /* line 91, /www/sites/HbgPrime/wwwroot/source/sass/typography/_headings.scss */
     h4, .widget_calendar caption, .h4 {
       font-size: 1.1rem; } }
   @media screen and (min-width: 469px) and (max-width: 768px) {
-    /* line 92, /www/sites/HbgPrime/wwwroot/source/sass/typography/_headings.scss */
+    /* line 91, /www/sites/HbgPrime/wwwroot/source/sass/typography/_headings.scss */
     h4, .widget_calendar caption, .h4 {
       font-size: 1.1rem; } }
 
-/* line 105, /www/sites/HbgPrime/wwwroot/source/sass/typography/_headings.scss */
+/* line 104, /www/sites/HbgPrime/wwwroot/source/sass/typography/_headings.scss */
 h5, .h5 {
   font-size: 1.1rem;
   font-weight: 500; }
   @media screen and (min-width: 0) and (max-width: 468px) {
-    /* line 105, /www/sites/HbgPrime/wwwroot/source/sass/typography/_headings.scss */
+    /* line 104, /www/sites/HbgPrime/wwwroot/source/sass/typography/_headings.scss */
     h5, .h5 {
       font-size: 1rem; } }
   @media screen and (min-width: 469px) and (max-width: 768px) {
-    /* line 105, /www/sites/HbgPrime/wwwroot/source/sass/typography/_headings.scss */
+    /* line 104, /www/sites/HbgPrime/wwwroot/source/sass/typography/_headings.scss */
     h5, .h5 {
       font-size: 1rem; } }
 
-/* line 118, /www/sites/HbgPrime/wwwroot/source/sass/typography/_headings.scss */
+/* line 117, /www/sites/HbgPrime/wwwroot/source/sass/typography/_headings.scss */
 h6, .h6 {
   font-size: 1rem;
   font-weight: 500; }
