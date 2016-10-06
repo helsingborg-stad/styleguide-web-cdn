@@ -9869,8 +9869,16 @@ a.box-index {
   .box-filled .btn.btn-plain {
     color: #fff; }
   /* line 33, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_filled.scss */
-  .box-filled a {
-    text-decoration: underline !important; }
+  .box-filled a, .box-filled .link-item, .box-filled .widget_archive a, .widget_archive .box-filled a, .box-filled
+  .widget_categories a,
+  .widget_categories .box-filled a, .box-filled
+  .widget_meta a,
+  .widget_meta .box-filled a, .box-filled
+  .widget_recent_entries a,
+  .widget_recent_entries .box-filled a, .box-filled
+  .widget_recent_comments a,
+  .widget_recent_comments .box-filled a {
+    text-decoration: underline; }
 
 /* line 38, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_filled.scss */
 .box-filled .box-index-title {
