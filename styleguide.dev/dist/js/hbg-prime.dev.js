@@ -12247,6 +12247,51 @@ HelsingborgPrime.Args = (function ($) {
 HelsingborgPrime = HelsingborgPrime || {};
 HelsingborgPrime.Component = HelsingborgPrime.Component || {};
 
+HelsingborgPrime.Component.Accordion = (function ($) {
+
+    function Accordion() {
+    	this.init();
+    }
+
+    Accordion.prototype.init = function () {
+        $('label.accordion-toggle').on('click', function(e) {
+            var $input = $('#' + $(this).attr('for'));
+
+            if ($input.prop('checked') === false) {
+                window.location.hash = '#' + $(this).attr('for');
+            } else {
+                if ($input.is('[type="radio"]')) {
+                    var name = $input.attr('name');
+                    var value = $input.val();
+                    var id = $input.attr('id');
+
+                    var $parent = $input.parent('section');
+                    $input.remove();
+
+                    setTimeout(function () {
+                        $parent.prepend('<input type="radio" name="' + name + '" value="' + value + '" id="' + id + '">');
+                    }, 1);
+
+                }
+
+                window.location.hash = '_';
+            }
+		});
+
+
+    };
+
+    return new Accordion();
+
+})(jQuery);
+
+//
+// @name Modal
+// @description  Show accodrion dropdown, make linkable by updating adress bar
+//
+HelsingborgPrime = HelsingborgPrime || {};
+HelsingborgPrime.Component = HelsingborgPrime.Component || {};
+
 HelsingborgPrime.Component.Dropdown = (function ($) {
 
     function Dropdown() {
@@ -12258,9 +12303,22 @@ HelsingborgPrime.Component.Dropdown = (function ($) {
             e.preventDefault();
 
             var targetElement = $(this).attr('data-dropdown');
+            $(targetElement).toggleClass('dropdown-target-open');
             $(this).toggleClass('dropdown-open');
             $(this).parent().find(targetElement).toggle();
             $(this).parent().find(targetElement).find('input[data-dropdown-focus]').focus();
+        });
+
+        $('body').on('click', function (e) {
+            var $target = $(e.target);
+
+            if ($target.closest('.dropdown-target-open').length || $target.closest('[data-dropdown]').length) {
+                return;
+            }
+
+            $('[data-dropdown].dropdown-open').removeClass('dropdown-open');
+            $('.dropdown-target-open').toggle();
+            $('.dropdown-target-open').removeClass('dropdown-target-open');
         });
     };
 
@@ -12883,41 +12941,6 @@ HelsingborgPrime.Component.TagManager = (function ($) {
     };
 
     return new TagManager();
-
-})(jQuery);
-
-//
-// @name Modal
-// @description  Show accodrion dropdown, make linkable by updating adress bar
-//
-HelsingborgPrime = HelsingborgPrime || {};
-HelsingborgPrime.Component = HelsingborgPrime.Component || {};
-
-HelsingborgPrime.Component.Accordion = (function ($) {
-
-    function Accordion() {
-    	this.init();
-    }
-
-    Accordion.prototype.init = function () {
-        $('label.accordion-toggle').on('click', function(e) {
-            var input = $('#' + $(this).attr('for'));
-
-            if (input.prop('checked') === false) {
-                window.location.hash = '#' + $(this).attr('for');
-            } else {
-                if (!input.is('[type="checkbox"]')) {
-                    return;
-                }
-
-                window.location.hash = '_';
-            }
-		});
-
-
-    };
-
-    return new Accordion();
 
 })(jQuery);
 
