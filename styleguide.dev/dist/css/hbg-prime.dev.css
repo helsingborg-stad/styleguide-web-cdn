@@ -4980,7 +4980,7 @@ section + section {
 .pull-right {
   float: right !important; }
 
-/* line 39, /www/sites/HbgPrime/wwwroot/source/sass/layout/_float.scss */
+/* line 15, /www/sites/HbgPrime/wwwroot/source/sass/mixin/_mixins.scss */
 .clearfix:after, .grid:after, .social-feed-twitter .mod-social-attachment:after,
 .social-feed-facebook .mod-social-attachment:after {
   content: "";
@@ -5165,6 +5165,20 @@ h5, .h5 {
 h6, .h6 {
   font-size: 1rem;
   font-weight: 500; }
+
+/* line 132, /www/sites/HbgPrime/wwwroot/source/sass/typography/_headings.scss */
+.sub-heading {
+  padding: .3em 0;
+  border-top: 1px solid #e7e5e1;
+  border-bottom: 1px solid #e7e5e1;
+  color: #979797;
+  font-size: 1em; }
+
+/* line 140, /www/sites/HbgPrime/wwwroot/source/sass/typography/_headings.scss */
+.box-filled .sub-heading,
+.box-news:not(.box-news-horizontal) .sub-heading {
+  color: #fff;
+  border-color: #fff; }
 
 /* line 11, /www/sites/HbgPrime/wwwroot/source/sass/typography/_lead.scss */
 .lead {
@@ -9791,23 +9805,27 @@ body:not(.material-no-shadow) .post .post-full, body:not(.material-no-shadow) .p
   background-color: #fff;
   border: 1px solid #e7e5e1;
   color: #252525; }
+  /* line 31, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_index.scss */
+  .box-index .box-content {
+    margin-top: 5px; }
 
-/* line 32, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_index.scss */
+/* line 36, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_index.scss */
 a.box-index {
   color: #252525; }
-  /* line 35, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_index.scss */
+  /* line 39, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_index.scss */
   a.box-index:hover {
     text-decoration: none;
     background-color: #f6f5f2; }
 
-/* line 41, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_index.scss */
+/* line 45, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_index.scss */
 .box-index-title.link-item, .widget_archive a.box-index-title,
 .widget_categories a.box-index-title,
 .widget_meta a.box-index-title,
 .widget_recent_entries a.box-index-title,
 .widget_recent_comments a.box-index-title {
   line-height: 1em;
-  display: block; }
+  display: block;
+  padding-bottom: .5em; }
 
 /* line 29, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_filled.scss */
 .box-filled {
@@ -11117,28 +11135,45 @@ a.box-index {
       color: #712082;
       border-color: #712082; }
 
-/* line 48, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_news.scss */
+/* line 49, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_news.scss */
+.box-news:not(.box-news-horizontal) .box-title,
+.box-news:not(.box-news-horizontal) h1,
+.box-news:not(.box-news-horizontal) h2,
+.box-news:not(.box-news-horizontal) h3,
+.box-news:not(.box-news-horizontal) h4,
+.box-news:not(.box-news-horizontal) .widget_calendar caption, .widget_calendar
+.box-news:not(.box-news-horizontal) caption,
+.box-news:not(.box-news-horizontal) h5,
+.box-news:not(.box-news-horizontal) h6 {
+  color: #fff; }
+
+/* line 59, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_news.scss */
+.box-news:not(.box-news-horizontal) .sub-heading time {
+  display: block;
+  float: none; }
+
+/* line 65, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_news.scss */
 .box-news {
   background-color: #333;
   color: #fff;
   padding: 0; }
-  /* line 56, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_news.scss */
+  /* line 73, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_news.scss */
   .theme-red .box-news {
     background-color: #cb0050;
     color: #fff; }
-  /* line 56, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_news.scss */
+  /* line 73, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_news.scss */
   .theme-blue .box-news {
     background-color: #0069b4;
     color: #fff; }
-  /* line 56, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_news.scss */
+  /* line 73, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_news.scss */
   .theme-green .box-news {
     background-color: #11a636;
     color: #fff; }
-  /* line 56, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_news.scss */
+  /* line 73, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_news.scss */
   .theme-purple .box-news {
     background-color: #712082;
     color: #fff; }
-  /* line 63, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_news.scss */
+  /* line 80, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_news.scss */
   .box-news .box-title,
   .box-news h1,
   .box-news h2,
@@ -11149,7 +11184,7 @@ a.box-index {
   .box-news h5,
   .box-news h6 {
     margin: 0; }
-    /* line 72, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_news.scss */
+    /* line 89, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_news.scss */
     .box-news .box-title:not(.link-item):not(.widget_archive a):not(
     .widget_categories a):not(
     .widget_meta a):not(
@@ -11196,24 +11231,24 @@ a.box-index {
     .widget_recent_entries a):not(
     .widget_recent_comments a) {
       padding: 0; }
-  /* line 77, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_news.scss */
+  /* line 94, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_news.scss */
   .box-news img {
     display: block;
     width: 100%;
     height: auto; }
-  /* line 83, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_news.scss */
+  /* line 100, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_news.scss */
   .box-news .box-content {
     padding: 15px; }
-  /* line 87, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_news.scss */
+  /* line 104, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_news.scss */
   .box-news time {
     font-size: .8em; }
-  /* line 91, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_news.scss */
+  /* line 108, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_news.scss */
   .box-news p:first-of-type {
     margin-top: 10px; }
-  /* line 95, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_news.scss */
+  /* line 112, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_news.scss */
   .box-news:hover {
     text-decoration: none; }
-    /* line 98, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_news.scss */
+    /* line 115, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_news.scss */
     .box-news:hover .box-title, .box-news:hover h1, .box-news:hover h2, .box-news:hover h3, .box-news:hover h4, .box-news:hover .widget_calendar caption, .widget_calendar .box-news:hover caption, .box-news:hover h5, .box-news:hover h6,
     .box-news:hover .link-item,
     .box-news:hover .widget_archive a, .widget_archive
@@ -11236,19 +11271,19 @@ a.box-index {
     .box-news:hover a {
       text-decoration: underline; }
 
-/* line 105, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_news.scss */
+/* line 122, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_news.scss */
 .box-news.box-news-horizontal {
   display: table;
   width: 100%;
   background-color: transparent;
   color: #252525; }
   @media (min-width: 0) and (max-width: 468px) {
-    /* line 105, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_news.scss */
+    /* line 122, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_news.scss */
     .box-news.box-news-horizontal {
       display: block;
       border: 1px solid #e7e5e1;
       padding: 5px; } }
-  /* line 117, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_news.scss */
+  /* line 134, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_news.scss */
   .box-news.box-news-horizontal .box-image-container {
     display: table-cell;
     vertical-align: top;
@@ -11264,32 +11299,32 @@ a.box-index {
         body:not(.material-no-shadow) .box-news.box-news-horizontal .box-image-container img, body:not(.material-no-shadow) .box-news.box-news-horizontal .box-image-container .image-placeholder {
           box-shadow: none; } }
     @media (min-width: 469px) {
-      /* line 128, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_news.scss */
+      /* line 145, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_news.scss */
       .box-news.box-news-horizontal .box-image-container + .box-content {
         padding-left: 30px; } }
     @media (min-width: 0) and (max-width: 468px) {
-      /* line 117, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_news.scss */
+      /* line 134, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_news.scss */
       .box-news.box-news-horizontal .box-image-container {
         display: block;
         width: 100%; }
-        /* line 137, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_news.scss */
+        /* line 154, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_news.scss */
         .box-news.box-news-horizontal .box-image-container .image-placeholder {
           display: none; } }
-  /* line 143, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_news.scss */
+  /* line 160, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_news.scss */
   .box-news.box-news-horizontal .box-content {
     display: table-cell;
     vertical-align: top;
     padding: 0; }
     @media (min-width: 0) and (max-width: 468px) {
-      /* line 143, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_news.scss */
+      /* line 160, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_news.scss */
       .box-news.box-news-horizontal .box-content {
         display: block;
         width: 100%;
         padding: 10px; } }
-  /* line 155, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_news.scss */
+  /* line 172, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_news.scss */
   .box-news.box-news-horizontal .box-title, .box-news.box-news-horizontal h1, .box-news.box-news-horizontal h2, .box-news.box-news-horizontal h3, .box-news.box-news-horizontal h4, .box-news.box-news-horizontal .widget_calendar caption, .widget_calendar .box-news.box-news-horizontal caption, .box-news.box-news-horizontal h4, .box-news.box-news-horizontal .widget_calendar caption, .widget_calendar .box-news.box-news-horizontal caption, .box-news.box-news-horizontal h6 {
     padding-bottom: 5px; }
-    /* line 158, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_news.scss */
+    /* line 175, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_news.scss */
     .box-news.box-news-horizontal .box-title + time, .box-news.box-news-horizontal h1 + time, .box-news.box-news-horizontal h2 + time, .box-news.box-news-horizontal h3 + time, .box-news.box-news-horizontal h4 + time, .box-news.box-news-horizontal .widget_calendar caption + time, .widget_calendar .box-news.box-news-horizontal caption + time, .box-news.box-news-horizontal h4 + time, .box-news.box-news-horizontal .widget_calendar caption + time, .widget_calendar .box-news.box-news-horizontal caption + time, .box-news.box-news-horizontal h6 + time {
       position: relative;
       top: -5px; }
@@ -14590,7 +14625,19 @@ small,
     margin-left: -20px;
     text-decoration: none; }
 
-/* line 48, /www/sites/HbgPrime/wwwroot/source/sass/utility/_link-item.scss */
+/* line 47, /www/sites/HbgPrime/wwwroot/source/sass/utility/_link-item.scss */
+.box-filled .link-item::before, .box-filled .widget_archive a::before, .widget_archive .box-filled a::before, .box-filled
+.widget_categories a::before,
+.widget_categories .box-filled a::before, .box-filled
+.widget_meta a::before,
+.widget_meta .box-filled a::before, .box-filled
+.widget_recent_entries a::before,
+.widget_recent_entries .box-filled a::before, .box-filled
+.widget_recent_comments a::before,
+.widget_recent_comments .box-filled a::before {
+  color: rgba(255, 255, 255, 0.7); }
+
+/* line 52, /www/sites/HbgPrime/wwwroot/source/sass/utility/_link-item.scss */
 .link-item-before::before {
   font-family: hbg-pricons;
   line-height: 1;
@@ -14604,10 +14651,10 @@ small,
   color: rgba(0, 0, 0, 0.4);
   text-decoration: none; }
 
-/* line 57, /www/sites/HbgPrime/wwwroot/source/sass/utility/_link-item.scss */
+/* line 61, /www/sites/HbgPrime/wwwroot/source/sass/utility/_link-item.scss */
 .link-unavailable {
   opacity: .5; }
-  /* line 58, /www/sites/HbgPrime/wwwroot/source/sass/utility/_link-item.scss */
+  /* line 62, /www/sites/HbgPrime/wwwroot/source/sass/utility/_link-item.scss */
   .link-unavailable::before {
     font-family: hbg-pricons;
     line-height: 1;
@@ -14618,7 +14665,7 @@ small,
     content: ""; }
 
 /* External */
-/* line 67, /www/sites/HbgPrime/wwwroot/source/sass/utility/_link-item.scss */
+/* line 71, /www/sites/HbgPrime/wwwroot/source/sass/utility/_link-item.scss */
 .link-item-outbound::before {
   font-family: hbg-pricons;
   line-height: 1;
@@ -14628,7 +14675,7 @@ small,
   vertical-align: -15%;
   content: ""; }
 
-/* line 72, /www/sites/HbgPrime/wwwroot/source/sass/utility/_link-item.scss */
+/* line 76, /www/sites/HbgPrime/wwwroot/source/sass/utility/_link-item.scss */
 .link-item:not(:local-link)::before, .widget_archive a:not(:local-link)::before,
 .widget_categories a:not(:local-link)::before,
 .widget_meta a:not(:local-link)::before,
@@ -14643,7 +14690,7 @@ small,
   content: ""; }
 
 /* Domains */
-/* line 81, /www/sites/HbgPrime/wwwroot/source/sass/utility/_link-item.scss */
+/* line 85, /www/sites/HbgPrime/wwwroot/source/sass/utility/_link-item.scss */
 .link-item-github::before,
 .link-item[href*="github.com"]::before,
 .widget_archive a[href*="github.com"]::before,
@@ -14661,7 +14708,7 @@ small,
   content: ""; }
 
 /* Filetypes */
-/* line 91, /www/sites/HbgPrime/wwwroot/source/sass/utility/_link-item.scss */
+/* line 95, /www/sites/HbgPrime/wwwroot/source/sass/utility/_link-item.scss */
 .link-item-pdf::before,
 .link-item[href$=".pdf"]::before,
 .widget_archive a[href$=".pdf"]::before,
@@ -14678,7 +14725,7 @@ small,
   vertical-align: -15%;
   content: ""; }
 
-/* line 101, /www/sites/HbgPrime/wwwroot/source/sass/utility/_link-item.scss */
+/* line 105, /www/sites/HbgPrime/wwwroot/source/sass/utility/_link-item.scss */
 .link-item-doc::before,
 .link-item[href$=".doc"]::before,
 .widget_archive a[href$=".doc"]::before,
@@ -14702,7 +14749,7 @@ small,
   vertical-align: -15%;
   content: ""; }
 
-/* line 111, /www/sites/HbgPrime/wwwroot/source/sass/utility/_link-item.scss */
+/* line 115, /www/sites/HbgPrime/wwwroot/source/sass/utility/_link-item.scss */
 .link-item-ppt::before,
 .link-item[href$=".ppt"]::before,
 .widget_archive a[href$=".ppt"]::before,
@@ -14726,7 +14773,7 @@ small,
   vertical-align: -15%;
   content: ""; }
 
-/* line 124, /www/sites/HbgPrime/wwwroot/source/sass/utility/_link-item.scss */
+/* line 128, /www/sites/HbgPrime/wwwroot/source/sass/utility/_link-item.scss */
 .link-item-xls::before,
 .link-item-csv::before,
 .link-item[href$=".xls"]::before,
@@ -14758,7 +14805,7 @@ small,
   vertical-align: -15%;
   content: ""; }
 
-/* line 134, /www/sites/HbgPrime/wwwroot/source/sass/utility/_link-item.scss */
+/* line 138, /www/sites/HbgPrime/wwwroot/source/sass/utility/_link-item.scss */
 .link-item-audio::before,
 .link-item[href$=".mp3"]::before,
 .widget_archive a[href$=".mp3"]::before,
@@ -14782,7 +14829,7 @@ small,
   vertical-align: -15%;
   content: ""; }
 
-/* line 146, /www/sites/HbgPrime/wwwroot/source/sass/utility/_link-item.scss */
+/* line 150, /www/sites/HbgPrime/wwwroot/source/sass/utility/_link-item.scss */
 .link-item-archive::before,
 .link-item[href$=".zip"]::before,
 .widget_archive a[href$=".zip"]::before,
@@ -14813,7 +14860,7 @@ small,
   vertical-align: -15%;
   content: ""; }
 
-/* line 166, /www/sites/HbgPrime/wwwroot/source/sass/utility/_link-item.scss */
+/* line 170, /www/sites/HbgPrime/wwwroot/source/sass/utility/_link-item.scss */
 .link-item-image::before,
 .link-item[href$=".jpg"]::before,
 .widget_archive a[href$=".jpg"]::before,
@@ -14872,7 +14919,7 @@ small,
   vertical-align: -15%;
   content: ""; }
 
-/* line 180, /www/sites/HbgPrime/wwwroot/source/sass/utility/_link-item.scss */
+/* line 184, /www/sites/HbgPrime/wwwroot/source/sass/utility/_link-item.scss */
 .link-item-text::before,
 .link-item[href$=".txt"]::before,
 .widget_archive a[href$=".txt"]::before,
@@ -14910,7 +14957,7 @@ small,
   vertical-align: -15%;
   content: ""; }
 
-/* line 210, /www/sites/HbgPrime/wwwroot/source/sass/utility/_link-item.scss */
+/* line 214, /www/sites/HbgPrime/wwwroot/source/sass/utility/_link-item.scss */
 .link-item-video::before,
 .link-item[href$=".mpg"]::before,
 .widget_archive a[href$=".mpg"]::before,
@@ -15004,7 +15051,7 @@ small,
   vertical-align: -15%;
   content: ""; }
 
-/* line 216, /www/sites/HbgPrime/wwwroot/source/sass/utility/_link-item.scss */
+/* line 220, /www/sites/HbgPrime/wwwroot/source/sass/utility/_link-item.scss */
 .link-item-light::before, .sidebar-left-sidebar .widget_archive a::before,
 .sidebar-right-sidebar .widget_archive a::before, .sidebar-left-sidebar
 .widget_categories a::before,
@@ -15022,7 +15069,7 @@ small,
   color: rgba(255, 255, 255, 0.7); }
 
 /* Prefixes (links only) */
-/* line 224, /www/sites/HbgPrime/wwwroot/source/sass/utility/_link-item.scss */
+/* line 228, /www/sites/HbgPrime/wwwroot/source/sass/utility/_link-item.scss */
 .link-item[href^='tel:']::before, .widget_archive a[href^='tel:']::before,
 .widget_categories a[href^='tel:']::before,
 .widget_meta a[href^='tel:']::before,
@@ -15037,7 +15084,7 @@ small,
   vertical-align: -15%;
   content: ""; }
 
-/* line 231, /www/sites/HbgPrime/wwwroot/source/sass/utility/_link-item.scss */
+/* line 235, /www/sites/HbgPrime/wwwroot/source/sass/utility/_link-item.scss */
 .link-item[href^='mailto:']::before, .widget_archive a[href^='mailto:']::before,
 .widget_categories a[href^='mailto:']::before,
 .widget_meta a[href^='mailto:']::before,
