@@ -1,5 +1,5 @@
 /*!
- * jQuery JavaScript Library v2.2.0
+ * jQuery JavaScript Library v2.2.4
  * http://jquery.com/
  *
  * Includes Sizzle.js
@@ -9,7 +9,7 @@
  * Released under the MIT license
  * http://jquery.org/license
  *
- * Date: 2016-01-08T20:02Z
+ * Date: 2016-05-20T17:23Z
  */
 
 (function( global, factory ) {
@@ -65,7 +65,7 @@ var support = {};
 
 
 var
-	version = "2.2.0",
+	version = "2.2.4",
 
 	// Define a local copy of jQuery
 	jQuery = function( selector, context ) {
@@ -276,6 +276,7 @@ jQuery.extend( {
 	},
 
 	isPlainObject: function( obj ) {
+		var key;
 
 		// Not plain objects:
 		// - Any object or value whose internal [[Class]] property is not "[object Object]"
@@ -285,14 +286,18 @@ jQuery.extend( {
 			return false;
 		}
 
+		// Not own constructor property must be Object
 		if ( obj.constructor &&
-				!hasOwn.call( obj.constructor.prototype, "isPrototypeOf" ) ) {
+				!hasOwn.call( obj, "constructor" ) &&
+				!hasOwn.call( obj.constructor.prototype || {}, "isPrototypeOf" ) ) {
 			return false;
 		}
 
-		// If the function hasn't returned already, we're confident that
-		// |obj| is a plain object, created by {} or constructed with new Object
-		return true;
+		// Own properties are enumerated firstly, so to speed up,
+		// if last one is own, then all properties are own
+		for ( key in obj ) {}
+
+		return key === undefined || hasOwn.call( obj, key );
 	},
 
 	isEmptyObject: function( obj ) {
@@ -4479,7 +4484,7 @@ function on( elem, types, selector, data, fn, one ) {
 	if ( fn === false ) {
 		fn = returnFalse;
 	} else if ( !fn ) {
-		return this;
+		return elem;
 	}
 
 	if ( one === 1 ) {
@@ -5001,13 +5006,14 @@ jQuery.Event.prototype = {
 	isDefaultPrevented: returnFalse,
 	isPropagationStopped: returnFalse,
 	isImmediatePropagationStopped: returnFalse,
+	isSimulated: false,
 
 	preventDefault: function() {
 		var e = this.originalEvent;
 
 		this.isDefaultPrevented = returnTrue;
 
-		if ( e ) {
+		if ( e && !this.isSimulated ) {
 			e.preventDefault();
 		}
 	},
@@ -5016,7 +5022,7 @@ jQuery.Event.prototype = {
 
 		this.isPropagationStopped = returnTrue;
 
-		if ( e ) {
+		if ( e && !this.isSimulated ) {
 			e.stopPropagation();
 		}
 	},
@@ -5025,7 +5031,7 @@ jQuery.Event.prototype = {
 
 		this.isImmediatePropagationStopped = returnTrue;
 
-		if ( e ) {
+		if ( e && !this.isSimulated ) {
 			e.stopImmediatePropagation();
 		}
 
@@ -5128,14 +5134,14 @@ var
 	rscriptTypeMasked = /^true\/(.*)/,
 	rcleanScript = /^\s*<!(?:\[CDATA\[|--)|(?:\]\]|--)>\s*$/g;
 
+// Manipulating tables requires a tbody
 function manipulationTarget( elem, content ) {
-	if ( jQuery.nodeName( elem, "table" ) &&
-		jQuery.nodeName( content.nodeType !== 11 ? content : content.firstChild, "tr" ) ) {
+	return jQuery.nodeName( elem, "table" ) &&
+		jQuery.nodeName( content.nodeType !== 11 ? content : content.firstChild, "tr" ) ?
 
-		return elem.getElementsByTagName( "tbody" )[ 0 ] || elem;
-	}
-
-	return elem;
+		elem.getElementsByTagName( "tbody" )[ 0 ] ||
+			elem.appendChild( elem.ownerDocument.createElement( "tbody" ) ) :
+		elem;
 }
 
 // Replace/restore the type attribute of script elements for safe DOM manipulation
@@ -5642,7 +5648,7 @@ var getStyles = function( elem ) {
 		// FF meanwhile throws on frame elements through "defaultView.getComputedStyle"
 		var view = elem.ownerDocument.defaultView;
 
-		if ( !view.opener ) {
+		if ( !view || !view.opener ) {
 			view = window;
 		}
 
@@ -5791,15 +5797,18 @@ function curCSS( elem, name, computed ) {
 		style = elem.style;
 
 	computed = computed || getStyles( elem );
+	ret = computed ? computed.getPropertyValue( name ) || computed[ name ] : undefined;
+
+	// Support: Opera 12.1x only
+	// Fall back to style even without computed
+	// computed is undefined for elems on document fragments
+	if ( ( ret === "" || ret === undefined ) && !jQuery.contains( elem.ownerDocument, elem ) ) {
+		ret = jQuery.style( elem, name );
+	}
 
 	// Support: IE9
 	// getPropertyValue is only needed for .css('filter') (#12537)
 	if ( computed ) {
-		ret = computed.getPropertyValue( name ) || computed[ name ];
-
-		if ( ret === "" && !jQuery.contains( elem.ownerDocument, elem ) ) {
-			ret = jQuery.style( elem, name );
-		}
 
 		// A tribute to the "awesome hack by Dean Edwards"
 		// Android Browser returns percentage for some values,
@@ -5952,19 +5961,6 @@ function getWidthOrHeight( elem, name, extra ) {
 		val = name === "width" ? elem.offsetWidth : elem.offsetHeight,
 		styles = getStyles( elem ),
 		isBorderBox = jQuery.css( elem, "boxSizing", false, styles ) === "border-box";
-
-	// Support: IE11 only
-	// In IE 11 fullscreen elements inside of an iframe have
-	// 100x too small dimensions (gh-1764).
-	if ( document.msFullscreenElement && window.top !== window ) {
-
-		// Support: IE11 only
-		// Running getBoundingClientRect on a disconnected node
-		// in IE throws an error.
-		if ( elem.getClientRects().length ) {
-			val = Math.round( elem.getBoundingClientRect()[ name ] * 100 );
-		}
-	}
 
 	// Some non-html elements return undefined for offsetWidth, so check for null/undefined
 	// svg - https://bugzilla.mozilla.org/show_bug.cgi?id=649285
@@ -7322,6 +7318,12 @@ jQuery.extend( {
 	}
 } );
 
+// Support: IE <=11 only
+// Accessing the selectedIndex property
+// forces the browser to respect setting selected
+// on the option
+// The getter ensures a default option is selected
+// when in an optgroup
 if ( !support.optSelected ) {
 	jQuery.propHooks.selected = {
 		get: function( elem ) {
@@ -7330,6 +7332,16 @@ if ( !support.optSelected ) {
 				parent.parentNode.selectedIndex;
 			}
 			return null;
+		},
+		set: function( elem ) {
+			var parent = elem.parentNode;
+			if ( parent ) {
+				parent.selectedIndex;
+
+				if ( parent.parentNode ) {
+					parent.parentNode.selectedIndex;
+				}
+			}
 		}
 	};
 }
@@ -7524,7 +7536,8 @@ jQuery.fn.extend( {
 
 
 
-var rreturn = /\r/g;
+var rreturn = /\r/g,
+	rspaces = /[\x20\t\r\n\f]+/g;
 
 jQuery.fn.extend( {
 	val: function( value ) {
@@ -7600,9 +7613,15 @@ jQuery.extend( {
 		option: {
 			get: function( elem ) {
 
-				// Support: IE<11
-				// option.value not trimmed (#14858)
-				return jQuery.trim( elem.value );
+				var val = jQuery.find.attr( elem, "value" );
+				return val != null ?
+					val :
+
+					// Support: IE10-11+
+					// option.text throws exceptions (#14686, #14858)
+					// Strip and collapse whitespace
+					// https://html.spec.whatwg.org/#strip-and-collapse-whitespace
+					jQuery.trim( jQuery.text( elem ) ).replace( rspaces, " " );
 			}
 		},
 		select: {
@@ -7655,7 +7674,7 @@ jQuery.extend( {
 				while ( i-- ) {
 					option = options[ i ];
 					if ( option.selected =
-							jQuery.inArray( jQuery.valHooks.option.get( option ), values ) > -1
+						jQuery.inArray( jQuery.valHooks.option.get( option ), values ) > -1
 					) {
 						optionSet = true;
 					}
@@ -7833,6 +7852,7 @@ jQuery.extend( jQuery.event, {
 	},
 
 	// Piggyback on a donor event to simulate a different one
+	// Used only for `focus(in | out)` events
 	simulate: function( type, elem, event ) {
 		var e = jQuery.extend(
 			new jQuery.Event(),
@@ -7840,27 +7860,10 @@ jQuery.extend( jQuery.event, {
 			{
 				type: type,
 				isSimulated: true
-
-				// Previously, `originalEvent: {}` was set here, so stopPropagation call
-				// would not be triggered on donor event, since in our own
-				// jQuery.event.stopPropagation function we had a check for existence of
-				// originalEvent.stopPropagation method, so, consequently it would be a noop.
-				//
-				// But now, this "simulate" function is used only for events
-				// for which stopPropagation() is noop, so there is no need for that anymore.
-				//
-				// For the compat branch though, guard for "click" and "submit"
-				// events is still used, but was moved to jQuery.event.stopPropagation function
-				// because `originalEvent` should point to the original event for the constancy
-				// with other events and for more focused logic
 			}
 		);
 
 		jQuery.event.trigger( e, null, elem );
-
-		if ( e.isDefaultPrevented() ) {
-			event.preventDefault();
-		}
 	}
 
 } );
@@ -9350,18 +9353,6 @@ jQuery.ajaxPrefilter( "json jsonp", function( s, originalSettings, jqXHR ) {
 
 
 
-// Support: Safari 8+
-// In Safari 8 documents created via document.implementation.createHTMLDocument
-// collapse sibling forms: the second one becomes a child of the first one.
-// Because of that, this security measure has to be disabled in Safari 8.
-// https://bugs.webkit.org/show_bug.cgi?id=137337
-support.createHTMLDocument = ( function() {
-	var body = document.implementation.createHTMLDocument( "" ).body;
-	body.innerHTML = "<form></form><form></form>";
-	return body.childNodes.length === 2;
-} )();
-
-
 // Argument "data" should be string of html
 // context (optional): If specified, the fragment will be created in this context,
 // defaults to document
@@ -9374,12 +9365,7 @@ jQuery.parseHTML = function( data, context, keepScripts ) {
 		keepScripts = context;
 		context = false;
 	}
-
-	// Stop scripts or inline event handlers from being executed immediately
-	// by using document.implementation
-	context = context || ( support.createHTMLDocument ?
-		document.implementation.createHTMLDocument( "" ) :
-		document );
+	context = context || document;
 
 	var parsed = rsingleTag.exec( data ),
 		scripts = !keepScripts && [];
@@ -9461,7 +9447,7 @@ jQuery.fn.load = function( url, params, callback ) {
 		// If it fails, this function gets "jqXHR", "status", "error"
 		} ).always( callback && function( jqXHR, status ) {
 			self.each( function() {
-				callback.apply( self, response || [ jqXHR.responseText, status, jqXHR ] );
+				callback.apply( this, response || [ jqXHR.responseText, status, jqXHR ] );
 			} );
 		} );
 	}
@@ -9619,11 +9605,8 @@ jQuery.fn.extend( {
 			}
 
 			// Add offsetParent borders
-			// Subtract offsetParent scroll positions
-			parentOffset.top += jQuery.css( offsetParent[ 0 ], "borderTopWidth", true ) -
-				offsetParent.scrollTop();
-			parentOffset.left += jQuery.css( offsetParent[ 0 ], "borderLeftWidth", true ) -
-				offsetParent.scrollLeft();
+			parentOffset.top += jQuery.css( offsetParent[ 0 ], "borderTopWidth", true );
+			parentOffset.left += jQuery.css( offsetParent[ 0 ], "borderLeftWidth", true );
 		}
 
 		// Subtract parent offsets and element margins
@@ -12258,6 +12241,138 @@ HelsingborgPrime.Args = (function ($) {
 })(jQuery);
 
 //
+<<<<<<< HEAD
+=======
+// @name Gallery
+// @description  Popup boxes for gallery items.
+//
+HelsingborgPrime = HelsingborgPrime || {};
+HelsingborgPrime.Component = HelsingborgPrime.Component || {};
+
+HelsingborgPrime.Component.GalleryPopup = (function ($) {
+
+    function GalleryPopup() {
+    	//Click event
+    	this.clickWatcher();
+        this.arrowNav();
+
+    	//Popup hash changes
+    	$(window).bind('hashchange', function() {
+			this.togglePopupClass();
+		}.bind(this)).trigger('hashchange');
+
+        //Preload on hover
+        this.preloadImageAsset();
+    }
+
+    GalleryPopup.prototype.clickWatcher = function () {
+	    $('.lightbox-trigger').click(function(event) {
+			event.preventDefault();
+
+			//Get data
+			var image_href = $(this).attr('href');
+            var image_caption = '';
+
+            //Get caption
+            if (typeof $(this).attr('data-caption') !== 'undefined') {
+                var image_caption = $(this).attr("data-caption");
+            }
+
+			//Update hash
+			window.location.hash = "lightbox-open";
+
+			//Add markup, or update.
+			if ($('#lightbox').length > 0) {
+                $('#lightbox-image').attr('src',image_href);
+                $('#lightbox .lightbox-image-wrapper').attr('data-caption',image_caption);
+                $('#lightbox').fadeIn();
+			} else {
+				var lightbox =
+				'<div id="lightbox">' +
+					'<div class="lightbox-image-wrapper" data-caption="' + image_caption + '">' +
+						'<a class="btn-close" href="#lightbox-close"></a>' +
+						'<img id="lightbox-image" src="' + image_href +'" />' +
+					'</div>' +
+				'</div>';
+
+				$('body').append(lightbox);
+                $('#lightbox').hide().fadeIn();
+			}
+
+            $(this).addClass('gallery-active');
+		});
+
+		$(document).on('click', '#lightbox', function () {
+			$(this).fadeOut(300).hide(0);
+            $('.gallery-active').removeClass('gallery-active');
+			window.location.hash = 'lightbox-closed';
+		});
+
+    };
+
+    GalleryPopup.prototype.togglePopupClass = function (){
+	    if (window.location.hash.replace('-', '') == '#lightbox-open'.replace('-', '')) {
+			$('html').addClass('gallery-hidden');
+		} else {
+			$('html').removeClass('gallery-hidden');
+		}
+    };
+
+    GalleryPopup.prototype.preloadImageAsset = function () {
+        $('.image-gallery a.lightbox-trigger').on('mouseenter', function(){
+            var img = new Image();
+            img.src = jQuery(this).attr('href');
+        });
+    };
+
+    GalleryPopup.prototype.arrowNav = function () {
+        // Keycodes
+        var leftArrow = 37;
+        var rightArrow = 39;
+
+        $(window).on('keyup', function (e) {
+            if (window.location.hash.replace('-', '') != '#lightbox-open'.replace('-', '')) {
+                return false;
+            }
+
+            if (e.which == leftArrow) {
+                this.prevImg();
+            } else if (e.which == rightArrow) {
+                this.nextImg();
+            }
+        }.bind(this));
+    };
+
+    GalleryPopup.prototype.nextImg = function () {
+        var nextImg = $('.gallery-active').parent('li').next().children('a');
+        if (nextImg.length == 0) {
+            nextImg = $('.gallery-active').parents('ul').children('li:first-child').children('a');
+        }
+
+        $('#lightbox').trigger('click');
+        setTimeout(function () {
+            nextImg.trigger('click');
+        }, 100);
+    };
+
+    GalleryPopup.prototype.prevImg = function () {
+        var prevImg = $('.gallery-active').parent('li').prev().children('a');
+        if (prevImg.length == 0) {
+            prevImg = $('.gallery-active').parents('ul').children('li:last-child').children('a');
+        }
+
+        $('#lightbox').trigger('click');
+        setTimeout(function () {
+            prevImg.trigger('click');
+        }, 100);
+    };
+
+    new GalleryPopup();
+
+})(jQuery);
+
+//
+>>>>>>> 23f7bcfc75b794da3657319ed209231394d46de5
 // @name Image upload
 // @description
 //
@@ -12446,6 +12561,208 @@ HelsingborgPrime.Component.TagManager = (function ($) {
             }.bind(this));
         }.bind(this));
 
+<<<<<<< HEAD
+=======
+            var normal_img = new Array();
+            var mobile_img = new Array();
+
+            $(".slider ul li").each(function(index,slide) {
+
+                if($(".slider-image-mobile",slide).length) {
+                    normal_img.index = new Image();
+                    normal_img.index.src = $(".slider-image-desktop",slide).css('background-image').replace(/.*\s?url\([\'\"]?/, '').replace(/[\'\"]?\).*/, '');
+                }
+
+                if($(".slider-image-mobile",slide).length) {
+                    mobile_img.index = new Image();
+                    mobile_img.index.src = $(".slider-image-mobile",slide).css('background-image').replace(/.*\s?url\([\'\"]?/, '').replace(/[\'\"]?\).*/, '');
+                }
+
+            });
+
+        },5000);
+    };
+
+    /**
+     * Adds navigation buttons if needed
+     */
+    Slider.prototype.addNavigationButtons = function (slider) {
+        if ($(slider).find('li').length <= 1) {
+            return;
+        }
+
+        $(slider).append('<button class="slider-nav-previous"><span class="sr-only">Previous</span><i class="pricon pricon-previous"></i></button><button class="slider-nav-next"><span class="sr-only">Next</span><i class="pricon pricon-next"></i></button>');
+    };
+
+    /**
+     * Start autoslide if setup
+     * @param  {object} slider The slider
+     * @return {void}
+     */
+    Slider.prototype.autoslide = function (slider) {
+        if ($(slider).attr('data-autoslide') != 'true' || $(slider).find('li').length <= 1) {
+            return;
+        }
+
+        // Stop on hover
+        $(slider).on('mouseenter', function (element) {
+            var slider = $(element.target).closest('.slider');
+            this.stopInterval(slider);
+        }.bind(this)).on('mouseleave', function (element) {
+            var slider = $(element.target).closest('.slider');
+            this.startInterval(slider);
+        }.bind(this));
+
+        this.startInterval(slider);
+    };
+
+    /**
+     * Starts the autoslider interval timer
+     * @param  {object} slider The slider to slide
+     * @return {void}
+     */
+    Slider.prototype.startInterval = function (slider) {
+        var index = $(slider).index();
+        var intervalTimeout = $(slider).attr('data-autoslide-interval');
+
+        if (typeof intervalTimeout == 'undefined') {
+            intervalTimeout = 10000;
+        }
+
+        autoslideIntervals[index] = setInterval(function () {
+            this.goNext(slider);
+        }.bind(this, slider), intervalTimeout);
+    };
+
+    /**
+     * Stops the autoslider interval timer
+     * @param  {object} slider The slider to stop slide
+     * @return {void}
+     */
+    Slider.prototype.stopInterval = function (slider) {
+        var index = $(slider).index();
+
+        clearInterval(autoslideIntervals[index]);
+        autoslideIntervals.splice(index, 1);
+    };
+
+    /**
+     * Go to the next slide in a specific slider
+     * @param  {object} slider The slider
+     * @return {void}
+     */
+    Slider.prototype.goNext = function (slider) {
+        var current = this.currentSlide(slider);
+        var next = current.next('li').length ? current.next('li') : $(slider).find('li:first');
+
+        $(slider).find('li').removeClass('slider-out');
+        $(slider).removeClass('slider-previous slider-next').addClass('slider-next');
+
+        current.removeClass('current slider-in').addClass('slider-out');
+        next.addClass('current slider-in');
+    };
+
+    /**
+     * Go to the previous slide in a specific slider
+     * @param  {object} slider The slider
+     * @return {void}
+     */
+    Slider.prototype.goPrev = function (slider) {
+        var current = this.currentSlide(slider);
+        var prev = current.prev('li').length ? current.prev('li') : $(slider).find('li:last');
+
+        $(slider).find('li').removeClass('slider-out');
+        $(slider).removeClass('slider-previous slider-next').addClass('slider-previous');
+
+        current.removeClass('current slider-in').addClass('slider-out');
+        prev.addClass('current slider-in');
+    };
+
+    /**
+     * Gets the current slide element in a slider
+     * @param  {object} slider The slider object to check current slide in
+     * @return {object}        The current slide object
+     */
+    Slider.prototype.currentSlide = function (slider) {
+        return $(slider).find('li.current').length ? $(slider).find('li.current') : $(slider).find('li:first');
+    };
+
+    Slider.prototype.bindEvents = function () {
+        // Next button
+        $('.slider-nav-next').on('click', function (e) {
+            this.goNext($(e.target).parents('.slider'));
+        }.bind(this));
+
+        // Prev button
+        $('.slider-nav-previous').on('click', function (e) {
+            this.goPrev($(e.target).parents('.slider'));
+        }.bind(this));
+    };
+
+    return new Slider();
+
+})(jQuery);
+
+//
+// @name Modal
+// @description  Show accodrion dropdown, make linkable by updating adress bar
+//
+HelsingborgPrime = HelsingborgPrime || {};
+HelsingborgPrime.Component = HelsingborgPrime.Component || {};
+HelsingborgPrime.Component.TagManager = (function ($) {
+
+    var typingTimer;
+
+    function TagManager() {
+        $('.tag-manager').each(function (index, element) {
+            this.init(element);
+        }.bind(this));
+
+        $(document).on('click', '.tag-manager .tag-manager-selected button[data-action="remove"]', function (e) {
+            e.preventDefault();
+
+            var tagElement = $(e.target).closest('li');
+            this.removeTag(tagElement);
+        }.bind(this));
+    }
+
+    /**
+     * Initialize tag manager
+     * @param  {element} element The tag manager element
+     * @return {void}
+     */
+    TagManager.prototype.init = function(element) {
+        var $element = $(element);
+        var $button = $element.find('.tag-manager-input [name="add-tag"]');
+        var $input = $element.find('.tag-manager-input input[type="text"]');
+
+        $button.on('click', function (e) {
+            e.preventDefault();
+            var tag = $input.val();
+            var tags = tag.split(',');
+
+            $.each(tags, function (index, tag) {
+                this.addTag(element, tag.trim());
+            }.bind(this));
+
+        }.bind(this));
+
+        $input.on('keypress', function (e) {
+            if (e.keyCode !== 13) {
+                return;
+            }
+
+            e.preventDefault();
+            var element = $(e.target).parents('.tag-manager')[0]
+            var tag = $input.val();
+            var tags = tag.split(',');
+
+            $.each(tags, function (index, tag) {
+                this.addTag(element, tag.trim());
+            }.bind(this));
+        }.bind(this));
+
+>>>>>>> 23f7bcfc75b794da3657319ed209231394d46de5
         if ($element.attr('data-wp-ajax-action') && typeof ajaxurl !== 'undefined') {
             $input.on('keyup', function (e) {
                 clearTimeout(typingTimer);
@@ -12571,6 +12888,7 @@ HelsingborgPrime.Component.Accordion = (function ($) {
     Accordion.prototype.init = function () {
         $('label.accordion-toggle').on('click', function(e) {
             var $input = $('#' + $(this).attr('for'));
+<<<<<<< HEAD
 
             if ($input.prop('checked') === false) {
                 window.location.hash = '#' + $(this).attr('for');
@@ -12958,10 +13276,39 @@ HelsingborgPrime.Component.Slider = (function ($) {
     };
 
     return new Slider();
+=======
+
+            if ($input.prop('checked') === false) {
+                window.location.hash = '#' + $(this).attr('for');
+            } else {
+                if ($input.is('[type="radio"]')) {
+                    var name = $input.attr('name');
+                    var value = $input.val();
+                    var id = $input.attr('id');
+
+                    var $parent = $input.parent('section');
+                    $input.remove();
+
+                    setTimeout(function () {
+                        $parent.prepend('<input type="radio" name="' + name + '" value="' + value + '" id="' + id + '">');
+                    }, 1);
+
+                }
+
+                window.location.hash = '_';
+            }
+		});
+
+
+    };
+
+    return new Accordion();
+>>>>>>> 23f7bcfc75b794da3657319ed209231394d46de5
 
 })(jQuery);
 
 //
+<<<<<<< HEAD
 // @name Cookies
 //
 HelsingborgPrime = HelsingborgPrime || {};
@@ -13181,6 +13528,93 @@ HelsingborgPrime.Helper.ToggleSubmenuItems = (function ($) {
                 $(target).parent().addClass('current-menu-item current_page_item current');
             } else {
                 window.location.href = $(target).attr('href');
+=======
+// @name Modal
+// @description  Show accodrion dropdown, make linkable by updating adress bar
+//
+HelsingborgPrime = HelsingborgPrime || {};
+HelsingborgPrime.Component = HelsingborgPrime.Component || {};
+
+HelsingborgPrime.Component.Dropdown = (function ($) {
+
+    function Dropdown() {
+        this.handleEvents();
+    }
+
+    Dropdown.prototype.handleEvents = function () {
+        $('[data-dropdown]').on('click', function (e) {
+            e.preventDefault();
+
+            var targetElement = $(this).attr('data-dropdown');
+            $(targetElement).toggleClass('dropdown-target-open');
+            $(this).toggleClass('dropdown-open');
+            $(this).parent().find(targetElement).toggle();
+            $(this).parent().find(targetElement).find('input[data-dropdown-focus]').focus();
+        });
+
+        $('body').on('click', function (e) {
+            var $target = $(e.target);
+
+            if ($target.closest('.dropdown-target-open').length || $target.closest('[data-dropdown]').length) {
+                return;
+            }
+
+            $('[data-dropdown].dropdown-open').removeClass('dropdown-open');
+            $('.dropdown-target-open').toggle();
+            $('.dropdown-target-open').removeClass('dropdown-target-open');
+        });
+    };
+
+    return new Dropdown();
+
+})(jQuery);
+
+//
+// @name Cookies
+//
+HelsingborgPrime = HelsingborgPrime || {};
+HelsingborgPrime.Helper = HelsingborgPrime.Helper || {};
+
+HelsingborgPrime.Helper.Cookie = (function ($) {
+
+    function Cookie() {
+
+    }
+
+    /**
+     * Sets a cookie
+     * @param {string} name      Cookie name
+     * @param {string} value     Cookie value
+     * @param {void}   daysValid
+     */
+    Cookie.prototype.set = function (name, value, daysValid) {
+        var d = new Date();
+        d.setTime(d.getTime() + (daysValid * 24 * 60 * 60 * 1000));
+
+        var expires = "expires=" + d.toUTCString();
+        document.cookie = name + "=" + value.toString() + "; " + expires + "; path=/";
+
+        return true;
+    };
+
+    /**
+     * Gets a cookie
+     * @param  {string} name Cookie name
+     * @return {mixed}       Cookie value or empty string
+     */
+    Cookie.prototype.get = function(name) {
+        name = name + '=';
+        var ca = document.cookie.split(';');
+
+        for (var i=0; i < ca.length; i++) {
+            var c = ca[i];
+            while (c.charAt(0) == ' ') {
+                c = c.substring(1);
+            }
+
+            if (c.indexOf(name) === 0) {
+                return c.substring(name.length, c.length);
+>>>>>>> 23f7bcfc75b794da3657319ed209231394d46de5
             }
 
         }.bind(target)).fail(function(){
@@ -13279,23 +13713,10 @@ HelsingborgPrime.Helper.Datepicker = (function ($) {
     return datepicker.regional.sv;
 }));
 
-//
-// @name EqualHeight
-// @description  Sets element heights equally to the heighest item
-//
-// @markup
-// <div class="grid" data-equal-container>
-//     <div class="grid-md-6" data-equal-item>
-//
-//     </div>
-//     <div class="grid-md-6" data-equal-item>
-//
-//     </div>
-// </div>
-//
 HelsingborgPrime = HelsingborgPrime || {};
 HelsingborgPrime.Helper = HelsingborgPrime.Helper || {};
 
+<<<<<<< HEAD
 HelsingborgPrime.Helper.EqualHeight = (function ($) {
 
     function EqualHeight() {
@@ -13320,59 +13741,66 @@ HelsingborgPrime.Helper.EqualHeight = (function ($) {
         }
 
         return true;
+=======
+HelsingborgPrime.Helper.FeatureDetector = (function ($) {
+
+    function FeatureDetector() {
+        this.detectFlexbox();
+    }
+
+    FeatureDetector.prototype.detectFlexbox = function () {
+        if (typeof document.createElement("p").style.flexWrap !== 'undefined' && document.createElement("p").style.flexWrap == '') {
+            return true;
+        }
+
+        $('html').addClass('no-flexbox');
+        return false;
+>>>>>>> 23f7bcfc75b794da3657319ed209231394d46de5
     };
 
-    /**
-     * Resets heights to auto
-     * @return {void}
-     */
-    EqualHeight.prototype.destroy = function () {
-        $('[data-equal-container] [data-equal-item]').each(function (index, element) {
-            $(element).css('height', 'auto');
-        }.bind(this));
+    return new FeatureDetector();
+
+})(jQuery);
+
+HelsingborgPrime = HelsingborgPrime || {};
+HelsingborgPrime.Helper = HelsingborgPrime.Helper || {};
+
+HelsingborgPrime.Helper.Highlight = (function ($) {
+
+    function Highlight() {
+        var highlightText = this.getQueryString('highlight');
+        if (!highlightText) {
+            return;
+        }
+
+        highlightText = highlightText.split('+');
+        this.highlightWords(highlightText, $('.main-container')[0]);
+    }
+
+    Highlight.prototype.highlightWords = function(words, element) {
+        var pattern = '(?![^<>]*>)(' + words.join('|') + ')';
+
+        var regex = new RegExp(pattern, 'gi');
+        var repl = '<mark class="mark-yellow no-padding">$1</mark>';
+        element.innerHTML = element.innerHTML.replace(regex, repl);
     };
 
-    /**
-     * Intializes equal height
-     * @return {void}
-     */
-    EqualHeight.prototype.init = function () {
-        $('[data-equal-container]').each(function (index, element) {
-            var maxHeight = this.getMaxHeight(element);
-            this.equalize(element, maxHeight);
-        }.bind(this));
+    Highlight.prototype.getQueryString = function (variable) {
+        var query = window.location.search.substring(1);
+        var vars = query.split("&");
+
+        for (var i=0;i<vars.length;i++) {
+            var pair = vars[i].split("=");
+
+            if (pair[0] == variable) {
+                return pair[1];
+            }
+        }
+
+        return(false);
     };
 
-    /**
-     * Get the max height of the items
-     * @param  {string} el The parent element
-     * @return {integer}   The max height in pixels
-     */
-    EqualHeight.prototype.getMaxHeight = function (el) {
-        var heights = [];
-
-        $(el).find('[data-equal-item]').each(function (index, element) {
-            heights.push($(element).outerHeight());
-        }.bind(this));
-
-        var maxHeight = Math.max.apply(null, heights);
-
-        return maxHeight;
-    };
-
-    /**
-     * Set the heights of all items to the max height
-     * @param  {string}  parent    The parent element
-     * @param  {integer} maxHeight The max height
-     * @return {void}
-     */
-    EqualHeight.prototype.equalize = function(parent, maxHeight) {
-        $(parent).find('[data-equal-item]').each(function (index, element) {
-            $(element).css('height', maxHeight + 'px');
-        }.bind(this));
-    };
-
-    return new EqualHeight();
+    return new Highlight();
 
 })(jQuery);
 
@@ -13631,6 +14059,203 @@ HelsingborgPrime.Helper.Post = (function ($) {
 
 })(jQuery);
 
+<<<<<<< HEAD
+=======
+HelsingborgPrime = HelsingborgPrime || {};
+HelsingborgPrime.Helper = HelsingborgPrime.Helper || {};
+
+HelsingborgPrime.Helper.Toggle = (function ($) {
+
+    function Toggle() {
+        $('[data-toggle]').on('click', function (e) {
+            var toggleTarget = $(this).attr('data-toggle');
+            var toggleText = $(this).attr('data-toggle-text');
+            var toggleClass = $(this).attr('data-toggle-class');
+
+            // Toggle the target
+            var $toggleTarget = $(toggleTarget);
+            $toggleTarget.slideToggle(200);
+
+            // Switch text
+            $(this).attr('data-toggle-text', $(this).text());
+            $(this).text(toggleText);
+
+            // Switch class
+            $(this).attr('data-toggle-class', $(this).attr('class'));
+            $(this).attr('class', toggleClass);
+        });
+    }
+
+    return new Toggle();
+
+})(jQuery);
+
+HelsingborgPrime = HelsingborgPrime || {};
+
+HelsingborgPrime.Helper = HelsingborgPrime.Helper || {};
+
+HelsingborgPrime.Helper.ToggleSubmenuItems = (function ($) {
+
+    function ToggleSubmenuItems() {
+        this.init();
+    }
+
+    ToggleSubmenuItems.prototype.init = function () {
+        $(".nav-mobile").each(function(menuIndex,menuObject){
+            $("li.has-children > a, li.menu-item-has-children > a",menuObject).click(function(event){
+                if(event.offsetX > ($(event.target).width()-7)) {
+                    event.preventDefault();
+                    if(!this.useAjax(event.target)) {
+                        this.toggleSibling(event.target);
+                    } else {
+                        this.ajaxLoadItems(event.target);
+                    }
+                }
+            }.bind(this));
+        }.bind(this));
+    };
+
+    ToggleSubmenuItems.prototype.useAjax = function (target) {
+        if($(target).siblings("ul").length) {
+            return false;
+        } else {
+            return true;
+        }
+    };
+
+    ToggleSubmenuItems.prototype.ajaxLoadItems = function (target) {
+        var markup      = '';
+        var parentId    = $.grep($(target).parent().attr('class').split(" "), function(v, i){
+           return v.indexOf('page-') === 0;
+        }).join().replace('page-','');
+
+        $.get('/wp-json/wp/v2/pages/',{parent: parentId},function(response){
+
+            if(typeof response == 'object' && response.length != 0) {
+                $.each(response,function(index,pageObject){
+                    markup = markup + '<li class="menu-item page-' + pageObject.id + '"><a href="' + pageObject.link + '">' + pageObject.title.rendered + '</a></li>';
+                }.bind(markup));
+                $(target).parent().append('<ul class="sub-menu">' + markup + '</ul>');
+                $(target).parent().addClass('current-menu-item current_page_item current');
+            } else {
+                window.location.href = $(target).attr('href');
+            }
+
+        }.bind(target)).fail(function(){
+            window.location.href = $(target).attr('href');
+        }.bind(target));
+    };
+
+    ToggleSubmenuItems.prototype.getItemId = function (target) {
+        return $(target).parent('li').attr('data-post-id');
+    };
+
+    ToggleSubmenuItems.prototype.toggleSibling = function (target) {
+        $(target).parent().toggleClass('current-menu-item current_page_item current');
+    };
+
+    return new ToggleSubmenuItems();
+
+})(jQuery);
+
+//
+// @name EqualHeight
+// @description  Sets element heights equally to the heighest item
+//
+// @markup
+// <div class="grid" data-equal-container>
+//     <div class="grid-md-6" data-equal-item>
+//
+//     </div>
+//     <div class="grid-md-6" data-equal-item>
+//
+//     </div>
+// </div>
+//
+HelsingborgPrime = HelsingborgPrime || {};
+HelsingborgPrime.Helper = HelsingborgPrime.Helper || {};
+
+HelsingborgPrime.Helper.EqualHeight = (function ($) {
+
+    function EqualHeight() {
+        // Initialize if flexbox not supported
+        if (!this.supportsFlexbox()) {
+            this.init();
+
+            $(window).on('resize', function () {
+                this.destroy();
+                this.init();
+            }.bind(this));
+        }
+    }
+
+    /**
+     * Check if browser supports flexbox
+     * @return {boolean}
+     */
+    EqualHeight.prototype.supportsFlexbox = function () {
+        if ($('html').hasClass('no-flexbox')) {
+            return false;
+        }
+
+        return true;
+    };
+
+    /**
+     * Resets heights to auto
+     * @return {void}
+     */
+    EqualHeight.prototype.destroy = function () {
+        $('[data-equal-container] [data-equal-item]').each(function (index, element) {
+            $(element).css('height', 'auto');
+        }.bind(this));
+    };
+
+    /**
+     * Intializes equal height
+     * @return {void}
+     */
+    EqualHeight.prototype.init = function () {
+        $('[data-equal-container]').each(function (index, element) {
+            var maxHeight = this.getMaxHeight(element);
+            this.equalize(element, maxHeight);
+        }.bind(this));
+    };
+
+    /**
+     * Get the max height of the items
+     * @param  {string} el The parent element
+     * @return {integer}   The max height in pixels
+     */
+    EqualHeight.prototype.getMaxHeight = function (el) {
+        var heights = [];
+
+        $(el).find('[data-equal-item]').each(function (index, element) {
+            heights.push($(element).outerHeight());
+        }.bind(this));
+
+        var maxHeight = Math.max.apply(null, heights);
+
+        return maxHeight;
+    };
+
+    /**
+     * Set the heights of all items to the max height
+     * @param  {string}  parent    The parent element
+     * @param  {integer} maxHeight The max height
+     * @return {void}
+     */
+    EqualHeight.prototype.equalize = function(parent, maxHeight) {
+        $(parent).find('[data-equal-item]').each(function (index, element) {
+            $(element).css('height', maxHeight + 'px');
+        }.bind(this));
+    };
+
+    return new EqualHeight();
+
+})(jQuery);
+
+>>>>>>> 23f7bcfc75b794da3657319ed209231394d46de5
 //
 // @name Cookie consent
 //
