@@ -5296,6 +5296,7 @@ article {
   article table + hr {
     margin-top: 2em; }
   /* line 85, /www/sites/HbgPrime/wwwroot/source/sass/typography/_article.scss */
+  .mce-content-body h1, .mce-content-body h2, .mce-content-body h3, .mce-content-body h4, .mce-content-body .widget_calendar caption, .widget_calendar .mce-content-body caption, .mce-content-body h5, .mce-content-body h6,
   .mce-content-body p,
   .mce-content-body ol,
   .mce-content-body ul,
@@ -5309,6 +5310,14 @@ article {
   .mce-content-body .box,
   .mce-content-body .dataTables_wrapper,
   .mce-content-body .notice,
+  article h1,
+  article h2,
+  article h3,
+  article h4,
+  article .widget_calendar caption, .widget_calendar
+  article caption,
+  article h5,
+  article h6,
   article p,
   article ol,
   article ul,
@@ -5323,14 +5332,14 @@ article {
   article .dataTables_wrapper,
   article .notice {
     margin-top: 1.3em; }
-  /* line 101, /www/sites/HbgPrime/wwwroot/source/sass/typography/_article.scss */
+  /* line 102, /www/sites/HbgPrime/wwwroot/source/sass/typography/_article.scss */
   .mce-content-body blockquote,
   article blockquote {
     border-left: 3px solid #e7e5e1;
     margin-bottom: 15px;
     padding: 20px 35px;
     quotes: "“" "”" "‘" "’"; }
-  /* line 108, /www/sites/HbgPrime/wwwroot/source/sass/typography/_article.scss */
+  /* line 109, /www/sites/HbgPrime/wwwroot/source/sass/typography/_article.scss */
   .mce-content-body blockquote:before,
   article blockquote:before {
     color: #979797;
@@ -5339,7 +5348,7 @@ article {
     line-height: 0.1em;
     margin-right: 0.25em;
     vertical-align: -0.4em; }
-  /* line 117, /www/sites/HbgPrime/wwwroot/source/sass/typography/_article.scss */
+  /* line 118, /www/sites/HbgPrime/wwwroot/source/sass/typography/_article.scss */
   .mce-content-body blockquote:after,
   article blockquote:after {
     color: #979797;
@@ -5348,19 +5357,19 @@ article {
     line-height: 0.1em;
     margin-left: 0.25em;
     vertical-align: -0.4em; }
-  /* line 126, /www/sites/HbgPrime/wwwroot/source/sass/typography/_article.scss */
+  /* line 127, /www/sites/HbgPrime/wwwroot/source/sass/typography/_article.scss */
   .mce-content-body blockquote p,
   article blockquote p {
     display: inline;
     margin: 0; }
-  /* line 131, /www/sites/HbgPrime/wwwroot/source/sass/typography/_article.scss */
+  /* line 132, /www/sites/HbgPrime/wwwroot/source/sass/typography/_article.scss */
   .mce-content-body img,
   article img {
     display: block;
     max-width: 100%;
     height: auto; }
   @media print {
-    /* line 138, /www/sites/HbgPrime/wwwroot/source/sass/typography/_article.scss */
+    /* line 139, /www/sites/HbgPrime/wwwroot/source/sass/typography/_article.scss */
     .mce-content-body a::after,
     article a::after {
       display: inline;
@@ -5369,7 +5378,7 @@ article {
       font-size: .8em;
       word-break: break-all;
       text-decoration: none; } }
-  /* line 148, /www/sites/HbgPrime/wwwroot/source/sass/typography/_article.scss */
+  /* line 149, /www/sites/HbgPrime/wwwroot/source/sass/typography/_article.scss */
   .mce-content-body p, .mce-content-body h1, .mce-content-body h2, .mce-content-body h3, .mce-content-body h4, .mce-content-body .widget_calendar caption, .widget_calendar .mce-content-body caption, .mce-content-body h5, .mce-content-body h6, .mce-content-body li, .mce-content-body .wp-caption,
   article p,
   article h1,
@@ -5384,7 +5393,7 @@ article {
   article .wp-caption {
     max-width: 700px; }
     @media print {
-      /* line 148, /www/sites/HbgPrime/wwwroot/source/sass/typography/_article.scss */
+      /* line 149, /www/sites/HbgPrime/wwwroot/source/sass/typography/_article.scss */
       .mce-content-body p, .mce-content-body h1, .mce-content-body h2, .mce-content-body h3, .mce-content-body h4, .mce-content-body .widget_calendar caption, .widget_calendar .mce-content-body caption, .mce-content-body h5, .mce-content-body h6, .mce-content-body li, .mce-content-body .wp-caption,
       article p,
       article h1,
@@ -5399,7 +5408,7 @@ article {
       article .wp-caption {
         max-width: none !important; } }
 
-/* line 157, /www/sites/HbgPrime/wwwroot/source/sass/typography/_article.scss */
+/* line 158, /www/sites/HbgPrime/wwwroot/source/sass/typography/_article.scss */
 hr {
   position: relative;
   height: 4px;
@@ -5407,15 +5416,15 @@ hr {
   background-color: #e7e5e1;
   border: none; }
 
-/* line 165, /www/sites/HbgPrime/wwwroot/source/sass/typography/_article.scss */
+/* line 166, /www/sites/HbgPrime/wwwroot/source/sass/typography/_article.scss */
 article + .page-footer {
   margin-top: 30px; }
 
-/* line 169, /www/sites/HbgPrime/wwwroot/source/sass/typography/_article.scss */
+/* line 170, /www/sites/HbgPrime/wwwroot/source/sass/typography/_article.scss */
 .page-footer {
   font-size: .9em; }
 
-/* line 173, /www/sites/HbgPrime/wwwroot/source/sass/typography/_article.scss */
+/* line 174, /www/sites/HbgPrime/wwwroot/source/sass/typography/_article.scss */
 .mce-content-body img[data-wp-more="printbreak"] {
   background: transparent url("../images/printbreak.png") repeat-y scroll center center; }
 
