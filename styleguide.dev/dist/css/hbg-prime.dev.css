@@ -6791,7 +6791,6 @@ button.btn-icon {
 .hero {
   position: relative;
   width: 100%;
-  min-height: 350px;
   background-color: #f6f5f2;
   background-size: cover;
   background-position: center center; }
@@ -9329,6 +9328,7 @@ body:not(.material-no-shadow) .post .post-full, body:not(.material-no-shadow) .p
 
 /* line 83, /www/sites/HbgPrime/wwwroot/source/sass/component/stripe/_stripe.scss */
 .has-stripe.has-stripe {
+  position: relative;
   padding-left: 10px; }
   @media (min-width: 469px) {
     /* line 83, /www/sites/HbgPrime/wwwroot/source/sass/component/stripe/_stripe.scss */
@@ -9343,7 +9343,7 @@ body:not(.material-no-shadow) .post .post-full, body:not(.material-no-shadow) .p
     .has-stripe.has-stripe {
       padding-left: 25px; } }
 
-/* line 99, /www/sites/HbgPrime/wwwroot/source/sass/component/stripe/_stripe.scss */
+/* line 100, /www/sites/HbgPrime/wwwroot/source/sass/component/stripe/_stripe.scss */
 .stripe {
   position: absolute;
   top: 0;
@@ -9371,15 +9371,15 @@ body:not(.material-no-shadow) .post .post-full, body:not(.material-no-shadow) .p
   .stripe div:nth-child(5) {
     background-color: #000; }
   @media (min-width: 469px) {
-    /* line 99, /www/sites/HbgPrime/wwwroot/source/sass/component/stripe/_stripe.scss */
+    /* line 100, /www/sites/HbgPrime/wwwroot/source/sass/component/stripe/_stripe.scss */
     .stripe {
       width: 17px; } }
   @media (min-width: 769px) {
-    /* line 99, /www/sites/HbgPrime/wwwroot/source/sass/component/stripe/_stripe.scss */
+    /* line 100, /www/sites/HbgPrime/wwwroot/source/sass/component/stripe/_stripe.scss */
     .stripe {
       width: 20px; } }
   @media (min-width: 961px) {
-    /* line 99, /www/sites/HbgPrime/wwwroot/source/sass/component/stripe/_stripe.scss */
+    /* line 100, /www/sites/HbgPrime/wwwroot/source/sass/component/stripe/_stripe.scss */
     .stripe {
       width: 25px; } }
   /* line 57, /www/sites/HbgPrime/wwwroot/source/sass/component/stripe/_stripe.scss */
@@ -9459,19 +9459,43 @@ body:not(.material-no-shadow) .post .post-full, body:not(.material-no-shadow) .p
   .theme-purple .stripe:not(.stripe-red):not(.stripe-blue):not(.stripe-green):not(.stripe-purple) div:nth-child(5) {
     background-color: #a61380; }
 
-/* line 130, /www/sites/HbgPrime/wwwroot/source/sass/component/stripe/_stripe.scss */
+/* line 131, /www/sites/HbgPrime/wwwroot/source/sass/component/stripe/_stripe.scss */
+.stripe-sm {
+  width: 10px; }
+
+/* line 135, /www/sites/HbgPrime/wwwroot/source/sass/component/stripe/_stripe.scss */
+.has-stripe.has-stripe-sm {
+  padding-left: 10px; }
+
+/* line 139, /www/sites/HbgPrime/wwwroot/source/sass/component/stripe/_stripe.scss */
+.stripe-md {
+  width: 17px; }
+
+/* line 143, /www/sites/HbgPrime/wwwroot/source/sass/component/stripe/_stripe.scss */
+.has-stripe.has-stripe-md {
+  padding-left: 17px; }
+
+/* line 147, /www/sites/HbgPrime/wwwroot/source/sass/component/stripe/_stripe.scss */
+.stripe-lg {
+  width: 20px; }
+
+/* line 151, /www/sites/HbgPrime/wwwroot/source/sass/component/stripe/_stripe.scss */
+.has-stripe.has-stripe-lg {
+  padding-left: 20px; }
+
+/* line 155, /www/sites/HbgPrime/wwwroot/source/sass/component/stripe/_stripe.scss */
 .stripe-percentage {
   width: 3.57%; }
   @media (min-width: 469px) {
-    /* line 130, /www/sites/HbgPrime/wwwroot/source/sass/component/stripe/_stripe.scss */
+    /* line 155, /www/sites/HbgPrime/wwwroot/source/sass/component/stripe/_stripe.scss */
     .stripe-percentage {
       width: 3.57%; } }
   @media (min-width: 769px) {
-    /* line 130, /www/sites/HbgPrime/wwwroot/source/sass/component/stripe/_stripe.scss */
+    /* line 155, /www/sites/HbgPrime/wwwroot/source/sass/component/stripe/_stripe.scss */
     .stripe-percentage {
       width: 2.5%; } }
   @media (min-width: 961px) {
-    /* line 130, /www/sites/HbgPrime/wwwroot/source/sass/component/stripe/_stripe.scss */
+    /* line 155, /www/sites/HbgPrime/wwwroot/source/sass/component/stripe/_stripe.scss */
     .stripe-percentage {
       width: 2.5%; } }
 
