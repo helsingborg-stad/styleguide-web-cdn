@@ -12869,6 +12869,53 @@ option {
 .input-group-lg .form-control {
   height: 54px; }
 
+/* line 92, /www/sites/HbgPrime/wwwroot/source/sass/component/form/_input-group.scss */
+.input-group .form-notice {
+  position: absolute;
+  z-index: 9000;
+  bottom: -8px;
+  left: 50%;
+  -webkit-transform: translateY(100%) translateX(-50%);
+          transform: translateY(100%) translateX(-50%);
+  display: block;
+  white-space: nowrap;
+  text-align: center;
+  background-color: rgba(37, 37, 37, 0.9);
+  color: #fff;
+  padding: 3px 8px;
+  line-height: 1.6;
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: normal;
+  color: #fff !important; }
+  /* line 42, /www/sites/HbgPrime/wwwroot/source/sass/mixin/_material.scss */
+  body:not(.material-no-radius) .input-group .form-notice {
+    border-radius: 2px; }
+  /* line 2, /www/sites/HbgPrime/wwwroot/source/sass/mixin/_material.scss */
+  body:not(.material-no-shadow) .input-group .form-notice {
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.08); }
+    @media print {
+      /* line 2, /www/sites/HbgPrime/wwwroot/source/sass/mixin/_material.scss */
+      body:not(.material-no-shadow) .input-group .form-notice {
+        box-shadow: none; } }
+  /* line 116, /www/sites/HbgPrime/wwwroot/source/sass/component/form/_input-group.scss */
+  .input-group .form-notice::before {
+    content: '';
+    display: block;
+    position: absolute;
+    z-index: 9000;
+    top: -4px;
+    left: 50%;
+    -webkit-transform: translateY(0%) translateX(-50%);
+            transform: translateY(0%) translateX(-50%);
+    opacity: .9;
+    width: 0;
+    height: 0;
+    border-top: none;
+    border-right: 5px solid transparent;
+    border-bottom: 5px solid #252525;
+    border-left: 5px solid transparent; }
+
 /* line 14, /www/sites/HbgPrime/wwwroot/source/sass/component/form/_datepicker.scss */
 .ui-datepicker {
   position: relative;

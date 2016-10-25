@@ -14635,7 +14635,7 @@ var hyperformWrapper = hyperform(window, {
         valid: 'valid',
         invalid: 'invalid',
         validated: 'validated',
-        warning: 'text-danger text-sm',
+        warning: 'form-notice text-danger text-sm'
     }
 });
 
@@ -14758,47 +14758,6 @@ HelsingborgPrime.Component.Accordion = (function ($) {
     };
 
     return new Accordion();
-
-})(jQuery);
-
-//
-// @name Modal
-// @description  Show accodrion dropdown, make linkable by updating adress bar
-//
-HelsingborgPrime = HelsingborgPrime || {};
-HelsingborgPrime.Component = HelsingborgPrime.Component || {};
-
-HelsingborgPrime.Component.Dropdown = (function ($) {
-
-    function Dropdown() {
-        this.handleEvents();
-    }
-
-    Dropdown.prototype.handleEvents = function () {
-        $('[data-dropdown]').on('click', function (e) {
-            e.preventDefault();
-
-            var targetElement = $(this).attr('data-dropdown');
-            $(targetElement).toggleClass('dropdown-target-open');
-            $(this).toggleClass('dropdown-open');
-            $(this).parent().find(targetElement).toggle();
-            $(this).parent().find(targetElement).find('input[data-dropdown-focus]').focus();
-        });
-
-        $('body').on('click', function (e) {
-            var $target = $(e.target);
-
-            if ($target.closest('.dropdown-target-open').length || $target.closest('[data-dropdown]').length || $target.closest('.backdrop').length) {
-                return;
-            }
-
-            $('[data-dropdown].dropdown-open').removeClass('dropdown-open');
-            $('.dropdown-target-open').toggle();
-            $('.dropdown-target-open').removeClass('dropdown-target-open is-highlighted');
-        });
-    };
-
-    return new Dropdown();
 
 })(jQuery);
 
@@ -15421,210 +15380,43 @@ HelsingborgPrime.Component.TagManager = (function ($) {
 })(jQuery);
 
 //
-// @name Cookie consent
-//
-HelsingborgPrime = HelsingborgPrime || {};
-HelsingborgPrime.Prompt = HelsingborgPrime.Prompt || {};
-
-HelsingborgPrime.Prompt.CookieConsent = (function ($) {
-
-    var useLocalStorage = true;
-    var animationSpeed = 1000;
-
-    function CookieConsent() {
-        this.init();
-    }
-
-    CookieConsent.prototype.init = function () {
-        var showCookieConsent = (HelsingborgPrime.Args.get('cookieConsent.show')) ? HelsingborgPrime.Args.get('cookieConsent.show') : true;
-
-        if (showCookieConsent && !this.hasAccepted()) {
-            this.displayConsent();
-
-            $(document).on('click', '[data-action="cookie-consent"]', function (e) {
-                e.preventDefault();
-                var btn = $(e.target).closest('button');
-                this.accept();
-            }.bind(this));
-        }
-    };
-
-    CookieConsent.prototype.displayConsent = function() {
-        var wrapper = $('body');
-
-        if ($('#wrapper:first-child').length > 0) {
-            wrapper = $('#wrapper:first-child');
-        }
-
-        var consentText = 'This website uses cookies to ensure you get the best experience browsing the website.';
-        if (HelsingborgPrime.Args.get('cookieConsent.message')) {
-            consentText = HelsingborgPrime.Args.get('cookieConsent.message') ? HelsingborgPrime.Args.get('cookieConsent.message') : 'This website is using cookies to give you the best experience possible.';
-        }
-
-        var buttonText = 'Got it';
-        if (HelsingborgPrime.Args.get('cookieConsent.button')) {
-            buttonText = HelsingborgPrime.Args.get('cookieConsent.button') ? HelsingborgPrime.Args.get('cookieConsent.button') : 'Okey';
-        }
-
-        var placement = HelsingborgPrime.Args.get('cookieConsent.placement') ? HelsingborgPrime.Args.get('cookieConsent.placement') : null;
-
-        wrapper.prepend('\
-            <div id="cookie-consent" class="notice info gutter gutter-vertical ' + placement + '" style="display:none;">\
-                <div class="container"><div class="grid grid-table-md grid-va-middle">\
-                    <div class="grid-fit-content"><i class="pricon pricon-info-o"></i></div>\
-                    <div class="grid-auto">' + consentText + '</div>\
-                    <div class="grid-fit-content text-right-md text-right-lg"><button class="btn btn-primary" data-action="cookie-consent">' + buttonText + '</button></div>\
-                </div></div>\
-            </div>\
-        ');
-
-        $('#cookie-consent').show();
-    };
-
-    CookieConsent.prototype.hasAccepted = function() {
-        if (useLocalStorage) {
-            return window.localStorage.getItem('cookie-consent');
-        } else {
-            return HelsingborgPrime.Helper.Cookie.check('cookie-consent', true);
-        }
-    };
-
-    CookieConsent.prototype.accept = function() {
-        $('#cookie-consent').remove();
-
-        if (useLocalStorage) {
-            try {
-                window.localStorage.setItem('cookie-consent', true);
-                return true;
-            } catch(e) {
-                return false;
-            }
-        } else {
-            HelsingborgPrime.Helper.Cookie.set('cookie-consent', true, 60);
-        }
-    };
-
-    return new CookieConsent();
-
-})(jQuery);
-
-//
 // @name Modal
-// @description  Prevent scrolling when modal is open (or #modal-* exists in url)
+// @description  Show accodrion dropdown, make linkable by updating adress bar
 //
 HelsingborgPrime = HelsingborgPrime || {};
-HelsingborgPrime.Prompt = HelsingborgPrime.Prompt || {};
+HelsingborgPrime.Component = HelsingborgPrime.Component || {};
 
-HelsingborgPrime.Prompt.ModalLimit = (function ($) {
+HelsingborgPrime.Component.Dropdown = (function ($) {
 
-    function ModalLimit() {
-    	this.init();
+    function Dropdown() {
+        this.handleEvents();
+    }
 
-        $('[data-action="modal-close"]').on('click', function (e) {
+    Dropdown.prototype.handleEvents = function () {
+        $('[data-dropdown]').on('click', function (e) {
             e.preventDefault();
-            $(e.target).parents('.modal').removeClass('modal-open').hide();
+
+            var targetElement = $(this).attr('data-dropdown');
+            $(targetElement).toggleClass('dropdown-target-open');
+            $(this).toggleClass('dropdown-open');
+            $(this).parent().find(targetElement).toggle();
+            $(this).parent().find(targetElement).find('input[data-dropdown-focus]').focus();
         });
-    }
 
-    ModalLimit.prototype.init = function () {
-	    this.toggleModalClass();
+        $('body').on('click', function (e) {
+            var $target = $(e.target);
 
-        $(window).bind('hashchange', function() {
-			this.toggleModalClass();
-		}.bind(this));
+            if ($target.closest('.dropdown-target-open').length || $target.closest('[data-dropdown]').length || $target.closest('.backdrop').length) {
+                return;
+            }
 
-        $('.modal a[href="#close"]').on('click', function (e) {
-            $('html, body').removeClass('overflow-hidden');
+            $('[data-dropdown].dropdown-open').removeClass('dropdown-open');
+            $('.dropdown-target-open').toggle();
+            $('.dropdown-target-open').removeClass('dropdown-target-open is-highlighted');
         });
     };
 
-    ModalLimit.prototype.toggleModalClass = function(){
-	    if (window.location.hash.indexOf('modal-') > 0 && $(window.location.hash).length > 0) {
-			$('html').addClass('overflow-hidden');
-		} else {
-			$('html').removeClass('overflow-hidden');
-		}
-    };
-
-    return new ModalLimit();
-
-})(jQuery);
-
-//
-// @name Search top
-// @description  Open the top search
-//
-HelsingborgPrime = HelsingborgPrime || {};
-HelsingborgPrime.Prompt = HelsingborgPrime.Prompt || {};
-
-HelsingborgPrime.Prompt.SearchTop = (function ($) {
-
-    function SearchTop() {
-        this.bindEvents();
-    }
-
-    SearchTop.prototype.bindEvents = function () {
-        $('.toggle-search-top').on('click', function (e) {
-            this.toggle(e);
-        }.bind(this));
-    };
-
-    SearchTop.prototype.toggle = function (e) {
-        e.preventDefault();
-        $('.search-top').slideToggle(300);
-        $('.search-top').find('input[type=search]').focus();
-    };
-
-    return new SearchTop();
-
-})(jQuery);
-
-HelsingborgPrime = HelsingborgPrime || {};
-HelsingborgPrime.Prompt = HelsingborgPrime.Prompt || {};
-
-HelsingborgPrime.Prompt.Share = (function ($) {
-
-    function Share() {
-        $(function(){
-
-            this.handleEvents();
-
-        }.bind(this));
-    }
-
-    Share.prototype.openPopup = function(element) {
-        // Width and height of the popup
-        var width = 626;
-        var height = 305;
-
-        // Gets the href from the button/link
-        var url = $(element).closest('a').attr('href');
-
-        // Calculate popup position
-        var leftPosition = (window.screen.width / 2) - ((width / 2) + 10);
-        var topPosition = (window.screen.height / 2) - ((height / 2) + 50);
-
-        // Popup window features
-        var windowFeatures = "status=no,height=" + height + ",width=" + width + ",resizable=no,left=" + leftPosition + ",top=" + topPosition + ",screenX=" + leftPosition + ",screenY=" + topPosition + ",toolbar=no,menubar=no,scrollbars=no,location=no,directories=no";
-
-        // Open popup
-        window.open(url, 'Share', windowFeatures);
-    }
-
-    /**
-     * Keeps track of events
-     * @return {void}
-     */
-    Share.prototype.handleEvents = function() {
-
-        $(document).on('click', '[data-action="share-popup"]', function (e) {
-            e.preventDefault();
-            this.openPopup(e.target);
-        }.bind(this));
-
-    }
-
-    return new Share();
+    return new Dropdown();
 
 })(jQuery);
 
@@ -16141,116 +15933,6 @@ HelsingborgPrime.Helper.MenuPriority = (function ($) {
 })(jQuery);
 
 //
-// @name Video Player
-// @description  Video functionalty for vimeo and youtube.
-//
-HelsingborgPrime = HelsingborgPrime || {};
-HelsingborgPrime.Helper = HelsingborgPrime.Helper || {};
-
-HelsingborgPrime.Helper.Player = (function ($) {
-
-    //Declarations
-    var playerFirstInitYoutube = true; //Indicates wheter to load Youtube api or not.
-    var playerFirstInitVimeo = true; //Indicates wheter to load Vimeo api or not.
-    var playerFirstInitBambuser = true; //Indicates wheter to load Bambuser api or not.
-
-    //Check for players, if exists; Run player script.
-    function Player() {
-        if(jQuery(".player").length) {
-            this.init();
-        }
-    }
-
-    //Listen for play argument
-    Player.prototype.init = function () {
-        jQuery(".player a").on('click', function (e) {
-            this.initVideoPlayer($(e.target));
-        }.bind(this));
-    };
-
-    //Init player on start
-    Player.prototype.initVideoPlayer = function(e) {
-        var videoid = e.attr("data-video-id");
-        if(this.isNumeric(videoid)) {
-            this.initVimeo(videoid, e);
-        } else {
-            this.initYoutube(videoid, e);
-        }
-    };
-
-    Player.prototype.initVimeo = function(videoid,target) {
-
-        //Remove controls
-        this.toggleControls(target);
-
-        //Append player
-        $(target).parent().append('<iframe src="//player.vimeo.com/video/'+videoid+'?portrait=0&color=333&autoplay=1" width="100%" height="100%" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>');
-
-        //Not first run anymore
-        this.playerFirstInitVimeo = false;
-    };
-
-    Player.prototype.initYoutube = function(videoid,target) {
-
-        //Remove controls
-        this.toggleControls(target);
-
-        //Append player
-        $(target).parent().append('<iframe type="text/html" width="100%" height="100%"src="//www.youtube.com/embed/' +videoid+ '?autoplay=1&autohide=1&cc_load_policy=0&enablejsapi=1&modestbranding=1&origin=styleguide.dev&showinfo=0&autohide=1&iv_load_policy=3" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>');
-
-        //Not first run anymore
-        this.playerFirstInitYoutube = false;
-    };
-
-    Player.prototype.initBambuser = function(videoid,target) {
-
-        //Remove controls
-        this.toggleControls(target);
-
-        //Append player
-        $(target).parent().append('<iframe type="text/html" width="100%" height="100%"src="//embed.bambuser.com/broadcast/' +videoid+ '?autoplay=1" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>');
-
-        //Not first run anymore
-        this.playerFirstInitBambuser = false;
-    };
-
-    Player.prototype.toggleControls = function(target) {
-        if ( typeof target !== 'undefined' ) {
-            target = target.parent();
-            if(target.hasClass("is-playing")) {
-                target.removeClass("is-playing");
-                $("html").removeClass("video-is-playing");
-            } else {
-                target.addClass("is-playing");
-                $("html").addClass("video-is-playing");
-            }
-        } else {
-            console.log("Error: Could not start player. Wrapper not found.");
-        }
-    };
-
-    //Reset all players, or with target id.
-    Player.prototype.resetPlayer = function(target) {
-       if (typeof target !== 'undefined') {
-            $(".player iframe").remove();
-            $(".player").removeClass("is-playing");
-            $("html").removeClass("video-is-playing");
-        } else {
-            $("iframe",target).remove();
-            target.removeClass("is-playing");
-            $("html").removeClass("video-is-playing");
-        }
-    };
-
-    Player.prototype.isNumeric = function(n) {
-        return !isNaN(parseFloat(n)) && isFinite(n);
-    };
-
-    return new Player();
-
-})(jQuery);
-
-//
 // @name EqualHeight
 // @description  Sets element heights equally to the heighest item
 //
@@ -16377,5 +16059,323 @@ HelsingborgPrime.Helper.ToggleSubmenuItems = (function ($) {
     };
 
     return new ToggleSubmenuItems();
+
+})(jQuery);
+
+//
+// @name Video Player
+// @description  Video functionalty for vimeo and youtube.
+//
+HelsingborgPrime = HelsingborgPrime || {};
+HelsingborgPrime.Helper = HelsingborgPrime.Helper || {};
+
+HelsingborgPrime.Helper.Player = (function ($) {
+
+    //Declarations
+    var playerFirstInitYoutube = true; //Indicates wheter to load Youtube api or not.
+    var playerFirstInitVimeo = true; //Indicates wheter to load Vimeo api or not.
+    var playerFirstInitBambuser = true; //Indicates wheter to load Bambuser api or not.
+
+    //Check for players, if exists; Run player script.
+    function Player() {
+        if(jQuery(".player").length) {
+            this.init();
+        }
+    }
+
+    //Listen for play argument
+    Player.prototype.init = function () {
+        jQuery(".player a").on('click', function (e) {
+            this.initVideoPlayer($(e.target));
+        }.bind(this));
+    };
+
+    //Init player on start
+    Player.prototype.initVideoPlayer = function(e) {
+        var videoid = e.attr("data-video-id");
+        if(this.isNumeric(videoid)) {
+            this.initVimeo(videoid, e);
+        } else {
+            this.initYoutube(videoid, e);
+        }
+    };
+
+    Player.prototype.initVimeo = function(videoid,target) {
+
+        //Remove controls
+        this.toggleControls(target);
+
+        //Append player
+        $(target).parent().append('<iframe src="//player.vimeo.com/video/'+videoid+'?portrait=0&color=333&autoplay=1" width="100%" height="100%" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>');
+
+        //Not first run anymore
+        this.playerFirstInitVimeo = false;
+    };
+
+    Player.prototype.initYoutube = function(videoid,target) {
+
+        //Remove controls
+        this.toggleControls(target);
+
+        //Append player
+        $(target).parent().append('<iframe type="text/html" width="100%" height="100%"src="//www.youtube.com/embed/' +videoid+ '?autoplay=1&autohide=1&cc_load_policy=0&enablejsapi=1&modestbranding=1&origin=styleguide.dev&showinfo=0&autohide=1&iv_load_policy=3" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>');
+
+        //Not first run anymore
+        this.playerFirstInitYoutube = false;
+    };
+
+    Player.prototype.initBambuser = function(videoid,target) {
+
+        //Remove controls
+        this.toggleControls(target);
+
+        //Append player
+        $(target).parent().append('<iframe type="text/html" width="100%" height="100%"src="//embed.bambuser.com/broadcast/' +videoid+ '?autoplay=1" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>');
+
+        //Not first run anymore
+        this.playerFirstInitBambuser = false;
+    };
+
+    Player.prototype.toggleControls = function(target) {
+        if ( typeof target !== 'undefined' ) {
+            target = target.parent();
+            if(target.hasClass("is-playing")) {
+                target.removeClass("is-playing");
+                $("html").removeClass("video-is-playing");
+            } else {
+                target.addClass("is-playing");
+                $("html").addClass("video-is-playing");
+            }
+        } else {
+            console.log("Error: Could not start player. Wrapper not found.");
+        }
+    };
+
+    //Reset all players, or with target id.
+    Player.prototype.resetPlayer = function(target) {
+       if (typeof target !== 'undefined') {
+            $(".player iframe").remove();
+            $(".player").removeClass("is-playing");
+            $("html").removeClass("video-is-playing");
+        } else {
+            $("iframe",target).remove();
+            target.removeClass("is-playing");
+            $("html").removeClass("video-is-playing");
+        }
+    };
+
+    Player.prototype.isNumeric = function(n) {
+        return !isNaN(parseFloat(n)) && isFinite(n);
+    };
+
+    return new Player();
+
+})(jQuery);
+
+//
+// @name Cookie consent
+//
+HelsingborgPrime = HelsingborgPrime || {};
+HelsingborgPrime.Prompt = HelsingborgPrime.Prompt || {};
+
+HelsingborgPrime.Prompt.CookieConsent = (function ($) {
+
+    var useLocalStorage = true;
+    var animationSpeed = 1000;
+
+    function CookieConsent() {
+        this.init();
+    }
+
+    CookieConsent.prototype.init = function () {
+        var showCookieConsent = (HelsingborgPrime.Args.get('cookieConsent.show')) ? HelsingborgPrime.Args.get('cookieConsent.show') : true;
+
+        if (showCookieConsent && !this.hasAccepted()) {
+            this.displayConsent();
+
+            $(document).on('click', '[data-action="cookie-consent"]', function (e) {
+                e.preventDefault();
+                var btn = $(e.target).closest('button');
+                this.accept();
+            }.bind(this));
+        }
+    };
+
+    CookieConsent.prototype.displayConsent = function() {
+        var wrapper = $('body');
+
+        if ($('#wrapper:first-child').length > 0) {
+            wrapper = $('#wrapper:first-child');
+        }
+
+        var consentText = 'This website uses cookies to ensure you get the best experience browsing the website.';
+        if (HelsingborgPrime.Args.get('cookieConsent.message')) {
+            consentText = HelsingborgPrime.Args.get('cookieConsent.message') ? HelsingborgPrime.Args.get('cookieConsent.message') : 'This website is using cookies to give you the best experience possible.';
+        }
+
+        var buttonText = 'Got it';
+        if (HelsingborgPrime.Args.get('cookieConsent.button')) {
+            buttonText = HelsingborgPrime.Args.get('cookieConsent.button') ? HelsingborgPrime.Args.get('cookieConsent.button') : 'Okey';
+        }
+
+        var placement = HelsingborgPrime.Args.get('cookieConsent.placement') ? HelsingborgPrime.Args.get('cookieConsent.placement') : null;
+
+        wrapper.prepend('\
+            <div id="cookie-consent" class="notice info gutter gutter-vertical ' + placement + '" style="display:none;">\
+                <div class="container"><div class="grid grid-table-md grid-va-middle">\
+                    <div class="grid-fit-content"><i class="pricon pricon-info-o"></i></div>\
+                    <div class="grid-auto">' + consentText + '</div>\
+                    <div class="grid-fit-content text-right-md text-right-lg"><button class="btn btn-primary" data-action="cookie-consent">' + buttonText + '</button></div>\
+                </div></div>\
+            </div>\
+        ');
+
+        $('#cookie-consent').show();
+    };
+
+    CookieConsent.prototype.hasAccepted = function() {
+        if (useLocalStorage) {
+            return window.localStorage.getItem('cookie-consent');
+        } else {
+            return HelsingborgPrime.Helper.Cookie.check('cookie-consent', true);
+        }
+    };
+
+    CookieConsent.prototype.accept = function() {
+        $('#cookie-consent').remove();
+
+        if (useLocalStorage) {
+            try {
+                window.localStorage.setItem('cookie-consent', true);
+                return true;
+            } catch(e) {
+                return false;
+            }
+        } else {
+            HelsingborgPrime.Helper.Cookie.set('cookie-consent', true, 60);
+        }
+    };
+
+    return new CookieConsent();
+
+})(jQuery);
+
+//
+// @name Modal
+// @description  Prevent scrolling when modal is open (or #modal-* exists in url)
+//
+HelsingborgPrime = HelsingborgPrime || {};
+HelsingborgPrime.Prompt = HelsingborgPrime.Prompt || {};
+
+HelsingborgPrime.Prompt.ModalLimit = (function ($) {
+
+    function ModalLimit() {
+    	this.init();
+
+        $('[data-action="modal-close"]').on('click', function (e) {
+            e.preventDefault();
+            $(e.target).parents('.modal').removeClass('modal-open').hide();
+        });
+    }
+
+    ModalLimit.prototype.init = function () {
+	    this.toggleModalClass();
+
+        $(window).bind('hashchange', function() {
+			this.toggleModalClass();
+		}.bind(this));
+
+        $('.modal a[href="#close"]').on('click', function (e) {
+            $('html, body').removeClass('overflow-hidden');
+        });
+    };
+
+    ModalLimit.prototype.toggleModalClass = function(){
+	    if (window.location.hash.indexOf('modal-') > 0 && $(window.location.hash).length > 0) {
+			$('html').addClass('overflow-hidden');
+		} else {
+			$('html').removeClass('overflow-hidden');
+		}
+    };
+
+    return new ModalLimit();
+
+})(jQuery);
+
+//
+// @name Search top
+// @description  Open the top search
+//
+HelsingborgPrime = HelsingborgPrime || {};
+HelsingborgPrime.Prompt = HelsingborgPrime.Prompt || {};
+
+HelsingborgPrime.Prompt.SearchTop = (function ($) {
+
+    function SearchTop() {
+        this.bindEvents();
+    }
+
+    SearchTop.prototype.bindEvents = function () {
+        $('.toggle-search-top').on('click', function (e) {
+            this.toggle(e);
+        }.bind(this));
+    };
+
+    SearchTop.prototype.toggle = function (e) {
+        e.preventDefault();
+        $('.search-top').slideToggle(300);
+        $('.search-top').find('input[type=search]').focus();
+    };
+
+    return new SearchTop();
+
+})(jQuery);
+
+HelsingborgPrime = HelsingborgPrime || {};
+HelsingborgPrime.Prompt = HelsingborgPrime.Prompt || {};
+
+HelsingborgPrime.Prompt.Share = (function ($) {
+
+    function Share() {
+        $(function(){
+
+            this.handleEvents();
+
+        }.bind(this));
+    }
+
+    Share.prototype.openPopup = function(element) {
+        // Width and height of the popup
+        var width = 626;
+        var height = 305;
+
+        // Gets the href from the button/link
+        var url = $(element).closest('a').attr('href');
+
+        // Calculate popup position
+        var leftPosition = (window.screen.width / 2) - ((width / 2) + 10);
+        var topPosition = (window.screen.height / 2) - ((height / 2) + 50);
+
+        // Popup window features
+        var windowFeatures = "status=no,height=" + height + ",width=" + width + ",resizable=no,left=" + leftPosition + ",top=" + topPosition + ",screenX=" + leftPosition + ",screenY=" + topPosition + ",toolbar=no,menubar=no,scrollbars=no,location=no,directories=no";
+
+        // Open popup
+        window.open(url, 'Share', windowFeatures);
+    }
+
+    /**
+     * Keeps track of events
+     * @return {void}
+     */
+    Share.prototype.handleEvents = function() {
+
+        $(document).on('click', '[data-action="share-popup"]', function (e) {
+            e.preventDefault();
+            this.openPopup(e.target);
+        }.bind(this));
+
+    }
+
+    return new Share();
 
 })(jQuery);
