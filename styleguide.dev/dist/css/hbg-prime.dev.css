@@ -4008,9 +4008,9 @@ b {
   padding-right: 0; }
   /* line 57, /www/sites/HbgPrime/wwwroot/source/sass/mixin/_grid.scss */
   html:not(.no-flexbox) .grid-table {
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
+    display: -webkit-flex !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
     -webkit-flex: 0 1 auto;
         -ms-flex: 0 1 auto;
             flex: 0 1 auto;
@@ -4085,9 +4085,9 @@ b {
     padding-right: 0; }
     /* line 57, /www/sites/HbgPrime/wwwroot/source/sass/mixin/_grid.scss */
     html:not(.no-flexbox) .grid-table-xs {
-      display: -webkit-flex;
-      display: -ms-flexbox;
-      display: flex;
+      display: -webkit-flex !important;
+      display: -ms-flexbox !important;
+      display: flex !important;
       -webkit-flex: 0 1 auto;
           -ms-flex: 0 1 auto;
               flex: 0 1 auto;
@@ -4159,9 +4159,9 @@ b {
     padding-right: 0; }
     /* line 57, /www/sites/HbgPrime/wwwroot/source/sass/mixin/_grid.scss */
     html:not(.no-flexbox) .grid-table-sm {
-      display: -webkit-flex;
-      display: -ms-flexbox;
-      display: flex;
+      display: -webkit-flex !important;
+      display: -ms-flexbox !important;
+      display: flex !important;
       -webkit-flex: 0 1 auto;
           -ms-flex: 0 1 auto;
               flex: 0 1 auto;
@@ -4233,9 +4233,9 @@ b {
     padding-right: 0; }
     /* line 57, /www/sites/HbgPrime/wwwroot/source/sass/mixin/_grid.scss */
     html:not(.no-flexbox) .grid-table-md {
-      display: -webkit-flex;
-      display: -ms-flexbox;
-      display: flex;
+      display: -webkit-flex !important;
+      display: -ms-flexbox !important;
+      display: flex !important;
       -webkit-flex: 0 1 auto;
           -ms-flex: 0 1 auto;
               flex: 0 1 auto;
@@ -4307,9 +4307,9 @@ b {
     padding-right: 0; }
     /* line 57, /www/sites/HbgPrime/wwwroot/source/sass/mixin/_grid.scss */
     html:not(.no-flexbox) .grid-table-lg {
-      display: -webkit-flex;
-      display: -ms-flexbox;
-      display: flex;
+      display: -webkit-flex !important;
+      display: -ms-flexbox !important;
+      display: flex !important;
       -webkit-flex: 0 1 auto;
           -ms-flex: 0 1 auto;
               flex: 0 1 auto;
@@ -4981,8 +4981,8 @@ section + section {
   float: right !important; }
 
 /* line 15, /www/sites/HbgPrime/wwwroot/source/sass/mixin/_mixins.scss */
-.clearfix:after, .grid:after, .social-feed-twitter .mod-social-attachment:after,
-.social-feed-facebook .mod-social-attachment:after {
+.clearfix::after, .grid::after, .social-feed-twitter .mod-social-attachment::after,
+.social-feed-facebook .mod-social-attachment::after {
   content: "";
   display: table;
   clear: both; }
@@ -5182,11 +5182,11 @@ h6, .h6 {
 
 /* line 132, /www/sites/HbgPrime/wwwroot/source/sass/typography/_headings.scss */
 .sub-heading {
-  padding: .3em 0;
+  padding: 6px 0;
   border-top: 1px solid #e7e5e1;
   border-bottom: 1px solid #e7e5e1;
   color: #979797;
-  font-size: 1em; }
+  font-size: 1rem; }
 
 /* line 140, /www/sites/HbgPrime/wwwroot/source/sass/typography/_headings.scss */
 .box-filled .sub-heading,
@@ -5226,138 +5226,1284 @@ article {
         padding-bottom: 0;
         margin-bottom: 20px; } }
   /* line 41, /www/sites/HbgPrime/wwwroot/source/sass/typography/_article.scss */
-  .mce-content-body p:first-of-type,
-  article p:first-of-type {
-    margin-top: 1.3em; }
-  /* line 45, /www/sites/HbgPrime/wwwroot/source/sass/typography/_article.scss */
   .mce-content-body strong,
   .mce-content-body b,
   article strong,
   article b {
     font-weight: bold; }
-  /* line 50, /www/sites/HbgPrime/wwwroot/source/sass/typography/_article.scss */
-  .mce-content-body hr + h1,
-  .mce-content-body hr + h2,
-  .mce-content-body hr + h3,
-  .mce-content-body hr + h4,
-  .mce-content-body .widget_calendar hr + caption, .widget_calendar
-  .mce-content-body hr + caption,
-  .mce-content-body hr + h5,
-  .mce-content-body hr + h6,
-  .mce-content-body hr + p,
-  .mce-content-body hr + ol,
-  .mce-content-body hr + ul,
-  .mce-content-body hr + blockquote,
-  .mce-content-body hr + pre,
-  .mce-content-body hr + hr,
-  .mce-content-body hr + img,
-  .mce-content-body hr + .wp-caption,
-  .mce-content-body hr + .notice,
-  .mce-content-body hr + table,
-  .mce-content-body h1 + hr,
-  .mce-content-body h2 + hr,
-  .mce-content-body h3 + hr,
-  .mce-content-body h4 + hr,
-  .mce-content-body .widget_calendar caption + hr, .widget_calendar
-  .mce-content-body caption + hr,
-  .mce-content-body h5 + hr,
-  .mce-content-body h6 + hr,
-  .mce-content-body p + hr,
-  .mce-content-body ol + hr,
-  .mce-content-body ul + hr,
-  .mce-content-body blockquote + hr,
-  .mce-content-body pre + hr,
-  .mce-content-body img + hr,
-  .mce-content-body .wp-caption + hr,
-  .mce-content-body .notice + hr,
-  .mce-content-body table + hr,
+  /* line 45, /www/sites/HbgPrime/wwwroot/source/sass/mixin/_mixins.scss */
+  .mce-content-body h1 + h1, .mce-content-body h1 + h2, .mce-content-body h1 + h3, .mce-content-body h1 + h4, .mce-content-body .widget_calendar h1 + caption, .widget_calendar .mce-content-body h1 + caption, .mce-content-body h1 + h5, .mce-content-body h1 + h6, .mce-content-body h1 + p, .mce-content-body h1 + ol, .mce-content-body h1 + ul, .mce-content-body h1 + blockquote, .mce-content-body h1 + pre, .mce-content-body h1 + img, .mce-content-body h1 + table, .mce-content-body h1 + [class*="ratio-"], .mce-content-body h1 + .wp-caption, .mce-content-body h1 + .wpview, .mce-content-body h1 + .box, .mce-content-body h1 + .dataTables_wrapper, .mce-content-body h1 + .notice, .mce-content-body h2 + h1, .mce-content-body h2 + h2, .mce-content-body h2 + h3, .mce-content-body h2 + h4, .mce-content-body .widget_calendar h2 + caption, .widget_calendar .mce-content-body h2 + caption, .mce-content-body h2 + h5, .mce-content-body h2 + h6, .mce-content-body h2 + p, .mce-content-body h2 + ol, .mce-content-body h2 + ul, .mce-content-body h2 + blockquote, .mce-content-body h2 + pre, .mce-content-body h2 + img, .mce-content-body h2 + table, .mce-content-body h2 + [class*="ratio-"], .mce-content-body h2 + .wp-caption, .mce-content-body h2 + .wpview, .mce-content-body h2 + .box, .mce-content-body h2 + .dataTables_wrapper, .mce-content-body h2 + .notice, .mce-content-body h3 + h1, .mce-content-body h3 + h2, .mce-content-body h3 + h3, .mce-content-body h3 + h4, .mce-content-body .widget_calendar h3 + caption, .widget_calendar .mce-content-body h3 + caption, .mce-content-body h3 + h5, .mce-content-body h3 + h6, .mce-content-body h3 + p, .mce-content-body h3 + ol, .mce-content-body h3 + ul, .mce-content-body h3 + blockquote, .mce-content-body h3 + pre, .mce-content-body h3 + img, .mce-content-body h3 + table, .mce-content-body h3 + [class*="ratio-"], .mce-content-body h3 + .wp-caption, .mce-content-body h3 + .wpview, .mce-content-body h3 + .box, .mce-content-body h3 + .dataTables_wrapper, .mce-content-body h3 + .notice, .mce-content-body h4 + h1, .mce-content-body .widget_calendar caption + h1, .widget_calendar .mce-content-body caption + h1, .mce-content-body h4 + h2, .mce-content-body .widget_calendar caption + h2, .widget_calendar .mce-content-body caption + h2, .mce-content-body h4 + h3, .mce-content-body .widget_calendar caption + h3, .widget_calendar .mce-content-body caption + h3, .mce-content-body h4 + h4, .mce-content-body .widget_calendar caption + h4, .widget_calendar .mce-content-body caption + h4, .mce-content-body .widget_calendar h4 + caption, .widget_calendar .mce-content-body h4 + caption, .mce-content-body .widget_calendar caption + caption, .widget_calendar .mce-content-body caption + caption, .mce-content-body h4 + h5, .mce-content-body .widget_calendar caption + h5, .widget_calendar .mce-content-body caption + h5, .mce-content-body h4 + h6, .mce-content-body .widget_calendar caption + h6, .widget_calendar .mce-content-body caption + h6, .mce-content-body h4 + p, .mce-content-body .widget_calendar caption + p, .widget_calendar .mce-content-body caption + p, .mce-content-body h4 + ol, .mce-content-body .widget_calendar caption + ol, .widget_calendar .mce-content-body caption + ol, .mce-content-body h4 + ul, .mce-content-body .widget_calendar caption + ul, .widget_calendar .mce-content-body caption + ul, .mce-content-body h4 + blockquote, .mce-content-body .widget_calendar caption + blockquote, .widget_calendar .mce-content-body caption + blockquote, .mce-content-body h4 + pre, .mce-content-body .widget_calendar caption + pre, .widget_calendar .mce-content-body caption + pre, .mce-content-body h4 + img, .mce-content-body .widget_calendar caption + img, .widget_calendar .mce-content-body caption + img, .mce-content-body h4 + table, .mce-content-body .widget_calendar caption + table, .widget_calendar .mce-content-body caption + table, .mce-content-body h4 + [class*="ratio-"], .mce-content-body .widget_calendar caption + [class*="ratio-"], .widget_calendar .mce-content-body caption + [class*="ratio-"], .mce-content-body h4 + .wp-caption, .mce-content-body .widget_calendar caption + .wp-caption, .widget_calendar .mce-content-body caption + .wp-caption, .mce-content-body h4 + .wpview, .mce-content-body .widget_calendar caption + .wpview, .widget_calendar .mce-content-body caption + .wpview, .mce-content-body h4 + .box, .mce-content-body .widget_calendar caption + .box, .widget_calendar .mce-content-body caption + .box, .mce-content-body h4 + .dataTables_wrapper, .mce-content-body .widget_calendar caption + .dataTables_wrapper, .widget_calendar .mce-content-body caption + .dataTables_wrapper, .mce-content-body h4 + .notice, .mce-content-body .widget_calendar caption + .notice, .widget_calendar .mce-content-body caption + .notice, .mce-content-body h5 + h1, .mce-content-body h5 + h2, .mce-content-body h5 + h3, .mce-content-body h5 + h4, .mce-content-body .widget_calendar h5 + caption, .widget_calendar .mce-content-body h5 + caption, .mce-content-body h5 + h5, .mce-content-body h5 + h6, .mce-content-body h5 + p, .mce-content-body h5 + ol, .mce-content-body h5 + ul, .mce-content-body h5 + blockquote, .mce-content-body h5 + pre, .mce-content-body h5 + img, .mce-content-body h5 + table, .mce-content-body h5 + [class*="ratio-"], .mce-content-body h5 + .wp-caption, .mce-content-body h5 + .wpview, .mce-content-body h5 + .box, .mce-content-body h5 + .dataTables_wrapper, .mce-content-body h5 + .notice, .mce-content-body h6 + h1, .mce-content-body h6 + h2, .mce-content-body h6 + h3, .mce-content-body h6 + h4, .mce-content-body .widget_calendar h6 + caption, .widget_calendar .mce-content-body h6 + caption, .mce-content-body h6 + h5, .mce-content-body h6 + h6, .mce-content-body h6 + p, .mce-content-body h6 + ol, .mce-content-body h6 + ul, .mce-content-body h6 + blockquote, .mce-content-body h6 + pre, .mce-content-body h6 + img, .mce-content-body h6 + table, .mce-content-body h6 + [class*="ratio-"], .mce-content-body h6 + .wp-caption, .mce-content-body h6 + .wpview, .mce-content-body h6 + .box, .mce-content-body h6 + .dataTables_wrapper, .mce-content-body h6 + .notice, .mce-content-body p + h1, .mce-content-body p + h2, .mce-content-body p + h3, .mce-content-body p + h4, .mce-content-body .widget_calendar p + caption, .widget_calendar .mce-content-body p + caption, .mce-content-body p + h5, .mce-content-body p + h6, .mce-content-body p + p, .mce-content-body p + ol, .mce-content-body p + ul, .mce-content-body p + blockquote, .mce-content-body p + pre, .mce-content-body p + img, .mce-content-body p + table, .mce-content-body p + [class*="ratio-"], .mce-content-body p + .wp-caption, .mce-content-body p + .wpview, .mce-content-body p + .box, .mce-content-body p + .dataTables_wrapper, .mce-content-body p + .notice, .mce-content-body ol + h1, .mce-content-body ol + h2, .mce-content-body ol + h3, .mce-content-body ol + h4, .mce-content-body .widget_calendar ol + caption, .widget_calendar .mce-content-body ol + caption, .mce-content-body ol + h5, .mce-content-body ol + h6, .mce-content-body ol + p, .mce-content-body ol + ol, .mce-content-body ol + ul, .mce-content-body ol + blockquote, .mce-content-body ol + pre, .mce-content-body ol + img, .mce-content-body ol + table, .mce-content-body ol + [class*="ratio-"], .mce-content-body ol + .wp-caption, .mce-content-body ol + .wpview, .mce-content-body ol + .box, .mce-content-body ol + .dataTables_wrapper, .mce-content-body ol + .notice, .mce-content-body ul + h1, .mce-content-body ul + h2, .mce-content-body ul + h3, .mce-content-body ul + h4, .mce-content-body .widget_calendar ul + caption, .widget_calendar .mce-content-body ul + caption, .mce-content-body ul + h5, .mce-content-body ul + h6, .mce-content-body ul + p, .mce-content-body ul + ol, .mce-content-body ul + ul, .mce-content-body ul + blockquote, .mce-content-body ul + pre, .mce-content-body ul + img, .mce-content-body ul + table, .mce-content-body ul + [class*="ratio-"], .mce-content-body ul + .wp-caption, .mce-content-body ul + .wpview, .mce-content-body ul + .box, .mce-content-body ul + .dataTables_wrapper, .mce-content-body ul + .notice, .mce-content-body blockquote + h1, .mce-content-body blockquote + h2, .mce-content-body blockquote + h3, .mce-content-body blockquote + h4, .mce-content-body .widget_calendar blockquote + caption, .widget_calendar .mce-content-body blockquote + caption, .mce-content-body blockquote + h5, .mce-content-body blockquote + h6, .mce-content-body blockquote + p, .mce-content-body blockquote + ol, .mce-content-body blockquote + ul, .mce-content-body blockquote + blockquote, .mce-content-body blockquote + pre, .mce-content-body blockquote + img, .mce-content-body blockquote + table, .mce-content-body blockquote + [class*="ratio-"], .mce-content-body blockquote + .wp-caption, .mce-content-body blockquote + .wpview, .mce-content-body blockquote + .box, .mce-content-body blockquote + .dataTables_wrapper, .mce-content-body blockquote + .notice, .mce-content-body pre + h1, .mce-content-body pre + h2, .mce-content-body pre + h3, .mce-content-body pre + h4, .mce-content-body .widget_calendar pre + caption, .widget_calendar .mce-content-body pre + caption, .mce-content-body pre + h5, .mce-content-body pre + h6, .mce-content-body pre + p, .mce-content-body pre + ol, .mce-content-body pre + ul, .mce-content-body pre + blockquote, .mce-content-body pre + pre, .mce-content-body pre + img, .mce-content-body pre + table, .mce-content-body pre + [class*="ratio-"], .mce-content-body pre + .wp-caption, .mce-content-body pre + .wpview, .mce-content-body pre + .box, .mce-content-body pre + .dataTables_wrapper, .mce-content-body pre + .notice, .mce-content-body img + h1, .mce-content-body img + h2, .mce-content-body img + h3, .mce-content-body img + h4, .mce-content-body .widget_calendar img + caption, .widget_calendar .mce-content-body img + caption, .mce-content-body img + h5, .mce-content-body img + h6, .mce-content-body img + p, .mce-content-body img + ol, .mce-content-body img + ul, .mce-content-body img + blockquote, .mce-content-body img + pre, .mce-content-body img + img, .mce-content-body img + table, .mce-content-body img + [class*="ratio-"], .mce-content-body img + .wp-caption, .mce-content-body img + .wpview, .mce-content-body img + .box, .mce-content-body img + .dataTables_wrapper, .mce-content-body img + .notice, .mce-content-body table + h1, .mce-content-body table + h2, .mce-content-body table + h3, .mce-content-body table + h4, .mce-content-body .widget_calendar table + caption, .widget_calendar .mce-content-body table + caption, .mce-content-body table + h5, .mce-content-body table + h6, .mce-content-body table + p, .mce-content-body table + ol, .mce-content-body table + ul, .mce-content-body table + blockquote, .mce-content-body table + pre, .mce-content-body table + img, .mce-content-body table + table, .mce-content-body table + [class*="ratio-"], .mce-content-body table + .wp-caption, .mce-content-body table + .wpview, .mce-content-body table + .box, .mce-content-body table + .dataTables_wrapper, .mce-content-body table + .notice, .mce-content-body [class*="ratio-"] + h1, .mce-content-body [class*="ratio-"] + h2, .mce-content-body [class*="ratio-"] + h3, .mce-content-body [class*="ratio-"] + h4, .mce-content-body .widget_calendar [class*="ratio-"] + caption, .widget_calendar .mce-content-body [class*="ratio-"] + caption, .mce-content-body [class*="ratio-"] + h5, .mce-content-body [class*="ratio-"] + h6, .mce-content-body [class*="ratio-"] + p, .mce-content-body [class*="ratio-"] + ol, .mce-content-body [class*="ratio-"] + ul, .mce-content-body [class*="ratio-"] + blockquote, .mce-content-body [class*="ratio-"] + pre, .mce-content-body [class*="ratio-"] + img, .mce-content-body [class*="ratio-"] + table, .mce-content-body [class*="ratio-"] + [class*="ratio-"], .mce-content-body [class*="ratio-"] + .wp-caption, .mce-content-body [class*="ratio-"] + .wpview, .mce-content-body [class*="ratio-"] + .box, .mce-content-body [class*="ratio-"] + .dataTables_wrapper, .mce-content-body [class*="ratio-"] + .notice, .mce-content-body .wp-caption + h1, .mce-content-body .wp-caption + h2, .mce-content-body .wp-caption + h3, .mce-content-body .wp-caption + h4, .mce-content-body .widget_calendar .wp-caption + caption, .widget_calendar .mce-content-body .wp-caption + caption, .mce-content-body .wp-caption + h5, .mce-content-body .wp-caption + h6, .mce-content-body .wp-caption + p, .mce-content-body .wp-caption + ol, .mce-content-body .wp-caption + ul, .mce-content-body .wp-caption + blockquote, .mce-content-body .wp-caption + pre, .mce-content-body .wp-caption + img, .mce-content-body .wp-caption + table, .mce-content-body .wp-caption + [class*="ratio-"], .mce-content-body .wp-caption + .wp-caption, .mce-content-body .wp-caption + .wpview, .mce-content-body .wp-caption + .box, .mce-content-body .wp-caption + .dataTables_wrapper, .mce-content-body .wp-caption + .notice, .mce-content-body .wpview + h1, .mce-content-body .wpview + h2, .mce-content-body .wpview + h3, .mce-content-body .wpview + h4, .mce-content-body .widget_calendar .wpview + caption, .widget_calendar .mce-content-body .wpview + caption, .mce-content-body .wpview + h5, .mce-content-body .wpview + h6, .mce-content-body .wpview + p, .mce-content-body .wpview + ol, .mce-content-body .wpview + ul, .mce-content-body .wpview + blockquote, .mce-content-body .wpview + pre, .mce-content-body .wpview + img, .mce-content-body .wpview + table, .mce-content-body .wpview + [class*="ratio-"], .mce-content-body .wpview + .wp-caption, .mce-content-body .wpview + .wpview, .mce-content-body .wpview + .box, .mce-content-body .wpview + .dataTables_wrapper, .mce-content-body .wpview + .notice, .mce-content-body .box + h1, .mce-content-body .box + h2, .mce-content-body .box + h3, .mce-content-body .box + h4, .mce-content-body .widget_calendar .box + caption, .widget_calendar .mce-content-body .box + caption, .mce-content-body .box + h5, .mce-content-body .box + h6, .mce-content-body .box + p, .mce-content-body .box + ol, .mce-content-body .box + ul, .mce-content-body .box + blockquote, .mce-content-body .box + pre, .mce-content-body .box + img, .mce-content-body .box + table, .mce-content-body .box + [class*="ratio-"], .mce-content-body .box + .wp-caption, .mce-content-body .box + .wpview, .mce-content-body .box + .box, .mce-content-body .box + .dataTables_wrapper, .mce-content-body .box + .notice, .mce-content-body .dataTables_wrapper + h1, .mce-content-body .dataTables_wrapper + h2, .mce-content-body .dataTables_wrapper + h3, .mce-content-body .dataTables_wrapper + h4, .mce-content-body .widget_calendar .dataTables_wrapper + caption, .widget_calendar .mce-content-body .dataTables_wrapper + caption, .mce-content-body .dataTables_wrapper + h5, .mce-content-body .dataTables_wrapper + h6, .mce-content-body .dataTables_wrapper + p, .mce-content-body .dataTables_wrapper + ol, .mce-content-body .dataTables_wrapper + ul, .mce-content-body .dataTables_wrapper + blockquote, .mce-content-body .dataTables_wrapper + pre, .mce-content-body .dataTables_wrapper + img, .mce-content-body .dataTables_wrapper + table, .mce-content-body .dataTables_wrapper + [class*="ratio-"], .mce-content-body .dataTables_wrapper + .wp-caption, .mce-content-body .dataTables_wrapper + .wpview, .mce-content-body .dataTables_wrapper + .box, .mce-content-body .dataTables_wrapper + .dataTables_wrapper, .mce-content-body .dataTables_wrapper + .notice, .mce-content-body .notice + h1, .mce-content-body .notice + h2, .mce-content-body .notice + h3, .mce-content-body .notice + h4, .mce-content-body .widget_calendar .notice + caption, .widget_calendar .mce-content-body .notice + caption, .mce-content-body .notice + h5, .mce-content-body .notice + h6, .mce-content-body .notice + p, .mce-content-body .notice + ol, .mce-content-body .notice + ul, .mce-content-body .notice + blockquote, .mce-content-body .notice + pre, .mce-content-body .notice + img, .mce-content-body .notice + table, .mce-content-body .notice + [class*="ratio-"], .mce-content-body .notice + .wp-caption, .mce-content-body .notice + .wpview, .mce-content-body .notice + .box, .mce-content-body .notice + .dataTables_wrapper, .mce-content-body .notice + .notice,
+  article h1 + h1,
+  article h1 + h2,
+  article h1 + h3,
+  article h1 + h4,
+  article .widget_calendar h1 + caption, .widget_calendar
+  article h1 + caption,
+  article h1 + h5,
+  article h1 + h6,
+  article h1 + p,
+  article h1 + ol,
+  article h1 + ul,
+  article h1 + blockquote,
+  article h1 + pre,
+  article h1 + img,
+  article h1 + table,
+  article h1 + [class*="ratio-"],
+  article h1 + .wp-caption,
+  article h1 + .wpview,
+  article h1 + .box,
+  article h1 + .dataTables_wrapper,
+  article h1 + .notice,
+  article h2 + h1,
+  article h2 + h2,
+  article h2 + h3,
+  article h2 + h4,
+  article .widget_calendar h2 + caption, .widget_calendar
+  article h2 + caption,
+  article h2 + h5,
+  article h2 + h6,
+  article h2 + p,
+  article h2 + ol,
+  article h2 + ul,
+  article h2 + blockquote,
+  article h2 + pre,
+  article h2 + img,
+  article h2 + table,
+  article h2 + [class*="ratio-"],
+  article h2 + .wp-caption,
+  article h2 + .wpview,
+  article h2 + .box,
+  article h2 + .dataTables_wrapper,
+  article h2 + .notice,
+  article h3 + h1,
+  article h3 + h2,
+  article h3 + h3,
+  article h3 + h4,
+  article .widget_calendar h3 + caption, .widget_calendar
+  article h3 + caption,
+  article h3 + h5,
+  article h3 + h6,
+  article h3 + p,
+  article h3 + ol,
+  article h3 + ul,
+  article h3 + blockquote,
+  article h3 + pre,
+  article h3 + img,
+  article h3 + table,
+  article h3 + [class*="ratio-"],
+  article h3 + .wp-caption,
+  article h3 + .wpview,
+  article h3 + .box,
+  article h3 + .dataTables_wrapper,
+  article h3 + .notice,
+  article h4 + h1,
+  article .widget_calendar caption + h1, .widget_calendar
+  article caption + h1,
+  article h4 + h2,
+  article .widget_calendar caption + h2, .widget_calendar
+  article caption + h2,
+  article h4 + h3,
+  article .widget_calendar caption + h3, .widget_calendar
+  article caption + h3,
+  article h4 + h4,
+  article .widget_calendar caption + h4, .widget_calendar
+  article caption + h4,
+  article .widget_calendar h4 + caption, .widget_calendar
+  article h4 + caption,
+  article .widget_calendar caption + caption, .widget_calendar
+  article caption + caption,
+  article h4 + h5,
+  article .widget_calendar caption + h5, .widget_calendar
+  article caption + h5,
+  article h4 + h6,
+  article .widget_calendar caption + h6, .widget_calendar
+  article caption + h6,
+  article h4 + p,
+  article .widget_calendar caption + p, .widget_calendar
+  article caption + p,
+  article h4 + ol,
+  article .widget_calendar caption + ol, .widget_calendar
+  article caption + ol,
+  article h4 + ul,
+  article .widget_calendar caption + ul, .widget_calendar
+  article caption + ul,
+  article h4 + blockquote,
+  article .widget_calendar caption + blockquote, .widget_calendar
+  article caption + blockquote,
+  article h4 + pre,
+  article .widget_calendar caption + pre, .widget_calendar
+  article caption + pre,
+  article h4 + img,
+  article .widget_calendar caption + img, .widget_calendar
+  article caption + img,
+  article h4 + table,
+  article .widget_calendar caption + table, .widget_calendar
+  article caption + table,
+  article h4 + [class*="ratio-"],
+  article .widget_calendar caption + [class*="ratio-"], .widget_calendar
+  article caption + [class*="ratio-"],
+  article h4 + .wp-caption,
+  article .widget_calendar caption + .wp-caption, .widget_calendar
+  article caption + .wp-caption,
+  article h4 + .wpview,
+  article .widget_calendar caption + .wpview, .widget_calendar
+  article caption + .wpview,
+  article h4 + .box,
+  article .widget_calendar caption + .box, .widget_calendar
+  article caption + .box,
+  article h4 + .dataTables_wrapper,
+  article .widget_calendar caption + .dataTables_wrapper, .widget_calendar
+  article caption + .dataTables_wrapper,
+  article h4 + .notice,
+  article .widget_calendar caption + .notice, .widget_calendar
+  article caption + .notice,
+  article h5 + h1,
+  article h5 + h2,
+  article h5 + h3,
+  article h5 + h4,
+  article .widget_calendar h5 + caption, .widget_calendar
+  article h5 + caption,
+  article h5 + h5,
+  article h5 + h6,
+  article h5 + p,
+  article h5 + ol,
+  article h5 + ul,
+  article h5 + blockquote,
+  article h5 + pre,
+  article h5 + img,
+  article h5 + table,
+  article h5 + [class*="ratio-"],
+  article h5 + .wp-caption,
+  article h5 + .wpview,
+  article h5 + .box,
+  article h5 + .dataTables_wrapper,
+  article h5 + .notice,
+  article h6 + h1,
+  article h6 + h2,
+  article h6 + h3,
+  article h6 + h4,
+  article .widget_calendar h6 + caption, .widget_calendar
+  article h6 + caption,
+  article h6 + h5,
+  article h6 + h6,
+  article h6 + p,
+  article h6 + ol,
+  article h6 + ul,
+  article h6 + blockquote,
+  article h6 + pre,
+  article h6 + img,
+  article h6 + table,
+  article h6 + [class*="ratio-"],
+  article h6 + .wp-caption,
+  article h6 + .wpview,
+  article h6 + .box,
+  article h6 + .dataTables_wrapper,
+  article h6 + .notice,
+  article p + h1,
+  article p + h2,
+  article p + h3,
+  article p + h4,
+  article .widget_calendar p + caption, .widget_calendar
+  article p + caption,
+  article p + h5,
+  article p + h6,
+  article p + p,
+  article p + ol,
+  article p + ul,
+  article p + blockquote,
+  article p + pre,
+  article p + img,
+  article p + table,
+  article p + [class*="ratio-"],
+  article p + .wp-caption,
+  article p + .wpview,
+  article p + .box,
+  article p + .dataTables_wrapper,
+  article p + .notice,
+  article ol + h1,
+  article ol + h2,
+  article ol + h3,
+  article ol + h4,
+  article .widget_calendar ol + caption, .widget_calendar
+  article ol + caption,
+  article ol + h5,
+  article ol + h6,
+  article ol + p,
+  article ol + ol,
+  article ol + ul,
+  article ol + blockquote,
+  article ol + pre,
+  article ol + img,
+  article ol + table,
+  article ol + [class*="ratio-"],
+  article ol + .wp-caption,
+  article ol + .wpview,
+  article ol + .box,
+  article ol + .dataTables_wrapper,
+  article ol + .notice,
+  article ul + h1,
+  article ul + h2,
+  article ul + h3,
+  article ul + h4,
+  article .widget_calendar ul + caption, .widget_calendar
+  article ul + caption,
+  article ul + h5,
+  article ul + h6,
+  article ul + p,
+  article ul + ol,
+  article ul + ul,
+  article ul + blockquote,
+  article ul + pre,
+  article ul + img,
+  article ul + table,
+  article ul + [class*="ratio-"],
+  article ul + .wp-caption,
+  article ul + .wpview,
+  article ul + .box,
+  article ul + .dataTables_wrapper,
+  article ul + .notice,
+  article blockquote + h1,
+  article blockquote + h2,
+  article blockquote + h3,
+  article blockquote + h4,
+  article .widget_calendar blockquote + caption, .widget_calendar
+  article blockquote + caption,
+  article blockquote + h5,
+  article blockquote + h6,
+  article blockquote + p,
+  article blockquote + ol,
+  article blockquote + ul,
+  article blockquote + blockquote,
+  article blockquote + pre,
+  article blockquote + img,
+  article blockquote + table,
+  article blockquote + [class*="ratio-"],
+  article blockquote + .wp-caption,
+  article blockquote + .wpview,
+  article blockquote + .box,
+  article blockquote + .dataTables_wrapper,
+  article blockquote + .notice,
+  article pre + h1,
+  article pre + h2,
+  article pre + h3,
+  article pre + h4,
+  article .widget_calendar pre + caption, .widget_calendar
+  article pre + caption,
+  article pre + h5,
+  article pre + h6,
+  article pre + p,
+  article pre + ol,
+  article pre + ul,
+  article pre + blockquote,
+  article pre + pre,
+  article pre + img,
+  article pre + table,
+  article pre + [class*="ratio-"],
+  article pre + .wp-caption,
+  article pre + .wpview,
+  article pre + .box,
+  article pre + .dataTables_wrapper,
+  article pre + .notice,
+  article img + h1,
+  article img + h2,
+  article img + h3,
+  article img + h4,
+  article .widget_calendar img + caption, .widget_calendar
+  article img + caption,
+  article img + h5,
+  article img + h6,
+  article img + p,
+  article img + ol,
+  article img + ul,
+  article img + blockquote,
+  article img + pre,
+  article img + img,
+  article img + table,
+  article img + [class*="ratio-"],
+  article img + .wp-caption,
+  article img + .wpview,
+  article img + .box,
+  article img + .dataTables_wrapper,
+  article img + .notice,
+  article table + h1,
+  article table + h2,
+  article table + h3,
+  article table + h4,
+  article .widget_calendar table + caption, .widget_calendar
+  article table + caption,
+  article table + h5,
+  article table + h6,
+  article table + p,
+  article table + ol,
+  article table + ul,
+  article table + blockquote,
+  article table + pre,
+  article table + img,
+  article table + table,
+  article table + [class*="ratio-"],
+  article table + .wp-caption,
+  article table + .wpview,
+  article table + .box,
+  article table + .dataTables_wrapper,
+  article table + .notice,
+  article [class*="ratio-"] + h1,
+  article [class*="ratio-"] + h2,
+  article [class*="ratio-"] + h3,
+  article [class*="ratio-"] + h4,
+  article .widget_calendar [class*="ratio-"] + caption, .widget_calendar
+  article [class*="ratio-"] + caption,
+  article [class*="ratio-"] + h5,
+  article [class*="ratio-"] + h6,
+  article [class*="ratio-"] + p,
+  article [class*="ratio-"] + ol,
+  article [class*="ratio-"] + ul,
+  article [class*="ratio-"] + blockquote,
+  article [class*="ratio-"] + pre,
+  article [class*="ratio-"] + img,
+  article [class*="ratio-"] + table,
+  article [class*="ratio-"] + [class*="ratio-"],
+  article [class*="ratio-"] + .wp-caption,
+  article [class*="ratio-"] + .wpview,
+  article [class*="ratio-"] + .box,
+  article [class*="ratio-"] + .dataTables_wrapper,
+  article [class*="ratio-"] + .notice,
+  article .wp-caption + h1,
+  article .wp-caption + h2,
+  article .wp-caption + h3,
+  article .wp-caption + h4,
+  article .widget_calendar .wp-caption + caption, .widget_calendar
+  article .wp-caption + caption,
+  article .wp-caption + h5,
+  article .wp-caption + h6,
+  article .wp-caption + p,
+  article .wp-caption + ol,
+  article .wp-caption + ul,
+  article .wp-caption + blockquote,
+  article .wp-caption + pre,
+  article .wp-caption + img,
+  article .wp-caption + table,
+  article .wp-caption + [class*="ratio-"],
+  article .wp-caption + .wp-caption,
+  article .wp-caption + .wpview,
+  article .wp-caption + .box,
+  article .wp-caption + .dataTables_wrapper,
+  article .wp-caption + .notice,
+  article .wpview + h1,
+  article .wpview + h2,
+  article .wpview + h3,
+  article .wpview + h4,
+  article .widget_calendar .wpview + caption, .widget_calendar
+  article .wpview + caption,
+  article .wpview + h5,
+  article .wpview + h6,
+  article .wpview + p,
+  article .wpview + ol,
+  article .wpview + ul,
+  article .wpview + blockquote,
+  article .wpview + pre,
+  article .wpview + img,
+  article .wpview + table,
+  article .wpview + [class*="ratio-"],
+  article .wpview + .wp-caption,
+  article .wpview + .wpview,
+  article .wpview + .box,
+  article .wpview + .dataTables_wrapper,
+  article .wpview + .notice,
+  article .box + h1,
+  article .box + h2,
+  article .box + h3,
+  article .box + h4,
+  article .widget_calendar .box + caption, .widget_calendar
+  article .box + caption,
+  article .box + h5,
+  article .box + h6,
+  article .box + p,
+  article .box + ol,
+  article .box + ul,
+  article .box + blockquote,
+  article .box + pre,
+  article .box + img,
+  article .box + table,
+  article .box + [class*="ratio-"],
+  article .box + .wp-caption,
+  article .box + .wpview,
+  article .box + .box,
+  article .box + .dataTables_wrapper,
+  article .box + .notice,
+  article .dataTables_wrapper + h1,
+  article .dataTables_wrapper + h2,
+  article .dataTables_wrapper + h3,
+  article .dataTables_wrapper + h4,
+  article .widget_calendar .dataTables_wrapper + caption, .widget_calendar
+  article .dataTables_wrapper + caption,
+  article .dataTables_wrapper + h5,
+  article .dataTables_wrapper + h6,
+  article .dataTables_wrapper + p,
+  article .dataTables_wrapper + ol,
+  article .dataTables_wrapper + ul,
+  article .dataTables_wrapper + blockquote,
+  article .dataTables_wrapper + pre,
+  article .dataTables_wrapper + img,
+  article .dataTables_wrapper + table,
+  article .dataTables_wrapper + [class*="ratio-"],
+  article .dataTables_wrapper + .wp-caption,
+  article .dataTables_wrapper + .wpview,
+  article .dataTables_wrapper + .box,
+  article .dataTables_wrapper + .dataTables_wrapper,
+  article .dataTables_wrapper + .notice,
+  article .notice + h1,
+  article .notice + h2,
+  article .notice + h3,
+  article .notice + h4,
+  article .widget_calendar .notice + caption, .widget_calendar
+  article .notice + caption,
+  article .notice + h5,
+  article .notice + h6,
+  article .notice + p,
+  article .notice + ol,
+  article .notice + ul,
+  article .notice + blockquote,
+  article .notice + pre,
+  article .notice + img,
+  article .notice + table,
+  article .notice + [class*="ratio-"],
+  article .notice + .wp-caption,
+  article .notice + .wpview,
+  article .notice + .box,
+  article .notice + .dataTables_wrapper,
+  article .notice + .notice {
+    margin-top: 1.3em; }
+  /* line 49, /www/sites/HbgPrime/wwwroot/source/sass/mixin/_mixins.scss */
+  .mce-content-body hr + h1, .mce-content-body h1 + hr, .mce-content-body hr + h2, .mce-content-body h2 + hr, .mce-content-body hr + h3, .mce-content-body h3 + hr, .mce-content-body hr + h4, .mce-content-body .widget_calendar hr + caption, .widget_calendar .mce-content-body hr + caption, .mce-content-body h4 + hr, .mce-content-body .widget_calendar caption + hr, .widget_calendar .mce-content-body caption + hr, .mce-content-body hr + h5, .mce-content-body h5 + hr, .mce-content-body hr + h6, .mce-content-body h6 + hr, .mce-content-body hr + p, .mce-content-body p + hr, .mce-content-body hr + ol, .mce-content-body ol + hr, .mce-content-body hr + ul, .mce-content-body ul + hr, .mce-content-body hr + blockquote, .mce-content-body blockquote + hr, .mce-content-body hr + pre, .mce-content-body pre + hr, .mce-content-body hr + img, .mce-content-body img + hr, .mce-content-body hr + table, .mce-content-body table + hr, .mce-content-body hr + [class*="ratio-"], .mce-content-body [class*="ratio-"] + hr, .mce-content-body hr + .wp-caption, .mce-content-body .wp-caption + hr, .mce-content-body hr + .wpview, .mce-content-body .wpview + hr, .mce-content-body hr + .box, .mce-content-body .box + hr, .mce-content-body hr + .dataTables_wrapper, .mce-content-body .dataTables_wrapper + hr, .mce-content-body hr + .notice, .mce-content-body .notice + hr, .mce-content-body hr + h1, .mce-content-body h1 + hr, .mce-content-body hr + h2, .mce-content-body h2 + hr, .mce-content-body hr + h3, .mce-content-body h3 + hr, .mce-content-body hr + h4, .mce-content-body .widget_calendar hr + caption, .widget_calendar .mce-content-body hr + caption, .mce-content-body h4 + hr, .mce-content-body .widget_calendar caption + hr, .widget_calendar .mce-content-body caption + hr, .mce-content-body hr + h5, .mce-content-body h5 + hr, .mce-content-body hr + h6, .mce-content-body h6 + hr, .mce-content-body hr + p, .mce-content-body p + hr, .mce-content-body hr + ol, .mce-content-body ol + hr, .mce-content-body hr + ul, .mce-content-body ul + hr, .mce-content-body hr + blockquote, .mce-content-body blockquote + hr, .mce-content-body hr + pre, .mce-content-body pre + hr, .mce-content-body hr + img, .mce-content-body img + hr, .mce-content-body hr + table, .mce-content-body table + hr, .mce-content-body hr + [class*="ratio-"], .mce-content-body [class*="ratio-"] + hr, .mce-content-body hr + .wp-caption, .mce-content-body .wp-caption + hr, .mce-content-body hr + .wpview, .mce-content-body .wpview + hr, .mce-content-body hr + .box, .mce-content-body .box + hr, .mce-content-body hr + .dataTables_wrapper, .mce-content-body .dataTables_wrapper + hr, .mce-content-body hr + .notice, .mce-content-body .notice + hr, .mce-content-body hr + h1, .mce-content-body h1 + hr, .mce-content-body hr + h2, .mce-content-body h2 + hr, .mce-content-body hr + h3, .mce-content-body h3 + hr, .mce-content-body hr + h4, .mce-content-body .widget_calendar hr + caption, .widget_calendar .mce-content-body hr + caption, .mce-content-body h4 + hr, .mce-content-body .widget_calendar caption + hr, .widget_calendar .mce-content-body caption + hr, .mce-content-body hr + h5, .mce-content-body h5 + hr, .mce-content-body hr + h6, .mce-content-body h6 + hr, .mce-content-body hr + p, .mce-content-body p + hr, .mce-content-body hr + ol, .mce-content-body ol + hr, .mce-content-body hr + ul, .mce-content-body ul + hr, .mce-content-body hr + blockquote, .mce-content-body blockquote + hr, .mce-content-body hr + pre, .mce-content-body pre + hr, .mce-content-body hr + img, .mce-content-body img + hr, .mce-content-body hr + table, .mce-content-body table + hr, .mce-content-body hr + [class*="ratio-"], .mce-content-body [class*="ratio-"] + hr, .mce-content-body hr + .wp-caption, .mce-content-body .wp-caption + hr, .mce-content-body hr + .wpview, .mce-content-body .wpview + hr, .mce-content-body hr + .box, .mce-content-body .box + hr, .mce-content-body hr + .dataTables_wrapper, .mce-content-body .dataTables_wrapper + hr, .mce-content-body hr + .notice, .mce-content-body .notice + hr, .mce-content-body hr + h1, .mce-content-body h1 + hr, .mce-content-body hr + h2, .mce-content-body h2 + hr, .mce-content-body hr + h3, .mce-content-body h3 + hr, .mce-content-body hr + h4, .mce-content-body .widget_calendar hr + caption, .widget_calendar .mce-content-body hr + caption, .mce-content-body h4 + hr, .mce-content-body .widget_calendar caption + hr, .widget_calendar .mce-content-body caption + hr, .mce-content-body hr + h5, .mce-content-body h5 + hr, .mce-content-body hr + h6, .mce-content-body h6 + hr, .mce-content-body hr + p, .mce-content-body p + hr, .mce-content-body hr + ol, .mce-content-body ol + hr, .mce-content-body hr + ul, .mce-content-body ul + hr, .mce-content-body hr + blockquote, .mce-content-body blockquote + hr, .mce-content-body hr + pre, .mce-content-body pre + hr, .mce-content-body hr + img, .mce-content-body img + hr, .mce-content-body hr + table, .mce-content-body table + hr, .mce-content-body hr + [class*="ratio-"], .mce-content-body [class*="ratio-"] + hr, .mce-content-body hr + .wp-caption, .mce-content-body .wp-caption + hr, .mce-content-body hr + .wpview, .mce-content-body .wpview + hr, .mce-content-body hr + .box, .mce-content-body .box + hr, .mce-content-body hr + .dataTables_wrapper, .mce-content-body .dataTables_wrapper + hr, .mce-content-body hr + .notice, .mce-content-body .notice + hr, .mce-content-body hr + h1, .mce-content-body h1 + hr, .mce-content-body hr + h2, .mce-content-body h2 + hr, .mce-content-body hr + h3, .mce-content-body h3 + hr, .mce-content-body hr + h4, .mce-content-body .widget_calendar hr + caption, .widget_calendar .mce-content-body hr + caption, .mce-content-body h4 + hr, .mce-content-body .widget_calendar caption + hr, .widget_calendar .mce-content-body caption + hr, .mce-content-body hr + h5, .mce-content-body h5 + hr, .mce-content-body hr + h6, .mce-content-body h6 + hr, .mce-content-body hr + p, .mce-content-body p + hr, .mce-content-body hr + ol, .mce-content-body ol + hr, .mce-content-body hr + ul, .mce-content-body ul + hr, .mce-content-body hr + blockquote, .mce-content-body blockquote + hr, .mce-content-body hr + pre, .mce-content-body pre + hr, .mce-content-body hr + img, .mce-content-body img + hr, .mce-content-body hr + table, .mce-content-body table + hr, .mce-content-body hr + [class*="ratio-"], .mce-content-body [class*="ratio-"] + hr, .mce-content-body hr + .wp-caption, .mce-content-body .wp-caption + hr, .mce-content-body hr + .wpview, .mce-content-body .wpview + hr, .mce-content-body hr + .box, .mce-content-body .box + hr, .mce-content-body hr + .dataTables_wrapper, .mce-content-body .dataTables_wrapper + hr, .mce-content-body hr + .notice, .mce-content-body .notice + hr, .mce-content-body hr + h1, .mce-content-body h1 + hr, .mce-content-body hr + h2, .mce-content-body h2 + hr, .mce-content-body hr + h3, .mce-content-body h3 + hr, .mce-content-body hr + h4, .mce-content-body .widget_calendar hr + caption, .widget_calendar .mce-content-body hr + caption, .mce-content-body h4 + hr, .mce-content-body .widget_calendar caption + hr, .widget_calendar .mce-content-body caption + hr, .mce-content-body hr + h5, .mce-content-body h5 + hr, .mce-content-body hr + h6, .mce-content-body h6 + hr, .mce-content-body hr + p, .mce-content-body p + hr, .mce-content-body hr + ol, .mce-content-body ol + hr, .mce-content-body hr + ul, .mce-content-body ul + hr, .mce-content-body hr + blockquote, .mce-content-body blockquote + hr, .mce-content-body hr + pre, .mce-content-body pre + hr, .mce-content-body hr + img, .mce-content-body img + hr, .mce-content-body hr + table, .mce-content-body table + hr, .mce-content-body hr + [class*="ratio-"], .mce-content-body [class*="ratio-"] + hr, .mce-content-body hr + .wp-caption, .mce-content-body .wp-caption + hr, .mce-content-body hr + .wpview, .mce-content-body .wpview + hr, .mce-content-body hr + .box, .mce-content-body .box + hr, .mce-content-body hr + .dataTables_wrapper, .mce-content-body .dataTables_wrapper + hr, .mce-content-body hr + .notice, .mce-content-body .notice + hr, .mce-content-body hr + h1, .mce-content-body h1 + hr, .mce-content-body hr + h2, .mce-content-body h2 + hr, .mce-content-body hr + h3, .mce-content-body h3 + hr, .mce-content-body hr + h4, .mce-content-body .widget_calendar hr + caption, .widget_calendar .mce-content-body hr + caption, .mce-content-body h4 + hr, .mce-content-body .widget_calendar caption + hr, .widget_calendar .mce-content-body caption + hr, .mce-content-body hr + h5, .mce-content-body h5 + hr, .mce-content-body hr + h6, .mce-content-body h6 + hr, .mce-content-body hr + p, .mce-content-body p + hr, .mce-content-body hr + ol, .mce-content-body ol + hr, .mce-content-body hr + ul, .mce-content-body ul + hr, .mce-content-body hr + blockquote, .mce-content-body blockquote + hr, .mce-content-body hr + pre, .mce-content-body pre + hr, .mce-content-body hr + img, .mce-content-body img + hr, .mce-content-body hr + table, .mce-content-body table + hr, .mce-content-body hr + [class*="ratio-"], .mce-content-body [class*="ratio-"] + hr, .mce-content-body hr + .wp-caption, .mce-content-body .wp-caption + hr, .mce-content-body hr + .wpview, .mce-content-body .wpview + hr, .mce-content-body hr + .box, .mce-content-body .box + hr, .mce-content-body hr + .dataTables_wrapper, .mce-content-body .dataTables_wrapper + hr, .mce-content-body hr + .notice, .mce-content-body .notice + hr, .mce-content-body hr + h1, .mce-content-body h1 + hr, .mce-content-body hr + h2, .mce-content-body h2 + hr, .mce-content-body hr + h3, .mce-content-body h3 + hr, .mce-content-body hr + h4, .mce-content-body .widget_calendar hr + caption, .widget_calendar .mce-content-body hr + caption, .mce-content-body h4 + hr, .mce-content-body .widget_calendar caption + hr, .widget_calendar .mce-content-body caption + hr, .mce-content-body hr + h5, .mce-content-body h5 + hr, .mce-content-body hr + h6, .mce-content-body h6 + hr, .mce-content-body hr + p, .mce-content-body p + hr, .mce-content-body hr + ol, .mce-content-body ol + hr, .mce-content-body hr + ul, .mce-content-body ul + hr, .mce-content-body hr + blockquote, .mce-content-body blockquote + hr, .mce-content-body hr + pre, .mce-content-body pre + hr, .mce-content-body hr + img, .mce-content-body img + hr, .mce-content-body hr + table, .mce-content-body table + hr, .mce-content-body hr + [class*="ratio-"], .mce-content-body [class*="ratio-"] + hr, .mce-content-body hr + .wp-caption, .mce-content-body .wp-caption + hr, .mce-content-body hr + .wpview, .mce-content-body .wpview + hr, .mce-content-body hr + .box, .mce-content-body .box + hr, .mce-content-body hr + .dataTables_wrapper, .mce-content-body .dataTables_wrapper + hr, .mce-content-body hr + .notice, .mce-content-body .notice + hr, .mce-content-body hr + h1, .mce-content-body h1 + hr, .mce-content-body hr + h2, .mce-content-body h2 + hr, .mce-content-body hr + h3, .mce-content-body h3 + hr, .mce-content-body hr + h4, .mce-content-body .widget_calendar hr + caption, .widget_calendar .mce-content-body hr + caption, .mce-content-body h4 + hr, .mce-content-body .widget_calendar caption + hr, .widget_calendar .mce-content-body caption + hr, .mce-content-body hr + h5, .mce-content-body h5 + hr, .mce-content-body hr + h6, .mce-content-body h6 + hr, .mce-content-body hr + p, .mce-content-body p + hr, .mce-content-body hr + ol, .mce-content-body ol + hr, .mce-content-body hr + ul, .mce-content-body ul + hr, .mce-content-body hr + blockquote, .mce-content-body blockquote + hr, .mce-content-body hr + pre, .mce-content-body pre + hr, .mce-content-body hr + img, .mce-content-body img + hr, .mce-content-body hr + table, .mce-content-body table + hr, .mce-content-body hr + [class*="ratio-"], .mce-content-body [class*="ratio-"] + hr, .mce-content-body hr + .wp-caption, .mce-content-body .wp-caption + hr, .mce-content-body hr + .wpview, .mce-content-body .wpview + hr, .mce-content-body hr + .box, .mce-content-body .box + hr, .mce-content-body hr + .dataTables_wrapper, .mce-content-body .dataTables_wrapper + hr, .mce-content-body hr + .notice, .mce-content-body .notice + hr, .mce-content-body hr + h1, .mce-content-body h1 + hr, .mce-content-body hr + h2, .mce-content-body h2 + hr, .mce-content-body hr + h3, .mce-content-body h3 + hr, .mce-content-body hr + h4, .mce-content-body .widget_calendar hr + caption, .widget_calendar .mce-content-body hr + caption, .mce-content-body h4 + hr, .mce-content-body .widget_calendar caption + hr, .widget_calendar .mce-content-body caption + hr, .mce-content-body hr + h5, .mce-content-body h5 + hr, .mce-content-body hr + h6, .mce-content-body h6 + hr, .mce-content-body hr + p, .mce-content-body p + hr, .mce-content-body hr + ol, .mce-content-body ol + hr, .mce-content-body hr + ul, .mce-content-body ul + hr, .mce-content-body hr + blockquote, .mce-content-body blockquote + hr, .mce-content-body hr + pre, .mce-content-body pre + hr, .mce-content-body hr + img, .mce-content-body img + hr, .mce-content-body hr + table, .mce-content-body table + hr, .mce-content-body hr + [class*="ratio-"], .mce-content-body [class*="ratio-"] + hr, .mce-content-body hr + .wp-caption, .mce-content-body .wp-caption + hr, .mce-content-body hr + .wpview, .mce-content-body .wpview + hr, .mce-content-body hr + .box, .mce-content-body .box + hr, .mce-content-body hr + .dataTables_wrapper, .mce-content-body .dataTables_wrapper + hr, .mce-content-body hr + .notice, .mce-content-body .notice + hr, .mce-content-body hr + h1, .mce-content-body h1 + hr, .mce-content-body hr + h2, .mce-content-body h2 + hr, .mce-content-body hr + h3, .mce-content-body h3 + hr, .mce-content-body hr + h4, .mce-content-body .widget_calendar hr + caption, .widget_calendar .mce-content-body hr + caption, .mce-content-body h4 + hr, .mce-content-body .widget_calendar caption + hr, .widget_calendar .mce-content-body caption + hr, .mce-content-body hr + h5, .mce-content-body h5 + hr, .mce-content-body hr + h6, .mce-content-body h6 + hr, .mce-content-body hr + p, .mce-content-body p + hr, .mce-content-body hr + ol, .mce-content-body ol + hr, .mce-content-body hr + ul, .mce-content-body ul + hr, .mce-content-body hr + blockquote, .mce-content-body blockquote + hr, .mce-content-body hr + pre, .mce-content-body pre + hr, .mce-content-body hr + img, .mce-content-body img + hr, .mce-content-body hr + table, .mce-content-body table + hr, .mce-content-body hr + [class*="ratio-"], .mce-content-body [class*="ratio-"] + hr, .mce-content-body hr + .wp-caption, .mce-content-body .wp-caption + hr, .mce-content-body hr + .wpview, .mce-content-body .wpview + hr, .mce-content-body hr + .box, .mce-content-body .box + hr, .mce-content-body hr + .dataTables_wrapper, .mce-content-body .dataTables_wrapper + hr, .mce-content-body hr + .notice, .mce-content-body .notice + hr, .mce-content-body hr + h1, .mce-content-body h1 + hr, .mce-content-body hr + h2, .mce-content-body h2 + hr, .mce-content-body hr + h3, .mce-content-body h3 + hr, .mce-content-body hr + h4, .mce-content-body .widget_calendar hr + caption, .widget_calendar .mce-content-body hr + caption, .mce-content-body h4 + hr, .mce-content-body .widget_calendar caption + hr, .widget_calendar .mce-content-body caption + hr, .mce-content-body hr + h5, .mce-content-body h5 + hr, .mce-content-body hr + h6, .mce-content-body h6 + hr, .mce-content-body hr + p, .mce-content-body p + hr, .mce-content-body hr + ol, .mce-content-body ol + hr, .mce-content-body hr + ul, .mce-content-body ul + hr, .mce-content-body hr + blockquote, .mce-content-body blockquote + hr, .mce-content-body hr + pre, .mce-content-body pre + hr, .mce-content-body hr + img, .mce-content-body img + hr, .mce-content-body hr + table, .mce-content-body table + hr, .mce-content-body hr + [class*="ratio-"], .mce-content-body [class*="ratio-"] + hr, .mce-content-body hr + .wp-caption, .mce-content-body .wp-caption + hr, .mce-content-body hr + .wpview, .mce-content-body .wpview + hr, .mce-content-body hr + .box, .mce-content-body .box + hr, .mce-content-body hr + .dataTables_wrapper, .mce-content-body .dataTables_wrapper + hr, .mce-content-body hr + .notice, .mce-content-body .notice + hr, .mce-content-body hr + h1, .mce-content-body h1 + hr, .mce-content-body hr + h2, .mce-content-body h2 + hr, .mce-content-body hr + h3, .mce-content-body h3 + hr, .mce-content-body hr + h4, .mce-content-body .widget_calendar hr + caption, .widget_calendar .mce-content-body hr + caption, .mce-content-body h4 + hr, .mce-content-body .widget_calendar caption + hr, .widget_calendar .mce-content-body caption + hr, .mce-content-body hr + h5, .mce-content-body h5 + hr, .mce-content-body hr + h6, .mce-content-body h6 + hr, .mce-content-body hr + p, .mce-content-body p + hr, .mce-content-body hr + ol, .mce-content-body ol + hr, .mce-content-body hr + ul, .mce-content-body ul + hr, .mce-content-body hr + blockquote, .mce-content-body blockquote + hr, .mce-content-body hr + pre, .mce-content-body pre + hr, .mce-content-body hr + img, .mce-content-body img + hr, .mce-content-body hr + table, .mce-content-body table + hr, .mce-content-body hr + [class*="ratio-"], .mce-content-body [class*="ratio-"] + hr, .mce-content-body hr + .wp-caption, .mce-content-body .wp-caption + hr, .mce-content-body hr + .wpview, .mce-content-body .wpview + hr, .mce-content-body hr + .box, .mce-content-body .box + hr, .mce-content-body hr + .dataTables_wrapper, .mce-content-body .dataTables_wrapper + hr, .mce-content-body hr + .notice, .mce-content-body .notice + hr, .mce-content-body hr + h1, .mce-content-body h1 + hr, .mce-content-body hr + h2, .mce-content-body h2 + hr, .mce-content-body hr + h3, .mce-content-body h3 + hr, .mce-content-body hr + h4, .mce-content-body .widget_calendar hr + caption, .widget_calendar .mce-content-body hr + caption, .mce-content-body h4 + hr, .mce-content-body .widget_calendar caption + hr, .widget_calendar .mce-content-body caption + hr, .mce-content-body hr + h5, .mce-content-body h5 + hr, .mce-content-body hr + h6, .mce-content-body h6 + hr, .mce-content-body hr + p, .mce-content-body p + hr, .mce-content-body hr + ol, .mce-content-body ol + hr, .mce-content-body hr + ul, .mce-content-body ul + hr, .mce-content-body hr + blockquote, .mce-content-body blockquote + hr, .mce-content-body hr + pre, .mce-content-body pre + hr, .mce-content-body hr + img, .mce-content-body img + hr, .mce-content-body hr + table, .mce-content-body table + hr, .mce-content-body hr + [class*="ratio-"], .mce-content-body [class*="ratio-"] + hr, .mce-content-body hr + .wp-caption, .mce-content-body .wp-caption + hr, .mce-content-body hr + .wpview, .mce-content-body .wpview + hr, .mce-content-body hr + .box, .mce-content-body .box + hr, .mce-content-body hr + .dataTables_wrapper, .mce-content-body .dataTables_wrapper + hr, .mce-content-body hr + .notice, .mce-content-body .notice + hr, .mce-content-body hr + h1, .mce-content-body h1 + hr, .mce-content-body hr + h2, .mce-content-body h2 + hr, .mce-content-body hr + h3, .mce-content-body h3 + hr, .mce-content-body hr + h4, .mce-content-body .widget_calendar hr + caption, .widget_calendar .mce-content-body hr + caption, .mce-content-body h4 + hr, .mce-content-body .widget_calendar caption + hr, .widget_calendar .mce-content-body caption + hr, .mce-content-body hr + h5, .mce-content-body h5 + hr, .mce-content-body hr + h6, .mce-content-body h6 + hr, .mce-content-body hr + p, .mce-content-body p + hr, .mce-content-body hr + ol, .mce-content-body ol + hr, .mce-content-body hr + ul, .mce-content-body ul + hr, .mce-content-body hr + blockquote, .mce-content-body blockquote + hr, .mce-content-body hr + pre, .mce-content-body pre + hr, .mce-content-body hr + img, .mce-content-body img + hr, .mce-content-body hr + table, .mce-content-body table + hr, .mce-content-body hr + [class*="ratio-"], .mce-content-body [class*="ratio-"] + hr, .mce-content-body hr + .wp-caption, .mce-content-body .wp-caption + hr, .mce-content-body hr + .wpview, .mce-content-body .wpview + hr, .mce-content-body hr + .box, .mce-content-body .box + hr, .mce-content-body hr + .dataTables_wrapper, .mce-content-body .dataTables_wrapper + hr, .mce-content-body hr + .notice, .mce-content-body .notice + hr, .mce-content-body hr + h1, .mce-content-body h1 + hr, .mce-content-body hr + h2, .mce-content-body h2 + hr, .mce-content-body hr + h3, .mce-content-body h3 + hr, .mce-content-body hr + h4, .mce-content-body .widget_calendar hr + caption, .widget_calendar .mce-content-body hr + caption, .mce-content-body h4 + hr, .mce-content-body .widget_calendar caption + hr, .widget_calendar .mce-content-body caption + hr, .mce-content-body hr + h5, .mce-content-body h5 + hr, .mce-content-body hr + h6, .mce-content-body h6 + hr, .mce-content-body hr + p, .mce-content-body p + hr, .mce-content-body hr + ol, .mce-content-body ol + hr, .mce-content-body hr + ul, .mce-content-body ul + hr, .mce-content-body hr + blockquote, .mce-content-body blockquote + hr, .mce-content-body hr + pre, .mce-content-body pre + hr, .mce-content-body hr + img, .mce-content-body img + hr, .mce-content-body hr + table, .mce-content-body table + hr, .mce-content-body hr + [class*="ratio-"], .mce-content-body [class*="ratio-"] + hr, .mce-content-body hr + .wp-caption, .mce-content-body .wp-caption + hr, .mce-content-body hr + .wpview, .mce-content-body .wpview + hr, .mce-content-body hr + .box, .mce-content-body .box + hr, .mce-content-body hr + .dataTables_wrapper, .mce-content-body .dataTables_wrapper + hr, .mce-content-body hr + .notice, .mce-content-body .notice + hr, .mce-content-body hr + h1, .mce-content-body h1 + hr, .mce-content-body hr + h2, .mce-content-body h2 + hr, .mce-content-body hr + h3, .mce-content-body h3 + hr, .mce-content-body hr + h4, .mce-content-body .widget_calendar hr + caption, .widget_calendar .mce-content-body hr + caption, .mce-content-body h4 + hr, .mce-content-body .widget_calendar caption + hr, .widget_calendar .mce-content-body caption + hr, .mce-content-body hr + h5, .mce-content-body h5 + hr, .mce-content-body hr + h6, .mce-content-body h6 + hr, .mce-content-body hr + p, .mce-content-body p + hr, .mce-content-body hr + ol, .mce-content-body ol + hr, .mce-content-body hr + ul, .mce-content-body ul + hr, .mce-content-body hr + blockquote, .mce-content-body blockquote + hr, .mce-content-body hr + pre, .mce-content-body pre + hr, .mce-content-body hr + img, .mce-content-body img + hr, .mce-content-body hr + table, .mce-content-body table + hr, .mce-content-body hr + [class*="ratio-"], .mce-content-body [class*="ratio-"] + hr, .mce-content-body hr + .wp-caption, .mce-content-body .wp-caption + hr, .mce-content-body hr + .wpview, .mce-content-body .wpview + hr, .mce-content-body hr + .box, .mce-content-body .box + hr, .mce-content-body hr + .dataTables_wrapper, .mce-content-body .dataTables_wrapper + hr, .mce-content-body hr + .notice, .mce-content-body .notice + hr, .mce-content-body hr + h1, .mce-content-body h1 + hr, .mce-content-body hr + h2, .mce-content-body h2 + hr, .mce-content-body hr + h3, .mce-content-body h3 + hr, .mce-content-body hr + h4, .mce-content-body .widget_calendar hr + caption, .widget_calendar .mce-content-body hr + caption, .mce-content-body h4 + hr, .mce-content-body .widget_calendar caption + hr, .widget_calendar .mce-content-body caption + hr, .mce-content-body hr + h5, .mce-content-body h5 + hr, .mce-content-body hr + h6, .mce-content-body h6 + hr, .mce-content-body hr + p, .mce-content-body p + hr, .mce-content-body hr + ol, .mce-content-body ol + hr, .mce-content-body hr + ul, .mce-content-body ul + hr, .mce-content-body hr + blockquote, .mce-content-body blockquote + hr, .mce-content-body hr + pre, .mce-content-body pre + hr, .mce-content-body hr + img, .mce-content-body img + hr, .mce-content-body hr + table, .mce-content-body table + hr, .mce-content-body hr + [class*="ratio-"], .mce-content-body [class*="ratio-"] + hr, .mce-content-body hr + .wp-caption, .mce-content-body .wp-caption + hr, .mce-content-body hr + .wpview, .mce-content-body .wpview + hr, .mce-content-body hr + .box, .mce-content-body .box + hr, .mce-content-body hr + .dataTables_wrapper, .mce-content-body .dataTables_wrapper + hr, .mce-content-body hr + .notice, .mce-content-body .notice + hr, .mce-content-body hr + h1, .mce-content-body h1 + hr, .mce-content-body hr + h2, .mce-content-body h2 + hr, .mce-content-body hr + h3, .mce-content-body h3 + hr, .mce-content-body hr + h4, .mce-content-body .widget_calendar hr + caption, .widget_calendar .mce-content-body hr + caption, .mce-content-body h4 + hr, .mce-content-body .widget_calendar caption + hr, .widget_calendar .mce-content-body caption + hr, .mce-content-body hr + h5, .mce-content-body h5 + hr, .mce-content-body hr + h6, .mce-content-body h6 + hr, .mce-content-body hr + p, .mce-content-body p + hr, .mce-content-body hr + ol, .mce-content-body ol + hr, .mce-content-body hr + ul, .mce-content-body ul + hr, .mce-content-body hr + blockquote, .mce-content-body blockquote + hr, .mce-content-body hr + pre, .mce-content-body pre + hr, .mce-content-body hr + img, .mce-content-body img + hr, .mce-content-body hr + table, .mce-content-body table + hr, .mce-content-body hr + [class*="ratio-"], .mce-content-body [class*="ratio-"] + hr, .mce-content-body hr + .wp-caption, .mce-content-body .wp-caption + hr, .mce-content-body hr + .wpview, .mce-content-body .wpview + hr, .mce-content-body hr + .box, .mce-content-body .box + hr, .mce-content-body hr + .dataTables_wrapper, .mce-content-body .dataTables_wrapper + hr, .mce-content-body hr + .notice, .mce-content-body .notice + hr,
   article hr + h1,
+  article h1 + hr,
   article hr + h2,
+  article h2 + hr,
   article hr + h3,
+  article h3 + hr,
   article hr + h4,
   article .widget_calendar hr + caption, .widget_calendar
   article hr + caption,
-  article hr + h5,
-  article hr + h6,
-  article hr + p,
-  article hr + ol,
-  article hr + ul,
-  article hr + blockquote,
-  article hr + pre,
-  article hr + hr,
-  article hr + img,
-  article hr + .wp-caption,
-  article hr + .notice,
-  article hr + table,
-  article h1 + hr,
-  article h2 + hr,
-  article h3 + hr,
   article h4 + hr,
   article .widget_calendar caption + hr, .widget_calendar
   article caption + hr,
+  article hr + h5,
   article h5 + hr,
+  article hr + h6,
   article h6 + hr,
+  article hr + p,
   article p + hr,
+  article hr + ol,
   article ol + hr,
+  article hr + ul,
   article ul + hr,
+  article hr + blockquote,
   article blockquote + hr,
+  article hr + pre,
   article pre + hr,
+  article hr + img,
   article img + hr,
+  article hr + table,
+  article table + hr,
+  article hr + [class*="ratio-"],
+  article [class*="ratio-"] + hr,
+  article hr + .wp-caption,
   article .wp-caption + hr,
+  article hr + .wpview,
+  article .wpview + hr,
+  article hr + .box,
+  article .box + hr,
+  article hr + .dataTables_wrapper,
+  article .dataTables_wrapper + hr,
+  article hr + .notice,
   article .notice + hr,
-  article table + hr {
+  article hr + h1,
+  article h1 + hr,
+  article hr + h2,
+  article h2 + hr,
+  article hr + h3,
+  article h3 + hr,
+  article hr + h4,
+  article .widget_calendar hr + caption, .widget_calendar
+  article hr + caption,
+  article h4 + hr,
+  article .widget_calendar caption + hr, .widget_calendar
+  article caption + hr,
+  article hr + h5,
+  article h5 + hr,
+  article hr + h6,
+  article h6 + hr,
+  article hr + p,
+  article p + hr,
+  article hr + ol,
+  article ol + hr,
+  article hr + ul,
+  article ul + hr,
+  article hr + blockquote,
+  article blockquote + hr,
+  article hr + pre,
+  article pre + hr,
+  article hr + img,
+  article img + hr,
+  article hr + table,
+  article table + hr,
+  article hr + [class*="ratio-"],
+  article [class*="ratio-"] + hr,
+  article hr + .wp-caption,
+  article .wp-caption + hr,
+  article hr + .wpview,
+  article .wpview + hr,
+  article hr + .box,
+  article .box + hr,
+  article hr + .dataTables_wrapper,
+  article .dataTables_wrapper + hr,
+  article hr + .notice,
+  article .notice + hr,
+  article hr + h1,
+  article h1 + hr,
+  article hr + h2,
+  article h2 + hr,
+  article hr + h3,
+  article h3 + hr,
+  article hr + h4,
+  article .widget_calendar hr + caption, .widget_calendar
+  article hr + caption,
+  article h4 + hr,
+  article .widget_calendar caption + hr, .widget_calendar
+  article caption + hr,
+  article hr + h5,
+  article h5 + hr,
+  article hr + h6,
+  article h6 + hr,
+  article hr + p,
+  article p + hr,
+  article hr + ol,
+  article ol + hr,
+  article hr + ul,
+  article ul + hr,
+  article hr + blockquote,
+  article blockquote + hr,
+  article hr + pre,
+  article pre + hr,
+  article hr + img,
+  article img + hr,
+  article hr + table,
+  article table + hr,
+  article hr + [class*="ratio-"],
+  article [class*="ratio-"] + hr,
+  article hr + .wp-caption,
+  article .wp-caption + hr,
+  article hr + .wpview,
+  article .wpview + hr,
+  article hr + .box,
+  article .box + hr,
+  article hr + .dataTables_wrapper,
+  article .dataTables_wrapper + hr,
+  article hr + .notice,
+  article .notice + hr,
+  article hr + h1,
+  article h1 + hr,
+  article hr + h2,
+  article h2 + hr,
+  article hr + h3,
+  article h3 + hr,
+  article hr + h4,
+  article .widget_calendar hr + caption, .widget_calendar
+  article hr + caption,
+  article h4 + hr,
+  article .widget_calendar caption + hr, .widget_calendar
+  article caption + hr,
+  article hr + h5,
+  article h5 + hr,
+  article hr + h6,
+  article h6 + hr,
+  article hr + p,
+  article p + hr,
+  article hr + ol,
+  article ol + hr,
+  article hr + ul,
+  article ul + hr,
+  article hr + blockquote,
+  article blockquote + hr,
+  article hr + pre,
+  article pre + hr,
+  article hr + img,
+  article img + hr,
+  article hr + table,
+  article table + hr,
+  article hr + [class*="ratio-"],
+  article [class*="ratio-"] + hr,
+  article hr + .wp-caption,
+  article .wp-caption + hr,
+  article hr + .wpview,
+  article .wpview + hr,
+  article hr + .box,
+  article .box + hr,
+  article hr + .dataTables_wrapper,
+  article .dataTables_wrapper + hr,
+  article hr + .notice,
+  article .notice + hr,
+  article hr + h1,
+  article h1 + hr,
+  article hr + h2,
+  article h2 + hr,
+  article hr + h3,
+  article h3 + hr,
+  article hr + h4,
+  article .widget_calendar hr + caption, .widget_calendar
+  article hr + caption,
+  article h4 + hr,
+  article .widget_calendar caption + hr, .widget_calendar
+  article caption + hr,
+  article hr + h5,
+  article h5 + hr,
+  article hr + h6,
+  article h6 + hr,
+  article hr + p,
+  article p + hr,
+  article hr + ol,
+  article ol + hr,
+  article hr + ul,
+  article ul + hr,
+  article hr + blockquote,
+  article blockquote + hr,
+  article hr + pre,
+  article pre + hr,
+  article hr + img,
+  article img + hr,
+  article hr + table,
+  article table + hr,
+  article hr + [class*="ratio-"],
+  article [class*="ratio-"] + hr,
+  article hr + .wp-caption,
+  article .wp-caption + hr,
+  article hr + .wpview,
+  article .wpview + hr,
+  article hr + .box,
+  article .box + hr,
+  article hr + .dataTables_wrapper,
+  article .dataTables_wrapper + hr,
+  article hr + .notice,
+  article .notice + hr,
+  article hr + h1,
+  article h1 + hr,
+  article hr + h2,
+  article h2 + hr,
+  article hr + h3,
+  article h3 + hr,
+  article hr + h4,
+  article .widget_calendar hr + caption, .widget_calendar
+  article hr + caption,
+  article h4 + hr,
+  article .widget_calendar caption + hr, .widget_calendar
+  article caption + hr,
+  article hr + h5,
+  article h5 + hr,
+  article hr + h6,
+  article h6 + hr,
+  article hr + p,
+  article p + hr,
+  article hr + ol,
+  article ol + hr,
+  article hr + ul,
+  article ul + hr,
+  article hr + blockquote,
+  article blockquote + hr,
+  article hr + pre,
+  article pre + hr,
+  article hr + img,
+  article img + hr,
+  article hr + table,
+  article table + hr,
+  article hr + [class*="ratio-"],
+  article [class*="ratio-"] + hr,
+  article hr + .wp-caption,
+  article .wp-caption + hr,
+  article hr + .wpview,
+  article .wpview + hr,
+  article hr + .box,
+  article .box + hr,
+  article hr + .dataTables_wrapper,
+  article .dataTables_wrapper + hr,
+  article hr + .notice,
+  article .notice + hr,
+  article hr + h1,
+  article h1 + hr,
+  article hr + h2,
+  article h2 + hr,
+  article hr + h3,
+  article h3 + hr,
+  article hr + h4,
+  article .widget_calendar hr + caption, .widget_calendar
+  article hr + caption,
+  article h4 + hr,
+  article .widget_calendar caption + hr, .widget_calendar
+  article caption + hr,
+  article hr + h5,
+  article h5 + hr,
+  article hr + h6,
+  article h6 + hr,
+  article hr + p,
+  article p + hr,
+  article hr + ol,
+  article ol + hr,
+  article hr + ul,
+  article ul + hr,
+  article hr + blockquote,
+  article blockquote + hr,
+  article hr + pre,
+  article pre + hr,
+  article hr + img,
+  article img + hr,
+  article hr + table,
+  article table + hr,
+  article hr + [class*="ratio-"],
+  article [class*="ratio-"] + hr,
+  article hr + .wp-caption,
+  article .wp-caption + hr,
+  article hr + .wpview,
+  article .wpview + hr,
+  article hr + .box,
+  article .box + hr,
+  article hr + .dataTables_wrapper,
+  article .dataTables_wrapper + hr,
+  article hr + .notice,
+  article .notice + hr,
+  article hr + h1,
+  article h1 + hr,
+  article hr + h2,
+  article h2 + hr,
+  article hr + h3,
+  article h3 + hr,
+  article hr + h4,
+  article .widget_calendar hr + caption, .widget_calendar
+  article hr + caption,
+  article h4 + hr,
+  article .widget_calendar caption + hr, .widget_calendar
+  article caption + hr,
+  article hr + h5,
+  article h5 + hr,
+  article hr + h6,
+  article h6 + hr,
+  article hr + p,
+  article p + hr,
+  article hr + ol,
+  article ol + hr,
+  article hr + ul,
+  article ul + hr,
+  article hr + blockquote,
+  article blockquote + hr,
+  article hr + pre,
+  article pre + hr,
+  article hr + img,
+  article img + hr,
+  article hr + table,
+  article table + hr,
+  article hr + [class*="ratio-"],
+  article [class*="ratio-"] + hr,
+  article hr + .wp-caption,
+  article .wp-caption + hr,
+  article hr + .wpview,
+  article .wpview + hr,
+  article hr + .box,
+  article .box + hr,
+  article hr + .dataTables_wrapper,
+  article .dataTables_wrapper + hr,
+  article hr + .notice,
+  article .notice + hr,
+  article hr + h1,
+  article h1 + hr,
+  article hr + h2,
+  article h2 + hr,
+  article hr + h3,
+  article h3 + hr,
+  article hr + h4,
+  article .widget_calendar hr + caption, .widget_calendar
+  article hr + caption,
+  article h4 + hr,
+  article .widget_calendar caption + hr, .widget_calendar
+  article caption + hr,
+  article hr + h5,
+  article h5 + hr,
+  article hr + h6,
+  article h6 + hr,
+  article hr + p,
+  article p + hr,
+  article hr + ol,
+  article ol + hr,
+  article hr + ul,
+  article ul + hr,
+  article hr + blockquote,
+  article blockquote + hr,
+  article hr + pre,
+  article pre + hr,
+  article hr + img,
+  article img + hr,
+  article hr + table,
+  article table + hr,
+  article hr + [class*="ratio-"],
+  article [class*="ratio-"] + hr,
+  article hr + .wp-caption,
+  article .wp-caption + hr,
+  article hr + .wpview,
+  article .wpview + hr,
+  article hr + .box,
+  article .box + hr,
+  article hr + .dataTables_wrapper,
+  article .dataTables_wrapper + hr,
+  article hr + .notice,
+  article .notice + hr,
+  article hr + h1,
+  article h1 + hr,
+  article hr + h2,
+  article h2 + hr,
+  article hr + h3,
+  article h3 + hr,
+  article hr + h4,
+  article .widget_calendar hr + caption, .widget_calendar
+  article hr + caption,
+  article h4 + hr,
+  article .widget_calendar caption + hr, .widget_calendar
+  article caption + hr,
+  article hr + h5,
+  article h5 + hr,
+  article hr + h6,
+  article h6 + hr,
+  article hr + p,
+  article p + hr,
+  article hr + ol,
+  article ol + hr,
+  article hr + ul,
+  article ul + hr,
+  article hr + blockquote,
+  article blockquote + hr,
+  article hr + pre,
+  article pre + hr,
+  article hr + img,
+  article img + hr,
+  article hr + table,
+  article table + hr,
+  article hr + [class*="ratio-"],
+  article [class*="ratio-"] + hr,
+  article hr + .wp-caption,
+  article .wp-caption + hr,
+  article hr + .wpview,
+  article .wpview + hr,
+  article hr + .box,
+  article .box + hr,
+  article hr + .dataTables_wrapper,
+  article .dataTables_wrapper + hr,
+  article hr + .notice,
+  article .notice + hr,
+  article hr + h1,
+  article h1 + hr,
+  article hr + h2,
+  article h2 + hr,
+  article hr + h3,
+  article h3 + hr,
+  article hr + h4,
+  article .widget_calendar hr + caption, .widget_calendar
+  article hr + caption,
+  article h4 + hr,
+  article .widget_calendar caption + hr, .widget_calendar
+  article caption + hr,
+  article hr + h5,
+  article h5 + hr,
+  article hr + h6,
+  article h6 + hr,
+  article hr + p,
+  article p + hr,
+  article hr + ol,
+  article ol + hr,
+  article hr + ul,
+  article ul + hr,
+  article hr + blockquote,
+  article blockquote + hr,
+  article hr + pre,
+  article pre + hr,
+  article hr + img,
+  article img + hr,
+  article hr + table,
+  article table + hr,
+  article hr + [class*="ratio-"],
+  article [class*="ratio-"] + hr,
+  article hr + .wp-caption,
+  article .wp-caption + hr,
+  article hr + .wpview,
+  article .wpview + hr,
+  article hr + .box,
+  article .box + hr,
+  article hr + .dataTables_wrapper,
+  article .dataTables_wrapper + hr,
+  article hr + .notice,
+  article .notice + hr,
+  article hr + h1,
+  article h1 + hr,
+  article hr + h2,
+  article h2 + hr,
+  article hr + h3,
+  article h3 + hr,
+  article hr + h4,
+  article .widget_calendar hr + caption, .widget_calendar
+  article hr + caption,
+  article h4 + hr,
+  article .widget_calendar caption + hr, .widget_calendar
+  article caption + hr,
+  article hr + h5,
+  article h5 + hr,
+  article hr + h6,
+  article h6 + hr,
+  article hr + p,
+  article p + hr,
+  article hr + ol,
+  article ol + hr,
+  article hr + ul,
+  article ul + hr,
+  article hr + blockquote,
+  article blockquote + hr,
+  article hr + pre,
+  article pre + hr,
+  article hr + img,
+  article img + hr,
+  article hr + table,
+  article table + hr,
+  article hr + [class*="ratio-"],
+  article [class*="ratio-"] + hr,
+  article hr + .wp-caption,
+  article .wp-caption + hr,
+  article hr + .wpview,
+  article .wpview + hr,
+  article hr + .box,
+  article .box + hr,
+  article hr + .dataTables_wrapper,
+  article .dataTables_wrapper + hr,
+  article hr + .notice,
+  article .notice + hr,
+  article hr + h1,
+  article h1 + hr,
+  article hr + h2,
+  article h2 + hr,
+  article hr + h3,
+  article h3 + hr,
+  article hr + h4,
+  article .widget_calendar hr + caption, .widget_calendar
+  article hr + caption,
+  article h4 + hr,
+  article .widget_calendar caption + hr, .widget_calendar
+  article caption + hr,
+  article hr + h5,
+  article h5 + hr,
+  article hr + h6,
+  article h6 + hr,
+  article hr + p,
+  article p + hr,
+  article hr + ol,
+  article ol + hr,
+  article hr + ul,
+  article ul + hr,
+  article hr + blockquote,
+  article blockquote + hr,
+  article hr + pre,
+  article pre + hr,
+  article hr + img,
+  article img + hr,
+  article hr + table,
+  article table + hr,
+  article hr + [class*="ratio-"],
+  article [class*="ratio-"] + hr,
+  article hr + .wp-caption,
+  article .wp-caption + hr,
+  article hr + .wpview,
+  article .wpview + hr,
+  article hr + .box,
+  article .box + hr,
+  article hr + .dataTables_wrapper,
+  article .dataTables_wrapper + hr,
+  article hr + .notice,
+  article .notice + hr,
+  article hr + h1,
+  article h1 + hr,
+  article hr + h2,
+  article h2 + hr,
+  article hr + h3,
+  article h3 + hr,
+  article hr + h4,
+  article .widget_calendar hr + caption, .widget_calendar
+  article hr + caption,
+  article h4 + hr,
+  article .widget_calendar caption + hr, .widget_calendar
+  article caption + hr,
+  article hr + h5,
+  article h5 + hr,
+  article hr + h6,
+  article h6 + hr,
+  article hr + p,
+  article p + hr,
+  article hr + ol,
+  article ol + hr,
+  article hr + ul,
+  article ul + hr,
+  article hr + blockquote,
+  article blockquote + hr,
+  article hr + pre,
+  article pre + hr,
+  article hr + img,
+  article img + hr,
+  article hr + table,
+  article table + hr,
+  article hr + [class*="ratio-"],
+  article [class*="ratio-"] + hr,
+  article hr + .wp-caption,
+  article .wp-caption + hr,
+  article hr + .wpview,
+  article .wpview + hr,
+  article hr + .box,
+  article .box + hr,
+  article hr + .dataTables_wrapper,
+  article .dataTables_wrapper + hr,
+  article hr + .notice,
+  article .notice + hr,
+  article hr + h1,
+  article h1 + hr,
+  article hr + h2,
+  article h2 + hr,
+  article hr + h3,
+  article h3 + hr,
+  article hr + h4,
+  article .widget_calendar hr + caption, .widget_calendar
+  article hr + caption,
+  article h4 + hr,
+  article .widget_calendar caption + hr, .widget_calendar
+  article caption + hr,
+  article hr + h5,
+  article h5 + hr,
+  article hr + h6,
+  article h6 + hr,
+  article hr + p,
+  article p + hr,
+  article hr + ol,
+  article ol + hr,
+  article hr + ul,
+  article ul + hr,
+  article hr + blockquote,
+  article blockquote + hr,
+  article hr + pre,
+  article pre + hr,
+  article hr + img,
+  article img + hr,
+  article hr + table,
+  article table + hr,
+  article hr + [class*="ratio-"],
+  article [class*="ratio-"] + hr,
+  article hr + .wp-caption,
+  article .wp-caption + hr,
+  article hr + .wpview,
+  article .wpview + hr,
+  article hr + .box,
+  article .box + hr,
+  article hr + .dataTables_wrapper,
+  article .dataTables_wrapper + hr,
+  article hr + .notice,
+  article .notice + hr,
+  article hr + h1,
+  article h1 + hr,
+  article hr + h2,
+  article h2 + hr,
+  article hr + h3,
+  article h3 + hr,
+  article hr + h4,
+  article .widget_calendar hr + caption, .widget_calendar
+  article hr + caption,
+  article h4 + hr,
+  article .widget_calendar caption + hr, .widget_calendar
+  article caption + hr,
+  article hr + h5,
+  article h5 + hr,
+  article hr + h6,
+  article h6 + hr,
+  article hr + p,
+  article p + hr,
+  article hr + ol,
+  article ol + hr,
+  article hr + ul,
+  article ul + hr,
+  article hr + blockquote,
+  article blockquote + hr,
+  article hr + pre,
+  article pre + hr,
+  article hr + img,
+  article img + hr,
+  article hr + table,
+  article table + hr,
+  article hr + [class*="ratio-"],
+  article [class*="ratio-"] + hr,
+  article hr + .wp-caption,
+  article .wp-caption + hr,
+  article hr + .wpview,
+  article .wpview + hr,
+  article hr + .box,
+  article .box + hr,
+  article hr + .dataTables_wrapper,
+  article .dataTables_wrapper + hr,
+  article hr + .notice,
+  article .notice + hr,
+  article hr + h1,
+  article h1 + hr,
+  article hr + h2,
+  article h2 + hr,
+  article hr + h3,
+  article h3 + hr,
+  article hr + h4,
+  article .widget_calendar hr + caption, .widget_calendar
+  article hr + caption,
+  article h4 + hr,
+  article .widget_calendar caption + hr, .widget_calendar
+  article caption + hr,
+  article hr + h5,
+  article h5 + hr,
+  article hr + h6,
+  article h6 + hr,
+  article hr + p,
+  article p + hr,
+  article hr + ol,
+  article ol + hr,
+  article hr + ul,
+  article ul + hr,
+  article hr + blockquote,
+  article blockquote + hr,
+  article hr + pre,
+  article pre + hr,
+  article hr + img,
+  article img + hr,
+  article hr + table,
+  article table + hr,
+  article hr + [class*="ratio-"],
+  article [class*="ratio-"] + hr,
+  article hr + .wp-caption,
+  article .wp-caption + hr,
+  article hr + .wpview,
+  article .wpview + hr,
+  article hr + .box,
+  article .box + hr,
+  article hr + .dataTables_wrapper,
+  article .dataTables_wrapper + hr,
+  article hr + .notice,
+  article .notice + hr,
+  article hr + h1,
+  article h1 + hr,
+  article hr + h2,
+  article h2 + hr,
+  article hr + h3,
+  article h3 + hr,
+  article hr + h4,
+  article .widget_calendar hr + caption, .widget_calendar
+  article hr + caption,
+  article h4 + hr,
+  article .widget_calendar caption + hr, .widget_calendar
+  article caption + hr,
+  article hr + h5,
+  article h5 + hr,
+  article hr + h6,
+  article h6 + hr,
+  article hr + p,
+  article p + hr,
+  article hr + ol,
+  article ol + hr,
+  article hr + ul,
+  article ul + hr,
+  article hr + blockquote,
+  article blockquote + hr,
+  article hr + pre,
+  article pre + hr,
+  article hr + img,
+  article img + hr,
+  article hr + table,
+  article table + hr,
+  article hr + [class*="ratio-"],
+  article [class*="ratio-"] + hr,
+  article hr + .wp-caption,
+  article .wp-caption + hr,
+  article hr + .wpview,
+  article .wpview + hr,
+  article hr + .box,
+  article .box + hr,
+  article hr + .dataTables_wrapper,
+  article .dataTables_wrapper + hr,
+  article hr + .notice,
+  article .notice + hr,
+  article hr + h1,
+  article h1 + hr,
+  article hr + h2,
+  article h2 + hr,
+  article hr + h3,
+  article h3 + hr,
+  article hr + h4,
+  article .widget_calendar hr + caption, .widget_calendar
+  article hr + caption,
+  article h4 + hr,
+  article .widget_calendar caption + hr, .widget_calendar
+  article caption + hr,
+  article hr + h5,
+  article h5 + hr,
+  article hr + h6,
+  article h6 + hr,
+  article hr + p,
+  article p + hr,
+  article hr + ol,
+  article ol + hr,
+  article hr + ul,
+  article ul + hr,
+  article hr + blockquote,
+  article blockquote + hr,
+  article hr + pre,
+  article pre + hr,
+  article hr + img,
+  article img + hr,
+  article hr + table,
+  article table + hr,
+  article hr + [class*="ratio-"],
+  article [class*="ratio-"] + hr,
+  article hr + .wp-caption,
+  article .wp-caption + hr,
+  article hr + .wpview,
+  article .wpview + hr,
+  article hr + .box,
+  article .box + hr,
+  article hr + .dataTables_wrapper,
+  article .dataTables_wrapper + hr,
+  article hr + .notice,
+  article .notice + hr {
     margin-top: 2em; }
-  /* line 85, /www/sites/HbgPrime/wwwroot/source/sass/typography/_article.scss */
-  .mce-content-body h1, .mce-content-body h2, .mce-content-body h3, .mce-content-body h4, .mce-content-body .widget_calendar caption, .widget_calendar .mce-content-body caption, .mce-content-body h5, .mce-content-body h6,
-  .mce-content-body p,
-  .mce-content-body ol,
-  .mce-content-body ul,
-  .mce-content-body blockquote,
-  .mce-content-body pre,
-  .mce-content-body img,
-  .mce-content-body table,
-  .mce-content-body [class*="ratio-"],
-  .mce-content-body .wp-caption,
-  .mce-content-body .wpview,
-  .mce-content-body .box,
-  .mce-content-body .dataTables_wrapper,
-  .mce-content-body .notice,
-  article h1,
-  article h2,
-  article h3,
-  article h4,
-  article .widget_calendar caption, .widget_calendar
-  article caption,
-  article h5,
-  article h6,
-  article p,
-  article ol,
-  article ul,
-  article blockquote,
-  article pre,
-  article img,
-  article table,
-  article [class*="ratio-"],
-  article .wp-caption,
-  article .wpview,
-  article .box,
-  article .dataTables_wrapper,
-  article .notice {
-    margin-top: 1.3em; }
-  /* line 102, /www/sites/HbgPrime/wwwroot/source/sass/typography/_article.scss */
-  .mce-content-body ul ul,
-  .mce-content-body ol ol,
-  article ul ul,
-  article ol ol {
-    margin-top: .3em; }
-  /* line 107, /www/sites/HbgPrime/wwwroot/source/sass/typography/_article.scss */
+  /* line 69, /www/sites/HbgPrime/wwwroot/source/sass/typography/_article.scss */
+  .mce-content-body h1 + p,
+  .mce-content-body h2 + p,
+  .mce-content-body h3 + p,
+  .mce-content-body h4 + p,
+  .mce-content-body .widget_calendar caption + p, .widget_calendar
+  .mce-content-body caption + p,
+  .mce-content-body h5 + p,
+  .mce-content-body h6 + p,
+  article h1 + p,
+  article h2 + p,
+  article h3 + p,
+  article h4 + p,
+  article .widget_calendar caption + p, .widget_calendar
+  article caption + p,
+  article h5 + p,
+  article h6 + p {
+    margin-top: 0em; }
+  /* line 78, /www/sites/HbgPrime/wwwroot/source/sass/typography/_article.scss */
+  .mce-content-body p:first-of-type,
+  article p:first-of-type {
+    margin-top: 15px; }
+  /* line 82, /www/sites/HbgPrime/wwwroot/source/sass/typography/_article.scss */
   .mce-content-body blockquote,
   article blockquote {
     border-left: 3px solid #e7e5e1;
     margin-bottom: 15px;
     padding: 20px 35px;
     quotes: "“" "”" "‘" "’"; }
-  /* line 114, /www/sites/HbgPrime/wwwroot/source/sass/typography/_article.scss */
+  /* line 89, /www/sites/HbgPrime/wwwroot/source/sass/typography/_article.scss */
   .mce-content-body blockquote:before,
   article blockquote:before {
     color: #979797;
@@ -5366,7 +6512,7 @@ article {
     line-height: 0.1em;
     margin-right: 0.25em;
     vertical-align: -0.4em; }
-  /* line 123, /www/sites/HbgPrime/wwwroot/source/sass/typography/_article.scss */
+  /* line 98, /www/sites/HbgPrime/wwwroot/source/sass/typography/_article.scss */
   .mce-content-body blockquote:after,
   article blockquote:after {
     color: #979797;
@@ -5375,19 +6521,19 @@ article {
     line-height: 0.1em;
     margin-left: 0.25em;
     vertical-align: -0.4em; }
-  /* line 132, /www/sites/HbgPrime/wwwroot/source/sass/typography/_article.scss */
+  /* line 107, /www/sites/HbgPrime/wwwroot/source/sass/typography/_article.scss */
   .mce-content-body blockquote p,
   article blockquote p {
     display: inline;
     margin: 0; }
-  /* line 137, /www/sites/HbgPrime/wwwroot/source/sass/typography/_article.scss */
+  /* line 112, /www/sites/HbgPrime/wwwroot/source/sass/typography/_article.scss */
   .mce-content-body img,
   article img {
     display: block;
     max-width: 100%;
     height: auto; }
   @media print {
-    /* line 144, /www/sites/HbgPrime/wwwroot/source/sass/typography/_article.scss */
+    /* line 119, /www/sites/HbgPrime/wwwroot/source/sass/typography/_article.scss */
     .mce-content-body a::after,
     article a::after {
       display: inline;
@@ -5396,7 +6542,7 @@ article {
       font-size: .8em;
       word-break: break-all;
       text-decoration: none; } }
-  /* line 154, /www/sites/HbgPrime/wwwroot/source/sass/typography/_article.scss */
+  /* line 129, /www/sites/HbgPrime/wwwroot/source/sass/typography/_article.scss */
   .mce-content-body p, .mce-content-body h1, .mce-content-body h2, .mce-content-body h3, .mce-content-body h4, .mce-content-body .widget_calendar caption, .widget_calendar .mce-content-body caption, .mce-content-body h5, .mce-content-body h6, .mce-content-body li, .mce-content-body .wp-caption,
   article p,
   article h1,
@@ -5411,7 +6557,7 @@ article {
   article .wp-caption {
     max-width: 700px; }
     @media print {
-      /* line 154, /www/sites/HbgPrime/wwwroot/source/sass/typography/_article.scss */
+      /* line 129, /www/sites/HbgPrime/wwwroot/source/sass/typography/_article.scss */
       .mce-content-body p, .mce-content-body h1, .mce-content-body h2, .mce-content-body h3, .mce-content-body h4, .mce-content-body .widget_calendar caption, .widget_calendar .mce-content-body caption, .mce-content-body h5, .mce-content-body h6, .mce-content-body li, .mce-content-body .wp-caption,
       article p,
       article h1,
@@ -5426,7 +6572,7 @@ article {
       article .wp-caption {
         max-width: none !important; } }
 
-/* line 163, /www/sites/HbgPrime/wwwroot/source/sass/typography/_article.scss */
+/* line 138, /www/sites/HbgPrime/wwwroot/source/sass/typography/_article.scss */
 hr {
   position: relative;
   height: 4px;
@@ -5434,15 +6580,15 @@ hr {
   background-color: #e7e5e1;
   border: none; }
 
-/* line 171, /www/sites/HbgPrime/wwwroot/source/sass/typography/_article.scss */
+/* line 146, /www/sites/HbgPrime/wwwroot/source/sass/typography/_article.scss */
 article + .page-footer {
   margin-top: 30px; }
 
-/* line 175, /www/sites/HbgPrime/wwwroot/source/sass/typography/_article.scss */
+/* line 150, /www/sites/HbgPrime/wwwroot/source/sass/typography/_article.scss */
 .page-footer {
   font-size: .9em; }
 
-/* line 179, /www/sites/HbgPrime/wwwroot/source/sass/typography/_article.scss */
+/* line 154, /www/sites/HbgPrime/wwwroot/source/sass/typography/_article.scss */
 .mce-content-body img[data-wp-more="printbreak"] {
   background: transparent url("../images/printbreak.png") repeat-y scroll center center; }
 
@@ -5669,188 +6815,127 @@ a.link-box,
   display: block;
   position: relative;
   background-color: #333;
-  padding: 5px 10px 5px 15px;
+  padding: 5px 10px;
   border-radius: 3px;
   overflow: hidden;
-  color: #fff;
-  transition: 100ms all; }
-  /* line 50, /www/sites/HbgPrime/wwwroot/source/sass/typography/_link.scss */
-  a.link-box::before,
-  .link-box a::before {
-    content: '';
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    width: 5px;
-    background-color: #fff;
-    transition: 100ms all; }
-  /* line 65, /www/sites/HbgPrime/wwwroot/source/sass/typography/_link.scss */
+  color: #fff; }
+  /* line 52, /www/sites/HbgPrime/wwwroot/source/sass/typography/_link.scss */
   .theme-red a.link-box, .theme-red
   .link-box a {
     background-color: #cb0050; }
-    /* line 68, /www/sites/HbgPrime/wwwroot/source/sass/typography/_link.scss */
+    /* line 55, /www/sites/HbgPrime/wwwroot/source/sass/typography/_link.scss */
     .theme-red a.link-box::before, .theme-red
     .link-box a::before {
       background-color: #ec6701; }
-  /* line 65, /www/sites/HbgPrime/wwwroot/source/sass/typography/_link.scss */
+  /* line 52, /www/sites/HbgPrime/wwwroot/source/sass/typography/_link.scss */
   .theme-blue a.link-box, .theme-blue
   .link-box a {
     background-color: #0069b4; }
-    /* line 68, /www/sites/HbgPrime/wwwroot/source/sass/typography/_link.scss */
+    /* line 55, /www/sites/HbgPrime/wwwroot/source/sass/typography/_link.scss */
     .theme-blue a.link-box::before, .theme-blue
     .link-box a::before {
       background-color: #5ba1d8; }
-  /* line 65, /www/sites/HbgPrime/wwwroot/source/sass/typography/_link.scss */
+  /* line 52, /www/sites/HbgPrime/wwwroot/source/sass/typography/_link.scss */
   .theme-green a.link-box, .theme-green
   .link-box a {
     background-color: #11a636; }
-    /* line 68, /www/sites/HbgPrime/wwwroot/source/sass/typography/_link.scss */
+    /* line 55, /www/sites/HbgPrime/wwwroot/source/sass/typography/_link.scss */
     .theme-green a.link-box::before, .theme-green
     .link-box a::before {
       background-color: #a0c855; }
-  /* line 65, /www/sites/HbgPrime/wwwroot/source/sass/typography/_link.scss */
+  /* line 52, /www/sites/HbgPrime/wwwroot/source/sass/typography/_link.scss */
   .theme-purple a.link-box, .theme-purple
   .link-box a {
     background-color: #712082; }
-    /* line 68, /www/sites/HbgPrime/wwwroot/source/sass/typography/_link.scss */
+    /* line 55, /www/sites/HbgPrime/wwwroot/source/sass/typography/_link.scss */
     .theme-purple a.link-box::before, .theme-purple
     .link-box a::before {
       background-color: #a84c98; }
-  /* line 75, /www/sites/HbgPrime/wwwroot/source/sass/typography/_link.scss */
+  /* line 62, /www/sites/HbgPrime/wwwroot/source/sass/typography/_link.scss */
   a.link-box:hover,
   .link-box a:hover {
-    padding-left: 18px; }
-    /* line 78, /www/sites/HbgPrime/wwwroot/source/sass/typography/_link.scss */
-    a.link-box:hover::before,
-    .link-box a:hover::before {
-      width: 8px; }
+    background-color: #262626; }
+    /* line 68, /www/sites/HbgPrime/wwwroot/source/sass/typography/_link.scss */
+    .theme-red a.link-box:hover, .theme-red
+    .link-box a:hover {
+      background-color: #b20046; }
+    /* line 68, /www/sites/HbgPrime/wwwroot/source/sass/typography/_link.scss */
+    .theme-blue a.link-box:hover, .theme-blue
+    .link-box a:hover {
+      background-color: #005a9b; }
+    /* line 68, /www/sites/HbgPrime/wwwroot/source/sass/typography/_link.scss */
+    .theme-green a.link-box:hover, .theme-green
+    .link-box a:hover {
+      background-color: #0f8f2e; }
+    /* line 68, /www/sites/HbgPrime/wwwroot/source/sass/typography/_link.scss */
+    .theme-purple a.link-box:hover, .theme-purple
+    .link-box a:hover {
+      background-color: #5f1b6e; }
 
-/* line 84, /www/sites/HbgPrime/wwwroot/source/sass/typography/_link.scss */
+/* line 76, /www/sites/HbgPrime/wwwroot/source/sass/typography/_link.scss */
 a.link-box:nth-of-type(2),
 .link-box:nth-of-type(2) a {
   background-color: #777; }
-  /* line 88, /www/sites/HbgPrime/wwwroot/source/sass/typography/_link.scss */
-  a.link-box:nth-of-type(2)::before,
-  .link-box:nth-of-type(2) a::before {
-    background-color: #000; }
-  /* line 95, /www/sites/HbgPrime/wwwroot/source/sass/typography/_link.scss */
+  /* line 83, /www/sites/HbgPrime/wwwroot/source/sass/typography/_link.scss */
   .theme-red a.link-box:nth-of-type(2), .theme-red
   .link-box:nth-of-type(2) a {
     background-color: #ae0b05; }
-    /* line 98, /www/sites/HbgPrime/wwwroot/source/sass/typography/_link.scss */
-    .theme-red a.link-box:nth-of-type(2)::before, .theme-red
-    .link-box:nth-of-type(2) a::before {
-      background-color: #e3000f; }
-  /* line 95, /www/sites/HbgPrime/wwwroot/source/sass/typography/_link.scss */
+  /* line 83, /www/sites/HbgPrime/wwwroot/source/sass/typography/_link.scss */
   .theme-blue a.link-box:nth-of-type(2), .theme-blue
   .link-box:nth-of-type(2) a {
     background-color: #005c86; }
-    /* line 98, /www/sites/HbgPrime/wwwroot/source/sass/typography/_link.scss */
-    .theme-blue a.link-box:nth-of-type(2)::before, .theme-blue
-    .link-box:nth-of-type(2) a::before {
-      background-color: #0095db; }
-  /* line 95, /www/sites/HbgPrime/wwwroot/source/sass/typography/_link.scss */
+  /* line 83, /www/sites/HbgPrime/wwwroot/source/sass/typography/_link.scss */
   .theme-green a.link-box:nth-of-type(2), .theme-green
   .link-box:nth-of-type(2) a {
     background-color: #50811b; }
-    /* line 98, /www/sites/HbgPrime/wwwroot/source/sass/typography/_link.scss */
-    .theme-green a.link-box:nth-of-type(2)::before, .theme-green
-    .link-box:nth-of-type(2) a::before {
-      background-color: #76b828; }
-  /* line 95, /www/sites/HbgPrime/wwwroot/source/sass/typography/_link.scss */
+  /* line 83, /www/sites/HbgPrime/wwwroot/source/sass/typography/_link.scss */
   .theme-purple a.link-box:nth-of-type(2), .theme-purple
   .link-box:nth-of-type(2) a {
     background-color: #7b075e; }
-    /* line 98, /www/sites/HbgPrime/wwwroot/source/sass/typography/_link.scss */
-    .theme-purple a.link-box:nth-of-type(2)::before, .theme-purple
-    .link-box:nth-of-type(2) a::before {
-      background-color: #a61380; }
 
-/* line 106, /www/sites/HbgPrime/wwwroot/source/sass/typography/_link.scss */
+/* line 90, /www/sites/HbgPrime/wwwroot/source/sass/typography/_link.scss */
 a.link-box:nth-of-type(3),
 .link-box:nth-of-type(3) a {
   background-color: #000; }
-  /* line 110, /www/sites/HbgPrime/wwwroot/source/sass/typography/_link.scss */
-  a.link-box:nth-of-type(3)::before,
-  .link-box:nth-of-type(3) a::before {
-    background-color: #333; }
-  /* line 117, /www/sites/HbgPrime/wwwroot/source/sass/typography/_link.scss */
+  /* line 97, /www/sites/HbgPrime/wwwroot/source/sass/typography/_link.scss */
   .theme-red a.link-box:nth-of-type(3), .theme-red
   .link-box:nth-of-type(3) a {
     background-color: #e3000f; }
-    /* line 120, /www/sites/HbgPrime/wwwroot/source/sass/typography/_link.scss */
-    .theme-red a.link-box:nth-of-type(3)::before, .theme-red
-    .link-box:nth-of-type(3) a::before {
-      background-color: #cb0050; }
-  /* line 117, /www/sites/HbgPrime/wwwroot/source/sass/typography/_link.scss */
+  /* line 97, /www/sites/HbgPrime/wwwroot/source/sass/typography/_link.scss */
   .theme-blue a.link-box:nth-of-type(3), .theme-blue
   .link-box:nth-of-type(3) a {
     background-color: #0095db; }
-    /* line 120, /www/sites/HbgPrime/wwwroot/source/sass/typography/_link.scss */
-    .theme-blue a.link-box:nth-of-type(3)::before, .theme-blue
-    .link-box:nth-of-type(3) a::before {
-      background-color: #0069b4; }
-  /* line 117, /www/sites/HbgPrime/wwwroot/source/sass/typography/_link.scss */
+  /* line 97, /www/sites/HbgPrime/wwwroot/source/sass/typography/_link.scss */
   .theme-green a.link-box:nth-of-type(3), .theme-green
   .link-box:nth-of-type(3) a {
     background-color: #76b828; }
-    /* line 120, /www/sites/HbgPrime/wwwroot/source/sass/typography/_link.scss */
-    .theme-green a.link-box:nth-of-type(3)::before, .theme-green
-    .link-box:nth-of-type(3) a::before {
-      background-color: #11a636; }
-  /* line 117, /www/sites/HbgPrime/wwwroot/source/sass/typography/_link.scss */
+  /* line 97, /www/sites/HbgPrime/wwwroot/source/sass/typography/_link.scss */
   .theme-purple a.link-box:nth-of-type(3), .theme-purple
   .link-box:nth-of-type(3) a {
     background-color: #a61380; }
-    /* line 120, /www/sites/HbgPrime/wwwroot/source/sass/typography/_link.scss */
-    .theme-purple a.link-box:nth-of-type(3)::before, .theme-purple
-    .link-box:nth-of-type(3) a::before {
-      background-color: #712082; }
 
-/* line 128, /www/sites/HbgPrime/wwwroot/source/sass/typography/_link.scss */
+/* line 104, /www/sites/HbgPrime/wwwroot/source/sass/typography/_link.scss */
 a.link-box:nth-of-type(4),
 .link-box:nth-of-type(4) a {
   background-color: #666; }
-  /* line 132, /www/sites/HbgPrime/wwwroot/source/sass/typography/_link.scss */
-  a.link-box:nth-of-type(4)::before,
-  .link-box:nth-of-type(4) a::before {
-    background-color: #fff; }
-  /* line 139, /www/sites/HbgPrime/wwwroot/source/sass/typography/_link.scss */
+  /* line 111, /www/sites/HbgPrime/wwwroot/source/sass/typography/_link.scss */
   .theme-red a.link-box:nth-of-type(4), .theme-red
   .link-box:nth-of-type(4) a {
     background-color: #ec6701; }
-    /* line 142, /www/sites/HbgPrime/wwwroot/source/sass/typography/_link.scss */
-    .theme-red a.link-box:nth-of-type(4)::before, .theme-red
-    .link-box:nth-of-type(4) a::before {
-      background-color: #f7a600; }
-  /* line 139, /www/sites/HbgPrime/wwwroot/source/sass/typography/_link.scss */
+  /* line 111, /www/sites/HbgPrime/wwwroot/source/sass/typography/_link.scss */
   .theme-blue a.link-box:nth-of-type(4), .theme-blue
   .link-box:nth-of-type(4) a {
     background-color: #5ba1d8; }
-    /* line 142, /www/sites/HbgPrime/wwwroot/source/sass/typography/_link.scss */
-    .theme-blue a.link-box:nth-of-type(4)::before, .theme-blue
-    .link-box:nth-of-type(4) a::before {
-      background-color: #4db4e7; }
-  /* line 139, /www/sites/HbgPrime/wwwroot/source/sass/typography/_link.scss */
+  /* line 111, /www/sites/HbgPrime/wwwroot/source/sass/typography/_link.scss */
   .theme-green a.link-box:nth-of-type(4), .theme-green
   .link-box:nth-of-type(4) a {
     background-color: #a0c855; }
-    /* line 142, /www/sites/HbgPrime/wwwroot/source/sass/typography/_link.scss */
-    .theme-green a.link-box:nth-of-type(4)::before, .theme-green
-    .link-box:nth-of-type(4) a::before {
-      background-color: #afca05; }
-  /* line 139, /www/sites/HbgPrime/wwwroot/source/sass/typography/_link.scss */
+  /* line 111, /www/sites/HbgPrime/wwwroot/source/sass/typography/_link.scss */
   .theme-purple a.link-box:nth-of-type(4), .theme-purple
   .link-box:nth-of-type(4) a {
     background-color: #a84c98; }
-    /* line 142, /www/sites/HbgPrime/wwwroot/source/sass/typography/_link.scss */
-    .theme-purple a.link-box:nth-of-type(4)::before, .theme-purple
-    .link-box:nth-of-type(4) a::before {
-      background-color: #d35098; }
 
-/* line 150, /www/sites/HbgPrime/wwwroot/source/sass/typography/_link.scss */
+/* line 118, /www/sites/HbgPrime/wwwroot/source/sass/typography/_link.scss */
 .link-box + .link-box {
   margin-top: 5px; }
 
@@ -9340,6 +10425,22 @@ body:not(.material-no-shadow) .post .post-full, body:not(.material-no-shadow) .p
   #cookie-consent {
     display: none; } }
 
+/* line 148, /www/sites/HbgPrime/wwwroot/source/sass/component/notice/_notice.scss */
+.modularity-mod-notice .notice {
+  margin-bottom: 10px; }
+  @media (min-width: 469px) and (max-width: 768px) {
+    /* line 148, /www/sites/HbgPrime/wwwroot/source/sass/component/notice/_notice.scss */
+    .modularity-mod-notice .notice {
+      margin-bottom: 10px; } }
+  @media (min-width: 769px) and (max-width: 960px) {
+    /* line 148, /www/sites/HbgPrime/wwwroot/source/sass/component/notice/_notice.scss */
+    .modularity-mod-notice .notice {
+      margin-bottom: 30px; } }
+  @media (min-width: 961px) {
+    /* line 148, /www/sites/HbgPrime/wwwroot/source/sass/component/notice/_notice.scss */
+    .modularity-mod-notice .notice {
+      margin-bottom: 30px; } }
+
 /* line 83, /www/sites/HbgPrime/wwwroot/source/sass/component/stripe/_stripe.scss */
 .has-stripe.has-stripe {
   position: relative;
@@ -9755,8 +10856,9 @@ a.box-index {
 .widget_meta a.box-index-title,
 .widget_recent_entries a.box-index-title,
 .widget_recent_comments a.box-index-title {
-  line-height: 1em;
   display: block;
+  line-height: 1.2;
+  margin-top: -4px;
   padding-bottom: .5em; }
 
 /* line 29, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_filled.scss */
@@ -10134,7 +11236,8 @@ a.box-index {
     padding: 10px 15px;
     margin: 0;
     background-color: #777;
-    color: #fff; }
+    color: #fff;
+    border-radius: 2px 2px 0 0; }
     @media print {
       /* line 72, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_panel.scss */
       .box-panel .box-title,
@@ -10194,7 +11297,7 @@ a.box-index {
         color: #252525 !important;
         border-bottom: 2px solid #252525;
         padding: 10px 0; } }
-    /* line 101, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_panel.scss */
+    /* line 102, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_panel.scss */
     .theme-red .box-panel .box-title, .theme-red
     .box-panel .widgettitle, .theme-red
     .box-panel > h1, .theme-red
@@ -10250,7 +11353,7 @@ a.box-index {
     .sidebar-content-area-bottom [class^="widget_"]:not(.widget_calendar) .widget > h5, .theme-red
     .sidebar-content-area-bottom [class^="widget_"]:not(.widget_calendar) .widget > h6 {
       background-color: #ae0b05; }
-    /* line 101, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_panel.scss */
+    /* line 102, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_panel.scss */
     .theme-blue .box-panel .box-title, .theme-blue
     .box-panel .widgettitle, .theme-blue
     .box-panel > h1, .theme-blue
@@ -10306,7 +11409,7 @@ a.box-index {
     .sidebar-content-area-bottom [class^="widget_"]:not(.widget_calendar) .widget > h5, .theme-blue
     .sidebar-content-area-bottom [class^="widget_"]:not(.widget_calendar) .widget > h6 {
       background-color: #005c86; }
-    /* line 101, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_panel.scss */
+    /* line 102, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_panel.scss */
     .theme-green .box-panel .box-title, .theme-green
     .box-panel .widgettitle, .theme-green
     .box-panel > h1, .theme-green
@@ -10362,7 +11465,7 @@ a.box-index {
     .sidebar-content-area-bottom [class^="widget_"]:not(.widget_calendar) .widget > h5, .theme-green
     .sidebar-content-area-bottom [class^="widget_"]:not(.widget_calendar) .widget > h6 {
       background-color: #50811b; }
-    /* line 101, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_panel.scss */
+    /* line 102, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_panel.scss */
     .theme-purple .box-panel .box-title, .theme-purple
     .box-panel .widgettitle, .theme-purple
     .box-panel > h1, .theme-purple
@@ -10418,7 +11521,7 @@ a.box-index {
     .sidebar-content-area-bottom [class^="widget_"]:not(.widget_calendar) .widget > h5, .theme-purple
     .sidebar-content-area-bottom [class^="widget_"]:not(.widget_calendar) .widget > h6 {
       background-color: #7b075e; }
-  /* line 108, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_panel.scss */
+  /* line 109, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_panel.scss */
   .box-panel .box-content,
   .box-panel .dataTables_wrapper,
   .sidebar-content-area [class^="widget_"]:not(.widget_calendar) .box-content,
@@ -10427,45 +11530,45 @@ a.box-index {
   .sidebar-content-area-bottom [class^="widget_"]:not(.widget_calendar) .dataTables_wrapper {
     border: 1px solid #e7e5e1;
     border-top: 0; }
-  /* line 114, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_panel.scss */
+  /* line 115, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_panel.scss */
   .box-panel .table,
   .sidebar-content-area [class^="widget_"]:not(.widget_calendar) .table,
   .sidebar-content-area-bottom [class^="widget_"]:not(.widget_calendar) .table {
     border-top: 0;
     background-color: #fff; }
-  /* line 119, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_panel.scss */
+  /* line 120, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_panel.scss */
   .box-panel > ul:not(.social-feed-gallery),
   .sidebar-content-area [class^="widget_"]:not(.widget_calendar) > ul:not(.social-feed-gallery),
   .sidebar-content-area-bottom [class^="widget_"]:not(.widget_calendar) > ul:not(.social-feed-gallery) {
     background-color: #fff;
     border: 1px solid #e7e5e1;
     border-top: 0; }
-    /* line 124, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_panel.scss */
+    /* line 125, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_panel.scss */
     .box-panel > ul:not(.social-feed-gallery) li,
     .sidebar-content-area [class^="widget_"]:not(.widget_calendar) > ul:not(.social-feed-gallery) li,
     .sidebar-content-area-bottom [class^="widget_"]:not(.widget_calendar) > ul:not(.social-feed-gallery) li {
       padding: 10px 15px; }
-    /* line 128, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_panel.scss */
+    /* line 129, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_panel.scss */
     .box-panel > ul:not(.social-feed-gallery) li + li,
     .sidebar-content-area [class^="widget_"]:not(.widget_calendar) > ul:not(.social-feed-gallery) li + li,
     .sidebar-content-area-bottom [class^="widget_"]:not(.widget_calendar) > ul:not(.social-feed-gallery) li + li {
       border-top: 1px solid #e7e5e1; }
-    /* line 133, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_panel.scss */
+    /* line 134, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_panel.scss */
     .box-panel > ul:not(.social-feed-gallery):not(.social-feed) a,
     .sidebar-content-area [class^="widget_"]:not(.widget_calendar) > ul:not(.social-feed-gallery):not(.social-feed) a,
     .sidebar-content-area-bottom [class^="widget_"]:not(.widget_calendar) > ul:not(.social-feed-gallery):not(.social-feed) a {
       display: table; }
-      /* line 136, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_panel.scss */
+      /* line 137, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_panel.scss */
       .box-panel > ul:not(.social-feed-gallery):not(.social-feed) a:hover,
       .sidebar-content-area [class^="widget_"]:not(.widget_calendar) > ul:not(.social-feed-gallery):not(.social-feed) a:hover,
       .sidebar-content-area-bottom [class^="widget_"]:not(.widget_calendar) > ul:not(.social-feed-gallery):not(.social-feed) a:hover {
         text-decoration: none !important; }
-        /* line 139, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_panel.scss */
+        /* line 140, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_panel.scss */
         .box-panel > ul:not(.social-feed-gallery):not(.social-feed) a:hover .title,
         .sidebar-content-area [class^="widget_"]:not(.widget_calendar) > ul:not(.social-feed-gallery):not(.social-feed) a:hover .title,
         .sidebar-content-area-bottom [class^="widget_"]:not(.widget_calendar) > ul:not(.social-feed-gallery):not(.social-feed) a:hover .title {
           text-decoration: underline !important; }
-      /* line 144, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_panel.scss */
+      /* line 145, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_panel.scss */
       .box-panel > ul:not(.social-feed-gallery):not(.social-feed) a .title,
       .box-panel > ul:not(.social-feed-gallery):not(.social-feed) a .date,
       .sidebar-content-area [class^="widget_"]:not(.widget_calendar) > ul:not(.social-feed-gallery):not(.social-feed) a .title,
@@ -10474,7 +11577,7 @@ a.box-index {
       .sidebar-content-area-bottom [class^="widget_"]:not(.widget_calendar) > ul:not(.social-feed-gallery):not(.social-feed) a .date {
         display: block; }
         @media (min-width: 769px) {
-          /* line 144, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_panel.scss */
+          /* line 145, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_panel.scss */
           .box-panel > ul:not(.social-feed-gallery):not(.social-feed) a .title,
           .box-panel > ul:not(.social-feed-gallery):not(.social-feed) a .date,
           .sidebar-content-area [class^="widget_"]:not(.widget_calendar) > ul:not(.social-feed-gallery):not(.social-feed) a .title,
@@ -10482,7 +11585,7 @@ a.box-index {
           .sidebar-content-area-bottom [class^="widget_"]:not(.widget_calendar) > ul:not(.social-feed-gallery):not(.social-feed) a .title,
           .sidebar-content-area-bottom [class^="widget_"]:not(.widget_calendar) > ul:not(.social-feed-gallery):not(.social-feed) a .date {
             display: table-cell; } }
-      /* line 153, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_panel.scss */
+      /* line 154, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_panel.scss */
       .box-panel > ul:not(.social-feed-gallery):not(.social-feed) a .date,
       .sidebar-content-area [class^="widget_"]:not(.widget_calendar) > ul:not(.social-feed-gallery):not(.social-feed) a .date,
       .sidebar-content-area-bottom [class^="widget_"]:not(.widget_calendar) > ul:not(.social-feed-gallery):not(.social-feed) a .date {
@@ -10490,13 +11593,13 @@ a.box-index {
         width: 1%;
         padding-left: 20px; }
         @media (min-width: 769px) {
-          /* line 153, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_panel.scss */
+          /* line 154, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_panel.scss */
           .box-panel > ul:not(.social-feed-gallery):not(.social-feed) a .date,
           .sidebar-content-area [class^="widget_"]:not(.widget_calendar) > ul:not(.social-feed-gallery):not(.social-feed) a .date,
           .sidebar-content-area-bottom [class^="widget_"]:not(.widget_calendar) > ul:not(.social-feed-gallery):not(.social-feed) a .date {
             text-align: right; } }
 
-/* line 170, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_panel.scss */
+/* line 171, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_panel.scss */
 .box-panel-secondary .box-title,
 .box-panel-secondary .widgettitle,
 .box-panel-secondary > h1,
@@ -10555,7 +11658,7 @@ a.box-index {
   background-color: transparent !important;
   border-bottom: 3px solid #333;
   color: #cb0050; }
-  /* line 193, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_panel.scss */
+  /* line 194, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_panel.scss */
   .theme-red .box-panel-secondary .box-title, .theme-red
   .box-panel-secondary .widgettitle, .theme-red
   .box-panel-secondary > h1, .theme-red
@@ -10612,7 +11715,7 @@ a.box-index {
   .sidebar-content-area-bottom [class^="widget_"]:not(.widget_calendar) .widget > h6 {
     color: #cb0050;
     border-color: #cb0050; }
-  /* line 193, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_panel.scss */
+  /* line 194, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_panel.scss */
   .theme-blue .box-panel-secondary .box-title, .theme-blue
   .box-panel-secondary .widgettitle, .theme-blue
   .box-panel-secondary > h1, .theme-blue
@@ -10669,7 +11772,7 @@ a.box-index {
   .sidebar-content-area-bottom [class^="widget_"]:not(.widget_calendar) .widget > h6 {
     color: #0069b4;
     border-color: #0069b4; }
-  /* line 193, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_panel.scss */
+  /* line 194, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_panel.scss */
   .theme-green .box-panel-secondary .box-title, .theme-green
   .box-panel-secondary .widgettitle, .theme-green
   .box-panel-secondary > h1, .theme-green
@@ -10726,7 +11829,7 @@ a.box-index {
   .sidebar-content-area-bottom [class^="widget_"]:not(.widget_calendar) .widget > h6 {
     color: #11a636;
     border-color: #11a636; }
-  /* line 193, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_panel.scss */
+  /* line 194, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_panel.scss */
   .theme-purple .box-panel-secondary .box-title, .theme-purple
   .box-panel-secondary .widgettitle, .theme-purple
   .box-panel-secondary > h1, .theme-purple
@@ -10783,7 +11886,7 @@ a.box-index {
   .sidebar-content-area-bottom [class^="widget_"]:not(.widget_calendar) .widget > h6 {
     color: #712082;
     border-color: #712082; }
-  /* line 200, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_panel.scss */
+  /* line 201, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_panel.scss */
   .box-panel-secondary .box-title a,
   .box-panel-secondary .widgettitle a,
   .box-panel-secondary > h1 a,
@@ -10838,7 +11941,7 @@ a.box-index {
   .sidebar-content-area-bottom [class^="widget_"]:not(.widget_calendar) .widget > h5 a,
   .sidebar-content-area-bottom [class^="widget_"]:not(.widget_calendar) .widget > h6 a {
     color: #cb0050; }
-    /* line 206, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_panel.scss */
+    /* line 207, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_panel.scss */
     .theme-red .box-panel-secondary .box-title a, .theme-red
     .box-panel-secondary .widgettitle a, .theme-red
     .box-panel-secondary > h1 a, .theme-red
@@ -10895,7 +11998,7 @@ a.box-index {
     .sidebar-content-area-bottom [class^="widget_"]:not(.widget_calendar) .widget > h6 a {
       color: #cb0050;
       border-color: #cb0050; }
-    /* line 206, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_panel.scss */
+    /* line 207, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_panel.scss */
     .theme-blue .box-panel-secondary .box-title a, .theme-blue
     .box-panel-secondary .widgettitle a, .theme-blue
     .box-panel-secondary > h1 a, .theme-blue
@@ -10952,7 +12055,7 @@ a.box-index {
     .sidebar-content-area-bottom [class^="widget_"]:not(.widget_calendar) .widget > h6 a {
       color: #0069b4;
       border-color: #0069b4; }
-    /* line 206, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_panel.scss */
+    /* line 207, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_panel.scss */
     .theme-green .box-panel-secondary .box-title a, .theme-green
     .box-panel-secondary .widgettitle a, .theme-green
     .box-panel-secondary > h1 a, .theme-green
@@ -11009,7 +12112,7 @@ a.box-index {
     .sidebar-content-area-bottom [class^="widget_"]:not(.widget_calendar) .widget > h6 a {
       color: #11a636;
       border-color: #11a636; }
-    /* line 206, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_panel.scss */
+    /* line 207, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_panel.scss */
     .theme-purple .box-panel-secondary .box-title a, .theme-purple
     .box-panel-secondary .widgettitle a, .theme-purple
     .box-panel-secondary > h1 a, .theme-purple
@@ -14539,7 +15642,7 @@ small,
   margin-bottom: 0; }
 
 /* line 111, /www/sites/HbgPrime/wwwroot/source/sass/utility/_margin.scss */
-.gutter.gutter-top {
+.gutter.gutter-top:not(.gutter-margin) {
   padding-right: 0;
   padding-bottom: 0;
   padding-left: 0; }
@@ -14551,7 +15654,7 @@ small,
   margin-left: 0; }
 
 /* line 123, /www/sites/HbgPrime/wwwroot/source/sass/utility/_margin.scss */
-.gutter.gutter-bottom {
+.gutter.gutter-bottom:not(.gutter-margin) {
   padding-right: 0;
   padding-top: 0;
   padding-left: 0; }
@@ -14563,7 +15666,7 @@ small,
   margin-left: 0; }
 
 /* line 135, /www/sites/HbgPrime/wwwroot/source/sass/utility/_margin.scss */
-.gutter.gutter-left {
+.gutter.gutter-left:not(.gutter-margin) {
   padding-right: 0;
   padding-top: 0;
   padding-bottom: 0; }
@@ -14575,7 +15678,7 @@ small,
   margin-bottom: 0; }
 
 /* line 147, /www/sites/HbgPrime/wwwroot/source/sass/utility/_margin.scss */
-.gutter.gutter-right {
+.gutter.gutter-right:not(.gutter-margin) {
   padding-bottom: 0;
   padding-top: 0;
   padding-left: 0; }
@@ -14680,22 +15783,13 @@ small,
   vertical-align: -15%;
   content: ""; }
 
-/* line 82, /www/sites/HbgPrime/wwwroot/source/sass/utility/_link-item.scss */
-.link-item:not(:local-link)::before, .widget_archive a:not(:local-link)::before,
-.widget_categories a:not(:local-link)::before,
-.widget_meta a:not(:local-link)::before,
-.widget_recent_entries a:not(:local-link)::before,
-.widget_recent_comments a:not(:local-link)::before {
-  font-family: hbg-pricons;
-  line-height: 1;
-  text-rendering: auto;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  vertical-align: -15%;
-  content: ""; }
-
+/*
+.link-item:not(:local-link)::before {
+    @include pricon($pricon-external-link);
+}
+*/
 /* Domains */
-/* line 91, /www/sites/HbgPrime/wwwroot/source/sass/utility/_link-item.scss */
+/* line 93, /www/sites/HbgPrime/wwwroot/source/sass/utility/_link-item.scss */
 .link-item-github::before,
 .link-item[href*="github.com"]::before,
 .widget_archive a[href*="github.com"]::before,
@@ -14713,7 +15807,7 @@ small,
   content: ""; }
 
 /* Filetypes */
-/* line 101, /www/sites/HbgPrime/wwwroot/source/sass/utility/_link-item.scss */
+/* line 103, /www/sites/HbgPrime/wwwroot/source/sass/utility/_link-item.scss */
 .link-item-pdf::before,
 .link-item[href$=".pdf"]::before,
 .widget_archive a[href$=".pdf"]::before,
@@ -14730,7 +15824,7 @@ small,
   vertical-align: -15%;
   content: ""; }
 
-/* line 111, /www/sites/HbgPrime/wwwroot/source/sass/utility/_link-item.scss */
+/* line 113, /www/sites/HbgPrime/wwwroot/source/sass/utility/_link-item.scss */
 .link-item-doc::before,
 .link-item[href$=".doc"]::before,
 .widget_archive a[href$=".doc"]::before,
@@ -14754,7 +15848,7 @@ small,
   vertical-align: -15%;
   content: ""; }
 
-/* line 121, /www/sites/HbgPrime/wwwroot/source/sass/utility/_link-item.scss */
+/* line 123, /www/sites/HbgPrime/wwwroot/source/sass/utility/_link-item.scss */
 .link-item-ppt::before,
 .link-item[href$=".ppt"]::before,
 .widget_archive a[href$=".ppt"]::before,
@@ -14778,7 +15872,7 @@ small,
   vertical-align: -15%;
   content: ""; }
 
-/* line 134, /www/sites/HbgPrime/wwwroot/source/sass/utility/_link-item.scss */
+/* line 136, /www/sites/HbgPrime/wwwroot/source/sass/utility/_link-item.scss */
 .link-item-xls::before,
 .link-item-csv::before,
 .link-item[href$=".xls"]::before,
@@ -14810,7 +15904,7 @@ small,
   vertical-align: -15%;
   content: ""; }
 
-/* line 144, /www/sites/HbgPrime/wwwroot/source/sass/utility/_link-item.scss */
+/* line 146, /www/sites/HbgPrime/wwwroot/source/sass/utility/_link-item.scss */
 .link-item-audio::before,
 .link-item[href$=".mp3"]::before,
 .widget_archive a[href$=".mp3"]::before,
@@ -14834,7 +15928,7 @@ small,
   vertical-align: -15%;
   content: ""; }
 
-/* line 156, /www/sites/HbgPrime/wwwroot/source/sass/utility/_link-item.scss */
+/* line 158, /www/sites/HbgPrime/wwwroot/source/sass/utility/_link-item.scss */
 .link-item-archive::before,
 .link-item[href$=".zip"]::before,
 .widget_archive a[href$=".zip"]::before,
@@ -14865,7 +15959,7 @@ small,
   vertical-align: -15%;
   content: ""; }
 
-/* line 176, /www/sites/HbgPrime/wwwroot/source/sass/utility/_link-item.scss */
+/* line 178, /www/sites/HbgPrime/wwwroot/source/sass/utility/_link-item.scss */
 .link-item-image::before,
 .link-item[href$=".jpg"]::before,
 .widget_archive a[href$=".jpg"]::before,
@@ -14924,7 +16018,7 @@ small,
   vertical-align: -15%;
   content: ""; }
 
-/* line 190, /www/sites/HbgPrime/wwwroot/source/sass/utility/_link-item.scss */
+/* line 192, /www/sites/HbgPrime/wwwroot/source/sass/utility/_link-item.scss */
 .link-item-text::before,
 .link-item[href$=".txt"]::before,
 .widget_archive a[href$=".txt"]::before,
@@ -14962,7 +16056,7 @@ small,
   vertical-align: -15%;
   content: ""; }
 
-/* line 220, /www/sites/HbgPrime/wwwroot/source/sass/utility/_link-item.scss */
+/* line 222, /www/sites/HbgPrime/wwwroot/source/sass/utility/_link-item.scss */
 .link-item-video::before,
 .link-item[href$=".mpg"]::before,
 .widget_archive a[href$=".mpg"]::before,
@@ -15056,7 +16150,7 @@ small,
   vertical-align: -15%;
   content: ""; }
 
-/* line 226, /www/sites/HbgPrime/wwwroot/source/sass/utility/_link-item.scss */
+/* line 228, /www/sites/HbgPrime/wwwroot/source/sass/utility/_link-item.scss */
 .link-item-light::before, .sidebar-left-sidebar .widget_archive a::before,
 .sidebar-right-sidebar .widget_archive a::before, .sidebar-left-sidebar
 .widget_categories a::before,
@@ -15074,7 +16168,7 @@ small,
   color: rgba(255, 255, 255, 0.7); }
 
 /* Prefixes (links only) */
-/* line 234, /www/sites/HbgPrime/wwwroot/source/sass/utility/_link-item.scss */
+/* line 236, /www/sites/HbgPrime/wwwroot/source/sass/utility/_link-item.scss */
 .link-item[href^='tel:']::before, .widget_archive a[href^='tel:']::before,
 .widget_categories a[href^='tel:']::before,
 .widget_meta a[href^='tel:']::before,
@@ -15089,7 +16183,7 @@ small,
   vertical-align: -15%;
   content: ""; }
 
-/* line 241, /www/sites/HbgPrime/wwwroot/source/sass/utility/_link-item.scss */
+/* line 243, /www/sites/HbgPrime/wwwroot/source/sass/utility/_link-item.scss */
 .link-item[href^='mailto:']::before, .widget_archive a[href^='mailto:']::before,
 .widget_categories a[href^='mailto:']::before,
 .widget_meta a[href^='mailto:']::before,
