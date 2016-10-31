@@ -4477,84 +4477,72 @@ html:not(.no-flexbox) .grid-fit-content {
 @media (min-width: 0) {
   /* line 30, /www/sites/HbgPrime/wwwroot/source/sass/mixin/_grid.scss */
   html:not(.no-flexbox) .grid-xs-1 {
-    width: auto;
     -webkit-flex-basis: 8.33333%;
         -ms-flex-preferred-size: 8.33333%;
             flex-basis: 8.33333%;
     max-width: 8.33333%; }
   /* line 30, /www/sites/HbgPrime/wwwroot/source/sass/mixin/_grid.scss */
   html:not(.no-flexbox) .grid-xs-2 {
-    width: auto;
     -webkit-flex-basis: 16.66667%;
         -ms-flex-preferred-size: 16.66667%;
             flex-basis: 16.66667%;
     max-width: 16.66667%; }
   /* line 30, /www/sites/HbgPrime/wwwroot/source/sass/mixin/_grid.scss */
   html:not(.no-flexbox) .grid-xs-3 {
-    width: auto;
     -webkit-flex-basis: 25%;
         -ms-flex-preferred-size: 25%;
             flex-basis: 25%;
     max-width: 25%; }
   /* line 30, /www/sites/HbgPrime/wwwroot/source/sass/mixin/_grid.scss */
   html:not(.no-flexbox) .grid-xs-4 {
-    width: auto;
     -webkit-flex-basis: 33.33333%;
         -ms-flex-preferred-size: 33.33333%;
             flex-basis: 33.33333%;
     max-width: 33.33333%; }
   /* line 30, /www/sites/HbgPrime/wwwroot/source/sass/mixin/_grid.scss */
   html:not(.no-flexbox) .grid-xs-5 {
-    width: auto;
     -webkit-flex-basis: 41.66667%;
         -ms-flex-preferred-size: 41.66667%;
             flex-basis: 41.66667%;
     max-width: 41.66667%; }
   /* line 30, /www/sites/HbgPrime/wwwroot/source/sass/mixin/_grid.scss */
   html:not(.no-flexbox) .grid-xs-6 {
-    width: auto;
     -webkit-flex-basis: 50%;
         -ms-flex-preferred-size: 50%;
             flex-basis: 50%;
     max-width: 50%; }
   /* line 30, /www/sites/HbgPrime/wwwroot/source/sass/mixin/_grid.scss */
   html:not(.no-flexbox) .grid-xs-7 {
-    width: auto;
     -webkit-flex-basis: 58.33333%;
         -ms-flex-preferred-size: 58.33333%;
             flex-basis: 58.33333%;
     max-width: 58.33333%; }
   /* line 30, /www/sites/HbgPrime/wwwroot/source/sass/mixin/_grid.scss */
   html:not(.no-flexbox) .grid-xs-8 {
-    width: auto;
     -webkit-flex-basis: 66.66667%;
         -ms-flex-preferred-size: 66.66667%;
             flex-basis: 66.66667%;
     max-width: 66.66667%; }
   /* line 30, /www/sites/HbgPrime/wwwroot/source/sass/mixin/_grid.scss */
   html:not(.no-flexbox) .grid-xs-9 {
-    width: auto;
     -webkit-flex-basis: 75%;
         -ms-flex-preferred-size: 75%;
             flex-basis: 75%;
     max-width: 75%; }
   /* line 30, /www/sites/HbgPrime/wwwroot/source/sass/mixin/_grid.scss */
   html:not(.no-flexbox) .grid-xs-10 {
-    width: auto;
     -webkit-flex-basis: 83.33333%;
         -ms-flex-preferred-size: 83.33333%;
             flex-basis: 83.33333%;
     max-width: 83.33333%; }
   /* line 30, /www/sites/HbgPrime/wwwroot/source/sass/mixin/_grid.scss */
   html:not(.no-flexbox) .grid-xs-11 {
-    width: auto;
     -webkit-flex-basis: 91.66667%;
         -ms-flex-preferred-size: 91.66667%;
             flex-basis: 91.66667%;
     max-width: 91.66667%; }
   /* line 30, /www/sites/HbgPrime/wwwroot/source/sass/mixin/_grid.scss */
   html:not(.no-flexbox) .grid-xs-12 {
-    width: auto;
     -webkit-flex-basis: 100%;
         -ms-flex-preferred-size: 100%;
             flex-basis: 100%;
@@ -4575,84 +4563,72 @@ html:not(.no-flexbox) .grid-fit-content {
 @media (min-width: 469px) {
   /* line 30, /www/sites/HbgPrime/wwwroot/source/sass/mixin/_grid.scss */
   html:not(.no-flexbox) .grid-sm-1 {
-    width: auto;
     -webkit-flex-basis: 8.33333%;
         -ms-flex-preferred-size: 8.33333%;
             flex-basis: 8.33333%;
     max-width: 8.33333%; }
   /* line 30, /www/sites/HbgPrime/wwwroot/source/sass/mixin/_grid.scss */
   html:not(.no-flexbox) .grid-sm-2 {
-    width: auto;
     -webkit-flex-basis: 16.66667%;
         -ms-flex-preferred-size: 16.66667%;
             flex-basis: 16.66667%;
     max-width: 16.66667%; }
   /* line 30, /www/sites/HbgPrime/wwwroot/source/sass/mixin/_grid.scss */
   html:not(.no-flexbox) .grid-sm-3 {
-    width: auto;
     -webkit-flex-basis: 25%;
         -ms-flex-preferred-size: 25%;
             flex-basis: 25%;
     max-width: 25%; }
   /* line 30, /www/sites/HbgPrime/wwwroot/source/sass/mixin/_grid.scss */
   html:not(.no-flexbox) .grid-sm-4 {
-    width: auto;
     -webkit-flex-basis: 33.33333%;
         -ms-flex-preferred-size: 33.33333%;
             flex-basis: 33.33333%;
     max-width: 33.33333%; }
   /* line 30, /www/sites/HbgPrime/wwwroot/source/sass/mixin/_grid.scss */
   html:not(.no-flexbox) .grid-sm-5 {
-    width: auto;
     -webkit-flex-basis: 41.66667%;
         -ms-flex-preferred-size: 41.66667%;
             flex-basis: 41.66667%;
     max-width: 41.66667%; }
   /* line 30, /www/sites/HbgPrime/wwwroot/source/sass/mixin/_grid.scss */
   html:not(.no-flexbox) .grid-sm-6 {
-    width: auto;
     -webkit-flex-basis: 50%;
         -ms-flex-preferred-size: 50%;
             flex-basis: 50%;
     max-width: 50%; }
   /* line 30, /www/sites/HbgPrime/wwwroot/source/sass/mixin/_grid.scss */
   html:not(.no-flexbox) .grid-sm-7 {
-    width: auto;
     -webkit-flex-basis: 58.33333%;
         -ms-flex-preferred-size: 58.33333%;
             flex-basis: 58.33333%;
     max-width: 58.33333%; }
   /* line 30, /www/sites/HbgPrime/wwwroot/source/sass/mixin/_grid.scss */
   html:not(.no-flexbox) .grid-sm-8 {
-    width: auto;
     -webkit-flex-basis: 66.66667%;
         -ms-flex-preferred-size: 66.66667%;
             flex-basis: 66.66667%;
     max-width: 66.66667%; }
   /* line 30, /www/sites/HbgPrime/wwwroot/source/sass/mixin/_grid.scss */
   html:not(.no-flexbox) .grid-sm-9 {
-    width: auto;
     -webkit-flex-basis: 75%;
         -ms-flex-preferred-size: 75%;
             flex-basis: 75%;
     max-width: 75%; }
   /* line 30, /www/sites/HbgPrime/wwwroot/source/sass/mixin/_grid.scss */
   html:not(.no-flexbox) .grid-sm-10 {
-    width: auto;
     -webkit-flex-basis: 83.33333%;
         -ms-flex-preferred-size: 83.33333%;
             flex-basis: 83.33333%;
     max-width: 83.33333%; }
   /* line 30, /www/sites/HbgPrime/wwwroot/source/sass/mixin/_grid.scss */
   html:not(.no-flexbox) .grid-sm-11 {
-    width: auto;
     -webkit-flex-basis: 91.66667%;
         -ms-flex-preferred-size: 91.66667%;
             flex-basis: 91.66667%;
     max-width: 91.66667%; }
   /* line 30, /www/sites/HbgPrime/wwwroot/source/sass/mixin/_grid.scss */
   html:not(.no-flexbox) .grid-sm-12 {
-    width: auto;
     -webkit-flex-basis: 100%;
         -ms-flex-preferred-size: 100%;
             flex-basis: 100%;
@@ -4673,84 +4649,72 @@ html:not(.no-flexbox) .grid-fit-content {
 @media (min-width: 769px) {
   /* line 30, /www/sites/HbgPrime/wwwroot/source/sass/mixin/_grid.scss */
   html:not(.no-flexbox) .grid-md-1 {
-    width: auto;
     -webkit-flex-basis: 8.33333%;
         -ms-flex-preferred-size: 8.33333%;
             flex-basis: 8.33333%;
     max-width: 8.33333%; }
   /* line 30, /www/sites/HbgPrime/wwwroot/source/sass/mixin/_grid.scss */
   html:not(.no-flexbox) .grid-md-2 {
-    width: auto;
     -webkit-flex-basis: 16.66667%;
         -ms-flex-preferred-size: 16.66667%;
             flex-basis: 16.66667%;
     max-width: 16.66667%; }
   /* line 30, /www/sites/HbgPrime/wwwroot/source/sass/mixin/_grid.scss */
   html:not(.no-flexbox) .grid-md-3 {
-    width: auto;
     -webkit-flex-basis: 25%;
         -ms-flex-preferred-size: 25%;
             flex-basis: 25%;
     max-width: 25%; }
   /* line 30, /www/sites/HbgPrime/wwwroot/source/sass/mixin/_grid.scss */
   html:not(.no-flexbox) .grid-md-4 {
-    width: auto;
     -webkit-flex-basis: 33.33333%;
         -ms-flex-preferred-size: 33.33333%;
             flex-basis: 33.33333%;
     max-width: 33.33333%; }
   /* line 30, /www/sites/HbgPrime/wwwroot/source/sass/mixin/_grid.scss */
   html:not(.no-flexbox) .grid-md-5 {
-    width: auto;
     -webkit-flex-basis: 41.66667%;
         -ms-flex-preferred-size: 41.66667%;
             flex-basis: 41.66667%;
     max-width: 41.66667%; }
   /* line 30, /www/sites/HbgPrime/wwwroot/source/sass/mixin/_grid.scss */
   html:not(.no-flexbox) .grid-md-6 {
-    width: auto;
     -webkit-flex-basis: 50%;
         -ms-flex-preferred-size: 50%;
             flex-basis: 50%;
     max-width: 50%; }
   /* line 30, /www/sites/HbgPrime/wwwroot/source/sass/mixin/_grid.scss */
   html:not(.no-flexbox) .grid-md-7 {
-    width: auto;
     -webkit-flex-basis: 58.33333%;
         -ms-flex-preferred-size: 58.33333%;
             flex-basis: 58.33333%;
     max-width: 58.33333%; }
   /* line 30, /www/sites/HbgPrime/wwwroot/source/sass/mixin/_grid.scss */
   html:not(.no-flexbox) .grid-md-8 {
-    width: auto;
     -webkit-flex-basis: 66.66667%;
         -ms-flex-preferred-size: 66.66667%;
             flex-basis: 66.66667%;
     max-width: 66.66667%; }
   /* line 30, /www/sites/HbgPrime/wwwroot/source/sass/mixin/_grid.scss */
   html:not(.no-flexbox) .grid-md-9 {
-    width: auto;
     -webkit-flex-basis: 75%;
         -ms-flex-preferred-size: 75%;
             flex-basis: 75%;
     max-width: 75%; }
   /* line 30, /www/sites/HbgPrime/wwwroot/source/sass/mixin/_grid.scss */
   html:not(.no-flexbox) .grid-md-10 {
-    width: auto;
     -webkit-flex-basis: 83.33333%;
         -ms-flex-preferred-size: 83.33333%;
             flex-basis: 83.33333%;
     max-width: 83.33333%; }
   /* line 30, /www/sites/HbgPrime/wwwroot/source/sass/mixin/_grid.scss */
   html:not(.no-flexbox) .grid-md-11 {
-    width: auto;
     -webkit-flex-basis: 91.66667%;
         -ms-flex-preferred-size: 91.66667%;
             flex-basis: 91.66667%;
     max-width: 91.66667%; }
   /* line 30, /www/sites/HbgPrime/wwwroot/source/sass/mixin/_grid.scss */
   html:not(.no-flexbox) .grid-md-12 {
-    width: auto;
     -webkit-flex-basis: 100%;
         -ms-flex-preferred-size: 100%;
             flex-basis: 100%;
@@ -4771,84 +4735,72 @@ html:not(.no-flexbox) .grid-fit-content {
 @media (min-width: 961px) {
   /* line 30, /www/sites/HbgPrime/wwwroot/source/sass/mixin/_grid.scss */
   html:not(.no-flexbox) .grid-lg-1 {
-    width: auto;
     -webkit-flex-basis: 8.33333%;
         -ms-flex-preferred-size: 8.33333%;
             flex-basis: 8.33333%;
     max-width: 8.33333%; }
   /* line 30, /www/sites/HbgPrime/wwwroot/source/sass/mixin/_grid.scss */
   html:not(.no-flexbox) .grid-lg-2 {
-    width: auto;
     -webkit-flex-basis: 16.66667%;
         -ms-flex-preferred-size: 16.66667%;
             flex-basis: 16.66667%;
     max-width: 16.66667%; }
   /* line 30, /www/sites/HbgPrime/wwwroot/source/sass/mixin/_grid.scss */
   html:not(.no-flexbox) .grid-lg-3 {
-    width: auto;
     -webkit-flex-basis: 25%;
         -ms-flex-preferred-size: 25%;
             flex-basis: 25%;
     max-width: 25%; }
   /* line 30, /www/sites/HbgPrime/wwwroot/source/sass/mixin/_grid.scss */
   html:not(.no-flexbox) .grid-lg-4 {
-    width: auto;
     -webkit-flex-basis: 33.33333%;
         -ms-flex-preferred-size: 33.33333%;
             flex-basis: 33.33333%;
     max-width: 33.33333%; }
   /* line 30, /www/sites/HbgPrime/wwwroot/source/sass/mixin/_grid.scss */
   html:not(.no-flexbox) .grid-lg-5 {
-    width: auto;
     -webkit-flex-basis: 41.66667%;
         -ms-flex-preferred-size: 41.66667%;
             flex-basis: 41.66667%;
     max-width: 41.66667%; }
   /* line 30, /www/sites/HbgPrime/wwwroot/source/sass/mixin/_grid.scss */
   html:not(.no-flexbox) .grid-lg-6 {
-    width: auto;
     -webkit-flex-basis: 50%;
         -ms-flex-preferred-size: 50%;
             flex-basis: 50%;
     max-width: 50%; }
   /* line 30, /www/sites/HbgPrime/wwwroot/source/sass/mixin/_grid.scss */
   html:not(.no-flexbox) .grid-lg-7 {
-    width: auto;
     -webkit-flex-basis: 58.33333%;
         -ms-flex-preferred-size: 58.33333%;
             flex-basis: 58.33333%;
     max-width: 58.33333%; }
   /* line 30, /www/sites/HbgPrime/wwwroot/source/sass/mixin/_grid.scss */
   html:not(.no-flexbox) .grid-lg-8 {
-    width: auto;
     -webkit-flex-basis: 66.66667%;
         -ms-flex-preferred-size: 66.66667%;
             flex-basis: 66.66667%;
     max-width: 66.66667%; }
   /* line 30, /www/sites/HbgPrime/wwwroot/source/sass/mixin/_grid.scss */
   html:not(.no-flexbox) .grid-lg-9 {
-    width: auto;
     -webkit-flex-basis: 75%;
         -ms-flex-preferred-size: 75%;
             flex-basis: 75%;
     max-width: 75%; }
   /* line 30, /www/sites/HbgPrime/wwwroot/source/sass/mixin/_grid.scss */
   html:not(.no-flexbox) .grid-lg-10 {
-    width: auto;
     -webkit-flex-basis: 83.33333%;
         -ms-flex-preferred-size: 83.33333%;
             flex-basis: 83.33333%;
     max-width: 83.33333%; }
   /* line 30, /www/sites/HbgPrime/wwwroot/source/sass/mixin/_grid.scss */
   html:not(.no-flexbox) .grid-lg-11 {
-    width: auto;
     -webkit-flex-basis: 91.66667%;
         -ms-flex-preferred-size: 91.66667%;
             flex-basis: 91.66667%;
     max-width: 91.66667%; }
   /* line 30, /www/sites/HbgPrime/wwwroot/source/sass/mixin/_grid.scss */
   html:not(.no-flexbox) .grid-lg-12 {
-    width: auto;
     -webkit-flex-basis: 100%;
         -ms-flex-preferred-size: 100%;
             flex-basis: 100%;
