@@ -6574,21 +6574,25 @@ article + .page-footer {
   background: transparent url("../images/printbreak.png") repeat-y scroll center center; }
 
 /* line 17, /www/sites/HbgPrime/wwwroot/source/sass/typography/_list.scss */
+.modularity-mod-text .box-content ul,
 .mce-content-body ul,
 article ul:not(.nav):not(.slider-items):not(.line-numbers),
 .unordered-list {
   padding-left: 30px; }
-  /* line 22, /www/sites/HbgPrime/wwwroot/source/sass/typography/_list.scss */
+  /* line 23, /www/sites/HbgPrime/wwwroot/source/sass/typography/_list.scss */
+  .modularity-mod-text .box-content ul li,
   .mce-content-body ul li,
   article ul:not(.nav):not(.slider-items):not(.line-numbers) li,
   .unordered-list li {
     position: relative; }
-    /* line 25, /www/sites/HbgPrime/wwwroot/source/sass/typography/_list.scss */
+    /* line 26, /www/sites/HbgPrime/wwwroot/source/sass/typography/_list.scss */
+    .modularity-mod-text .box-content ul li + li,
     .mce-content-body ul li + li,
     article ul:not(.nav):not(.slider-items):not(.line-numbers) li + li,
     .unordered-list li + li {
       margin-top: 5px; }
-    /* line 29, /www/sites/HbgPrime/wwwroot/source/sass/typography/_list.scss */
+    /* line 30, /www/sites/HbgPrime/wwwroot/source/sass/typography/_list.scss */
+    .modularity-mod-text .box-content ul li::before,
     .mce-content-body ul li::before,
     article ul:not(.nav):not(.slider-items):not(.line-numbers) li::before,
     .unordered-list li::before {
@@ -6599,80 +6603,96 @@ article ul:not(.nav):not(.slider-items):not(.line-numbers),
       width: 6px;
       height: 6px;
       background-color: #666; }
-      /* line 41, /www/sites/HbgPrime/wwwroot/source/sass/typography/_list.scss */
-      .theme-red .mce-content-body ul li::before, .theme-red
+      /* line 42, /www/sites/HbgPrime/wwwroot/source/sass/typography/_list.scss */
+      .theme-red .modularity-mod-text .box-content ul li::before, .theme-red
+      .mce-content-body ul li::before, .theme-red
       article ul:not(.nav):not(.slider-items):not(.line-numbers) li::before, .theme-red
       .unordered-list li::before {
         background-color: #ec6701; }
-      /* line 41, /www/sites/HbgPrime/wwwroot/source/sass/typography/_list.scss */
-      .theme-blue .mce-content-body ul li::before, .theme-blue
+      /* line 42, /www/sites/HbgPrime/wwwroot/source/sass/typography/_list.scss */
+      .theme-blue .modularity-mod-text .box-content ul li::before, .theme-blue
+      .mce-content-body ul li::before, .theme-blue
       article ul:not(.nav):not(.slider-items):not(.line-numbers) li::before, .theme-blue
       .unordered-list li::before {
         background-color: #5ba1d8; }
-      /* line 41, /www/sites/HbgPrime/wwwroot/source/sass/typography/_list.scss */
-      .theme-green .mce-content-body ul li::before, .theme-green
+      /* line 42, /www/sites/HbgPrime/wwwroot/source/sass/typography/_list.scss */
+      .theme-green .modularity-mod-text .box-content ul li::before, .theme-green
+      .mce-content-body ul li::before, .theme-green
       article ul:not(.nav):not(.slider-items):not(.line-numbers) li::before, .theme-green
       .unordered-list li::before {
         background-color: #a0c855; }
-      /* line 41, /www/sites/HbgPrime/wwwroot/source/sass/typography/_list.scss */
-      .theme-purple .mce-content-body ul li::before, .theme-purple
+      /* line 42, /www/sites/HbgPrime/wwwroot/source/sass/typography/_list.scss */
+      .theme-purple .modularity-mod-text .box-content ul li::before, .theme-purple
+      .mce-content-body ul li::before, .theme-purple
       article ul:not(.nav):not(.slider-items):not(.line-numbers) li::before, .theme-purple
       .unordered-list li::before {
         background-color: #a84c98; }
 
-/* line 54, /www/sites/HbgPrime/wwwroot/source/sass/typography/_list.scss */
+/* line 55, /www/sites/HbgPrime/wwwroot/source/sass/typography/_list.scss */
 .mce-content-body.theme-red ul li::before {
   background-color: #ec6701; }
 
-/* line 54, /www/sites/HbgPrime/wwwroot/source/sass/typography/_list.scss */
+/* line 55, /www/sites/HbgPrime/wwwroot/source/sass/typography/_list.scss */
 .mce-content-body.theme-blue ul li::before {
   background-color: #5ba1d8; }
 
-/* line 54, /www/sites/HbgPrime/wwwroot/source/sass/typography/_list.scss */
+/* line 55, /www/sites/HbgPrime/wwwroot/source/sass/typography/_list.scss */
 .mce-content-body.theme-green ul li::before {
   background-color: #a0c855; }
 
-/* line 54, /www/sites/HbgPrime/wwwroot/source/sass/typography/_list.scss */
+/* line 55, /www/sites/HbgPrime/wwwroot/source/sass/typography/_list.scss */
 .mce-content-body.theme-purple ul li::before {
   background-color: #a84c98; }
 
-/* line 61, /www/sites/HbgPrime/wwwroot/source/sass/typography/_list.scss */
+/* line 62, /www/sites/HbgPrime/wwwroot/source/sass/typography/_list.scss */
+article .modularity-mod-inlaylist ul {
+  padding-left: 0 !important;
+  margin-top: 0; }
+  /* line 66, /www/sites/HbgPrime/wwwroot/source/sass/typography/_list.scss */
+  article .modularity-mod-inlaylist ul li::before {
+    display: none; }
+
+/* line 71, /www/sites/HbgPrime/wwwroot/source/sass/typography/_list.scss */
+.modularity-mod-text .box-filled .box-content ul li::before {
+  background-color: #fff !important; }
+
+/* line 75, /www/sites/HbgPrime/wwwroot/source/sass/typography/_list.scss */
 article + ul,
 article ul + ul,
 .unordered-list + .unordered-list {
   margin-top: 15px; }
 
-/* line 81, /www/sites/HbgPrime/wwwroot/source/sass/typography/_list.scss */
+/* line 95, /www/sites/HbgPrime/wwwroot/source/sass/typography/_list.scss */
 .mce-content-body ol,
 article ol,
 .ordered-list {
   padding-left: 30px;
   list-style-type: decimal; }
 
-/* line 88, /www/sites/HbgPrime/wwwroot/source/sass/typography/_list.scss */
+/* line 102, /www/sites/HbgPrime/wwwroot/source/sass/typography/_list.scss */
 li.title {
   font-size: .8em;
   font-weight: bold;
   color: #333;
   letter-spacing: .5px; }
-  /* line 96, /www/sites/HbgPrime/wwwroot/source/sass/typography/_list.scss */
+  /* line 110, /www/sites/HbgPrime/wwwroot/source/sass/typography/_list.scss */
   .theme-red li.title {
     color: #cb0050; }
-  /* line 96, /www/sites/HbgPrime/wwwroot/source/sass/typography/_list.scss */
+  /* line 110, /www/sites/HbgPrime/wwwroot/source/sass/typography/_list.scss */
   .theme-blue li.title {
     color: #0069b4; }
-  /* line 96, /www/sites/HbgPrime/wwwroot/source/sass/typography/_list.scss */
+  /* line 110, /www/sites/HbgPrime/wwwroot/source/sass/typography/_list.scss */
   .theme-green li.title {
     color: #50811b; }
-  /* line 96, /www/sites/HbgPrime/wwwroot/source/sass/typography/_list.scss */
+  /* line 110, /www/sites/HbgPrime/wwwroot/source/sass/typography/_list.scss */
   .theme-purple li.title {
     color: #712082; }
 
-/* line 103, /www/sites/HbgPrime/wwwroot/source/sass/typography/_list.scss */
+/* line 117, /www/sites/HbgPrime/wwwroot/source/sass/typography/_list.scss */
 li + li.title {
   margin-top: 10px; }
 
-/* line 107, /www/sites/HbgPrime/wwwroot/source/sass/typography/_list.scss */
+/* line 121, /www/sites/HbgPrime/wwwroot/source/sass/typography/_list.scss */
 .list-item-spacing li + li {
   margin-top: 8px; }
 
@@ -10784,20 +10804,24 @@ body:not(.material-no-shadow) .post .post-full, body:not(.material-no-shadow) .p
         box-shadow: none; } }
 
 /* line 15, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_box.scss */
+body:not(.material-no-radius) .main-footer .box:not(.box-news-horizontal):not(.box-panel-secondary) {
+  box-shadow: none; }
+
+/* line 19, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_box.scss */
 .box.box-plain {
   padding: 0;
   box-shadow: none !important; }
 
-/* line 20, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_box.scss */
+/* line 24, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_box.scss */
 .box-border {
   border: 1px solid #e7e5e1; }
 
-/* line 24, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_box.scss */
+/* line 28, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_box.scss */
 .box + .box {
   margin-bottom: 0;
   margin-top: 15px; }
 
-/* line 29, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_box.scss */
+/* line 33, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_box.scss */
 .box-content {
   padding: 10px;
   font-size: .9em;
@@ -10805,16 +10829,16 @@ body:not(.material-no-shadow) .post .post-full, body:not(.material-no-shadow) .p
       -ms-flex: 1 1 auto;
           flex: 1 1 auto; }
 
-/* line 34, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_box.scss */
+/* line 38, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_box.scss */
 .box-content img {
   max-width: 100%;
   height: auto; }
 
-/* line 39, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_box.scss */
+/* line 43, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_box.scss */
 .creamy .box:not(.box-news) .box-content {
   background-color: #fff; }
 
-/* line 43, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_box.scss */
+/* line 47, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_box.scss */
 .box-image {
   width: 100%;
   -webkit-flex: 0 0 auto;
@@ -17003,21 +17027,23 @@ a img.aligncenter {
   height: auto;
   margin: 0; }
 
-/* line 15, /www/sites/HbgPrime/wwwroot/source/sass/utility/_explain.scss */
-.explain em {
-  font-style: italic; }
-
-/* line 19, /www/sites/HbgPrime/wwwroot/source/sass/utility/_explain.scss */
-.explain .fa,
-.explain .pricon {
-  color: #979797;
-  cursor: default; }
-
-@media print {
-  /* line 26, /www/sites/HbgPrime/wwwroot/source/sass/utility/_explain.scss */
+/* line 14, /www/sites/HbgPrime/wwwroot/source/sass/utility/_explain.scss */
+.explain {
+  position: relative;
+  white-space: nowrap; }
+  /* line 18, /www/sites/HbgPrime/wwwroot/source/sass/utility/_explain.scss */
+  .explain em {
+    font-style: italic; }
+  /* line 22, /www/sites/HbgPrime/wwwroot/source/sass/utility/_explain.scss */
   .explain .fa,
   .explain .pricon {
-    display: none; } }
+    color: #979797;
+    cursor: default; }
+  @media print {
+    /* line 29, /www/sites/HbgPrime/wwwroot/source/sass/utility/_explain.scss */
+    .explain .fa,
+    .explain .pricon {
+      display: none; } }
 
 /* line 2, /www/sites/HbgPrime/wwwroot/source/sass/mixin/_material.scss */
 body:not(.material-no-shadow) .material {
