@@ -15753,6 +15753,15 @@ small,
     text-decoration: none; }
 
 /* line 47, /www/sites/HbgPrime/wwwroot/source/sass/utility/_link-item.scss */
+.link-item-lg {
+  left: 30px;
+  padding-right: 30px; }
+  /* line 52, /www/sites/HbgPrime/wwwroot/source/sass/utility/_link-item.scss */
+  .link-item-lg::before {
+    margin-right: .5em;
+    margin-left: -30px; }
+
+/* line 58, /www/sites/HbgPrime/wwwroot/source/sass/utility/_link-item.scss */
 .box-filled .link-item::before, .box-filled .widget_archive a::before, .widget_archive .box-filled a::before, .box-filled
 .widget_categories a::before,
 .widget_categories .box-filled a::before, .box-filled
@@ -15764,7 +15773,7 @@ small,
 .widget_recent_comments .box-filled a::before {
   color: rgba(255, 255, 255, 0.7); }
 
-/* line 52, /www/sites/HbgPrime/wwwroot/source/sass/utility/_link-item.scss */
+/* line 63, /www/sites/HbgPrime/wwwroot/source/sass/utility/_link-item.scss */
 .link-item-before::before {
   font-family: hbg-pricons;
   line-height: 1;
@@ -15778,10 +15787,10 @@ small,
   color: rgba(0, 0, 0, 0.4);
   text-decoration: none; }
 
-/* line 61, /www/sites/HbgPrime/wwwroot/source/sass/utility/_link-item.scss */
+/* line 72, /www/sites/HbgPrime/wwwroot/source/sass/utility/_link-item.scss */
 .link-unavailable {
   opacity: .5; }
-  /* line 62, /www/sites/HbgPrime/wwwroot/source/sass/utility/_link-item.scss */
+  /* line 73, /www/sites/HbgPrime/wwwroot/source/sass/utility/_link-item.scss */
   .link-unavailable::before {
     font-family: hbg-pricons;
     line-height: 1;
@@ -15792,7 +15801,7 @@ small,
     content: ""; }
 
 /* External */
-/* line 71, /www/sites/HbgPrime/wwwroot/source/sass/utility/_link-item.scss */
+/* line 82, /www/sites/HbgPrime/wwwroot/source/sass/utility/_link-item.scss */
 .link-item-outbound::before {
   font-family: hbg-pricons;
   line-height: 1;
@@ -15808,7 +15817,7 @@ small,
 }
 */
 /* Domains */
-/* line 87, /www/sites/HbgPrime/wwwroot/source/sass/utility/_link-item.scss */
+/* line 98, /www/sites/HbgPrime/wwwroot/source/sass/utility/_link-item.scss */
 .link-item-github::before,
 .link-item[href*="github.com"]::before,
 .widget_archive a[href*="github.com"]::before,
@@ -15826,7 +15835,7 @@ small,
   content: ""; }
 
 /* Filetypes */
-/* line 97, /www/sites/HbgPrime/wwwroot/source/sass/utility/_link-item.scss */
+/* line 108, /www/sites/HbgPrime/wwwroot/source/sass/utility/_link-item.scss */
 .link-item-pdf::before,
 .link-item[href$=".pdf"]::before,
 .widget_archive a[href$=".pdf"]::before,
@@ -15843,7 +15852,7 @@ small,
   vertical-align: -15%;
   content: ""; }
 
-/* line 107, /www/sites/HbgPrime/wwwroot/source/sass/utility/_link-item.scss */
+/* line 118, /www/sites/HbgPrime/wwwroot/source/sass/utility/_link-item.scss */
 .link-item-doc::before,
 .link-item[href$=".doc"]::before,
 .widget_archive a[href$=".doc"]::before,
@@ -15867,7 +15876,7 @@ small,
   vertical-align: -15%;
   content: ""; }
 
-/* line 117, /www/sites/HbgPrime/wwwroot/source/sass/utility/_link-item.scss */
+/* line 128, /www/sites/HbgPrime/wwwroot/source/sass/utility/_link-item.scss */
 .link-item-ppt::before,
 .link-item[href$=".ppt"]::before,
 .widget_archive a[href$=".ppt"]::before,
@@ -15891,7 +15900,7 @@ small,
   vertical-align: -15%;
   content: ""; }
 
-/* line 130, /www/sites/HbgPrime/wwwroot/source/sass/utility/_link-item.scss */
+/* line 141, /www/sites/HbgPrime/wwwroot/source/sass/utility/_link-item.scss */
 .link-item-xls::before,
 .link-item-csv::before,
 .link-item[href$=".xls"]::before,
@@ -15923,7 +15932,7 @@ small,
   vertical-align: -15%;
   content: ""; }
 
-/* line 140, /www/sites/HbgPrime/wwwroot/source/sass/utility/_link-item.scss */
+/* line 151, /www/sites/HbgPrime/wwwroot/source/sass/utility/_link-item.scss */
 .link-item-audio::before,
 .link-item[href$=".mp3"]::before,
 .widget_archive a[href$=".mp3"]::before,
@@ -15947,7 +15956,7 @@ small,
   vertical-align: -15%;
   content: ""; }
 
-/* line 152, /www/sites/HbgPrime/wwwroot/source/sass/utility/_link-item.scss */
+/* line 163, /www/sites/HbgPrime/wwwroot/source/sass/utility/_link-item.scss */
 .link-item-archive::before,
 .link-item[href$=".zip"]::before,
 .widget_archive a[href$=".zip"]::before,
@@ -15978,7 +15987,7 @@ small,
   vertical-align: -15%;
   content: ""; }
 
-/* line 172, /www/sites/HbgPrime/wwwroot/source/sass/utility/_link-item.scss */
+/* line 183, /www/sites/HbgPrime/wwwroot/source/sass/utility/_link-item.scss */
 .link-item-image::before,
 .link-item[href$=".jpg"]::before,
 .widget_archive a[href$=".jpg"]::before,
@@ -16037,7 +16046,7 @@ small,
   vertical-align: -15%;
   content: ""; }
 
-/* line 186, /www/sites/HbgPrime/wwwroot/source/sass/utility/_link-item.scss */
+/* line 197, /www/sites/HbgPrime/wwwroot/source/sass/utility/_link-item.scss */
 .link-item-text::before,
 .link-item[href$=".txt"]::before,
 .widget_archive a[href$=".txt"]::before,
@@ -16075,7 +16084,7 @@ small,
   vertical-align: -15%;
   content: ""; }
 
-/* line 216, /www/sites/HbgPrime/wwwroot/source/sass/utility/_link-item.scss */
+/* line 227, /www/sites/HbgPrime/wwwroot/source/sass/utility/_link-item.scss */
 .link-item-video::before,
 .link-item[href$=".mpg"]::before,
 .widget_archive a[href$=".mpg"]::before,
@@ -16169,7 +16178,7 @@ small,
   vertical-align: -15%;
   content: ""; }
 
-/* line 222, /www/sites/HbgPrime/wwwroot/source/sass/utility/_link-item.scss */
+/* line 233, /www/sites/HbgPrime/wwwroot/source/sass/utility/_link-item.scss */
 .link-item-light::before, .sidebar-left-sidebar .widget_archive a::before,
 .sidebar-right-sidebar .widget_archive a::before, .sidebar-left-sidebar
 .widget_categories a::before,
@@ -16187,7 +16196,7 @@ small,
   color: rgba(255, 255, 255, 0.7); }
 
 /* Prefixes (links only) */
-/* line 230, /www/sites/HbgPrime/wwwroot/source/sass/utility/_link-item.scss */
+/* line 241, /www/sites/HbgPrime/wwwroot/source/sass/utility/_link-item.scss */
 .link-item[href^='tel:']::before, .widget_archive a[href^='tel:']::before,
 .widget_categories a[href^='tel:']::before,
 .widget_meta a[href^='tel:']::before,
@@ -16202,7 +16211,7 @@ small,
   vertical-align: -15%;
   content: ""; }
 
-/* line 237, /www/sites/HbgPrime/wwwroot/source/sass/utility/_link-item.scss */
+/* line 248, /www/sites/HbgPrime/wwwroot/source/sass/utility/_link-item.scss */
 .link-item[href^='mailto:']::before, .widget_archive a[href^='mailto:']::before,
 .widget_categories a[href^='mailto:']::before,
 .widget_meta a[href^='mailto:']::before,
@@ -17037,10 +17046,11 @@ a img.aligncenter {
   /* line 22, /www/sites/HbgPrime/wwwroot/source/sass/utility/_explain.scss */
   .explain .fa,
   .explain .pricon {
+    display: inline-block;
     color: #979797;
     cursor: default; }
   @media print {
-    /* line 29, /www/sites/HbgPrime/wwwroot/source/sass/utility/_explain.scss */
+    /* line 30, /www/sites/HbgPrime/wwwroot/source/sass/utility/_explain.scss */
     .explain .fa,
     .explain .pricon {
       display: none; } }
