@@ -10213,7 +10213,18 @@ body:not(.material-no-shadow) .post .post-full, body:not(.material-no-shadow) .p
         /* line 2, /www/sites/HbgPrime/wwwroot/source/sass/mixin/_material.scss */
         body:not(.material-no-shadow) [data-tooltip]::after {
           box-shadow: none; } }
-  /* line 46, /www/sites/HbgPrime/wwwroot/source/sass/component/tooltip/_tooltip.scss */
+    @media (max-width: 769px) {
+      /* line 21, /www/sites/HbgPrime/wwwroot/source/sass/component/tooltip/_tooltip.scss */
+      [data-tooltip]::after {
+        position: fixed;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        -webkit-transform: none;
+                transform: none;
+        padding: 10px;
+        border-radius: 0 !important; } }
+  /* line 56, /www/sites/HbgPrime/wwwroot/source/sass/component/tooltip/_tooltip.scss */
   [data-tooltip]::before {
     display: none;
     content: '';
@@ -10230,77 +10241,84 @@ body:not(.material-no-shadow) .post .post-full, body:not(.material-no-shadow) .p
     border-right: 5px solid transparent;
     border-bottom: 5px solid #252525;
     border-left: 5px solid transparent; }
-  /* line 60, /www/sites/HbgPrime/wwwroot/source/sass/component/tooltip/_tooltip.scss */
-  [data-tooltip][data-tooltip-top]::after {
-    bottom: auto;
-    top: -8px;
-    right: -auto;
-    left: 50%;
-    -webkit-transform: translateY(-100%) translateX(-50%);
-            transform: translateY(-100%) translateX(-50%); }
-  /* line 68, /www/sites/HbgPrime/wwwroot/source/sass/component/tooltip/_tooltip.scss */
-  [data-tooltip][data-tooltip-top]::before {
-    bottom: auto;
-    top: -9px;
-    right: auto;
-    left: 50%;
-    -webkit-transform: translateY(0%) translateX(-50%);
-            transform: translateY(0%) translateX(-50%);
-    width: 0;
-    height: 0;
-    border-top: 5px solid #252525;
-    border-right: 5px solid transparent;
-    border-bottom: none;
-    border-left: 5px solid transparent; }
-  /* line 80, /www/sites/HbgPrime/wwwroot/source/sass/component/tooltip/_tooltip.scss */
-  [data-tooltip][data-tooltip-left]::after {
-    bottom: auto;
-    top: 50%;
-    left: -10px;
-    right: auto;
-    -webkit-transform: translateY(-50%) translateX(-100%);
-            transform: translateY(-50%) translateX(-100%); }
-  /* line 88, /www/sites/HbgPrime/wwwroot/source/sass/component/tooltip/_tooltip.scss */
-  [data-tooltip][data-tooltip-left]::before {
-    bottom: auto;
-    top: 50%;
-    left: -10px;
-    right: auto;
-    -webkit-transform: translateY(-50%);
-            transform: translateY(-50%);
-    width: 0;
-    height: 0;
-    border-top: 5px solid transparent;
-    border-right: none;
-    border-bottom: 5px solid transparent;
-    border-left: 5px solid #252525; }
-  /* line 100, /www/sites/HbgPrime/wwwroot/source/sass/component/tooltip/_tooltip.scss */
-  [data-tooltip][data-tooltip-right]::after {
-    bottom: auto;
-    top: 50%;
-    right: -10px;
-    left: auto;
-    -webkit-transform: translateY(-50%) translateX(100%);
-            transform: translateY(-50%) translateX(100%); }
-  /* line 108, /www/sites/HbgPrime/wwwroot/source/sass/component/tooltip/_tooltip.scss */
-  [data-tooltip][data-tooltip-right]::before {
-    bottom: auto;
-    top: 50%;
-    right: -10px;
-    left: auto;
-    -webkit-transform: translateY(-50%);
-            transform: translateY(-50%);
-    width: 0;
-    height: 0;
-    border-top: 5px solid transparent;
-    border-right: 5px solid #252525;
-    border-bottom: 5px solid transparent;
-    border-left: none; }
+    @media (max-width: 769px) {
+      /* line 56, /www/sites/HbgPrime/wwwroot/source/sass/component/tooltip/_tooltip.scss */
+      [data-tooltip]::before {
+        opacity: 0; } }
+  @media (min-width: 769px) {
+    /* line 75, /www/sites/HbgPrime/wwwroot/source/sass/component/tooltip/_tooltip.scss */
+    [data-tooltip][data-tooltip-top]::after {
+      bottom: auto;
+      top: -8px;
+      right: -auto;
+      left: 50%;
+      -webkit-transform: translateY(-100%) translateX(-50%);
+              transform: translateY(-100%) translateX(-50%); }
+    /* line 83, /www/sites/HbgPrime/wwwroot/source/sass/component/tooltip/_tooltip.scss */
+    [data-tooltip][data-tooltip-top]::before {
+      bottom: auto;
+      top: -9px;
+      right: auto;
+      left: 50%;
+      -webkit-transform: translateY(0%) translateX(-50%);
+              transform: translateY(0%) translateX(-50%);
+      width: 0;
+      height: 0;
+      border-top: 5px solid #252525;
+      border-right: 5px solid transparent;
+      border-bottom: none;
+      border-left: 5px solid transparent; } }
+  @media (min-width: 769px) {
+    /* line 97, /www/sites/HbgPrime/wwwroot/source/sass/component/tooltip/_tooltip.scss */
+    [data-tooltip][data-tooltip-left]::after {
+      bottom: auto;
+      top: 50%;
+      left: -10px;
+      right: auto;
+      -webkit-transform: translateY(-50%) translateX(-100%);
+              transform: translateY(-50%) translateX(-100%); }
+    /* line 105, /www/sites/HbgPrime/wwwroot/source/sass/component/tooltip/_tooltip.scss */
+    [data-tooltip][data-tooltip-left]::before {
+      bottom: auto;
+      top: 50%;
+      left: -10px;
+      right: auto;
+      -webkit-transform: translateY(-50%);
+              transform: translateY(-50%);
+      width: 0;
+      height: 0;
+      border-top: 5px solid transparent;
+      border-right: none;
+      border-bottom: 5px solid transparent;
+      border-left: 5px solid #252525; } }
+  @media (min-width: 769px) {
+    /* line 119, /www/sites/HbgPrime/wwwroot/source/sass/component/tooltip/_tooltip.scss */
+    [data-tooltip][data-tooltip-right]::after {
+      bottom: auto;
+      top: 50%;
+      right: -10px;
+      left: auto;
+      -webkit-transform: translateY(-50%) translateX(100%);
+              transform: translateY(-50%) translateX(100%); }
+    /* line 127, /www/sites/HbgPrime/wwwroot/source/sass/component/tooltip/_tooltip.scss */
+    [data-tooltip][data-tooltip-right]::before {
+      bottom: auto;
+      top: 50%;
+      right: -10px;
+      left: auto;
+      -webkit-transform: translateY(-50%);
+              transform: translateY(-50%);
+      width: 0;
+      height: 0;
+      border-top: 5px solid transparent;
+      border-right: 5px solid #252525;
+      border-bottom: 5px solid transparent;
+      border-left: none; } }
   @media print {
-    /* line 120, /www/sites/HbgPrime/wwwroot/source/sass/component/tooltip/_tooltip.scss */
+    /* line 140, /www/sites/HbgPrime/wwwroot/source/sass/component/tooltip/_tooltip.scss */
     [data-tooltip]::before {
       display: none !important; }
-    /* line 124, /www/sites/HbgPrime/wwwroot/source/sass/component/tooltip/_tooltip.scss */
+    /* line 144, /www/sites/HbgPrime/wwwroot/source/sass/component/tooltip/_tooltip.scss */
     [data-tooltip]::after {
       display: inline-block;
       content: "(" attr(data-tooltip) ")";
@@ -10308,7 +10326,7 @@ body:not(.material-no-shadow) .post .post-full, body:not(.material-no-shadow) .p
       color: #252525;
       font-size: .8em; } }
 
-/* line 137, /www/sites/HbgPrime/wwwroot/source/sass/component/tooltip/_tooltip.scss */
+/* line 157, /www/sites/HbgPrime/wwwroot/source/sass/component/tooltip/_tooltip.scss */
 [data-tooltip]:hover::after, [data-tooltip]:hover::before,
 [data-tooltip]:focus::after,
 [data-tooltip]:focus::before,
