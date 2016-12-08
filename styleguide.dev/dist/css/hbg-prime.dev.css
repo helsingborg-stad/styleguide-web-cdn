@@ -7110,7 +7110,7 @@ a.link-box:nth-of-type(4),
 /* line 13, /www/sites/HbgPrime/wwwroot/source/sass/typography/_quotes.scss */
 blockquote {
   border-left: 5px solid currentColor;
-  padding: 10px 10% 10px 3%;
+  padding: 10px 7% 10px 30px;
   quotes: "“" "”" "‘" "’";
   font-size: 1.3em;
   font-weight: 300;
@@ -7129,15 +7129,15 @@ blockquote {
   .theme-purple blockquote {
     color: #712082; }
 
-/* line 40, /www/sites/HbgPrime/wwwroot/source/sass/typography/_quotes.scss */
+/* line 32, /www/sites/HbgPrime/wwwroot/source/sass/typography/_quotes.scss */
 blockquote:before {
   content: open-quote; }
 
-/* line 45, /www/sites/HbgPrime/wwwroot/source/sass/typography/_quotes.scss */
+/* line 36, /www/sites/HbgPrime/wwwroot/source/sass/typography/_quotes.scss */
 blockquote:after {
   content: close-quote; }
 
-/* line 50, /www/sites/HbgPrime/wwwroot/source/sass/typography/_quotes.scss */
+/* line 40, /www/sites/HbgPrime/wwwroot/source/sass/typography/_quotes.scss */
 blockquote p {
   display: inline;
   margin: 0; }
