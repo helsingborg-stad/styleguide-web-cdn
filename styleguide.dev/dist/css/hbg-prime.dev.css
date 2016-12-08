@@ -17969,37 +17969,24 @@ body:not(.material-no-shadow) .widget_calendar {
 
 /* line 14, /www/sites/HbgPrime/wwwroot/source/sass/component/wordpress/_wp-caption.scss */
 .wp-caption {
-  display: inline-block;
-  background: #f6f5f2;
-  border: 1px solid #e7e5e1;
-  padding: 10px 10px 10px 10px;
-  text-align: center; }
-  /* line 42, /www/sites/HbgPrime/wwwroot/source/sass/mixin/_material.scss */
-  body:not(.material-no-radius) .wp-caption {
-    border-radius: 2px; }
-  /* line 2, /www/sites/HbgPrime/wwwroot/source/sass/mixin/_material.scss */
-  body:not(.material-no-shadow) .wp-caption {
-    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.08); }
-    @media print {
-      /* line 2, /www/sites/HbgPrime/wwwroot/source/sass/mixin/_material.scss */
-      body:not(.material-no-shadow) .wp-caption {
-        box-shadow: none; } }
+  border-bottom: 1px solid #e7e5e1;
+  padding-bottom: 10px; }
 
-/* line 25, /www/sites/HbgPrime/wwwroot/source/sass/component/wordpress/_wp-caption.scss */
+/* line 19, /www/sites/HbgPrime/wwwroot/source/sass/component/wordpress/_wp-caption.scss */
 .wp-caption.alignnone {
   margin-left: 0;
   margin-right: 0;
   width: 100% !important; }
 
-/* line 31, /www/sites/HbgPrime/wwwroot/source/sass/component/wordpress/_wp-caption.scss */
+/* line 25, /www/sites/HbgPrime/wwwroot/source/sass/component/wordpress/_wp-caption.scss */
 .wp-caption.alignleft {
   margin: 5px 20px 5px 0; }
 
-/* line 35, /www/sites/HbgPrime/wwwroot/source/sass/component/wordpress/_wp-caption.scss */
+/* line 29, /www/sites/HbgPrime/wwwroot/source/sass/component/wordpress/_wp-caption.scss */
 .wp-caption.alignright {
   margin: 5px 0 5px 20px; }
 
-/* line 39, /www/sites/HbgPrime/wwwroot/source/sass/component/wordpress/_wp-caption.scss */
+/* line 33, /www/sites/HbgPrime/wwwroot/source/sass/component/wordpress/_wp-caption.scss */
 .wp-caption img {
   border: 0 none;
   height: auto;
@@ -18007,14 +17994,14 @@ body:not(.material-no-shadow) .widget_calendar {
   padding: 0;
   width: 100% !important; }
 
-/* line 47, /www/sites/HbgPrime/wwwroot/source/sass/component/wordpress/_wp-caption.scss */
+/* line 41, /www/sites/HbgPrime/wwwroot/source/sass/component/wordpress/_wp-caption.scss */
 .wp-caption p.wp-caption-text {
   font-size: .75em;
   line-height: 1.2em;
   margin: 10px 0 0 0;
   padding: 0; }
 
-/* line 54, /www/sites/HbgPrime/wwwroot/source/sass/component/wordpress/_wp-caption.scss */
+/* line 48, /www/sites/HbgPrime/wwwroot/source/sass/component/wordpress/_wp-caption.scss */
 .creamy .wp-caption {
   background-color: #fff;
   border-color: #e7e5e1; }
