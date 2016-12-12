@@ -17168,16 +17168,19 @@ a img.aligncenter {
   position: relative;
   white-space: nowrap; }
   /* line 18, /www/sites/HbgPrime/wwwroot/source/sass/utility/_explain.scss */
+  .explain span[data-tooltip] {
+    display: inline-block; }
+  /* line 22, /www/sites/HbgPrime/wwwroot/source/sass/utility/_explain.scss */
   .explain em {
     font-style: italic; }
-  /* line 22, /www/sites/HbgPrime/wwwroot/source/sass/utility/_explain.scss */
+  /* line 26, /www/sites/HbgPrime/wwwroot/source/sass/utility/_explain.scss */
   .explain .fa,
   .explain .pricon {
     display: inline-block;
     color: #979797;
     cursor: default; }
   @media print {
-    /* line 30, /www/sites/HbgPrime/wwwroot/source/sass/utility/_explain.scss */
+    /* line 34, /www/sites/HbgPrime/wwwroot/source/sass/utility/_explain.scss */
     .explain .fa,
     .explain .pricon {
       display: none; } }
