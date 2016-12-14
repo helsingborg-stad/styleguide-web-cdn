@@ -10968,6 +10968,12 @@ body:not(.material-no-radius) .main-footer .box:not(.box-news-horizontal):not(.b
       -ms-flex: 0 0 auto;
           flex: 0 0 auto; }
 
+/* line 52, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_box.scss */
+[data-equal-item] .box-image-container {
+  -webkit-flex: 0 0 auto;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto; }
+
 /* line 21, /www/sites/HbgPrime/wwwroot/source/sass/component/box/_index.scss */
 .box-index {
   display: block;
