@@ -15985,7 +15985,7 @@ small,
   vertical-align: -15%;
   content: ""; }
 
-/* line 118, /www/sites/HbgPrime/wwwroot/source/sass/utility/_link-item.scss */
+/* line 119, /www/sites/HbgPrime/wwwroot/source/sass/utility/_link-item.scss */
 .link-item-doc::before,
 .link-item[href$=".doc"]::before,
 .widget_archive a[href$=".doc"]::before,
@@ -16000,7 +16000,8 @@ small,
 .widget_recent_entries a[href$=".docx"]::before,
 .widget_recent_comments a[href$=".docx"]::before,
 .link-item-before[href$=".doc"]::before,
-.link-item-before[href$=".docx"]::before {
+.link-item-before[href$=".docx"]::before,
+.link-item-before[href$=".dotx"]::before {
   font-family: hbg-pricons;
   line-height: 1;
   text-rendering: auto;
@@ -16009,7 +16010,7 @@ small,
   vertical-align: -15%;
   content: ""; }
 
-/* line 128, /www/sites/HbgPrime/wwwroot/source/sass/utility/_link-item.scss */
+/* line 129, /www/sites/HbgPrime/wwwroot/source/sass/utility/_link-item.scss */
 .link-item-ppt::before,
 .link-item[href$=".ppt"]::before,
 .widget_archive a[href$=".ppt"]::before,
@@ -16033,7 +16034,7 @@ small,
   vertical-align: -15%;
   content: ""; }
 
-/* line 141, /www/sites/HbgPrime/wwwroot/source/sass/utility/_link-item.scss */
+/* line 142, /www/sites/HbgPrime/wwwroot/source/sass/utility/_link-item.scss */
 .link-item-xls::before,
 .link-item-csv::before,
 .link-item[href$=".xls"]::before,
@@ -16065,7 +16066,7 @@ small,
   vertical-align: -15%;
   content: ""; }
 
-/* line 151, /www/sites/HbgPrime/wwwroot/source/sass/utility/_link-item.scss */
+/* line 152, /www/sites/HbgPrime/wwwroot/source/sass/utility/_link-item.scss */
 .link-item-audio::before,
 .link-item[href$=".mp3"]::before,
 .widget_archive a[href$=".mp3"]::before,
@@ -16089,7 +16090,7 @@ small,
   vertical-align: -15%;
   content: ""; }
 
-/* line 163, /www/sites/HbgPrime/wwwroot/source/sass/utility/_link-item.scss */
+/* line 164, /www/sites/HbgPrime/wwwroot/source/sass/utility/_link-item.scss */
 .link-item-archive::before,
 .link-item[href$=".zip"]::before,
 .widget_archive a[href$=".zip"]::before,
@@ -16120,7 +16121,7 @@ small,
   vertical-align: -15%;
   content: ""; }
 
-/* line 183, /www/sites/HbgPrime/wwwroot/source/sass/utility/_link-item.scss */
+/* line 184, /www/sites/HbgPrime/wwwroot/source/sass/utility/_link-item.scss */
 .link-item-image::before,
 .link-item[href$=".jpg"]::before,
 .widget_archive a[href$=".jpg"]::before,
@@ -16179,7 +16180,7 @@ small,
   vertical-align: -15%;
   content: ""; }
 
-/* line 197, /www/sites/HbgPrime/wwwroot/source/sass/utility/_link-item.scss */
+/* line 198, /www/sites/HbgPrime/wwwroot/source/sass/utility/_link-item.scss */
 .link-item-text::before,
 .link-item[href$=".txt"]::before,
 .widget_archive a[href$=".txt"]::before,
@@ -16217,7 +16218,7 @@ small,
   vertical-align: -15%;
   content: ""; }
 
-/* line 227, /www/sites/HbgPrime/wwwroot/source/sass/utility/_link-item.scss */
+/* line 228, /www/sites/HbgPrime/wwwroot/source/sass/utility/_link-item.scss */
 .link-item-video::before,
 .link-item[href$=".mpg"]::before,
 .widget_archive a[href$=".mpg"]::before,
@@ -16311,7 +16312,7 @@ small,
   vertical-align: -15%;
   content: ""; }
 
-/* line 233, /www/sites/HbgPrime/wwwroot/source/sass/utility/_link-item.scss */
+/* line 234, /www/sites/HbgPrime/wwwroot/source/sass/utility/_link-item.scss */
 .link-item-light::before, .sidebar-left-sidebar .widget_archive a::before,
 .sidebar-right-sidebar .widget_archive a::before, .sidebar-left-sidebar
 .widget_categories a::before,
@@ -16329,7 +16330,7 @@ small,
   color: rgba(255, 255, 255, 0.7); }
 
 /* Prefixes (links only) */
-/* line 241, /www/sites/HbgPrime/wwwroot/source/sass/utility/_link-item.scss */
+/* line 242, /www/sites/HbgPrime/wwwroot/source/sass/utility/_link-item.scss */
 .link-item[href^='tel:']::before, .widget_archive a[href^='tel:']::before,
 .widget_categories a[href^='tel:']::before,
 .widget_meta a[href^='tel:']::before,
@@ -16344,7 +16345,7 @@ small,
   vertical-align: -15%;
   content: ""; }
 
-/* line 248, /www/sites/HbgPrime/wwwroot/source/sass/utility/_link-item.scss */
+/* line 249, /www/sites/HbgPrime/wwwroot/source/sass/utility/_link-item.scss */
 .link-item[href^='mailto:']::before, .widget_archive a[href^='mailto:']::before,
 .widget_categories a[href^='mailto:']::before,
 .widget_meta a[href^='mailto:']::before,
