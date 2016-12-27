@@ -14864,26 +14864,30 @@ option {
   .ginput_container_name .name_last {
     display: table-cell;
     width: 50%; }
-  /* line 83, /www/sites/HbgPrime/wwwroot/source/sass/component/form/_gravity-forms.scss */
+    /* line 82, /www/sites/HbgPrime/wwwroot/source/sass/component/form/_gravity-forms.scss */
+    .ginput_container_name .name_first label,
+    .ginput_container_name .name_last label {
+      font-weight: normal; }
+  /* line 87, /www/sites/HbgPrime/wwwroot/source/sass/component/form/_gravity-forms.scss */
   .ginput_container_name .name_first {
     padding-right: 5px; }
-  /* line 87, /www/sites/HbgPrime/wwwroot/source/sass/component/form/_gravity-forms.scss */
+  /* line 91, /www/sites/HbgPrime/wwwroot/source/sass/component/form/_gravity-forms.scss */
   .ginput_container_name .name_last {
     padding-left: 5px; }
 
-/* line 92, /www/sites/HbgPrime/wwwroot/source/sass/component/form/_gravity-forms.scss */
+/* line 96, /www/sites/HbgPrime/wwwroot/source/sass/component/form/_gravity-forms.scss */
 .gform_drop_area {
   border: 2px dashed #d0ccc5;
   background-color: #e7e5e1;
   padding: 30px;
   text-align: center;
   border-radius: 5px; }
-  /* line 99, /www/sites/HbgPrime/wwwroot/source/sass/component/form/_gravity-forms.scss */
+  /* line 103, /www/sites/HbgPrime/wwwroot/source/sass/component/form/_gravity-forms.scss */
   .gform_drop_area .gform_drop_instructions {
     display: block;
     text-align: center;
     margin-bottom: 5px; }
-  /* line 105, /www/sites/HbgPrime/wwwroot/source/sass/component/form/_gravity-forms.scss */
+  /* line 109, /www/sites/HbgPrime/wwwroot/source/sass/component/form/_gravity-forms.scss */
   .gform_drop_area .button {
     line-height: 1.6;
     -webkit-appearance: none;
@@ -14905,14 +14909,14 @@ option {
     background-color: #666;
     color: #fff;
     border-color: #666; }
-    /* line 122, /www/sites/HbgPrime/wwwroot/source/sass/component/form/_gravity-forms.scss */
+    /* line 126, /www/sites/HbgPrime/wwwroot/source/sass/component/form/_gravity-forms.scss */
     .gform_drop_area .button:hover, .gform_drop_area .button:focus {
       background-color: #e0ded9;
       text-decoration: none; }
-    /* line 128, /www/sites/HbgPrime/wwwroot/source/sass/component/form/_gravity-forms.scss */
+    /* line 132, /www/sites/HbgPrime/wwwroot/source/sass/component/form/_gravity-forms.scss */
     .gform_drop_area .button:active {
       box-shadow: inset 0 0 8px rgba(0, 0, 0, 0.3); }
-    /* line 132, /www/sites/HbgPrime/wwwroot/source/sass/component/form/_gravity-forms.scss */
+    /* line 136, /www/sites/HbgPrime/wwwroot/source/sass/component/form/_gravity-forms.scss */
     .gform_drop_area .button:disabled, .gform_drop_area .button.disabled, .gform_drop_area input.button[type="text"]:disabled, .gform_drop_area
     input.button[type="password"]:disabled, .gform_drop_area
     input.button[type="search"]:disabled, .gform_drop_area
@@ -14932,7 +14936,7 @@ option {
     input.button[type="radio"]:disabled, .gform_drop_area select.button:disabled {
       opacity: .5;
       cursor: no-drop; }
-      /* line 137, /www/sites/HbgPrime/wwwroot/source/sass/component/form/_gravity-forms.scss */
+      /* line 141, /www/sites/HbgPrime/wwwroot/source/sass/component/form/_gravity-forms.scss */
       .gform_drop_area .button:disabled:active, .gform_drop_area .button.disabled:active, .gform_drop_area input.button[type="text"]:active:disabled, .gform_drop_area
       input.button[type="password"]:active:disabled, .gform_drop_area
       input.button[type="search"]:active:disabled, .gform_drop_area
@@ -14951,43 +14955,43 @@ option {
       textarea.button:active:disabled, .gform_drop_area input.button[type="checkbox"]:active:disabled, .gform_drop_area
       input.button[type="radio"]:active:disabled, .gform_drop_area select.button:active:disabled {
         box-shadow: none; }
-    /* line 149, /www/sites/HbgPrime/wwwroot/source/sass/component/form/_gravity-forms.scss */
+    /* line 153, /www/sites/HbgPrime/wwwroot/source/sass/component/form/_gravity-forms.scss */
     .theme-red .gform_drop_area .button {
       background-color: #ec6701;
       border-color: #ec6701;
       color: #fff; }
-    /* line 149, /www/sites/HbgPrime/wwwroot/source/sass/component/form/_gravity-forms.scss */
+    /* line 153, /www/sites/HbgPrime/wwwroot/source/sass/component/form/_gravity-forms.scss */
     .theme-blue .gform_drop_area .button {
       background-color: #5ba1d8;
       border-color: #5ba1d8;
       color: #fff; }
-    /* line 149, /www/sites/HbgPrime/wwwroot/source/sass/component/form/_gravity-forms.scss */
+    /* line 153, /www/sites/HbgPrime/wwwroot/source/sass/component/form/_gravity-forms.scss */
     .theme-green .gform_drop_area .button {
       background-color: #a0c855;
       border-color: #a0c855;
       color: #fff; }
-    /* line 149, /www/sites/HbgPrime/wwwroot/source/sass/component/form/_gravity-forms.scss */
+    /* line 153, /www/sites/HbgPrime/wwwroot/source/sass/component/form/_gravity-forms.scss */
     .theme-purple .gform_drop_area .button {
       background-color: #a84c98;
       border-color: #a84c98;
       color: #fff; }
-    /* line 157, /www/sites/HbgPrime/wwwroot/source/sass/component/form/_gravity-forms.scss */
+    /* line 161, /www/sites/HbgPrime/wwwroot/source/sass/component/form/_gravity-forms.scss */
     .gform_drop_area .button:hover, .gform_drop_area .button:focus {
       background-color: #5e5e5e;
       border-color: #5e5e5e; }
-      /* line 165, /www/sites/HbgPrime/wwwroot/source/sass/component/form/_gravity-forms.scss */
+      /* line 169, /www/sites/HbgPrime/wwwroot/source/sass/component/form/_gravity-forms.scss */
       .theme-red .gform_drop_area .button:hover, .theme-red .gform_drop_area .button:focus {
         background-color: #dd6001;
         border-color: #dd6001; }
-      /* line 165, /www/sites/HbgPrime/wwwroot/source/sass/component/form/_gravity-forms.scss */
+      /* line 169, /www/sites/HbgPrime/wwwroot/source/sass/component/form/_gravity-forms.scss */
       .theme-blue .gform_drop_area .button:hover, .theme-blue .gform_drop_area .button:focus {
         background-color: #4f9ad5;
         border-color: #4f9ad5; }
-      /* line 165, /www/sites/HbgPrime/wwwroot/source/sass/component/form/_gravity-forms.scss */
+      /* line 169, /www/sites/HbgPrime/wwwroot/source/sass/component/form/_gravity-forms.scss */
       .theme-green .gform_drop_area .button:hover, .theme-green .gform_drop_area .button:focus {
         background-color: #9ac449;
         border-color: #9ac449; }
-      /* line 165, /www/sites/HbgPrime/wwwroot/source/sass/component/form/_gravity-forms.scss */
+      /* line 169, /www/sites/HbgPrime/wwwroot/source/sass/component/form/_gravity-forms.scss */
       .theme-purple .gform_drop_area .button:hover, .theme-purple .gform_drop_area .button:focus {
         background-color: #9d478e;
         border-color: #9d478e; }
